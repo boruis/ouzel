@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::audio::SoundDataVorbis</compoundname>
+    <basecompoundref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" prot="public" virt="non-virtual">ouzel::audio::SoundData</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1abd27727e29437ef5d5678283daffaa71" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::audio::SoundDataVorbis::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="28" column="1" bodyfile="ouzel/audio/SoundDataVorbis.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a1df27d5ca3fd9bdacd38ee41f705d0c8" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; ouzel::audio::SoundDataVorbis::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="30" column="1" bodyfile="ouzel/audio/SoundDataVorbis.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a567ff88eef4e5acae6c087aa1c7f9185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::SoundDataVorbis::SoundDataVorbis</definition>
+        <argsstring>()</argsstring>
+        <name>SoundDataVorbis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="18" column="1" bodyfile="ouzel/audio/SoundDataVorbis.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a3a55ba83ae636df6ad403073e9be3e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::SoundDataVorbis::init</definition>
+        <argsstring>(const std::string &amp;newFilename) override</argsstring>
+        <name>init</name>
+        <reimplements refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1adb9440c9cb71e68225db63fddfa24161">init</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="20" column="1" bodyfile="ouzel/audio/SoundDataVorbis.cpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a779c0e97a4e903ebd699d14edc3653e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::SoundDataVorbis::init</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData) override</argsstring>
+        <name>init</name>
+        <reimplements refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1ad76112a0889737eaa63a43d7ff9ee334">init</reimplements>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="21" column="1" bodyfile="ouzel/audio/SoundDataVorbis.cpp" bodystart="33" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a1e57a7d64bd2b7f579e7ada3e469bff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="dc/def/classouzel_1_1audio_1_1_stream" kindref="compound">Stream</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Stream &gt; ouzel::audio::SoundDataVorbis::createStream</definition>
+        <argsstring>() override</argsstring>
+        <name>createStream</name>
+        <reimplements refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a436822cbcfcd57433125724fae7e1c00">createStream</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="23" column="1" bodyfile="ouzel/audio/SoundDataVorbis.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a067795cc058257aadd9cbf5a3fb22118" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::SoundDataVorbis::readData</definition>
+        <argsstring>(Stream *stream, uint32_t frames, std::vector&lt; float &gt; &amp;result) override</argsstring>
+        <name>readData</name>
+        <reimplements refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a2aadb2f594cd396100fd4a22dc560ca8">readData</reimplements>
+        <param>
+          <type><ref refid="dc/def/classouzel_1_1audio_1_1_stream" kindref="compound">Stream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>frames</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundDataVorbis.hpp" line="26" column="1" bodyfile="ouzel/audio/SoundDataVorbis.cpp" bodystart="53" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1712">
+        <label>ouzel::audio::SoundDataVorbis</label>
+        <link refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis"/>
+        <childnode refid="1713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1714">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1713">
+        <label>ouzel::audio::SoundData</label>
+        <link refid="d2/dbd/classouzel_1_1audio_1_1_sound_data"/>
+        <childnode refid="1714" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1715">
+        <label>ouzel::audio::SoundDataVorbis</label>
+        <link refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis"/>
+        <childnode refid="1716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1717">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1716">
+        <label>ouzel::audio::SoundData</label>
+        <link refid="d2/dbd/classouzel_1_1audio_1_1_sound_data"/>
+        <childnode refid="1717" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/SoundDataVorbis.hpp" line="16" column="1" bodyfile="ouzel/audio/SoundDataVorbis.hpp" bodystart="15" bodyend="31"/>
+    <listofallmembers>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a874d78c0a8785f856757ad0fbc4caefc" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>channels</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a1e57a7d64bd2b7f579e7ada3e469bff5" prot="public" virt="virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>createStream</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a1df27d5ca3fd9bdacd38ee41f705d0c8" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>data</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1abd27727e29437ef5d5678283daffaa71" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>filename</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a1fb27d5893d94238b291d4e3682fcee8" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>getChannels</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a7cbde1cae9d8865a4eaf3cff3d927aea" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>getData</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a758e48c2370f627a85e0b60518496166" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>getSampleRate</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a3a55ba83ae636df6ad403073e9be3e68" prot="public" virt="virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>init</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a779c0e97a4e903ebd699d14edc3653e5" prot="public" virt="virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>init</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>operator=</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a067795cc058257aadd9cbf5a3fb22118" prot="protected" virt="virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>readData</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1aedfc9b712cad3cefa2280860103aa46a" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>resampledData</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a85cd3ffd86762832c4d61350a867f99c" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>sampleRate</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a0ad447267b2682628ea259d56e98076e" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>SoundData</name></member>
+      <member refid="de/d43/classouzel_1_1audio_1_1_sound_data_vorbis_1a567ff88eef4e5acae6c087aa1c7f9185" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>SoundDataVorbis</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1aae20d4cd543a272e8dcd90e3286f4dd5" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>tempData</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>~Noncopyable</name></member>
+      <member refid="d2/dbd/classouzel_1_1audio_1_1_sound_data_1a3d086dc0f06e69be2e27ff2f0238d2e4" prot="public" virt="virtual"><scope>ouzel::audio::SoundDataVorbis</scope><name>~SoundData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

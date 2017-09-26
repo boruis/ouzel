@@ -1,0 +1,961 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/d24/_language_8cpp" kind="file" language="C++">
+    <compoundname>Language.cpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="d3/dd7/_language_8hpp" local="yes">Language.hpp</includes>
+    <includes refid="db/db9/_engine_8hpp" local="yes">core/Engine.hpp</includes>
+    <includes refid="d7/da4/_file_system_8hpp" local="yes">files/FileSystem.hpp</includes>
+    <includes refid="d8/dce/_log_8hpp" local="yes">utils/Log.hpp</includes>
+    <includes refid="d7/d6d/_utils_8hpp" local="yes">utils/Utils.hpp</includes>
+    <incdepgraph>
+      <node id="12099">
+        <label>atomic</label>
+      </node>
+      <node id="12097">
+        <label>functional</label>
+      </node>
+      <node id="12107">
+        <label>queue</label>
+      </node>
+      <node id="12118">
+        <label>limits</label>
+      </node>
+      <node id="12129">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12108" relation="include">
+        </childnode>
+        <childnode refid="12107" relation="include">
+        </childnode>
+        <childnode refid="12096" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12130" relation="include">
+        </childnode>
+        <childnode refid="12140" relation="include">
+        </childnode>
+      </node>
+      <node id="12147">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+      </node>
+      <node id="12151">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+      </node>
+      <node id="12091">
+        <label>cstdint</label>
+      </node>
+      <node id="12127">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="12115" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+      </node>
+      <node id="12135">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12117" relation="include">
+        </childnode>
+        <childnode refid="12115" relation="include">
+        </childnode>
+        <childnode refid="12123" relation="include">
+        </childnode>
+        <childnode refid="12110" relation="include">
+        </childnode>
+        <childnode refid="12124" relation="include">
+        </childnode>
+      </node>
+      <node id="12128">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+      </node>
+      <node id="12105">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="12103" relation="include">
+        </childnode>
+      </node>
+      <node id="12144">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12145" relation="include">
+        </childnode>
+        <childnode refid="12110" relation="include">
+        </childnode>
+        <childnode refid="12146" relation="include">
+        </childnode>
+        <childnode refid="12148" relation="include">
+        </childnode>
+        <childnode refid="12149" relation="include">
+        </childnode>
+        <childnode refid="12150" relation="include">
+        </childnode>
+        <childnode refid="12124" relation="include">
+        </childnode>
+      </node>
+      <node id="12134">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="12108" relation="include">
+        </childnode>
+        <childnode refid="12107" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12126" relation="include">
+        </childnode>
+      </node>
+      <node id="12113">
+        <label>cmath</label>
+      </node>
+      <node id="12088">
+        <label>ouzel/localization/Language.cpp</label>
+        <link refid="d2/d24/_language_8cpp"/>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12090" relation="include">
+        </childnode>
+        <childnode refid="12094" relation="include">
+        </childnode>
+        <childnode refid="12128" relation="include">
+        </childnode>
+        <childnode refid="12159" relation="include">
+        </childnode>
+        <childnode refid="12161" relation="include">
+        </childnode>
+      </node>
+      <node id="12157">
+        <label>errno.h</label>
+      </node>
+      <node id="12094">
+        <label>core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12096" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12097" relation="include">
+        </childnode>
+        <childnode refid="12098" relation="include">
+        </childnode>
+        <childnode refid="12099" relation="include">
+        </childnode>
+        <childnode refid="12100" relation="include">
+        </childnode>
+        <childnode refid="12101" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12104" relation="include">
+        </childnode>
+        <childnode refid="12105" relation="include">
+        </childnode>
+        <childnode refid="12106" relation="include">
+        </childnode>
+        <childnode refid="12126" relation="include">
+        </childnode>
+        <childnode refid="12128" relation="include">
+        </childnode>
+        <childnode refid="12129" relation="include">
+        </childnode>
+        <childnode refid="12141" relation="include">
+        </childnode>
+        <childnode refid="12142" relation="include">
+        </childnode>
+        <childnode refid="12155" relation="include">
+        </childnode>
+        <childnode refid="12156" relation="include">
+        </childnode>
+        <childnode refid="12158" relation="include">
+        </childnode>
+      </node>
+      <node id="12160">
+        <label>math/Matrix3.hpp</label>
+        <link refid="d8/d52/_matrix3_8hpp_source"/>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+      </node>
+      <node id="12155">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12092" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+      </node>
+      <node id="12143">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12144" relation="include">
+        </childnode>
+      </node>
+      <node id="12093">
+        <label>string</label>
+      </node>
+      <node id="12130">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12131" relation="include">
+        </childnode>
+        <childnode refid="12136" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12114" relation="include">
+        </childnode>
+        <childnode refid="12138" relation="include">
+        </childnode>
+      </node>
+      <node id="12092">
+        <label>map</label>
+      </node>
+      <node id="12132">
+        <label>cfloat</label>
+      </node>
+      <node id="12117">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12118" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+        <childnode refid="12120" relation="include">
+        </childnode>
+      </node>
+      <node id="12141">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+      </node>
+      <node id="12102">
+        <label>Config.h</label>
+      </node>
+      <node id="12115">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="12101" relation="include">
+        </childnode>
+        <childnode refid="12116" relation="include">
+        </childnode>
+        <childnode refid="12121" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+        <childnode refid="12122" relation="include">
+        </childnode>
+      </node>
+      <node id="12145">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12118" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12114" relation="include">
+        </childnode>
+      </node>
+      <node id="12133">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="12134" relation="include">
+        </childnode>
+      </node>
+      <node id="12131">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="12132" relation="include">
+        </childnode>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12133" relation="include">
+        </childnode>
+        <childnode refid="12135" relation="include">
+        </childnode>
+        <childnode refid="12104" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+      </node>
+      <node id="12125">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="12159">
+        <label>utils/Log.hpp</label>
+        <link refid="d8/dce/_log_8hpp_source"/>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12160" relation="include">
+        </childnode>
+        <childnode refid="12115" relation="include">
+        </childnode>
+        <childnode refid="12127" relation="include">
+        </childnode>
+        <childnode refid="12114" relation="include">
+        </childnode>
+        <childnode refid="12120" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+        <childnode refid="12122" relation="include">
+        </childnode>
+      </node>
+      <node id="12163">
+        <label>random</label>
+      </node>
+      <node id="12136">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12137" relation="include">
+        </childnode>
+        <childnode refid="12104" relation="include">
+        </childnode>
+        <childnode refid="12117" relation="include">
+        </childnode>
+        <childnode refid="12123" relation="include">
+        </childnode>
+        <childnode refid="12115" relation="include">
+        </childnode>
+        <childnode refid="12127" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+      </node>
+      <node id="12121">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="12109">
+        <label>condition_variable</label>
+      </node>
+      <node id="12137">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+      </node>
+      <node id="12140">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="12097" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12130" relation="include">
+        </childnode>
+      </node>
+      <node id="12149">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+      </node>
+      <node id="12124">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12125" relation="include">
+        </childnode>
+        <childnode refid="12123" relation="include">
+        </childnode>
+        <childnode refid="12114" relation="include">
+        </childnode>
+      </node>
+      <node id="12101">
+        <label>Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="12102" relation="include">
+        </childnode>
+      </node>
+      <node id="12148">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+      </node>
+      <node id="12089">
+        <label>vector</label>
+      </node>
+      <node id="12114">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="12111" relation="include">
+        </childnode>
+      </node>
+      <node id="12116">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12117" relation="include">
+        </childnode>
+        <childnode refid="12121" relation="include">
+        </childnode>
+        <childnode refid="12122" relation="include">
+        </childnode>
+      </node>
+      <node id="12158">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12092" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+      </node>
+      <node id="12120">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="12119" relation="include">
+        </childnode>
+      </node>
+      <node id="12164">
+        <label>sstream</label>
+      </node>
+      <node id="12138">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12108" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12139" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+      </node>
+      <node id="12146">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12147" relation="include">
+        </childnode>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+        <childnode refid="12123" relation="include">
+        </childnode>
+      </node>
+      <node id="12126">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12097" relation="include">
+        </childnode>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12096" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12127" relation="include">
+        </childnode>
+        <childnode refid="12119" relation="include">
+        </childnode>
+      </node>
+      <node id="12123">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="12112" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+      </node>
+      <node id="12161">
+        <label>utils/Utils.hpp</label>
+        <link refid="d7/d6d/_utils_8hpp_source"/>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12162" relation="include">
+        </childnode>
+        <childnode refid="12118" relation="include">
+        </childnode>
+        <childnode refid="12097" relation="include">
+        </childnode>
+        <childnode refid="12163" relation="include">
+        </childnode>
+        <childnode refid="12164" relation="include">
+        </childnode>
+        <childnode refid="12101" relation="include">
+        </childnode>
+      </node>
+      <node id="12154">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+      </node>
+      <node id="12162">
+        <label>cstdlib</label>
+      </node>
+      <node id="12106">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12107" relation="include">
+        </childnode>
+        <childnode refid="12096" relation="include">
+        </childnode>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12108" relation="include">
+        </childnode>
+        <childnode refid="12099" relation="include">
+        </childnode>
+        <childnode refid="12109" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12110" relation="include">
+        </childnode>
+        <childnode refid="12115" relation="include">
+        </childnode>
+        <childnode refid="12114" relation="include">
+        </childnode>
+        <childnode refid="12123" relation="include">
+        </childnode>
+        <childnode refid="12124" relation="include">
+        </childnode>
+      </node>
+      <node id="12112">
+        <label>cstddef</label>
+      </node>
+      <node id="12139">
+        <label>unordered_map</label>
+      </node>
+      <node id="12150">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12146" relation="include">
+        </childnode>
+      </node>
+      <node id="12122">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="12112" relation="include">
+        </childnode>
+        <childnode refid="12101" relation="include">
+        </childnode>
+      </node>
+      <node id="12108">
+        <label>mutex</label>
+      </node>
+      <node id="12100">
+        <label>chrono</label>
+      </node>
+      <node id="12098">
+        <label>thread</label>
+      </node>
+      <node id="12096">
+        <label>set</label>
+      </node>
+      <node id="12152">
+        <label>gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12092" relation="include">
+        </childnode>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12139" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12123" relation="include">
+        </childnode>
+        <childnode refid="12124" relation="include">
+        </childnode>
+        <childnode refid="12146" relation="include">
+        </childnode>
+      </node>
+      <node id="12111">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="12112" relation="include">
+        </childnode>
+        <childnode refid="12113" relation="include">
+        </childnode>
+      </node>
+      <node id="12104">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="12097" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+      </node>
+      <node id="12153">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12147" relation="include">
+        </childnode>
+        <childnode refid="12146" relation="include">
+        </childnode>
+      </node>
+      <node id="12103">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="12110">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="12111" relation="include">
+        </childnode>
+        <childnode refid="12114" relation="include">
+        </childnode>
+      </node>
+      <node id="12119">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="12112" relation="include">
+        </childnode>
+      </node>
+      <node id="12090">
+        <label>Language.hpp</label>
+        <link refid="d3/dd7/_language_8hpp_source"/>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12092" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12089" relation="include">
+        </childnode>
+      </node>
+      <node id="12095">
+        <label>memory</label>
+      </node>
+      <node id="12142">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="12095" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+        <childnode refid="12092" relation="include">
+        </childnode>
+        <childnode refid="12103" relation="include">
+        </childnode>
+        <childnode refid="12143" relation="include">
+        </childnode>
+        <childnode refid="12151" relation="include">
+        </childnode>
+        <childnode refid="12152" relation="include">
+        </childnode>
+        <childnode refid="12148" relation="include">
+        </childnode>
+        <childnode refid="12153" relation="include">
+        </childnode>
+        <childnode refid="12124" relation="include">
+        </childnode>
+        <childnode refid="12154" relation="include">
+        </childnode>
+      </node>
+      <node id="12156">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="12157" relation="include">
+        </childnode>
+        <childnode refid="12091" relation="include">
+        </childnode>
+        <childnode refid="12093" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d8/d39/structouzel_1_1_translation_info" prot="public">ouzel::TranslationInfo</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Language.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Engine.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;files/FileSystem.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Log.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="d8/d39/structouzel_1_1_translation_info" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d8/d39/structouzel_1_1_translation_info" kindref="compound">TranslationInfo</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>stringLength;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>stringOffset;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>translationLength;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>translationOffset;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Language::init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>data;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sharedEngine-&gt;getFileSystem()-&gt;readFile(filename,<sp/>data))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>init(data);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Language::init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint8_t&gt;&amp;<sp/>data)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>MAGIC_BIG<sp/>=<sp/>0xde120495;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>MAGIC_LITTLE<sp/>=<sp/>0x950412de;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.size()<sp/>&lt;<sp/>5<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint32_t))</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>magic<sp/>=<sp/>*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(magic);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>(*decodeUInt32)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*)<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(magic<sp/>==<sp/>MAGIC_BIG)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodeUInt32<sp/>=<sp/>decodeUInt32Big;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(magic<sp/>==<sp/>MAGIC_LITTLE)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decodeUInt32<sp/>=<sp/>decodeUInt32Little;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log(Log::Level::ERR)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wrong<sp/>magic<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>magic;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>revision<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(revision);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(revision<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log(Log::Level::ERR)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unsupported<sp/>revision<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>revision;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>stringCount<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(stringCount);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;TranslationInfo&gt;<sp/>translations(stringCount);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>stringsOffset<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(stringsOffset);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>translationsOffset<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(translationsOffset);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>stringsOffset;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.size()<sp/>&lt;<sp/>offset<sp/>+<sp/>2<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint32_t)<sp/>*<sp/>stringCount)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>stringCount;<sp/>++i)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>translations[i].stringLength<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(translations[i].stringLength);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>translations[i].stringOffset<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(translations[i].stringOffset);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>translationsOffset;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.size()<sp/>&lt;<sp/>offset<sp/>+<sp/>2<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint32_t)<sp/>*<sp/>stringCount)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>stringCount;<sp/>++i)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>translations[i].translationLength<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(translations[i].translationLength);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>translations[i].translationOffset<sp/>=<sp/>decodeUInt32(data.data()<sp/>+<sp/>offset);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(translations[i].translationOffset);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>stringCount;<sp/>++i)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.size()<sp/>&lt;<sp/>translations[i].stringOffset<sp/>+<sp/>translations[i].stringLength<sp/>||</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.size()<sp/>&lt;<sp/>translations[i].translationOffset<sp/>+<sp/>translations[i].translationLength)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>str(reinterpret_cast&lt;const<sp/>char*&gt;(data.data()<sp/>+<sp/>translations[i].stringOffset),<sp/>translations[i].stringLength);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>translation(reinterpret_cast&lt;const<sp/>char*&gt;(data.data()<sp/>+<sp/>translations[i].translationOffset),<sp/>translations[i].translationLength);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strings[str]<sp/>=<sp/>translation;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>Language::getString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>str)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>strings.find(str);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>!=<sp/>strings.end())</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i-&gt;second;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ouzel/localization/Language.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/d0a/_gamepad_8cpp" kind="file" language="C++">
+    <compoundname>Gamepad.cpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes refid="d9/d5b/_gamepad_8hpp" local="yes">Gamepad.hpp</includes>
+    <includes refid="db/db9/_engine_8hpp" local="yes">core/Engine.hpp</includes>
+    <includes refid="d1/d90/_event_dispatcher_8hpp" local="yes">events/EventDispatcher.hpp</includes>
+    <incdepgraph>
+      <node id="10219">
+        <label>atomic</label>
+      </node>
+      <node id="10190">
+        <label>functional</label>
+      </node>
+      <node id="10188">
+        <label>queue</label>
+      </node>
+      <node id="10198">
+        <label>limits</label>
+      </node>
+      <node id="10225">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10188" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10179" relation="include">
+        </childnode>
+        <childnode refid="10226" relation="include">
+        </childnode>
+      </node>
+      <node id="10234">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+      </node>
+      <node id="10238">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+      </node>
+      <node id="10177">
+        <label>cstdint</label>
+      </node>
+      <node id="10192">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="10193" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10204">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10197" relation="include">
+        </childnode>
+        <childnode refid="10193" relation="include">
+        </childnode>
+        <childnode refid="10205" relation="include">
+        </childnode>
+        <childnode refid="10206" relation="include">
+        </childnode>
+        <childnode refid="10210" relation="include">
+        </childnode>
+      </node>
+      <node id="10224">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+      </node>
+      <node id="10221">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="10178" relation="include">
+        </childnode>
+      </node>
+      <node id="10231">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10232" relation="include">
+        </childnode>
+        <childnode refid="10206" relation="include">
+        </childnode>
+        <childnode refid="10233" relation="include">
+        </childnode>
+        <childnode refid="10235" relation="include">
+        </childnode>
+        <childnode refid="10236" relation="include">
+        </childnode>
+        <childnode refid="10237" relation="include">
+        </childnode>
+        <childnode refid="10210" relation="include">
+        </childnode>
+      </node>
+      <node id="10186">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10188" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10189" relation="include">
+        </childnode>
+      </node>
+      <node id="10176">
+        <label>Gamepad.hpp</label>
+        <link refid="d9/d5b/_gamepad_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10179" relation="include">
+        </childnode>
+      </node>
+      <node id="10208">
+        <label>cmath</label>
+      </node>
+      <node id="10244">
+        <label>errno.h</label>
+      </node>
+      <node id="10217">
+        <label>core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10190" relation="include">
+        </childnode>
+        <childnode refid="10218" relation="include">
+        </childnode>
+        <childnode refid="10219" relation="include">
+        </childnode>
+        <childnode refid="10220" relation="include">
+        </childnode>
+        <childnode refid="10194" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10212" relation="include">
+        </childnode>
+        <childnode refid="10221" relation="include">
+        </childnode>
+        <childnode refid="10222" relation="include">
+        </childnode>
+        <childnode refid="10189" relation="include">
+        </childnode>
+        <childnode refid="10224" relation="include">
+        </childnode>
+        <childnode refid="10225" relation="include">
+        </childnode>
+        <childnode refid="10227" relation="include">
+        </childnode>
+        <childnode refid="10228" relation="include">
+        </childnode>
+        <childnode refid="10242" relation="include">
+        </childnode>
+        <childnode refid="10243" relation="include">
+        </childnode>
+        <childnode refid="10245" relation="include">
+        </childnode>
+      </node>
+      <node id="10242">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10229" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+      </node>
+      <node id="10230">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10231" relation="include">
+        </childnode>
+      </node>
+      <node id="10181">
+        <label>string</label>
+      </node>
+      <node id="10179">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10182" relation="include">
+        </childnode>
+        <childnode refid="10213" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+        <childnode refid="10209" relation="include">
+        </childnode>
+        <childnode refid="10215" relation="include">
+        </childnode>
+      </node>
+      <node id="10229">
+        <label>map</label>
+      </node>
+      <node id="10183">
+        <label>cfloat</label>
+      </node>
+      <node id="10197">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10198" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+        <childnode refid="10201" relation="include">
+        </childnode>
+      </node>
+      <node id="10227">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+      </node>
+      <node id="10195">
+        <label>Config.h</label>
+      </node>
+      <node id="10193">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="10194" relation="include">
+        </childnode>
+        <childnode refid="10196" relation="include">
+        </childnode>
+        <childnode refid="10202" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+        <childnode refid="10203" relation="include">
+        </childnode>
+      </node>
+      <node id="10232">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10198" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+        <childnode refid="10209" relation="include">
+        </childnode>
+      </node>
+      <node id="10185">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="10186" relation="include">
+        </childnode>
+      </node>
+      <node id="10182">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="10183" relation="include">
+        </childnode>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10185" relation="include">
+        </childnode>
+        <childnode refid="10204" relation="include">
+        </childnode>
+        <childnode refid="10212" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10211">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="10213">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10214" relation="include">
+        </childnode>
+        <childnode refid="10212" relation="include">
+        </childnode>
+        <childnode refid="10197" relation="include">
+        </childnode>
+        <childnode refid="10205" relation="include">
+        </childnode>
+        <childnode refid="10193" relation="include">
+        </childnode>
+        <childnode refid="10192" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10223">
+        <label>condition_variable</label>
+      </node>
+      <node id="10202">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="10214">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+      </node>
+      <node id="10226">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="10190" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10179" relation="include">
+        </childnode>
+      </node>
+      <node id="10236">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+      </node>
+      <node id="10210">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10211" relation="include">
+        </childnode>
+        <childnode refid="10205" relation="include">
+        </childnode>
+        <childnode refid="10209" relation="include">
+        </childnode>
+      </node>
+      <node id="10194">
+        <label>core/Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="10195" relation="include">
+        </childnode>
+      </node>
+      <node id="10235">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+      </node>
+      <node id="10180">
+        <label>vector</label>
+      </node>
+      <node id="10209">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="10207" relation="include">
+        </childnode>
+      </node>
+      <node id="10196">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10197" relation="include">
+        </childnode>
+        <childnode refid="10202" relation="include">
+        </childnode>
+        <childnode refid="10203" relation="include">
+        </childnode>
+      </node>
+      <node id="10245">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10229" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+      </node>
+      <node id="10201">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10215">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10216" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+      </node>
+      <node id="10233">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10234" relation="include">
+        </childnode>
+        <childnode refid="10207" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+        <childnode refid="10205" relation="include">
+        </childnode>
+      </node>
+      <node id="10189">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10190" relation="include">
+        </childnode>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10192" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10205">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="10200" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+      </node>
+      <node id="10241">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+      </node>
+      <node id="10222">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10188" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10219" relation="include">
+        </childnode>
+        <childnode refid="10223" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10206" relation="include">
+        </childnode>
+        <childnode refid="10193" relation="include">
+        </childnode>
+        <childnode refid="10209" relation="include">
+        </childnode>
+        <childnode refid="10205" relation="include">
+        </childnode>
+        <childnode refid="10210" relation="include">
+        </childnode>
+      </node>
+      <node id="10200">
+        <label>cstddef</label>
+      </node>
+      <node id="10216">
+        <label>unordered_map</label>
+      </node>
+      <node id="10237">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10233" relation="include">
+        </childnode>
+      </node>
+      <node id="10203">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="10200" relation="include">
+        </childnode>
+        <childnode refid="10194" relation="include">
+        </childnode>
+      </node>
+      <node id="10187">
+        <label>mutex</label>
+      </node>
+      <node id="10220">
+        <label>chrono</label>
+      </node>
+      <node id="10218">
+        <label>thread</label>
+      </node>
+      <node id="10191">
+        <label>set</label>
+      </node>
+      <node id="10239">
+        <label>gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10229" relation="include">
+        </childnode>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10216" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10205" relation="include">
+        </childnode>
+        <childnode refid="10210" relation="include">
+        </childnode>
+        <childnode refid="10233" relation="include">
+        </childnode>
+      </node>
+      <node id="10207">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="10200" relation="include">
+        </childnode>
+        <childnode refid="10208" relation="include">
+        </childnode>
+      </node>
+      <node id="10212">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="10190" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+      </node>
+      <node id="10240">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10180" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10234" relation="include">
+        </childnode>
+        <childnode refid="10233" relation="include">
+        </childnode>
+      </node>
+      <node id="10175">
+        <label>algorithm</label>
+      </node>
+      <node id="10178">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="10206">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="10207" relation="include">
+        </childnode>
+        <childnode refid="10209" relation="include">
+        </childnode>
+      </node>
+      <node id="10199">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="10200" relation="include">
+        </childnode>
+      </node>
+      <node id="10174">
+        <label>ouzel/input/Gamepad.cpp</label>
+        <link refid="dc/d0a/_gamepad_8cpp"/>
+        <childnode refid="10175" relation="include">
+        </childnode>
+        <childnode refid="10176" relation="include">
+        </childnode>
+        <childnode refid="10217" relation="include">
+        </childnode>
+        <childnode refid="10225" relation="include">
+        </childnode>
+      </node>
+      <node id="10184">
+        <label>memory</label>
+      </node>
+      <node id="10228">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10229" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10230" relation="include">
+        </childnode>
+        <childnode refid="10238" relation="include">
+        </childnode>
+        <childnode refid="10239" relation="include">
+        </childnode>
+        <childnode refid="10235" relation="include">
+        </childnode>
+        <childnode refid="10240" relation="include">
+        </childnode>
+        <childnode refid="10210" relation="include">
+        </childnode>
+        <childnode refid="10241" relation="include">
+        </childnode>
+      </node>
+      <node id="10243">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="10244" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10181" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d5/d3c/namespaceouzel_1_1input">ouzel::input</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Gamepad.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Engine.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;events/EventDispatcher.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">input</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gamepad::Gamepad()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gamepad::~Gamepad()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gamepad::setAbsoluteDpadValues(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Gamepad::isAbsoluteDpadValues()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="26"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>Gamepad::getPlayerIndex()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="31"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Gamepad::setPlayerIndex(int32_t)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Gamepad::ButtonState&amp;<sp/>Gamepad::getButtonState(GamepadButton<sp/>button)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buttonStates[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(button)];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gamepad::handleButtonValueChange(GamepadButton<sp/>button,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pressed,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event<sp/>event;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.type<sp/>=<sp/>Event::Type::GAMEPAD_BUTTON_CHANGE;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.gamepadEvent.gamepad<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.gamepadEvent.button<sp/>=<sp/>button;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.gamepadEvent.previousPressed<sp/>=<sp/>buttonStates[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(button)].pressed;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.gamepadEvent.pressed<sp/>=<sp/>pressed;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.gamepadEvent.value<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.gamepadEvent.previousValue<sp/>=<sp/>buttonStates[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(button)].value;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sharedEngine-&gt;getEventDispatcher()-&gt;postEvent(event);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttonStates[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(button)].pressed<sp/>=<sp/>pressed;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttonStates[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(button)].value<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gamepad::setVibration(Motor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Gamepad::getVibration(Motor)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0f;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/input/Gamepad.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,981 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d05/classouzel_1_1_engine" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ouzel::Engine</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <derivedcompoundref refid="d4/d64/classouzel_1_1_engine_android" prot="public" virt="non-virtual">ouzel::EngineAndroid</derivedcompoundref>
+    <derivedcompoundref refid="dd/d61/classouzel_1_1_engine_em" prot="public" virt="non-virtual">ouzel::EngineEm</derivedcompoundref>
+    <derivedcompoundref refid="d1/d83/classouzel_1_1_engine_i_o_s" prot="public" virt="non-virtual">ouzel::EngineIOS</derivedcompoundref>
+    <derivedcompoundref refid="d6/da4/classouzel_1_1_engine_linux" prot="public" virt="non-virtual">ouzel::EngineLinux</derivedcompoundref>
+    <derivedcompoundref refid="d2/d0f/classouzel_1_1_engine_mac_o_s" prot="public" virt="non-virtual">ouzel::EngineMacOS</derivedcompoundref>
+    <derivedcompoundref refid="dc/dde/classouzel_1_1_engine_rasp" prot="public" virt="non-virtual">ouzel::EngineRasp</derivedcompoundref>
+    <derivedcompoundref refid="d5/d85/classouzel_1_1_engine_t_v_o_s" prot="public" virt="non-virtual">ouzel::EngineTVOS</derivedcompoundref>
+    <derivedcompoundref refid="d8/d7a/classouzel_1_1_engine_win" prot="public" virt="non-virtual">ouzel::EngineWin</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1aea9bb5a6c1c7fcc4961a78d3f3abbbe4" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d5/d9e/classouzel_1_1_file_system" kindref="compound">FileSystem</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;FileSystem&gt; ouzel::Engine::fileSystem</definition>
+        <argsstring></argsstring>
+        <name>fileSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="84" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a1b6824feebac52078d5c497076f3c01a" prot="protected" static="no" mutable="no">
+        <type><ref refid="d3/dfd/classouzel_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref></type>
+        <definition>EventDispatcher ouzel::Engine::eventDispatcher</definition>
+        <argsstring></argsstring>
+        <name>eventDispatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="85" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a9d498f37f7b4adbe9f0edafd37d4dac5" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/dce/classouzel_1_1_timer" kindref="compound">Timer</ref></type>
+        <definition>Timer ouzel::Engine::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="86" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a278cbe023974c5d3051b92a5162c2aeb" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Window&gt; ouzel::Engine::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="87" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a93bfa999f85285d6e63e7510a8cf11bb" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="da/d6d/classouzel_1_1graphics_1_1_renderer" kindref="compound">graphics::Renderer</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;graphics::Renderer&gt; ouzel::Engine::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="88" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1ad8e77ee1311e0bec60e750f7964a37f1" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d5/d53/classouzel_1_1audio_1_1_audio" kindref="compound">audio::Audio</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;audio::Audio&gt; ouzel::Engine::audio</definition>
+        <argsstring></argsstring>
+        <name>audio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="89" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a73d9935a0c56be98e80b61f4d100dc88" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d3/d66/classouzel_1_1input_1_1_input" kindref="compound">input::Input</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;input::Input&gt; ouzel::Engine::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="90" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a9e7ea3859d61e64f0f7bcdf6d6dd5a67" prot="protected" static="no" mutable="no">
+        <type><ref refid="d9/d1e/classouzel_1_1_localization" kindref="compound">Localization</ref></type>
+        <definition>Localization ouzel::Engine::localization</definition>
+        <argsstring></argsstring>
+        <name>localization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="91" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1ac972f61749256f6298267bf6cfdd4d75" prot="protected" static="no" mutable="no">
+        <type><ref refid="d4/d02/classouzel_1_1_cache" kindref="compound">Cache</ref></type>
+        <definition>Cache ouzel::Engine::cache</definition>
+        <argsstring></argsstring>
+        <name>cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="92" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a355b10923d265c87c8a0112509f4a24a" prot="protected" static="no" mutable="no">
+        <type><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">scene::SceneManager</ref></type>
+        <definition>scene::SceneManager ouzel::Engine::sceneManager</definition>
+        <argsstring></argsstring>
+        <name>sceneManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="93" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a5c852f6f094fbd264e9b8cf7657f44da" prot="protected" static="no" mutable="no">
+        <type><ref refid="d9/daa/classouzel_1_1network_1_1_network" kindref="compound">network::Network</ref></type>
+        <definition>network::Network ouzel::Engine::network</definition>
+        <argsstring></argsstring>
+        <name>network</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="94" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a79f55699be81764fd49b4fcc0d4ee38a" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref></type>
+        <definition>INI ouzel::Engine::defaultSettings</definition>
+        <argsstring></argsstring>
+        <name>defaultSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="96" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a7bf7d6aa62a7b22c78f0025d309e1551" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref></type>
+        <definition>INI ouzel::Engine::userSettings</definition>
+        <argsstring></argsstring>
+        <name>userSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="97" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1ad0c5a49b6d46b8c3801afe9036fe33e9" prot="protected" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point ouzel::Engine::previousUpdateTime</definition>
+        <argsstring></argsstring>
+        <name>previousUpdateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="99" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1ae07f773ce8499942a20a2b761f27f9a6" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref> * &gt;</type>
+        <definition>std::vector&lt;UpdateCallback*&gt; ouzel::Engine::updateCallbacks</definition>
+        <argsstring></argsstring>
+        <name>updateCallbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="101" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a4adc37dd6b0cfb942b0ebc0c911e3983" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref> * &gt;</type>
+        <definition>std::set&lt;UpdateCallback*&gt; ouzel::Engine::updateCallbackAddSet</definition>
+        <argsstring></argsstring>
+        <name>updateCallbackAddSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="102" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a59d702378f6b67494ee5df0b4a5dc5af" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref> * &gt;</type>
+        <definition>std::set&lt;UpdateCallback*&gt; ouzel::Engine::updateCallbackDeleteSet</definition>
+        <argsstring></argsstring>
+        <name>updateCallbackDeleteSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="103" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a51908f86ce75bbfc356be1da51f77230" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; ouzel::Engine::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="111" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1aafcdacdcc2a772a315fb364069a19d87" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; ouzel::Engine::paused</definition>
+        <argsstring></argsstring>
+        <name>paused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="112" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1ad2f058a4be8bf376a954a75aedef8ada" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; ouzel::Engine::screenSaverEnabled</definition>
+        <argsstring></argsstring>
+        <name>screenSaverEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="115" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d05/classouzel_1_1_engine_1a359a05deb25916fdee64c47ab578eec4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; ouzel::Engine::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="116" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a421b4ef65829d57f08507e98377fced7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Engine::Engine</definition>
+        <argsstring>()</argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="36" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ab8e83304ffaaf1f7da8d3927ab081507" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::Engine::~Engine</definition>
+        <argsstring>()</argsstring>
+        <name>~Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="37" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="62" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1adb762d45e8450e7279c6d422c2141aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Engine::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="39" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="93" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1afc6f52e7714e78f38bb2a899123d8eb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt; &amp;</type>
+        <definition>const std::vector&lt;std::string&gt;&amp; ouzel::Engine::getArgs</definition>
+        <argsstring>()</argsstring>
+        <name>getArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="41" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a8d036be2bfc4cbf806df78731b9cbc5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d5/d9e/classouzel_1_1_file_system" kindref="compound">FileSystem</ref> *</type>
+        <definition>FileSystem* ouzel::Engine::getFileSystem</definition>
+        <argsstring>()</argsstring>
+        <name>getFileSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="43" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a5f334795ce7557bcc68b162dbbc176f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d3/dfd/classouzel_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref> *</type>
+        <definition>EventDispatcher* ouzel::Engine::getEventDispatcher</definition>
+        <argsstring>()</argsstring>
+        <name>getEventDispatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="44" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a36237463dcbc5a5813d5008ffae1814a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/dce/classouzel_1_1_timer" kindref="compound">Timer</ref> *</type>
+        <definition>Timer* ouzel::Engine::getTimer</definition>
+        <argsstring>()</argsstring>
+        <name>getTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="45" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a79291fff95dd479cf6fbfb0982791d94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d02/classouzel_1_1_cache" kindref="compound">Cache</ref> *</type>
+        <definition>Cache* ouzel::Engine::getCache</definition>
+        <argsstring>()</argsstring>
+        <name>getCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="46" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a271a73e822203fbe32d91fa0673a4405" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window* ouzel::Engine::getWindow</definition>
+        <argsstring>() const</argsstring>
+        <name>getWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="47" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ab73da286a05fc59e139558c5bde01d26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="da/d6d/classouzel_1_1graphics_1_1_renderer" kindref="compound">graphics::Renderer</ref> *</type>
+        <definition>graphics::Renderer* ouzel::Engine::getRenderer</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="48" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ad4f686bce467a6288e51abef6ddb1d9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d5/d53/classouzel_1_1audio_1_1_audio" kindref="compound">audio::Audio</ref> *</type>
+        <definition>audio::Audio* ouzel::Engine::getAudio</definition>
+        <argsstring>() const</argsstring>
+        <name>getAudio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="49" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a3e024391e81bcc66356204c8bc3f435e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">scene::SceneManager</ref> *</type>
+        <definition>scene::SceneManager* ouzel::Engine::getSceneManager</definition>
+        <argsstring>()</argsstring>
+        <name>getSceneManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="50" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a9b983fdc40212032f1aa20a232adc67b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d3/d66/classouzel_1_1input_1_1_input" kindref="compound">input::Input</ref> *</type>
+        <definition>input::Input* ouzel::Engine::getInput</definition>
+        <argsstring>() const</argsstring>
+        <name>getInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="51" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1aad66ac80a6e0621243848539235a475b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/d1e/classouzel_1_1_localization" kindref="compound">Localization</ref> *</type>
+        <definition>Localization* ouzel::Engine::getLocalization</definition>
+        <argsstring>()</argsstring>
+        <name>getLocalization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="52" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a00e773c4380e712df5be07d61dc421b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/daa/classouzel_1_1network_1_1_network" kindref="compound">network::Network</ref> *</type>
+        <definition>network::Network* ouzel::Engine::getNetwork</definition>
+        <argsstring>()</argsstring>
+        <name>getNetwork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="53" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a4674ef02821063576ae02eb2a790b640" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref> &amp;</type>
+        <definition>const INI&amp; ouzel::Engine::getDefaultSettings</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="55" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a2cb8844d679773ed4e4cec1d6e00600b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref> &amp;</type>
+        <definition>const INI&amp; ouzel::Engine::getUserSettings</definition>
+        <argsstring>() const</argsstring>
+        <name>getUserSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="56" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ace97ca1bd61b4481512df954043a7173" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int ouzel::Engine::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplementedby refid="dc/dde/classouzel_1_1_engine_rasp_1ac40bd81e51620bed3c20be02bb77c7cd">run</reimplementedby>
+        <reimplementedby refid="d6/da4/classouzel_1_1_engine_linux_1a61cf0708f1afbb0e46d279685e3fc3d8">run</reimplementedby>
+        <reimplementedby refid="dd/d61/classouzel_1_1_engine_em_1a165d5b4afb33c1df7a0461642d5f21c8">run</reimplementedby>
+        <reimplementedby refid="d8/d7a/classouzel_1_1_engine_win_1aeb6ba27706b48461b63f5fce82d86ee8">run</reimplementedby>
+        <reimplementedby refid="d5/d85/classouzel_1_1_engine_t_v_o_s_1a0a9fda459eee6244e8e392496f4210a0">run</reimplementedby>
+        <reimplementedby refid="d2/d0f/classouzel_1_1_engine_mac_o_s_1a828d7844837b345db90a2cd1cd03a18f">run</reimplementedby>
+        <reimplementedby refid="d1/d83/classouzel_1_1_engine_i_o_s_1aa40fb2a74cfd6c976989be507bbc0edc">run</reimplementedby>
+        <reimplementedby refid="d4/d64/classouzel_1_1_engine_android_1a82210e53131e2141a33a52806d70dbab">run</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="58" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="411" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ac88341b8e464128023bfbe479e91eef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="59" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="416" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a6701064cf189aa073b715f9d980126d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="60" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="437" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a0b456a370c3999a730ec48a0ea1e3dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::resume</definition>
+        <argsstring>()</argsstring>
+        <name>resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="61" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="449" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1aaadea2586a266edea6b866d2a3c25fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::exit</definition>
+        <argsstring>()</argsstring>
+        <name>exit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="62" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="466" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ae915ba92b71f6e4e389a5ca4e6c7aad4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Engine::isPaused</definition>
+        <argsstring>() const</argsstring>
+        <name>isPaused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="64" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1aa08c106d7a2fbf6c6036702c39eff5b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Engine::isActive</definition>
+        <argsstring>() const</argsstring>
+        <name>isActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="65" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a8dff5d612aaed0e93d3953d41dbf8d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::scheduleUpdate</definition>
+        <argsstring>(UpdateCallback *callback)</argsstring>
+        <name>scheduleUpdate</name>
+        <param>
+          <type><ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref> *</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="67" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="583" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a0886275aec9b9cbdd19c005dac8242ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::unscheduleUpdate</definition>
+        <argsstring>(UpdateCallback *callback)</argsstring>
+        <name>unscheduleUpdate</name>
+        <param>
+          <type><ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref> *</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="68" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="602" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1ad779a29310375b05ccfd85ed9a10e002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="70" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="489" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1aae2d5b256db28e6a2214796776fb9484" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ouzel::Engine::executeOnMainThread</definition>
+        <argsstring>(const std::function&lt; void(void)&gt; &amp;func)=0</argsstring>
+        <name>executeOnMainThread</name>
+        <reimplementedby refid="dc/dde/classouzel_1_1_engine_rasp_1a582a70ac8eafd7b7f0cfe42d48e41186">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="d6/da4/classouzel_1_1_engine_linux_1a0a6a8cb64d468d5e8f93c7375ba54942">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="d8/d7a/classouzel_1_1_engine_win_1a5ae8d120b5f8479fffb17be6fede46d2">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="d5/d85/classouzel_1_1_engine_t_v_o_s_1a40e6f2936dcdc642dff5937ebce6c25e">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="d2/d0f/classouzel_1_1_engine_mac_o_s_1a5ddbcc670590710432c8d22b88ca9527">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="d1/d83/classouzel_1_1_engine_i_o_s_1a8b8f90a60006b99a724104f8133ba46b">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="dd/d61/classouzel_1_1_engine_em_1ae2d3e781efdafd02a7929653950bce30">executeOnMainThread</reimplementedby>
+        <reimplementedby refid="d4/d64/classouzel_1_1_engine_android_1a9a289112a31871a2c0ea1aeba7f9a29e">executeOnMainThread</reimplementedby>
+        <param>
+          <type>const std::function&lt; void(void)&gt; &amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a77a33a33e2921611df5ded3646700c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Engine::openURL</definition>
+        <argsstring>(const std::string &amp;url)</argsstring>
+        <name>openURL</name>
+        <reimplementedby refid="d6/da4/classouzel_1_1_engine_linux_1aa86fd7e49ef69de01a20a0499fc52123">openURL</reimplementedby>
+        <reimplementedby refid="d8/d7a/classouzel_1_1_engine_win_1a07fc7d6355066a5a5252b7f85a4cf499">openURL</reimplementedby>
+        <reimplementedby refid="d5/d85/classouzel_1_1_engine_t_v_o_s_1a6948a0f1a54a5a5385da31bd67b0db45">openURL</reimplementedby>
+        <reimplementedby refid="d2/d0f/classouzel_1_1_engine_mac_o_s_1a591abc28d9ad0421e9d1acc0b4364830">openURL</reimplementedby>
+        <reimplementedby refid="d1/d83/classouzel_1_1_engine_i_o_s_1a2aa09ccc97749176bdcc6b8e804b7afe">openURL</reimplementedby>
+        <reimplementedby refid="dd/d61/classouzel_1_1_engine_em_1a0dd2348ffefe28514850ce7331b883da">openURL</reimplementedby>
+        <reimplementedby refid="d4/d64/classouzel_1_1_engine_android_1ad793a109a52c301f500fdd88995ccaad">openURL</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="74" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="619" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1acb3c1c554e41ec294958d24210932c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::setScreenSaverEnabled</definition>
+        <argsstring>(bool newScreenSaverEnabled)</argsstring>
+        <name>setScreenSaverEnabled</name>
+        <reimplementedby refid="d6/da4/classouzel_1_1_engine_linux_1ae36ed4c5bfbaa0f6e9d5c92234b5aae7">setScreenSaverEnabled</reimplementedby>
+        <reimplementedby refid="d5/d85/classouzel_1_1_engine_t_v_o_s_1a74238ea6e249fcb7230e0a4922a906d7">setScreenSaverEnabled</reimplementedby>
+        <reimplementedby refid="d2/d0f/classouzel_1_1_engine_mac_o_s_1aa13a57726086cdc3da9511714b257d87">setScreenSaverEnabled</reimplementedby>
+        <reimplementedby refid="d1/d83/classouzel_1_1_engine_i_o_s_1a315f0338e9b01addfe13220568eee324">setScreenSaverEnabled</reimplementedby>
+        <reimplementedby refid="d4/d64/classouzel_1_1_engine_android_1af4b869974371e642b6ee17e762a2a2c2">setScreenSaverEnabled</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>newScreenSaverEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="76" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="624" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a95520a921e6fbc61ea4678db38e5b307" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Engine::isScreenSaverEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isScreenSaverEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="77" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a158851279a30104f0cef4422766ae724" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Engine::setCurrentThreadName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>setCurrentThreadName</name>
+        <reimplementedby refid="dc/dde/classouzel_1_1_engine_rasp_1a5a4ebe04f34d8e0b38e8f8a6d5d323af">setCurrentThreadName</reimplementedby>
+        <reimplementedby refid="d8/d7a/classouzel_1_1_engine_win_1a437fc5ada9ca72f5e33a0f891a4923d3">setCurrentThreadName</reimplementedby>
+        <reimplementedby refid="d6/da4/classouzel_1_1_engine_linux_1aeba9d486d3ffce981256e9095af10a8c">setCurrentThreadName</reimplementedby>
+        <reimplementedby refid="d5/d85/classouzel_1_1_engine_t_v_o_s_1af6dfb27ad441ef654f70ba403da91e94">setCurrentThreadName</reimplementedby>
+        <reimplementedby refid="d2/d0f/classouzel_1_1_engine_mac_o_s_1a01f838675c6c614806d9ab5ac88b83ee">setCurrentThreadName</reimplementedby>
+        <reimplementedby refid="d1/d83/classouzel_1_1_engine_i_o_s_1a0bf7ca09d96a433cd3c7ed34fc097605">setCurrentThreadName</reimplementedby>
+        <reimplementedby refid="d4/d64/classouzel_1_1_engine_android_1a75ad433251a979e15352c0351026a389">setCurrentThreadName</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="79" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="629" bodyend="632"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d7/d05/classouzel_1_1_engine_1a552d61e78f4c2d6592eba36692d723d2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::Engine::main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <reimplementedby refid="d2/d0f/classouzel_1_1_engine_mac_o_s_1afe59a031dc02229b8274e09b1183d23d">main</reimplementedby>
+        <reimplementedby refid="d4/d64/classouzel_1_1_engine_android_1a116432688c96b8e09efbcad937094b13">main</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="82" column="1" bodyfile="ouzel/core/Engine.cpp" bodystart="557" bodyend="581"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="486">
+        <label>ouzel::EngineTVOS</label>
+        <link refid="d5/d85/classouzel_1_1_engine_t_v_o_s"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>ouzel::EngineAndroid</label>
+        <link refid="d4/d64/classouzel_1_1_engine_android"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>ouzel::EngineRasp</label>
+        <link refid="dc/dde/classouzel_1_1_engine_rasp"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="478">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="487">
+        <label>ouzel::EngineWin</label>
+        <link refid="d8/d7a/classouzel_1_1_engine_win"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>ouzel::EngineIOS</label>
+        <link refid="d1/d83/classouzel_1_1_engine_i_o_s"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="483">
+        <label>ouzel::EngineLinux</label>
+        <link refid="d6/da4/classouzel_1_1_engine_linux"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>ouzel::EngineEm</label>
+        <link refid="dd/d61/classouzel_1_1_engine_em"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="484">
+        <label>ouzel::EngineMacOS</label>
+        <link refid="d2/d0f/classouzel_1_1_engine_mac_o_s"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="492">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="490">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="495">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+        <childnode refid="490" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="491" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="492" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="493" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="494" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="495" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="496" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="494">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="491">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/Engine.hpp" line="34" column="1" bodyfile="ouzel/core/Engine.hpp" bodystart="33" bodyend="118"/>
+    <listofallmembers>
+      <member refid="d7/d05/classouzel_1_1_engine_1a51908f86ce75bbfc356be1da51f77230" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>active</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a359a05deb25916fdee64c47ab578eec4" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>args</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ad8e77ee1311e0bec60e750f7964a37f1" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>audio</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ac972f61749256f6298267bf6cfdd4d75" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>cache</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a79f55699be81764fd49b4fcc0d4ee38a" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>defaultSettings</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a421b4ef65829d57f08507e98377fced7" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>Engine</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a1b6824feebac52078d5c497076f3c01a" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>eventDispatcher</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1aae2d5b256db28e6a2214796776fb9484" prot="public" virt="pure-virtual"><scope>ouzel::Engine</scope><name>executeOnMainThread</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1aaadea2586a266edea6b866d2a3c25fc8" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>exit</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1aea9bb5a6c1c7fcc4961a78d3f3abbbe4" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>fileSystem</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1afc6f52e7714e78f38bb2a899123d8eb0" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getArgs</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ad4f686bce467a6288e51abef6ddb1d9e" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getAudio</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a79291fff95dd479cf6fbfb0982791d94" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getCache</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a4674ef02821063576ae02eb2a790b640" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getDefaultSettings</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a5f334795ce7557bcc68b162dbbc176f2" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getEventDispatcher</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a8d036be2bfc4cbf806df78731b9cbc5c" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getFileSystem</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a9b983fdc40212032f1aa20a232adc67b" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getInput</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1aad66ac80a6e0621243848539235a475b" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getLocalization</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a00e773c4380e712df5be07d61dc421b2" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getNetwork</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ab73da286a05fc59e139558c5bde01d26" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getRenderer</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a3e024391e81bcc66356204c8bc3f435e" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getSceneManager</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a36237463dcbc5a5813d5008ffae1814a" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getTimer</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a2cb8844d679773ed4e4cec1d6e00600b" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getUserSettings</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a271a73e822203fbe32d91fa0673a4405" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>getWindow</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1adb762d45e8450e7279c6d422c2141aaa" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>init</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a73d9935a0c56be98e80b61f4d100dc88" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>input</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1aa08c106d7a2fbf6c6036702c39eff5b9" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>isActive</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ae915ba92b71f6e4e389a5ca4e6c7aad4" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>isPaused</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a95520a921e6fbc61ea4678db38e5b307" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>isScreenSaverEnabled</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a9e7ea3859d61e64f0f7bcdf6d6dd5a67" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>localization</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a552d61e78f4c2d6592eba36692d723d2" prot="protected" virt="virtual"><scope>ouzel::Engine</scope><name>main</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a5c852f6f094fbd264e9b8cf7657f44da" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>network</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>Noncopyable</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a77a33a33e2921611df5ded3646700c51" prot="public" virt="virtual"><scope>ouzel::Engine</scope><name>openURL</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>operator=</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a6701064cf189aa073b715f9d980126d2" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>pause</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1aafcdacdcc2a772a315fb364069a19d87" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>paused</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ad0c5a49b6d46b8c3801afe9036fe33e9" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>previousUpdateTime</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a93bfa999f85285d6e63e7510a8cf11bb" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>renderer</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a0b456a370c3999a730ec48a0ea1e3dda" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>resume</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ace97ca1bd61b4481512df954043a7173" prot="public" virt="virtual"><scope>ouzel::Engine</scope><name>run</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a355b10923d265c87c8a0112509f4a24a" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>sceneManager</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a8dff5d612aaed0e93d3953d41dbf8d19" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>scheduleUpdate</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ad2f058a4be8bf376a954a75aedef8ada" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>screenSaverEnabled</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a158851279a30104f0cef4422766ae724" prot="public" virt="virtual"><scope>ouzel::Engine</scope><name>setCurrentThreadName</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1acb3c1c554e41ec294958d24210932c7f" prot="public" virt="virtual"><scope>ouzel::Engine</scope><name>setScreenSaverEnabled</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ac88341b8e464128023bfbe479e91eef4" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>start</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a9d498f37f7b4adbe9f0edafd37d4dac5" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>timer</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a0886275aec9b9cbdd19c005dac8242ef" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>unscheduleUpdate</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ad779a29310375b05ccfd85ed9a10e002" prot="public" virt="non-virtual"><scope>ouzel::Engine</scope><name>update</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a4adc37dd6b0cfb942b0ebc0c911e3983" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>updateCallbackAddSet</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a59d702378f6b67494ee5df0b4a5dc5af" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>updateCallbackDeleteSet</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ae07f773ce8499942a20a2b761f27f9a6" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>updateCallbacks</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a7bf7d6aa62a7b22c78f0025d309e1551" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>userSettings</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1a278cbe023974c5d3051b92a5162c2aeb" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>window</name></member>
+      <member refid="d7/d05/classouzel_1_1_engine_1ab8e83304ffaaf1f7da8d3927ab081507" prot="public" virt="virtual"><scope>ouzel::Engine</scope><name>~Engine</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::Engine</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

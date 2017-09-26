@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d8/d1b/classouzel_1_1_window" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::Window</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <derivedcompoundref refid="d5/d58/classouzel_1_1_window_android" prot="public" virt="non-virtual">ouzel::WindowAndroid</derivedcompoundref>
+    <derivedcompoundref refid="d4/d87/classouzel_1_1_window_em" prot="public" virt="non-virtual">ouzel::WindowEm</derivedcompoundref>
+    <derivedcompoundref refid="d7/d94/classouzel_1_1_window_i_o_s" prot="public" virt="non-virtual">ouzel::WindowIOS</derivedcompoundref>
+    <derivedcompoundref refid="d5/d04/classouzel_1_1_window_linux" prot="public" virt="non-virtual">ouzel::WindowLinux</derivedcompoundref>
+    <derivedcompoundref refid="d9/d4b/classouzel_1_1_window_mac_o_s" prot="public" virt="non-virtual">ouzel::WindowMacOS</derivedcompoundref>
+    <derivedcompoundref refid="d6/dc9/classouzel_1_1_window_rasp" prot="public" virt="non-virtual">ouzel::WindowRasp</derivedcompoundref>
+    <derivedcompoundref refid="dc/dd2/classouzel_1_1_window_t_v_o_s" prot="public" virt="non-virtual">ouzel::WindowTVOS</derivedcompoundref>
+    <derivedcompoundref refid="d7/d51/classouzel_1_1_window_win" prot="public" virt="non-virtual">ouzel::WindowWin</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1ae01cf2d3162dd486a39acaff5c4aa042" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::Window::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="17" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1a3c487ca6b5af8f46e09636376a14c6a7" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::Window::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="74" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1abd90ff70b1834deb9a2c83ce622a01ad" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::Window::resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="75" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1a63deeb1097c3b0021576c09ff3636191" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::Window::resizable</definition>
+        <argsstring></argsstring>
+        <name>resizable</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="76" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1a17f68cda75bbad0d970c8a57df531541" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::Window::fullscreen</definition>
+        <argsstring></argsstring>
+        <name>fullscreen</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="77" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1aea768eea343215a5ec62501979806d4b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::Window::exclusiveFullscreen</definition>
+        <argsstring></argsstring>
+        <name>exclusiveFullscreen</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="78" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1aa5bdcbc27c08b7c50d1a2e248e7a75e2" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::Window::highDpi</definition>
+        <argsstring></argsstring>
+        <name>highDpi</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="79" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1afb859b57c3ae14c44d53c3c546d52694" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::Window::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="81" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d1b/classouzel_1_1_window_1a68c115220cc1857428b0bb32971af521" prot="protected" static="no" mutable="no">
+        <type><ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">ouzel::EventHandler</ref></type>
+        <definition>ouzel::EventHandler ouzel::Window::eventHandler</definition>
+        <argsstring></argsstring>
+        <name>eventHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="83" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1adc48d05ced7fa85abe0a4709b294f6b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="19" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a139142d38ef011f497d50dac1111daec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::Window::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <reimplementedby refid="d7/d51/classouzel_1_1_window_win_1aefa3a173658215cdf4291d132b806288">close</reimplementedby>
+        <reimplementedby refid="d5/d04/classouzel_1_1_window_linux_1a037503808ac9f58527ec6bd1bc636852">close</reimplementedby>
+        <reimplementedby refid="d9/d4b/classouzel_1_1_window_mac_o_s_1ab774fd4b8507b0ff9b1afec73b21a416">close</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="21" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1aa6f2197bfdc62bcc8559e0449f8c2f3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>const Size2&amp; ouzel::Window::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="23" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1aa7222eeeb3acc4dfa427c6a28c19fe45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::Window::setSize</definition>
+        <argsstring>(const Size2 &amp;newSize)</argsstring>
+        <name>setSize</name>
+        <reimplementedby refid="d4/d87/classouzel_1_1_window_em_1a506aa0b84db6dd25346c832f033f2048">setSize</reimplementedby>
+        <reimplementedby refid="d7/d51/classouzel_1_1_window_win_1a5f1549afb3bd82f8f8359f223567a0f1">setSize</reimplementedby>
+        <reimplementedby refid="d5/d04/classouzel_1_1_window_linux_1a02f904cab3f3f0c342ff4aebb328af9e">setSize</reimplementedby>
+        <reimplementedby refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a9607c17aa58c3ed316212f21104da973">setSize</reimplementedby>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="24" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="43" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a22b32f9cd5ec64b3579b92b575203891" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>const Size2&amp; ouzel::Window::getResolution</definition>
+        <argsstring>() const</argsstring>
+        <name>getResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="26" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1ab0162288deff08c652e683e6dc54eef4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Window::getResizable</definition>
+        <argsstring>() const</argsstring>
+        <name>getResizable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="28" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a798cd05b1a72475dcb5ae55101e453d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::Window::setFullscreen</definition>
+        <argsstring>(bool newFullscreen)</argsstring>
+        <name>setFullscreen</name>
+        <reimplementedby refid="d7/d51/classouzel_1_1_window_win_1ad5048c3a3e9f10d44324863694880985">setFullscreen</reimplementedby>
+        <reimplementedby refid="d5/d04/classouzel_1_1_window_linux_1a792a28cbf8d1b992a15da6bc67fadfaf">setFullscreen</reimplementedby>
+        <reimplementedby refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a7a9625e265616a48ce94b4e21f900644">setFullscreen</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>newFullscreen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="30" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="61" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a207444cc25ab6f36192f1431d19c06d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Window::isFullscreen</definition>
+        <argsstring>() const</argsstring>
+        <name>isFullscreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="31" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a33f83ab582753b0f9c248792257a61da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Window::isExclusiveFullscreen</definition>
+        <argsstring>() const</argsstring>
+        <name>isExclusiveFullscreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="33" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a9a95052fd74ba578ebaf405500f23867" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; ouzel::Window::getTitle</definition>
+        <argsstring>() const</argsstring>
+        <name>getTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="35" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1ae1fcaed6f25821914a75f4912fe7be13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::Window::setTitle</definition>
+        <argsstring>(const std::string &amp;newTitle)</argsstring>
+        <name>setTitle</name>
+        <reimplementedby refid="d7/d51/classouzel_1_1_window_win_1a39e0495248ae2e87653d5af1c4eb7a0c">setTitle</reimplementedby>
+        <reimplementedby refid="d5/d04/classouzel_1_1_window_linux_1ac54c9b33fb595db00bd5a5e8dc8cc1c4">setTitle</reimplementedby>
+        <reimplementedby refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a015a7ec058076b0e1b1c1b075aaa2dda">setTitle</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newTitle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="36" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="79" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1ab2d426cf963ee7cb9af889f56e984a1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::Window::convertWindowToNormalizedLocation</definition>
+        <argsstring>(const Vector2 &amp;position) const</argsstring>
+        <name>convertWindowToNormalizedLocation</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="38" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1aec551d3127a5e1c1e5e5e26706c59bce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::Window::convertWindowToNormalizedLocationRelative</definition>
+        <argsstring>(const Vector2 &amp;position) const</argsstring>
+        <name>convertWindowToNormalizedLocationRelative</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="44" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1ab8297edb17e3d37534855059d01a0427" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::Window::convertNormalizedToWindowLocation</definition>
+        <argsstring>(const Vector2 &amp;position) const</argsstring>
+        <name>convertNormalizedToWindowLocation</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="50" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a2544b4bb0659eff6d63489ded8625293" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::Window::convertNormalizedToWindowLocationRelative</definition>
+        <argsstring>(const Vector2 &amp;position) const</argsstring>
+        <name>convertNormalizedToWindowLocationRelative</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="56" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a7a806725cbd12cdccf6668e72fa51183" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Window::Window</definition>
+        <argsstring>()</argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="63" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a4344916f69e2595e1a43a0dbfb9bbbfb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Window::init</definition>
+        <argsstring>(const Size2 &amp;newSize, bool newResizable, bool newFullscreen, bool newExclusiveFullscreen, const std::string &amp;newTitle, bool newHighDpi, bool depth)</argsstring>
+        <name>init</name>
+        <reimplementedby refid="d6/dc9/classouzel_1_1_window_rasp_1ac562f1345743f001b2a6458c51e19ec7">init</reimplementedby>
+        <reimplementedby refid="d4/d87/classouzel_1_1_window_em_1a5983e6b2c81f78d839ed5f112cbc6971">init</reimplementedby>
+        <reimplementedby refid="d5/d58/classouzel_1_1_window_android_1a5d08d1e6c292712468a76ecc47d7e519">init</reimplementedby>
+        <reimplementedby refid="d5/d04/classouzel_1_1_window_linux_1a25a22364a21a4141286450b6fc4b3107">init</reimplementedby>
+        <reimplementedby refid="d7/d51/classouzel_1_1_window_win_1a28399c3781d31b0778be0f96eb97fa51">init</reimplementedby>
+        <reimplementedby refid="dc/dd2/classouzel_1_1_window_t_v_o_s_1a0e36e98798870b59c29644eb89fe38db">init</reimplementedby>
+        <reimplementedby refid="d7/d94/classouzel_1_1_window_i_o_s_1a49c560d471a54a0621cbbae13fd1bc61">init</reimplementedby>
+        <reimplementedby refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a2bd5da331b86f7fcb9db1e93715a1cdb">init</reimplementedby>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newResizable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newFullscreen</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newExclusiveFullscreen</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newTitle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newHighDpi</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="64" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="21" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d1b/classouzel_1_1_window_1a75b3f566f04909b0794260c162b5784c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Window::handleWindowChange</definition>
+        <argsstring>(Event::Type type, const WindowEvent &amp;event)</argsstring>
+        <name>handleWindowChange</name>
+        <param>
+          <type>Event::Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Window.hpp" line="72" column="1" bodyfile="ouzel/core/Window.cpp" bodystart="97" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1993">
+        <label>ouzel::WindowAndroid</label>
+        <link refid="d5/d58/classouzel_1_1_window_android"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1997">
+        <label>ouzel::WindowMacOS</label>
+        <link refid="d9/d4b/classouzel_1_1_window_mac_o_s"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>ouzel::WindowTVOS</label>
+        <link refid="dc/dd2/classouzel_1_1_window_t_v_o_s"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1994">
+        <label>ouzel::WindowEm</label>
+        <link refid="d4/d87/classouzel_1_1_window_em"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1998">
+        <label>ouzel::WindowRasp</label>
+        <link refid="d6/dc9/classouzel_1_1_window_rasp"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1995">
+        <label>ouzel::WindowIOS</label>
+        <link refid="d7/d94/classouzel_1_1_window_i_o_s"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2000">
+        <label>ouzel::WindowWin</label>
+        <link refid="d7/d51/classouzel_1_1_window_win"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1992">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1991">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="1992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1996">
+        <label>ouzel::WindowLinux</label>
+        <link refid="d5/d04/classouzel_1_1_window_linux"/>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2005">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="2003">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="2004" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="2004">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="2002" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2002">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="2001">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="2002" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2003" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="2005" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/Window.hpp" line="16" column="1" bodyfile="ouzel/core/Window.hpp" bodystart="15" bodyend="84"/>
+    <listofallmembers>
+      <member refid="d8/d1b/classouzel_1_1_window_1a139142d38ef011f497d50dac1111daec" prot="public" virt="virtual"><scope>ouzel::Window</scope><name>close</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ab8297edb17e3d37534855059d01a0427" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>convertNormalizedToWindowLocation</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a2544b4bb0659eff6d63489ded8625293" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>convertNormalizedToWindowLocationRelative</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ab2d426cf963ee7cb9af889f56e984a1b" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>convertWindowToNormalizedLocation</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aec551d3127a5e1c1e5e5e26706c59bce" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>convertWindowToNormalizedLocationRelative</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ae01cf2d3162dd486a39acaff5c4aa042" prot="private" virt="non-virtual"><scope>ouzel::Window</scope><name>Engine</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a68c115220cc1857428b0bb32971af521" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>eventHandler</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aea768eea343215a5ec62501979806d4b" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>exclusiveFullscreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a17f68cda75bbad0d970c8a57df531541" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>fullscreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ab0162288deff08c652e683e6dc54eef4" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>getResizable</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a22b32f9cd5ec64b3579b92b575203891" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>getResolution</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aa6f2197bfdc62bcc8559e0449f8c2f3e" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>getSize</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a9a95052fd74ba578ebaf405500f23867" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>getTitle</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a75b3f566f04909b0794260c162b5784c" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>handleWindowChange</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aa5bdcbc27c08b7c50d1a2e248e7a75e2" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>highDpi</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a4344916f69e2595e1a43a0dbfb9bbbfb" prot="protected" virt="virtual"><scope>ouzel::Window</scope><name>init</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a33f83ab582753b0f9c248792257a61da" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>isExclusiveFullscreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a207444cc25ab6f36192f1431d19c06d9" prot="public" virt="non-virtual"><scope>ouzel::Window</scope><name>isFullscreen</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>operator=</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a63deeb1097c3b0021576c09ff3636191" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>resizable</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1abd90ff70b1834deb9a2c83ce622a01ad" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>resolution</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a798cd05b1a72475dcb5ae55101e453d6" prot="public" virt="virtual"><scope>ouzel::Window</scope><name>setFullscreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aa7222eeeb3acc4dfa427c6a28c19fe45" prot="public" virt="virtual"><scope>ouzel::Window</scope><name>setSize</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ae1fcaed6f25821914a75f4912fe7be13" prot="public" virt="virtual"><scope>ouzel::Window</scope><name>setTitle</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a3c487ca6b5af8f46e09636376a14c6a7" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>size</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1afb859b57c3ae14c44d53c3c546d52694" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>title</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a7a806725cbd12cdccf6668e72fa51183" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>Window</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::Window</scope><name>~Noncopyable</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1adc48d05ced7fa85abe0a4709b294f6b3" prot="public" virt="virtual"><scope>ouzel::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

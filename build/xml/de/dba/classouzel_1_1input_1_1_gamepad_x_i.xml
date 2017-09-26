@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/dba/classouzel_1_1input_1_1_gamepad_x_i" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::GamepadXI</compoundname>
+    <basecompoundref refid="d8/d28/classouzel_1_1input_1_1_gamepad" prot="public" virt="non-virtual">ouzel::input::Gamepad</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a88070fea0931a4f793b1b0114ccd0b61" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::GamepadXI::InputWin</definition>
+        <argsstring></argsstring>
+        <name>InputWin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="18" column="1" bodyfile="ouzel/input/windows/GamepadXI.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ad6291466b6cbae381a49ec07e92753d7" prot="protected" static="no" mutable="no">
+        <type>XINPUT_STATE</type>
+        <definition>XINPUT_STATE ouzel::input::GamepadXI::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="33" column="1" bodyfile="ouzel/input/windows/GamepadXI.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a88779104d8d2f96f2acfa018c0a70e88" prot="protected" static="no" mutable="no">
+        <type>XINPUT_VIBRATION</type>
+        <definition>XINPUT_VIBRATION ouzel::input::GamepadXI::vibration</definition>
+        <argsstring></argsstring>
+        <name>vibration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="34" column="1" bodyfile="ouzel/input/windows/GamepadXI.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a157991527d6c997011c3264a7bf81bc9" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD ouzel::input::GamepadXI::playerIndex</definition>
+        <argsstring></argsstring>
+        <name>playerIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="35" column="1" bodyfile="ouzel/input/windows/GamepadXI.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1acea9707b78d26435393a30c0d07d04aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadXI::update</definition>
+        <argsstring>(const XINPUT_STATE &amp;newState)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const XINPUT_STATE &amp;</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="20" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="23" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ac1329a17d09bb6e64df3076db5a72e89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t ouzel::input::GamepadXI::getPlayerIndex</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPlayerIndex</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1acd88f1c3f351a61e79cf1355e74d9ef0">getPlayerIndex</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="22" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ab9f70cc117efe33fc216fad4a14cba2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadXI::setVibration</definition>
+        <argsstring>(Motor motor, float speed) override</argsstring>
+        <name>setVibration</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a199730ee4f3abd9ff78e4febbc55a36a">setVibration</reimplements>
+        <param>
+          <type>Motor</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="24" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="114" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ac55ab5b9e1ad6173f56358254a3aeaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ouzel::input::GamepadXI::getVibration</definition>
+        <argsstring>(Motor motor) override</argsstring>
+        <name>getVibration</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a9b444534c43ec30f8ec7afd453df56b2">getVibration</reimplements>
+        <param>
+          <type>Motor</type>
+          <declname>motor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="25" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="133" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a3476068b3738814f31abd9f9737d0665" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::GamepadXI::GamepadXI</definition>
+        <argsstring>(DWORD aPlayerIndex)</argsstring>
+        <name>GamepadXI</name>
+        <param>
+          <type>DWORD</type>
+          <declname>aPlayerIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="28" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a48e17b6ee04087db093a03b93eb7276e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadXI::checkThumbAxis</definition>
+        <argsstring>(SHORT oldValue, SHORT newValue, GamepadButton negativeButton, GamepadButton positiveButton)</argsstring>
+        <name>checkThumbAxis</name>
+        <param>
+          <type>SHORT</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>SHORT</type>
+          <declname>newValue</declname>
+        </param>
+        <param>
+          <type>GamepadButton</type>
+          <declname>negativeButton</declname>
+        </param>
+        <param>
+          <type>GamepadButton</type>
+          <declname>positiveButton</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="30" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="75" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1afe710c86fced5e72100b65b18767d5b2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadXI::checkButton</definition>
+        <argsstring>(const XINPUT_STATE &amp;newState, WORD mask, GamepadButton button)</argsstring>
+        <name>checkButton</name>
+        <param>
+          <type>const XINPUT_STATE &amp;</type>
+          <declname>newState</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>GamepadButton</type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.hpp" line="31" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="105" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="825">
+        <label>ouzel::input::GamepadXI</label>
+        <link refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i"/>
+        <childnode refid="826" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="826">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="827" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="828">
+        <label>ouzel::input::GamepadXI</label>
+        <link refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i"/>
+        <childnode refid="829" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="830" relation="public-inheritance">
+        </childnode>
+        <childnode refid="831" relation="usage">
+          <edgelabel>buttonStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="831">
+        <label>ouzel::input::Gamepad::ButtonState</label>
+        <link refid="d3/d17/structouzel_1_1input_1_1_gamepad_1_1_button_state"/>
+      </node>
+      <node id="830">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/windows/GamepadXI.hpp" line="17" column="1" bodyfile="ouzel/input/windows/GamepadXI.hpp" bodystart="16" bodyend="36"/>
+    <listofallmembers>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a2295d84f9fac9db4bafb818bf3b403fe" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>attached</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a33f6a0816f68e73ef79b56fd041d384d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>buttonStates</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1afe710c86fced5e72100b65b18767d5b2" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>checkButton</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a48e17b6ee04087db093a03b93eb7276e" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>checkThumbAxis</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1af7daf54f7cff20e2cc71149c45bc4867" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>Gamepad</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a3476068b3738814f31abd9f9737d0665" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>GamepadXI</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1aa4cd0132412962b9cea5ab6d71c6a000" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>getButtonState</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1affc4dd83604d2e21d345142db7130f74" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>getName</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ac1329a17d09bb6e64df3076db5a72e89" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>getPlayerIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a271250569ac0029f1006ad9539763db9" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>getProductId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1aaa292d08f201e30afe2baacf4cf3c22c" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>getVendorId</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ac55ab5b9e1ad6173f56358254a3aeaac" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>getVibration</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a6984982f11f2ad87cf3d170440b76d71" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>handleButtonValueChange</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a88070fea0931a4f793b1b0114ccd0b61" prot="private" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>InputWin</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a65c3d0d9377fb053b10c4c385b0cdf2c" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>isAbsoluteDpadValues</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1808d1a24dfc38c9a9e3dbd8225260b0" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>isAttached</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a58ccc44c1f42bb23e9dc674bd5c32e86" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>Motor</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1b2c52a6d8034d997fcd5a4bdf501e93" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>name</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>operator=</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a157991527d6c997011c3264a7bf81bc9" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>playerIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1ae78926b1cbb568ad753eea74a3df5d4d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>productId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1e1c5e0df9442f389c9154536bb15a29" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>setAbsoluteDpadValues</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a347b2b078234eea22d2c88f7e0bfc0c2" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>setPlayerIndex</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ab9f70cc117efe33fc216fad4a14cba2d" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>setVibration</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1ad6291466b6cbae381a49ec07e92753d7" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>state</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1acea9707b78d26435393a30c0d07d04aa" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>update</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a6a21706824c7938be713b861905f75b1" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>vendorId</name></member>
+      <member refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i_1a88779104d8d2f96f2acfa018c0a70e88" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>vibration</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a73f16e3aa10e948c8b439e5334a2fdeb" prot="public" virt="virtual"><scope>ouzel::input::GamepadXI</scope><name>~Gamepad</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadXI</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

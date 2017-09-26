@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d62/_buffer_resource_8hpp" kind="file" language="C++">
+    <compoundname>BufferResource.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">mutex</includes>
+    <includes refid="d1/d9d/_resource_8hpp" local="yes">graphics/Resource.hpp</includes>
+    <includes refid="dd/df1/_buffer_8hpp" local="yes">graphics/Buffer.hpp</includes>
+    <includedby refid="dc/dcf/_buffer_8cpp" local="yes">ouzel/graphics/Buffer.cpp</includedby>
+    <includedby refid="d0/d6d/_buffer_resource_8cpp" local="yes">ouzel/graphics/BufferResource.cpp</includedby>
+    <includedby refid="d1/d13/_buffer_resource_empty_8hpp" local="yes">ouzel/graphics/empty/BufferResourceEmpty.hpp</includedby>
+    <includedby refid="d5/d9f/_mesh_buffer_resource_8cpp" local="yes">ouzel/graphics/MeshBufferResource.cpp</includedby>
+    <includedby refid="da/d84/_renderer_8cpp" local="yes">ouzel/graphics/Renderer.cpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <includedby refid="d0/d05/_particle_system_8cpp" local="yes">ouzel/scene/ParticleSystem.cpp</includedby>
+    <includedby refid="d8/d9a/_shape_renderer_8cpp" local="yes">ouzel/scene/ShapeRenderer.cpp</includedby>
+    <incdepgraph>
+      <node id="6595">
+        <label>ouzel/graphics/BufferResource.hpp</label>
+        <link refid="d9/d62/_buffer_resource_8hpp"/>
+        <childnode refid="6596" relation="include">
+        </childnode>
+        <childnode refid="6597" relation="include">
+        </childnode>
+        <childnode refid="6598" relation="include">
+        </childnode>
+        <childnode refid="6600" relation="include">
+        </childnode>
+      </node>
+      <node id="6601">
+        <label>cstdint</label>
+      </node>
+      <node id="6600">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="6601" relation="include">
+        </childnode>
+        <childnode refid="6596" relation="include">
+        </childnode>
+        <childnode refid="6599" relation="include">
+        </childnode>
+      </node>
+      <node id="6596">
+        <label>vector</label>
+      </node>
+      <node id="6597">
+        <label>mutex</label>
+      </node>
+      <node id="6599">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="6598">
+        <label>graphics/Resource.hpp</label>
+        <link refid="d1/d9d/_resource_8hpp_source"/>
+        <childnode refid="6599" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6602">
+        <label>ouzel/graphics/BufferResource.hpp</label>
+        <link refid="d9/d62/_buffer_resource_8hpp"/>
+        <childnode refid="6603" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+      </node>
+      <node id="6604">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="6603">
+        <label>ouzel/graphics/empty/BufferResourceEmpty.hpp</label>
+        <link refid="d1/d13/_buffer_resource_empty_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" prot="public">ouzel::graphics::BufferResource</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d7/dbf/namespaceouzel_1_1graphics">ouzel::graphics</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Resource.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Buffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">graphics</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Renderer;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" kindref="compound">BufferResource</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d5/d7c/classouzel_1_1graphics_1_1_resource" kindref="compound">Resource</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="da/d6d/classouzel_1_1graphics_1_1_renderer" kindref="compound">Renderer</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" kindref="compound">BufferResource</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init(Buffer::Usage<sp/>newUsage,<sp/>uint32_t<sp/>newFlags<sp/>=<sp/>0,<sp/>uint32_t<sp/>newSize<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init(Buffer::Usage<sp/>newUsage,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint8_t&gt;&amp;<sp/>newData,<sp/>uint32_t<sp/>newFlags<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint8_t&gt;&amp;<sp/>newData);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>getFlags()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flags;<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Buffer::Usage<sp/>getUsage()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>usage;<sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>getSize()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data.size());<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" kindref="compound">BufferResource</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>data;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Buffer::Usage<sp/>usage;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>flags<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>graphics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/graphics/BufferResource.hpp"/>
+  </compounddef>
+</doxygen>

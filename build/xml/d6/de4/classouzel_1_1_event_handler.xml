@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d6/de4/classouzel_1_1_event_handler" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::EventHandler</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a9f2870fc85a82572d9f05b86ea7370ed" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::EventHandler::EventDispatcher</definition>
+        <argsstring></argsstring>
+        <name>EventDispatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="16" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a3f7d936180fd0dc1e56e6317505164f4" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t ouzel::EventHandler::PRIORITY_MAX</definition>
+        <argsstring></argsstring>
+        <name>PRIORITY_MAX</name>
+        <initializer>= 0x1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="18" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1af50b90533574715d829c6ed8a03e6618" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="d5/dcd/structouzel_1_1_keyboard_event" kindref="compound">KeyboardEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const KeyboardEvent&amp;)&gt; ouzel::EventHandler::keyboardHandler</definition>
+        <argsstring></argsstring>
+        <name>keyboardHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="25" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a791e3bc7a07b817e7134e5d46fccb689" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="d8/d08/structouzel_1_1_mouse_event" kindref="compound">MouseEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const MouseEvent&amp;)&gt; ouzel::EventHandler::mouseHandler</definition>
+        <argsstring></argsstring>
+        <name>mouseHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="26" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1aadf51b88e3e2b2904117a3ce922d4f07" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="db/df9/structouzel_1_1_touch_event" kindref="compound">TouchEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const TouchEvent&amp;)&gt; ouzel::EventHandler::touchHandler</definition>
+        <argsstring></argsstring>
+        <name>touchHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="27" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1aca64a7848a35f48ed4869e36f2289ecb" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="dc/d9b/structouzel_1_1_gamepad_event" kindref="compound">GamepadEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const GamepadEvent&amp;)&gt; ouzel::EventHandler::gamepadHandler</definition>
+        <argsstring></argsstring>
+        <name>gamepadHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="28" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a1bed504b2e7c6735194cea747e6a8b29" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const WindowEvent&amp;)&gt; ouzel::EventHandler::windowHandler</definition>
+        <argsstring></argsstring>
+        <name>windowHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="29" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a1c68361b8023a9e2ac82b187a4700ff0" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="dd/d10/structouzel_1_1_system_event" kindref="compound">SystemEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const SystemEvent&amp;)&gt; ouzel::EventHandler::systemHandler</definition>
+        <argsstring></argsstring>
+        <name>systemHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="30" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a77468e63af4f80be43dd326aad415168" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="d7/daa/structouzel_1_1_u_i_event" kindref="compound">UIEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const UIEvent&amp;)&gt; ouzel::EventHandler::uiHandler</definition>
+        <argsstring></argsstring>
+        <name>uiHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="31" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a9fcf6b4ea7639faaf921471910b57538" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="dd/dae/structouzel_1_1_animation_event" kindref="compound">AnimationEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const AnimationEvent&amp;)&gt; ouzel::EventHandler::animationHandler</definition>
+        <argsstring></argsstring>
+        <name>animationHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="32" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a584a0903683451f50ceb5c12a38bca25" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="d4/ddc/structouzel_1_1_sound_event" kindref="compound">SoundEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const SoundEvent&amp;)&gt; ouzel::EventHandler::soundHandler</definition>
+        <argsstring></argsstring>
+        <name>soundHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="33" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1a3267316b3eef8afb7bc3f62103e598d9" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(Event::Type, const <ref refid="db/de0/structouzel_1_1_user_event" kindref="compound">UserEvent</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;bool(Event::Type, const UserEvent&amp;)&gt; ouzel::EventHandler::userHandler</definition>
+        <argsstring></argsstring>
+        <name>userHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="34" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1ab5fcb40539954d16fcdfcf81aca58cc3" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t ouzel::EventHandler::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="37" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/de4/classouzel_1_1_event_handler_1aaeedf393d41542731e89bc1e2cc4335e" prot="protected" static="no" mutable="no">
+        <type><ref refid="d3/dfd/classouzel_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref> *</type>
+        <definition>EventDispatcher* ouzel::EventHandler::eventDispatcher</definition>
+        <argsstring></argsstring>
+        <name>eventDispatcher</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="38" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/de4/classouzel_1_1_event_handler_1acf83f122961f0cb743a2bb56963178f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::EventHandler::EventHandler</definition>
+        <argsstring>(int32_t aPriority=0)</argsstring>
+        <name>EventHandler</name>
+        <param>
+          <type>int32_t</type>
+          <declname>aPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="20" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/de4/classouzel_1_1_event_handler_1a2fef260159288b9110a9160ec4b45246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::EventHandler::~EventHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~EventHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="21" column="1" bodyfile="ouzel/events/EventHandler.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/de4/classouzel_1_1_event_handler_1acbe0bd46d4a82c12ea4775a5d1a30395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::EventHandler::remove</definition>
+        <argsstring>()</argsstring>
+        <name>remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventHandler.hpp" line="23" column="1" bodyfile="ouzel/events/EventHandler.cpp" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="646">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="647" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="647">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/EventHandler.hpp" line="15" column="1" bodyfile="ouzel/events/EventHandler.hpp" bodystart="14" bodyend="39"/>
+    <listofallmembers>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a9fcf6b4ea7639faaf921471910b57538" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>animationHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a9f2870fc85a82572d9f05b86ea7370ed" prot="private" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>EventDispatcher</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1aaeedf393d41542731e89bc1e2cc4335e" prot="protected" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>eventDispatcher</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1acf83f122961f0cb743a2bb56963178f0" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>EventHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1aca64a7848a35f48ed4869e36f2289ecb" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>gamepadHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1af50b90533574715d829c6ed8a03e6618" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>keyboardHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a791e3bc7a07b817e7134e5d46fccb689" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>mouseHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1ab5fcb40539954d16fcdfcf81aca58cc3" prot="protected" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>priority</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a3f7d936180fd0dc1e56e6317505164f4" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>PRIORITY_MAX</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1acbe0bd46d4a82c12ea4775a5d1a30395" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>remove</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a584a0903683451f50ceb5c12a38bca25" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>soundHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a1c68361b8023a9e2ac82b187a4700ff0" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>systemHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1aadf51b88e3e2b2904117a3ce922d4f07" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>touchHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a77468e63af4f80be43dd326aad415168" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>uiHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a3267316b3eef8afb7bc3f62103e598d9" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>userHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a1bed504b2e7c6735194cea747e6a8b29" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>windowHandler</name></member>
+      <member refid="d6/de4/classouzel_1_1_event_handler_1a2fef260159288b9110a9160ec4b45246" prot="public" virt="non-virtual"><scope>ouzel::EventHandler</scope><name>~EventHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

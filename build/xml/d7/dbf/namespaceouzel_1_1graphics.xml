@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/dbf/namespaceouzel_1_1graphics" kind="namespace" language="C++">
+    <compoundname>ouzel::graphics</compoundname>
+    <innerclass refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" prot="public">ouzel::graphics::BlendState</innerclass>
+    <innerclass refid="dd/d49/classouzel_1_1graphics_1_1_blend_state_resource" prot="public">ouzel::graphics::BlendStateResource</innerclass>
+    <innerclass refid="df/d2d/classouzel_1_1graphics_1_1_blend_state_resource_empty" prot="public">ouzel::graphics::BlendStateResourceEmpty</innerclass>
+    <innerclass refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" prot="public">ouzel::graphics::Buffer</innerclass>
+    <innerclass refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" prot="public">ouzel::graphics::BufferResource</innerclass>
+    <innerclass refid="d5/d79/classouzel_1_1graphics_1_1_buffer_resource_empty" prot="public">ouzel::graphics::BufferResourceEmpty</innerclass>
+    <innerclass refid="da/d6f/classouzel_1_1graphics_1_1_image_data" prot="public">ouzel::graphics::ImageData</innerclass>
+    <innerclass refid="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b" prot="public">ouzel::graphics::ImageDataSTB</innerclass>
+    <innerclass refid="da/d27/classouzel_1_1graphics_1_1_material" prot="public">ouzel::graphics::Material</innerclass>
+    <innerclass refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer" prot="public">ouzel::graphics::MeshBuffer</innerclass>
+    <innerclass refid="d1/ddd/classouzel_1_1graphics_1_1_mesh_buffer_resource" prot="public">ouzel::graphics::MeshBufferResource</innerclass>
+    <innerclass refid="d7/d4a/classouzel_1_1graphics_1_1_mesh_buffer_resource_empty" prot="public">ouzel::graphics::MeshBufferResourceEmpty</innerclass>
+    <innerclass refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" prot="public">ouzel::graphics::RenderDevice</innerclass>
+    <innerclass refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty" prot="public">ouzel::graphics::RenderDeviceEmpty</innerclass>
+    <innerclass refid="da/d6d/classouzel_1_1graphics_1_1_renderer" prot="public">ouzel::graphics::Renderer</innerclass>
+    <innerclass refid="d5/d7c/classouzel_1_1graphics_1_1_resource" prot="public">ouzel::graphics::Resource</innerclass>
+    <innerclass refid="d4/d6b/classouzel_1_1graphics_1_1_shader" prot="public">ouzel::graphics::Shader</innerclass>
+    <innerclass refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource" prot="public">ouzel::graphics::ShaderResource</innerclass>
+    <innerclass refid="d1/d4f/classouzel_1_1graphics_1_1_shader_resource_empty" prot="public">ouzel::graphics::ShaderResourceEmpty</innerclass>
+    <innerclass refid="d2/d2b/classouzel_1_1graphics_1_1_texture" prot="public">ouzel::graphics::Texture</innerclass>
+    <innerclass refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource" prot="public">ouzel::graphics::TextureResource</innerclass>
+    <innerclass refid="db/db8/classouzel_1_1graphics_1_1_texture_resource_empty" prot="public">ouzel::graphics::TextureResourceEmpty</innerclass>
+    <innerclass refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" prot="public">ouzel::graphics::VertexAttribute</innerclass>
+    <innerclass refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" prot="public">ouzel::graphics::VertexPC</innerclass>
+    <innerclass refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" prot="public">ouzel::graphics::VertexPCT</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="de/ddb/_data_type_8hpp_1a8c33132bf707bf429cff28cce7286b2a" prot="public" static="no">
+        <name>DataType</name>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aae409eb2ba6eb6801f52763ae370c350e" prot="public">
+          <name>BYTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa8c29bb270c6131208e78747a9540f8a5" prot="public">
+          <name>BYTE_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aafcc5c6250fe103082d58df97ac8e4458" prot="public">
+          <name>BYTE_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aaf6769856f60f2c6117ef2968b4d5af90" prot="public">
+          <name>BYTE_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa9c0389cdb943fd7826de2b12b7aad11a" prot="public">
+          <name>UNSIGNED_BYTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aae6c7d24fca8dc0c2fb61b4e33cf8b360" prot="public">
+          <name>UNSIGNED_BYTE_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aac01ea39f6d148f747995def24b894831" prot="public">
+          <name>UNSIGNED_BYTE_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa9cdb0d03161a4f7ba03b85e8d26890a7" prot="public">
+          <name>UNSIGNED_BYTE_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aaa35c2b02966b1563e5bf7b81b8b0cf77" prot="public">
+          <name>SHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aaec4b4c12521e2c49bdbcfff5f9c0d745" prot="public">
+          <name>SHORT_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa0d2ed1a1342cab2f062faf852d923a19" prot="public">
+          <name>SHORT_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa784adb3660148c0a4d0349a62b4d4799" prot="public">
+          <name>SHORT_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa765ef1b950ba8455b8992510ffa56895" prot="public">
+          <name>UNSIGNED_SHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa0dd0c66b689c5ae433b2c93a34432830" prot="public">
+          <name>UNSIGNED_SHORT_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aad09e0b0fbc145e871c3ccc427ab1b895" prot="public">
+          <name>UNSIGNED_SHORT_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aac45ceda28082f4cb5430a52e367b4459" prot="public">
+          <name>UNSIGNED_SHORT_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa5d5cd46919fa987731fb2edefe0f2a0c" prot="public">
+          <name>INTEGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa728a352433d117c894caf1fb436157a7" prot="public">
+          <name>INTEGER_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa6e97be39a66b9fc0d578096371c4b57b" prot="public">
+          <name>INTEGER_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa82ac1dd18694b25ebfa0dd6d13acc33c" prot="public">
+          <name>INTEGER_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa0d43f06f739ff6d3482b2ca04f46f6bd" prot="public">
+          <name>UNSIGNED_INTEGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa89d816cf66f3a2e26af4a4e6ac570271" prot="public">
+          <name>UNSIGNED_INTEGER_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa25448fff13d2277c7050008cde4893fa" prot="public">
+          <name>UNSIGNED_INTEGER_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa6a4e081f619ddc629d42f24c7ea0a682" prot="public">
+          <name>UNSIGNED_INTEGER_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aae738c26bf4ce1037fa81b039a915cbf6" prot="public">
+          <name>FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa6cc51a7ef79dee00536901fdacb8f6ae" prot="public">
+          <name>FLOAT_VECTOR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa151873a69b18430d2b3291b9b74b0c2c" prot="public">
+          <name>FLOAT_VECTOR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aa5a0c03d87d35c77af213b890d486d9d4" prot="public">
+          <name>FLOAT_VECTOR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aad919fb140ceb64acacbe1d4a8bd970d1" prot="public">
+          <name>FLOAT_MATRIX3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a8c33132bf707bf429cff28cce7286b2aaee05050d7191f239c12ef05912fd233d" prot="public">
+          <name>FLOAT_MATRIX4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/DataType.hpp" line="13" column="1" bodyfile="ouzel/graphics/DataType.hpp" bodystart="12" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="d9/d2a/_pixel_format_8hpp_1a64efd07a9bd65d407e2f11f8da11332c" prot="public" static="no">
+        <name>PixelFormat</name>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca5b39c8b553c821e7cddc6da64b5bd2ee" prot="public">
+          <name>DEFAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332caa46933e0c897349b8e07ceb64387e66d" prot="public">
+          <name>A8_UNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca6ee77dd485809c93542e95acf222420c" prot="public">
+          <name>R8_UNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332cafb68704b014646b912f3d2471ce2a53f" prot="public">
+          <name>R8_SNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca99f9bb6daa4c8f9ea6744ca176038180" prot="public">
+          <name>R8_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332cafb3d9b81391ab907186bd39d1e0ec06b" prot="public">
+          <name>R8_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca7b38e5acb78095aade73a5a9737eac04" prot="public">
+          <name>R16_UNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca3b0f40db5c8bdec8cc984a8998650318" prot="public">
+          <name>R16_SNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332cad8187d21ed6dc3072e4c8e819e202c05" prot="public">
+          <name>R16_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca261d1e0997b29130ae82f9722f7bcebf" prot="public">
+          <name>R16_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca1a8b847ff6031e79477869e481aff272" prot="public">
+          <name>R16_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332caf010bb9e5a699e4cb9c80b2f5d982218" prot="public">
+          <name>R32_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca99d5ccfc1a21572c753cbf0640bd2565" prot="public">
+          <name>R32_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca2598f201b222b270e09b7913987d7272" prot="public">
+          <name>R32_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332cac02b2b5c54000196980fd79369b68e7a" prot="public">
+          <name>RG8_UNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca5eb1dc460fbf256416433d36b52d550c" prot="public">
+          <name>RG8_SNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca4b71cc632001cb895a67f22e51b56b7c" prot="public">
+          <name>RG8_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca51d797f6e8e0027b9ee8e6ff2cd3dbb3" prot="public">
+          <name>RG8_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca909cc8c5cc8fe4f16bec84a291aadbdb" prot="public">
+          <name>RGBA8_UNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca50f236dafc21c443069d0c47937290a6" prot="public">
+          <name>RGBA8_SNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca97950a97b1534f51ab4103ba6e3b4bb8" prot="public">
+          <name>RGBA8_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca7f423aa3b0a406a7cbf00188521919a7" prot="public">
+          <name>RGBA8_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332caa36cb5a00f3569a7ba30745746d0a334" prot="public">
+          <name>RGBA16_UNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca5dbd1bc06fc6fba1e9a7b266bbf549e0" prot="public">
+          <name>RGBA16_SNORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca6b974ca9d1754a32bb28cb8326594d76" prot="public">
+          <name>RGBA16_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332caf064d6e3dff47e2c6925cdf5770579f7" prot="public">
+          <name>RGBA16_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca9a22da4ff219dcb3dde7ac810c27bf77" prot="public">
+          <name>RGBA16_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332cad2ecfd5a2cbe70d9badcfe0eda702995" prot="public">
+          <name>RGBA32_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca4e6ee8b499dac56127bb99cd7c02678a" prot="public">
+          <name>RGBA32_SINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a64efd07a9bd65d407e2f11f8da11332ca87b7cdfea617ace6de687256bfd2965d" prot="public">
+          <name>RGBA32_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/PixelFormat.hpp" line="11" column="1" bodyfile="ouzel/graphics/PixelFormat.hpp" bodystart="10" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1aad4ecf4de0f3f9c1940b30d49eeef785" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::SHADER_TEXTURE</definition>
+        <argsstring></argsstring>
+        <name>SHADER_TEXTURE</name>
+        <initializer>= &quot;shaderTexture&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="29" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1a7073846c599929bbbcdbcd6fc0509504" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::SHADER_COLOR</definition>
+        <argsstring></argsstring>
+        <name>SHADER_COLOR</name>
+        <initializer>= &quot;shaderColor&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="30" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1a3074806470713cba847741ff53e52cef" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::BLEND_NO_BLEND</definition>
+        <argsstring></argsstring>
+        <name>BLEND_NO_BLEND</name>
+        <initializer>= &quot;blendNoBlend&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="32" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1a419d02ea926d4defe701ae7e37e9ff2a" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::BLEND_ADD</definition>
+        <argsstring></argsstring>
+        <name>BLEND_ADD</name>
+        <initializer>= &quot;blendAdd&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="33" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1a7841553ed485f61d6df38d02743cef6d" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::BLEND_MULTIPLY</definition>
+        <argsstring></argsstring>
+        <name>BLEND_MULTIPLY</name>
+        <initializer>= &quot;blendMultiply&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="34" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1ad5e22345b8e157852b3b02e4105388ec" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::BLEND_ALPHA</definition>
+        <argsstring></argsstring>
+        <name>BLEND_ALPHA</name>
+        <initializer>= &quot;blendAlpha&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="35" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1a0fe3a9555936ad85ddfe6d3df73c9c5f" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::BLEND_SCREEN</definition>
+        <argsstring></argsstring>
+        <name>BLEND_SCREEN</name>
+        <initializer>= &quot;blendScreen&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="36" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d94/_renderer_8hpp_1a392eb166cb29cd654fc1aca9d7783b34" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::graphics::TEXTURE_WHITE_PIXEL</definition>
+        <argsstring></argsstring>
+        <name>TEXTURE_WHITE_PIXEL</name>
+        <initializer>= &quot;textureWhitePixel&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="38" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da9/_vertex_8hpp_1a2a06f173b3c5b66e8d03937b42fd0904" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ouzel::graphics::VERTEX_ATTRIBUTE_COUNT</definition>
+        <argsstring></argsstring>
+        <name>VERTEX_ATTRIBUTE_COUNT</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Vertex.hpp" line="42" column="1" bodyfile="ouzel/graphics/Vertex.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/ddb/_data_type_8hpp_1a2ff00dbf628faaf742b9cf588382452d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::getDataTypeSize</definition>
+        <argsstring>(DataType dataType)</argsstring>
+        <name>getDataTypeSize</name>
+        <param>
+          <type>DataType</type>
+          <declname>dataType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/DataType.hpp" line="51" column="1" bodyfile="ouzel/graphics/DataType.hpp" bodystart="51" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d2a/_pixel_format_8hpp_1a5938bc236eefd0f2c407b95a53fb162b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::getPixelSize</definition>
+        <argsstring>(PixelFormat pixelFormat)</argsstring>
+        <name>getPixelSize</name>
+        <param>
+          <type>PixelFormat</type>
+          <declname>pixelFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/PixelFormat.hpp" line="44" column="1" bodyfile="ouzel/graphics/PixelFormat.hpp" bodystart="44" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d2a/_pixel_format_8hpp_1af57764462d888e27dec359e40e0b0ff4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::getChannelSize</definition>
+        <argsstring>(PixelFormat pixelFormat)</argsstring>
+        <name>getChannelSize</name>
+        <param>
+          <type>PixelFormat</type>
+          <declname>pixelFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/PixelFormat.hpp" line="91" column="1" bodyfile="ouzel/graphics/PixelFormat.hpp" bodystart="91" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d2a/_pixel_format_8hpp_1a732e4c7bda1060103f293739512da7e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::getChannelCount</definition>
+        <argsstring>(PixelFormat pixelFormat)</argsstring>
+        <name>getChannelCount</name>
+        <param>
+          <type>PixelFormat</type>
+          <declname>pixelFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/PixelFormat.hpp" line="134" column="1" bodyfile="ouzel/graphics/PixelFormat.hpp" bodystart="134" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dee/_texture_resource_8cpp_1a29d903f217e011ecc1a3cf6c02f28219" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ouzel::graphics::imageA8Downsample2x2</definition>
+        <argsstring>(uint32_t width, uint32_t height, uint32_t pitch, const uint8_t *src, uint8_t *dst)</argsstring>
+        <name>imageA8Downsample2x2</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.cpp" line="170" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="170" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dee/_texture_resource_8cpp_1a161eccf98fa4978382736b71fd1956fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ouzel::graphics::imageR8Downsample2x2</definition>
+        <argsstring>(uint32_t width, uint32_t height, uint32_t pitch, const uint8_t *src, uint8_t *dst)</argsstring>
+        <name>imageR8Downsample2x2</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.cpp" line="219" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="219" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dee/_texture_resource_8cpp_1a7629ec82e68f08919aa05791ca444eab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ouzel::graphics::imageRG8Downsample2x2</definition>
+        <argsstring>(uint32_t width, uint32_t height, uint32_t pitch, const uint8_t *src, uint8_t *dst)</argsstring>
+        <name>imageRG8Downsample2x2</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.cpp" line="268" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="268" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dee/_texture_resource_8cpp_1a040b608bb64e986ccb155bc426c97fb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ouzel::graphics::imageRGBA8Downsample2x2</definition>
+        <argsstring>(uint32_t width, uint32_t height, uint32_t pitch, const uint8_t *src, uint8_t *dst)</argsstring>
+        <name>imageRGBA8Downsample2x2</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.cpp" line="346" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="346" bodyend="511"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ouzel/graphics/BlendState.cpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

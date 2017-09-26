@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/da9/_vertex_8hpp" kind="file" language="C++">
+    <compoundname>Vertex.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="de/ddb/_data_type_8hpp" local="yes">graphics/DataType.hpp</includes>
+    <includes refid="d3/d12/_vector2_8hpp" local="yes">math/Vector2.hpp</includes>
+    <includes refid="d2/d6a/_vector3_8hpp" local="yes">math/Vector3.hpp</includes>
+    <includes refid="d3/d06/_color_8hpp" local="yes">math/Color.hpp</includes>
+    <includedby refid="dd/dd9/_render_device_8hpp" local="yes">ouzel/graphics/RenderDevice.hpp</includedby>
+    <includedby refid="d6/d47/_mesh_buffer_8hpp" local="yes">ouzel/graphics/MeshBuffer.hpp</includedby>
+    <includedby refid="da/da1/_mesh_buffer_resource_8hpp" local="yes">ouzel/graphics/MeshBufferResource.hpp</includedby>
+    <includedby refid="d5/d9f/_mesh_buffer_resource_8cpp" local="yes">ouzel/graphics/MeshBufferResource.cpp</includedby>
+    <includedby refid="d2/d73/_shader_8hpp" local="yes">ouzel/graphics/Shader.hpp</includedby>
+    <includedby refid="dd/d6f/_vertex_8cpp" local="yes">ouzel/graphics/Vertex.cpp</includedby>
+    <includedby refid="d9/da6/_font_8hpp" local="yes">ouzel/gui/Font.hpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <includedby refid="d5/dcd/_particle_system_8hpp" local="yes">ouzel/scene/ParticleSystem.hpp</includedby>
+    <includedby refid="dd/df2/_sprite_frame_8hpp" local="yes">ouzel/scene/SpriteFrame.hpp</includedby>
+    <incdepgraph>
+      <node id="8332">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="8333" relation="include">
+        </childnode>
+      </node>
+      <node id="8333">
+        <label>cstdint</label>
+      </node>
+      <node id="8336">
+        <label>cmath</label>
+      </node>
+      <node id="8330">
+        <label>string</label>
+      </node>
+      <node id="8331">
+        <label>vector</label>
+      </node>
+      <node id="8329">
+        <label>ouzel/graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp"/>
+        <childnode refid="8330" relation="include">
+        </childnode>
+        <childnode refid="8331" relation="include">
+        </childnode>
+        <childnode refid="8332" relation="include">
+        </childnode>
+        <childnode refid="8334" relation="include">
+        </childnode>
+        <childnode refid="8337" relation="include">
+        </childnode>
+        <childnode refid="8338" relation="include">
+        </childnode>
+      </node>
+      <node id="8338">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="8335" relation="include">
+        </childnode>
+        <childnode refid="8333" relation="include">
+        </childnode>
+        <childnode refid="8330" relation="include">
+        </childnode>
+      </node>
+      <node id="8335">
+        <label>cstddef</label>
+      </node>
+      <node id="8334">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="8335" relation="include">
+        </childnode>
+        <childnode refid="8336" relation="include">
+        </childnode>
+      </node>
+      <node id="8337">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="8335" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8354">
+        <label>ouzel/core/ios/EngineIOS.hpp</label>
+        <link refid="db/d80/_engine_i_o_s_8hpp_source"/>
+      </node>
+      <node id="8353">
+        <label>ouzel/core/emscripten/EngineEm.hpp</label>
+        <link refid="d2/d81/_engine_em_8hpp_source"/>
+      </node>
+      <node id="8357">
+        <label>ouzel/core/raspbian/EngineRasp.hpp</label>
+        <link refid="d0/dcd/_engine_rasp_8hpp_source"/>
+      </node>
+      <node id="8343">
+        <label>ouzel/graphics/empty/RenderDeviceEmpty.hpp</label>
+        <link refid="db/da8/_render_device_empty_8hpp_source"/>
+      </node>
+      <node id="8348">
+        <label>ouzel/scene/SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="8349" relation="include">
+        </childnode>
+      </node>
+      <node id="8341">
+        <label>ouzel/core/ios/DisplayLinkHandler.h</label>
+        <link refid="da/d3f/ios_2_display_link_handler_8h_source"/>
+      </node>
+      <node id="8340">
+        <label>ouzel/graphics/RenderDevice.hpp</label>
+        <link refid="dd/dd9/_render_device_8hpp_source"/>
+        <childnode refid="8341" relation="include">
+        </childnode>
+        <childnode refid="8342" relation="include">
+        </childnode>
+        <childnode refid="8343" relation="include">
+        </childnode>
+      </node>
+      <node id="8368">
+        <label>ouzel/graphics/ShaderResource.hpp</label>
+        <link refid="d5/da1/_shader_resource_8hpp_source"/>
+        <childnode refid="8369" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8351">
+        <label>ouzel/core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="8352" relation="include">
+        </childnode>
+        <childnode refid="8353" relation="include">
+        </childnode>
+        <childnode refid="8354" relation="include">
+        </childnode>
+        <childnode refid="8355" relation="include">
+        </childnode>
+        <childnode refid="8356" relation="include">
+        </childnode>
+        <childnode refid="8357" relation="include">
+        </childnode>
+        <childnode refid="8358" relation="include">
+        </childnode>
+        <childnode refid="8359" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8349">
+        <label>ouzel/scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="8350" relation="include">
+        </childnode>
+        <childnode refid="8360" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8359">
+        <label>ouzel/core/windows/EngineWin.hpp</label>
+        <link refid="d8/d37/_engine_win_8hpp_source"/>
+      </node>
+      <node id="8355">
+        <label>ouzel/core/linux/EngineLinux.hpp</label>
+        <link refid="d6/d37/_engine_linux_8hpp_source"/>
+      </node>
+      <node id="8347">
+        <label>ouzel/scene/ShapeRenderer.hpp</label>
+        <link refid="db/d1e/_shape_renderer_8hpp_source"/>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8369">
+        <label>ouzel/graphics/empty/ShaderResourceEmpty.hpp</label>
+        <link refid="d9/df2/_shader_resource_empty_8hpp_source"/>
+      </node>
+      <node id="8361">
+        <label>ouzel/gui/Button.hpp</label>
+        <link refid="d2/df0/_button_8hpp_source"/>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8345">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="8346">
+        <label>ouzel/scene/ParticleSystem.hpp</label>
+        <link refid="d5/dcd/_particle_system_8hpp_source"/>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8364">
+        <label>ouzel/gui/Label.hpp</label>
+        <link refid="df/dac/_label_8hpp_source"/>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8372">
+        <label>ouzel/gui/TTFont.hpp</label>
+        <link refid="db/d7c/_t_t_font_8hpp_source"/>
+      </node>
+      <node id="8360">
+        <label>ouzel/scene/Sprite.hpp</label>
+        <link refid="db/d60/_sprite_8hpp_source"/>
+        <childnode refid="8361" relation="include">
+        </childnode>
+        <childnode refid="8362" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8362">
+        <label>ouzel/gui/CheckBox.hpp</label>
+        <link refid="d5/d72/_check_box_8hpp_source"/>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8363">
+        <label>ouzel/scene/TextRenderer.hpp</label>
+        <link refid="d7/d6f/_text_renderer_8hpp_source"/>
+        <childnode refid="8361" relation="include">
+        </childnode>
+        <childnode refid="8364" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8352">
+        <label>ouzel/core/android/EngineAndroid.hpp</label>
+        <link refid="dc/df0/_engine_android_8hpp_source"/>
+      </node>
+      <node id="8339">
+        <label>ouzel/graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp"/>
+        <childnode refid="8340" relation="include">
+        </childnode>
+        <childnode refid="8344" relation="include">
+        </childnode>
+        <childnode refid="8365" relation="include">
+        </childnode>
+        <childnode refid="8367" relation="include">
+        </childnode>
+        <childnode refid="8370" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+        <childnode refid="8346" relation="include">
+        </childnode>
+        <childnode refid="8348" relation="include">
+        </childnode>
+      </node>
+      <node id="8356">
+        <label>ouzel/core/macos/EngineMacOS.hpp</label>
+        <link refid="dc/df2/_engine_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="8344">
+        <label>ouzel/graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="8340" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+        <childnode refid="8346" relation="include">
+        </childnode>
+        <childnode refid="8347" relation="include">
+        </childnode>
+        <childnode refid="8348" relation="include">
+        </childnode>
+        <childnode refid="8363" relation="include">
+        </childnode>
+      </node>
+      <node id="8370">
+        <label>ouzel/gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="8350" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8372" relation="include">
+        </childnode>
+      </node>
+      <node id="8371">
+        <label>ouzel/gui/BMFont.hpp</label>
+        <link refid="d9/d5d/_b_m_font_8hpp_source"/>
+        <childnode refid="8345" relation="include">
+        </childnode>
+        <childnode refid="8363" relation="include">
+        </childnode>
+      </node>
+      <node id="8366">
+        <label>ouzel/graphics/empty/MeshBufferResourceEmpty.hpp</label>
+        <link refid="df/d90/_mesh_buffer_resource_empty_8hpp_source"/>
+      </node>
+      <node id="8367">
+        <label>ouzel/graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="8350" relation="include">
+        </childnode>
+        <childnode refid="8340" relation="include">
+        </childnode>
+        <childnode refid="8368" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+        <childnode refid="8346" relation="include">
+        </childnode>
+        <childnode refid="8347" relation="include">
+        </childnode>
+        <childnode refid="8363" relation="include">
+        </childnode>
+      </node>
+      <node id="8358">
+        <label>ouzel/core/tvos/EngineTVOS.hpp</label>
+        <link refid="dc/dd2/_engine_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="8342">
+        <label>ouzel/core/tvos/DisplayLinkHandler.h</label>
+        <link refid="d6/d8a/tvos_2_display_link_handler_8h_source"/>
+      </node>
+      <node id="8365">
+        <label>ouzel/graphics/MeshBufferResource.hpp</label>
+        <link refid="da/da1/_mesh_buffer_resource_8hpp_source"/>
+        <childnode refid="8366" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+      <node id="8350">
+        <label>ouzel/core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="8351" relation="include">
+        </childnode>
+        <childnode refid="8345" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" prot="public">ouzel::graphics::VertexAttribute</innerclass>
+    <innerclass refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" prot="public">ouzel::graphics::VertexPC</innerclass>
+    <innerclass refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" prot="public">ouzel::graphics::VertexPCT</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d7/dbf/namespaceouzel_1_1graphics">ouzel::graphics</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/DataType.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Vector2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Vector3.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Color.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">graphics</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Usage</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NONE,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BINORMAL,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BLEND_INDICES,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BLEND_WEIGHT,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLOR,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NORMAL,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>POSITION,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>POSITION_TRANSFORMED,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>POINT_SIZE,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TANGENT,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TEXTURE_COORDINATES</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref>(Usage<sp/>aUsage,<sp/>uint32_t<sp/>aIndex,<sp/>DataType<sp/>aDataType,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aNormalized):</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usage(aUsage),<sp/>index(aIndex),<sp/>dataType(aDataType),<sp/>normalized(aNormalized)<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Usage<sp/>usage<sp/>=<sp/>Usage::NONE;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataType<sp/>dataType<sp/>=<sp/>DataType::NONE;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>normalized<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>VERTEX_ATTRIBUTE_COUNT<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" kindref="compound">VertexPC</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;VertexAttribute&gt;<sp/>ATTRIBUTES;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref><sp/>position;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref><sp/>color;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" kindref="compound">VertexPC</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" kindref="compound">VertexPC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>aPosition,<sp/><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref><sp/>aColor);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" kindref="compound">VertexPCT</ref></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;VertexAttribute&gt;<sp/>ATTRIBUTES;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref><sp/>position;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref><sp/>color;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>texCoord;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" kindref="compound">VertexPCT</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" kindref="compound">VertexPCT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>aPosition,<sp/><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref><sp/>aColor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>aTexCoord);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>graphics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/graphics/Vertex.hpp"/>
+  </compounddef>
+</doxygen>

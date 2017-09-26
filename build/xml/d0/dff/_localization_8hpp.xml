@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/dff/_localization_8hpp" kind="file" language="C++">
+    <compoundname>Localization.hpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includedby refid="db/db9/_engine_8hpp" local="yes">ouzel/core/Engine.hpp</includedby>
+    <includedby refid="dd/d8c/_localization_8cpp" local="yes">ouzel/localization/Localization.cpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <incdepgraph>
+      <node id="12181">
+        <label>ouzel/localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp"/>
+        <childnode refid="12182" relation="include">
+        </childnode>
+        <childnode refid="12183" relation="include">
+        </childnode>
+        <childnode refid="12184" relation="include">
+        </childnode>
+      </node>
+      <node id="12184">
+        <label>string</label>
+      </node>
+      <node id="12183">
+        <label>map</label>
+      </node>
+      <node id="12182">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12189">
+        <label>ouzel/core/ios/EngineIOS.hpp</label>
+        <link refid="db/d80/_engine_i_o_s_8hpp_source"/>
+      </node>
+      <node id="12188">
+        <label>ouzel/core/emscripten/EngineEm.hpp</label>
+        <link refid="d2/d81/_engine_em_8hpp_source"/>
+      </node>
+      <node id="12192">
+        <label>ouzel/core/raspbian/EngineRasp.hpp</label>
+        <link refid="d0/dcd/_engine_rasp_8hpp_source"/>
+      </node>
+      <node id="12186">
+        <label>ouzel/core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="12187" relation="include">
+        </childnode>
+        <childnode refid="12188" relation="include">
+        </childnode>
+        <childnode refid="12189" relation="include">
+        </childnode>
+        <childnode refid="12190" relation="include">
+        </childnode>
+        <childnode refid="12191" relation="include">
+        </childnode>
+        <childnode refid="12192" relation="include">
+        </childnode>
+        <childnode refid="12193" relation="include">
+        </childnode>
+        <childnode refid="12194" relation="include">
+        </childnode>
+        <childnode refid="12195" relation="include">
+        </childnode>
+      </node>
+      <node id="12185">
+        <label>ouzel/localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp"/>
+        <childnode refid="12186" relation="include">
+        </childnode>
+        <childnode refid="12195" relation="include">
+        </childnode>
+      </node>
+      <node id="12194">
+        <label>ouzel/core/windows/EngineWin.hpp</label>
+        <link refid="d8/d37/_engine_win_8hpp_source"/>
+      </node>
+      <node id="12190">
+        <label>ouzel/core/linux/EngineLinux.hpp</label>
+        <link refid="d6/d37/_engine_linux_8hpp_source"/>
+      </node>
+      <node id="12195">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="12187">
+        <label>ouzel/core/android/EngineAndroid.hpp</label>
+        <link refid="dc/df0/_engine_android_8hpp_source"/>
+      </node>
+      <node id="12191">
+        <label>ouzel/core/macos/EngineMacOS.hpp</label>
+        <link refid="dc/df2/_engine_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="12193">
+        <label>ouzel/core/tvos/EngineTVOS.hpp</label>
+        <link refid="dc/dd2/_engine_t_v_o_s_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/d1e/classouzel_1_1_localization" prot="public">ouzel::Localization</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Language;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d9/d1e/classouzel_1_1_localization" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/d1e/classouzel_1_1_localization" kindref="compound">Localization</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addLanguage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setLanguage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>language);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>getString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::shared_ptr&lt;Language&gt;&gt;<sp/>languages;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Language&gt;<sp/>currentLanguage;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ouzel/localization/Localization.hpp"/>
+  </compounddef>
+</doxygen>

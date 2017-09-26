@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::CursorResourceMacOS</compoundname>
+    <basecompoundref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" prot="public" virt="non-virtual">ouzel::input::CursorResource</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a1e24baa3fac3073aa5b881883b5baf93" prot="protected" static="no" mutable="no">
+        <type>NSCursor *</type>
+        <definition>NSCursor* ouzel::input::CursorResourceMacOS::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/CursorResourceMacOS.hpp" line="33" column="1" bodyfile="ouzel/input/macos/CursorResourceMacOS.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a8c66cee89154bac6a45f9da2d19d0b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::input::CursorResourceMacOS::~CursorResourceMacOS</definition>
+        <argsstring>()</argsstring>
+        <name>~CursorResourceMacOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/CursorResourceMacOS.hpp" line="22" column="1" bodyfile="ouzel/input/macos/CursorResourceMacOS.mm" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a55e79d2cc27ef38ec6af692e4a447f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::CursorResourceMacOS::init</definition>
+        <argsstring>(SystemCursor newSystemCursor) override</argsstring>
+        <name>init</name>
+        <reimplements refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1a704f7d1be8de215f314398dab3722ea8">init</reimplements>
+        <param>
+          <type>SystemCursor</type>
+          <declname>newSystemCursor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/CursorResourceMacOS.hpp" line="24" column="1" bodyfile="ouzel/input/macos/CursorResourceMacOS.mm" bodystart="15" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a11de704f0bdedeb6f8749e5216ce7854" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::CursorResourceMacOS::init</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData, const Size2 &amp;newSize, graphics::PixelFormat newPixelFormat, const Vector2 &amp;newHotSpot) override</argsstring>
+        <name>init</name>
+        <reimplements refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1ae21bd5d7a645b45a3a0781914cb9a24b">init</reimplements>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>graphics::PixelFormat</type>
+          <declname>newPixelFormat</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>newHotSpot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/CursorResourceMacOS.hpp" line="25" column="1" bodyfile="ouzel/input/macos/CursorResourceMacOS.mm" bodystart="60" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1ac0ccd24dfacb48d1c6d1a8cb6fcbf186" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NSCursor *</type>
+        <definition>NSCursor* ouzel::input::CursorResourceMacOS::getNativeCursor</definition>
+        <argsstring>() const</argsstring>
+        <name>getNativeCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/CursorResourceMacOS.hpp" line="30" column="1" bodyfile="ouzel/input/macos/CursorResourceMacOS.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="385">
+        <label>ouzel::input::CursorResourceMacOS</label>
+        <link refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s"/>
+        <childnode refid="386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>ouzel::input::CursorResource</label>
+        <link refid="d8/d06/classouzel_1_1input_1_1_cursor_resource"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="387">
+        <label>ouzel::input::CursorResourceMacOS</label>
+        <link refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s"/>
+        <childnode refid="388" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="388">
+        <label>ouzel::input::CursorResource</label>
+        <link refid="d8/d06/classouzel_1_1input_1_1_cursor_resource"/>
+        <childnode refid="389" relation="usage">
+          <edgelabel>hotSpot</edgelabel>
+        </childnode>
+        <childnode refid="390" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="389">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="389" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/macos/CursorResourceMacOS.hpp" line="20" column="1" bodyfile="ouzel/input/macos/CursorResourceMacOS.hpp" bodystart="19" bodyend="34"/>
+    <listofallmembers>
+      <member refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a1e24baa3fac3073aa5b881883b5baf93" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>cursor</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1aeaac358fed506ab93aabcecd7c16cacb" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>CursorResource</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1afe9fa27836b9ad8941065a72d96cea46" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>data</name></member>
+      <member refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1ac0ccd24dfacb48d1c6d1a8cb6fcbf186" prot="public" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>getNativeCursor</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1aea9402f93c7474642206dce65d06749b" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>hotSpot</name></member>
+      <member refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a55e79d2cc27ef38ec6af692e4a447f09" prot="public" virt="virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>init</name></member>
+      <member refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a11de704f0bdedeb6f8749e5216ce7854" prot="public" virt="virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>init</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1a5667816ef7f1c3053c6dbe95c8d0ef58" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>pixelFormat</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1a53f63a763816634e65e322e46e3d2054" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>reactivate</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1a257ddba838944355160544261d730677" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>size</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1a4b6d50d4be7fbd33e1cffd047d4bfa07" prot="protected" virt="non-virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>systemCursor</name></member>
+      <member refid="d8/d06/classouzel_1_1input_1_1_cursor_resource_1a7448a8e912f2a9cbe55efcc2b3a1d365" prot="public" virt="virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>~CursorResource</name></member>
+      <member refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s_1a8c66cee89154bac6a45f9da2d19d0b16" prot="public" virt="virtual"><scope>ouzel::input::CursorResourceMacOS</scope><name>~CursorResourceMacOS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

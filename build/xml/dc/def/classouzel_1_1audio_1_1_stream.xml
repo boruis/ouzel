@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/def/classouzel_1_1audio_1_1_stream" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::audio::Stream</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <derivedcompoundref refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis" prot="public" virt="non-virtual">ouzel::audio::StreamVorbis</derivedcompoundref>
+    <derivedcompoundref refid="d2/d34/classouzel_1_1audio_1_1_stream_wave" prot="public" virt="non-virtual">ouzel::audio::StreamWave</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/def/classouzel_1_1audio_1_1_stream_1a45ce7b5cbac02665424b7ab9930826c8" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; ouzel::audio::Stream::playing</definition>
+        <argsstring></argsstring>
+        <name>playing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="34" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/def/classouzel_1_1audio_1_1_stream_1a8e539a56dd0ce459665824ee7ac12b82" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; ouzel::audio::Stream::repeating</definition>
+        <argsstring></argsstring>
+        <name>repeating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="35" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/def/classouzel_1_1audio_1_1_stream_1a3a54c53b7980d083c1576fb96050f089" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; ouzel::audio::Stream::shouldReset</definition>
+        <argsstring></argsstring>
+        <name>shouldReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="36" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/def/classouzel_1_1audio_1_1_stream_1a3650627ecbd5f1ced7e9a1802a9d40bc" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; uint32_t &gt;</type>
+        <definition>std::atomic&lt;uint32_t&gt; ouzel::audio::Stream::resetCount</definition>
+        <argsstring></argsstring>
+        <name>resetCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="37" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1a795a42803c14b1b22f653bb373e9c6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::Stream::Stream</definition>
+        <argsstring>()</argsstring>
+        <name>Stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="17" column="1" bodyfile="ouzel/audio/Stream.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1aabcd648c1bbbaeee7753b4f12613896e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::audio::Stream::~Stream</definition>
+        <argsstring>()</argsstring>
+        <name>~Stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="18" column="1" bodyfile="ouzel/audio/Stream.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1a6f8a572fb1534374a68695555f5b2b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Stream::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="d2/d34/classouzel_1_1audio_1_1_stream_wave_1aad360d9e6f20a2f8ed460dacce84883f">reset</reimplementedby>
+        <reimplementedby refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a3d9cc56f6471ebedaa22d4f7b8cca70f">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="20" column="1" bodyfile="ouzel/audio/Stream.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1ad3fde05a0c8412d9a36ac19123b497ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Stream::isPlaying</definition>
+        <argsstring>() const</argsstring>
+        <name>isPlaying</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="22" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1ab7752932e0a631a8afecceb637fed942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Stream::setPlaying</definition>
+        <argsstring>(bool newPlaying)</argsstring>
+        <name>setPlaying</name>
+        <param>
+          <type>bool</type>
+          <declname>newPlaying</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="23" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1a9fd5a21ec8819b932192807c88d969d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Stream::isRepeating</definition>
+        <argsstring>()</argsstring>
+        <name>isRepeating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="25" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1adc15cbf377cfa4e563147428c93338c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Stream::setRepeating</definition>
+        <argsstring>(bool newRepeating)</argsstring>
+        <name>setRepeating</name>
+        <param>
+          <type>bool</type>
+          <declname>newRepeating</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="26" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1ab28b58f424b874fd4a6bbdb23217647a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Stream::getShouldReset</definition>
+        <argsstring>() const</argsstring>
+        <name>getShouldReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="28" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1a439b7f2e86320ab2a1d6911a079cbb51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Stream::setShouldReset</definition>
+        <argsstring>(bool newReset)</argsstring>
+        <name>setShouldReset</name>
+        <param>
+          <type>bool</type>
+          <declname>newReset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="29" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/def/classouzel_1_1audio_1_1_stream_1a596a24237a4d1ae78741a49fe7f7568b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::audio::Stream::getResetCount</definition>
+        <argsstring>()</argsstring>
+        <name>getResetCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Stream.hpp" line="31" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1794">
+        <label>ouzel::audio::StreamVorbis</label>
+        <link refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis"/>
+        <childnode refid="1792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1792">
+        <label>ouzel::audio::Stream</label>
+        <link refid="dc/def/classouzel_1_1audio_1_1_stream"/>
+        <childnode refid="1793" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1795">
+        <label>ouzel::audio::StreamWave</label>
+        <link refid="d2/d34/classouzel_1_1audio_1_1_stream_wave"/>
+        <childnode refid="1792" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1796">
+        <label>ouzel::audio::Stream</label>
+        <link refid="dc/def/classouzel_1_1audio_1_1_stream"/>
+        <childnode refid="1797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1797">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/Stream.hpp" line="15" column="1" bodyfile="ouzel/audio/Stream.hpp" bodystart="14" bodyend="38"/>
+    <listofallmembers>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a596a24237a4d1ae78741a49fe7f7568b" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>getResetCount</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1ab28b58f424b874fd4a6bbdb23217647a" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>getShouldReset</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1ad3fde05a0c8412d9a36ac19123b497ce" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>isPlaying</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a9fd5a21ec8819b932192807c88d969d5" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>isRepeating</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>operator=</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a45ce7b5cbac02665424b7ab9930826c8" prot="private" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>playing</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a8e539a56dd0ce459665824ee7ac12b82" prot="private" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>repeating</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a6f8a572fb1534374a68695555f5b2b1e" prot="public" virt="virtual"><scope>ouzel::audio::Stream</scope><name>reset</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a3650627ecbd5f1ced7e9a1802a9d40bc" prot="private" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>resetCount</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1ab7752932e0a631a8afecceb637fed942" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>setPlaying</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1adc15cbf377cfa4e563147428c93338c4" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>setRepeating</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a439b7f2e86320ab2a1d6911a079cbb51" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>setShouldReset</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a3a54c53b7980d083c1576fb96050f089" prot="private" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>shouldReset</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a795a42803c14b1b22f653bb373e9c6fa" prot="public" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>Stream</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::audio::Stream</scope><name>~Noncopyable</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1aabcd648c1bbbaeee7753b4f12613896e" prot="public" virt="virtual"><scope>ouzel::audio::Stream</scope><name>~Stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

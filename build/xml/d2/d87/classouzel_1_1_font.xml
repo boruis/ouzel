@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/d87/classouzel_1_1_font" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ouzel::Font</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <derivedcompoundref refid="dd/d5b/classouzel_1_1_b_m_font" prot="public" virt="non-virtual">ouzel::BMFont</derivedcompoundref>
+    <derivedcompoundref refid="d1/d1a/classouzel_1_1_t_t_font" prot="public" virt="non-virtual">ouzel::TTFont</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d87/classouzel_1_1_font_1a98af1c4595c391f0b8bf82438da94afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::Font::~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Font.hpp" line="22" column="1" bodyfile="ouzel/gui/Font.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d87/classouzel_1_1_font_1af1010949cfa294204abec33af3abcff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ouzel::Font::getVertices</definition>
+        <argsstring>(const std::string &amp;text, const Color &amp;color, const Vector2 &amp;anchor, const Vector2 &amp;scale, std::vector&lt; uint16_t &gt; &amp;indices, std::vector&lt; graphics::VertexPCT &gt; &amp;vertices, std::shared_ptr&lt; graphics::Texture &gt; &amp;texture)=0</argsstring>
+        <name>getVertices</name>
+        <reimplementedby refid="dd/d5b/classouzel_1_1_b_m_font_1a435cecee7f9c5ac9bc5a859e6b1faf3a">getVertices</reimplementedby>
+        <reimplementedby refid="d1/d1a/classouzel_1_1_t_t_font_1a5aedaed7501bd30f538cb87eb6e9eae9">getVertices</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>anchor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint16_t &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="de/d0e/classouzel_1_1graphics_1_1_vertex_p_c_t" kindref="compound">graphics::VertexPCT</ref> &gt; &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Font.hpp" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="738">
+        <label>ouzel::TTFont</label>
+        <link refid="d1/d1a/classouzel_1_1_t_t_font"/>
+        <childnode refid="735" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>ouzel::Font</label>
+        <link refid="d2/d87/classouzel_1_1_font"/>
+        <childnode refid="736" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>ouzel::BMFont</label>
+        <link refid="dd/d5b/classouzel_1_1_b_m_font"/>
+        <childnode refid="735" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="736">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="739">
+        <label>ouzel::Font</label>
+        <link refid="d2/d87/classouzel_1_1_font"/>
+        <childnode refid="740" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/gui/Font.hpp" line="20" column="1" bodyfile="ouzel/gui/Font.hpp" bodystart="19" bodyend="31"/>
+    <listofallmembers>
+      <member refid="d2/d87/classouzel_1_1_font_1af1010949cfa294204abec33af3abcff4" prot="public" virt="pure-virtual"><scope>ouzel::Font</scope><name>getVertices</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::Font</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::Font</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::Font</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::Font</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::Font</scope><name>operator=</name></member>
+      <member refid="d2/d87/classouzel_1_1_font_1a98af1c4595c391f0b8bf82438da94afd" prot="public" virt="virtual"><scope>ouzel::Font</scope><name>~Font</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::Font</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

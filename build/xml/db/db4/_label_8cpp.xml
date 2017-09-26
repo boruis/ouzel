@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/db4/_label_8cpp" kind="file" language="C++">
+    <compoundname>Label.cpp</compoundname>
+    <includes refid="de/d93/_setup_8h" local="yes">core/Setup.h</includes>
+    <includes refid="df/dac/_label_8hpp" local="yes">Label.hpp</includes>
+    <includes refid="db/db9/_engine_8hpp" local="yes">core/Engine.hpp</includes>
+    <includes refid="dc/d94/_renderer_8hpp" local="yes">graphics/Renderer.hpp</includes>
+    <includes refid="d8/dc2/_layer_8hpp" local="yes">scene/Layer.hpp</includes>
+    <includes refid="d4/d6a/_camera_8hpp" local="yes">scene/Camera.hpp</includes>
+    <includes refid="d9/d5d/_b_m_font_8hpp" local="yes">BMFont.hpp</includes>
+    <includes refid="d6/d4c/_cache_8hpp" local="yes">core/Cache.hpp</includes>
+    <incdepgraph>
+      <node id="8967">
+        <label>atomic</label>
+      </node>
+      <node id="8997">
+        <label>math/MathUtils.hpp</label>
+        <link refid="d4/d7b/_math_utils_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+        <childnode refid="8951" relation="include">
+        </childnode>
+      </node>
+      <node id="8936">
+        <label>functional</label>
+      </node>
+      <node id="8971">
+        <label>queue</label>
+      </node>
+      <node id="8939">
+        <label>limits</label>
+      </node>
+      <node id="8976">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8972" relation="include">
+        </childnode>
+        <childnode refid="8971" relation="include">
+        </childnode>
+        <childnode refid="8965" relation="include">
+        </childnode>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8977" relation="include">
+        </childnode>
+        <childnode refid="8983" relation="include">
+        </childnode>
+      </node>
+      <node id="8959">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+      </node>
+      <node id="8989">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+      </node>
+      <node id="8937">
+        <label>cstdint</label>
+      </node>
+      <node id="8947">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="8943" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+      </node>
+      <node id="8949">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8938" relation="include">
+        </childnode>
+        <childnode refid="8943" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8950" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+      </node>
+      <node id="8975">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+      </node>
+      <node id="8969">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="8931" relation="include">
+        </childnode>
+      </node>
+      <node id="8987">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8988" relation="include">
+        </childnode>
+        <childnode refid="8950" relation="include">
+        </childnode>
+        <childnode refid="8958" relation="include">
+        </childnode>
+        <childnode refid="8960" relation="include">
+        </childnode>
+        <childnode refid="8961" relation="include">
+        </childnode>
+        <childnode refid="8962" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+      </node>
+      <node id="8981">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="8972" relation="include">
+        </childnode>
+        <childnode refid="8971" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8974" relation="include">
+        </childnode>
+      </node>
+      <node id="8934">
+        <label>cmath</label>
+      </node>
+      <node id="8993">
+        <label>errno.h</label>
+      </node>
+      <node id="8964">
+        <label>core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8965" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8936" relation="include">
+        </childnode>
+        <childnode refid="8966" relation="include">
+        </childnode>
+        <childnode refid="8967" relation="include">
+        </childnode>
+        <childnode refid="8968" relation="include">
+        </childnode>
+        <childnode refid="8922" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8935" relation="include">
+        </childnode>
+        <childnode refid="8969" relation="include">
+        </childnode>
+        <childnode refid="8970" relation="include">
+        </childnode>
+        <childnode refid="8974" relation="include">
+        </childnode>
+        <childnode refid="8975" relation="include">
+        </childnode>
+        <childnode refid="8976" relation="include">
+        </childnode>
+        <childnode refid="8984" relation="include">
+        </childnode>
+        <childnode refid="8985" relation="include">
+        </childnode>
+        <childnode refid="8991" relation="include">
+        </childnode>
+        <childnode refid="8992" relation="include">
+        </childnode>
+        <childnode refid="8994" relation="include">
+        </childnode>
+      </node>
+      <node id="8991">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8956" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+      </node>
+      <node id="8986">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8987" relation="include">
+        </childnode>
+      </node>
+      <node id="8926">
+        <label>string</label>
+      </node>
+      <node id="8977">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8978" relation="include">
+        </childnode>
+        <childnode refid="8928" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+        <childnode refid="8951" relation="include">
+        </childnode>
+        <childnode refid="8982" relation="include">
+        </childnode>
+      </node>
+      <node id="8956">
+        <label>map</label>
+      </node>
+      <node id="8921">
+        <label>ouzel/gui/Label.cpp</label>
+        <link refid="db/db4/_label_8cpp"/>
+        <childnode refid="8922" relation="include">
+        </childnode>
+        <childnode refid="8924" relation="include">
+        </childnode>
+        <childnode refid="8964" relation="include">
+        </childnode>
+        <childnode refid="8970" relation="include">
+        </childnode>
+        <childnode refid="8995" relation="include">
+        </childnode>
+        <childnode refid="8996" relation="include">
+        </childnode>
+        <childnode refid="8954" relation="include">
+        </childnode>
+        <childnode refid="8985" relation="include">
+        </childnode>
+      </node>
+      <node id="8979">
+        <label>cfloat</label>
+      </node>
+      <node id="8938">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8939" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+        <childnode refid="8941" relation="include">
+        </childnode>
+      </node>
+      <node id="8984">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+      </node>
+      <node id="8923">
+        <label>Config.h</label>
+      </node>
+      <node id="8943">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="8922" relation="include">
+        </childnode>
+        <childnode refid="8944" relation="include">
+        </childnode>
+        <childnode refid="8945" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+        <childnode refid="8946" relation="include">
+        </childnode>
+      </node>
+      <node id="8988">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8939" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+        <childnode refid="8951" relation="include">
+        </childnode>
+      </node>
+      <node id="8980">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="8981" relation="include">
+        </childnode>
+      </node>
+      <node id="8978">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="8979" relation="include">
+        </childnode>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8980" relation="include">
+        </childnode>
+        <childnode refid="8949" relation="include">
+        </childnode>
+        <childnode refid="8935" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+      </node>
+      <node id="8953">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="8928">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8930" relation="include">
+        </childnode>
+        <childnode refid="8935" relation="include">
+        </childnode>
+        <childnode refid="8938" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8943" relation="include">
+        </childnode>
+        <childnode refid="8947" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+      </node>
+      <node id="8973">
+        <label>condition_variable</label>
+      </node>
+      <node id="8945">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="8930">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+      </node>
+      <node id="8983">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="8936" relation="include">
+        </childnode>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8977" relation="include">
+        </childnode>
+      </node>
+      <node id="8961">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+      </node>
+      <node id="8952">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8953" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8951" relation="include">
+        </childnode>
+      </node>
+      <node id="8922">
+        <label>core/Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="8923" relation="include">
+        </childnode>
+      </node>
+      <node id="8924">
+        <label>Label.hpp</label>
+        <link refid="df/dac/_label_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8927" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8948" relation="include">
+        </childnode>
+      </node>
+      <node id="8960">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+      </node>
+      <node id="8929">
+        <label>vector</label>
+      </node>
+      <node id="8951">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="8932" relation="include">
+        </childnode>
+      </node>
+      <node id="8944">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8938" relation="include">
+        </childnode>
+        <childnode refid="8945" relation="include">
+        </childnode>
+        <childnode refid="8946" relation="include">
+        </childnode>
+      </node>
+      <node id="8994">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8956" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+      </node>
+      <node id="8941">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="8940" relation="include">
+        </childnode>
+      </node>
+      <node id="8948">
+        <label>scene/TextRenderer.hpp</label>
+        <link refid="d7/d6f/_text_renderer_8hpp_source"/>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8949" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8954" relation="include">
+        </childnode>
+        <childnode refid="8960" relation="include">
+        </childnode>
+        <childnode refid="8961" relation="include">
+        </childnode>
+        <childnode refid="8962" relation="include">
+        </childnode>
+        <childnode refid="8963" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+      </node>
+      <node id="8982">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8972" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8957" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+      </node>
+      <node id="8996">
+        <label>scene/Camera.hpp</label>
+        <link refid="d4/d6a/_camera_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8928" relation="include">
+        </childnode>
+        <childnode refid="8997" relation="include">
+        </childnode>
+        <childnode refid="8950" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+      </node>
+      <node id="8927">
+        <label>gui/Widget.hpp</label>
+        <link refid="d8/d5d/_widget_8hpp_source"/>
+        <childnode refid="8928" relation="include">
+        </childnode>
+      </node>
+      <node id="8958">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8959" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+      </node>
+      <node id="8974">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8936" relation="include">
+        </childnode>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8965" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8947" relation="include">
+        </childnode>
+        <childnode refid="8940" relation="include">
+        </childnode>
+      </node>
+      <node id="8942">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="8933" relation="include">
+        </childnode>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+      </node>
+      <node id="8990">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+      </node>
+      <node id="8970">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8971" relation="include">
+        </childnode>
+        <childnode refid="8965" relation="include">
+        </childnode>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8972" relation="include">
+        </childnode>
+        <childnode refid="8967" relation="include">
+        </childnode>
+        <childnode refid="8973" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8950" relation="include">
+        </childnode>
+        <childnode refid="8943" relation="include">
+        </childnode>
+        <childnode refid="8951" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+      </node>
+      <node id="8933">
+        <label>cstddef</label>
+      </node>
+      <node id="8957">
+        <label>unordered_map</label>
+      </node>
+      <node id="8962">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8958" relation="include">
+        </childnode>
+      </node>
+      <node id="8946">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="8933" relation="include">
+        </childnode>
+        <childnode refid="8922" relation="include">
+        </childnode>
+      </node>
+      <node id="8972">
+        <label>mutex</label>
+      </node>
+      <node id="8968">
+        <label>chrono</label>
+      </node>
+      <node id="8966">
+        <label>thread</label>
+      </node>
+      <node id="8995">
+        <label>scene/Layer.hpp</label>
+        <link refid="d8/dc2/_layer_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8930" relation="include">
+        </childnode>
+        <childnode refid="8932" relation="include">
+        </childnode>
+      </node>
+      <node id="8965">
+        <label>set</label>
+      </node>
+      <node id="8955">
+        <label>Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8956" relation="include">
+        </childnode>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8957" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8942" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+        <childnode refid="8958" relation="include">
+        </childnode>
+      </node>
+      <node id="8932">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="8933" relation="include">
+        </childnode>
+        <childnode refid="8934" relation="include">
+        </childnode>
+      </node>
+      <node id="8954">
+        <label>gui/BMFont.hpp</label>
+        <link refid="d9/d5d/_b_m_font_8hpp_source"/>
+        <childnode refid="8955" relation="include">
+        </childnode>
+      </node>
+      <node id="8935">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="8936" relation="include">
+        </childnode>
+        <childnode refid="8937" relation="include">
+        </childnode>
+      </node>
+      <node id="8963">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8929" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8959" relation="include">
+        </childnode>
+        <childnode refid="8958" relation="include">
+        </childnode>
+      </node>
+      <node id="8931">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="8950">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="8932" relation="include">
+        </childnode>
+        <childnode refid="8951" relation="include">
+        </childnode>
+      </node>
+      <node id="8940">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="8933" relation="include">
+        </childnode>
+      </node>
+      <node id="8925">
+        <label>memory</label>
+      </node>
+      <node id="8985">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="8925" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+        <childnode refid="8956" relation="include">
+        </childnode>
+        <childnode refid="8931" relation="include">
+        </childnode>
+        <childnode refid="8986" relation="include">
+        </childnode>
+        <childnode refid="8989" relation="include">
+        </childnode>
+        <childnode refid="8955" relation="include">
+        </childnode>
+        <childnode refid="8960" relation="include">
+        </childnode>
+        <childnode refid="8963" relation="include">
+        </childnode>
+        <childnode refid="8952" relation="include">
+        </childnode>
+        <childnode refid="8990" relation="include">
+        </childnode>
+      </node>
+      <node id="8992">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="8993" relation="include">
+        </childnode>
+        <childnode refid="8937" relation="include">
+        </childnode>
+        <childnode refid="8926" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="da/d4c/namespaceouzel_1_1gui">ouzel::gui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Setup.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Label.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Engine.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Renderer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/Layer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/Camera.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;BMFont.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Cache.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gui</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Label::Label(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aText,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fontFile,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fontSize,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Color<sp/>color,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2&amp;<sp/>textAnchor):</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(aText),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labelDrawable(std::make_shared&lt;scene::TextRenderer&gt;(fontFile,<sp/>true,<sp/>fontSize,<sp/>text,<sp/>color,<sp/>textAnchor))</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addComponent(labelDrawable.get());</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labelDrawable-&gt;setText(text);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pickable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Label::setText(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>newText)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/>newText;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labelDrawable-&gt;setText(text);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/gui/Label.cpp"/>
+  </compounddef>
+</doxygen>

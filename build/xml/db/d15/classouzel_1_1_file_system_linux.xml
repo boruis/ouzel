@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d15/classouzel_1_1_file_system_linux" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::FileSystemLinux</compoundname>
+    <basecompoundref refid="d5/d9e/classouzel_1_1_file_system" prot="public" virt="non-virtual">ouzel::FileSystem</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d15/classouzel_1_1_file_system_linux_1ac9e2d5930e74296e884f9459cd020d42" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::FileSystemLinux::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/linux/FileSystemLinux.hpp" line="14" column="1" bodyfile="ouzel/files/linux/FileSystemLinux.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d15/classouzel_1_1_file_system_linux_1a832fbe691dd7a2ede627b7591833f809" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystemLinux::getStorageDirectory</definition>
+        <argsstring>(bool user=true) const override</argsstring>
+        <name>getStorageDirectory</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1abb18d9c27c7497c8ec51fc9ffe3d17c2">getStorageDirectory</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>user</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/linux/FileSystemLinux.hpp" line="16" column="1" bodyfile="ouzel/files/linux/FileSystemLinux.cpp" bodystart="28" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d15/classouzel_1_1_file_system_linux_1ae51d7da4fc013a54022f969b5c22ff6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystemLinux::getTempDirectory</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTempDirectory</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1a9de54ce6dccd81fea87b3c3f28dfd401">getTempDirectory</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/linux/FileSystemLinux.hpp" line="17" column="1" bodyfile="ouzel/files/linux/FileSystemLinux.cpp" bodystart="66" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="db/d15/classouzel_1_1_file_system_linux_1a8c7cc4081f8c94afb3599e47b9dbd7f5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::FileSystemLinux::FileSystemLinux</definition>
+        <argsstring>()</argsstring>
+        <name>FileSystemLinux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/linux/FileSystemLinux.hpp" line="20" column="1" bodyfile="ouzel/files/linux/FileSystemLinux.cpp" bodystart="16" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="705">
+        <label>ouzel::FileSystemLinux</label>
+        <link refid="db/d15/classouzel_1_1_file_system_linux"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="707">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="708">
+        <label>ouzel::FileSystemLinux</label>
+        <link refid="db/d15/classouzel_1_1_file_system_linux"/>
+        <childnode refid="709" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="709">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="710" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/files/linux/FileSystemLinux.hpp" line="13" column="1" bodyfile="ouzel/files/linux/FileSystemLinux.hpp" bodystart="12" bodyend="21"/>
+    <listofallmembers>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a920b954682b892e7eb2d595d3c24b9af" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>addArchive</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a0ecb425cf85a85806dde37a9b8a98d8e" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>addResourcePath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a79e5c5239dff0613da7869d3d0a86faa" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>appPath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aff4867905ed7f80aa5bdc14d9bdbabcb" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>archives</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a98fff3dd527a52f4419ae5aaa83cb368" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>DIRECTORY_SEPARATOR</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a41960885b7801dad97399b15bafcb14b" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>directoryExists</name></member>
+      <member refid="db/d15/classouzel_1_1_file_system_linux_1ac9e2d5930e74296e884f9459cd020d42" prot="private" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>Engine</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a7515635874dce627d129b94657c70210" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>fileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a75042662c1899c313cef935f5c7d2244" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>FileSystem</name></member>
+      <member refid="db/d15/classouzel_1_1_file_system_linux_1a8c7cc4081f8c94afb3599e47b9dbd7f5" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>FileSystemLinux</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a169e45af3cbaf46cf35f6b1211ef22e5" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>getDirectoryPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a6741327501b7560178eb0e578b08a0ec" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>getExtensionPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a9e9b7728bca4d9cc9b2cfeda405358eb" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>getFilenamePart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ac14681360d4f300275f48c7ccc04e0d8" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>getPath</name></member>
+      <member refid="db/d15/classouzel_1_1_file_system_linux_1a832fbe691dd7a2ede627b7591833f809" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>getStorageDirectory</name></member>
+      <member refid="db/d15/classouzel_1_1_file_system_linux_1ae51d7da4fc013a54022f969b5c22ff6c" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>getTempDirectory</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aa8b209fa1f0ef50ece46a0ffbab2d340" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>isAbsolutePath</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>operator=</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af288b532f4af8b6c8b0709e9a2adb9a5" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>readFile</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a3f25bf8b2d0390a51630de7f63856e31" prot="public" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>resourceFileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ad4dc66539ce1fce989d406eb3e85c2a2" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>resourcePaths</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af7990564a56741d830e237b0db3b6ebc" prot="public" virt="virtual"><scope>ouzel::FileSystemLinux</scope><name>writeFile</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemLinux</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

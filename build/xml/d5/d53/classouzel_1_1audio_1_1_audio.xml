@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d53/classouzel_1_1audio_1_1_audio" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::audio::Audio</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294" prot="public" static="no">
+        <name>Driver</name>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294a5b39c8b553c821e7cddc6da64b5bd2ee" prot="public">
+          <name>DEFAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294aba2b45bdc11e2a4a6e86aab2ac693cbb" prot="public">
+          <name>EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294a01103375ef933409ea29e744ce09fb49" prot="public">
+          <name>OPENAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294ad9592ab289f0f43ca48e5a2937b35c0f" prot="public">
+          <name>DIRECTSOUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294a88695d873da8a21bea3be6f30c7895d4" prot="public">
+          <name>XAUDIO2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294a362de4da3c83dba80051f9a9ef17a602" prot="public">
+          <name>OPENSL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294a0763bf9076bd6701416e232359654136" prot="public">
+          <name>COREAUDIO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294a471f5b090bf3497f1eabebca59dd0ce8" prot="public">
+          <name>ALSA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="29" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="28" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="enum" id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0" prot="public" static="no">
+        <name>Channel</name>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0ad5e06d07d195783332f27d3e1682b159" prot="public">
+          <name>FRONT_LEFT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0abac00182387e0d347dcb089d60238907" prot="public">
+          <name>FRONT_RIGHT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a6e5d9d633aab7f52b6de52944fd3e9f4" prot="public">
+          <name>CENTER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a5dceff58b780f23503fa6ef46e3602c7" prot="public">
+          <name>LFE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a465c0f22405ee6ecba229b541e36e9eb" prot="public">
+          <name>BACK_LEFT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a5103669f4a68f26a5c0b7155414ee08c" prot="public">
+          <name>BACK_RIGHT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a38b5b7dd72ee5c62af8c9b34ce953a97" prot="public">
+          <name>SIDE_LEFT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a987aa1d7396a0f6d9408d8265a8efb00" prot="public">
+          <name>SIDE_RIGHT</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="41" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67" prot="public" static="no">
+        <name>ChannelConfiguration</name>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67a590371b4dcec7d3e5ab5a42436fd0b1b" prot="public">
+          <name>MONO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ae374fb5fbb2ea4c33544cc2cbd978106" prot="public">
+          <name>STEREO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ae63b4d8d5e224643bb9bc5be6fee12cd" prot="public">
+          <name>QUAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ae191b5f63a4f1a556c4fa89bfc075662" prot="public">
+          <name>SURROUND51</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ad12adfe6214cd0640ecf1bd1b685c6f0" prot="public">
+          <name>SURROUND51_REAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ad70e744166104ff5e2565e8e1ffdcea6" prot="public">
+          <name>SURROUND61</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67a439229e5f69700cdcac8c59cf5a28468" prot="public">
+          <name>SURROUND71</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="53" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="enum" id="d5/d53/classouzel_1_1audio_1_1_audio_1a9fe2a69e21f940af661cc5a8edc902a0" prot="public" static="no">
+        <name>Format</name>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1a9fe2a69e21f940af661cc5a8edc902a0aae05a0d1041a2770656a919a3e1f6148" prot="public">
+          <name>SINT16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d53/classouzel_1_1audio_1_1_audio_1a9fe2a69e21f940af661cc5a8edc902a0a967d280b5c16d95f2947647dd2ca6cc2" prot="public">
+          <name>FLOAT32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="64" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d53/classouzel_1_1audio_1_1_audio_1ac2002e4b285164284cbbba56b265eb21" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::audio::Audio::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="26" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d5/d53/classouzel_1_1audio_1_1_audio_1af49f435b94267c47a2e7ace03c1d96b9" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d4/d3f/classouzel_1_1audio_1_1_audio_device" kindref="compound">AudioDevice</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;AudioDevice&gt; ouzel::audio::Audio::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="90" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d53/classouzel_1_1audio_1_1_audio_1a5ac414223d0ac94937f9e8e53e5beddf" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d2/df9/classouzel_1_1audio_1_1_listener" kindref="compound">Listener</ref> * &gt;</type>
+        <definition>std::vector&lt;Listener*&gt; ouzel::audio::Audio::listeners</definition>
+        <argsstring></argsstring>
+        <name>listeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="92" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1ac2cb7f80ba0363abe1af9f303400a8b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::Audio::~Audio</definition>
+        <argsstring>()</argsstring>
+        <name>~Audio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="69" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1ac0e797c32cb12f159f0bd57dba89dd9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d3f/classouzel_1_1audio_1_1_audio_device" kindref="compound">AudioDevice</ref> *</type>
+        <definition>AudioDevice* ouzel::audio::Audio::getDevice</definition>
+        <argsstring>() const</argsstring>
+        <name>getDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="73" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1ab4067b16985d84cd528a482131ea1b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Audio::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="75" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="130" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1ac4dfb1fd3c3d1e1d67fc906db985f4d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Audio::executeOnAudioThread</definition>
+        <argsstring>(const std::function&lt; void(void)&gt; &amp;func)</argsstring>
+        <name>executeOnAudioThread</name>
+        <param>
+          <type>const std::function&lt; void(void)&gt; &amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="77" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1af697fecf4eec76aaecfd6f035ada0ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Audio::addListener</definition>
+        <argsstring>(Listener *listener)</argsstring>
+        <name>addListener</name>
+        <param>
+          <type><ref refid="d2/df9/classouzel_1_1audio_1_1_listener" kindref="compound">Listener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="79" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="149" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1aa2acb60a78209d343ea5011bbe4971dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Audio::removeListener</definition>
+        <argsstring>(Listener *listener)</argsstring>
+        <name>removeListener</name>
+        <param>
+          <type><ref refid="d2/df9/classouzel_1_1audio_1_1_listener" kindref="compound">Listener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="80" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="159" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1a7bbc5827eab745de27c56672b95be0dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; Audio::Driver &gt;</type>
+        <definition>std::set&lt; Audio::Driver &gt; ouzel::audio::Audio::getAvailableAudioDrivers</definition>
+        <argsstring>()</argsstring>
+        <name>getAvailableAudioDrivers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="71" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="28" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1a8552423a9a9bec5e9da7a098200e8bb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Audio::resampleLerp</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;src, uint32_t srcFrames, std::vector&lt; float &gt; &amp;dst, uint32_t dstFrames, uint32_t channels)</argsstring>
+        <name>resampleLerp</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>srcFrames</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dstFrames</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="82" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="174" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1af0a3c89047e659caa199b0d10f7a1cb5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::Audio::Audio</definition>
+        <argsstring>(Driver driver)</argsstring>
+        <name>Audio</name>
+        <param>
+          <type>Driver</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="87" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="62" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d53/classouzel_1_1audio_1_1_audio_1af9766b9d34c59e0b44e5c11dceccc1dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Audio::init</definition>
+        <argsstring>(bool debugAudio)</argsstring>
+        <name>init</name>
+        <param>
+          <type>bool</type>
+          <declname>debugAudio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Audio.hpp" line="88" column="1" bodyfile="ouzel/audio/Audio.cpp" bodystart="124" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="125">
+        <label>ouzel::audio::Audio</label>
+        <link refid="d5/d53/classouzel_1_1audio_1_1_audio"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="127">
+        <label>ouzel::audio::Audio</label>
+        <link refid="d5/d53/classouzel_1_1audio_1_1_audio"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/Audio.hpp" line="25" column="1" bodyfile="ouzel/audio/Audio.hpp" bodystart="24" bodyend="93"/>
+    <listofallmembers>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1af697fecf4eec76aaecfd6f035ada0ee2" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>addListener</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1af0a3c89047e659caa199b0d10f7a1cb5" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Audio</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a465c0f22405ee6ecba229b541e36e9eb" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>BACK_LEFT</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a5103669f4a68f26a5c0b7155414ee08c" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>BACK_RIGHT</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a6e5d9d633aab7f52b6de52944fd3e9f4" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>CENTER</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Channel</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>ChannelConfiguration</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1af49f435b94267c47a2e7ace03c1d96b9" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>device</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1ab80df173346bf8c60fd34d6e7b1c9294" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Driver</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1ac2002e4b285164284cbbba56b265eb21" prot="private" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Engine</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1ac4dfb1fd3c3d1e1d67fc906db985f4d1" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>executeOnAudioThread</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1a9fe2a69e21f940af661cc5a8edc902a0" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Format</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0ad5e06d07d195783332f27d3e1682b159" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>FRONT_LEFT</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0abac00182387e0d347dcb089d60238907" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>FRONT_RIGHT</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1a7bbc5827eab745de27c56672b95be0dd" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>getAvailableAudioDrivers</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1ac0e797c32cb12f159f0bd57dba89dd9e" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>getDevice</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1af9766b9d34c59e0b44e5c11dceccc1dc" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>init</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a5dceff58b780f23503fa6ef46e3602c7" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>LFE</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1a5ac414223d0ac94937f9e8e53e5beddf" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>listeners</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67a590371b4dcec7d3e5ab5a42436fd0b1b" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>MONO</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>operator=</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ae63b4d8d5e224643bb9bc5be6fee12cd" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>QUAD</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa2acb60a78209d343ea5011bbe4971dd" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>removeListener</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1a8552423a9a9bec5e9da7a098200e8bb0" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>resampleLerp</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a38b5b7dd72ee5c62af8c9b34ce953a97" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>SIDE_LEFT</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1aa68705abc33956cd1662d78a4f15e9b0a987aa1d7396a0f6d9408d8265a8efb00" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>SIDE_RIGHT</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ae374fb5fbb2ea4c33544cc2cbd978106" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>STEREO</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ae191b5f63a4f1a556c4fa89bfc075662" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>SURROUND51</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ad12adfe6214cd0640ecf1bd1b685c6f0" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>SURROUND51_REAR</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67ad70e744166104ff5e2565e8e1ffdcea6" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>SURROUND61</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1acda2505530b1c86abe3a253fc5707a67a439229e5f69700cdcac8c59cf5a28468" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>SURROUND71</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1ab4067b16985d84cd528a482131ea1b16" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>update</name></member>
+      <member refid="d5/d53/classouzel_1_1audio_1_1_audio_1ac2cb7f80ba0363abe1af9f303400a8b1" prot="public" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>~Audio</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::audio::Audio</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

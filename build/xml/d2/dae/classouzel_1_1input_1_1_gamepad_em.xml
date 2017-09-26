@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/dae/classouzel_1_1input_1_1_gamepad_em" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::GamepadEm</compoundname>
+    <basecompoundref refid="d8/d28/classouzel_1_1input_1_1_gamepad" prot="public" virt="non-virtual">ouzel::input::Gamepad</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a73d439c58e9031afdf5705dd176e53e6" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::GamepadEm::InputEm</definition>
+        <argsstring></argsstring>
+        <name>InputEm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="16" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a58eceb896f036001c178f6827f9b067b" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ouzel::input::GamepadEm::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="27" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1ad1a635cd6e7428c9b3d288c908387caf" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ouzel::input::GamepadEm::axis[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>axis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="28" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a97bccfc342caf0ffd5e589a8f7c7c419" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ouzel::input::GamepadEm::analogButton[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>analogButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="29" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a00d53661d5fce6a23ab6718aa73e43be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadEm::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="18" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.cpp" bodystart="45" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a50783525c13d433e6ffeccee7035ad6f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long ouzel::input::GamepadEm::getIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="20" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a3515777d315e8ee72e0958bbd3ab5bb3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::GamepadEm::GamepadEm</definition>
+        <argsstring>(long aIndex)</argsstring>
+        <name>GamepadEm</name>
+        <param>
+          <type>long</type>
+          <declname>aIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="23" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.cpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a8447075778b77f63783d82e835a0f1c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadEm::handleThumbAxisChange</definition>
+        <argsstring>(double oldValue, double newValue, GamepadButton negativeButton, GamepadButton positiveButton)</argsstring>
+        <name>handleThumbAxisChange</name>
+        <param>
+          <type>double</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>newValue</declname>
+        </param>
+        <param>
+          <type>GamepadButton</type>
+          <declname>negativeButton</declname>
+        </param>
+        <param>
+          <type>GamepadButton</type>
+          <declname>positiveButton</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.hpp" line="24" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.cpp" bodystart="78" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="771">
+        <label>ouzel::input::GamepadEm</label>
+        <link refid="d2/dae/classouzel_1_1input_1_1_gamepad_em"/>
+        <childnode refid="772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="774">
+        <label>ouzel::input::GamepadEm</label>
+        <link refid="d2/dae/classouzel_1_1input_1_1_gamepad_em"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="776" relation="public-inheritance">
+        </childnode>
+        <childnode refid="777" relation="usage">
+          <edgelabel>buttonStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="777">
+        <label>ouzel::input::Gamepad::ButtonState</label>
+        <link refid="d3/d17/structouzel_1_1input_1_1_gamepad_1_1_button_state"/>
+      </node>
+      <node id="776">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/emscripten/GamepadEm.hpp" line="15" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.hpp" bodystart="14" bodyend="30"/>
+    <listofallmembers>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a97bccfc342caf0ffd5e589a8f7c7c419" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>analogButton</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a2295d84f9fac9db4bafb818bf3b403fe" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>attached</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1ad1a635cd6e7428c9b3d288c908387caf" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>axis</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a33f6a0816f68e73ef79b56fd041d384d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>buttonStates</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1af7daf54f7cff20e2cc71149c45bc4867" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>Gamepad</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a3515777d315e8ee72e0958bbd3ab5bb3" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>GamepadEm</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1aa4cd0132412962b9cea5ab6d71c6a000" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>getButtonState</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a50783525c13d433e6ffeccee7035ad6f" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>getIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1affc4dd83604d2e21d345142db7130f74" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>getName</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1acd88f1c3f351a61e79cf1355e74d9ef0" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>getPlayerIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a271250569ac0029f1006ad9539763db9" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>getProductId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1aaa292d08f201e30afe2baacf4cf3c22c" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>getVendorId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a9b444534c43ec30f8ec7afd453df56b2" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>getVibration</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a6984982f11f2ad87cf3d170440b76d71" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>handleButtonValueChange</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a8447075778b77f63783d82e835a0f1c3" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>handleThumbAxisChange</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a58eceb896f036001c178f6827f9b067b" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>index</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a73d439c58e9031afdf5705dd176e53e6" prot="private" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>InputEm</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a65c3d0d9377fb053b10c4c385b0cdf2c" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>isAbsoluteDpadValues</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1808d1a24dfc38c9a9e3dbd8225260b0" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>isAttached</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a58ccc44c1f42bb23e9dc674bd5c32e86" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>Motor</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1b2c52a6d8034d997fcd5a4bdf501e93" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>name</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>operator=</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1ae78926b1cbb568ad753eea74a3df5d4d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>productId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1e1c5e0df9442f389c9154536bb15a29" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>setAbsoluteDpadValues</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a347b2b078234eea22d2c88f7e0bfc0c2" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>setPlayerIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a199730ee4f3abd9ff78e4febbc55a36a" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>setVibration</name></member>
+      <member refid="d2/dae/classouzel_1_1input_1_1_gamepad_em_1a00d53661d5fce6a23ab6718aa73e43be" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>update</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a6a21706824c7938be713b861905f75b1" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>vendorId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a73f16e3aa10e948c8b439e5334a2fdeb" prot="public" virt="virtual"><scope>ouzel::input::GamepadEm</scope><name>~Gamepad</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadEm</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

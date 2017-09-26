@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::GamepadGC</compoundname>
+    <basecompoundref refid="d8/d28/classouzel_1_1input_1_1_gamepad" prot="public" virt="non-virtual">ouzel::input::Gamepad</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a867cdcfbdb346d77fa9774978bf7fe92" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::GamepadGC::InputMacOS</definition>
+        <argsstring></argsstring>
+        <name>InputMacOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="24" column="1" bodyfile="ouzel/input/macos/GamepadGC.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1ade9cd2dc35c709b54b28413ec6c592ab" prot="protected" static="no" mutable="no">
+        <type>GCControllerPtr</type>
+        <definition>GCControllerPtr ouzel::input::GamepadGC::controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="37" column="1" bodyfile="ouzel/input/macos/GamepadGC.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a99d3ed5ca64e343ba874a7c7b5693a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::GamepadGC::setAbsoluteDpadValues</definition>
+        <argsstring>(bool absoluteDpadValues) override</argsstring>
+        <name>setAbsoluteDpadValues</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1e1c5e0df9442f389c9154536bb15a29">setAbsoluteDpadValues</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>absoluteDpadValues</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="26" column="1" bodyfile="ouzel/input/macos/GamepadGC.mm" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1af360cc0aa4ea47b6636a23142285cc4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::GamepadGC::isAbsoluteDpadValues</definition>
+        <argsstring>() const override</argsstring>
+        <name>isAbsoluteDpadValues</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a65c3d0d9377fb053b10c4c385b0cdf2c">isAbsoluteDpadValues</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="27" column="1" bodyfile="ouzel/input/macos/GamepadGC.mm" bodystart="164" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a5151d299a151ad40b1920c2a4e543b67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t ouzel::input::GamepadGC::getPlayerIndex</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPlayerIndex</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1acd88f1c3f351a61e79cf1355e74d9ef0">getPlayerIndex</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="29" column="1" bodyfile="ouzel/input/macos/GamepadGC.mm" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a29f755e828930c811e73eb5598697735" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::GamepadGC::setPlayerIndex</definition>
+        <argsstring>(int32_t playerIndex) override</argsstring>
+        <name>setPlayerIndex</name>
+        <reimplements refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a347b2b078234eea22d2c88f7e0bfc0c2">setPlayerIndex</reimplements>
+        <param>
+          <type>int32_t</type>
+          <declname>playerIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="30" column="1" bodyfile="ouzel/input/macos/GamepadGC.mm" bodystart="178" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1aa659b07b05c1db2c18a1f7f1ad1538f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>GCControllerPtr</type>
+        <definition>GCControllerPtr ouzel::input::GamepadGC::getController</definition>
+        <argsstring>() const</argsstring>
+        <name>getController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="32" column="1" bodyfile="ouzel/input/macos/GamepadGC.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a15dc9ffc42a662215dc00beb69934027" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::GamepadGC::GamepadGC</definition>
+        <argsstring>(GCControllerPtr aController)</argsstring>
+        <name>GamepadGC</name>
+        <param>
+          <type>GCControllerPtr</type>
+          <declname>aController</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadGC.hpp" line="35" column="1" bodyfile="ouzel/input/macos/GamepadGC.mm" bodystart="11" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="783">
+        <label>ouzel::input::GamepadGC</label>
+        <link refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c"/>
+        <childnode refid="784" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="786">
+        <label>ouzel::input::GamepadGC</label>
+        <link refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c"/>
+        <childnode refid="787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="787">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="788" relation="public-inheritance">
+        </childnode>
+        <childnode refid="789" relation="usage">
+          <edgelabel>buttonStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="789">
+        <label>ouzel::input::Gamepad::ButtonState</label>
+        <link refid="d3/d17/structouzel_1_1input_1_1_gamepad_1_1_button_state"/>
+      </node>
+      <node id="788">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/macos/GamepadGC.hpp" line="23" column="1" bodyfile="ouzel/input/macos/GamepadGC.hpp" bodystart="22" bodyend="38"/>
+    <listofallmembers>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a2295d84f9fac9db4bafb818bf3b403fe" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>attached</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a33f6a0816f68e73ef79b56fd041d384d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>buttonStates</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1ade9cd2dc35c709b54b28413ec6c592ab" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>controller</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1af7daf54f7cff20e2cc71149c45bc4867" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>Gamepad</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a15dc9ffc42a662215dc00beb69934027" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>GamepadGC</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1aa4cd0132412962b9cea5ab6d71c6a000" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>getButtonState</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1aa659b07b05c1db2c18a1f7f1ad1538f3" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>getController</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1affc4dd83604d2e21d345142db7130f74" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>getName</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a5151d299a151ad40b1920c2a4e543b67" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>getPlayerIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a271250569ac0029f1006ad9539763db9" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>getProductId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1aaa292d08f201e30afe2baacf4cf3c22c" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>getVendorId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a9b444534c43ec30f8ec7afd453df56b2" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>getVibration</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a6984982f11f2ad87cf3d170440b76d71" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>handleButtonValueChange</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a867cdcfbdb346d77fa9774978bf7fe92" prot="private" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>InputMacOS</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1af360cc0aa4ea47b6636a23142285cc4f" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>isAbsoluteDpadValues</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1808d1a24dfc38c9a9e3dbd8225260b0" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>isAttached</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a58ccc44c1f42bb23e9dc674bd5c32e86" prot="public" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>Motor</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a1b2c52a6d8034d997fcd5a4bdf501e93" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>name</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>operator=</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1ae78926b1cbb568ad753eea74a3df5d4d" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>productId</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a99d3ed5ca64e343ba874a7c7b5693a95" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>setAbsoluteDpadValues</name></member>
+      <member refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c_1a29f755e828930c811e73eb5598697735" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>setPlayerIndex</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a199730ee4f3abd9ff78e4febbc55a36a" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>setVibration</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a6a21706824c7938be713b861905f75b1" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>vendorId</name></member>
+      <member refid="d8/d28/classouzel_1_1input_1_1_gamepad_1a73f16e3aa10e948c8b439e5334a2fdeb" prot="public" virt="virtual"><scope>ouzel::input::GamepadGC</scope><name>~Gamepad</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::GamepadGC</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

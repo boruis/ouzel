@@ -1,0 +1,21 @@
+
+#include "ouzel_scene_Sequence_lua.hpp"
+
+using namespace ouzel;
+using namespace ouzel::scene;
+
+void ouzel_luabinding_sequence(kaguya::State &state)
+{
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Sequence>();
+
+	//Constructor
+	metaTable.setConstructors<
+		ouzel::scene::Sequence(const std::vector< Animator *> &aAnimators),
+		ouzel::scene::Sequence(const std::vector< std::unique_ptr< Animator >> &aAnimators)
+	>();
+
+	//PublicFunc
+	metaTable.addFunction("play", &ouzel::scene::Sequence::play);
+
+	state["oz"]["Sequence"].setClass(metaTable);
+}

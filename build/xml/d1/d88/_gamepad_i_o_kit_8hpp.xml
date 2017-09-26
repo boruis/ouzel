@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d1/d88/_gamepad_i_o_kit_8hpp" kind="file" language="C++">
+    <compoundname>GamepadIOKit.hpp</compoundname>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">IOKit/hid/IOHIDManager.h</includes>
+    <includes refid="d9/d5b/_gamepad_8hpp" local="yes">input/Gamepad.hpp</includes>
+    <includedby refid="d3/d78/_gamepad_i_o_kit_8cpp" local="yes">ouzel/input/macos/GamepadIOKit.cpp</includedby>
+    <includedby refid="dc/d9c/_input_mac_o_s_8mm" local="yes">ouzel/input/macos/InputMacOS.mm</includedby>
+    <incdepgraph>
+      <node id="11169">
+        <label>functional</label>
+      </node>
+      <node id="11167">
+        <label>queue</label>
+      </node>
+      <node id="11177">
+        <label>limits</label>
+      </node>
+      <node id="11156">
+        <label>cstdint</label>
+      </node>
+      <node id="11171">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="11172" relation="include">
+        </childnode>
+        <childnode refid="11178" relation="include">
+        </childnode>
+      </node>
+      <node id="11183">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="11163" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11176" relation="include">
+        </childnode>
+        <childnode refid="11172" relation="include">
+        </childnode>
+        <childnode refid="11184" relation="include">
+        </childnode>
+        <childnode refid="11185" relation="include">
+        </childnode>
+        <childnode refid="11189" relation="include">
+        </childnode>
+      </node>
+      <node id="11165">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="11166" relation="include">
+        </childnode>
+        <childnode refid="11167" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11168" relation="include">
+        </childnode>
+      </node>
+      <node id="11155">
+        <label>input/Gamepad.hpp</label>
+        <link refid="d9/d5b/_gamepad_8hpp_source"/>
+        <childnode refid="11156" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11158" relation="include">
+        </childnode>
+      </node>
+      <node id="11187">
+        <label>cmath</label>
+      </node>
+      <node id="11160">
+        <label>string</label>
+      </node>
+      <node id="11158">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="11156" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11160" relation="include">
+        </childnode>
+        <childnode refid="11161" relation="include">
+        </childnode>
+        <childnode refid="11192" relation="include">
+        </childnode>
+        <childnode refid="11186" relation="include">
+        </childnode>
+        <childnode refid="11188" relation="include">
+        </childnode>
+        <childnode refid="11194" relation="include">
+        </childnode>
+      </node>
+      <node id="11162">
+        <label>cfloat</label>
+      </node>
+      <node id="11176">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="11156" relation="include">
+        </childnode>
+        <childnode refid="11177" relation="include">
+        </childnode>
+        <childnode refid="11178" relation="include">
+        </childnode>
+        <childnode refid="11180" relation="include">
+        </childnode>
+      </node>
+      <node id="11174">
+        <label>Config.h</label>
+      </node>
+      <node id="11172">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="11173" relation="include">
+        </childnode>
+        <childnode refid="11175" relation="include">
+        </childnode>
+        <childnode refid="11181" relation="include">
+        </childnode>
+        <childnode refid="11178" relation="include">
+        </childnode>
+        <childnode refid="11182" relation="include">
+        </childnode>
+      </node>
+      <node id="11164">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="11165" relation="include">
+        </childnode>
+      </node>
+      <node id="11161">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="11162" relation="include">
+        </childnode>
+        <childnode refid="11163" relation="include">
+        </childnode>
+        <childnode refid="11164" relation="include">
+        </childnode>
+        <childnode refid="11183" relation="include">
+        </childnode>
+        <childnode refid="11191" relation="include">
+        </childnode>
+        <childnode refid="11178" relation="include">
+        </childnode>
+      </node>
+      <node id="11190">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="11192">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="11163" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11193" relation="include">
+        </childnode>
+        <childnode refid="11191" relation="include">
+        </childnode>
+        <childnode refid="11176" relation="include">
+        </childnode>
+        <childnode refid="11184" relation="include">
+        </childnode>
+        <childnode refid="11172" relation="include">
+        </childnode>
+        <childnode refid="11171" relation="include">
+        </childnode>
+        <childnode refid="11186" relation="include">
+        </childnode>
+        <childnode refid="11178" relation="include">
+        </childnode>
+      </node>
+      <node id="11181">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="11193">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="11163" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11186" relation="include">
+        </childnode>
+      </node>
+      <node id="11189">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="11156" relation="include">
+        </childnode>
+        <childnode refid="11160" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11190" relation="include">
+        </childnode>
+        <childnode refid="11184" relation="include">
+        </childnode>
+        <childnode refid="11188" relation="include">
+        </childnode>
+      </node>
+      <node id="11173">
+        <label>core/Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="11174" relation="include">
+        </childnode>
+      </node>
+      <node id="11159">
+        <label>vector</label>
+      </node>
+      <node id="11188">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="11186" relation="include">
+        </childnode>
+      </node>
+      <node id="11175">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11176" relation="include">
+        </childnode>
+        <childnode refid="11181" relation="include">
+        </childnode>
+        <childnode refid="11182" relation="include">
+        </childnode>
+      </node>
+      <node id="11180">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="11178" relation="include">
+        </childnode>
+      </node>
+      <node id="11194">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="11163" relation="include">
+        </childnode>
+        <childnode refid="11166" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11153" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11186" relation="include">
+        </childnode>
+      </node>
+      <node id="11168">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="11156" relation="include">
+        </childnode>
+        <childnode refid="11169" relation="include">
+        </childnode>
+        <childnode refid="11163" relation="include">
+        </childnode>
+        <childnode refid="11170" relation="include">
+        </childnode>
+        <childnode refid="11159" relation="include">
+        </childnode>
+        <childnode refid="11157" relation="include">
+        </childnode>
+        <childnode refid="11171" relation="include">
+        </childnode>
+        <childnode refid="11178" relation="include">
+        </childnode>
+      </node>
+      <node id="11184">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="11179" relation="include">
+        </childnode>
+        <childnode refid="11156" relation="include">
+        </childnode>
+        <childnode refid="11160" relation="include">
+        </childnode>
+      </node>
+      <node id="11179">
+        <label>cstddef</label>
+      </node>
+      <node id="11153">
+        <label>unordered_map</label>
+      </node>
+      <node id="11182">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="11179" relation="include">
+        </childnode>
+        <childnode refid="11173" relation="include">
+        </childnode>
+      </node>
+      <node id="11166">
+        <label>mutex</label>
+      </node>
+      <node id="11154">
+        <label>IOKit/hid/IOHIDManager.h</label>
+      </node>
+      <node id="11170">
+        <label>set</label>
+      </node>
+      <node id="11186">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="11179" relation="include">
+        </childnode>
+        <childnode refid="11187" relation="include">
+        </childnode>
+      </node>
+      <node id="11152">
+        <label>ouzel/input/macos/GamepadIOKit.hpp</label>
+        <link refid="d1/d88/_gamepad_i_o_kit_8hpp"/>
+        <childnode refid="11153" relation="include">
+        </childnode>
+        <childnode refid="11154" relation="include">
+        </childnode>
+        <childnode refid="11155" relation="include">
+        </childnode>
+      </node>
+      <node id="11191">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="11169" relation="include">
+        </childnode>
+        <childnode refid="11156" relation="include">
+        </childnode>
+      </node>
+      <node id="11157">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="11185">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="11186" relation="include">
+        </childnode>
+        <childnode refid="11188" relation="include">
+        </childnode>
+      </node>
+      <node id="11178">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="11179" relation="include">
+        </childnode>
+      </node>
+      <node id="11163">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" prot="public">ouzel::input::GamepadIOKit</innerclass>
+    <innerclass refid="d8/dd3/structouzel_1_1input_1_1_gamepad_i_o_kit_1_1_element" prot="protected">ouzel::input::GamepadIOKit::Element</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d5/d3c/namespaceouzel_1_1input">ouzel::input</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;IOKit/hid/IOHIDManager.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input/Gamepad.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">input</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">InputMacOS;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" kindref="compound">GamepadIOKit</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d8/d28/classouzel_1_1input_1_1_gamepad" kindref="compound">Gamepad</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s" kindref="compound">InputMacOS</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDDeviceRef<sp/>getDevice()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device;<sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>handleInput(IOHIDValueRef<sp/>value);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" kindref="compound">GamepadIOKit</ref>(IOHIDDeviceRef<sp/>aDevice);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>handleThumbAxisChange(int64_t<sp/>oldValue,<sp/>int64_t<sp/>newValue,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>min,<sp/>int64_t<sp/>max,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton<sp/>negativeButton,<sp/>GamepadButton<sp/>positiveButton);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDDeviceRef<sp/>device<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d8/dd3/structouzel_1_1input_1_1_gamepad_i_o_kit_1_1_element" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d8/dd3/structouzel_1_1input_1_1_gamepad_i_o_kit_1_1_element" kindref="compound">Element</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>element<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>type<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>usagePage<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>usage<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>min<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>max<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>value<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton<sp/>button<sp/>=<sp/>GamepadButton::NONE;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;IOHIDElementRef,<sp/>Element&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>leftThumbX<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>leftThumbY<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>leftTrigger<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>rightThumbX<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>rightThumbY<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>rightTrigger<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/input/macos/GamepadIOKit.hpp"/>
+  </compounddef>
+</doxygen>

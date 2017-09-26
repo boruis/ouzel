@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d1c/_cursor_resource_8hpp" kind="file" language="C++">
+    <compoundname>CursorResource.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">vector</includes>
+    <includes refid="d8/d35/_cursor_8hpp" local="yes">input/Cursor.hpp</includes>
+    <includes refid="db/d59/_size2_8hpp" local="yes">math/Size2.hpp</includes>
+    <includedby refid="d6/d31/_cursor_8cpp" local="yes">ouzel/input/Cursor.cpp</includedby>
+    <includedby refid="d3/d43/_cursor_resource_8cpp" local="yes">ouzel/input/CursorResource.cpp</includedby>
+    <includedby refid="d7/d47/_input_8cpp" local="yes">ouzel/input/Input.cpp</includedby>
+    <includedby refid="dd/da9/_cursor_resource_linux_8hpp" local="yes">ouzel/input/linux/CursorResourceLinux.hpp</includedby>
+    <includedby refid="d6/de0/_cursor_resource_mac_o_s_8hpp" local="yes">ouzel/input/macos/CursorResourceMacOS.hpp</includedby>
+    <includedby refid="dd/dcd/_cursor_resource_win_8hpp" local="yes">ouzel/input/windows/CursorResourceWin.hpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <incdepgraph>
+      <node id="9972">
+        <label>cstdint</label>
+      </node>
+      <node id="9971">
+        <label>ouzel/input/CursorResource.hpp</label>
+        <link refid="d9/d1c/_cursor_resource_8hpp"/>
+        <childnode refid="9972" relation="include">
+        </childnode>
+        <childnode refid="9973" relation="include">
+        </childnode>
+        <childnode refid="9974" relation="include">
+        </childnode>
+        <childnode refid="9975" relation="include">
+        </childnode>
+        <childnode refid="9979" relation="include">
+        </childnode>
+      </node>
+      <node id="9982">
+        <label>cmath</label>
+      </node>
+      <node id="9975">
+        <label>input/Cursor.hpp</label>
+        <link refid="d8/d35/_cursor_8hpp_source"/>
+        <childnode refid="9972" relation="include">
+        </childnode>
+        <childnode refid="9976" relation="include">
+        </childnode>
+        <childnode refid="9974" relation="include">
+        </childnode>
+        <childnode refid="9977" relation="include">
+        </childnode>
+        <childnode refid="9978" relation="include">
+        </childnode>
+        <childnode refid="9979" relation="include">
+        </childnode>
+        <childnode refid="9980" relation="include">
+        </childnode>
+      </node>
+      <node id="9976">
+        <label>string</label>
+      </node>
+      <node id="9978">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="9974">
+        <label>vector</label>
+      </node>
+      <node id="9979">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="9980" relation="include">
+        </childnode>
+      </node>
+      <node id="9981">
+        <label>cstddef</label>
+      </node>
+      <node id="9973">
+        <label>mutex</label>
+      </node>
+      <node id="9980">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="9981" relation="include">
+        </childnode>
+        <childnode refid="9982" relation="include">
+        </childnode>
+      </node>
+      <node id="9977">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9983">
+        <label>ouzel/input/CursorResource.hpp</label>
+        <link refid="d9/d1c/_cursor_resource_8hpp"/>
+        <childnode refid="9984" relation="include">
+        </childnode>
+        <childnode refid="9985" relation="include">
+        </childnode>
+        <childnode refid="9986" relation="include">
+        </childnode>
+        <childnode refid="9987" relation="include">
+        </childnode>
+      </node>
+      <node id="9987">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="9985">
+        <label>ouzel/input/macos/CursorResourceMacOS.hpp</label>
+        <link refid="d6/de0/_cursor_resource_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="9984">
+        <label>ouzel/input/linux/CursorResourceLinux.hpp</label>
+        <link refid="dd/da9/_cursor_resource_linux_8hpp_source"/>
+      </node>
+      <node id="9986">
+        <label>ouzel/input/windows/CursorResourceWin.hpp</label>
+        <link refid="dd/dcd/_cursor_resource_win_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" prot="public">ouzel::input::CursorResource</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d5/d3c/namespaceouzel_1_1input">ouzel::input</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input/Cursor.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Size2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">input</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Input;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="d3/d66/classouzel_1_1input_1_1_input" kindref="compound">Input</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init(SystemCursor<sp/>newSystemCursor);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint8_t&gt;&amp;<sp/>newData,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref>&amp;<sp/>newSize,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>graphics::PixelFormat<sp/>newPixelFormat,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>newHotSpot);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reactivate();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SystemCursor<sp/>systemCursor<sp/>=<sp/>SystemCursor::DEFAULT;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>data;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref><sp/>size;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>graphics::PixelFormat<sp/>pixelFormat;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>hotSpot;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/input/CursorResource.hpp"/>
+  </compounddef>
+</doxygen>

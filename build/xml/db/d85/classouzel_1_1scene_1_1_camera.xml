@@ -1,0 +1,1449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d85/classouzel_1_1scene_1_1_camera" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::scene::Camera</compoundname>
+    <basecompoundref refid="df/d81/classouzel_1_1scene_1_1_actor" prot="public" virt="non-virtual">ouzel::scene::Actor</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="db/d85/classouzel_1_1scene_1_1_camera_1a7ea699fe7c9a51aa8a0414b26f5f105d" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a7ea699fe7c9a51aa8a0414b26f5f105da72baef04098f035e8a320b03ad197818" prot="public">
+          <name>CUSTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a7ea699fe7c9a51aa8a0414b26f5f105da197833f339c57af4c0aaba39540e64cc" prot="public">
+          <name>ORTHOGRAPHIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a7ea699fe7c9a51aa8a0414b26f5f105dad46c97be63d6c4cb887419a4a3df5347" prot="public">
+          <name>PERSPECTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="23" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="db/d85/classouzel_1_1scene_1_1_camera_1a61dafd714292b57d7aa01483c73fbcbd" prot="public" static="no">
+        <name>ScaleMode</name>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a61dafd714292b57d7aa01483c73fbcbdab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a61dafd714292b57d7aa01483c73fbcbda0511658da394104004f2280de2679459" prot="public">
+          <name>EXACT_FIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a61dafd714292b57d7aa01483c73fbcbda2f015b4197d85c9acc95af0642e1ca1a" prot="public">
+          <name>NO_BORDER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/d85/classouzel_1_1scene_1_1_camera_1a61dafd714292b57d7aa01483c73fbcbda0402808b20c3a88797a684aa2f6903b4" prot="public">
+          <name>SHOW_ALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="30" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a2ba4f45d76a81467e627ab49b02d2b25" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::scene::Camera::Layer</definition>
+        <argsstring></argsstring>
+        <name>Layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="20" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1ae10ce9b6796e4edf129a404988849bda" prot="protected" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type ouzel::scene::Camera::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="97" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a36c2fdf0f7dcb2810d1308ed0e13f754" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Camera::fov</definition>
+        <argsstring></argsstring>
+        <name>fov</name>
+        <initializer>= TAU / 6.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="98" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1ab98165d9a427a90932a1904cdf663177" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Camera::nearPlane</definition>
+        <argsstring></argsstring>
+        <name>nearPlane</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="99" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a05c0279f0a31cb755f8682d8fa875703" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Camera::farPlane</definition>
+        <argsstring></argsstring>
+        <name>farPlane</name>
+        <initializer>= 100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="100" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1abcd9d66241caed4947704dc2a9eb31d6" prot="protected" static="no" mutable="no">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::scene::Camera::projection</definition>
+        <argsstring></argsstring>
+        <name>projection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="102" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a812f0ce331855294df84dec29033ef53" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle ouzel::scene::Camera::viewport</definition>
+        <argsstring></argsstring>
+        <name>viewport</name>
+        <initializer>= <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref>(0.0f, 0.0f, 1.0f, 1.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="104" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a3500471b757d2a103763dcabe2da3c1e" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle ouzel::scene::Camera::renderViewport</definition>
+        <argsstring></argsstring>
+        <name>renderViewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="105" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a46799cee48d236f552f3b5cb76572bbd" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::scene::Camera::targetContentSize</definition>
+        <argsstring></argsstring>
+        <name>targetContentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="106" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1af081921e6e3bd1036d99436d1fec5f06" prot="protected" static="no" mutable="no">
+        <type>ScaleMode</type>
+        <definition>ScaleMode ouzel::scene::Camera::scaleMode</definition>
+        <argsstring></argsstring>
+        <name>scaleMode</name>
+        <initializer>= ScaleMode::NONE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="108" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1acc9bb97ab88a3120722c12ac8e697582" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::scene::Camera::contentSize</definition>
+        <argsstring></argsstring>
+        <name>contentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="109" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a39e8740391aa2d5e6bb8447f8a3896df" prot="protected" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::scene::Camera::contentScale</definition>
+        <argsstring></argsstring>
+        <name>contentScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="110" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1ad4f21b5b6e1cdf086b755785677a1ded" prot="protected" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::scene::Camera::contentPosition</definition>
+        <argsstring></argsstring>
+        <name>contentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="111" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a94ed513b236983d508542df8629eacaa" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::depthWrite</definition>
+        <argsstring></argsstring>
+        <name>depthWrite</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="113" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a848d8f875e5f29f75c1eec2e91acd62b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::depthTest</definition>
+        <argsstring></argsstring>
+        <name>depthTest</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="114" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a287d252e2b5b74c95f8d7573a4b8b5ad" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::wireframe</definition>
+        <argsstring></argsstring>
+        <name>wireframe</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="115" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a6e8b65bf321d7d19ef868f6cdff95f11" prot="protected" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::viewProjectionDirty</definition>
+        <argsstring></argsstring>
+        <name>viewProjectionDirty</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="117" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a019712a61b368668aab6675ba4e7a8d2" prot="protected" static="no" mutable="yes">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::scene::Camera::viewProjection</definition>
+        <argsstring></argsstring>
+        <name>viewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="118" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a42819e34e6decf2beda6260084347fe5" prot="protected" static="no" mutable="yes">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::scene::Camera::renderViewProjection</definition>
+        <argsstring></argsstring>
+        <name>renderViewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="119" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a8096242e2c4362879e3632b7dcdf3ade" prot="protected" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::inverseViewProjectionDirty</definition>
+        <argsstring></argsstring>
+        <name>inverseViewProjectionDirty</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="121" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1af7a8b6e0355dab12f4fe1d2b88406d2c" prot="protected" static="no" mutable="yes">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::scene::Camera::inverseViewProjection</definition>
+        <argsstring></argsstring>
+        <name>inverseViewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="122" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1a91489a8a690d80d1f21713b0cbb71958" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::Texture&gt; ouzel::scene::Camera::renderTarget</definition>
+        <argsstring></argsstring>
+        <name>renderTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="124" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d85/classouzel_1_1scene_1_1_camera_1af42d07896013539b49e3db2ac915b3a7" prot="protected" static="no" mutable="no">
+        <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+        <definition>Layer* ouzel::scene::Camera::addedToLayer</definition>
+        <argsstring></argsstring>
+        <name>addedToLayer</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="125" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a0f557ebb6caecd6099a2b4c14eba6cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Camera::Camera</definition>
+        <argsstring>(Matrix4 aProjection)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+          <declname>aProjection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="37" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a3eab10f7be77885cac5143ba8dda0625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Camera::Camera</definition>
+        <argsstring>(const Size2 &amp;aTargetContentSize=Size2(), ScaleMode aScaleMode=ScaleMode::NONE)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>aTargetContentSize</declname>
+          <defval><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref>()</defval>
+        </param>
+        <param>
+          <type>ScaleMode</type>
+          <declname>aScaleMode</declname>
+          <defval>ScaleMode::NONE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="38" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ad5db29d3e85a334f3618969b542b60e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Camera::Camera</definition>
+        <argsstring>(float aFov, float aNearPlane=1.0f, float aFarPlane=100.0f)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type>float</type>
+          <declname>aFov</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aNearPlane</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aFarPlane</declname>
+          <defval>100.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="39" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a5ccd2d96eecca14d5248299887991b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::scene::Camera::~Camera</definition>
+        <argsstring>()</argsstring>
+        <name>~Camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="40" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a274e5cc8a50625d51004e6353621ae3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setType</definition>
+        <argsstring>(Type newType)</argsstring>
+        <name>setType</name>
+        <param>
+          <type>Type</type>
+          <declname>newType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="42" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a9ab2684917698e8b4e1cbb3773886a90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>Type ouzel::scene::Camera::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="43" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ac9f8b61d7cedb0fecc6211dbb2b14ce4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setFOV</definition>
+        <argsstring>(float newFOV)</argsstring>
+        <name>setFOV</name>
+        <param>
+          <type>float</type>
+          <declname>newFOV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="45" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a7c3421af3216fc51fef52ab5ec7eedcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::scene::Camera::getFOV</definition>
+        <argsstring>() const</argsstring>
+        <name>getFOV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="46" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a82328d701683b498c9746776b7636bf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setNearPlane</definition>
+        <argsstring>(float newNearPlane)</argsstring>
+        <name>setNearPlane</name>
+        <param>
+          <type>float</type>
+          <declname>newNearPlane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="48" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a80e5ef51877ea5dfcc454384996f9ef5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::scene::Camera::getNearPlane</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="49" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a9626552aa7aa4fc02b4c9d31b9f6be70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setFarPlane</definition>
+        <argsstring>(float newFarPlane)</argsstring>
+        <name>setFarPlane</name>
+        <param>
+          <type>float</type>
+          <declname>newFarPlane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="51" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a58d6409b59a7b78597d9d39c58e133df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::scene::Camera::getFarPlane</definition>
+        <argsstring>() const</argsstring>
+        <name>getFarPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="52" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ae691c9d38574023628f0c8a3d4d4e2d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>const Matrix4&amp; ouzel::scene::Camera::getProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>getProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="54" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a18fc41bb869d10e1374a827e1e4bb6ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::recalculateProjection</definition>
+        <argsstring>()</argsstring>
+        <name>recalculateProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="55" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="67" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ac65509c612e744ad6bdda9b334fc96c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>const Matrix4 &amp; ouzel::scene::Camera::getViewProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="57" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="136" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ab175a3ffcff7df86162d9abffdeaf3bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>const Matrix4 &amp; ouzel::scene::Camera::getRenderViewProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderViewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="58" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="146" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a50533fb83b2c6005786ec431aeccced3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>const Matrix4 &amp; ouzel::scene::Camera::getInverseViewProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>getInverseViewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="59" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="156" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a1db2b0d730c012319d1390891ca213b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 ouzel::scene::Camera::convertNormalizedToWorld</definition>
+        <argsstring>(const Vector2 &amp;normalizedPosition) const</argsstring>
+        <name>convertNormalizedToWorld</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>normalizedPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="61" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="180" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ac47c36eb2e00eef5a6c589a32c3b4a2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::scene::Camera::convertWorldToNormalized</definition>
+        <argsstring>(const Vector3 &amp;worldPosition) const</argsstring>
+        <name>convertWorldToNormalized</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="62" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="192" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a95331b4c85e442f6a9b71f3bf32c34d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::checkVisibility</definition>
+        <argsstring>(const Matrix4 &amp;boxTransform, const Box3 &amp;boundingBox) const</argsstring>
+        <name>checkVisibility</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>boxTransform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/d7b/classouzel_1_1_box3" kindref="compound">Box3</ref> &amp;</type>
+          <declname>boundingBox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="64" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="202" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1aca8302ace90af00f01bec6bd867e7a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setViewport</definition>
+        <argsstring>(const Rectangle &amp;newViewport)</argsstring>
+        <name>setViewport</name>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>newViewport</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="66" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1afba9907bd6159edd836cbf89510374d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+        <definition>const Rectangle&amp; ouzel::scene::Camera::getViewport</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="67" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a1c4d6ed7ad4a289db5741755acd24dac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+        <definition>const Rectangle&amp; ouzel::scene::Camera::getRenderViewport</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderViewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="68" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a4f81297cc84cf2a7a6383993aa69598e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setScaleMode</definition>
+        <argsstring>(ScaleMode newScaleMode)</argsstring>
+        <name>setScaleMode</name>
+        <param>
+          <type>ScaleMode</type>
+          <declname>newScaleMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="70" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a9cd95c0e57ef0c5890e062da422ec197" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ScaleMode</type>
+        <definition>ScaleMode ouzel::scene::Camera::getScaleMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getScaleMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="71" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a811cc90b9752cce35c54d9412f89509f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setTargetContentSize</definition>
+        <argsstring>(const Size2 &amp;newTargetContentSize)</argsstring>
+        <name>setTargetContentSize</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newTargetContentSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="73" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="275" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a9948752645986674cffcc54044c2ee34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>const Size2&amp; ouzel::scene::Camera::getTargetContentSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getTargetContentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="74" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ac38a34195aff086f9b7d70282ad3c97c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>const Size2&amp; ouzel::scene::Camera::getContentSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getContentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="76" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ab6359a86dce3a3c0427b45bf8b3f25a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; ouzel::scene::Camera::getContentScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getContentScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="77" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a19343b2f2fad4cb129fe3ae0f368657b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; ouzel::scene::Camera::getContentPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getContentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="78" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1abaaa1deb29ff94faf863a7a925812cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setRenderTarget</definition>
+        <argsstring>(const std::shared_ptr&lt; graphics::Texture &gt; &amp;newRenderTarget)</argsstring>
+        <name>setRenderTarget</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+          <declname>newRenderTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="80" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="281" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a21252aafed48a49d8fca291098880cc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt;graphics::Texture&gt;&amp; ouzel::scene::Camera::getRenderTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="81" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a280f4f892a6524ace750e3d729b7535e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::getDepthWrite</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepthWrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="83" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a66d3038f0a2d398c2c43dfc270825d7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setDepthWrite</definition>
+        <argsstring>(bool newDepthWrite)</argsstring>
+        <name>setDepthWrite</name>
+        <param>
+          <type>bool</type>
+          <declname>newDepthWrite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="84" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a2abd798abd8c0c54a4b94f86a693c4d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::getDepthTest</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepthTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="85" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a51c9d2f4866a7160417311fa6bf1faa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setDepthTest</definition>
+        <argsstring>(bool newDepthTest)</argsstring>
+        <name>setDepthTest</name>
+        <param>
+          <type>bool</type>
+          <declname>newDepthTest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="86" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a0d494eb150fa77e0f3da81729037ed2e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Camera::getWireframe</definition>
+        <argsstring>() const</argsstring>
+        <name>getWireframe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="88" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a32727ae7e538c514ec12de243dbdd929" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setWireframe</definition>
+        <argsstring>(bool newWireframe)</argsstring>
+        <name>setWireframe</name>
+        <param>
+          <type>bool</type>
+          <declname>newWireframe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="89" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1ae26dd472ae6004d6189fd026c9f21468" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::setLayer</definition>
+        <argsstring>(Layer *newLayer) override</argsstring>
+        <name>setLayer</name>
+        <reimplements refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a69b6f76ed6782ae5625ae74701ddcf3d">setLayer</reimplements>
+        <param>
+          <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>newLayer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="92" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="43" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a94ded87ed1a935bfebd1423fdcdcb2f4" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::calculateTransform</definition>
+        <argsstring>() const override</argsstring>
+        <name>calculateTransform</name>
+        <reimplements refid="df/d81/classouzel_1_1scene_1_1_actor_1aac76d6abf8592fde462536872ba2fac8">calculateTransform</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="94" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d85/classouzel_1_1scene_1_1_camera_1a93b23c70c42a4a80c960588a3798a3d4" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Camera::calculateViewProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateViewProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Camera.hpp" line="95" column="1" bodyfile="ouzel/scene/Camera.cpp" bodystart="169" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="226">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="227" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>ouzel::scene::Camera</label>
+        <link refid="db/d85/classouzel_1_1scene_1_1_camera"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="227">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="240">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="241" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="244">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="248">
+        <label>ouzel::Rectangle</label>
+        <link refid="db/dc0/classouzel_1_1_rectangle"/>
+        <childnode refid="249" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="250" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="242">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+        <childnode refid="234" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="250">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="230">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+        <childnode refid="238" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="231" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="240" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="247" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="247">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="247" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="235">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="236" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="245">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="249">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="249" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="238">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="238" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="236">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>ouzel::scene::Camera</label>
+        <link refid="db/d85/classouzel_1_1scene_1_1_camera"/>
+        <childnode refid="230" relation="public-inheritance">
+        </childnode>
+        <childnode refid="248" relation="usage">
+          <edgelabel>renderViewport</edgelabel>
+          <edgelabel>viewport</edgelabel>
+        </childnode>
+        <childnode refid="249" relation="usage">
+          <edgelabel>contentPosition</edgelabel>
+          <edgelabel>contentScale</edgelabel>
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>addedToLayer</edgelabel>
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>inverseViewProjection</edgelabel>
+          <edgelabel>projection</edgelabel>
+          <edgelabel>renderViewProjection</edgelabel>
+          <edgelabel>viewProjection</edgelabel>
+        </childnode>
+        <childnode refid="250" relation="usage">
+          <edgelabel>contentSize</edgelabel>
+          <edgelabel>targetContentSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="241">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+        <childnode refid="242" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="243" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="244" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="245" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="237" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="236" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="246" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="237">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="239" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="232">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="243">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="231">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="234">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+        <childnode refid="235" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="237" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/scene/Camera.hpp" line="19" column="1" bodyfile="ouzel/scene/Camera.hpp" bodystart="18" bodyend="126"/>
+    <listofallmembers>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9f2c6c883cb1599a778c36b5d43d1dde" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Actor</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a05ad15259fb091bb9aee02873d189082" prot="public" virt="non-virtual" ambiguityscope="ouzel::scene::ActorContainer::"><scope>ouzel::scene::Camera</scope><name>ActorContainer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ab9433bb253bd62d77e48bcee6e6fcaee" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a57933a0e5af1008500c451164e454907" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1abf017d04d4308b9a0468e5f400cd7246" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addChild</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a211bc34ce6816e88de79aa3c9bb668c2" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>addChildActor</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae3fa0226c9ed87ff9d59e6d0fc30390a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addChildComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad30692ad3267e46249e9f02fbd814557" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae56d162c69fdd6b54de96728e06bc9b0" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1abbfc9fd21a7856e64b4fecaf35096a2e" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addComponent</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1af42d07896013539b49e3db2ac915b3a7" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>addedToLayer</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a110751d45e8f974963c66e0fd0b6729c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>animationUpdateCallback</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af1a5e8129121011f919fb8001f4edc6e" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>calculateInverseTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a5826eb2658299be69afb92ec70d3ae73" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>calculateLocalTransform</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a94ded87ed1a935bfebd1423fdcdcb2f4" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>calculateTransform</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a93b23c70c42a4a80c960588a3798a3d4" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>calculateViewProjection</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a0f557ebb6caecd6099a2b4c14eba6cae" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Camera</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a3eab10f7be77885cac5143ba8dda0625" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Camera</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ad5db29d3e85a334f3618969b542b60e8" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Camera</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a95331b4c85e442f6a9b71f3bf32c34d8" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>checkVisibility</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a36995a7a030e850d83d6487809710a1b" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>children</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1adeee8ffeecf075aa6a770b8ee50f1aea" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>components</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ad4f21b5b6e1cdf086b755785677a1ded" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>contentPosition</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a39e8740391aa2d5e6bb8447f8a3896df" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>contentScale</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1acc9bb97ab88a3120722c12ac8e697582" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>contentSize</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a61ed59a9d1efb3d7bf3ff8c6483374ed" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>convertLocalToWorld</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a1db2b0d730c012319d1390891ca213b2" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>convertNormalizedToWorld</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1adc9e7e43c4a56543f23a728180f001b0" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>convertWorldToLocal</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ac47c36eb2e00eef5a6c589a32c3b4a2a" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>convertWorldToNormalized</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a2b7b6f45b27c08c567538e6f59092ebf" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>cullDisabled</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a848d8f875e5f29f75c1eec2e91acd62b" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>depthTest</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a94ed513b236983d508542df8629eacaa" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>depthWrite</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a79963f81fc5780e7ae42494ce80f469c" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>draw</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1b688a853efefe85d7746d7f5b36fc98" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>enter</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a8865e7a34e16e9b879c9b3cd35594d0e" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>entered</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a05c0279f0a31cb755f8682d8fa875703" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>farPlane</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1adb3ec41f2678f406b3f5b03ea211c615" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>findActors</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1736af78afb63f6550eba47838dfcc9a" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>findActors</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae6f90bb1725ac38709bbe4514690e520" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>flipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af4240d445bd1755a6de47937100c1372" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>flipY</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a36c2fdf0f7dcb2810d1308ed0e13f754" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>fov</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a47558721e402b05d78a64e80c69daf1a" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getBoundingBox</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afd7edf2a02aa5f0494f7223ced78d491" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a31795a7c4237740b4e2b0980989e766b" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7498db4d76d4e065fe6926110c006e42" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getComponents</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a19343b2f2fad4cb129fe3ae0f368657b" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getContentPosition</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ab6359a86dce3a3c0427b45bf8b3f25a8" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getContentScale</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ac38a34195aff086f9b7d70282ad3c97c" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getContentSize</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a2abd798abd8c0c54a4b94f86a693c4d5" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getDepthTest</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a280f4f892a6524ace750e3d729b7535e" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getDepthWrite</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a58d6409b59a7b78597d9d39c58e133df" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getFarPlane</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aae9b12285dce44cec9c87440609f8c2a" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getFlipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aace7ddb5a278096190e48b7975657e68" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getFlipY</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a7c3421af3216fc51fef52ab5ec7eedcd" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getFOV</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a040a589adadfb6402d6e04d83133a622" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getInverseTransform</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a50533fb83b2c6005786ec431aeccced3" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getInverseViewProjection</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afa4efec56793275f1d8a8fba83f69573" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getLayer</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afb2e7e67d08d7c421d929d84f537703c" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getLocalTransform</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a80e5ef51877ea5dfcc454384996f9ef5" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getNearPlane</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aaf1c5067a3d499d59ceb630a1f81a318" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getOpacity</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a51807fb9739249c18bdca4c1148f399c" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae5d2df7f9007fc0fbc3b8a51ebf83e52" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getParent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af9686de02b10e0f90f46bb6585603679" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getPosition</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ae691c9d38574023628f0c8a3d4d4e2d0" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getProjection</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a21252aafed48a49d8fca291098880cc5" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getRenderTarget</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a1c4d6ed7ad4a289db5741755acd24dac" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getRenderViewport</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ab175a3ffcff7df86162d9abffdeaf3bf" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getRenderViewProjection</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad4342138bb81609b30e6c04d9d41d35b" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a8acaf22fb017f93a57359f7e302a5403" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getScale</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a9cd95c0e57ef0c5890e062da422ec197" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getScaleMode</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a9948752645986674cffcc54044c2ee34" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getTargetContentSize</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a4149f2c56061380c3b7b6a7239244728" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getTransform</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a9ab2684917698e8b4e1cbb3773886a90" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getType</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1afba9907bd6159edd836cbf89510374d7" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getViewport</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ac65509c612e744ad6bdda9b334fc96c3" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getViewProjection</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a0d494eb150fa77e0f3da81729037ed2e" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getWireframe</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afe73cddf4d5df8824b6609c2db0c40b0" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>getWorldOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9bd429baaf71d396c8740e1b9c2bed32" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>getWorldPosition</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a531a4dd6e3432f1bd080fa1caaa0c6ac" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>hasChild</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a788a34df52d1db1649c529e5a707aa93" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>hidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a49998dda06130a797d30ab9f83b03178" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>inverseTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad114fb77dcb52fa2e3fc6fa712094f93" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>inverseTransformDirty</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1af7a8b6e0355dab12f4fe1d2b88406d2c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>inverseViewProjection</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a8096242e2c4362879e3632b7dcdf3ade" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>inverseViewProjectionDirty</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad4061634d2dbd5f98398a70a3f7dbffc" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>isCullDisabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa84ce05c37a0bc52d774b8f00e748de2" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>isHidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9ecd33f5529240a290d3188e1459f9eb" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>isPickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ab9cf93ccfc3672728f8eb096759bdcbf" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>isWorldHidden</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a2ba4f45d76a81467e627ab49b02d2b25" prot="private" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Layer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afce35cd425c8199f01b63309fdd80152" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>layer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a6c6eb0e7a8f8ff0d5be0e59f4a30d06a" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>leave</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7bb9c3ed65c54e82cb6173eee564b28e" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>localTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7dd01352436d1e3b7861cd4d54a808cf" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>localTransformDirty</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a45b335920288abcfac1909bf8b2a4aff" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>moveChildToBack</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1abb8a3694b1696c5484d745cacc57fdc8" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>moveChildToFront</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ab98165d9a427a90932a1904cdf663177" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>nearPlane</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Noncopyable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6c247001fc775fb05503afa731eeef09" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>opacity</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>operator=</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a4678e519aeeffc948967941a64d88455" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>order</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a113e1bb599496b978281e75f963b2699" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>ownedChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9af7bb571693e8e01035d3d0ccc645e1" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>ownedComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a893520890a96ea3b10491956562e142d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>parent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad483f95857f31fdbf73ee64c0184e819" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>parentTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a805450247721e84e4ac95ac5d8e0e2ff" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>pickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a1fd6a788d3e5806aaa78a69d92a24d2f" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>pointOn</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a8379ecefa2ebecf6a4f1fb90b730182c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>position</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1abcd9d66241caed4947704dc2a9eb31d6" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>projection</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a18fc41bb869d10e1374a827e1e4bb6ba" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>recalculateProjection</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a6cade9591281ed76236aeeb7efe338a5" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>removeAllChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a074828d4cf97f920bb7ccf023f17f21d" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeAllComponents</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1aaa6309328e39cf0d264df5f1c207b894" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1be8ae4fa5f8dc8ca5141dbea3c646bd" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ae2e9ccafa9aa65c1e3e88b2100d71819" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>removeChildActor</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afee9c9cf12d3c769b53d9bd54ccc19e3" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeChildComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a64b0355d5f7934a9eff946e3d9380b01" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a044b818e6067a1ef17036d9d4503aa93" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a597d8e413cd6649c5d1ce83df5c907bb" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>removeFromParent</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a91489a8a690d80d1f21713b0cbb71958" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>renderTarget</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a3500471b757d2a103763dcabe2da3c1e" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>renderViewport</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a42819e34e6decf2beda6260084347fe5" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>renderViewProjection</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a878d1324d1637e4bde3274ef0dabf333" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>rotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac697c38fcec2a56f80e97bf51118fd80" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>scale</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1af081921e6e3bd1036d99436d1fec5f06" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>scaleMode</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a61dafd714292b57d7aa01483c73fbcbd" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>ScaleMode</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aada4bcda8cc46252fdd043cc9757db4a" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setCullDisabled</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a51c9d2f4866a7160417311fa6bf1faa8" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setDepthTest</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a66d3038f0a2d398c2c43dfc270825d7e" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setDepthWrite</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a9626552aa7aa4fc02b4c9d31b9f6be70" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setFarPlane</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9bf01fa1da685e3450194ebb20a7a4f1" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setFlipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a153232b1f56e00934b8da202d68b2ac6" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setFlipY</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ac9f8b61d7cedb0fecc6211dbb2b14ce4" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setFOV</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a0f4e2b1f9a2e2d8391ba611707b7c145" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setHidden</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ae26dd472ae6004d6189fd026c9f21468" prot="protected" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setLayer</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a82328d701683b498c9746776b7636bf3" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setNearPlane</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa180d2537e5195164e381dbf0cca9932" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setOpacity</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ab95cdfa02fb2089ac36ce441444f227c" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1acdf53b88580120d60cc3d0c9e64c2d24" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setPickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6b98377cfe7c7427233a156bd1ce9c68" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6076496ba8d6d212d4104945ffc1285d" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setPosition</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1abaaa1deb29ff94faf863a7a925812cb3" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setRenderTarget</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a060f947f8d15ddd980c47fd954460218" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac77e070ec05f5b5795714d85eed61659" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a820317bba19d5d3e06feb26d252b4382" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aba272266fac31c01597d2edc54fc1a55" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setScale</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afba4fc56da81dfc2a86017367550aaf1" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>setScale</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a4f81297cc84cf2a7a6383993aa69598e" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setScaleMode</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a811cc90b9752cce35c54d9412f89509f" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setTargetContentSize</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a274e5cc8a50625d51004e6353621ae3c" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setType</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1aca8302ace90af00f01bec6bd867e7a51" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setViewport</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a32727ae7e538c514ec12de243dbdd929" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>setWireframe</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae095c151c7ffc909a576a707cbb3a849" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>shapeOverlaps</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a46799cee48d236f552f3b5cb76572bbd" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>targetContentSize</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aec5b345a5ba70e20171f198c4056e248" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>transform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a12a5569652634532ae7ac0bd3116e428" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>transformDirty</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a7ea699fe7c9a51aa8a0414b26f5f105d" prot="public" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>Type</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1ae10ce9b6796e4edf129a404988849bda" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>type</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a052141f4b0e50157d2ed3e71622959f7" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>updateChildrenTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af0e0e7e621b659068b6a953a86dfdffd" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>updateTransform</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a812f0ce331855294df84dec29033ef53" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>viewport</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a019712a61b368668aab6675ba4e7a8d2" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>viewProjection</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a6e8b65bf321d7d19ef868f6cdff95f11" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>viewProjectionDirty</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a94d91ccde56b2f1cd953eae1476b6a37" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>visit</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a287d252e2b5b74c95f8d7573a4b8b5ad" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>wireframe</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad85cee087ea525a12366bf2d3e349a48" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>worldHidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa259dad7f4dc6be45c852a6bdfcf2d69" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>worldOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac2396ee34d3e3d475ec65d04f7a4cea1" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>~Actor</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ac64f00932d334aec320805984bed9b42" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>~ActorContainer</name></member>
+      <member refid="db/d85/classouzel_1_1scene_1_1_camera_1a5ccd2d96eecca14d5248299887991b2b" prot="public" virt="virtual"><scope>ouzel::scene::Camera</scope><name>~Camera</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::scene::Camera</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

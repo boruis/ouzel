@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/d26/classouzel_1_1_log" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::Log</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963f" prot="public" static="no">
+        <name>Level</name>
+        <enumvalue id="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963fa88559a0cfd8250c9d65970cc145c92d4" prot="public">
+          <name>OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963facd22bad976363fdd1bfbf6759fede482" prot="public">
+          <name>ERR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963fa32bd8a1db2275458673903bdb84cb277" prot="public">
+          <name>WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963fa551b723eafd6a31d444fcb2f5920fbd3" prot="public">
+          <name>INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963fa5fb1f955b45e38e31789286a1790398d" prot="public">
+          <name>ALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="22" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="21" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d4/d26/classouzel_1_1_log_1a2afb713e597a480b63b417e1c25e0c69" prot="public" static="yes" mutable="no">
+        <type>Level</type>
+        <definition>Log::Level ouzel::Log::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <initializer>= Log::Level::INFO</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="30" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d26/classouzel_1_1_log_1ab813f8f68aec31f7afbb07ea8930ca62" prot="private" static="no" mutable="no">
+        <type>Level</type>
+        <definition>Level ouzel::Log::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <initializer>= Level::INFO</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="192" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d26/classouzel_1_1_log_1ae2c1f769e34ff6e9cf147b5564eeeba8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::Log::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="193" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a13d167f7422f49cf62c50b8d1725ca95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Log::Log</definition>
+        <argsstring>(Level aLevel=Level::INFO)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>Level</type>
+          <declname>aLevel</declname>
+          <defval>Level::INFO</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="32" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a7d4a8a5263bf6770bb58109ea8d0ccac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Log::Log</definition>
+        <argsstring>(const Log &amp;other)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>const <ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="36" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1ab26f3b9beec11ec1b7fdf3820368c4ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Log::Log</definition>
+        <argsstring>(Log &amp;&amp;other)</argsstring>
+        <name>Log</name>
+        <param>
+          <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="42" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1adaa34a610bdeced313f057fe821b0cb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator=</definition>
+        <argsstring>(const Log &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="49" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a4f66082bc7db6e7bb7851872aa68446e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator=</definition>
+        <argsstring>(Log &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="57" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a8c9cf44f2f992d2bf40c4e23caf00ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Log::~Log</definition>
+        <argsstring>()</argsstring>
+        <name>~Log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="66" column="1" bodyfile="ouzel/utils/Log.cpp" bodystart="36" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a1187100893e69be29304da2f731fe101" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(T val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="68" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a3aa42d37bddb78361a8d8e033e48452b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const std::string &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="78" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a87792d8845ef85070bfc2f12996ef871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const char *val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const char *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="88" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1ae70a4cf8cb6d5b21a27405595b51c92c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(char *val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>char *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="98" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a12ac91ec0a20250647c455fed278c29d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Matrix3 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="d2/de3/classouzel_1_1_matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="108" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="108" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a746d5369026c1981962389dca4efff06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Matrix4 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="117" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="117" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1ae3b48867d89f577839ab88ce44515a7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Quaternion &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="127" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="127" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a65bcf8ac35171bbf5452e4376a58929e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Size2 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="138" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="138" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a43a11e3693daf7ce22ec532a8e94ab6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Size3 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="df/d5b/classouzel_1_1_size3" kindref="compound">Size3</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="148" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="148" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a21b2e097ac18ad1cd2f9fb539a98f512" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Vector2 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="159" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="159" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1acbfc46c12e7bd8db78d2ea57c1c01b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Vector3 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="169" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="169" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d26/classouzel_1_1_log_1a2a4c381c72ab346875c2686de7810066" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d26/classouzel_1_1_log" kindref="compound">Log</ref> &amp;</type>
+        <definition>Log&amp; ouzel::Log::operator&lt;&lt;</definition>
+        <argsstring>(const Vector4 &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="de/dc8/classouzel_1_1_vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/utils/Log.hpp" line="180" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="180" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ouzel/utils/Log.hpp" line="19" column="1" bodyfile="ouzel/utils/Log.hpp" bodystart="18" bodyend="194"/>
+    <listofallmembers>
+      <member refid="d4/d26/classouzel_1_1_log_1a1cf0ff4cdc0bd990a3b7172b4856963f" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>Level</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1ab813f8f68aec31f7afbb07ea8930ca62" prot="private" virt="non-virtual"><scope>ouzel::Log</scope><name>level</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a13d167f7422f49cf62c50b8d1725ca95" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>Log</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a7d4a8a5263bf6770bb58109ea8d0ccac" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>Log</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1ab26f3b9beec11ec1b7fdf3820368c4ea" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>Log</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a1187100893e69be29304da2f731fe101" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a3aa42d37bddb78361a8d8e033e48452b" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a87792d8845ef85070bfc2f12996ef871" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1ae70a4cf8cb6d5b21a27405595b51c92c" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a12ac91ec0a20250647c455fed278c29d" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a746d5369026c1981962389dca4efff06" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1ae3b48867d89f577839ab88ce44515a7a" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a65bcf8ac35171bbf5452e4376a58929e" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a43a11e3693daf7ce22ec532a8e94ab6b" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a21b2e097ac18ad1cd2f9fb539a98f512" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1acbfc46c12e7bd8db78d2ea57c1c01b24" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a2a4c381c72ab346875c2686de7810066" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1adaa34a610bdeced313f057fe821b0cb4" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator=</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a4f66082bc7db6e7bb7851872aa68446e" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>operator=</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1ae2c1f769e34ff6e9cf147b5564eeeba8" prot="private" virt="non-virtual"><scope>ouzel::Log</scope><name>s</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a2afb713e597a480b63b417e1c25e0c69" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>threshold</name></member>
+      <member refid="d4/d26/classouzel_1_1_log_1a8c9cf44f2f992d2bf40c4e23caf00ab1" prot="public" virt="non-virtual"><scope>ouzel::Log</scope><name>~Log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

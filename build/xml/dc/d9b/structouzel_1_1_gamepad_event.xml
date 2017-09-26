@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/d9b/structouzel_1_1_gamepad_event" kind="struct" language="C++" prot="public">
+    <compoundname>ouzel::GamepadEvent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d9b/structouzel_1_1_gamepad_event_1ac1206d2d0efdedb29f40ba156bdcb47b" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d28/classouzel_1_1input_1_1_gamepad" kindref="compound">input::Gamepad</ref> *</type>
+        <definition>input::Gamepad* ouzel::GamepadEvent::gamepad</definition>
+        <argsstring></argsstring>
+        <name>gamepad</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="53" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9b/structouzel_1_1_gamepad_event_1adb222e708e4f37de3cb73505ae0824de" prot="public" static="no" mutable="no">
+        <type>input::GamepadButton</type>
+        <definition>input::GamepadButton ouzel::GamepadEvent::button</definition>
+        <argsstring></argsstring>
+        <name>button</name>
+        <initializer>= input::GamepadButton::NONE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="54" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9b/structouzel_1_1_gamepad_event_1a066a49c45cc9c87be9c353378f8931a5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::GamepadEvent::pressed</definition>
+        <argsstring></argsstring>
+        <name>pressed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="55" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9b/structouzel_1_1_gamepad_event_1a79cd8daf40bd44e4ad18d5676344befa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::GamepadEvent::previousPressed</definition>
+        <argsstring></argsstring>
+        <name>previousPressed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="56" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9b/structouzel_1_1_gamepad_event_1ad98e2b3a65d84d48901187507d1a8f6f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::GamepadEvent::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="57" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9b/structouzel_1_1_gamepad_event_1a5ba614c5e2361dc6b7b7d794cae63c20" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::GamepadEvent::previousValue</definition>
+        <argsstring></argsstring>
+        <name>previousValue</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="58" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="780">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="781" relation="public-inheritance">
+        </childnode>
+        <childnode refid="782" relation="usage">
+          <edgelabel>buttonStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="782">
+        <label>ouzel::input::Gamepad::ButtonState</label>
+        <link refid="d3/d17/structouzel_1_1input_1_1_gamepad_1_1_button_state"/>
+      </node>
+      <node id="779">
+        <label>ouzel::GamepadEvent</label>
+        <link refid="dc/d9b/structouzel_1_1_gamepad_event"/>
+        <childnode refid="780" relation="usage">
+          <edgelabel>gamepad</edgelabel>
+        </childnode>
+      </node>
+      <node id="781">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/Event.hpp" line="52" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="51" bodyend="59"/>
+    <listofallmembers>
+      <member refid="dc/d9b/structouzel_1_1_gamepad_event_1adb222e708e4f37de3cb73505ae0824de" prot="public" virt="non-virtual"><scope>ouzel::GamepadEvent</scope><name>button</name></member>
+      <member refid="dc/d9b/structouzel_1_1_gamepad_event_1ac1206d2d0efdedb29f40ba156bdcb47b" prot="public" virt="non-virtual"><scope>ouzel::GamepadEvent</scope><name>gamepad</name></member>
+      <member refid="dc/d9b/structouzel_1_1_gamepad_event_1a066a49c45cc9c87be9c353378f8931a5" prot="public" virt="non-virtual"><scope>ouzel::GamepadEvent</scope><name>pressed</name></member>
+      <member refid="dc/d9b/structouzel_1_1_gamepad_event_1a79cd8daf40bd44e4ad18d5676344befa" prot="public" virt="non-virtual"><scope>ouzel::GamepadEvent</scope><name>previousPressed</name></member>
+      <member refid="dc/d9b/structouzel_1_1_gamepad_event_1a5ba614c5e2361dc6b7b7d794cae63c20" prot="public" virt="non-virtual"><scope>ouzel::GamepadEvent</scope><name>previousValue</name></member>
+      <member refid="dc/d9b/structouzel_1_1_gamepad_event_1ad98e2b3a65d84d48901187507d1a8f6f" prot="public" virt="non-virtual"><scope>ouzel::GamepadEvent</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

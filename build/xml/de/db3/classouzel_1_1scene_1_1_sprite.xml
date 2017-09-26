@@ -1,0 +1,943 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/db3/classouzel_1_1scene_1_1_sprite" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::scene::Sprite</compoundname>
+    <basecompoundref refid="d7/d9e/classouzel_1_1scene_1_1_component" prot="public" virt="non-virtual">ouzel::scene::Component</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a165bf581204463cf19a673ce26a83434" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ouzel::scene::Sprite::TYPE</definition>
+        <argsstring></argsstring>
+        <name>TYPE</name>
+        <initializer>= Component::SPRITE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="22" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a66af4166a03ed53ca0557e0fabbb1690" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="da/d27/classouzel_1_1graphics_1_1_material" kindref="compound">graphics::Material</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::Material&gt; ouzel::scene::Sprite::material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="73" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1abd7e9a8ee816a80ff596bd4512399342" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d1/d35/classouzel_1_1scene_1_1_sprite_frame" kindref="compound">SpriteFrame</ref> &gt;</type>
+        <definition>std::vector&lt;SpriteFrame&gt; ouzel::scene::Sprite::frames</definition>
+        <argsstring></argsstring>
+        <name>frames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="74" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1aedcff0ac7733dcfcc532d8d065c13a6f" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::Texture&gt; ouzel::scene::Sprite::whitePixelTexture</definition>
+        <argsstring></argsstring>
+        <name>whitePixelTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="76" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a069a8ee3f2ec1da3cd95af781f445920" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::scene::Sprite::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="78" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1aac29349812b805a28779b297c7eca3b6" prot="protected" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::scene::Sprite::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="79" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a348cda7078f08e2f6c206be5a4ccbdf3" prot="protected" static="no" mutable="no">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::scene::Sprite::offsetMatrix</definition>
+        <argsstring></argsstring>
+        <name>offsetMatrix</name>
+        <initializer>= Matrix4::IDENTITY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="80" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a0dd5755ea5b58adb40d9bd8f636f5761" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::scene::Sprite::currentFrame</definition>
+        <argsstring></argsstring>
+        <name>currentFrame</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="82" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a0ba5797bdd8b80c2f9ba5bf0cdc46b66" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Sprite::frameInterval</definition>
+        <argsstring></argsstring>
+        <name>frameInterval</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="83" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a1daefbe535eaba13ed027f4418cc2135" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Sprite::playing</definition>
+        <argsstring></argsstring>
+        <name>playing</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="84" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a67c9c3a197eb5854d689fb69ba3d12d1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Sprite::repeating</definition>
+        <argsstring></argsstring>
+        <name>repeating</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="85" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a025145ba206444a749470ce92fc3b712" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Sprite::timeSinceLastFrame</definition>
+        <argsstring></argsstring>
+        <name>timeSinceLastFrame</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="86" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db3/classouzel_1_1scene_1_1_sprite_1a26069f31632f6da12340dc08b4544c48" prot="protected" static="no" mutable="no">
+        <type><ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref></type>
+        <definition>UpdateCallback ouzel::scene::Sprite::updateCallback</definition>
+        <argsstring></argsstring>
+        <name>updateCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="88" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a4ed3acc5055ccad8529e081492f7881d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Sprite::Sprite</definition>
+        <argsstring>()</argsstring>
+        <name>Sprite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="24" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a559355b560fe5612a2ccb1e200cdcb06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Sprite::Sprite</definition>
+        <argsstring>(const SpriteDefinition &amp;spriteDefinition)</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>const <ref refid="de/da8/structouzel_1_1scene_1_1_sprite_definition" kindref="compound">SpriteDefinition</ref> &amp;</type>
+          <declname>spriteDefinition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="25" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1aa610e22a1a30cc171e416d52ae71d4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Sprite::Sprite</definition>
+        <argsstring>(const std::string &amp;filename, bool mipmaps=true, uint32_t spritesX=1, uint32_t spritesY=1, const Vector2 &amp;pivot=Vector2(0.5f, 0.5f))</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesX</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesY</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>pivot</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="26" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1ae061af61a22243a5ea6591bc09b7b5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Sprite::Sprite</definition>
+        <argsstring>(std::shared_ptr&lt; graphics::Texture &gt; texture, uint32_t spritesX=1, uint32_t spritesY=1, const Vector2 &amp;pivot=Vector2(0.5f, 0.5f))</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesX</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesY</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>pivot</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="29" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a8bfca97a0c8dc63a0c2fbe146049bf87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Sprite::init</definition>
+        <argsstring>(const SpriteDefinition &amp;spriteDefinition)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const <ref refid="de/da8/structouzel_1_1scene_1_1_sprite_definition" kindref="compound">SpriteDefinition</ref> &amp;</type>
+          <declname>spriteDefinition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="33" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="48" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1ae831127fb3f022aab2d8667f6f879884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Sprite::init</definition>
+        <argsstring>(const std::string &amp;filename, bool mipmaps=true, uint32_t spritesX=1, uint32_t spritesY=1, const Vector2 &amp;pivot=Vector2(0.5f, 0.5f))</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesX</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesY</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>pivot</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="34" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="63" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1ae122cfdf0af8335413ebc21d9acdc006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Sprite::init</definition>
+        <argsstring>(std::shared_ptr&lt; graphics::Texture &gt; newTexture, uint32_t spritesX=1, uint32_t spritesY=1, const Vector2 &amp;pivot=Vector2(0.5f, 0.5f))</argsstring>
+        <name>init</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt;</type>
+          <declname>newTexture</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesX</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesY</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>pivot</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="37" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="81" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a90802eb9a857885d6203447ed57e779e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::update</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>update</name>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="41" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="114" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a475a4dbaa3a3bf267492dc475bf21552" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::draw</definition>
+        <argsstring>(const Matrix4 &amp;transformMatrix, float opacity, const Matrix4 &amp;renderViewProjection, const std::shared_ptr&lt; graphics::Texture &gt; &amp;renderTarget, const Rectangle &amp;renderViewport, bool depthWrite, bool depthTest, bool wireframe, bool scissorTest, const Rectangle &amp;scissorRectangle) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="d7/d9e/classouzel_1_1scene_1_1_component_1a2380cd102a1155a38c1a31811b95a974">draw</reimplements>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>transformMatrix</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>renderViewProjection</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+          <declname>renderTarget</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>renderViewport</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthWrite</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wireframe</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scissorTest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>scissorRectangle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="43" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="186" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a93f0139d76b1ea459e34e111e2c090fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::shared_ptr&lt; <ref refid="da/d27/classouzel_1_1graphics_1_1_material" kindref="compound">graphics::Material</ref> &gt; &amp;</type>
+        <definition>virtual const std::shared_ptr&lt;graphics::Material&gt;&amp; ouzel::scene::Sprite::getMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="54" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1acc4c4135b50e74f140cf2394b2611ebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ouzel::scene::Sprite::setMaterial</definition>
+        <argsstring>(const std::shared_ptr&lt; graphics::Material &gt; &amp;newMaterial)</argsstring>
+        <name>setMaterial</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="da/d27/classouzel_1_1graphics_1_1_material" kindref="compound">graphics::Material</ref> &gt; &amp;</type>
+          <declname>newMaterial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="55" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a5aed5d936db9430cddb7911d29de4cc2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>virtual const Size2&amp; ouzel::scene::Sprite::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="57" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a52a6c14c3db6a05d452734395da1761f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; ouzel::scene::Sprite::getOffset</definition>
+        <argsstring>() const</argsstring>
+        <name>getOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="59" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a2c9da6616d88e84144cbcc210ece6f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::setOffset</definition>
+        <argsstring>(const Vector2 &amp;newOffset)</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>newOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="60" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="243" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a484d4fabeeaf67be78a54f2668697fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::play</definition>
+        <argsstring>(bool repeat=true, float newFrameInterval=0.1f)</argsstring>
+        <name>play</name>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>newFrameInterval</declname>
+          <defval>0.1f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="62" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="250" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a8c1b357946f74afae3c0fa6e848df9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::stop</definition>
+        <argsstring>(bool resetAnimation=true)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>bool</type>
+          <declname>resetAnimation</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="63" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="296" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1ac7fde485de02d0ead6bedd8f51525a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="64" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="310" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a2916d5d641c6cdec5510782412485f29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool ouzel::scene::Sprite::isPlaying</definition>
+        <argsstring>() const</argsstring>
+        <name>isPlaying</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="65" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1acd45e80ea2511c1f79710afc2751f9e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="d1/d35/classouzel_1_1scene_1_1_sprite_frame" kindref="compound">SpriteFrame</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;SpriteFrame&gt;&amp; ouzel::scene::Sprite::getFrames</definition>
+        <argsstring>() const</argsstring>
+        <name>getFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="67" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a0d5ddda3be8a6c22faf6ef6fcfd4ee2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::setCurrentFrame</definition>
+        <argsstring>(uint32_t frame)</argsstring>
+        <name>setCurrentFrame</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="68" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="319" bodyend="329"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="de/db3/classouzel_1_1scene_1_1_sprite_1a3a69f0300ad8fc594c31b059fffb1a05" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Sprite::updateBoundingBox</definition>
+        <argsstring>()</argsstring>
+        <name>updateBoundingBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Sprite.hpp" line="71" column="1" bodyfile="ouzel/scene/Sprite.cpp" bodystart="331" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1758">
+        <label>ouzel::scene::Sprite</label>
+        <link refid="de/db3/classouzel_1_1scene_1_1_sprite"/>
+        <childnode refid="1759" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1759">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1760" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1760">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1773">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="1774" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="1775">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>ouzel::Box3</label>
+        <link refid="d7/d7b/classouzel_1_1_box3"/>
+        <childnode refid="1771" relation="usage">
+          <edgelabel>min</edgelabel>
+          <edgelabel>max</edgelabel>
+        </childnode>
+      </node>
+      <node id="1779">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1766">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="1765" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1767" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="1783">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="1764">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="1765" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1771" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1765" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="1772" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="1773" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="1780" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1780">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="1780" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1768">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1769" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1778">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="1782">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="1782" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="1771">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="1771" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1769">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1761">
+        <label>ouzel::scene::Sprite</label>
+        <link refid="de/db3/classouzel_1_1scene_1_1_sprite"/>
+        <childnode refid="1762" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1782" relation="usage">
+          <edgelabel>offset</edgelabel>
+        </childnode>
+        <childnode refid="1772" relation="usage">
+          <edgelabel>offsetMatrix</edgelabel>
+        </childnode>
+        <childnode refid="1783" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="1773" relation="usage">
+          <edgelabel>updateCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1762">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1764" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="1781" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1774">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1775" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="1776" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="1777" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="1778" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="1770" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="1769" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="1779" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1770">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1772">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1772" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1763">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1776">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="1765">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1766" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1767">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1763" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1768" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1770" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/scene/Sprite.hpp" line="20" column="1" bodyfile="ouzel/scene/Sprite.hpp" bodystart="19" bodyend="89"/>
+    <listofallmembers>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac0cde6d2c7c00f3df048851fe93cb1fd" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>actor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a6b0d7f46cd61835d31076a57b8e7b195" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>ANIMATOR</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a912973fa60d4996192f6222ab977733d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>boundingBox</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a6840532302cd188e9c980bc636261eb3" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Component</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a0dd5755ea5b58adb40d9bd8f636f5761" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>currentFrame</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a475a4dbaa3a3bf267492dc475bf21552" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>draw</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a0ba5797bdd8b80c2f9ba5bf0cdc46b66" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>frameInterval</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1abd7e9a8ee816a80ff596bd4512399342" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>frames</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a076ecb7817b2ba6b195a685e7a296e69" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>getActor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac2025f29d26e03fcfaa29923f783cd82" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>getBoundingBox</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1acd45e80ea2511c1f79710afc2751f9e4" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>getFrames</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a93f0139d76b1ea459e34e111e2c090fb" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>getMaterial</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a52a6c14c3db6a05d452734395da1761f" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>getOffset</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a5aed5d936db9430cddb7911d29de4cc2" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>getSize</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a11154d2c3c80678e6e7517a95fc819c0" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>getType</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a0200fba59cd3226b0801445e4397aaf9" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>hidden</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a8bfca97a0c8dc63a0c2fbe146049bf87" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>init</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1ae831127fb3f022aab2d8667f6f879884" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>init</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1ae122cfdf0af8335413ebc21d9acdc006" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>init</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a707797f719ad91d4dccd0cfdf05bc199" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>isHidden</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a2916d5d641c6cdec5510782412485f29" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>isPlaying</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aecc7ea1776bff88cb874f1c49d519d0b" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>LISTENER</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a66af4166a03ed53ca0557e0fabbb1690" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>material</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5abfbc026b9c233855788356ba0aa0eeff" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>MESH_RENDERER</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Noncopyable</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a74cd3d5a28ffc56bab1e9e79f8479480" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>NONE</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1aac29349812b805a28779b297c7eca3b6" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>offset</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a348cda7078f08e2f6c206be5a4ccbdf3" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>offsetMatrix</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>operator=</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aea49d48630df60f666cf4b29c770722e" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>PARTICLE_SYSTEM</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a484d4fabeeaf67be78a54f2668697fc4" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>play</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a1daefbe535eaba13ed027f4418cc2135" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>playing</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a10c95c4b40716c2816a901758621cbc4" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>pointOn</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a4491e50a0a93ee9f020cf4f2246623aa" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>removeFromActor</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a67c9c3a197eb5854d689fb69ba3d12d1" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>repeating</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1ac7fde485de02d0ead6bedd8f51525a03" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>reset</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ab708706aac78f64c0ae2cec7a86172bd" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>setBoundingBox</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a0d5ddda3be8a6c22faf6ef6fcfd4ee2f" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>setCurrentFrame</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a3a83d565fab07c00a721ea7a90102dbb" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>setHidden</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1acc4c4135b50e74f140cf2394b2611ebe" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>setMaterial</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a2c9da6616d88e84144cbcc210ece6f30" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>setOffset</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a95a94ec8d82cadcafd1c595aad148dcd" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>SHAPE_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a9a0ab52e2e392ff63ffb2b778b2edb83" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>shapeOverlaps</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a069a8ee3f2ec1da3cd95af781f445920" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>size</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aeb101824131e2341d589041ef759959a" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>SOUND</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5af1d11c60acc9b6772ac995647a7d11dd" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>SPRITE</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a4ed3acc5055ccad8529e081492f7881d" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Sprite</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a559355b560fe5612a2ccb1e200cdcb06" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Sprite</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1aa610e22a1a30cc171e416d52ae71d4ba" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Sprite</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1ae061af61a22243a5ea6591bc09b7b5b2" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Sprite</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a8c1b357946f74afae3c0fa6e848df9f4" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>stop</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a109180def1681f029d577f557e3f61f9" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>TEXT_RENDERER</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a025145ba206444a749470ce92fc3b712" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>timeSinceLastFrame</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a8e62eb503a67a4709ab600ce45e29e7b" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>type</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>Type</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a165bf581204463cf19a673ce26a83434" prot="public" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>TYPE</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a90802eb9a857885d6203447ed57e779e" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>update</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a3a69f0300ad8fc594c31b059fffb1a05" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>updateBoundingBox</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1a26069f31632f6da12340dc08b4544c48" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>updateCallback</name></member>
+      <member refid="de/db3/classouzel_1_1scene_1_1_sprite_1aedcff0ac7733dcfcc532d8d065c13a6f" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>whitePixelTexture</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1adde89eb3f4c15c003320b44a19747ccb" prot="public" virt="virtual"><scope>ouzel::scene::Sprite</scope><name>~Component</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::scene::Sprite</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

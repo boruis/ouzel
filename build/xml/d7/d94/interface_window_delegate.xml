@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d94/interface_window_delegate" kind="class" language="Objective-C" prot="public">
+    <compoundname>WindowDelegate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSWindowDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d94/interface_window_delegate_1a4a4acf25a946cb164f1cedb798003593" prot="protected" static="no" mutable="no">
+        <type><ref refid="d9/d4b/classouzel_1_1_window_mac_o_s" kindref="compound">ouzel::WindowMacOS</ref> *</type>
+        <definition>ouzel::WindowMacOS* WindowDelegate::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.mm" line="16" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2015">
+        <label>WindowDelegate</label>
+        <link refid="d7/d94/interface_window_delegate"/>
+        <childnode refid="2016" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2017" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>&lt;NSWindowDelegate&gt;</label>
+      </node>
+      <node id="2016">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2021">
+        <label>ouzel::WindowMacOS</label>
+        <link refid="d9/d4b/classouzel_1_1_window_mac_o_s"/>
+        <childnode refid="2022" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2027" relation="usage">
+          <edgelabel>windowRectangle</edgelabel>
+        </childnode>
+      </node>
+      <node id="2027">
+        <label>ouzel::Rectangle</label>
+        <link refid="db/dc0/classouzel_1_1_rectangle"/>
+        <childnode refid="2028" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="2026" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2026">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="2024">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="2025" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>WindowDelegate</label>
+        <link refid="d7/d94/interface_window_delegate"/>
+        <childnode refid="2019" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2020" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2021" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+      </node>
+      <node id="2028">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="2028" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="2020">
+        <label>&lt;NSWindowDelegate&gt;</label>
+      </node>
+      <node id="2025">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="2023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2023">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="2019">
+        <label>NSObject</label>
+      </node>
+      <node id="2022">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="2023" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2024" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="2026" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/macos/WindowMacOS.mm" line="15" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="d7/d94/interface_window_delegate_1a4a4acf25a946cb164f1cedb798003593" prot="protected" virt="non-virtual"><scope>WindowDelegate</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

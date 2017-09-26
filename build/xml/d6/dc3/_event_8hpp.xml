@@ -1,0 +1,812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d6/dc3/_event_8hpp" kind="file" language="C++">
+    <compoundname>Event.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes refid="d8/da4/_sound_8hpp" local="yes">audio/Sound.hpp</includes>
+    <includes refid="d2/d39/_actor_8hpp" local="yes">scene/Actor.hpp</includes>
+    <includes refid="d3/d12/_vector2_8hpp" local="yes">math/Vector2.hpp</includes>
+    <includes refid="db/d59/_size2_8hpp" local="yes">math/Size2.hpp</includes>
+    <includes refid="d0/d4b/_input_8hpp" local="yes">input/Input.hpp</includes>
+    <includedby refid="d4/db1/_engine_linux_8cpp" local="yes">ouzel/core/linux/EngineLinux.cpp</includedby>
+    <includedby refid="d1/d90/_event_dispatcher_8hpp" local="yes">ouzel/events/EventDispatcher.hpp</includedby>
+    <includedby refid="d4/d86/_event_handler_8hpp" local="yes">ouzel/events/EventHandler.hpp</includedby>
+    <includedby refid="d2/df0/_button_8hpp" local="yes">ouzel/gui/Button.hpp</includedby>
+    <includedby refid="d5/d72/_check_box_8hpp" local="yes">ouzel/gui/CheckBox.hpp</includedby>
+    <includedby refid="db/d89/_input_em_8cpp" local="yes">ouzel/input/emscripten/InputEm.cpp</includedby>
+    <includedby refid="d9/d5b/_gamepad_8hpp" local="yes">ouzel/input/Gamepad.hpp</includedby>
+    <includedby refid="dc/ddf/_input_linux_8cpp" local="yes">ouzel/input/linux/InputLinux.cpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <incdepgraph>
+      <node id="5679">
+        <label>functional</label>
+      </node>
+      <node id="5676">
+        <label>queue</label>
+      </node>
+      <node id="5687">
+        <label>limits</label>
+      </node>
+      <node id="5667">
+        <label>cstdint</label>
+      </node>
+      <node id="5681">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="5682" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5693">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5686" relation="include">
+        </childnode>
+        <childnode refid="5682" relation="include">
+        </childnode>
+        <childnode refid="5694" relation="include">
+        </childnode>
+        <childnode refid="5695" relation="include">
+        </childnode>
+        <childnode refid="5699" relation="include">
+        </childnode>
+      </node>
+      <node id="5674">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="5675" relation="include">
+        </childnode>
+        <childnode refid="5676" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5678" relation="include">
+        </childnode>
+      </node>
+      <node id="5697">
+        <label>cmath</label>
+      </node>
+      <node id="5669">
+        <label>string</label>
+      </node>
+      <node id="5666">
+        <label>ouzel/events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp"/>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+        <childnode refid="5670" relation="include">
+        </childnode>
+        <childnode refid="5702" relation="include">
+        </childnode>
+        <childnode refid="5696" relation="include">
+        </childnode>
+        <childnode refid="5698" relation="include">
+        </childnode>
+        <childnode refid="5704" relation="include">
+        </childnode>
+      </node>
+      <node id="5671">
+        <label>cfloat</label>
+      </node>
+      <node id="5686">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5687" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+        <childnode refid="5690" relation="include">
+        </childnode>
+      </node>
+      <node id="5684">
+        <label>Config.h</label>
+      </node>
+      <node id="5682">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="5683" relation="include">
+        </childnode>
+        <childnode refid="5685" relation="include">
+        </childnode>
+        <childnode refid="5691" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+        <childnode refid="5692" relation="include">
+        </childnode>
+      </node>
+      <node id="5673">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="5674" relation="include">
+        </childnode>
+      </node>
+      <node id="5670">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="5671" relation="include">
+        </childnode>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5673" relation="include">
+        </childnode>
+        <childnode refid="5693" relation="include">
+        </childnode>
+        <childnode refid="5701" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5700">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="5702">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5703" relation="include">
+        </childnode>
+        <childnode refid="5701" relation="include">
+        </childnode>
+        <childnode refid="5686" relation="include">
+        </childnode>
+        <childnode refid="5694" relation="include">
+        </childnode>
+        <childnode refid="5682" relation="include">
+        </childnode>
+        <childnode refid="5681" relation="include">
+        </childnode>
+        <childnode refid="5696" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5691">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="5703">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5696" relation="include">
+        </childnode>
+      </node>
+      <node id="5699">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5700" relation="include">
+        </childnode>
+        <childnode refid="5694" relation="include">
+        </childnode>
+        <childnode refid="5698" relation="include">
+        </childnode>
+      </node>
+      <node id="5683">
+        <label>core/Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="5684" relation="include">
+        </childnode>
+      </node>
+      <node id="5668">
+        <label>vector</label>
+      </node>
+      <node id="5698">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="5696" relation="include">
+        </childnode>
+      </node>
+      <node id="5685">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5686" relation="include">
+        </childnode>
+        <childnode refid="5691" relation="include">
+        </childnode>
+        <childnode refid="5692" relation="include">
+        </childnode>
+      </node>
+      <node id="5690">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5704">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5675" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5705" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5696" relation="include">
+        </childnode>
+      </node>
+      <node id="5678">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5679" relation="include">
+        </childnode>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5680" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5681" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5694">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="5689" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+      </node>
+      <node id="5689">
+        <label>cstddef</label>
+      </node>
+      <node id="5705">
+        <label>unordered_map</label>
+      </node>
+      <node id="5692">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="5689" relation="include">
+        </childnode>
+        <childnode refid="5683" relation="include">
+        </childnode>
+      </node>
+      <node id="5675">
+        <label>mutex</label>
+      </node>
+      <node id="5680">
+        <label>set</label>
+      </node>
+      <node id="5696">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="5689" relation="include">
+        </childnode>
+        <childnode refid="5697" relation="include">
+        </childnode>
+      </node>
+      <node id="5701">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="5679" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+      </node>
+      <node id="5677">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="5695">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="5696" relation="include">
+        </childnode>
+        <childnode refid="5698" relation="include">
+        </childnode>
+      </node>
+      <node id="5688">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="5689" relation="include">
+        </childnode>
+      </node>
+      <node id="5672">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5711">
+        <label>ouzel/core/ios/EngineIOS.hpp</label>
+        <link refid="db/d80/_engine_i_o_s_8hpp_source"/>
+      </node>
+      <node id="5710">
+        <label>ouzel/core/emscripten/EngineEm.hpp</label>
+        <link refid="d2/d81/_engine_em_8hpp_source"/>
+      </node>
+      <node id="5707">
+        <label>ouzel/events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="5708" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5714">
+        <label>ouzel/core/raspbian/EngineRasp.hpp</label>
+        <link refid="d0/dcd/_engine_rasp_8hpp_source"/>
+      </node>
+      <node id="5735">
+        <label>ouzel/input/ios/GamepadIOS.hpp</label>
+        <link refid="db/d78/_gamepad_i_o_s_8hpp_source"/>
+      </node>
+      <node id="5725">
+        <label>ouzel/core/raspbian/WindowRasp.hpp</label>
+        <link refid="d6/dc4/_window_rasp_8hpp_source"/>
+      </node>
+      <node id="5741">
+        <label>ouzel/input/windows/GamepadDI.hpp</label>
+        <link refid="d8/d9e/_gamepad_d_i_8hpp_source"/>
+      </node>
+      <node id="5732">
+        <label>ouzel/input/Gamepad.hpp</label>
+        <link refid="d9/d5b/_gamepad_8hpp_source"/>
+        <childnode refid="5733" relation="include">
+        </childnode>
+        <childnode refid="5734" relation="include">
+        </childnode>
+        <childnode refid="5735" relation="include">
+        </childnode>
+        <childnode refid="5736" relation="include">
+        </childnode>
+        <childnode refid="5737" relation="include">
+        </childnode>
+        <childnode refid="5738" relation="include">
+        </childnode>
+        <childnode refid="5739" relation="include">
+        </childnode>
+        <childnode refid="5740" relation="include">
+        </childnode>
+        <childnode refid="5741" relation="include">
+        </childnode>
+        <childnode refid="5742" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5739">
+        <label>ouzel/input/raspbian/GamepadRasp.hpp</label>
+        <link refid="d2/d1a/_gamepad_rasp_8hpp_source"/>
+      </node>
+      <node id="5708">
+        <label>ouzel/core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+        <childnode refid="5710" relation="include">
+        </childnode>
+        <childnode refid="5711" relation="include">
+        </childnode>
+        <childnode refid="5712" relation="include">
+        </childnode>
+        <childnode refid="5713" relation="include">
+        </childnode>
+        <childnode refid="5714" relation="include">
+        </childnode>
+        <childnode refid="5715" relation="include">
+        </childnode>
+        <childnode refid="5716" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5737">
+        <label>ouzel/input/macos/GamepadGC.hpp</label>
+        <link refid="de/d12/_gamepad_g_c_8hpp_source"/>
+      </node>
+      <node id="5726">
+        <label>ouzel/core/tvos/WindowTVOS.hpp</label>
+        <link refid="d2/d35/_window_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="5734">
+        <label>ouzel/input/emscripten/GamepadEm.hpp</label>
+        <link refid="de/dd6/_gamepad_em_8hpp_source"/>
+      </node>
+      <node id="5716">
+        <label>ouzel/core/windows/EngineWin.hpp</label>
+        <link refid="d8/d37/_engine_win_8hpp_source"/>
+      </node>
+      <node id="5712">
+        <label>ouzel/core/linux/EngineLinux.hpp</label>
+        <link refid="d6/d37/_engine_linux_8hpp_source"/>
+      </node>
+      <node id="5706">
+        <label>ouzel/events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp"/>
+        <childnode refid="5707" relation="include">
+        </childnode>
+        <childnode refid="5718" relation="include">
+        </childnode>
+        <childnode refid="5728" relation="include">
+        </childnode>
+        <childnode refid="5729" relation="include">
+        </childnode>
+        <childnode refid="5732" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5728">
+        <label>ouzel/gui/Button.hpp</label>
+        <link refid="d2/df0/_button_8hpp_source"/>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5736">
+        <label>ouzel/input/linux/GamepadLinux.hpp</label>
+        <link refid="d8/dc2/_gamepad_linux_8hpp_source"/>
+      </node>
+      <node id="5717">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="5718">
+        <label>ouzel/events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="5719" relation="include">
+        </childnode>
+        <childnode refid="5707" relation="include">
+        </childnode>
+        <childnode refid="5728" relation="include">
+        </childnode>
+        <childnode refid="5729" relation="include">
+        </childnode>
+        <childnode refid="5730" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+        <childnode refid="5731" relation="include">
+        </childnode>
+      </node>
+      <node id="5733">
+        <label>ouzel/input/android/GamepadAndroid.hpp</label>
+        <link refid="d2/d90/_gamepad_android_8hpp_source"/>
+      </node>
+      <node id="5723">
+        <label>ouzel/core/linux/WindowLinux.hpp</label>
+        <link refid="d9/d92/_window_linux_8hpp_source"/>
+      </node>
+      <node id="5742">
+        <label>ouzel/input/windows/GamepadXI.hpp</label>
+        <link refid="d7/dbe/_gamepad_x_i_8hpp_source"/>
+      </node>
+      <node id="5729">
+        <label>ouzel/gui/CheckBox.hpp</label>
+        <link refid="d5/d72/_check_box_8hpp_source"/>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5740">
+        <label>ouzel/input/tvos/GamepadTVOS.hpp</label>
+        <link refid="d7/dd6/_gamepad_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="5709">
+        <label>ouzel/core/android/EngineAndroid.hpp</label>
+        <link refid="dc/df0/_engine_android_8hpp_source"/>
+      </node>
+      <node id="5721">
+        <label>ouzel/core/emscripten/WindowEm.hpp</label>
+        <link refid="d1/d30/_window_em_8hpp_source"/>
+      </node>
+      <node id="5713">
+        <label>ouzel/core/macos/EngineMacOS.hpp</label>
+        <link refid="dc/df2/_engine_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="5727">
+        <label>ouzel/core/windows/WindowWin.hpp</label>
+        <link refid="d0/d18/_window_win_8hpp_source"/>
+      </node>
+      <node id="5730">
+        <label>ouzel/gui/Menu.hpp</label>
+        <link refid="d9/df6/_menu_8hpp_source"/>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5719">
+        <label>ouzel/core/Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp_source"/>
+        <childnode refid="5720" relation="include">
+        </childnode>
+        <childnode refid="5721" relation="include">
+        </childnode>
+        <childnode refid="5722" relation="include">
+        </childnode>
+        <childnode refid="5723" relation="include">
+        </childnode>
+        <childnode refid="5724" relation="include">
+        </childnode>
+        <childnode refid="5725" relation="include">
+        </childnode>
+        <childnode refid="5726" relation="include">
+        </childnode>
+        <childnode refid="5727" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5738">
+        <label>ouzel/input/macos/GamepadIOKit.hpp</label>
+        <link refid="d1/d88/_gamepad_i_o_kit_8hpp_source"/>
+      </node>
+      <node id="5715">
+        <label>ouzel/core/tvos/EngineTVOS.hpp</label>
+        <link refid="dc/dd2/_engine_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="5722">
+        <label>ouzel/core/ios/WindowIOS.hpp</label>
+        <link refid="de/d13/_window_i_o_s_8hpp_source"/>
+      </node>
+      <node id="5724">
+        <label>ouzel/core/macos/WindowMacOS.hpp</label>
+        <link refid="d3/df3/_window_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="5720">
+        <label>ouzel/core/android/WindowAndroid.hpp</label>
+        <link refid="d0/d81/_window_android_8hpp_source"/>
+      </node>
+      <node id="5731">
+        <label>ouzel/scene/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp_source"/>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d5/dcd/structouzel_1_1_keyboard_event" prot="public">ouzel::KeyboardEvent</innerclass>
+    <innerclass refid="d8/d08/structouzel_1_1_mouse_event" prot="public">ouzel::MouseEvent</innerclass>
+    <innerclass refid="db/df9/structouzel_1_1_touch_event" prot="public">ouzel::TouchEvent</innerclass>
+    <innerclass refid="dc/d9b/structouzel_1_1_gamepad_event" prot="public">ouzel::GamepadEvent</innerclass>
+    <innerclass refid="d4/d7c/structouzel_1_1_window_event" prot="public">ouzel::WindowEvent</innerclass>
+    <innerclass refid="dd/d10/structouzel_1_1_system_event" prot="public">ouzel::SystemEvent</innerclass>
+    <innerclass refid="d7/daa/structouzel_1_1_u_i_event" prot="public">ouzel::UIEvent</innerclass>
+    <innerclass refid="dd/dae/structouzel_1_1_animation_event" prot="public">ouzel::AnimationEvent</innerclass>
+    <innerclass refid="d4/ddc/structouzel_1_1_sound_event" prot="public">ouzel::SoundEvent</innerclass>
+    <innerclass refid="db/de0/structouzel_1_1_user_event" prot="public">ouzel::UserEvent</innerclass>
+    <innerclass refid="de/d66/structouzel_1_1_event" prot="public">ouzel::Event</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;audio/Sound.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/Actor.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Vector2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Size2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input/Input.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>EventModifiers</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SHIFT_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0001,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALT_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0002,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONTROL_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0004,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SUPER_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0008,<sp/></highlight><highlight class="comment">//<sp/>Windows<sp/>key<sp/>on<sp/>Windows,<sp/>Command<sp/>key<sp/>on<sp/>macOS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FUNCTION_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0010,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LEFT_MOUSE_DOWN<sp/><sp/><sp/><sp/><sp/>=<sp/>0x0020,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RIGHT_MOUSE_DOWN<sp/><sp/><sp/><sp/>=<sp/>0x0040,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MIDDLE_MOUSE_DOWN<sp/><sp/><sp/>=<sp/>0x0080,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d5/dcd/structouzel_1_1_keyboard_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d5/dcd/structouzel_1_1_keyboard_event" kindref="compound">KeyboardEvent</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>modifiers<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input::KeyboardKey<sp/>key<sp/>=<sp/>input::KeyboardKey::NONE;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d8/d08/structouzel_1_1_mouse_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d8/d08/structouzel_1_1_mouse_event" kindref="compound">MouseEvent</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>modifiers<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input::MouseButton<sp/>button<sp/>=<sp/>input::MouseButton::NONE;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>difference;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>position;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>scroll;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="db/df9/structouzel_1_1_touch_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="db/df9/structouzel_1_1_touch_event" kindref="compound">TouchEvent</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>touchId<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>difference;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>position;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="dc/d9b/structouzel_1_1_gamepad_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/d9b/structouzel_1_1_gamepad_event" kindref="compound">GamepadEvent</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d28/classouzel_1_1input_1_1_gamepad" kindref="compound">input::Gamepad</ref>*<sp/>gamepad<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input::GamepadButton<sp/>button<sp/>=<sp/>input::GamepadButton::NONE;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pressed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>previousPressed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>previousValue<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d4/d7c/structouzel_1_1_window_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref>*<sp/>window<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref><sp/>size;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>title;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fullscreen<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>screenId<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="dd/d10/structouzel_1_1_system_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dd/d10/structouzel_1_1_system_event" kindref="compound">SystemEvent</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Orientation</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UNKNOWN,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTRAIT,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTRAIT_UPSIDE_DOWN,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LANDSCAPE_LEFT,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LANDSCAPE_RIGHT,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FACE_UP,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FACE_DOWN</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation<sp/>orientation;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>filename;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d7/daa/structouzel_1_1_u_i_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d7/daa/structouzel_1_1_u_i_event" kindref="compound">UIEvent</ref></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">scene::Actor</ref>*<sp/>actor;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>touchId<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>difference;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>position;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref><sp/>localPosition;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="dd/dae/structouzel_1_1_animation_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dd/dae/structouzel_1_1_animation_event" kindref="compound">AnimationEvent</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d9e/classouzel_1_1scene_1_1_component" kindref="compound">scene::Component</ref>*<sp/>component;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="d4/ddc/structouzel_1_1_sound_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/ddc/structouzel_1_1_sound_event" kindref="compound">SoundEvent</ref></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d98/classouzel_1_1audio_1_1_sound" kindref="compound">audio::Sound</ref>*<sp/>sound;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="db/de0/structouzel_1_1_user_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="db/de0/structouzel_1_1_user_event" kindref="compound">UserEvent</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>parameters;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="de/d66/structouzel_1_1_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/d66/structouzel_1_1_event" kindref="compound">Event</ref></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Type</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>keyboard<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KEY_PRESS,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KEY_RELEASE,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KEY_REPEAT,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE_PRESS,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE_RELEASE,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE_SCROLL,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE_MOVE,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>touch<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TOUCH_BEGIN,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TOUCH_MOVE,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TOUCH_END,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TOUCH_CANCEL,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gamepad<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GAMEPAD_CONNECT,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GAMEPAD_DISCONNECT,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GAMEPAD_BUTTON_CHANGE,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>window<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WINDOW_SIZE_CHANGE,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WINDOW_TITLE_CHANGE,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FULLSCREEN_CHANGE,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SCREEN_CHANGE,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RESOLUTION_CHANGE,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>system<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENGINE_START,<sp/></highlight><highlight class="comment">//<sp/>engine<sp/>started<sp/>running<sp/>(sent<sp/>only<sp/>once)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENGINE_STOP,<sp/></highlight><highlight class="comment">//<sp/>engine<sp/>stopped<sp/>running<sp/>(sent<sp/>only<sp/>once)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENGINE_RESUME,<sp/></highlight><highlight class="comment">//<sp/>engine<sp/>resumed<sp/>running</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENGINE_PAUSE,<sp/></highlight><highlight class="comment">//<sp/>engine<sp/>paused<sp/>running</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ORIENTATION_CHANGE,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOW_MEMORY,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OPEN_FILE,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>UI<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTOR_ENTER,<sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>or<sp/>touch<sp/>entered<sp/>the<sp/>scene<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTOR_LEAVE,<sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>or<sp/>touch<sp/>left<sp/>the<sp/>scene<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTOR_PRESS,<sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>or<sp/>touch<sp/>pressed<sp/>on<sp/>scene<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTOR_RELEASE,<sp/><sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>or<sp/>touch<sp/>released<sp/>on<sp/>scene<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTOR_CLICK,<sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>or<sp/>touch<sp/>clicked<sp/>on<sp/>scene<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTOR_DRAG,<sp/></highlight><highlight class="comment">//<sp/>mouse<sp/>or<sp/>touch<sp/>dragged<sp/>scene<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WIDGET_CHANGE,<sp/></highlight><highlight class="comment">//<sp/>widget<sp/>changed<sp/>its<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>animation<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANIMATION_START,<sp/></highlight><highlight class="comment">//<sp/>animation<sp/>has<sp/>started</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANIMATION_RESET,<sp/></highlight><highlight class="comment">//<sp/>animation<sp/>has<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANIMATION_FINISH,<sp/></highlight><highlight class="comment">//<sp/>animation<sp/>has<sp/>finished</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sound<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUND_START,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUND_RESET,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUND_FINISH,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USER<sp/></highlight><highlight class="comment">//<sp/>user<sp/>defined<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type<sp/>type;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dcd/structouzel_1_1_keyboard_event" kindref="compound">KeyboardEvent</ref><sp/>keyboardEvent;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d08/structouzel_1_1_mouse_event" kindref="compound">MouseEvent</ref><sp/>mouseEvent;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df9/structouzel_1_1_touch_event" kindref="compound">TouchEvent</ref><sp/>touchEvent;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d9b/structouzel_1_1_gamepad_event" kindref="compound">GamepadEvent</ref><sp/>gamepadEvent;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref><sp/>windowEvent;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d10/structouzel_1_1_system_event" kindref="compound">SystemEvent</ref><sp/>systemEvent;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/daa/structouzel_1_1_u_i_event" kindref="compound">UIEvent</ref><sp/>uiEvent;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/dae/structouzel_1_1_animation_event" kindref="compound">AnimationEvent</ref><sp/>animationEvent;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/ddc/structouzel_1_1_sound_event" kindref="compound">SoundEvent</ref><sp/>soundEvent;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/de0/structouzel_1_1_user_event" kindref="compound">UserEvent</ref><sp/>userEvent;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ouzel/events/Event.hpp"/>
+  </compounddef>
+</doxygen>

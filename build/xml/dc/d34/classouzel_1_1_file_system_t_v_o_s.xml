@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/d34/classouzel_1_1_file_system_t_v_o_s" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::FileSystemTVOS</compoundname>
+    <basecompoundref refid="d5/d9e/classouzel_1_1_file_system" prot="public" virt="non-virtual">ouzel::FileSystem</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d34/classouzel_1_1_file_system_t_v_o_s_1ab92af5172020555d7ea613b1d895b9e2" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::FileSystemTVOS::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/tvos/FileSystemTVOS.hpp" line="14" column="1" bodyfile="ouzel/files/tvos/FileSystemTVOS.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d34/classouzel_1_1_file_system_t_v_o_s_1a22f2e6a29d8cb8bbcc15c526a5766c08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystemTVOS::getStorageDirectory</definition>
+        <argsstring>(bool user=true) const override</argsstring>
+        <name>getStorageDirectory</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1abb18d9c27c7497c8ec51fc9ffe3d17c2">getStorageDirectory</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>user</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/tvos/FileSystemTVOS.hpp" line="16" column="1" bodyfile="ouzel/files/tvos/FileSystemTVOS.mm" bodystart="18" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d34/classouzel_1_1_file_system_t_v_o_s_1ad3e3556b08a7cf9c11a84953b6ff3b46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystemTVOS::getTempDirectory</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTempDirectory</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1a9de54ce6dccd81fea87b3c3f28dfd401">getTempDirectory</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/tvos/FileSystemTVOS.hpp" line="17" column="1" bodyfile="ouzel/files/tvos/FileSystemTVOS.mm" bodystart="34" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="dc/d34/classouzel_1_1_file_system_t_v_o_s_1a15bd835053675d8a7136b320af9e8dc4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::FileSystemTVOS::FileSystemTVOS</definition>
+        <argsstring>()</argsstring>
+        <name>FileSystemTVOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/tvos/FileSystemTVOS.hpp" line="20" column="1" bodyfile="ouzel/files/tvos/FileSystemTVOS.mm" bodystart="10" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="723">
+        <label>ouzel::FileSystemTVOS</label>
+        <link refid="dc/d34/classouzel_1_1_file_system_t_v_o_s"/>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="725" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="726">
+        <label>ouzel::FileSystemTVOS</label>
+        <link refid="dc/d34/classouzel_1_1_file_system_t_v_o_s"/>
+        <childnode refid="727" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="728" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="728">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/files/tvos/FileSystemTVOS.hpp" line="13" column="1" bodyfile="ouzel/files/tvos/FileSystemTVOS.hpp" bodystart="12" bodyend="21"/>
+    <listofallmembers>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a920b954682b892e7eb2d595d3c24b9af" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>addArchive</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a0ecb425cf85a85806dde37a9b8a98d8e" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>addResourcePath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a79e5c5239dff0613da7869d3d0a86faa" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>appPath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aff4867905ed7f80aa5bdc14d9bdbabcb" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>archives</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a98fff3dd527a52f4419ae5aaa83cb368" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>DIRECTORY_SEPARATOR</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a41960885b7801dad97399b15bafcb14b" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>directoryExists</name></member>
+      <member refid="dc/d34/classouzel_1_1_file_system_t_v_o_s_1ab92af5172020555d7ea613b1d895b9e2" prot="private" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>Engine</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a7515635874dce627d129b94657c70210" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>fileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a75042662c1899c313cef935f5c7d2244" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>FileSystem</name></member>
+      <member refid="dc/d34/classouzel_1_1_file_system_t_v_o_s_1a15bd835053675d8a7136b320af9e8dc4" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>FileSystemTVOS</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a169e45af3cbaf46cf35f6b1211ef22e5" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>getDirectoryPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a6741327501b7560178eb0e578b08a0ec" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>getExtensionPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a9e9b7728bca4d9cc9b2cfeda405358eb" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>getFilenamePart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ac14681360d4f300275f48c7ccc04e0d8" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>getPath</name></member>
+      <member refid="dc/d34/classouzel_1_1_file_system_t_v_o_s_1a22f2e6a29d8cb8bbcc15c526a5766c08" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>getStorageDirectory</name></member>
+      <member refid="dc/d34/classouzel_1_1_file_system_t_v_o_s_1ad3e3556b08a7cf9c11a84953b6ff3b46" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>getTempDirectory</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aa8b209fa1f0ef50ece46a0ffbab2d340" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>isAbsolutePath</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>operator=</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af288b532f4af8b6c8b0709e9a2adb9a5" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>readFile</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a3f25bf8b2d0390a51630de7f63856e31" prot="public" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>resourceFileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ad4dc66539ce1fce989d406eb3e85c2a2" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>resourcePaths</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af7990564a56741d830e237b0db3b6ebc" prot="public" virt="virtual"><scope>ouzel::FileSystemTVOS</scope><name>writeFile</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemTVOS</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

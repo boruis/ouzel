@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/d58/classouzel_1_1input_1_1_input_win" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::InputWin</compoundname>
+    <basecompoundref refid="d3/d66/classouzel_1_1input_1_1_input" prot="public" virt="non-virtual">ouzel::input::Input</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1abd801b3ab3fbfc47230f2f20b02277e2" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::InputWin::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="21" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1ade9a60c0b417ab4f3890eaa744125f58" prot="protected" static="no" mutable="no">
+        <type>IDirectInput8W *</type>
+        <definition>IDirectInput8W* ouzel::input::InputWin::directInput</definition>
+        <argsstring></argsstring>
+        <name>directInput</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="51" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1a43cf4795ee4171fa337c64f0f9699a12" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d4/df7/classouzel_1_1input_1_1_gamepad_d_i" kindref="compound">GamepadDI</ref> * &gt;</type>
+        <definition>std::vector&lt;GamepadDI*&gt; ouzel::input::InputWin::gamepadsDI</definition>
+        <argsstring></argsstring>
+        <name>gamepadsDI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="52" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1a148fe4b4692fc1fda11940f0745aa7f1" prot="protected" static="no" mutable="no">
+        <type><ref refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i" kindref="compound">GamepadXI</ref> *</type>
+        <definition>GamepadXI* ouzel::input::InputWin::gamepadsXI[XUSER_MAX_COUNT]</definition>
+        <argsstring>[XUSER_MAX_COUNT]</argsstring>
+        <name>gamepadsXI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="53" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1a68470fdb0094ee27c9fdad079f5e3cdf" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputWin::cursorVisible</definition>
+        <argsstring></argsstring>
+        <name>cursorVisible</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="55" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1ad44418e0a6c80fb7380cd3cc52ae63f4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputWin::cursorLocked</definition>
+        <argsstring></argsstring>
+        <name>cursorLocked</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="56" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1aa41b9189a320ecab34990aa70ba342a0" prot="protected" static="no" mutable="no">
+        <type>HCURSOR</type>
+        <definition>HCURSOR ouzel::input::InputWin::defaultCursor</definition>
+        <argsstring></argsstring>
+        <name>defaultCursor</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="57" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d58/classouzel_1_1input_1_1_input_win_1a6a74405d4f7659cef0a792720c157e3b" prot="protected" static="no" mutable="no">
+        <type>HCURSOR</type>
+        <definition>HCURSOR ouzel::input::InputWin::currentCursor</definition>
+        <argsstring></argsstring>
+        <name>currentCursor</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="58" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a3ab0799d3b3df6e76fe29d638fd58dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::input::InputWin::~InputWin</definition>
+        <argsstring>()</argsstring>
+        <name>~InputWin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="23" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a40519e202dedf78917fa5d573e9e1643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="28" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="226" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1af1e96d64e1c3051579dc88d86efe870e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::setCursorVisible</definition>
+        <argsstring>(bool visible) override</argsstring>
+        <name>setCursorVisible</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a098acb21355272cbb50441e012d7f817">setCursorVisible</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="30" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="343" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a6bc9dab33b36216e0c356c6dcd9faf5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputWin::isCursorVisible</definition>
+        <argsstring>() const override</argsstring>
+        <name>isCursorVisible</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ae34e27bbafbadec87dcdcd8092cd4dff">isCursorVisible</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="31" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1ab5549d8f0dba026b6590ced0a7af0fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::setCursorLocked</definition>
+        <argsstring>(bool locked) override</argsstring>
+        <name>setCursorLocked</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a5768de88f5145ee43985a69124941d94">setCursorLocked</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>locked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="33" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="364" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a615fd6a75dc9adf03a6a7fbf241d642b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputWin::isCursorLocked</definition>
+        <argsstring>() const override</argsstring>
+        <name>isCursorLocked</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a2975def826f9d962c3ab9717b183b4b2">isCursorLocked</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="34" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1aa18dc4e403085efb7ca09e8722020e73" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::setCursorPosition</definition>
+        <argsstring>(const Vector2 &amp;position) override</argsstring>
+        <name>setCursorPosition</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ad68b93107284cbc416aef183ca321808">setCursorPosition</reimplements>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="36" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="400" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1aed6573ea157e8e1db3596352e847bdbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::startGamepadDiscovery</definition>
+        <argsstring>() override</argsstring>
+        <name>startGamepadDiscovery</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a20debe60e92004a68884f2c97a930e9e">startGamepadDiscovery</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="37" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="417" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a2e390e20cb84535adaffdf86eb830656" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>IDirectInput8W *</type>
+        <definition>IDirectInput8W* ouzel::input::InputWin::getDirectInput</definition>
+        <argsstring>() const</argsstring>
+        <name>getDirectInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="39" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a5bc1a11c738d50e5436c4626dcf9aaca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::handleDeviceConnect</definition>
+        <argsstring>(const DIDEVICEINSTANCEW *didInstance)</argsstring>
+        <name>handleDeviceConnect</name>
+        <param>
+          <type>const DIDEVICEINSTANCEW *</type>
+          <declname>didInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="40" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="426" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1ab5a6a0d99e20bb90a67b427fd386836d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::updateCursor</definition>
+        <argsstring>()</argsstring>
+        <name>updateCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="42" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="555" bodyend="565"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1ad6625efe4c79a90112665fdf31b7f5e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KeyboardKey</type>
+        <definition>KeyboardKey ouzel::input::InputWin::convertKeyCode</definition>
+        <argsstring>(UINT keyCode)</argsstring>
+        <name>convertKeyCode</name>
+        <param>
+          <type>UINT</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="25" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="171" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1ab8f5ba854fee8bfe9ea4d5cf9073f50d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::input::InputWin::getModifiers</definition>
+        <argsstring>(WPARAM wParam)</argsstring>
+        <name>getModifiers</name>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="26" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="185" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1ad569a7aa8199b0c8a38aa5416e546d0e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::InputWin::InputWin</definition>
+        <argsstring>()</argsstring>
+        <name>InputWin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="45" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="199" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a8dd15cb9394be23a3182d44cfb690f5c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputWin::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a3a59fd85fc4f6db83c04257d28939076">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="46" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="213" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a35b6e391b31bdc5f67e1ad4bff68aa8e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputWin::activateCursorResource</definition>
+        <argsstring>(CursorResource *resource) override</argsstring>
+        <name>activateCursorResource</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a4debefd4bfa57d8cc140990d05ae578d">activateCursorResource</reimplements>
+        <param>
+          <type><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="48" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="313" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d58/classouzel_1_1input_1_1_input_win_1a02befb571f297c2a5963e2d5cef1f2cf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref> *</type>
+        <definition>CursorResource * ouzel::input::InputWin::createCursorResource</definition>
+        <argsstring>() override</argsstring>
+        <name>createCursorResource</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ac1a1e4231947f089462cee12641ecd6a">createCursorResource</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.hpp" line="49" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="331" bodyend="341"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="925">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="926" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="924">
+        <label>ouzel::input::InputWin</label>
+        <link refid="dc/d58/classouzel_1_1input_1_1_input_win"/>
+        <childnode refid="925" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="928">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="929" relation="public-inheritance">
+        </childnode>
+        <childnode refid="930" relation="usage">
+          <edgelabel>currentCursorResource</edgelabel>
+        </childnode>
+        <childnode refid="931" relation="usage">
+          <edgelabel>cursorPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="927">
+        <label>ouzel::input::InputWin</label>
+        <link refid="dc/d58/classouzel_1_1input_1_1_input_win"/>
+        <childnode refid="928" relation="public-inheritance">
+        </childnode>
+        <childnode refid="933" relation="usage">
+          <edgelabel>gamepadsXI</edgelabel>
+        </childnode>
+      </node>
+      <node id="933">
+        <label>ouzel::input::GamepadXI</label>
+        <link refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i"/>
+        <childnode refid="934" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="932">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="930">
+        <label>ouzel::input::CursorResource</label>
+        <link refid="d8/d06/classouzel_1_1input_1_1_cursor_resource"/>
+        <childnode refid="931" relation="usage">
+          <edgelabel>hotSpot</edgelabel>
+        </childnode>
+        <childnode refid="932" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="931">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="931" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="934">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="929" relation="public-inheritance">
+        </childnode>
+        <childnode refid="935" relation="usage">
+          <edgelabel>buttonStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="935">
+        <label>ouzel::input::Gamepad::ButtonState</label>
+        <link refid="d3/d17/structouzel_1_1input_1_1_gamepad_1_1_button_state"/>
+      </node>
+      <node id="929">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/windows/InputWin.hpp" line="20" column="1" bodyfile="ouzel/input/windows/InputWin.hpp" bodystart="19" bodyend="59"/>
+    <listofallmembers>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a35b6e391b31bdc5f67e1ad4bff68aa8e" prot="protected" virt="virtual"><scope>ouzel::input::InputWin</scope><name>activateCursorResource</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ad6625efe4c79a90112665fdf31b7f5e3" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>convertKeyCode</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a02befb571f297c2a5963e2d5cef1f2cf" prot="protected" virt="virtual"><scope>ouzel::input::InputWin</scope><name>createCursorResource</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a6a74405d4f7659cef0a792720c157e3b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>currentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a607158b917fc599aeb9c79e3626adaf7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>currentCursorResource</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ad44418e0a6c80fb7380cd3cc52ae63f4" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>cursorLocked</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a48fba2698df7318dc1ae672e0c1e02e7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>cursorPosition</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a68470fdb0094ee27c9fdad079f5e3cdf" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>cursorVisible</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1aa41b9189a320ecab34990aa70ba342a0" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>defaultCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab8d1ae63c7bcd08c6a54354307774709" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>deleteCursorResource</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ade9a60c0b417ab4f3890eaa744125f58" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>directInput</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1abd801b3ab3fbfc47230f2f20b02277e2" prot="private" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>Engine</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2d7430df853bf87282d7c77d0ee99da5" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>gamepads</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a43cf4795ee4171fa337c64f0f9699a12" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>gamepadsDI</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a148fe4b4692fc1fda11940f0745aa7f1" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>gamepadsXI</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a72a0dae29fd96ee53bae8f06b9edac4a" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>getCursorPosition</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a2e390e20cb84535adaffdf86eb830656" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>getDirectInput</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ab8f5ba854fee8bfe9ea4d5cf9073f50d" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>getModifiers</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a5bc1a11c738d50e5436c4626dcf9aaca" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>handleDeviceConnect</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af6fdb721c613db6cab287c9ba75e20f5" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>hideVirtualKeyboard</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a8dd15cb9394be23a3182d44cfb690f5c" prot="protected" virt="virtual"><scope>ouzel::input::InputWin</scope><name>init</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aae3563da3f8488e52aacff66bb21cbcf" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>Input</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ad569a7aa8199b0c8a38aa5416e546d0e" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>InputWin</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a615fd6a75dc9adf03a6a7fbf241d642b" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>isCursorLocked</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a6bc9dab33b36216e0c356c6dcd9faf5c" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>isCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6c1fc37d0901c3c39a4bf50da2b41ec4" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>isKeyboardKeyDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6277961a47ca24f8ca6cbf97468effe4" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>isMouseButtonDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4d804774aedfc2d3eea8aa896bb49b50" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>keyboardKeyStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9c9d2651b00522429b7f6361d6a6cf6a" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>keyPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a659af3edae3d0121b4d5c61bc70b9222" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>keyRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2ac50cf093b3af7874c3780baa33fc34" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>mouseButtonPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a84070635b548488b1f570212683b6d8f" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>mouseButtonRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6b7563da094b76b3c57a78e5d6ef5fef" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>mouseButtonStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa0550ad728bcc5f62c848da185771d9f" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>mouseMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4369885e8b5507e94aef70a7decb98e9" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>mouseRelativeMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1acacff77132eba6a6d0cfd1780b3c955a" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>mouseScroll</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>operator=</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab520315479b2755d09cb58e3769a980b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>resourceDeleteSet</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a247c7b90402d76646ec60043f879e3b8" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>resourceMutex</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9dd034f23e6932c078c095ec6f564f26" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>resources</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a5fff6e75202db5c6c7597ea938e548c7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>setCurrentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a53a133792107491ff05351011b8d1998" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>setCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a96925f6dfd2bcfe1f91bc7e7213a6ca7" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>setCursor</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ab5549d8f0dba026b6590ced0a7af0fea" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>setCursorLocked</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1aa18dc4e403085efb7ca09e8722020e73" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>setCursorPosition</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1af1e96d64e1c3051579dc88d86efe870e" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>setCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af0d9d9775d1bba6854015942bf294dce" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>showVirtualKeyboard</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1aed6573ea157e8e1db3596352e847bdbe" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>startGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a703ef8e423a76f67caf0128224556957" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>stopGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ae03f56e62003d0603677b8cfb05cd93b" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>touchBegin</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a42487405af78834a2ebd1435a3e6b8e7" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>touchCancel</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a83f964be55c19ad8280e90fcb7c6b64d" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>touchEnd</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa843065cded9e1c8f7fe15f441bca917" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>touchMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ad585764340c5ab208ccc5e1f7fe99739" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>touchPositions</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a40519e202dedf78917fa5d573e9e1643" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>update</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1ab5a6a0d99e20bb90a67b427fd386836d" prot="public" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>updateCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a487ff528949e0a0c06e7b9d540d7c1cd" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>~Input</name></member>
+      <member refid="dc/d58/classouzel_1_1input_1_1_input_win_1a3ab0799d3b3df6e76fe29d638fd58dfc" prot="public" virt="virtual"><scope>ouzel::input::InputWin</scope><name>~InputWin</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::InputWin</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

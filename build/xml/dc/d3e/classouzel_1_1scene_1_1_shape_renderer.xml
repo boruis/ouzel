@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::scene::ShapeRenderer</compoundname>
+    <basecompoundref refid="d7/d9e/classouzel_1_1scene_1_1_component" prot="public" virt="non-virtual">ouzel::scene::Component</basecompoundref>
+    <innerclass refid="d3/dca/structouzel_1_1scene_1_1_shape_renderer_1_1_draw_command" prot="protected">ouzel::scene::ShapeRenderer::DrawCommand</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1abc12cc6f0c01622dec32018a20231a74" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ouzel::scene::ShapeRenderer::TYPE</definition>
+        <argsstring></argsstring>
+        <name>TYPE</name>
+        <initializer>= Component::SHAPE_RENDERER</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="22" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a3dd8fd5463088286315b8c5966a5e62c" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">graphics::Shader</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::Shader&gt; ouzel::scene::ShapeRenderer::shader</definition>
+        <argsstring></argsstring>
+        <name>shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="80" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a6c4384ebf47dc3b7593d44de36873696" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">graphics::BlendState</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::BlendState&gt; ouzel::scene::ShapeRenderer::blendState</definition>
+        <argsstring></argsstring>
+        <name>blendState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="81" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a3309ec9c9c26cf60c14146a0cb07d848" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer" kindref="compound">graphics::MeshBuffer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::MeshBuffer&gt; ouzel::scene::ShapeRenderer::meshBuffer</definition>
+        <argsstring></argsstring>
+        <name>meshBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="82" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a014741b5bcabea45c1c17fcd35060683" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">graphics::Buffer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::Buffer&gt; ouzel::scene::ShapeRenderer::indexBuffer</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="83" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a578ae7095204b0d11a3ec304ad88ed9e" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">graphics::Buffer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;graphics::Buffer&gt; ouzel::scene::ShapeRenderer::vertexBuffer</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="84" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a9d0c8144aeff43739521dd1baea3d045" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d3/dca/structouzel_1_1scene_1_1_shape_renderer_1_1_draw_command" kindref="compound">DrawCommand</ref> &gt;</type>
+        <definition>std::vector&lt;DrawCommand&gt; ouzel::scene::ShapeRenderer::drawCommands</definition>
+        <argsstring></argsstring>
+        <name>drawCommands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="86" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a85620b13bcfab1317020c1a7bf59582c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; uint16_t &gt;</type>
+        <definition>std::vector&lt;uint16_t&gt; ouzel::scene::ShapeRenderer::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="88" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a405df9dbeba1e53b9cce6af733ad3904" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" kindref="compound">ouzel::graphics::VertexPC</ref> &gt;</type>
+        <definition>std::vector&lt;ouzel::graphics::VertexPC&gt; ouzel::scene::ShapeRenderer::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="89" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1ae53c249e776fa061e07008a597cf8f5a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::ShapeRenderer::dirty</definition>
+        <argsstring></argsstring>
+        <name>dirty</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="90" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1afd60c2efe2268575591984ae602bb0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::ShapeRenderer::ShapeRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>ShapeRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="24" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="16" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a46ad883bc5489334319125642e094082" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::ShapeRenderer::draw</definition>
+        <argsstring>(const Matrix4 &amp;transformMatrix, float opacity, const Matrix4 &amp;renderViewProjection, const std::shared_ptr&lt; graphics::Texture &gt; &amp;renderTarget, const Rectangle &amp;renderViewport, bool depthWrite, bool depthTest, bool wireframe, bool scissorTest, const Rectangle &amp;scissorRectangle) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="d7/d9e/classouzel_1_1scene_1_1_component_1a2380cd102a1155a38c1a31811b95a974">draw</reimplements>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>transformMatrix</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>renderViewProjection</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+          <declname>renderTarget</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>renderViewport</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthWrite</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wireframe</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scissorTest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>scissorRectangle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="26" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="32" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1ab9ccaa46d7c3a5d38fcef052f3c46357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::ShapeRenderer::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="37" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a44cd7d18db6262d66752f41cf0156ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::ShapeRenderer::line</definition>
+        <argsstring>(const Vector2 &amp;start, const Vector2 &amp;finish, const Color &amp;color, float thickness=0.0f)</argsstring>
+        <name>line</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>finish</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="39" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="103" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a2b2f7237124c8487e0f600d1fa8e2c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::ShapeRenderer::circle</definition>
+        <argsstring>(const Vector2 &amp;position, float radius, const Color &amp;color, bool fill=false, uint32_t segments=16, float thickness=0.0f)</argsstring>
+        <name>circle</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fill</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>segments</declname>
+          <defval>16</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="44" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="167" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1ab48a0bda30d3d45af9485e7e1cb602ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::ShapeRenderer::rectangle</definition>
+        <argsstring>(const Rectangle &amp;rectangle, const Color &amp;color, bool fill=false, float thickness=0.0f)</argsstring>
+        <name>rectangle</name>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>rectangle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fill</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="51" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="290" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a78cb9dd66c58f4de63c14f8cfa89fa92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::ShapeRenderer::polygon</definition>
+        <argsstring>(const std::vector&lt; Vector2 &gt; &amp;edges, const Color &amp;color, bool fill=false, float thickness=0.0f)</argsstring>
+        <name>polygon</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &gt; &amp;</type>
+          <declname>edges</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fill</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="56" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="422" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1aa0bcbbf4da48ae04a8f4df763b0e71f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::ShapeRenderer::curve</definition>
+        <argsstring>(const std::vector&lt; Vector2 &gt; &amp;controlPoints, const Color &amp;color, uint32_t segments=16, float thickness=0.0f)</argsstring>
+        <name>curve</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &gt; &amp;</type>
+          <declname>controlPoints</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>segments</declname>
+          <defval>16</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="61" column="1" bodyfile="ouzel/scene/ShapeRenderer.cpp" bodystart="507" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a28579d39c720ce89beb1ba5b052055b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">graphics::Shader</ref> &gt; &amp;</type>
+        <definition>virtual const std::shared_ptr&lt;graphics::Shader&gt;&amp; ouzel::scene::ShapeRenderer::getShader</definition>
+        <argsstring>() const</argsstring>
+        <name>getShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="66" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1adc994269102d2ec8d6856d0d06d78173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ouzel::scene::ShapeRenderer::setShader</definition>
+        <argsstring>(const std::shared_ptr&lt; graphics::Shader &gt; &amp;newShader)</argsstring>
+        <name>setShader</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">graphics::Shader</ref> &gt; &amp;</type>
+          <declname>newShader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="67" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a20df9f906ef2c600b3932a1ecbe87350" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">graphics::BlendState</ref> &gt; &amp;</type>
+        <definition>virtual const std::shared_ptr&lt;graphics::BlendState&gt;&amp; ouzel::scene::ShapeRenderer::getBlendState</definition>
+        <argsstring>() const</argsstring>
+        <name>getBlendState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="69" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a861ddc2b25a6bf965d442f62b0a51475" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ouzel::scene::ShapeRenderer::setBlendState</definition>
+        <argsstring>(const std::shared_ptr&lt; graphics::BlendState &gt; &amp;newBlendState)</argsstring>
+        <name>setBlendState</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">graphics::BlendState</ref> &gt; &amp;</type>
+          <declname>newBlendState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/ShapeRenderer.hpp" line="70" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1625">
+        <label>ouzel::scene::ShapeRenderer</label>
+        <link refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer"/>
+        <childnode refid="1626" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1626">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1627">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1640">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="1641" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1644">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="1642">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1648">
+        <label>ouzel::Box3</label>
+        <link refid="d7/d7b/classouzel_1_1_box3"/>
+        <childnode refid="1638" relation="usage">
+          <edgelabel>min</edgelabel>
+          <edgelabel>max</edgelabel>
+        </childnode>
+      </node>
+      <node id="1646">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1633">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="1632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1634" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="1631">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="1632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1638" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1632" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="1639" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="1640" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="1647" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1647">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="1647" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1635">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1636" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1645">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="1638">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="1638" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1636">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1628">
+        <label>ouzel::scene::ShapeRenderer</label>
+        <link refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer"/>
+        <childnode refid="1629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1629">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1631" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="1648" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1641">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1642" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="1643" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="1644" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="1645" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="1637" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="1636" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="1646" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1639">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1639" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1630">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1643">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="1632">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1633" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1634">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1635" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1637" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/scene/ShapeRenderer.hpp" line="20" column="1" bodyfile="ouzel/scene/ShapeRenderer.hpp" bodystart="19" bodyend="91"/>
+    <listofallmembers>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac0cde6d2c7c00f3df048851fe93cb1fd" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>actor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a6b0d7f46cd61835d31076a57b8e7b195" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>ANIMATOR</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a6c4384ebf47dc3b7593d44de36873696" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>blendState</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a912973fa60d4996192f6222ab977733d" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>boundingBox</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a2b2f7237124c8487e0f600d1fa8e2c16" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>circle</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1ab9ccaa46d7c3a5d38fcef052f3c46357" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>clear</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a6840532302cd188e9c980bc636261eb3" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>Component</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1aa0bcbbf4da48ae04a8f4df763b0e71f3" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>curve</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1ae53c249e776fa061e07008a597cf8f5a" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>dirty</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a46ad883bc5489334319125642e094082" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>draw</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a9d0c8144aeff43739521dd1baea3d045" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>drawCommands</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a076ecb7817b2ba6b195a685e7a296e69" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>getActor</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a20df9f906ef2c600b3932a1ecbe87350" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>getBlendState</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac2025f29d26e03fcfaa29923f783cd82" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>getBoundingBox</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a28579d39c720ce89beb1ba5b052055b2" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>getShader</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a11154d2c3c80678e6e7517a95fc819c0" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>getType</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a0200fba59cd3226b0801445e4397aaf9" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>hidden</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a014741b5bcabea45c1c17fcd35060683" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>indexBuffer</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a85620b13bcfab1317020c1a7bf59582c" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>indices</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a707797f719ad91d4dccd0cfdf05bc199" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>isHidden</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a44cd7d18db6262d66752f41cf0156ba9" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>line</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aecc7ea1776bff88cb874f1c49d519d0b" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>LISTENER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5abfbc026b9c233855788356ba0aa0eeff" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>MESH_RENDERER</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a3309ec9c9c26cf60c14146a0cb07d848" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>meshBuffer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>Noncopyable</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a74cd3d5a28ffc56bab1e9e79f8479480" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>NONE</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>operator=</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aea49d48630df60f666cf4b29c770722e" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>PARTICLE_SYSTEM</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a10c95c4b40716c2816a901758621cbc4" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>pointOn</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a78cb9dd66c58f4de63c14f8cfa89fa92" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>polygon</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1ab48a0bda30d3d45af9485e7e1cb602ee" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>rectangle</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a4491e50a0a93ee9f020cf4f2246623aa" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>removeFromActor</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a861ddc2b25a6bf965d442f62b0a51475" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>setBlendState</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ab708706aac78f64c0ae2cec7a86172bd" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>setBoundingBox</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a3a83d565fab07c00a721ea7a90102dbb" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>setHidden</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1adc994269102d2ec8d6856d0d06d78173" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>setShader</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a3dd8fd5463088286315b8c5966a5e62c" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>shader</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a95a94ec8d82cadcafd1c595aad148dcd" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>SHAPE_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a9a0ab52e2e392ff63ffb2b778b2edb83" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>shapeOverlaps</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1afd60c2efe2268575591984ae602bb0a7" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>ShapeRenderer</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aeb101824131e2341d589041ef759959a" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>SOUND</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5af1d11c60acc9b6772ac995647a7d11dd" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>SPRITE</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a109180def1681f029d577f557e3f61f9" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>TEXT_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a8e62eb503a67a4709ab600ce45e29e7b" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>type</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1abc12cc6f0c01622dec32018a20231a74" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>TYPE</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5" prot="public" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>Type</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a578ae7095204b0d11a3ec304ad88ed9e" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>vertexBuffer</name></member>
+      <member refid="dc/d3e/classouzel_1_1scene_1_1_shape_renderer_1a405df9dbeba1e53b9cce6af733ad3904" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>vertices</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1adde89eb3f4c15c003320b44a19747ccb" prot="public" virt="virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>~Component</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::scene::ShapeRenderer</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

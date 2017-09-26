@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d9e/classouzel_1_1_file_system" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::FileSystem</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <derivedcompoundref refid="dd/da7/classouzel_1_1_file_system_android" prot="public" virt="non-virtual">ouzel::FileSystemAndroid</derivedcompoundref>
+    <derivedcompoundref refid="d7/d51/classouzel_1_1_file_system_em" prot="public" virt="non-virtual">ouzel::FileSystemEm</derivedcompoundref>
+    <derivedcompoundref refid="de/d2a/classouzel_1_1_file_system_i_o_s" prot="public" virt="non-virtual">ouzel::FileSystemIOS</derivedcompoundref>
+    <derivedcompoundref refid="db/d15/classouzel_1_1_file_system_linux" prot="public" virt="non-virtual">ouzel::FileSystemLinux</derivedcompoundref>
+    <derivedcompoundref refid="d0/d9a/classouzel_1_1_file_system_mac_o_s" prot="public" virt="non-virtual">ouzel::FileSystemMacOS</derivedcompoundref>
+    <derivedcompoundref refid="d4/ddb/classouzel_1_1_file_system_rasp" prot="public" virt="non-virtual">ouzel::FileSystemRasp</derivedcompoundref>
+    <derivedcompoundref refid="dc/d34/classouzel_1_1_file_system_t_v_o_s" prot="public" virt="non-virtual">ouzel::FileSystemTVOS</derivedcompoundref>
+    <derivedcompoundref refid="de/dd4/classouzel_1_1_file_system_win" prot="public" virt="non-virtual">ouzel::FileSystemWin</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d9e/classouzel_1_1_file_system_1a7504a59d073ace175866b19d298c567c" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::FileSystem::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="19" column="1" bodyfile="ouzel/files/FileSystem.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d5/d9e/classouzel_1_1_file_system_1a98fff3dd527a52f4419ae5aaa83cb368" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string ouzel::FileSystem::DIRECTORY_SEPARATOR</definition>
+        <argsstring></argsstring>
+        <name>DIRECTORY_SEPARATOR</name>
+        <initializer>= &quot;/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="21" column="1" bodyfile="ouzel/files/FileSystem.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d5/d9e/classouzel_1_1_file_system_1a79e5c5239dff0613da7869d3d0a86faa" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::appPath</definition>
+        <argsstring></argsstring>
+        <name>appPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="45" column="1" bodyfile="ouzel/files/FileSystem.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d9e/classouzel_1_1_file_system_1ad4dc66539ce1fce989d406eb3e85c2a2" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; ouzel::FileSystem::resourcePaths</definition>
+        <argsstring></argsstring>
+        <name>resourcePaths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="46" column="1" bodyfile="ouzel/files/FileSystem.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d9e/classouzel_1_1_file_system_1aff4867905ed7f80aa5bdc14d9bdbabcb" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="d8/d18/classouzel_1_1_archive" kindref="compound">Archive</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;Archive&gt; &gt; ouzel::FileSystem::archives</definition>
+        <argsstring></argsstring>
+        <name>archives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="47" column="1" bodyfile="ouzel/files/FileSystem.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1abb18d9c27c7497c8ec51fc9ffe3d17c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::getStorageDirectory</definition>
+        <argsstring>(bool user=true) const</argsstring>
+        <name>getStorageDirectory</name>
+        <reimplementedby refid="dc/d34/classouzel_1_1_file_system_t_v_o_s_1a22f2e6a29d8cb8bbcc15c526a5766c08">getStorageDirectory</reimplementedby>
+        <reimplementedby refid="d4/ddb/classouzel_1_1_file_system_rasp_1a43dbcc988c631028f60c4ecd769684d8">getStorageDirectory</reimplementedby>
+        <reimplementedby refid="d0/d9a/classouzel_1_1_file_system_mac_o_s_1a64b888ed63f4ec2daae0bb878f240ac9">getStorageDirectory</reimplementedby>
+        <reimplementedby refid="db/d15/classouzel_1_1_file_system_linux_1a832fbe691dd7a2ede627b7591833f809">getStorageDirectory</reimplementedby>
+        <reimplementedby refid="de/d2a/classouzel_1_1_file_system_i_o_s_1a305e830bb14cdd2b49b40ca73dc2ac3c">getStorageDirectory</reimplementedby>
+        <reimplementedby refid="dd/da7/classouzel_1_1_file_system_android_1a8f0298781c635b4537df35ca7500eaa0">getStorageDirectory</reimplementedby>
+        <reimplementedby refid="de/dd4/classouzel_1_1_file_system_win_1a09d0f5f38c1b7a7f79cd18b3596c5f4d">getStorageDirectory</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>user</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="23" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a9de54ce6dccd81fea87b3c3f28dfd401" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::getTempDirectory</definition>
+        <argsstring>() const</argsstring>
+        <name>getTempDirectory</name>
+        <reimplementedby refid="dc/d34/classouzel_1_1_file_system_t_v_o_s_1ad3e3556b08a7cf9c11a84953b6ff3b46">getTempDirectory</reimplementedby>
+        <reimplementedby refid="d4/ddb/classouzel_1_1_file_system_rasp_1aa7c02ff27e5ace177f92462e9c27acbe">getTempDirectory</reimplementedby>
+        <reimplementedby refid="d0/d9a/classouzel_1_1_file_system_mac_o_s_1ac060232af12c46848db181f39b2d123e">getTempDirectory</reimplementedby>
+        <reimplementedby refid="db/d15/classouzel_1_1_file_system_linux_1ae51d7da4fc013a54022f969b5c22ff6c">getTempDirectory</reimplementedby>
+        <reimplementedby refid="de/d2a/classouzel_1_1_file_system_i_o_s_1a89f61b99ccede9bc7f1c8182b1c4f7cf">getTempDirectory</reimplementedby>
+        <reimplementedby refid="dd/da7/classouzel_1_1_file_system_android_1a2bd6e4be345d473956185bcabc962efd">getTempDirectory</reimplementedby>
+        <reimplementedby refid="de/dd4/classouzel_1_1_file_system_win_1ac59a583839c15afdc51a5f50e77d1b6c">getTempDirectory</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="24" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1af288b532f4af8b6c8b0709e9a2adb9a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystem::readFile</definition>
+        <argsstring>(const std::string &amp;filename, std::vector&lt; uint8_t &gt; &amp;data, bool searchResources=true) const</argsstring>
+        <name>readFile</name>
+        <reimplementedby refid="dd/da7/classouzel_1_1_file_system_android_1affd1b0c1a539604c1b25ab3c7bc32fd3">readFile</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>searchResources</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="26" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="35" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1af7990564a56741d830e237b0db3b6ebc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystem::writeFile</definition>
+        <argsstring>(const std::string &amp;filename, const std::vector&lt; uint8_t &gt; &amp;data) const</argsstring>
+        <name>writeFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="27" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="70" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a3f25bf8b2d0390a51630de7f63856e31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystem::resourceFileExists</definition>
+        <argsstring>(const std::string &amp;filename) const</argsstring>
+        <name>resourceFileExists</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="29" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="85" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1ac14681360d4f300275f48c7ccc04e0d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::getPath</definition>
+        <argsstring>(const std::string &amp;filename, bool searchResources=true) const</argsstring>
+        <name>getPath</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>searchResources</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="30" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="145" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a0ecb425cf85a85806dde37a9b8a98d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::FileSystem::addResourcePath</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>addResourcePath</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="31" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="186" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a920b954682b892e7eb2d595d3c24b9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::FileSystem::addArchive</definition>
+        <argsstring>(std::shared_ptr&lt; Archive &gt; &amp;archive)</argsstring>
+        <name>addArchive</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d8/d18/classouzel_1_1_archive" kindref="compound">Archive</ref> &gt; &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="32" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="196" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1aa8b209fa1f0ef50ece46a0ffbab2d340" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystem::isAbsolutePath</definition>
+        <argsstring>(const std::string &amp;path) const</argsstring>
+        <name>isAbsolutePath</name>
+        <reimplementedby refid="de/dd4/classouzel_1_1_file_system_win_1a27d0c4dfb87b00555d8edf4bbf9660b6">isAbsolutePath</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="37" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a41960885b7801dad97399b15bafcb14b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystem::directoryExists</definition>
+        <argsstring>(const std::string &amp;dirname) const</argsstring>
+        <name>directoryExists</name>
+        <reimplementedby refid="dd/da7/classouzel_1_1_file_system_android_1ab2767b5c0033f262421a6a6676b6ec87">directoryExists</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dirname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="39" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="123" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a7515635874dce627d129b94657c70210" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystem::fileExists</definition>
+        <argsstring>(const std::string &amp;filename) const</argsstring>
+        <name>fileExists</name>
+        <reimplementedby refid="dd/da7/classouzel_1_1_file_system_android_1a6812cccc96be4f753b87869495a5034d">fileExists</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="40" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="134" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a6741327501b7560178eb0e578b08a0ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::getExtensionPart</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>getExtensionPart</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="34" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="206" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a9e9b7728bca4d9cc9b2cfeda405358eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::getFilenamePart</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>getFilenamePart</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="35" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="218" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a169e45af3cbaf46cf35f6b1211ef22e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystem::getDirectoryPart</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>getDirectoryPart</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="36" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="232" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d9e/classouzel_1_1_file_system_1a75042662c1899c313cef935f5c7d2244" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::FileSystem::FileSystem</definition>
+        <argsstring>()</argsstring>
+        <name>FileSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/FileSystem.hpp" line="43" column="1" bodyfile="ouzel/files/FileSystem.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="678">
+        <label>ouzel::FileSystemEm</label>
+        <link refid="d7/d51/classouzel_1_1_file_system_em"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>ouzel::FileSystemWin</label>
+        <link refid="de/dd4/classouzel_1_1_file_system_win"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>ouzel::FileSystemIOS</label>
+        <link refid="de/d2a/classouzel_1_1_file_system_i_o_s"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>ouzel::FileSystemAndroid</label>
+        <link refid="dd/da7/classouzel_1_1_file_system_android"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="683">
+        <label>ouzel::FileSystemTVOS</label>
+        <link refid="dc/d34/classouzel_1_1_file_system_t_v_o_s"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>ouzel::FileSystemLinux</label>
+        <link refid="db/d15/classouzel_1_1_file_system_linux"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>ouzel::FileSystemRasp</label>
+        <link refid="d4/ddb/classouzel_1_1_file_system_rasp"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="676" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="681">
+        <label>ouzel::FileSystemMacOS</label>
+        <link refid="d0/d9a/classouzel_1_1_file_system_mac_o_s"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="685">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/files/FileSystem.hpp" line="18" column="1" bodyfile="ouzel/files/FileSystem.hpp" bodystart="17" bodyend="48"/>
+    <listofallmembers>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a920b954682b892e7eb2d595d3c24b9af" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>addArchive</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a0ecb425cf85a85806dde37a9b8a98d8e" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>addResourcePath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a79e5c5239dff0613da7869d3d0a86faa" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>appPath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aff4867905ed7f80aa5bdc14d9bdbabcb" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>archives</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a98fff3dd527a52f4419ae5aaa83cb368" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>DIRECTORY_SEPARATOR</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a41960885b7801dad97399b15bafcb14b" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>directoryExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a7504a59d073ace175866b19d298c567c" prot="private" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>Engine</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a7515635874dce627d129b94657c70210" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>fileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a75042662c1899c313cef935f5c7d2244" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>FileSystem</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a169e45af3cbaf46cf35f6b1211ef22e5" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>getDirectoryPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a6741327501b7560178eb0e578b08a0ec" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>getExtensionPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a9e9b7728bca4d9cc9b2cfeda405358eb" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>getFilenamePart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ac14681360d4f300275f48c7ccc04e0d8" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>getPath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1abb18d9c27c7497c8ec51fc9ffe3d17c2" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>getStorageDirectory</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a9de54ce6dccd81fea87b3c3f28dfd401" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>getTempDirectory</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aa8b209fa1f0ef50ece46a0ffbab2d340" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>isAbsolutePath</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>operator=</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af288b532f4af8b6c8b0709e9a2adb9a5" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>readFile</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a3f25bf8b2d0390a51630de7f63856e31" prot="public" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>resourceFileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ad4dc66539ce1fce989d406eb3e85c2a2" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>resourcePaths</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af7990564a56741d830e237b0db3b6ebc" prot="public" virt="virtual"><scope>ouzel::FileSystem</scope><name>writeFile</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::FileSystem</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

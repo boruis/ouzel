@@ -1,0 +1,1012 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d98/classouzel_1_1audio_1_1_sound" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::audio::Sound</compoundname>
+    <basecompoundref refid="d0/d32/classouzel_1_1audio_1_1_sound_input" prot="public" virt="non-virtual">ouzel::audio::SoundInput</basecompoundref>
+    <basecompoundref refid="d7/d9e/classouzel_1_1scene_1_1_component" prot="public" virt="non-virtual">ouzel::scene::Component</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a89a5e1b79308d84b3072db6e97bd0fa7" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::audio::Sound::Audio</definition>
+        <argsstring></argsstring>
+        <name>Audio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="23" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a1884d2a1f47b28deabeb6b9a573cb1a9" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref></type>
+        <definition>UpdateCallback ouzel::audio::Sound::updateCallback</definition>
+        <argsstring></argsstring>
+        <name>updateCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="90" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a79192c848d4865c19929e7c5dc794e1b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">SoundData</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;SoundData&gt; ouzel::audio::Sound::soundData</definition>
+        <argsstring></argsstring>
+        <name>soundData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="91" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a96e756666c666823a7eafaed91452057" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="dc/def/classouzel_1_1audio_1_1_stream" kindref="compound">Stream</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Stream&gt; ouzel::audio::Sound::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="92" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a1401e1498afb982b82c8dd2aeff67525" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 ouzel::audio::Sound::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="94" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a7eec549871a7f955dd3711b9d19b7f53" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="95" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a0fd4ac44eb2bdc153a818ff911692a61" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="96" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a3b86cfc24e4b61cdc551f9cc6f5ebcf3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::rolloffFactor</definition>
+        <argsstring></argsstring>
+        <name>rolloffFactor</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="97" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a10704fad7c9e2292951046428c2e9a30" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::minDistance</definition>
+        <argsstring></argsstring>
+        <name>minDistance</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="98" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1ae31f47af1ea55a6e340b0274a15f0170" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::maxDistance</definition>
+        <argsstring></argsstring>
+        <name>maxDistance</name>
+        <initializer>= FLT_MAX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="99" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1afa6801a29e133460f071f196955a0506" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::spatialized</definition>
+        <argsstring></argsstring>
+        <name>spatialized</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="101" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a1d343b457ca7cac896494bada5af9af1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::playing</definition>
+        <argsstring></argsstring>
+        <name>playing</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="102" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1a644728d0d08e56e47d44fea423712824" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::repeating</definition>
+        <argsstring></argsstring>
+        <name>repeating</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="103" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d98/classouzel_1_1audio_1_1_sound_1addd723550bded71c177b8324db17c414" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::audio::Sound::resetCount</definition>
+        <argsstring></argsstring>
+        <name>resetCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="104" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a04b0d717c037866fbcda083b8abd1024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::Sound::Sound</definition>
+        <argsstring>()</argsstring>
+        <name>Sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="25" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a09aedaff2f180793082d57d899ffe230" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::audio::Sound::~Sound</definition>
+        <argsstring>()</argsstring>
+        <name>~Sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="26" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1ad787005ff39071b5730a2afff7d95e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::init</definition>
+        <argsstring>(const std::shared_ptr&lt; SoundData &gt; &amp;newSoundData)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">SoundData</ref> &gt; &amp;</type>
+          <declname>newSoundData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="28" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a7318c8fe8cc1f1e1ac9cc17c967956d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">SoundData</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt;SoundData&gt;&amp; ouzel::audio::Sound::getSoundData</definition>
+        <argsstring>() const</argsstring>
+        <name>getSoundData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="30" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1abcb4e63cb60e67befcd663f2db277bb2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; ouzel::audio::Sound::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="32" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a7f9ec795e90f00cd863a6885ab8d3f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setPosition</definition>
+        <argsstring>(const Vector3 &amp;newPosition)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>newPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="33" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a08bc3130b70f5fa467146c11ddec28e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::getPitch</definition>
+        <argsstring>() const</argsstring>
+        <name>getPitch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="35" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a8cebbdaa616798f51fa4ec8947a70a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setPitch</definition>
+        <argsstring>(float newPitch)</argsstring>
+        <name>setPitch</name>
+        <param>
+          <type>float</type>
+          <declname>newPitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="36" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a928477e1ac5aeff75f39cd92e464f114" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::getGain</definition>
+        <argsstring>() const</argsstring>
+        <name>getGain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="38" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a3e3d29d78aee48f2c3a88bc1ea4d5279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setGain</definition>
+        <argsstring>(float newGain)</argsstring>
+        <name>setGain</name>
+        <param>
+          <type>float</type>
+          <declname>newGain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="39" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1abae620b48ce6599c058767a2c40b69ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::getRolloffFactor</definition>
+        <argsstring>() const</argsstring>
+        <name>getRolloffFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="41" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a4b4065cbadc8c76412e0536338ddccb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setRolloffFactor</definition>
+        <argsstring>(float newRolloffFactor)</argsstring>
+        <name>setRolloffFactor</name>
+        <param>
+          <type>float</type>
+          <declname>newRolloffFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="42" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a63c00dfbffb6878afb14318bad234a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::getMinDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getMinDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="44" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a1da649a27f3ee97ac0354f05d28143d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setMinDistance</definition>
+        <argsstring>(float newMinDistance)</argsstring>
+        <name>setMinDistance</name>
+        <param>
+          <type>float</type>
+          <declname>newMinDistance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="45" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1aebfa5f87662c5bea9b4645487d63d669" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Sound::getMaxDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="47" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1ad56d46086d6b69c2814a58f0e7d90784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setMaxDistance</definition>
+        <argsstring>(float newMaxDistance)</argsstring>
+        <name>setMaxDistance</name>
+        <param>
+          <type>float</type>
+          <declname>newMaxDistance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="48" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a213b75dd1fae02a60633916be0c2def9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::isSpatialized</definition>
+        <argsstring>()</argsstring>
+        <name>isSpatialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="50" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a3a6ca5a4389bd840bb2b998f47c51777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setSpatialized</definition>
+        <argsstring>(bool newSpatialized)</argsstring>
+        <name>setSpatialized</name>
+        <param>
+          <type>bool</type>
+          <declname>newSpatialized</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="51" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a4adfdc122410a247cf28fb7b7d638826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::play</definition>
+        <argsstring>(bool repeatSound=false)</argsstring>
+        <name>play</name>
+        <param>
+          <type>bool</type>
+          <declname>repeatSound</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="53" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="103" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a6bf443e8140df4d8db5b1efabaed840f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="54" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="125" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1aff1ee53e15ad80b7a379c30e3b23358c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="55" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="135" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a6588b754589dc78d5de5a03aa832bc6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::isPlaying</definition>
+        <argsstring>() const</argsstring>
+        <name>isPlaying</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="57" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a9fbde6ab37cb550b30c29ffb671fbd30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::isRepeating</definition>
+        <argsstring>() const</argsstring>
+        <name>isRepeating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="58" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1af0be1c3ed5b5d73cca5918527b7ba5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::addRenderCommands</definition>
+        <argsstring>(std::vector&lt; AudioDevice::RenderCommand &gt; &amp;renderCommands) override</argsstring>
+        <name>addRenderCommands</name>
+        <reimplements refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a039673f6a4443e9c0255e1b36da61e2a">addRenderCommands</reimplements>
+        <param>
+          <type>std::vector&lt; <ref refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command" kindref="compound">AudioDevice::RenderCommand</ref> &gt; &amp;</type>
+          <declname>renderCommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="60" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="149" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1a90fbf245bbf97f90948520919be2bd19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::update</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>update</name>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="63" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="35" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1ae6853bba1aaeb6657703ef8768a94e66" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Sound::setAttributes</definition>
+        <argsstring>(Vector3 &amp;listenerPosition, Quaternion &amp;listenerRotation, float &amp;pitch, float &amp;gain, float &amp;rolloffFactor, float pitchScale, float gainScale, float rolloffScale)</argsstring>
+        <name>setAttributes</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>listenerPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>listenerRotation</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>rolloffFactor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gainScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rolloffScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="65" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="186" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d98/classouzel_1_1audio_1_1_sound_1ae30127a09766816be4d85219e9b1b439" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::audio::Sound::render</definition>
+        <argsstring>(uint32_t frames, uint16_t channels, uint32_t sampleRate, const Vector3 &amp;listenerPosition, const Quaternion &amp;listenerRotation, float pitch, float gain, float rolloffFactor, std::vector&lt; float &gt; &amp;result, const std::shared_ptr&lt; SoundData &gt; &amp;soundData, const std::shared_ptr&lt; Stream &gt; &amp;stream, const Vector3 &amp;position, float minDistance, float maxDistance, bool spatialized)</argsstring>
+        <name>render</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>frames</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>channels</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>listenerPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>listenerRotation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rolloffFactor</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">SoundData</ref> &gt; &amp;</type>
+          <declname>soundData</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="dc/def/classouzel_1_1audio_1_1_stream" kindref="compound">Stream</ref> &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minDistance</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxDistance</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>spatialized</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Sound.hpp" line="74" column="1" bodyfile="ouzel/audio/Sound.cpp" bodystart="200" bodyend="271"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1680">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+      </node>
+      <node id="1681">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1682" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1679">
+        <label>ouzel::audio::Sound</label>
+        <link refid="d5/d98/classouzel_1_1audio_1_1_sound"/>
+        <childnode refid="1680" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1681" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1682">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1697">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="1698" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1701">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="1699">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1684">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+        <childnode refid="1685" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>ouzel::Box3</label>
+        <link refid="d7/d7b/classouzel_1_1_box3"/>
+        <childnode refid="1695" relation="usage">
+          <edgelabel>min</edgelabel>
+          <edgelabel>max</edgelabel>
+        </childnode>
+      </node>
+      <node id="1703">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="1689" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1691" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="1688">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="1689" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1695" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1689" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="1696" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="1697" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="1704" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1704">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="1704" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1692">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1693" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1702">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="1695">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="1695" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1693">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1686">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1688" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="1705" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1698">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1699" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="1700" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="1701" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="1702" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="1694" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="1693" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="1703" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1683">
+        <label>ouzel::audio::Sound</label>
+        <link refid="d5/d98/classouzel_1_1audio_1_1_sound"/>
+        <childnode refid="1684" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1696" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1687">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1700">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="1689">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1690" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1691">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1692" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1694" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+      <node id="1685">
+        <label>ouzel::audio::SoundOutput</label>
+        <link refid="db/da7/classouzel_1_1audio_1_1_sound_output"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/Sound.hpp" line="22" column="1" bodyfile="ouzel/audio/Sound.hpp" bodystart="21" bodyend="105"/>
+    <listofallmembers>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac0cde6d2c7c00f3df048851fe93cb1fd" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>actor</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1af0be1c3ed5b5d73cca5918527b7ba5e7" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>addRenderCommands</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a6b0d7f46cd61835d31076a57b8e7b195" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>ANIMATOR</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a89a5e1b79308d84b3072db6e97bd0fa7" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Audio</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a912973fa60d4996192f6222ab977733d" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>boundingBox</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a6840532302cd188e9c980bc636261eb3" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Component</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a2380cd102a1155a38c1a31811b95a974" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>draw</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a0fd4ac44eb2bdc153a818ff911692a61" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>gain</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a076ecb7817b2ba6b195a685e7a296e69" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getActor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac2025f29d26e03fcfaa29923f783cd82" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>getBoundingBox</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a928477e1ac5aeff75f39cd92e464f114" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getGain</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1aebfa5f87662c5bea9b4645487d63d669" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getMaxDistance</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a63c00dfbffb6878afb14318bad234a8a" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getMinDistance</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a3acf07d9b675e0df4c9fb425a527e19b" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getOutput</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a08bc3130b70f5fa467146c11ddec28e0" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getPitch</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1abcb4e63cb60e67befcd663f2db277bb2" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getPosition</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1abae620b48ce6599c058767a2c40b69ba" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getRolloffFactor</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a7318c8fe8cc1f1e1ac9cc17c967956d3" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getSoundData</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a11154d2c3c80678e6e7517a95fc819c0" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>getType</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a0200fba59cd3226b0801445e4397aaf9" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>hidden</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1ad787005ff39071b5730a2afff7d95e20" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>init</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a707797f719ad91d4dccd0cfdf05bc199" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>isHidden</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a6588b754589dc78d5de5a03aa832bc6c" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>isPlaying</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a9fbde6ab37cb550b30c29ffb671fbd30" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>isRepeating</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a213b75dd1fae02a60633916be0c2def9" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>isSpatialized</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aecc7ea1776bff88cb874f1c49d519d0b" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>LISTENER</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1ae31f47af1ea55a6e340b0274a15f0170" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>maxDistance</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5abfbc026b9c233855788356ba0aa0eeff" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>MESH_RENDERER</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a10704fad7c9e2292951046428c2e9a30" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>minDistance</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Noncopyable</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a74cd3d5a28ffc56bab1e9e79f8479480" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>NONE</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>operator=</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1ac2e8ddaf4108024c00e21d28dfe036d2" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>output</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aea49d48630df60f666cf4b29c770722e" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>PARTICLE_SYSTEM</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a6bf443e8140df4d8db5b1efabaed840f" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>pause</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a7eec549871a7f955dd3711b9d19b7f53" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>pitch</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a4adfdc122410a247cf28fb7b7d638826" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>play</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a1d343b457ca7cac896494bada5af9af1" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>playing</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a10c95c4b40716c2816a901758621cbc4" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>pointOn</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a1401e1498afb982b82c8dd2aeff67525" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>position</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a4491e50a0a93ee9f020cf4f2246623aa" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>removeFromActor</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1ae30127a09766816be4d85219e9b1b439" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>render</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a644728d0d08e56e47d44fea423712824" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>repeating</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1addd723550bded71c177b8324db17c414" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>resetCount</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a3b86cfc24e4b61cdc551f9cc6f5ebcf3" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>rolloffFactor</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1ae6853bba1aaeb6657703ef8768a94e66" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setAttributes</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ab708706aac78f64c0ae2cec7a86172bd" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>setBoundingBox</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a3e3d29d78aee48f2c3a88bc1ea4d5279" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setGain</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a3a83d565fab07c00a721ea7a90102dbb" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setHidden</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1ad56d46086d6b69c2814a58f0e7d90784" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setMaxDistance</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a1da649a27f3ee97ac0354f05d28143d7" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setMinDistance</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a7945b8ebcc4c297f202e0a982b26967f" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setOutput</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a8cebbdaa616798f51fa4ec8947a70a59" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setPitch</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a7f9ec795e90f00cd863a6885ab8d3f4f" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setPosition</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a4b4065cbadc8c76412e0536338ddccb4" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setRolloffFactor</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a3a6ca5a4389bd840bb2b998f47c51777" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>setSpatialized</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a95a94ec8d82cadcafd1c595aad148dcd" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>SHAPE_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a9a0ab52e2e392ff63ffb2b778b2edb83" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>shapeOverlaps</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a04b0d717c037866fbcda083b8abd1024" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Sound</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aeb101824131e2341d589041ef759959a" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>SOUND</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a79192c848d4865c19929e7c5dc794e1b" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>soundData</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1afa6801a29e133460f071f196955a0506" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>spatialized</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5af1d11c60acc9b6772ac995647a7d11dd" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>SPRITE</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1aff1ee53e15ad80b7a379c30e3b23358c" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>stop</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a96e756666c666823a7eafaed91452057" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>stream</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a109180def1681f029d577f557e3f61f9" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>TEXT_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5" prot="public" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>Type</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a8e62eb503a67a4709ab600ce45e29e7b" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>type</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a90fbf245bbf97f90948520919be2bd19" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>update</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a1884d2a1f47b28deabeb6b9a573cb1a9" prot="private" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>updateCallback</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1adde89eb3f4c15c003320b44a19747ccb" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>~Component</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::audio::Sound</scope><name>~Noncopyable</name></member>
+      <member refid="d5/d98/classouzel_1_1audio_1_1_sound_1a09aedaff2f180793082d57d899ffe230" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>~Sound</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a81fd68deb95eea0719efc9f4795b9c8c" prot="public" virt="virtual"><scope>ouzel::audio::Sound</scope><name>~SoundInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

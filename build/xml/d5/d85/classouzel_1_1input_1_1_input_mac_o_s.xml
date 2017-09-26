@@ -1,0 +1,657 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::InputMacOS</compoundname>
+    <basecompoundref refid="d3/d66/classouzel_1_1input_1_1_input" prot="public" virt="non-virtual">ouzel::input::Input</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a85799705a3f6a78a87348679b8bab1b9" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::InputMacOS::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="31" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a31c1dc4eee2c6279682a6bab3d6677ea" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id ouzel::input::InputMacOS::connectDelegate</definition>
+        <argsstring></argsstring>
+        <name>connectDelegate</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="66" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a84db70edb378f2a5a667e34efc868d7a" prot="protected" static="no" mutable="no">
+        <type>IOHIDManagerRef</type>
+        <definition>IOHIDManagerRef ouzel::input::InputMacOS::hidManager</definition>
+        <argsstring></argsstring>
+        <name>hidManager</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="67" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a3a6607040ee5ad72836f396c52d4321b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c" kindref="compound">GamepadGC</ref> * &gt;</type>
+        <definition>std::vector&lt;GamepadGC*&gt; ouzel::input::InputMacOS::gamepadsGC</definition>
+        <argsstring></argsstring>
+        <name>gamepadsGC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="69" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa5383086c5219eb5e17b82b7e90febdf" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" kindref="compound">GamepadIOKit</ref> * &gt;</type>
+        <definition>std::vector&lt;GamepadIOKit*&gt; ouzel::input::InputMacOS::gamepadsIOKit</definition>
+        <argsstring></argsstring>
+        <name>gamepadsIOKit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="70" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a7b8859a6def33ec5cfdd28f7afe38a58" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputMacOS::discovering</definition>
+        <argsstring></argsstring>
+        <name>discovering</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="72" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa85e8fd9848ba05e15e666e0076633ad" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputMacOS::cursorVisible</definition>
+        <argsstring></argsstring>
+        <name>cursorVisible</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="73" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a9d44af4f5c9e26eaf0ab417082713e2b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputMacOS::cursorLocked</definition>
+        <argsstring></argsstring>
+        <name>cursorLocked</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="74" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a80e3b13d026a287e2773a2bdc7d589d5" prot="protected" static="no" mutable="no">
+        <type>NSCursorPtr</type>
+        <definition>NSCursorPtr ouzel::input::InputMacOS::emptyCursor</definition>
+        <argsstring></argsstring>
+        <name>emptyCursor</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="76" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a5421e53bfb4d5af5f2501c5c6c1d318b" prot="protected" static="no" mutable="no">
+        <type>NSCursorPtr</type>
+        <definition>NSCursorPtr ouzel::input::InputMacOS::defaultCursor</definition>
+        <argsstring></argsstring>
+        <name>defaultCursor</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="77" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ab38edfe9b71c8caabc42f2a65c39c07d" prot="protected" static="no" mutable="no">
+        <type>NSCursorPtr</type>
+        <definition>NSCursorPtr ouzel::input::InputMacOS::currentCursor</definition>
+        <argsstring></argsstring>
+        <name>currentCursor</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="78" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ad462e0c92bf83ce300077d454a7c13fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::input::InputMacOS::~InputMacOS</definition>
+        <argsstring>()</argsstring>
+        <name>~InputMacOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="33" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="280" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a21e91e229205ac1c5ca198021a0712b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::setCursorVisible</definition>
+        <argsstring>(bool visible) override</argsstring>
+        <name>setCursorVisible</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a098acb21355272cbb50441e012d7f817">setCursorVisible</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="34" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="379" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a3802ef22944565fdda0ec07983cd8f0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputMacOS::isCursorVisible</definition>
+        <argsstring>() const override</argsstring>
+        <name>isCursorVisible</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ae34e27bbafbadec87dcdcd8092cd4dff">isCursorVisible</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="35" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="398" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a8e2fb1d8103df310c56dc2e6501605ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::setCursorLocked</definition>
+        <argsstring>(bool locked) override</argsstring>
+        <name>setCursorLocked</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a5768de88f5145ee43985a69124941d94">setCursorLocked</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>locked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="37" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="420" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa091633822dcd7e9cb460107e6e0bd36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputMacOS::isCursorLocked</definition>
+        <argsstring>() const override</argsstring>
+        <name>isCursorLocked</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a2975def826f9d962c3ab9717b183b4b2">isCursorLocked</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="38" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="428" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1af36273a13e9cd1a029d997e3350ccc02" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::setCursorPosition</definition>
+        <argsstring>(const Vector2 &amp;position) override</argsstring>
+        <name>setCursorPosition</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ad68b93107284cbc416aef183ca321808">setCursorPosition</reimplements>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="40" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="403" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ab21e84743205fb88c0a69c9d38e2d7c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::startGamepadDiscovery</definition>
+        <argsstring>() override</argsstring>
+        <name>startGamepadDiscovery</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a20debe60e92004a68884f2c97a930e9e">startGamepadDiscovery</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="42" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="433" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a233160aef4d51bf6ba759fc64f44ee79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::stopGamepadDiscovery</definition>
+        <argsstring>() override</argsstring>
+        <name>stopGamepadDiscovery</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a703ef8e423a76f67caf0128224556957">stopGamepadDiscovery</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="43" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="443" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ad32518abc64173848a2060dde9eeabc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::handleGamepadDiscoveryCompleted</definition>
+        <argsstring>()</argsstring>
+        <name>handleGamepadDiscoveryCompleted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="45" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="455" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a706cd2dfe63569ada9b5fda77be5d1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::handleGamepadConnected</definition>
+        <argsstring>(GCControllerPtr device)</argsstring>
+        <name>handleGamepadConnected</name>
+        <param>
+          <type>GCControllerPtr</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="47" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="461" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ac379832e734a91773ec7e9827300d935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::handleGamepadDisconnected</definition>
+        <argsstring>(GCControllerPtr device)</argsstring>
+        <name>handleGamepadDisconnected</name>
+        <param>
+          <type>GCControllerPtr</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="48" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="510" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a5bcd623e2e36d79d5be6a33e441f097f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::handleGamepadConnected</definition>
+        <argsstring>(IOHIDDeviceRef device)</argsstring>
+        <name>handleGamepadConnected</name>
+        <param>
+          <type>IOHIDDeviceRef</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="49" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="540" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a7a2cf01e2cc3c71c8ce0087ac87d76af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::handleGamepadDisconnected</definition>
+        <argsstring>(IOHIDDeviceRef device)</argsstring>
+        <name>handleGamepadDisconnected</name>
+        <param>
+          <type>IOHIDDeviceRef</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="50" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="577" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1afe067e6cea0f4439fefb220a2b20aaa0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NSCursorPtr</type>
+        <definition>NSCursorPtr ouzel::input::InputMacOS::getNativeCursor</definition>
+        <argsstring>() const</argsstring>
+        <name>getNativeCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="56" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1afc66b0c5b85829b9fffade8a1fa4b442" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NSCursorPtr</type>
+        <definition>NSCursorPtr ouzel::input::InputMacOS::getEmptyCursor</definition>
+        <argsstring>() const</argsstring>
+        <name>getEmptyCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="57" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ab50082988c2137caa02cffbf61b07b67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KeyboardKey</type>
+        <definition>KeyboardKey ouzel::input::InputMacOS::convertKeyCode</definition>
+        <argsstring>(uint16_t keyCode)</argsstring>
+        <name>convertKeyCode</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="52" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="208" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ae423e06baff86cb51c2fdf41b14bf08c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>NSUInteger</type>
+        <definition>NSUInteger ouzel::input::InputMacOS::getKeyMask</definition>
+        <argsstring>(uint16_t keyCode)</argsstring>
+        <name>getKeyMask</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="53" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="222" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a9f907c6ae7e0bf06380f1bb9d3e8b807" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::input::InputMacOS::getModifiers</definition>
+        <argsstring>(NSUInteger modifierFlags, NSUInteger pressedMouseButtons)</argsstring>
+        <name>getModifiers</name>
+        <param>
+          <type>NSUInteger</type>
+          <declname>modifierFlags</declname>
+        </param>
+        <param>
+          <type>NSUInteger</type>
+          <declname>pressedMouseButtons</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="54" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="236" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa63e72ea84b17cbc556b6afff8b87e37" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::InputMacOS::InputMacOS</definition>
+        <argsstring>()</argsstring>
+        <name>InputMacOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="60" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="256" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ae6b053d3838d0fca7e6ae2badc5e1158" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputMacOS::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a3a59fd85fc4f6db83c04257d28939076">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="61" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="297" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a423218ac7817283c705d1e70adefdea0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputMacOS::activateCursorResource</definition>
+        <argsstring>(CursorResource *resource) override</argsstring>
+        <name>activateCursorResource</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a4debefd4bfa57d8cc140990d05ae578d">activateCursorResource</reimplements>
+        <param>
+          <type><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="63" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="347" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ac0ad6cd9de8e60cfc693da8af4d0fb86" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref> *</type>
+        <definition>CursorResource * ouzel::input::InputMacOS::createCursorResource</definition>
+        <argsstring>() override</argsstring>
+        <name>createCursorResource</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ac1a1e4231947f089462cee12641ecd6a">createCursorResource</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.hpp" line="64" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="367" bodyend="377"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="898">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="899" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="897">
+        <label>ouzel::input::InputMacOS</label>
+        <link refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s"/>
+        <childnode refid="898" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="899">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="901">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="902" relation="public-inheritance">
+        </childnode>
+        <childnode refid="903" relation="usage">
+          <edgelabel>currentCursorResource</edgelabel>
+        </childnode>
+        <childnode refid="904" relation="usage">
+          <edgelabel>cursorPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="905">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="903">
+        <label>ouzel::input::CursorResource</label>
+        <link refid="d8/d06/classouzel_1_1input_1_1_cursor_resource"/>
+        <childnode refid="904" relation="usage">
+          <edgelabel>hotSpot</edgelabel>
+        </childnode>
+        <childnode refid="905" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="904">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="904" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="900">
+        <label>ouzel::input::InputMacOS</label>
+        <link refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s"/>
+        <childnode refid="901" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="902">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/macos/InputMacOS.hpp" line="30" column="1" bodyfile="ouzel/input/macos/InputMacOS.hpp" bodystart="29" bodyend="79"/>
+    <listofallmembers>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a423218ac7817283c705d1e70adefdea0" prot="protected" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>activateCursorResource</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a31c1dc4eee2c6279682a6bab3d6677ea" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>connectDelegate</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ab50082988c2137caa02cffbf61b07b67" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>convertKeyCode</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ac0ad6cd9de8e60cfc693da8af4d0fb86" prot="protected" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>createCursorResource</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ab38edfe9b71c8caabc42f2a65c39c07d" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>currentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a607158b917fc599aeb9c79e3626adaf7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>currentCursorResource</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a9d44af4f5c9e26eaf0ab417082713e2b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>cursorLocked</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a48fba2698df7318dc1ae672e0c1e02e7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>cursorPosition</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa85e8fd9848ba05e15e666e0076633ad" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>cursorVisible</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a5421e53bfb4d5af5f2501c5c6c1d318b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>defaultCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab8d1ae63c7bcd08c6a54354307774709" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>deleteCursorResource</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a7b8859a6def33ec5cfdd28f7afe38a58" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>discovering</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a80e3b13d026a287e2773a2bdc7d589d5" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>emptyCursor</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a85799705a3f6a78a87348679b8bab1b9" prot="private" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>Engine</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2d7430df853bf87282d7c77d0ee99da5" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>gamepads</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a3a6607040ee5ad72836f396c52d4321b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>gamepadsGC</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa5383086c5219eb5e17b82b7e90febdf" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>gamepadsIOKit</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a72a0dae29fd96ee53bae8f06b9edac4a" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>getCursorPosition</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1afc66b0c5b85829b9fffade8a1fa4b442" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>getEmptyCursor</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ae423e06baff86cb51c2fdf41b14bf08c" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>getKeyMask</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a9f907c6ae7e0bf06380f1bb9d3e8b807" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>getModifiers</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1afe067e6cea0f4439fefb220a2b20aaa0" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>getNativeCursor</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a706cd2dfe63569ada9b5fda77be5d1dc" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>handleGamepadConnected</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a5bcd623e2e36d79d5be6a33e441f097f" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>handleGamepadConnected</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ac379832e734a91773ec7e9827300d935" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>handleGamepadDisconnected</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a7a2cf01e2cc3c71c8ce0087ac87d76af" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>handleGamepadDisconnected</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ad32518abc64173848a2060dde9eeabc2" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>handleGamepadDiscoveryCompleted</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af6fdb721c613db6cab287c9ba75e20f5" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>hideVirtualKeyboard</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a84db70edb378f2a5a667e34efc868d7a" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>hidManager</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ae6b053d3838d0fca7e6ae2badc5e1158" prot="protected" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>init</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aae3563da3f8488e52aacff66bb21cbcf" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>Input</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa63e72ea84b17cbc556b6afff8b87e37" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>InputMacOS</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1aa091633822dcd7e9cb460107e6e0bd36" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>isCursorLocked</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a3802ef22944565fdda0ec07983cd8f0b" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>isCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6c1fc37d0901c3c39a4bf50da2b41ec4" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>isKeyboardKeyDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6277961a47ca24f8ca6cbf97468effe4" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>isMouseButtonDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4d804774aedfc2d3eea8aa896bb49b50" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>keyboardKeyStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9c9d2651b00522429b7f6361d6a6cf6a" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>keyPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a659af3edae3d0121b4d5c61bc70b9222" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>keyRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2ac50cf093b3af7874c3780baa33fc34" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>mouseButtonPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a84070635b548488b1f570212683b6d8f" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>mouseButtonRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6b7563da094b76b3c57a78e5d6ef5fef" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>mouseButtonStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa0550ad728bcc5f62c848da185771d9f" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>mouseMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4369885e8b5507e94aef70a7decb98e9" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>mouseRelativeMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1acacff77132eba6a6d0cfd1780b3c955a" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>mouseScroll</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>operator=</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab520315479b2755d09cb58e3769a980b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>resourceDeleteSet</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a247c7b90402d76646ec60043f879e3b8" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>resourceMutex</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9dd034f23e6932c078c095ec6f564f26" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>resources</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a5fff6e75202db5c6c7597ea938e548c7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>setCurrentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a53a133792107491ff05351011b8d1998" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>setCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a96925f6dfd2bcfe1f91bc7e7213a6ca7" prot="public" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>setCursor</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a8e2fb1d8103df310c56dc2e6501605ee" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>setCursorLocked</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1af36273a13e9cd1a029d997e3350ccc02" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>setCursorPosition</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a21e91e229205ac1c5ca198021a0712b6" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>setCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af0d9d9775d1bba6854015942bf294dce" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>showVirtualKeyboard</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ab21e84743205fb88c0a69c9d38e2d7c4" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>startGamepadDiscovery</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1a233160aef4d51bf6ba759fc64f44ee79" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>stopGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ae03f56e62003d0603677b8cfb05cd93b" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>touchBegin</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a42487405af78834a2ebd1435a3e6b8e7" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>touchCancel</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a83f964be55c19ad8280e90fcb7c6b64d" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>touchEnd</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa843065cded9e1c8f7fe15f441bca917" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>touchMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ad585764340c5ab208ccc5e1f7fe99739" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>touchPositions</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a487ff528949e0a0c06e7b9d540d7c1cd" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>~Input</name></member>
+      <member refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s_1ad462e0c92bf83ce300077d454a7c13fd" prot="public" virt="virtual"><scope>ouzel::input::InputMacOS</scope><name>~InputMacOS</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::InputMacOS</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

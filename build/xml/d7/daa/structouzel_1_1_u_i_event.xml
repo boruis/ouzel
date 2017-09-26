@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/daa/structouzel_1_1_u_i_event" kind="struct" language="C++" prot="public">
+    <compoundname>ouzel::UIEvent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/daa/structouzel_1_1_u_i_event_1a96338b09ec3b8e354aa5e01b671fe985" prot="public" static="no" mutable="no">
+        <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">scene::Actor</ref> *</type>
+        <definition>scene::Actor* ouzel::UIEvent::actor</definition>
+        <argsstring></argsstring>
+        <name>actor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="91" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/daa/structouzel_1_1_u_i_event_1a2ce60d25f74ba425dcd9b7342c755767" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t ouzel::UIEvent::touchId</definition>
+        <argsstring></argsstring>
+        <name>touchId</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="92" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/daa/structouzel_1_1_u_i_event_1a9f67c6f159a5f0f64daf84783b81d76a" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::UIEvent::difference</definition>
+        <argsstring></argsstring>
+        <name>difference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="93" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/daa/structouzel_1_1_u_i_event_1a02f1a7983fc86bb7722dfb72e8877b33" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::UIEvent::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="94" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/daa/structouzel_1_1_u_i_event_1abe1b4930ca1385c2da35f5337db32360" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 ouzel::UIEvent::localPosition</definition>
+        <argsstring></argsstring>
+        <name>localPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="95" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1890">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="1891" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1894">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="1892">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1896">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1883">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="1881" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1884" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="1880">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="1881" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1888" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1881" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="1889" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="1890" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="1897" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1897">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="1897" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1885">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1886" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1895">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="1898">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="1898" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="1888" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1886">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>ouzel::UIEvent</label>
+        <link refid="d7/daa/structouzel_1_1_u_i_event"/>
+        <childnode refid="1880" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="1898" relation="usage">
+          <edgelabel>difference</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1888" relation="usage">
+          <edgelabel>localPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1892" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="1893" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="1894" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="1895" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="1887" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="1886" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="1896" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1887">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1889">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1889" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1882">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1893">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="1881">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1883" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1884">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1882" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1885" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1887" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/Event.hpp" line="90" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="89" bodyend="96"/>
+    <listofallmembers>
+      <member refid="d7/daa/structouzel_1_1_u_i_event_1a96338b09ec3b8e354aa5e01b671fe985" prot="public" virt="non-virtual"><scope>ouzel::UIEvent</scope><name>actor</name></member>
+      <member refid="d7/daa/structouzel_1_1_u_i_event_1a9f67c6f159a5f0f64daf84783b81d76a" prot="public" virt="non-virtual"><scope>ouzel::UIEvent</scope><name>difference</name></member>
+      <member refid="d7/daa/structouzel_1_1_u_i_event_1abe1b4930ca1385c2da35f5337db32360" prot="public" virt="non-virtual"><scope>ouzel::UIEvent</scope><name>localPosition</name></member>
+      <member refid="d7/daa/structouzel_1_1_u_i_event_1a02f1a7983fc86bb7722dfb72e8877b33" prot="public" virt="non-virtual"><scope>ouzel::UIEvent</scope><name>position</name></member>
+      <member refid="d7/daa/structouzel_1_1_u_i_event_1a2ce60d25f74ba425dcd9b7342c755767" prot="public" virt="non-virtual"><scope>ouzel::UIEvent</scope><name>touchId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

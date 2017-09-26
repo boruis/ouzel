@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::BufferResource</compoundname>
+    <basecompoundref refid="d5/d7c/classouzel_1_1graphics_1_1_resource" prot="public" virt="non-virtual">ouzel::graphics::Resource</basecompoundref>
+    <derivedcompoundref refid="d5/d79/classouzel_1_1graphics_1_1_buffer_resource_empty" prot="public" virt="non-virtual">ouzel::graphics::BufferResourceEmpty</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a6bab0313eb43de548977726e03609359" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::graphics::BufferResource::Renderer</definition>
+        <argsstring></argsstring>
+        <name>Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="19" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1ad287964b36c092e5c7699c60a307be68" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; ouzel::graphics::BufferResource::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="35" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a72db2e75b5c611a74b0f502363845475" prot="protected" static="no" mutable="no">
+        <type>Buffer::Usage</type>
+        <definition>Buffer::Usage ouzel::graphics::BufferResource::usage</definition>
+        <argsstring></argsstring>
+        <name>usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="36" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a916cc4f4decb769d28cd38580df623c0" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::BufferResource::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="37" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a142514af1bd3af03ed3c78bbc2c32f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::graphics::BufferResource::~BufferResource</definition>
+        <argsstring>()</argsstring>
+        <name>~BufferResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="21" column="1" bodyfile="ouzel/graphics/BufferResource.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1addb14a4a3bdffe4dd91823258126a3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::BufferResource::init</definition>
+        <argsstring>(Buffer::Usage newUsage, uint32_t newFlags=0, uint32_t newSize=0)</argsstring>
+        <name>init</name>
+        <param>
+          <type>Buffer::Usage</type>
+          <declname>newUsage</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newSize</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="23" column="1" bodyfile="ouzel/graphics/BufferResource.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a1bd3ea1dcde8e52149ad824898e1436b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::BufferResource::init</definition>
+        <argsstring>(Buffer::Usage newUsage, const std::vector&lt; uint8_t &gt; &amp;newData, uint32_t newFlags=0)</argsstring>
+        <name>init</name>
+        <param>
+          <type>Buffer::Usage</type>
+          <declname>newUsage</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newFlags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="24" column="1" bodyfile="ouzel/graphics/BufferResource.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1ad32feebc730d074262c4b4ee3c85ad59" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::BufferResource::setData</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="26" column="1" bodyfile="ouzel/graphics/BufferResource.cpp" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1abdad3628634e62723f34da5ab4434423" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::BufferResource::getFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="28" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1abb83effd28dd58e5f035c41e796e5f5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Buffer::Usage</type>
+        <definition>Buffer::Usage ouzel::graphics::BufferResource::getUsage</definition>
+        <argsstring>() const</argsstring>
+        <name>getUsage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="29" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a3ffb1517432bd80417b64d74d1c97f8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::BufferResource::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="30" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a0c503407311f1ced9d6fba2e3e495dad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::BufferResource::BufferResource</definition>
+        <argsstring>()</argsstring>
+        <name>BufferResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/BufferResource.hpp" line="33" column="1" bodyfile="ouzel/graphics/BufferResource.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="178">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>ouzel::graphics::BufferResource</label>
+        <link refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource"/>
+        <childnode refid="178" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="180">
+        <label>ouzel::graphics::BufferResourceEmpty</label>
+        <link refid="d5/d79/classouzel_1_1graphics_1_1_buffer_resource_empty"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="182">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>ouzel::graphics::BufferResource</label>
+        <link refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource"/>
+        <childnode refid="182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/BufferResource.hpp" line="18" column="1" bodyfile="ouzel/graphics/BufferResource.hpp" bodystart="17" bodyend="38"/>
+    <listofallmembers>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a0c503407311f1ced9d6fba2e3e495dad" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>BufferResource</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1ad287964b36c092e5c7699c60a307be68" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>data</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a916cc4f4decb769d28cd38580df623c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>flags</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1abdad3628634e62723f34da5ab4434423" prot="public" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>getFlags</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a3ffb1517432bd80417b64d74d1c97f8e" prot="public" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>getSize</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1abb83effd28dd58e5f035c41e796e5f5b" prot="public" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>getUsage</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1addb14a4a3bdffe4dd91823258126a3f9" prot="public" virt="virtual"><scope>ouzel::graphics::BufferResource</scope><name>init</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a1bd3ea1dcde8e52149ad824898e1436b" prot="public" virt="virtual"><scope>ouzel::graphics::BufferResource</scope><name>init</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>operator=</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1ac314cb53c79d9b6ae7cbb6e320e9409a" prot="public" virt="virtual"><scope>ouzel::graphics::BufferResource</scope><name>reload</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a6bab0313eb43de548977726e03609359" prot="private" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>Renderer</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a54cf34fd3bfcc1d08b780c4c7ccf6426" prot="public" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>Resource</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1ad32feebc730d074262c4b4ee3c85ad59" prot="public" virt="virtual"><scope>ouzel::graphics::BufferResource</scope><name>setData</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a72db2e75b5c611a74b0f502363845475" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>usage</name></member>
+      <member refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource_1a142514af1bd3af03ed3c78bbc2c32f90" prot="public" virt="virtual"><scope>ouzel::graphics::BufferResource</scope><name>~BufferResource</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::BufferResource</scope><name>~Noncopyable</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a84e6be3fce44057b8dd471fac2626962" prot="public" virt="virtual"><scope>ouzel::graphics::BufferResource</scope><name>~Resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

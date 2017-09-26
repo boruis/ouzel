@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dd/da7/classouzel_1_1_file_system_android" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::FileSystemAndroid</compoundname>
+    <basecompoundref refid="d5/d9e/classouzel_1_1_file_system" prot="public" virt="non-virtual">ouzel::FileSystem</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/da7/classouzel_1_1_file_system_android_1a277827e829616f079a81e5a62a589903" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::FileSystemAndroid::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="14" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/da7/classouzel_1_1_file_system_android_1a8f0298781c635b4537df35ca7500eaa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystemAndroid::getStorageDirectory</definition>
+        <argsstring>(bool user=true) const override</argsstring>
+        <name>getStorageDirectory</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1abb18d9c27c7497c8ec51fc9ffe3d17c2">getStorageDirectory</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>user</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="16" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/da7/classouzel_1_1_file_system_android_1a2bd6e4be345d473956185bcabc962efd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::FileSystemAndroid::getTempDirectory</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTempDirectory</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1a9de54ce6dccd81fea87b3c3f28dfd401">getTempDirectory</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="17" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.cpp" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/da7/classouzel_1_1_file_system_android_1affd1b0c1a539604c1b25ab3c7bc32fd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystemAndroid::readFile</definition>
+        <argsstring>(const std::string &amp;filename, std::vector&lt; uint8_t &gt; &amp;data, bool searchResources=true) const override</argsstring>
+        <name>readFile</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1af288b532f4af8b6c8b0709e9a2adb9a5">readFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>searchResources</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="19" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.cpp" bodystart="30" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/da7/classouzel_1_1_file_system_android_1ab2767b5c0033f262421a6a6676b6ec87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystemAndroid::directoryExists</definition>
+        <argsstring>(const std::string &amp;dirname) const override</argsstring>
+        <name>directoryExists</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1a41960885b7801dad97399b15bafcb14b">directoryExists</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dirname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="21" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.cpp" bodystart="61" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/da7/classouzel_1_1_file_system_android_1a6812cccc96be4f753b87869495a5034d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::FileSystemAndroid::fileExists</definition>
+        <argsstring>(const std::string &amp;filename) const override</argsstring>
+        <name>fileExists</name>
+        <reimplements refid="d5/d9e/classouzel_1_1_file_system_1a7515635874dce627d129b94657c70210">fileExists</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="22" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.cpp" bodystart="74" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="dd/da7/classouzel_1_1_file_system_android_1a6227ef332f2d7bebb9a3ba098244360a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::FileSystemAndroid::FileSystemAndroid</definition>
+        <argsstring>()</argsstring>
+        <name>FileSystemAndroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/files/android/FileSystemAndroid.hpp" line="25" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="687">
+        <label>ouzel::FileSystemAndroid</label>
+        <link refid="dd/da7/classouzel_1_1_file_system_android"/>
+        <childnode refid="688" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="689" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="690">
+        <label>ouzel::FileSystemAndroid</label>
+        <link refid="dd/da7/classouzel_1_1_file_system_android"/>
+        <childnode refid="691" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>ouzel::FileSystem</label>
+        <link refid="d5/d9e/classouzel_1_1_file_system"/>
+        <childnode refid="692" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/files/android/FileSystemAndroid.hpp" line="13" column="1" bodyfile="ouzel/files/android/FileSystemAndroid.hpp" bodystart="12" bodyend="26"/>
+    <listofallmembers>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a920b954682b892e7eb2d595d3c24b9af" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>addArchive</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a0ecb425cf85a85806dde37a9b8a98d8e" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>addResourcePath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a79e5c5239dff0613da7869d3d0a86faa" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>appPath</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aff4867905ed7f80aa5bdc14d9bdbabcb" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>archives</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a98fff3dd527a52f4419ae5aaa83cb368" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>DIRECTORY_SEPARATOR</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1ab2767b5c0033f262421a6a6676b6ec87" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>directoryExists</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1a277827e829616f079a81e5a62a589903" prot="private" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>Engine</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1a6812cccc96be4f753b87869495a5034d" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>fileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a75042662c1899c313cef935f5c7d2244" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>FileSystem</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1a6227ef332f2d7bebb9a3ba098244360a" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>FileSystemAndroid</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a169e45af3cbaf46cf35f6b1211ef22e5" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>getDirectoryPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a6741327501b7560178eb0e578b08a0ec" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>getExtensionPart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a9e9b7728bca4d9cc9b2cfeda405358eb" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>getFilenamePart</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ac14681360d4f300275f48c7ccc04e0d8" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>getPath</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1a8f0298781c635b4537df35ca7500eaa0" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>getStorageDirectory</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1a2bd6e4be345d473956185bcabc962efd" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>getTempDirectory</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1aa8b209fa1f0ef50ece46a0ffbab2d340" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>isAbsolutePath</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>operator=</name></member>
+      <member refid="dd/da7/classouzel_1_1_file_system_android_1affd1b0c1a539604c1b25ab3c7bc32fd3" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>readFile</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1a3f25bf8b2d0390a51630de7f63856e31" prot="public" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>resourceFileExists</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1ad4dc66539ce1fce989d406eb3e85c2a2" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>resourcePaths</name></member>
+      <member refid="d5/d9e/classouzel_1_1_file_system_1af7990564a56741d830e237b0db3b6ebc" prot="public" virt="virtual"><scope>ouzel::FileSystemAndroid</scope><name>writeFile</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::FileSystemAndroid</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

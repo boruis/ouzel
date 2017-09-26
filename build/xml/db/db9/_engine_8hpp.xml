@@ -1,0 +1,1016 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/db9/_engine_8hpp" kind="file" language="C++">
+    <compoundname>Engine.hpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">set</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">atomic</includes>
+    <includes local="no">chrono</includes>
+    <includes refid="de/d93/_setup_8h" local="yes">Setup.h</includes>
+    <includes refid="db/df1/_noncopyable_8hpp" local="yes">utils/Noncopyable.hpp</includes>
+    <includes refid="d0/d75/_update_callback_8hpp" local="yes">core/UpdateCallback.hpp</includes>
+    <includes refid="dd/d91/_timer_8hpp" local="yes">core/Timer.hpp</includes>
+    <includes refid="dc/d94/_renderer_8hpp" local="yes">graphics/Renderer.hpp</includes>
+    <includes refid="d4/d43/_audio_8hpp" local="yes">audio/Audio.hpp</includes>
+    <includes refid="d7/da4/_file_system_8hpp" local="yes">files/FileSystem.hpp</includes>
+    <includes refid="d1/d90/_event_dispatcher_8hpp" local="yes">events/EventDispatcher.hpp</includes>
+    <includes refid="db/d89/_scene_manager_8hpp" local="yes">scene/SceneManager.hpp</includes>
+    <includes refid="d6/d4c/_cache_8hpp" local="yes">core/Cache.hpp</includes>
+    <includes refid="d0/dff/_localization_8hpp" local="yes">localization/Localization.hpp</includes>
+    <includes refid="dc/dd6/_network_8hpp" local="yes">network/Network.hpp</includes>
+    <includes refid="dc/d52/_i_n_i_8hpp" local="yes">utils/INI.hpp</includes>
+    <includedby refid="d9/dd2/_animator_8cpp" local="yes">ouzel/animators/Animator.cpp</includedby>
+    <includedby refid="da/d5b/_repeat_8cpp" local="yes">ouzel/animators/Repeat.cpp</includedby>
+    <includedby refid="d0/d0b/_listener_8cpp" local="yes">ouzel/audio/Listener.cpp</includedby>
+    <includedby refid="d6/d6e/_mixer_8cpp" local="yes">ouzel/audio/Mixer.cpp</includedby>
+    <includedby refid="d2/d10/_sound_8cpp" local="yes">ouzel/audio/Sound.cpp</includedby>
+    <includedby refid="d4/d99/_sound_data_vorbis_8cpp" local="yes">ouzel/audio/SoundDataVorbis.cpp</includedby>
+    <includedby refid="da/d3d/_sound_data_wave_8cpp" local="yes">ouzel/audio/SoundDataWave.cpp</includedby>
+    <includedby refid="dc/df0/_engine_android_8hpp" local="yes">ouzel/core/android/EngineAndroid.hpp</includedby>
+    <includedby refid="d4/d57/android_2main_8cpp" local="yes">ouzel/core/android/main.cpp</includedby>
+    <includedby refid="d4/de2/_cache_8cpp" local="yes">ouzel/core/Cache.cpp</includedby>
+    <includedby refid="d2/d81/_engine_em_8hpp" local="yes">ouzel/core/emscripten/EngineEm.hpp</includedby>
+    <includedby refid="d6/d64/_window_em_8cpp" local="yes">ouzel/core/emscripten/WindowEm.cpp</includedby>
+    <includedby refid="d4/d68/_engine_8cpp" local="yes">ouzel/core/Engine.cpp</includedby>
+    <includedby refid="db/d80/_engine_i_o_s_8hpp" local="yes">ouzel/core/ios/EngineIOS.hpp</includedby>
+    <includedby refid="d3/ddf/_view_i_o_s_8mm" local="yes">ouzel/core/ios/ViewIOS.mm</includedby>
+    <includedby refid="d9/d89/_window_i_o_s_8mm" local="yes">ouzel/core/ios/WindowIOS.mm</includedby>
+    <includedby refid="d6/d37/_engine_linux_8hpp" local="yes">ouzel/core/linux/EngineLinux.hpp</includedby>
+    <includedby refid="dc/df2/_engine_mac_o_s_8hpp" local="yes">ouzel/core/macos/EngineMacOS.hpp</includedby>
+    <includedby refid="d4/d66/_view_mac_o_s_8mm" local="yes">ouzel/core/macos/ViewMacOS.mm</includedby>
+    <includedby refid="df/d3c/_window_mac_o_s_8mm" local="yes">ouzel/core/macos/WindowMacOS.mm</includedby>
+    <includedby refid="d0/dcd/_engine_rasp_8hpp" local="yes">ouzel/core/raspbian/EngineRasp.hpp</includedby>
+    <includedby refid="dc/dd2/_engine_t_v_o_s_8hpp" local="yes">ouzel/core/tvos/EngineTVOS.hpp</includedby>
+    <includedby refid="d9/d37/_view_t_v_o_s_8mm" local="yes">ouzel/core/tvos/ViewTVOS.mm</includedby>
+    <includedby refid="dd/d28/_window_t_v_o_s_8mm" local="yes">ouzel/core/tvos/WindowTVOS.mm</includedby>
+    <includedby refid="d3/d52/_update_callback_8cpp" local="yes">ouzel/core/UpdateCallback.cpp</includedby>
+    <includedby refid="d3/db8/_window_8cpp" local="yes">ouzel/core/Window.cpp</includedby>
+    <includedby refid="d8/d37/_engine_win_8hpp" local="yes">ouzel/core/windows/EngineWin.hpp</includedby>
+    <includedby refid="d8/d2a/_window_win_8cpp" local="yes">ouzel/core/windows/WindowWin.cpp</includedby>
+    <includedby refid="d9/d2b/_event_handler_8cpp" local="yes">ouzel/events/EventHandler.cpp</includedby>
+    <includedby refid="d5/de0/_blend_state_8cpp" local="yes">ouzel/graphics/BlendState.cpp</includedby>
+    <includedby refid="dc/dcf/_buffer_8cpp" local="yes">ouzel/graphics/Buffer.cpp</includedby>
+    <includedby refid="d6/d0d/_render_device_empty_8cpp" local="yes">ouzel/graphics/empty/RenderDeviceEmpty.cpp</includedby>
+    <includedby refid="de/dae/_image_data_s_t_b_8cpp" local="yes">ouzel/graphics/ImageDataSTB.cpp</includedby>
+    <includedby refid="d7/de1/_mesh_buffer_8cpp" local="yes">ouzel/graphics/MeshBuffer.cpp</includedby>
+    <includedby refid="da/d84/_renderer_8cpp" local="yes">ouzel/graphics/Renderer.cpp</includedby>
+    <includedby refid="d5/d16/_shader_8cpp" local="yes">ouzel/graphics/Shader.cpp</includedby>
+    <includedby refid="da/d26/_texture_8cpp" local="yes">ouzel/graphics/Texture.cpp</includedby>
+    <includedby refid="de/dee/_texture_resource_8cpp" local="yes">ouzel/graphics/TextureResource.cpp</includedby>
+    <includedby refid="da/d99/_b_m_font_8cpp" local="yes">ouzel/gui/BMFont.cpp</includedby>
+    <includedby refid="d5/d4d/_button_8cpp" local="yes">ouzel/gui/Button.cpp</includedby>
+    <includedby refid="d6/d32/_check_box_8cpp" local="yes">ouzel/gui/CheckBox.cpp</includedby>
+    <includedby refid="db/db4/_label_8cpp" local="yes">ouzel/gui/Label.cpp</includedby>
+    <includedby refid="d5/d07/_menu_8cpp" local="yes">ouzel/gui/Menu.cpp</includedby>
+    <includedby refid="d6/def/_t_t_font_8cpp" local="yes">ouzel/gui/TTFont.cpp</includedby>
+    <includedby refid="d6/d31/_cursor_8cpp" local="yes">ouzel/input/Cursor.cpp</includedby>
+    <includedby refid="d3/d43/_cursor_resource_8cpp" local="yes">ouzel/input/CursorResource.cpp</includedby>
+    <includedby refid="db/d89/_input_em_8cpp" local="yes">ouzel/input/emscripten/InputEm.cpp</includedby>
+    <includedby refid="dc/d0a/_gamepad_8cpp" local="yes">ouzel/input/Gamepad.cpp</includedby>
+    <includedby refid="d7/d47/_input_8cpp" local="yes">ouzel/input/Input.cpp</includedby>
+    <includedby refid="d9/df1/_gamepad_i_o_s_8mm" local="yes">ouzel/input/ios/GamepadIOS.mm</includedby>
+    <includedby refid="de/de8/_input_i_o_s_8mm" local="yes">ouzel/input/ios/InputIOS.mm</includedby>
+    <includedby refid="db/dfc/_cursor_resource_linux_8cpp" local="yes">ouzel/input/linux/CursorResourceLinux.cpp</includedby>
+    <includedby refid="dc/ddf/_input_linux_8cpp" local="yes">ouzel/input/linux/InputLinux.cpp</includedby>
+    <includedby refid="de/da4/_gamepad_g_c_8mm" local="yes">ouzel/input/macos/GamepadGC.mm</includedby>
+    <includedby refid="d3/d78/_gamepad_i_o_kit_8cpp" local="yes">ouzel/input/macos/GamepadIOKit.cpp</includedby>
+    <includedby refid="dc/d9c/_input_mac_o_s_8mm" local="yes">ouzel/input/macos/InputMacOS.mm</includedby>
+    <includedby refid="d8/d33/_input_rasp_8cpp" local="yes">ouzel/input/raspbian/InputRasp.cpp</includedby>
+    <includedby refid="dc/def/_gamepad_t_v_o_s_8mm" local="yes">ouzel/input/tvos/GamepadTVOS.mm</includedby>
+    <includedby refid="d0/d61/_input_t_v_o_s_8mm" local="yes">ouzel/input/tvos/InputTVOS.mm</includedby>
+    <includedby refid="d1/d3f/_gamepad_d_i_8cpp" local="yes">ouzel/input/windows/GamepadDI.cpp</includedby>
+    <includedby refid="d6/d62/_gamepad_x_i_8cpp" local="yes">ouzel/input/windows/GamepadXI.cpp</includedby>
+    <includedby refid="da/db6/_input_win_8cpp" local="yes">ouzel/input/windows/InputWin.cpp</includedby>
+    <includedby refid="d2/d24/_language_8cpp" local="yes">ouzel/localization/Language.cpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <includedby refid="d4/d59/_actor_8cpp" local="yes">ouzel/scene/Actor.cpp</includedby>
+    <includedby refid="d1/d33/_camera_8cpp" local="yes">ouzel/scene/Camera.cpp</includedby>
+    <includedby refid="df/d7f/_layer_8cpp" local="yes">ouzel/scene/Layer.cpp</includedby>
+    <includedby refid="d1/d30/_particle_definition_8cpp" local="yes">ouzel/scene/ParticleDefinition.cpp</includedby>
+    <includedby refid="d0/d05/_particle_system_8cpp" local="yes">ouzel/scene/ParticleSystem.cpp</includedby>
+    <includedby refid="d9/d44/_scene_8cpp" local="yes">ouzel/scene/Scene.cpp</includedby>
+    <includedby refid="d0/d5f/_scene_manager_8cpp" local="yes">ouzel/scene/SceneManager.cpp</includedby>
+    <includedby refid="d8/d9a/_shape_renderer_8cpp" local="yes">ouzel/scene/ShapeRenderer.cpp</includedby>
+    <includedby refid="da/d21/_sprite_8cpp" local="yes">ouzel/scene/Sprite.cpp</includedby>
+    <includedby refid="d7/d4b/_sprite_definition_8cpp" local="yes">ouzel/scene/SpriteDefinition.cpp</includedby>
+    <includedby refid="d2/dbd/_sprite_frame_8cpp" local="yes">ouzel/scene/SpriteFrame.cpp</includedby>
+    <includedby refid="d0/dad/_text_renderer_8cpp" local="yes">ouzel/scene/TextRenderer.cpp</includedby>
+    <includedby refid="d0/d22/_i_n_i_8cpp" local="yes">ouzel/utils/INI.cpp</includedby>
+    <incdepgraph>
+      <node id="3148">
+        <label>atomic</label>
+      </node>
+      <node id="3146">
+        <label>functional</label>
+      </node>
+      <node id="3158">
+        <label>queue</label>
+      </node>
+      <node id="3169">
+        <label>limits</label>
+      </node>
+      <node id="3180">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3159" relation="include">
+        </childnode>
+        <childnode refid="3158" relation="include">
+        </childnode>
+        <childnode refid="3144" relation="include">
+        </childnode>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3181" relation="include">
+        </childnode>
+        <childnode refid="3191" relation="include">
+        </childnode>
+      </node>
+      <node id="3199">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+      </node>
+      <node id="3203">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+      </node>
+      <node id="3154">
+        <label>cstdint</label>
+      </node>
+      <node id="3178">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="3166" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+      </node>
+      <node id="3186">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3168" relation="include">
+        </childnode>
+        <childnode refid="3166" relation="include">
+        </childnode>
+        <childnode refid="3174" relation="include">
+        </childnode>
+        <childnode refid="3161" relation="include">
+        </childnode>
+        <childnode refid="3175" relation="include">
+        </childnode>
+      </node>
+      <node id="3179">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+      </node>
+      <node id="3155">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="3152" relation="include">
+        </childnode>
+      </node>
+      <node id="3196">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3197" relation="include">
+        </childnode>
+        <childnode refid="3161" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+        <childnode refid="3200" relation="include">
+        </childnode>
+        <childnode refid="3201" relation="include">
+        </childnode>
+        <childnode refid="3202" relation="include">
+        </childnode>
+        <childnode refid="3175" relation="include">
+        </childnode>
+      </node>
+      <node id="3185">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="3159" relation="include">
+        </childnode>
+        <childnode refid="3158" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+      </node>
+      <node id="3164">
+        <label>cmath</label>
+      </node>
+      <node id="3209">
+        <label>errno.h</label>
+      </node>
+      <node id="3142">
+        <label>ouzel/core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3144" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3146" relation="include">
+        </childnode>
+        <childnode refid="3147" relation="include">
+        </childnode>
+        <childnode refid="3148" relation="include">
+        </childnode>
+        <childnode refid="3149" relation="include">
+        </childnode>
+        <childnode refid="3150" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3153" relation="include">
+        </childnode>
+        <childnode refid="3155" relation="include">
+        </childnode>
+        <childnode refid="3156" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3180" relation="include">
+        </childnode>
+        <childnode refid="3192" relation="include">
+        </childnode>
+        <childnode refid="3193" relation="include">
+        </childnode>
+        <childnode refid="3207" relation="include">
+        </childnode>
+        <childnode refid="3208" relation="include">
+        </childnode>
+        <childnode refid="3210" relation="include">
+        </childnode>
+      </node>
+      <node id="3207">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3194" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+      </node>
+      <node id="3195">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3196" relation="include">
+        </childnode>
+      </node>
+      <node id="3157">
+        <label>string</label>
+      </node>
+      <node id="3181">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3182" relation="include">
+        </childnode>
+        <childnode refid="3187" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+        <childnode refid="3165" relation="include">
+        </childnode>
+        <childnode refid="3189" relation="include">
+        </childnode>
+      </node>
+      <node id="3194">
+        <label>map</label>
+      </node>
+      <node id="3183">
+        <label>cfloat</label>
+      </node>
+      <node id="3168">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3169" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+        <childnode refid="3171" relation="include">
+        </childnode>
+      </node>
+      <node id="3192">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+      </node>
+      <node id="3151">
+        <label>Config.h</label>
+      </node>
+      <node id="3166">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="3150" relation="include">
+        </childnode>
+        <childnode refid="3167" relation="include">
+        </childnode>
+        <childnode refid="3172" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+        <childnode refid="3173" relation="include">
+        </childnode>
+      </node>
+      <node id="3197">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3169" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+        <childnode refid="3165" relation="include">
+        </childnode>
+      </node>
+      <node id="3184">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="3185" relation="include">
+        </childnode>
+      </node>
+      <node id="3182">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="3183" relation="include">
+        </childnode>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3184" relation="include">
+        </childnode>
+        <childnode refid="3186" relation="include">
+        </childnode>
+        <childnode refid="3153" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+      </node>
+      <node id="3176">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="3187">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3188" relation="include">
+        </childnode>
+        <childnode refid="3153" relation="include">
+        </childnode>
+        <childnode refid="3168" relation="include">
+        </childnode>
+        <childnode refid="3174" relation="include">
+        </childnode>
+        <childnode refid="3166" relation="include">
+        </childnode>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+      </node>
+      <node id="3172">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="3160">
+        <label>condition_variable</label>
+      </node>
+      <node id="3188">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+      </node>
+      <node id="3191">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="3146" relation="include">
+        </childnode>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3181" relation="include">
+        </childnode>
+      </node>
+      <node id="3201">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+      </node>
+      <node id="3175">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3176" relation="include">
+        </childnode>
+        <childnode refid="3174" relation="include">
+        </childnode>
+        <childnode refid="3165" relation="include">
+        </childnode>
+      </node>
+      <node id="3150">
+        <label>Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="3151" relation="include">
+        </childnode>
+      </node>
+      <node id="3200">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+      </node>
+      <node id="3145">
+        <label>vector</label>
+      </node>
+      <node id="3165">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="3162" relation="include">
+        </childnode>
+      </node>
+      <node id="3167">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3168" relation="include">
+        </childnode>
+        <childnode refid="3172" relation="include">
+        </childnode>
+        <childnode refid="3173" relation="include">
+        </childnode>
+      </node>
+      <node id="3210">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3194" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+      </node>
+      <node id="3171">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="3170" relation="include">
+        </childnode>
+      </node>
+      <node id="3189">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3159" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3190" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+      </node>
+      <node id="3198">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3199" relation="include">
+        </childnode>
+        <childnode refid="3162" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+        <childnode refid="3174" relation="include">
+        </childnode>
+      </node>
+      <node id="3177">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3146" relation="include">
+        </childnode>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3144" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+      </node>
+      <node id="3174">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="3163" relation="include">
+        </childnode>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+      </node>
+      <node id="3206">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+      </node>
+      <node id="3156">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3158" relation="include">
+        </childnode>
+        <childnode refid="3144" relation="include">
+        </childnode>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3159" relation="include">
+        </childnode>
+        <childnode refid="3148" relation="include">
+        </childnode>
+        <childnode refid="3160" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3161" relation="include">
+        </childnode>
+        <childnode refid="3166" relation="include">
+        </childnode>
+        <childnode refid="3165" relation="include">
+        </childnode>
+        <childnode refid="3174" relation="include">
+        </childnode>
+        <childnode refid="3175" relation="include">
+        </childnode>
+      </node>
+      <node id="3163">
+        <label>cstddef</label>
+      </node>
+      <node id="3190">
+        <label>unordered_map</label>
+      </node>
+      <node id="3202">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3173">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="3163" relation="include">
+        </childnode>
+        <childnode refid="3150" relation="include">
+        </childnode>
+      </node>
+      <node id="3159">
+        <label>mutex</label>
+      </node>
+      <node id="3149">
+        <label>chrono</label>
+      </node>
+      <node id="3147">
+        <label>thread</label>
+      </node>
+      <node id="3144">
+        <label>set</label>
+      </node>
+      <node id="3204">
+        <label>gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3194" relation="include">
+        </childnode>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3190" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3174" relation="include">
+        </childnode>
+        <childnode refid="3175" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3162">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="3163" relation="include">
+        </childnode>
+        <childnode refid="3164" relation="include">
+        </childnode>
+      </node>
+      <node id="3153">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="3146" relation="include">
+        </childnode>
+        <childnode refid="3154" relation="include">
+        </childnode>
+      </node>
+      <node id="3205">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3145" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3199" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3152">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="3161">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="3162" relation="include">
+        </childnode>
+        <childnode refid="3165" relation="include">
+        </childnode>
+      </node>
+      <node id="3170">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="3163" relation="include">
+        </childnode>
+      </node>
+      <node id="3143">
+        <label>memory</label>
+      </node>
+      <node id="3193">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="3143" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+        <childnode refid="3194" relation="include">
+        </childnode>
+        <childnode refid="3152" relation="include">
+        </childnode>
+        <childnode refid="3195" relation="include">
+        </childnode>
+        <childnode refid="3203" relation="include">
+        </childnode>
+        <childnode refid="3204" relation="include">
+        </childnode>
+        <childnode refid="3200" relation="include">
+        </childnode>
+        <childnode refid="3205" relation="include">
+        </childnode>
+        <childnode refid="3175" relation="include">
+        </childnode>
+        <childnode refid="3206" relation="include">
+        </childnode>
+      </node>
+      <node id="3208">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3154" relation="include">
+        </childnode>
+        <childnode refid="3157" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3214">
+        <label>ouzel/core/ios/EngineIOS.hpp</label>
+        <link refid="db/d80/_engine_i_o_s_8hpp_source"/>
+      </node>
+      <node id="3213">
+        <label>ouzel/core/emscripten/EngineEm.hpp</label>
+        <link refid="d2/d81/_engine_em_8hpp_source"/>
+      </node>
+      <node id="3217">
+        <label>ouzel/core/raspbian/EngineRasp.hpp</label>
+        <link refid="d0/dcd/_engine_rasp_8hpp_source"/>
+      </node>
+      <node id="3211">
+        <label>ouzel/core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp"/>
+        <childnode refid="3212" relation="include">
+        </childnode>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3216" relation="include">
+        </childnode>
+        <childnode refid="3217" relation="include">
+        </childnode>
+        <childnode refid="3218" relation="include">
+        </childnode>
+        <childnode refid="3219" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+      </node>
+      <node id="3219">
+        <label>ouzel/core/windows/EngineWin.hpp</label>
+        <link refid="d8/d37/_engine_win_8hpp_source"/>
+      </node>
+      <node id="3215">
+        <label>ouzel/core/linux/EngineLinux.hpp</label>
+        <link refid="d6/d37/_engine_linux_8hpp_source"/>
+      </node>
+      <node id="3220">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="3212">
+        <label>ouzel/core/android/EngineAndroid.hpp</label>
+        <link refid="dc/df0/_engine_android_8hpp_source"/>
+      </node>
+      <node id="3216">
+        <label>ouzel/core/macos/EngineMacOS.hpp</label>
+        <link refid="dc/df2/_engine_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="3218">
+        <label>ouzel/core/tvos/EngineTVOS.hpp</label>
+        <link refid="dc/dd2/_engine_t_v_o_s_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d05/classouzel_1_1_engine" prot="public">ouzel::Engine</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="db/db9/_engine_8hpp_1ac9b27e7331326a432bff8e1f8fde293c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzelMain</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;args)</argsstring>
+        <name>ouzelMain</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Engine.hpp" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Setup.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Noncopyable.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/UpdateCallback.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Timer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Renderer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;audio/Audio.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;files/FileSystem.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;events/EventDispatcher.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/SceneManager.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Cache.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;localization/Localization.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network/Network.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/INI.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ouzelMain(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>args);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Window;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d7/d05/classouzel_1_1_engine" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d05/classouzel_1_1_engine" kindref="compound">Engine</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d2/d21/classouzel_1_1_noncopyable" kindref="compound">Noncopyable</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d05/classouzel_1_1_engine" kindref="compound">Engine</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d7/d05/classouzel_1_1_engine" kindref="compound">Engine</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>getArgs()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>args;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d9e/classouzel_1_1_file_system" kindref="compound">FileSystem</ref>*<sp/>getFileSystem()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fileSystem.get();<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dfd/classouzel_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref>*<sp/>getEventDispatcher()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;eventDispatcher;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/dce/classouzel_1_1_timer" kindref="compound">Timer</ref>*<sp/>getTimer()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;timer;<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d02/classouzel_1_1_cache" kindref="compound">Cache</ref>*<sp/>getCache()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;cache;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref>*<sp/>getWindow()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>window.get();<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d6d/classouzel_1_1graphics_1_1_renderer" kindref="compound">graphics::Renderer</ref>*<sp/>getRenderer()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>renderer.get();<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d53/classouzel_1_1audio_1_1_audio" kindref="compound">audio::Audio</ref>*<sp/>getAudio()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>audio.get();<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">scene::SceneManager</ref>*<sp/>getSceneManager()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;sceneManager;<sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d66/classouzel_1_1input_1_1_input" kindref="compound">input::Input</ref>*<sp/>getInput()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>input.get();<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d1e/classouzel_1_1_localization" kindref="compound">Localization</ref>*<sp/>getLocalization()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;localization;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/daa/classouzel_1_1network_1_1_network" kindref="compound">network::Network</ref>*<sp/>getNetwork()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;network;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref>&amp;<sp/>getDefaultSettings()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>defaultSettings;<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref>&amp;<sp/>getUserSettings()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>userSettings;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>run();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pause();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resume();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>exit();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isPaused()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>paused;<sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isActive()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>active;<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scheduleUpdate(<ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref>*<sp/>callback);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unscheduleUpdate(<ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref>*<sp/>callback);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>executeOnMainThread(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;&amp;<sp/>func)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>openURL(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>url);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setScreenSaverEnabled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>newScreenSaverEnabled);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isScreenSaverEnabled()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenSaverEnabled;<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setCurrentThreadName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;FileSystem&gt;<sp/>fileSystem;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dfd/classouzel_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref><sp/>eventDispatcher;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/dce/classouzel_1_1_timer" kindref="compound">Timer</ref><sp/>timer;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Window&gt;<sp/>window;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;graphics::Renderer&gt;<sp/>renderer;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;audio::Audio&gt;<sp/>audio;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;input::Input&gt;<sp/>input;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d1e/classouzel_1_1_localization" kindref="compound">Localization</ref><sp/>localization;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d02/classouzel_1_1_cache" kindref="compound">Cache</ref><sp/>cache;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">scene::SceneManager</ref><sp/>sceneManager;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/daa/classouzel_1_1network_1_1_network" kindref="compound">network::Network</ref><sp/>network;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref><sp/>defaultSettings;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/dfe/classouzel_1_1_i_n_i" kindref="compound">INI</ref><sp/>userSettings;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::steady_clock::time_point<sp/>previousUpdateTime;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;UpdateCallback*&gt;<sp/>updateCallbacks;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;UpdateCallback*&gt;<sp/>updateCallbackAddSet;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;UpdateCallback*&gt;<sp/>updateCallbackDeleteSet;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>OUZEL_MULTITHREADED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::thread<sp/>updateThread;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mutex<sp/>updateMutex;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::condition_variable<sp/>updateCondition;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic&lt;bool&gt;<sp/>active;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic&lt;bool&gt;<sp/>paused;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic&lt;bool&gt;<sp/>screenSaverEnabled;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>args;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d7/d05/classouzel_1_1_engine" kindref="compound">Engine</ref>*<sp/>sharedEngine;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ouzel/core/Engine.hpp"/>
+  </compounddef>
+</doxygen>

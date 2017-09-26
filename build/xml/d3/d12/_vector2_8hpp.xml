@@ -1,0 +1,1231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d3/d12/_vector2_8hpp" kind="file" language="C++">
+    <compoundname>Vector2.hpp</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="d6/dc3/_event_8hpp" local="yes">ouzel/events/Event.hpp</includedby>
+    <includedby refid="df/da9/_vertex_8hpp" local="yes">ouzel/graphics/Vertex.hpp</includedby>
+    <includedby refid="d8/d35/_cursor_8hpp" local="yes">ouzel/input/Cursor.hpp</includedby>
+    <includedby refid="d0/d4b/_input_8hpp" local="yes">ouzel/input/Input.hpp</includedby>
+    <includedby refid="d8/d32/_box2_8hpp" local="yes">ouzel/math/Box2.hpp</includedby>
+    <includedby refid="d4/d7b/_math_utils_8hpp" local="yes">ouzel/math/MathUtils.hpp</includedby>
+    <includedby refid="d8/d52/_matrix3_8hpp" local="yes">ouzel/math/Matrix3.hpp</includedby>
+    <includedby refid="d4/d32/_rectangle_8hpp" local="yes">ouzel/math/Rectangle.hpp</includedby>
+    <includedby refid="db/d59/_size2_8hpp" local="yes">ouzel/math/Size2.hpp</includedby>
+    <includedby refid="d2/d72/_vector2_8cpp" local="yes">ouzel/math/Vector2.cpp</includedby>
+    <includedby refid="d6/d0e/_vector3_8cpp" local="yes">ouzel/math/Vector3.cpp</includedby>
+    <includedby refid="df/d12/_vector4_8cpp" local="yes">ouzel/math/Vector4.cpp</includedby>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <includedby refid="d2/d39/_actor_8hpp" local="yes">ouzel/scene/Actor.hpp</includedby>
+    <includedby refid="d6/dbe/_actor_container_8hpp" local="yes">ouzel/scene/ActorContainer.hpp</includedby>
+    <includedby refid="d8/dc2/_layer_8hpp" local="yes">ouzel/scene/Layer.hpp</includedby>
+    <includedby refid="df/d2e/_particle_definition_8hpp" local="yes">ouzel/scene/ParticleDefinition.hpp</includedby>
+    <includedby refid="d5/dcd/_particle_system_8hpp" local="yes">ouzel/scene/ParticleSystem.hpp</includedby>
+    <includedby refid="d0/d8f/_scene_8hpp" local="yes">ouzel/scene/Scene.hpp</includedby>
+    <includedby refid="db/d60/_sprite_8hpp" local="yes">ouzel/scene/Sprite.hpp</includedby>
+    <includedby refid="d8/dce/_log_8hpp" local="yes">ouzel/utils/Log.hpp</includedby>
+    <incdepgraph>
+      <node id="13184">
+        <label>cmath</label>
+      </node>
+      <node id="13183">
+        <label>cstddef</label>
+      </node>
+      <node id="13182">
+        <label>ouzel/math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp"/>
+        <childnode refid="13183" relation="include">
+        </childnode>
+        <childnode refid="13184" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13276">
+        <label>ouzel/animators/Sequence.hpp</label>
+        <link refid="d8/de4/_sequence_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13256">
+        <label>ouzel/input/raspbian/InputRasp.hpp</label>
+        <link refid="df/de7/_input_rasp_8hpp_source"/>
+      </node>
+      <node id="13191">
+        <label>ouzel/core/ios/EngineIOS.hpp</label>
+        <link refid="db/d80/_engine_i_o_s_8hpp_source"/>
+      </node>
+      <node id="13260">
+        <label>ouzel/math/MathUtils.hpp</label>
+        <link refid="d4/d7b/_math_utils_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13261" relation="include">
+        </childnode>
+      </node>
+      <node id="13275">
+        <label>ouzel/animators/Scale.hpp</label>
+        <link refid="d7/da6/_scale_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13190">
+        <label>ouzel/core/emscripten/EngineEm.hpp</label>
+        <link refid="d2/d81/_engine_em_8hpp_source"/>
+      </node>
+      <node id="13187">
+        <label>ouzel/events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="13188" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13194">
+        <label>ouzel/core/raspbian/EngineRasp.hpp</label>
+        <link refid="d0/dcd/_engine_rasp_8hpp_source"/>
+      </node>
+      <node id="13215">
+        <label>ouzel/input/ios/GamepadIOS.hpp</label>
+        <link refid="db/d78/_gamepad_i_o_s_8hpp_source"/>
+      </node>
+      <node id="13252">
+        <label>ouzel/input/emscripten/InputEm.hpp</label>
+        <link refid="d1/dc3/_input_em_8hpp_source"/>
+      </node>
+      <node id="13266">
+        <label>ouzel/graphics/Material.hpp</label>
+        <link refid="d4/da9/_material_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13234" relation="include">
+        </childnode>
+      </node>
+      <node id="13205">
+        <label>ouzel/core/raspbian/WindowRasp.hpp</label>
+        <link refid="d6/dc4/_window_rasp_8hpp_source"/>
+      </node>
+      <node id="13227">
+        <label>ouzel/graphics/empty/RenderDeviceEmpty.hpp</label>
+        <link refid="db/da8/_render_device_empty_8hpp_source"/>
+      </node>
+      <node id="13298">
+        <label>ouzel/scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="13233" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+      </node>
+      <node id="13246">
+        <label>ouzel/input/CursorResource.hpp</label>
+        <link refid="d9/d1c/_cursor_resource_8hpp_source"/>
+        <childnode refid="13247" relation="include">
+        </childnode>
+        <childnode refid="13248" relation="include">
+        </childnode>
+        <childnode refid="13249" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13267">
+        <label>ouzel/scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="13268" relation="include">
+        </childnode>
+        <childnode refid="13278" relation="include">
+        </childnode>
+        <childnode refid="13279" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13280" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+        <childnode refid="13230" relation="include">
+        </childnode>
+        <childnode refid="13234" relation="include">
+        </childnode>
+        <childnode refid="13235" relation="include">
+        </childnode>
+      </node>
+      <node id="13231">
+        <label>ouzel/scene/SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="13232" relation="include">
+        </childnode>
+      </node>
+      <node id="13221">
+        <label>ouzel/input/windows/GamepadDI.hpp</label>
+        <link refid="d8/d9e/_gamepad_d_i_8hpp_source"/>
+      </node>
+      <node id="13225">
+        <label>ouzel/core/ios/DisplayLinkHandler.h</label>
+        <link refid="da/d3f/ios_2_display_link_handler_8h_source"/>
+      </node>
+      <node id="13212">
+        <label>ouzel/input/Gamepad.hpp</label>
+        <link refid="d9/d5b/_gamepad_8hpp_source"/>
+        <childnode refid="13213" relation="include">
+        </childnode>
+        <childnode refid="13214" relation="include">
+        </childnode>
+        <childnode refid="13215" relation="include">
+        </childnode>
+        <childnode refid="13216" relation="include">
+        </childnode>
+        <childnode refid="13217" relation="include">
+        </childnode>
+        <childnode refid="13218" relation="include">
+        </childnode>
+        <childnode refid="13219" relation="include">
+        </childnode>
+        <childnode refid="13220" relation="include">
+        </childnode>
+        <childnode refid="13221" relation="include">
+        </childnode>
+        <childnode refid="13222" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13219">
+        <label>ouzel/input/raspbian/GamepadRasp.hpp</label>
+        <link refid="d2/d1a/_gamepad_rasp_8hpp_source"/>
+      </node>
+      <node id="13224">
+        <label>ouzel/graphics/RenderDevice.hpp</label>
+        <link refid="dd/dd9/_render_device_8hpp_source"/>
+        <childnode refid="13225" relation="include">
+        </childnode>
+        <childnode refid="13226" relation="include">
+        </childnode>
+        <childnode refid="13227" relation="include">
+        </childnode>
+      </node>
+      <node id="13240">
+        <label>ouzel/graphics/ShaderResource.hpp</label>
+        <link refid="d5/da1/_shader_resource_8hpp_source"/>
+        <childnode refid="13241" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13188">
+        <label>ouzel/core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="13189" relation="include">
+        </childnode>
+        <childnode refid="13190" relation="include">
+        </childnode>
+        <childnode refid="13191" relation="include">
+        </childnode>
+        <childnode refid="13192" relation="include">
+        </childnode>
+        <childnode refid="13193" relation="include">
+        </childnode>
+        <childnode refid="13194" relation="include">
+        </childnode>
+        <childnode refid="13195" relation="include">
+        </childnode>
+        <childnode refid="13196" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13217">
+        <label>ouzel/input/macos/GamepadGC.hpp</label>
+        <link refid="de/d12/_gamepad_g_c_8hpp_source"/>
+      </node>
+      <node id="13262">
+        <label>ouzel/math/Matrix3.hpp</label>
+        <link refid="d8/d52/_matrix3_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13263" relation="include">
+        </childnode>
+      </node>
+      <node id="13232">
+        <label>ouzel/scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="13233" relation="include">
+        </childnode>
+        <childnode refid="13234" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13245">
+        <label>ouzel/input/Cursor.hpp</label>
+        <link refid="d8/d35/_cursor_8hpp_source"/>
+        <childnode refid="13246" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13206">
+        <label>ouzel/core/tvos/WindowTVOS.hpp</label>
+        <link refid="d2/d35/_window_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="13214">
+        <label>ouzel/input/emscripten/GamepadEm.hpp</label>
+        <link refid="de/dd6/_gamepad_em_8hpp_source"/>
+      </node>
+      <node id="13196">
+        <label>ouzel/core/windows/EngineWin.hpp</label>
+        <link refid="d8/d37/_engine_win_8hpp_source"/>
+      </node>
+      <node id="13192">
+        <label>ouzel/core/linux/EngineLinux.hpp</label>
+        <link refid="d6/d37/_engine_linux_8hpp_source"/>
+      </node>
+      <node id="13186">
+        <label>ouzel/events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="13187" relation="include">
+        </childnode>
+        <childnode refid="13198" relation="include">
+        </childnode>
+        <childnode refid="13208" relation="include">
+        </childnode>
+        <childnode refid="13209" relation="include">
+        </childnode>
+        <childnode refid="13212" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13230">
+        <label>ouzel/scene/ShapeRenderer.hpp</label>
+        <link refid="db/d1e/_shape_renderer_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13241">
+        <label>ouzel/graphics/empty/ShaderResourceEmpty.hpp</label>
+        <link refid="d9/df2/_shader_resource_empty_8hpp_source"/>
+      </node>
+      <node id="13295">
+        <label>ouzel/gui/SlideBar.hpp</label>
+        <link refid="d5/de2/_slide_bar_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13259">
+        <label>ouzel/math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13231" relation="include">
+        </childnode>
+      </node>
+      <node id="13208">
+        <label>ouzel/gui/Button.hpp</label>
+        <link refid="d2/df0/_button_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13216">
+        <label>ouzel/input/linux/GamepadLinux.hpp</label>
+        <link refid="d8/dc2/_gamepad_linux_8hpp_source"/>
+      </node>
+      <node id="13279">
+        <label>ouzel/audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="13186" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13285">
+        <label>ouzel/graphics/TextureResource.hpp</label>
+        <link refid="dd/d41/_texture_resource_8hpp_source"/>
+        <childnode refid="13286" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13263">
+        <label>ouzel/utils/Log.hpp</label>
+        <link refid="d8/dce/_log_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13289">
+        <label>ouzel/gui/ComboBox.hpp</label>
+        <link refid="dd/d91/_combo_box_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13287">
+        <label>ouzel/scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="13186" relation="include">
+        </childnode>
+        <childnode refid="13288" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13261" relation="include">
+        </childnode>
+      </node>
+      <node id="13197">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="13229">
+        <label>ouzel/scene/ParticleSystem.hpp</label>
+        <link refid="d5/dcd/_particle_system_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13251">
+        <label>ouzel/input/android/InputAndroid.hpp</label>
+        <link refid="dd/db0/_input_android_8hpp_source"/>
+      </node>
+      <node id="13296">
+        <label>ouzel/scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="13287" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13297" relation="include">
+        </childnode>
+      </node>
+      <node id="13258">
+        <label>ouzel/input/windows/InputWin.hpp</label>
+        <link refid="d1/d44/_input_win_8hpp_source"/>
+      </node>
+      <node id="13248">
+        <label>ouzel/input/macos/CursorResourceMacOS.hpp</label>
+        <link refid="d6/de0/_cursor_resource_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="13198">
+        <label>ouzel/events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="13199" relation="include">
+        </childnode>
+        <childnode refid="13187" relation="include">
+        </childnode>
+        <childnode refid="13208" relation="include">
+        </childnode>
+        <childnode refid="13209" relation="include">
+        </childnode>
+        <childnode refid="13210" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13211" relation="include">
+        </childnode>
+      </node>
+      <node id="13284">
+        <label>ouzel/graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="13233" relation="include">
+        </childnode>
+        <childnode refid="13265" relation="include">
+        </childnode>
+        <childnode refid="13224" relation="include">
+        </childnode>
+        <childnode refid="13266" relation="include">
+        </childnode>
+        <childnode refid="13285" relation="include">
+        </childnode>
+        <childnode refid="13242" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13261" relation="include">
+        </childnode>
+        <childnode refid="13267" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+        <childnode refid="13231" relation="include">
+        </childnode>
+        <childnode refid="13235" relation="include">
+        </childnode>
+      </node>
+      <node id="13213">
+        <label>ouzel/input/android/GamepadAndroid.hpp</label>
+        <link refid="d2/d90/_gamepad_android_8hpp_source"/>
+      </node>
+      <node id="13247">
+        <label>ouzel/input/linux/CursorResourceLinux.hpp</label>
+        <link refid="dd/da9/_cursor_resource_linux_8hpp_source"/>
+      </node>
+      <node id="13203">
+        <label>ouzel/core/linux/WindowLinux.hpp</label>
+        <link refid="d9/d92/_window_linux_8hpp_source"/>
+      </node>
+      <node id="13273">
+        <label>ouzel/animators/Repeat.hpp</label>
+        <link refid="d7/d75/_repeat_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13278">
+        <label>ouzel/audio/Listener.hpp</label>
+        <link refid="d6/d12/_listener_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13236">
+        <label>ouzel/gui/Label.hpp</label>
+        <link refid="df/dac/_label_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13286">
+        <label>ouzel/graphics/empty/TextureResourceEmpty.hpp</label>
+        <link refid="dd/d70/_texture_resource_empty_8hpp_source"/>
+      </node>
+      <node id="13281">
+        <label>ouzel/math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="13199" relation="include">
+        </childnode>
+        <childnode refid="13186" relation="include">
+        </childnode>
+        <childnode refid="13265" relation="include">
+        </childnode>
+        <childnode refid="13282" relation="include">
+        </childnode>
+        <childnode refid="13284" relation="include">
+        </childnode>
+        <childnode refid="13285" relation="include">
+        </childnode>
+        <childnode refid="13245" relation="include">
+        </childnode>
+        <childnode refid="13246" relation="include">
+        </childnode>
+        <childnode refid="13259" relation="include">
+        </childnode>
+        <childnode refid="13260" relation="include">
+        </childnode>
+        <childnode refid="13264" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13234" relation="include">
+        </childnode>
+        <childnode refid="13263" relation="include">
+        </childnode>
+      </node>
+      <node id="13290">
+        <label>ouzel/gui/EditBox.hpp</label>
+        <link refid="da/de3/_edit_box_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13244">
+        <label>ouzel/gui/TTFont.hpp</label>
+        <link refid="db/d7c/_t_t_font_8hpp_source"/>
+      </node>
+      <node id="13222">
+        <label>ouzel/input/windows/GamepadXI.hpp</label>
+        <link refid="d7/dbe/_gamepad_x_i_8hpp_source"/>
+      </node>
+      <node id="13234">
+        <label>ouzel/scene/Sprite.hpp</label>
+        <link refid="db/d60/_sprite_8hpp_source"/>
+        <childnode refid="13208" relation="include">
+        </childnode>
+        <childnode refid="13209" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13209">
+        <label>ouzel/gui/CheckBox.hpp</label>
+        <link refid="d5/d72/_check_box_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13291">
+        <label>ouzel/gui/RadioButton.hpp</label>
+        <link refid="d8/d42/_radio_button_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13268">
+        <label>ouzel/animators/Animator.hpp</label>
+        <link refid="df/d56/_animator_8hpp_source"/>
+        <childnode refid="13269" relation="include">
+        </childnode>
+        <childnode refid="13270" relation="include">
+        </childnode>
+        <childnode refid="13271" relation="include">
+        </childnode>
+        <childnode refid="13272" relation="include">
+        </childnode>
+        <childnode refid="13273" relation="include">
+        </childnode>
+        <childnode refid="13274" relation="include">
+        </childnode>
+        <childnode refid="13275" relation="include">
+        </childnode>
+        <childnode refid="13276" relation="include">
+        </childnode>
+        <childnode refid="13277" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13235">
+        <label>ouzel/scene/TextRenderer.hpp</label>
+        <link refid="d7/d6f/_text_renderer_8hpp_source"/>
+        <childnode refid="13208" relation="include">
+        </childnode>
+        <childnode refid="13236" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13220">
+        <label>ouzel/input/tvos/GamepadTVOS.hpp</label>
+        <link refid="d7/dd6/_gamepad_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="13250">
+        <label>ouzel/input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="13186" relation="include">
+        </childnode>
+        <childnode refid="13251" relation="include">
+        </childnode>
+        <childnode refid="13252" relation="include">
+        </childnode>
+        <childnode refid="13253" relation="include">
+        </childnode>
+        <childnode refid="13254" relation="include">
+        </childnode>
+        <childnode refid="13255" relation="include">
+        </childnode>
+        <childnode refid="13256" relation="include">
+        </childnode>
+        <childnode refid="13257" relation="include">
+        </childnode>
+        <childnode refid="13258" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13249">
+        <label>ouzel/input/windows/CursorResourceWin.hpp</label>
+        <link refid="dd/dcd/_cursor_resource_win_8hpp_source"/>
+      </node>
+      <node id="13261">
+        <label>ouzel/scene/Camera.hpp</label>
+        <link refid="d4/d6a/_camera_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13189">
+        <label>ouzel/core/android/EngineAndroid.hpp</label>
+        <link refid="dc/df0/_engine_android_8hpp_source"/>
+      </node>
+      <node id="13288">
+        <label>ouzel/gui/Widget.hpp</label>
+        <link refid="d8/d5d/_widget_8hpp_source"/>
+        <childnode refid="13208" relation="include">
+        </childnode>
+        <childnode refid="13236" relation="include">
+        </childnode>
+        <childnode refid="13209" relation="include">
+        </childnode>
+        <childnode refid="13289" relation="include">
+        </childnode>
+        <childnode refid="13290" relation="include">
+        </childnode>
+        <childnode refid="13210" relation="include">
+        </childnode>
+        <childnode refid="13291" relation="include">
+        </childnode>
+        <childnode refid="13292" relation="include">
+        </childnode>
+        <childnode refid="13293" relation="include">
+        </childnode>
+        <childnode refid="13294" relation="include">
+        </childnode>
+        <childnode refid="13295" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13223">
+        <label>ouzel/graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="13224" relation="include">
+        </childnode>
+        <childnode refid="13228" relation="include">
+        </childnode>
+        <childnode refid="13237" relation="include">
+        </childnode>
+        <childnode refid="13239" relation="include">
+        </childnode>
+        <childnode refid="13242" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+        <childnode refid="13231" relation="include">
+        </childnode>
+      </node>
+      <node id="13257">
+        <label>ouzel/input/tvos/InputTVOS.hpp</label>
+        <link refid="d9/d2d/_input_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="13201">
+        <label>ouzel/core/emscripten/WindowEm.hpp</label>
+        <link refid="d1/d30/_window_em_8hpp_source"/>
+      </node>
+      <node id="13193">
+        <label>ouzel/core/macos/EngineMacOS.hpp</label>
+        <link refid="dc/df2/_engine_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="13265">
+        <label>ouzel/graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="13188" relation="include">
+        </childnode>
+        <childnode refid="13224" relation="include">
+        </childnode>
+        <childnode refid="13266" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13230" relation="include">
+        </childnode>
+      </node>
+      <node id="13292">
+        <label>ouzel/gui/RadioButtonGroup.hpp</label>
+        <link refid="d9/d3a/_radio_button_group_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13271">
+        <label>ouzel/animators/Move.hpp</label>
+        <link refid="d1/dc9/_move_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13277">
+        <label>ouzel/animators/Shake.hpp</label>
+        <link refid="d8/da9/_shake_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13280">
+        <label>ouzel/scene/MeshRenderer.hpp</label>
+        <link refid="da/ddd/_mesh_renderer_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13207">
+        <label>ouzel/core/windows/WindowWin.hpp</label>
+        <link refid="d0/d18/_window_win_8hpp_source"/>
+      </node>
+      <node id="13228">
+        <label>ouzel/graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="13224" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+        <childnode refid="13230" relation="include">
+        </childnode>
+        <childnode refid="13231" relation="include">
+        </childnode>
+        <childnode refid="13235" relation="include">
+        </childnode>
+      </node>
+      <node id="13270">
+        <label>ouzel/animators/Fade.hpp</label>
+        <link refid="d3/d85/_fade_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13274">
+        <label>ouzel/animators/Rotate.hpp</label>
+        <link refid="d5/d1c/_rotate_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13210">
+        <label>ouzel/gui/Menu.hpp</label>
+        <link refid="d9/df6/_menu_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13254">
+        <label>ouzel/input/linux/InputLinux.hpp</label>
+        <link refid="dc/d29/_input_linux_8hpp_source"/>
+      </node>
+      <node id="13297">
+        <label>ouzel/scene/Layer.hpp</label>
+        <link refid="d8/dc2/_layer_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13269">
+        <label>ouzel/animators/Ease.hpp</label>
+        <link refid="d2/daa/_ease_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13253">
+        <label>ouzel/input/ios/InputIOS.hpp</label>
+        <link refid="db/de3/_input_i_o_s_8hpp_source"/>
+      </node>
+      <node id="13242">
+        <label>ouzel/gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="13233" relation="include">
+        </childnode>
+        <childnode refid="13243" relation="include">
+        </childnode>
+        <childnode refid="13244" relation="include">
+        </childnode>
+      </node>
+      <node id="13185">
+        <label>ouzel/math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp"/>
+        <childnode refid="13186" relation="include">
+        </childnode>
+        <childnode refid="13223" relation="include">
+        </childnode>
+        <childnode refid="13245" relation="include">
+        </childnode>
+        <childnode refid="13250" relation="include">
+        </childnode>
+        <childnode refid="13259" relation="include">
+        </childnode>
+        <childnode refid="13260" relation="include">
+        </childnode>
+        <childnode refid="13262" relation="include">
+        </childnode>
+        <childnode refid="13264" relation="include">
+        </childnode>
+        <childnode refid="13281" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13287" relation="include">
+        </childnode>
+        <childnode refid="13296" relation="include">
+        </childnode>
+        <childnode refid="13297" relation="include">
+        </childnode>
+        <childnode refid="13298" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+        <childnode refid="13211" relation="include">
+        </childnode>
+        <childnode refid="13234" relation="include">
+        </childnode>
+        <childnode refid="13263" relation="include">
+        </childnode>
+      </node>
+      <node id="13199">
+        <label>ouzel/core/Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp_source"/>
+        <childnode refid="13200" relation="include">
+        </childnode>
+        <childnode refid="13201" relation="include">
+        </childnode>
+        <childnode refid="13202" relation="include">
+        </childnode>
+        <childnode refid="13203" relation="include">
+        </childnode>
+        <childnode refid="13204" relation="include">
+        </childnode>
+        <childnode refid="13205" relation="include">
+        </childnode>
+        <childnode refid="13206" relation="include">
+        </childnode>
+        <childnode refid="13207" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13282">
+        <label>ouzel/graphics/ImageData.hpp</label>
+        <link refid="d6/d7d/_image_data_8hpp_source"/>
+        <childnode refid="13283" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13243">
+        <label>ouzel/gui/BMFont.hpp</label>
+        <link refid="d9/d5d/_b_m_font_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13235" relation="include">
+        </childnode>
+      </node>
+      <node id="13218">
+        <label>ouzel/input/macos/GamepadIOKit.hpp</label>
+        <link refid="d1/d88/_gamepad_i_o_kit_8hpp_source"/>
+      </node>
+      <node id="13238">
+        <label>ouzel/graphics/empty/MeshBufferResourceEmpty.hpp</label>
+        <link refid="df/d90/_mesh_buffer_resource_empty_8hpp_source"/>
+      </node>
+      <node id="13293">
+        <label>ouzel/gui/ScrollArea.hpp</label>
+        <link refid="d4/dea/_scroll_area_8hpp_source"/>
+      </node>
+      <node id="13239">
+        <label>ouzel/graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="13233" relation="include">
+        </childnode>
+        <childnode refid="13224" relation="include">
+        </childnode>
+        <childnode refid="13240" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13229" relation="include">
+        </childnode>
+        <childnode refid="13230" relation="include">
+        </childnode>
+        <childnode refid="13235" relation="include">
+        </childnode>
+      </node>
+      <node id="13272">
+        <label>ouzel/animators/Parallel.hpp</label>
+        <link refid="dc/dec/_parallel_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13195">
+        <label>ouzel/core/tvos/EngineTVOS.hpp</label>
+        <link refid="dc/dd2/_engine_t_v_o_s_8hpp_source"/>
+      </node>
+      <node id="13255">
+        <label>ouzel/input/macos/InputMacOS.hpp</label>
+        <link refid="d3/d2d/_input_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="13202">
+        <label>ouzel/core/ios/WindowIOS.hpp</label>
+        <link refid="de/d13/_window_i_o_s_8hpp_source"/>
+      </node>
+      <node id="13204">
+        <label>ouzel/core/macos/WindowMacOS.hpp</label>
+        <link refid="d3/df3/_window_mac_o_s_8hpp_source"/>
+      </node>
+      <node id="13264">
+        <label>ouzel/math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="13265" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+        <childnode refid="13261" relation="include">
+        </childnode>
+        <childnode refid="13267" relation="include">
+        </childnode>
+        <childnode refid="13231" relation="include">
+        </childnode>
+      </node>
+      <node id="13200">
+        <label>ouzel/core/android/WindowAndroid.hpp</label>
+        <link refid="d0/d81/_window_android_8hpp_source"/>
+      </node>
+      <node id="13294">
+        <label>ouzel/gui/ScrollBar.hpp</label>
+        <link refid="d6/d04/_scroll_bar_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13226">
+        <label>ouzel/core/tvos/DisplayLinkHandler.h</label>
+        <link refid="d6/d8a/tvos_2_display_link_handler_8h_source"/>
+      </node>
+      <node id="13211">
+        <label>ouzel/scene/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13237">
+        <label>ouzel/graphics/MeshBufferResource.hpp</label>
+        <link refid="da/da1/_mesh_buffer_resource_8hpp_source"/>
+        <childnode refid="13238" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13233">
+        <label>ouzel/core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="13188" relation="include">
+        </childnode>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+      <node id="13283">
+        <label>ouzel/graphics/ImageDataSTB.hpp</label>
+        <link refid="d0/ddf/_image_data_s_t_b_8hpp_source"/>
+        <childnode refid="13197" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d9b/classouzel_1_1_vector2" prot="public">ouzel::Vector2</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Vector3;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Vector4;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d1/d9b/classouzel_1_1_vector2" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>ZERO;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>ONE;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>UNIT_X;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>UNIT_Y;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>NEGATIVE_UNIT_X;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>NEGATIVE_UNIT_Y;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aY):</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x(aX),<sp/>y(aY)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>p2);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>copy):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x(copy.x),<sp/>y(copy.y)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dc8/classouzel_1_1_vector4" kindref="compound">Vector4</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dc8/classouzel_1_1_vector4" kindref="compound">Vector4</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isZero()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="52"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>==<sp/>0.0f<sp/>&amp;&amp;<sp/>y<sp/>==<sp/>0.0f;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOne()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>==<sp/>1.0f<sp/>&amp;&amp;<sp/>y<sp/>==<sp/>1.0f;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v2);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>vec.x;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>+=<sp/>vec.y;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v2,<sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>dst);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clamp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>max);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clamp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>max,<sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>dst);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distanceSquared(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="78"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx<sp/>=<sp/>vec.x<sp/>-<sp/>x;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dy<sp/>=<sp/>vec.y<sp/>-<sp/>y;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dx<sp/>*<sp/>dx<sp/>+<sp/>dy<sp/>*<sp/>dy;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dot(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="85"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>vec.x<sp/>+<sp/>y<sp/>*<sp/>vec.y;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dot(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v2)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v1.x<sp/>*<sp/>v2.x<sp/>+<sp/>v1.y<sp/>*<sp/>v2.y;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>length()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lengthSquared()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="97"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>x<sp/>+<sp/>y<sp/>*<sp/>y;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>negate()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>-x;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>-y;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>scale)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>scale.x;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>scale.y;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotate(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>point,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newY)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>newX;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>newY;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>p2)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>p2.x<sp/>-<sp/>p1.x;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>p2.y<sp/>-<sp/>p1.y;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>subtract(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>vec.x;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>-=<sp/>vec.y;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>subtract(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>v2,<sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>dst)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.x<sp/>=<sp/>v1.x<sp/>-<sp/>v2.x;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.y<sp/>=<sp/>v1.y<sp/>-<sp/>v2.y;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>smooth(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>elapsedTime,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>responseTime);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getMin()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getMax()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>operator+(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="154"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(x<sp/>+<sp/>vec.x,<sp/>y<sp/>+<sp/>vec.y);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>operator+=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>vec.x;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>+=<sp/>vec.y;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>operator-(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="166"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(x<sp/>-<sp/>vec.x,<sp/>y<sp/>-<sp/>vec.y);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>operator-=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>vec.x;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>-=<sp/>vec.y;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>operator-()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="178"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(-x,<sp/>-y);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>operator*(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="183"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(x<sp/>*<sp/>scalar,<sp/>y<sp/>*<sp/>scalar);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>operator*=(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>operator/(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="195"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(x<sp/>/<sp/>scalar,<sp/>y<sp/>/<sp/>scalar);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>operator/=(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>/=<sp/>scalar;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>/=<sp/>scalar;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="207"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>==<sp/>vec.x)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y<sp/>&lt;<sp/>vec.y;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>&lt;<sp/>vec.x;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="216"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>==<sp/>vec.x<sp/>&amp;&amp;<sp/>y<sp/>==<sp/>vec.y;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="221"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>!=<sp/>vec.x<sp/>||<sp/>y<sp/>!=<sp/>vec.y;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getAngle()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="226"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>atan2f(y,<sp/>x);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref><sp/>operator*(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(vec.x<sp/>*<sp/>scalar,<sp/>vec.y<sp/>*<sp/>scalar);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ouzel/math/Vector2.hpp"/>
+  </compounddef>
+</doxygen>

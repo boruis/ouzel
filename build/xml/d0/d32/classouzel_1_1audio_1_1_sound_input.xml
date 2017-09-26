@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/d32/classouzel_1_1audio_1_1_sound_input" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ouzel::audio::SoundInput</compoundname>
+    <derivedcompoundref refid="d1/d87/classouzel_1_1audio_1_1_mixer" prot="public" virt="non-virtual">ouzel::audio::Mixer</derivedcompoundref>
+    <derivedcompoundref refid="d5/d98/classouzel_1_1audio_1_1_sound" prot="public" virt="non-virtual">ouzel::audio::Sound</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/d32/classouzel_1_1audio_1_1_sound_input_1ac16c57145334ad7d67e4f28efdbfd4e5" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::audio::SoundInput::SoundOutput</definition>
+        <argsstring></argsstring>
+        <name>SoundOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundInput.hpp" line="16" column="1" bodyfile="ouzel/audio/SoundInput.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/d32/classouzel_1_1audio_1_1_sound_input_1ac2e8ddaf4108024c00e21d28dfe036d2" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/da7/classouzel_1_1audio_1_1_sound_output" kindref="compound">SoundOutput</ref> *</type>
+        <definition>SoundOutput* ouzel::audio::SoundInput::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundInput.hpp" line="26" column="1" bodyfile="ouzel/audio/SoundInput.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d32/classouzel_1_1audio_1_1_sound_input_1a81fd68deb95eea0719efc9f4795b9c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::audio::SoundInput::~SoundInput</definition>
+        <argsstring>()</argsstring>
+        <name>~SoundInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundInput.hpp" line="18" column="1" bodyfile="ouzel/audio/SoundInput.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d32/classouzel_1_1audio_1_1_sound_input_1a3acf07d9b675e0df4c9fb425a527e19b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/da7/classouzel_1_1audio_1_1_sound_output" kindref="compound">SoundOutput</ref> *</type>
+        <definition>SoundOutput* ouzel::audio::SoundInput::getOutput</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundInput.hpp" line="20" column="1" bodyfile="ouzel/audio/SoundInput.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d32/classouzel_1_1audio_1_1_sound_input_1a7945b8ebcc4c297f202e0a982b26967f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::SoundInput::setOutput</definition>
+        <argsstring>(SoundOutput *newOutput)</argsstring>
+        <name>setOutput</name>
+        <param>
+          <type><ref refid="db/da7/classouzel_1_1audio_1_1_sound_output" kindref="compound">SoundOutput</ref> *</type>
+          <declname>newOutput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundInput.hpp" line="21" column="1" bodyfile="ouzel/audio/SoundInput.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d32/classouzel_1_1audio_1_1_sound_input_1a039673f6a4443e9c0255e1b36da61e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ouzel::audio::SoundInput::addRenderCommands</definition>
+        <argsstring>(std::vector&lt; AudioDevice::RenderCommand &gt; &amp;renderCommands)=0</argsstring>
+        <name>addRenderCommands</name>
+        <reimplementedby refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a0eb7e27904a4aa6db01af259d9aeab85">addRenderCommands</reimplementedby>
+        <reimplementedby refid="d5/d98/classouzel_1_1audio_1_1_sound_1af0be1c3ed5b5d73cca5918527b7ba5e7">addRenderCommands</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command" kindref="compound">AudioDevice::RenderCommand</ref> &gt; &amp;</type>
+          <declname>renderCommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/SoundInput.hpp" line="23" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1749">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+      </node>
+      <node id="1750">
+        <label>ouzel::audio::Mixer</label>
+        <link refid="d1/d87/classouzel_1_1audio_1_1_mixer"/>
+        <childnode refid="1749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1751">
+        <label>ouzel::audio::Sound</label>
+        <link refid="d5/d98/classouzel_1_1audio_1_1_sound"/>
+        <childnode refid="1749" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1752">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+        <childnode refid="1753" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+      <node id="1753">
+        <label>ouzel::audio::SoundOutput</label>
+        <link refid="db/da7/classouzel_1_1audio_1_1_sound_output"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/SoundInput.hpp" line="15" column="1" bodyfile="ouzel/audio/SoundInput.hpp" bodystart="14" bodyend="27"/>
+    <listofallmembers>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a039673f6a4443e9c0255e1b36da61e2a" prot="public" virt="pure-virtual"><scope>ouzel::audio::SoundInput</scope><name>addRenderCommands</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a3acf07d9b675e0df4c9fb425a527e19b" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundInput</scope><name>getOutput</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1ac2e8ddaf4108024c00e21d28dfe036d2" prot="protected" virt="non-virtual"><scope>ouzel::audio::SoundInput</scope><name>output</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a7945b8ebcc4c297f202e0a982b26967f" prot="public" virt="non-virtual"><scope>ouzel::audio::SoundInput</scope><name>setOutput</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1ac16c57145334ad7d67e4f28efdbfd4e5" prot="private" virt="non-virtual"><scope>ouzel::audio::SoundInput</scope><name>SoundOutput</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a81fd68deb95eea0719efc9f4795b9c8c" prot="public" virt="virtual"><scope>ouzel::audio::SoundInput</scope><name>~SoundInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

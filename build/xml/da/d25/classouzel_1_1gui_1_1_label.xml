@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="da/d25/classouzel_1_1gui_1_1_label" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::gui::Label</compoundname>
+    <basecompoundref refid="d4/d40/classouzel_1_1gui_1_1_widget" prot="public" virt="non-virtual">ouzel::gui::Widget</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="da/d25/classouzel_1_1gui_1_1_label_1acbac2f50472b60ffda824e13e620f931" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::gui::Label::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Label.hpp" line="31" column="1" bodyfile="ouzel/gui/Label.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d25/classouzel_1_1gui_1_1_label_1ac659c27e100da6b83e4012d12a2350db" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d2/da4/classouzel_1_1scene_1_1_text_renderer" kindref="compound">scene::TextRenderer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;scene::TextRenderer&gt; ouzel::gui::Label::labelDrawable</definition>
+        <argsstring></argsstring>
+        <name>labelDrawable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Label.hpp" line="32" column="1" bodyfile="ouzel/gui/Label.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d25/classouzel_1_1gui_1_1_label_1a3820d091c353b884ae68cfea152bc7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::gui::Label::Label</definition>
+        <argsstring>(const std::string &amp;aText, const std::string &amp;fontFile, float fontSize=1.0f, Color color=Color::WHITE, const Vector2 &amp;textAnchor=Vector2(0.5f, 0.5f))</argsstring>
+        <name>Label</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aText</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontFile</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fontSize</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+          <defval>Color::WHITE</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>textAnchor</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Label.hpp" line="19" column="1" bodyfile="ouzel/gui/Label.cpp" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d25/classouzel_1_1gui_1_1_label_1a2687dd412c5c6fc318c214d6dc685915" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::gui::Label::setText</definition>
+        <argsstring>(const std::string &amp;newText)</argsstring>
+        <name>setText</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Label.hpp" line="25" column="1" bodyfile="ouzel/gui/Label.cpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d25/classouzel_1_1gui_1_1_label_1ad9937072d726d13d57bb7ec3243ddc25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; ouzel::gui::Label::getText</definition>
+        <argsstring>() const</argsstring>
+        <name>getText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Label.hpp" line="26" column="1" bodyfile="ouzel/gui/Label.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d25/classouzel_1_1gui_1_1_label_1a93b4b6979ef1f5479edfb40714df3e1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/da4/classouzel_1_1scene_1_1_text_renderer" kindref="compound">scene::TextRenderer</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt;scene::TextRenderer&gt;&amp; ouzel::gui::Label::getLabelDrawable</definition>
+        <argsstring>()</argsstring>
+        <name>getLabelDrawable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/Label.hpp" line="28" column="1" bodyfile="ouzel/gui/Label.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="940">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="941" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="938">
+        <label>ouzel::gui::Label</label>
+        <link refid="da/d25/classouzel_1_1gui_1_1_label"/>
+        <childnode refid="939" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="941">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="942" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="939">
+        <label>ouzel::gui::Widget</label>
+        <link refid="d4/d40/classouzel_1_1gui_1_1_widget"/>
+        <childnode refid="940" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="955">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="956" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="959">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="957">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="961">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="946" relation="public-inheritance">
+        </childnode>
+        <childnode refid="949" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="945">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="946" relation="public-inheritance">
+        </childnode>
+        <childnode refid="953" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="946" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="954" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="955" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="962" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="943">
+        <label>ouzel::gui::Label</label>
+        <link refid="da/d25/classouzel_1_1gui_1_1_label"/>
+        <childnode refid="944" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="962">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="962" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="950">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="951" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="960">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="953">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="953" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="951">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="956">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="958" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="959" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="960" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="952" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="951" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="961" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="952">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="954">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="954" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="947">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="958">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="946">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+        <childnode refid="948" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="963">
+        <label>ouzel::gui::Menu</label>
+        <link refid="dd/dec/classouzel_1_1gui_1_1_menu"/>
+        <childnode refid="944" relation="public-inheritance">
+        </childnode>
+        <childnode refid="944" relation="usage">
+          <edgelabel>selectedWidget</edgelabel>
+        </childnode>
+        <childnode refid="950" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="944">
+        <label>ouzel::gui::Widget</label>
+        <link refid="d4/d40/classouzel_1_1gui_1_1_widget"/>
+        <childnode refid="945" relation="public-inheritance">
+        </childnode>
+        <childnode refid="963" relation="usage">
+          <edgelabel>menu</edgelabel>
+        </childnode>
+      </node>
+      <node id="949">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="947" relation="public-inheritance">
+        </childnode>
+        <childnode refid="950" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="952" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/gui/Label.hpp" line="17" column="1" bodyfile="ouzel/gui/Label.hpp" bodystart="16" bodyend="33"/>
+    <listofallmembers>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9f2c6c883cb1599a778c36b5d43d1dde" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>Actor</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a05ad15259fb091bb9aee02873d189082" prot="public" virt="non-virtual" ambiguityscope="ouzel::scene::ActorContainer::"><scope>ouzel::gui::Label</scope><name>ActorContainer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ab9433bb253bd62d77e48bcee6e6fcaee" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a57933a0e5af1008500c451164e454907" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1abf017d04d4308b9a0468e5f400cd7246" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addChild</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a211bc34ce6816e88de79aa3c9bb668c2" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>addChildActor</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae3fa0226c9ed87ff9d59e6d0fc30390a" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addChildComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad30692ad3267e46249e9f02fbd814557" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae56d162c69fdd6b54de96728e06bc9b0" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1abbfc9fd21a7856e64b4fecaf35096a2e" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a110751d45e8f974963c66e0fd0b6729c" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>animationUpdateCallback</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af1a5e8129121011f919fb8001f4edc6e" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>calculateInverseTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a5826eb2658299be69afb92ec70d3ae73" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>calculateLocalTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aac76d6abf8592fde462536872ba2fac8" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>calculateTransform</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a36995a7a030e850d83d6487809710a1b" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>children</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1adeee8ffeecf075aa6a770b8ee50f1aea" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>components</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a61ed59a9d1efb3d7bf3ff8c6483374ed" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>convertLocalToWorld</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1adc9e7e43c4a56543f23a728180f001b0" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>convertWorldToLocal</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a2b7b6f45b27c08c567538e6f59092ebf" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>cullDisabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a79963f81fc5780e7ae42494ce80f469c" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>draw</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a70e57eddbe189a3e578de06549405e40" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>enabled</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1b688a853efefe85d7746d7f5b36fc98" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>enter</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a8865e7a34e16e9b879c9b3cd35594d0e" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>entered</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1adb3ec41f2678f406b3f5b03ea211c615" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>findActors</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1736af78afb63f6550eba47838dfcc9a" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>findActors</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae6f90bb1725ac38709bbe4514690e520" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>flipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af4240d445bd1755a6de47937100c1372" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>flipY</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a47558721e402b05d78a64e80c69daf1a" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getBoundingBox</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afd7edf2a02aa5f0494f7223ced78d491" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a31795a7c4237740b4e2b0980989e766b" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7498db4d76d4e065fe6926110c006e42" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aae9b12285dce44cec9c87440609f8c2a" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getFlipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aace7ddb5a278096190e48b7975657e68" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getFlipY</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a040a589adadfb6402d6e04d83133a622" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getInverseTransform</name></member>
+      <member refid="da/d25/classouzel_1_1gui_1_1_label_1a93b4b6979ef1f5479edfb40714df3e1c" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getLabelDrawable</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afa4efec56793275f1d8a8fba83f69573" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getLayer</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afb2e7e67d08d7c421d929d84f537703c" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getLocalTransform</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a72d140bb2d4c73e4caeafcb67a44d353" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getMenu</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aaf1c5067a3d499d59ceb630a1f81a318" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getOpacity</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a51807fb9739249c18bdca4c1148f399c" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae5d2df7f9007fc0fbc3b8a51ebf83e52" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getParent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af9686de02b10e0f90f46bb6585603679" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad4342138bb81609b30e6c04d9d41d35b" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a8acaf22fb017f93a57359f7e302a5403" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getScale</name></member>
+      <member refid="da/d25/classouzel_1_1gui_1_1_label_1ad9937072d726d13d57bb7ec3243ddc25" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getText</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a4149f2c56061380c3b7b6a7239244728" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afe73cddf4d5df8824b6609c2db0c40b0" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>getWorldOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9bd429baaf71d396c8740e1b9c2bed32" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>getWorldPosition</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a531a4dd6e3432f1bd080fa1caaa0c6ac" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>hasChild</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a788a34df52d1db1649c529e5a707aa93" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>hidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a49998dda06130a797d30ab9f83b03178" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>inverseTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad114fb77dcb52fa2e3fc6fa712094f93" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>inverseTransformDirty</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad4061634d2dbd5f98398a70a3f7dbffc" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>isCullDisabled</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1aa553c04a1a1c6d96b1c3fc1c248d314a" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>isEnabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa84ce05c37a0bc52d774b8f00e748de2" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>isHidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9ecd33f5529240a290d3188e1459f9eb" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>isPickable</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a87d909074c9cea7d7b0acf3b81128a01" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>isSelected</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ab9cf93ccfc3672728f8eb096759bdcbf" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>isWorldHidden</name></member>
+      <member refid="da/d25/classouzel_1_1gui_1_1_label_1a3820d091c353b884ae68cfea152bc7ea" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>Label</name></member>
+      <member refid="da/d25/classouzel_1_1gui_1_1_label_1ac659c27e100da6b83e4012d12a2350db" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>labelDrawable</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afce35cd425c8199f01b63309fdd80152" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>layer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a6c6eb0e7a8f8ff0d5be0e59f4a30d06a" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>leave</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7bb9c3ed65c54e82cb6173eee564b28e" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>localTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7dd01352436d1e3b7861cd4d54a808cf" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>localTransformDirty</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a4ff2fd83efde35405f2dd2d9266131cb" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>menu</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a45b335920288abcfac1909bf8b2a4aff" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>moveChildToBack</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1abb8a3694b1696c5484d745cacc57fdc8" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>moveChildToFront</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>Noncopyable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6c247001fc775fb05503afa731eeef09" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>opacity</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>operator=</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a4678e519aeeffc948967941a64d88455" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>order</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a113e1bb599496b978281e75f963b2699" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>ownedChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9af7bb571693e8e01035d3d0ccc645e1" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>ownedComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a893520890a96ea3b10491956562e142d" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>parent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad483f95857f31fdbf73ee64c0184e819" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>parentTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a805450247721e84e4ac95ac5d8e0e2ff" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>pickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a1fd6a788d3e5806aaa78a69d92a24d2f" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>pointOn</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a8379ecefa2ebecf6a4f1fb90b730182c" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>position</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a6cade9591281ed76236aeeb7efe338a5" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>removeAllChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a074828d4cf97f920bb7ccf023f17f21d" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeAllComponents</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1aaa6309328e39cf0d264df5f1c207b894" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1be8ae4fa5f8dc8ca5141dbea3c646bd" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ae2e9ccafa9aa65c1e3e88b2100d71819" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>removeChildActor</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afee9c9cf12d3c769b53d9bd54ccc19e3" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeChildComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a64b0355d5f7934a9eff946e3d9380b01" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a044b818e6067a1ef17036d9d4503aa93" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a597d8e413cd6649c5d1ce83df5c907bb" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>removeFromParent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a878d1324d1637e4bde3274ef0dabf333" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>rotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac697c38fcec2a56f80e97bf51118fd80" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>scale</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1afef580cf00fdecb7044fa5355cd61ca2" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>selected</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aada4bcda8cc46252fdd043cc9757db4a" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setCullDisabled</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a19fab87cf50a27c2d56487a746984367" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setEnabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9bf01fa1da685e3450194ebb20a7a4f1" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setFlipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a153232b1f56e00934b8da202d68b2ac6" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setFlipY</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a0f4e2b1f9a2e2d8391ba611707b7c145" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setHidden</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a69b6f76ed6782ae5625ae74701ddcf3d" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>setLayer</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa180d2537e5195164e381dbf0cca9932" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setOpacity</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ab95cdfa02fb2089ac36ce441444f227c" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>setOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1acdf53b88580120d60cc3d0c9e64c2d24" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setPickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6b98377cfe7c7427233a156bd1ce9c68" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6076496ba8d6d212d4104945ffc1285d" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a060f947f8d15ddd980c47fd954460218" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac77e070ec05f5b5795714d85eed61659" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a820317bba19d5d3e06feb26d252b4382" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aba272266fac31c01597d2edc54fc1a55" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setScale</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afba4fc56da81dfc2a86017367550aaf1" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setScale</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a3e34bb508605fd1921347ad178aeb768" prot="protected" virt="virtual"><scope>ouzel::gui::Label</scope><name>setSelected</name></member>
+      <member refid="da/d25/classouzel_1_1gui_1_1_label_1a2687dd412c5c6fc318c214d6dc685915" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>setText</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae095c151c7ffc909a576a707cbb3a849" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>shapeOverlaps</name></member>
+      <member refid="da/d25/classouzel_1_1gui_1_1_label_1acbac2f50472b60ffda824e13e620f931" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>text</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aec5b345a5ba70e20171f198c4056e248" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>transform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a12a5569652634532ae7ac0bd3116e428" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>transformDirty</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a052141f4b0e50157d2ed3e71622959f7" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>updateChildrenTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af0e0e7e621b659068b6a953a86dfdffd" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>updateTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a94d91ccde56b2f1cd953eae1476b6a37" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>visit</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1ad54d22f6fe398110facac67e189c27c7" prot="public" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>Widget</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad85cee087ea525a12366bf2d3e349a48" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>worldHidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa259dad7f4dc6be45c852a6bdfcf2d69" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>worldOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac2396ee34d3e3d475ec65d04f7a4cea1" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>~Actor</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ac64f00932d334aec320805984bed9b42" prot="public" virt="virtual"><scope>ouzel::gui::Label</scope><name>~ActorContainer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::gui::Label</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

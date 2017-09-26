@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d4b/classouzel_1_1_window_mac_o_s" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::WindowMacOS</compoundname>
+    <basecompoundref refid="d8/d1b/classouzel_1_1_window" prot="public" virt="non-virtual">ouzel::Window</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1af7b20e3d8ffd1eab96b01db663f1d14c" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::WindowMacOS::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="30" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a36cc7957e3b336892bb80f49794e9d3a" prot="protected" static="no" mutable="no">
+        <type>NSWindowPtr</type>
+        <definition>NSWindowPtr ouzel::WindowMacOS::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="61" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a0526295bacd4dda3b82fc8735a4a5b7e" prot="protected" static="no" mutable="no">
+        <type>NSViewPtr</type>
+        <definition>NSViewPtr ouzel::WindowMacOS::view</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="62" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1aca5aab2a8b88b9070c862c384bc2ee0f" prot="protected" static="no" mutable="no">
+        <type>NSWindowDelegatePtr</type>
+        <definition>NSWindowDelegatePtr ouzel::WindowMacOS::windowDelegate</definition>
+        <argsstring></argsstring>
+        <name>windowDelegate</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="63" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a5762a9de0480c666dda734220287a2fc" prot="protected" static="no" mutable="no">
+        <type>NSScreenPtr</type>
+        <definition>NSScreenPtr ouzel::WindowMacOS::screen</definition>
+        <argsstring></argsstring>
+        <name>screen</name>
+        <initializer>= nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="64" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a800d052623779c34237df92dd7e75e1e" prot="protected" static="no" mutable="no">
+        <type>CGDirectDisplayID</type>
+        <definition>CGDirectDisplayID ouzel::WindowMacOS::displayId</definition>
+        <argsstring></argsstring>
+        <name>displayId</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="65" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1ae33b8db0e12fdb6955b6a1256d28cbbb" prot="protected" static="no" mutable="no">
+        <type>NSUInteger</type>
+        <definition>NSUInteger ouzel::WindowMacOS::windowStyleMask</definition>
+        <argsstring></argsstring>
+        <name>windowStyleMask</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="66" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d4b/classouzel_1_1_window_mac_o_s_1aa3d07ab969d8babe4d479d7b45e75b93" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref></type>
+        <definition>Rectangle ouzel::WindowMacOS::windowRectangle</definition>
+        <argsstring></argsstring>
+        <name>windowRectangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="67" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a9bf4db9847810c4d60a7f10a8f6612a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::WindowMacOS::~WindowMacOS</definition>
+        <argsstring>()</argsstring>
+        <name>~WindowMacOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="32" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="76" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1ab774fd4b8507b0ff9b1afec73b21a416" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::close</definition>
+        <argsstring>() override</argsstring>
+        <name>close</name>
+        <reimplements refid="d8/d1b/classouzel_1_1_window_1a139142d38ef011f497d50dac1111daec">close</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="34" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="228" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a9607c17aa58c3ed316212f21104da973" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::setSize</definition>
+        <argsstring>(const Size2 &amp;newSize) override</argsstring>
+        <name>setSize</name>
+        <reimplements refid="d8/d1b/classouzel_1_1_window_1aa7222eeeb3acc4dfa427c6a28c19fe45">setSize</reimplements>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="36" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="255" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a7a9625e265616a48ce94b4e21f900644" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::setFullscreen</definition>
+        <argsstring>(bool newFullscreen) override</argsstring>
+        <name>setFullscreen</name>
+        <reimplements refid="d8/d1b/classouzel_1_1_window_1a798cd05b1a72475dcb5ae55101e453d6">setFullscreen</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>newFullscreen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="37" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="288" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a015a7ec058076b0e1b1c1b075aaa2dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::setTitle</definition>
+        <argsstring>(const std::string &amp;newTitle) override</argsstring>
+        <name>setTitle</name>
+        <reimplements refid="d8/d1b/classouzel_1_1_window_1ae1fcaed6f25821914a75f4912fe7be13">setTitle</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newTitle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="38" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="353" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a0cba48bdefdc33f2584cfd996546dbe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::handleResize</definition>
+        <argsstring>()</argsstring>
+        <name>handleResize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="40" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="367" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a541709af79b307a5fce548581da27e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::handleClose</definition>
+        <argsstring>()</argsstring>
+        <name>handleClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="41" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a0825830a8ca458b1831b3b61175ffa54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::handleFullscreenChange</definition>
+        <argsstring>(bool newFullscreen)</argsstring>
+        <name>handleFullscreenChange</name>
+        <param>
+          <type>bool</type>
+          <declname>newFullscreen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="42" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="400" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a279a60f0393e3f3d06aa352c28d9688d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::handleScaleFactorChange</definition>
+        <argsstring>()</argsstring>
+        <name>handleScaleFactorChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="43" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="411" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a870c7024326ce4eb60c1d949e3da4393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::WindowMacOS::handleScreenChange</definition>
+        <argsstring>()</argsstring>
+        <name>handleScreenChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="44" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="430" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a489a3507e5394c1f0dceca319f919196" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NSWindowPtr</type>
+        <definition>NSWindowPtr ouzel::WindowMacOS::getNativeWindow</definition>
+        <argsstring>() const</argsstring>
+        <name>getNativeWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="46" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a107e6d9134a3f870f1706794a83ad3ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NSViewPtr</type>
+        <definition>NSViewPtr ouzel::WindowMacOS::getNativeView</definition>
+        <argsstring>() const</argsstring>
+        <name>getNativeView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="47" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a3c72761fd07c4c6dec8395460e097cd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NSScreenPtr</type>
+        <definition>NSScreenPtr ouzel::WindowMacOS::getScreen</definition>
+        <argsstring>() const</argsstring>
+        <name>getScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="48" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1aa6b98042a7780b9c0454b3a5c78101a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CGDirectDisplayID</type>
+        <definition>CGDirectDisplayID ouzel::WindowMacOS::getDisplayId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDisplayId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="49" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a9d54e030784d0c995bd41a4e7d01c024" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::WindowMacOS::WindowMacOS</definition>
+        <argsstring>()</argsstring>
+        <name>WindowMacOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="52" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4b/classouzel_1_1_window_mac_o_s_1a2bd5da331b86f7fcb9db1e93715a1cdb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::WindowMacOS::init</definition>
+        <argsstring>(const Size2 &amp;newSize, bool newResizable, bool newFullscreen, bool newExclusiveFullscreen, const std::string &amp;newTitle, bool newHighDpi, bool depth) override</argsstring>
+        <name>init</name>
+        <reimplements refid="d8/d1b/classouzel_1_1_window_1a4344916f69e2595e1a43a0dbfb9bbbfb">init</reimplements>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newResizable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newFullscreen</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newExclusiveFullscreen</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newTitle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newHighDpi</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/macos/WindowMacOS.hpp" line="53" column="1" bodyfile="ouzel/core/macos/WindowMacOS.mm" bodystart="104" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2063">
+        <label>ouzel::WindowMacOS</label>
+        <link refid="d9/d4b/classouzel_1_1_window_mac_o_s"/>
+        <childnode refid="2064" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2065">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="2064">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="2065" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2066">
+        <label>ouzel::WindowMacOS</label>
+        <link refid="d9/d4b/classouzel_1_1_window_mac_o_s"/>
+        <childnode refid="2067" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2072" relation="usage">
+          <edgelabel>windowRectangle</edgelabel>
+        </childnode>
+      </node>
+      <node id="2072">
+        <label>ouzel::Rectangle</label>
+        <link refid="db/dc0/classouzel_1_1_rectangle"/>
+        <childnode refid="2073" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="2071" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2071">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="2069">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="2070" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="2073">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="2073" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="2070">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="2068" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2068">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="2067">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="2068" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2069" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="2071" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/macos/WindowMacOS.hpp" line="29" column="1" bodyfile="ouzel/core/macos/WindowMacOS.hpp" bodystart="28" bodyend="68"/>
+    <listofallmembers>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1ab774fd4b8507b0ff9b1afec73b21a416" prot="public" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>close</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ab8297edb17e3d37534855059d01a0427" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>convertNormalizedToWindowLocation</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a2544b4bb0659eff6d63489ded8625293" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>convertNormalizedToWindowLocationRelative</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ab2d426cf963ee7cb9af889f56e984a1b" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>convertWindowToNormalizedLocation</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aec551d3127a5e1c1e5e5e26706c59bce" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>convertWindowToNormalizedLocationRelative</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a800d052623779c34237df92dd7e75e1e" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>displayId</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1af7b20e3d8ffd1eab96b01db663f1d14c" prot="private" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>Engine</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a68c115220cc1857428b0bb32971af521" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>eventHandler</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aea768eea343215a5ec62501979806d4b" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>exclusiveFullscreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a17f68cda75bbad0d970c8a57df531541" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>fullscreen</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1aa6b98042a7780b9c0454b3a5c78101a1" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getDisplayId</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a107e6d9134a3f870f1706794a83ad3ea" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getNativeView</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a489a3507e5394c1f0dceca319f919196" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getNativeWindow</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1ab0162288deff08c652e683e6dc54eef4" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getResizable</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a22b32f9cd5ec64b3579b92b575203891" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getResolution</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a3c72761fd07c4c6dec8395460e097cd1" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getScreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aa6f2197bfdc62bcc8559e0449f8c2f3e" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getSize</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a9a95052fd74ba578ebaf405500f23867" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>getTitle</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a541709af79b307a5fce548581da27e39" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>handleClose</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a0825830a8ca458b1831b3b61175ffa54" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>handleFullscreenChange</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a0cba48bdefdc33f2584cfd996546dbe2" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>handleResize</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a279a60f0393e3f3d06aa352c28d9688d" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>handleScaleFactorChange</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a870c7024326ce4eb60c1d949e3da4393" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>handleScreenChange</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a75b3f566f04909b0794260c162b5784c" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>handleWindowChange</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1aa5bdcbc27c08b7c50d1a2e248e7a75e2" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>highDpi</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a2bd5da331b86f7fcb9db1e93715a1cdb" prot="protected" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>init</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a33f83ab582753b0f9c248792257a61da" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>isExclusiveFullscreen</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a207444cc25ab6f36192f1431d19c06d9" prot="public" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>isFullscreen</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>operator=</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a63deeb1097c3b0021576c09ff3636191" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>resizable</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1abd90ff70b1834deb9a2c83ce622a01ad" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>resolution</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a5762a9de0480c666dda734220287a2fc" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>screen</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a7a9625e265616a48ce94b4e21f900644" prot="public" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>setFullscreen</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a9607c17aa58c3ed316212f21104da973" prot="public" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>setSize</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a015a7ec058076b0e1b1c1b075aaa2dda" prot="public" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>setTitle</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a3c487ca6b5af8f46e09636376a14c6a7" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>size</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1afb859b57c3ae14c44d53c3c546d52694" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>title</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a0526295bacd4dda3b82fc8735a4a5b7e" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>view</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a36cc7957e3b336892bb80f49794e9d3a" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>window</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1a7a806725cbd12cdccf6668e72fa51183" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>Window</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1aca5aab2a8b88b9070c862c384bc2ee0f" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>windowDelegate</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a9d54e030784d0c995bd41a4e7d01c024" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>WindowMacOS</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1aa3d07ab969d8babe4d479d7b45e75b93" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>windowRectangle</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1ae33b8db0e12fdb6955b6a1256d28cbbb" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>windowStyleMask</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::WindowMacOS</scope><name>~Noncopyable</name></member>
+      <member refid="d8/d1b/classouzel_1_1_window_1adc48d05ced7fa85abe0a4709b294f6b3" prot="public" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>~Window</name></member>
+      <member refid="d9/d4b/classouzel_1_1_window_mac_o_s_1a9bf4db9847810c4d60a7f10a8f6612a6" prot="public" virt="virtual"><scope>ouzel::WindowMacOS</scope><name>~WindowMacOS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

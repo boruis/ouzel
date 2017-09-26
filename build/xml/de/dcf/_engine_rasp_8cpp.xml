@@ -1,0 +1,866 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/dcf/_engine_rasp_8cpp" kind="file" language="C++">
+    <compoundname>EngineRasp.cpp</compoundname>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">pthread.h</includes>
+    <includes refid="d0/dcd/_engine_rasp_8hpp" local="yes">EngineRasp.hpp</includes>
+    <includes refid="df/de7/_input_rasp_8hpp" local="yes">input/raspbian/InputRasp.hpp</includes>
+    <includes refid="d7/d6d/_utils_8hpp" local="yes">utils/Utils.hpp</includes>
+    <incdepgraph>
+      <node id="4454">
+        <label>input/raspbian/InputRasp.hpp</label>
+        <link refid="df/de7/_input_rasp_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4432" relation="include">
+        </childnode>
+      </node>
+      <node id="4391">
+        <label>atomic</label>
+      </node>
+      <node id="4389">
+        <label>functional</label>
+      </node>
+      <node id="4401">
+        <label>queue</label>
+      </node>
+      <node id="4412">
+        <label>limits</label>
+      </node>
+      <node id="4423">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4402" relation="include">
+        </childnode>
+        <childnode refid="4401" relation="include">
+        </childnode>
+        <childnode refid="4387" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4424" relation="include">
+        </childnode>
+        <childnode refid="4434" relation="include">
+        </childnode>
+      </node>
+      <node id="4384">
+        <label>EngineRasp.hpp</label>
+        <link refid="d0/dcd/_engine_rasp_8hpp_source"/>
+        <childnode refid="4385" relation="include">
+        </childnode>
+      </node>
+      <node id="4442">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+      </node>
+      <node id="4446">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+      </node>
+      <node id="4397">
+        <label>cstdint</label>
+      </node>
+      <node id="4421">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="4409" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+      <node id="4429">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4411" relation="include">
+        </childnode>
+        <childnode refid="4409" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+        <childnode refid="4404" relation="include">
+        </childnode>
+        <childnode refid="4418" relation="include">
+        </childnode>
+      </node>
+      <node id="4422">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+      </node>
+      <node id="4398">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="4395" relation="include">
+        </childnode>
+      </node>
+      <node id="4439">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4440" relation="include">
+        </childnode>
+        <childnode refid="4404" relation="include">
+        </childnode>
+        <childnode refid="4441" relation="include">
+        </childnode>
+        <childnode refid="4443" relation="include">
+        </childnode>
+        <childnode refid="4444" relation="include">
+        </childnode>
+        <childnode refid="4445" relation="include">
+        </childnode>
+        <childnode refid="4418" relation="include">
+        </childnode>
+      </node>
+      <node id="4428">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="4402" relation="include">
+        </childnode>
+        <childnode refid="4401" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4420" relation="include">
+        </childnode>
+      </node>
+      <node id="4407">
+        <label>cmath</label>
+      </node>
+      <node id="4452">
+        <label>errno.h</label>
+      </node>
+      <node id="4385">
+        <label>core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4387" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4389" relation="include">
+        </childnode>
+        <childnode refid="4390" relation="include">
+        </childnode>
+        <childnode refid="4391" relation="include">
+        </childnode>
+        <childnode refid="4392" relation="include">
+        </childnode>
+        <childnode refid="4393" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4396" relation="include">
+        </childnode>
+        <childnode refid="4398" relation="include">
+        </childnode>
+        <childnode refid="4399" relation="include">
+        </childnode>
+        <childnode refid="4420" relation="include">
+        </childnode>
+        <childnode refid="4422" relation="include">
+        </childnode>
+        <childnode refid="4423" relation="include">
+        </childnode>
+        <childnode refid="4435" relation="include">
+        </childnode>
+        <childnode refid="4436" relation="include">
+        </childnode>
+        <childnode refid="4450" relation="include">
+        </childnode>
+        <childnode refid="4451" relation="include">
+        </childnode>
+        <childnode refid="4453" relation="include">
+        </childnode>
+      </node>
+      <node id="4450">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4437" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+      </node>
+      <node id="4438">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4439" relation="include">
+        </childnode>
+      </node>
+      <node id="4400">
+        <label>string</label>
+      </node>
+      <node id="4424">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4425" relation="include">
+        </childnode>
+        <childnode refid="4430" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+        <childnode refid="4432" relation="include">
+        </childnode>
+      </node>
+      <node id="4437">
+        <label>map</label>
+      </node>
+      <node id="4426">
+        <label>cfloat</label>
+      </node>
+      <node id="4411">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4412" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+        <childnode refid="4414" relation="include">
+        </childnode>
+      </node>
+      <node id="4435">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+      </node>
+      <node id="4394">
+        <label>Config.h</label>
+      </node>
+      <node id="4409">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="4393" relation="include">
+        </childnode>
+        <childnode refid="4410" relation="include">
+        </childnode>
+        <childnode refid="4415" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+        <childnode refid="4416" relation="include">
+        </childnode>
+      </node>
+      <node id="4440">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4412" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4427">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="4428" relation="include">
+        </childnode>
+      </node>
+      <node id="4425">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="4426" relation="include">
+        </childnode>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4427" relation="include">
+        </childnode>
+        <childnode refid="4429" relation="include">
+        </childnode>
+        <childnode refid="4396" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+      <node id="4419">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="4456">
+        <label>random</label>
+      </node>
+      <node id="4430">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4431" relation="include">
+        </childnode>
+        <childnode refid="4396" relation="include">
+        </childnode>
+        <childnode refid="4411" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+        <childnode refid="4409" relation="include">
+        </childnode>
+        <childnode refid="4421" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+      <node id="4415">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="4403">
+        <label>condition_variable</label>
+      </node>
+      <node id="4383">
+        <label>pthread.h</label>
+      </node>
+      <node id="4431">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+      </node>
+      <node id="4434">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="4389" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4424" relation="include">
+        </childnode>
+      </node>
+      <node id="4444">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+      </node>
+      <node id="4418">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4419" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4393">
+        <label>Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="4394" relation="include">
+        </childnode>
+      </node>
+      <node id="4443">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+      </node>
+      <node id="4388">
+        <label>vector</label>
+      </node>
+      <node id="4408">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="4405" relation="include">
+        </childnode>
+      </node>
+      <node id="4410">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4411" relation="include">
+        </childnode>
+        <childnode refid="4415" relation="include">
+        </childnode>
+        <childnode refid="4416" relation="include">
+        </childnode>
+      </node>
+      <node id="4453">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4437" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+      </node>
+      <node id="4414">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+      <node id="4457">
+        <label>sstream</label>
+      </node>
+      <node id="4432">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4402" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4433" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+      </node>
+      <node id="4441">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4442" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+      </node>
+      <node id="4420">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4389" relation="include">
+        </childnode>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4387" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4421" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+      <node id="4417">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+      </node>
+      <node id="4455">
+        <label>utils/Utils.hpp</label>
+        <link refid="d7/d6d/_utils_8hpp_source"/>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4382" relation="include">
+        </childnode>
+        <childnode refid="4412" relation="include">
+        </childnode>
+        <childnode refid="4389" relation="include">
+        </childnode>
+        <childnode refid="4456" relation="include">
+        </childnode>
+        <childnode refid="4457" relation="include">
+        </childnode>
+        <childnode refid="4393" relation="include">
+        </childnode>
+      </node>
+      <node id="4449">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+      </node>
+      <node id="4382">
+        <label>cstdlib</label>
+      </node>
+      <node id="4399">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4401" relation="include">
+        </childnode>
+        <childnode refid="4387" relation="include">
+        </childnode>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4402" relation="include">
+        </childnode>
+        <childnode refid="4391" relation="include">
+        </childnode>
+        <childnode refid="4403" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4404" relation="include">
+        </childnode>
+        <childnode refid="4409" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+        <childnode refid="4418" relation="include">
+        </childnode>
+      </node>
+      <node id="4406">
+        <label>cstddef</label>
+      </node>
+      <node id="4433">
+        <label>unordered_map</label>
+      </node>
+      <node id="4445">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4441" relation="include">
+        </childnode>
+      </node>
+      <node id="4416">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+        <childnode refid="4393" relation="include">
+        </childnode>
+      </node>
+      <node id="4402">
+        <label>mutex</label>
+      </node>
+      <node id="4392">
+        <label>chrono</label>
+      </node>
+      <node id="4381">
+        <label>ouzel/core/raspbian/EngineRasp.cpp</label>
+        <link refid="de/dcf/_engine_rasp_8cpp"/>
+        <childnode refid="4382" relation="include">
+        </childnode>
+        <childnode refid="4383" relation="include">
+        </childnode>
+        <childnode refid="4384" relation="include">
+        </childnode>
+        <childnode refid="4454" relation="include">
+        </childnode>
+        <childnode refid="4455" relation="include">
+        </childnode>
+      </node>
+      <node id="4390">
+        <label>thread</label>
+      </node>
+      <node id="4387">
+        <label>set</label>
+      </node>
+      <node id="4447">
+        <label>gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4437" relation="include">
+        </childnode>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4433" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+        <childnode refid="4418" relation="include">
+        </childnode>
+        <childnode refid="4441" relation="include">
+        </childnode>
+      </node>
+      <node id="4405">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+        <childnode refid="4407" relation="include">
+        </childnode>
+      </node>
+      <node id="4396">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="4389" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+      </node>
+      <node id="4448">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4388" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4442" relation="include">
+        </childnode>
+        <childnode refid="4441" relation="include">
+        </childnode>
+      </node>
+      <node id="4395">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="4404">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4413">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4386">
+        <label>memory</label>
+      </node>
+      <node id="4436">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="4386" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4437" relation="include">
+        </childnode>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4438" relation="include">
+        </childnode>
+        <childnode refid="4446" relation="include">
+        </childnode>
+        <childnode refid="4447" relation="include">
+        </childnode>
+        <childnode refid="4443" relation="include">
+        </childnode>
+        <childnode refid="4448" relation="include">
+        </childnode>
+        <childnode refid="4418" relation="include">
+        </childnode>
+        <childnode refid="4449" relation="include">
+        </childnode>
+      </node>
+      <node id="4451">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="4452" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EngineRasp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input/raspbian/InputRasp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>EngineRasp::EngineRasp(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aArgc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>aArgv[])</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>aArgc;<sp/>++i)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>args.push_back(aArgv[i]);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EngineRasp::run()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!init())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input::InputRasp*<sp/>inputRasp<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">input::InputRasp*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(input.get());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(active)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>executeAll();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputRasp-&gt;update();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_SUCCESS;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EngineRasp::executeOnMainThread(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;&amp;<sp/>func)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(executeMutex);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>executeQueue.push(func);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EngineRasp::setCurrentThreadName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pthread_setname_np(pthread_self(),<sp/>name.c_str())<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EngineRasp::executeAll()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;void(void)&gt;<sp/>func;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;;)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(executeMutex);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(executeQueue.empty())</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func<sp/>=<sp/>std::move(executeQueue.front());</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>executeQueue.pop();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(func)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ouzel/core/raspbian/EngineRasp.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/dd0/classouzel_1_1input_1_1_input_rasp" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::InputRasp</compoundname>
+    <basecompoundref refid="d3/d66/classouzel_1_1input_1_1_input" prot="public" virt="non-virtual">ouzel::input::Input</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1ac206ea262d06d2f680c32dcf72513c07" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::InputRasp::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="32" column="1" bodyfile="ouzel/input/raspbian/InputRasp.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a5b595510278727e2d0a25064d9942a48" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ouzel::input::InputRasp::maxFd</definition>
+        <argsstring></argsstring>
+        <name>maxFd</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="44" column="1" bodyfile="ouzel/input/raspbian/InputRasp.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1ae7486e06d676b6f503ddcb7cf6feddd4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="dc/dff/structouzel_1_1input_1_1_input_device_rasp" kindref="compound">InputDeviceRasp</ref> &gt;</type>
+        <definition>std::vector&lt;InputDeviceRasp&gt; ouzel::input::InputRasp::inputDevices</definition>
+        <argsstring></argsstring>
+        <name>inputDevices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="45" column="1" bodyfile="ouzel/input/raspbian/InputRasp.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a640268e3ca8f00ae32e6002ee0bf4446" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputRasp::keyboardKeyDown[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>keyboardKeyDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="46" column="1" bodyfile="ouzel/input/raspbian/InputRasp.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a3f9f7339888fc291baa2f2dd913b98d0" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputRasp::mouseButtonDown[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>mouseButtonDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="47" column="1" bodyfile="ouzel/input/raspbian/InputRasp.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a3e47f7e4ac123c9aebe026f67505f16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::input::InputRasp::~InputRasp</definition>
+        <argsstring>()</argsstring>
+        <name>~InputRasp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="34" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="325" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a4b8953f1eb30e3845b8100c19f2993dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputRasp::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="36" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="341" bodyend="473"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a0169cdadea5b4ffbe3f9788e0240d867" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::InputRasp::InputRasp</definition>
+        <argsstring>()</argsstring>
+        <name>InputRasp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="39" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="188" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1afe5db64aab13de93a387e4ef5c4fe4d9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputRasp::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a3a59fd85fc4f6db83c04257d28939076">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="40" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="192" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dd0/classouzel_1_1input_1_1_input_rasp_1ae98035534ea3fe897d938655d0ee2520" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::input::InputRasp::getModifiers</definition>
+        <argsstring>() const</argsstring>
+        <name>getModifiers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.hpp" line="42" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="475" bodyend="489"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="907">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="908" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>ouzel::input::InputRasp</label>
+        <link refid="d9/dd0/classouzel_1_1input_1_1_input_rasp"/>
+        <childnode refid="907" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="908">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="910">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="911" relation="public-inheritance">
+        </childnode>
+        <childnode refid="912" relation="usage">
+          <edgelabel>currentCursorResource</edgelabel>
+        </childnode>
+        <childnode refid="913" relation="usage">
+          <edgelabel>cursorPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="909">
+        <label>ouzel::input::InputRasp</label>
+        <link refid="d9/dd0/classouzel_1_1input_1_1_input_rasp"/>
+        <childnode refid="910" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="914">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="912">
+        <label>ouzel::input::CursorResource</label>
+        <link refid="d8/d06/classouzel_1_1input_1_1_cursor_resource"/>
+        <childnode refid="913" relation="usage">
+          <edgelabel>hotSpot</edgelabel>
+        </childnode>
+        <childnode refid="914" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="913">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="913" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="911">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/raspbian/InputRasp.hpp" line="31" column="1" bodyfile="ouzel/input/raspbian/InputRasp.hpp" bodystart="30" bodyend="48"/>
+    <listofallmembers>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4debefd4bfa57d8cc140990d05ae578d" prot="protected" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>activateCursorResource</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ac1a1e4231947f089462cee12641ecd6a" prot="protected" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>createCursorResource</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a607158b917fc599aeb9c79e3626adaf7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>currentCursorResource</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a48fba2698df7318dc1ae672e0c1e02e7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>cursorPosition</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab8d1ae63c7bcd08c6a54354307774709" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>deleteCursorResource</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1ac206ea262d06d2f680c32dcf72513c07" prot="private" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>Engine</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2d7430df853bf87282d7c77d0ee99da5" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>gamepads</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a72a0dae29fd96ee53bae8f06b9edac4a" prot="public" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>getCursorPosition</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1ae98035534ea3fe897d938655d0ee2520" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>getModifiers</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af6fdb721c613db6cab287c9ba75e20f5" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>hideVirtualKeyboard</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1afe5db64aab13de93a387e4ef5c4fe4d9" prot="protected" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>init</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aae3563da3f8488e52aacff66bb21cbcf" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>Input</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1ae7486e06d676b6f503ddcb7cf6feddd4" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>inputDevices</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a0169cdadea5b4ffbe3f9788e0240d867" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>InputRasp</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2975def826f9d962c3ab9717b183b4b2" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>isCursorLocked</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ae34e27bbafbadec87dcdcd8092cd4dff" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>isCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6c1fc37d0901c3c39a4bf50da2b41ec4" prot="public" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>isKeyboardKeyDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6277961a47ca24f8ca6cbf97468effe4" prot="public" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>isMouseButtonDown</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a640268e3ca8f00ae32e6002ee0bf4446" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>keyboardKeyDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4d804774aedfc2d3eea8aa896bb49b50" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>keyboardKeyStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9c9d2651b00522429b7f6361d6a6cf6a" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>keyPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a659af3edae3d0121b4d5c61bc70b9222" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>keyRelease</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a5b595510278727e2d0a25064d9942a48" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>maxFd</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a3f9f7339888fc291baa2f2dd913b98d0" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>mouseButtonDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2ac50cf093b3af7874c3780baa33fc34" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>mouseButtonPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a84070635b548488b1f570212683b6d8f" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>mouseButtonRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6b7563da094b76b3c57a78e5d6ef5fef" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>mouseButtonStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa0550ad728bcc5f62c848da185771d9f" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>mouseMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4369885e8b5507e94aef70a7decb98e9" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>mouseRelativeMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1acacff77132eba6a6d0cfd1780b3c955a" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>mouseScroll</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>operator=</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab520315479b2755d09cb58e3769a980b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>resourceDeleteSet</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a247c7b90402d76646ec60043f879e3b8" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>resourceMutex</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9dd034f23e6932c078c095ec6f564f26" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>resources</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a5fff6e75202db5c6c7597ea938e548c7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>setCurrentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a53a133792107491ff05351011b8d1998" prot="public" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>setCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a96925f6dfd2bcfe1f91bc7e7213a6ca7" prot="public" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>setCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a5768de88f5145ee43985a69124941d94" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>setCursorLocked</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ad68b93107284cbc416aef183ca321808" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>setCursorPosition</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a098acb21355272cbb50441e012d7f817" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>setCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af0d9d9775d1bba6854015942bf294dce" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>showVirtualKeyboard</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a20debe60e92004a68884f2c97a930e9e" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>startGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a703ef8e423a76f67caf0128224556957" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>stopGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ae03f56e62003d0603677b8cfb05cd93b" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>touchBegin</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a42487405af78834a2ebd1435a3e6b8e7" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>touchCancel</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a83f964be55c19ad8280e90fcb7c6b64d" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>touchEnd</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa843065cded9e1c8f7fe15f441bca917" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>touchMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ad585764340c5ab208ccc5e1f7fe99739" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>touchPositions</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a4b8953f1eb30e3845b8100c19f2993dd" prot="public" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>update</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a487ff528949e0a0c06e7b9d540d7c1cd" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>~Input</name></member>
+      <member refid="d9/dd0/classouzel_1_1input_1_1_input_rasp_1a3e47f7e4ac123c9aebe026f67505f16d" prot="public" virt="virtual"><scope>ouzel::input::InputRasp</scope><name>~InputRasp</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::InputRasp</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

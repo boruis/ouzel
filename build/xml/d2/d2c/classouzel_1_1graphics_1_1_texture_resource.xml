@@ -1,0 +1,893 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::TextureResource</compoundname>
+    <basecompoundref refid="d5/d7c/classouzel_1_1graphics_1_1_resource" prot="public" virt="non-virtual">ouzel::graphics::Resource</basecompoundref>
+    <derivedcompoundref refid="db/db8/classouzel_1_1graphics_1_1_texture_resource_empty" prot="public" virt="non-virtual">ouzel::graphics::TextureResourceEmpty</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a12e93db0b014f06f0e7df6361e18dcfe" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::graphics::TextureResource::Renderer</definition>
+        <argsstring></argsstring>
+        <name>Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="22" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a5d89d53827dfdca2729dbf1735e55bc8" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::graphics::TextureResource::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="86" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a7ae6e8fedc87bc8c18364ed63f889aef" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="87" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a7ce49520a74e990aaa4449cd7ba08cf7" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::mipmaps</definition>
+        <argsstring></argsstring>
+        <name>mipmaps</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="88" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1abd1ed706d24c277c233fcc14a88878a4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::clearColorBuffer</definition>
+        <argsstring></argsstring>
+        <name>clearColorBuffer</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="89" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a84df7a03f58e2f2713a608af20a13384" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::clearDepthBuffer</definition>
+        <argsstring></argsstring>
+        <name>clearDepthBuffer</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="90" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ab3ec10a199c739e33980ab5250743614" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::graphics::TextureResource::clearDepth</definition>
+        <argsstring></argsstring>
+        <name>clearDepth</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="91" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a94a0aaf1f78287bcc74efb0ec7b5b8fe" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d3/dcc/structouzel_1_1graphics_1_1_texture_1_1_level" kindref="compound">Texture::Level</ref> &gt;</type>
+        <definition>std::vector&lt;Texture::Level&gt; ouzel::graphics::TextureResource::levels</definition>
+        <argsstring></argsstring>
+        <name>levels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="92" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a46f0927a17b2401f5fe009d2fafc75d7" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::sampleCount</definition>
+        <argsstring></argsstring>
+        <name>sampleCount</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="93" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1acb345a7221f304b37cccdd1c2330fb97" prot="protected" static="no" mutable="no">
+        <type>PixelFormat</type>
+        <definition>PixelFormat ouzel::graphics::TextureResource::pixelFormat</definition>
+        <argsstring></argsstring>
+        <name>pixelFormat</name>
+        <initializer>= PixelFormat::RGBA8_UNORM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="94" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a5d064bada85531888809d026ad8ff873" prot="protected" static="no" mutable="no">
+        <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color ouzel::graphics::TextureResource::clearColor</definition>
+        <argsstring></argsstring>
+        <name>clearColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="95" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1acf3ce2121f90ded53e28ce342360c0ae" prot="protected" static="no" mutable="no">
+        <type>Texture::Filter</type>
+        <definition>Texture::Filter ouzel::graphics::TextureResource::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <initializer>= Texture::Filter::DEFAULT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="96" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ac6954c3c121f61b172728f5589b30a6c" prot="protected" static="no" mutable="no">
+        <type>Texture::Address</type>
+        <definition>Texture::Address ouzel::graphics::TextureResource::addressX</definition>
+        <argsstring></argsstring>
+        <name>addressX</name>
+        <initializer>= Texture::Address::CLAMP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="97" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aec446ef779aae14658b151296ddd2dd3" prot="protected" static="no" mutable="no">
+        <type>Texture::Address</type>
+        <definition>Texture::Address ouzel::graphics::TextureResource::addressY</definition>
+        <argsstring></argsstring>
+        <name>addressY</name>
+        <initializer>= Texture::Address::CLAMP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="98" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0934814918a6cb75189ed6d5e4b1c59b" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::maxAnisotropy</definition>
+        <argsstring></argsstring>
+        <name>maxAnisotropy</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="99" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a7f279db4ef02019e50b35b35ae40de48" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::frameBufferClearedFrame</definition>
+        <argsstring></argsstring>
+        <name>frameBufferClearedFrame</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="101" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a91919e4c1ba3a6c7bf7da619e705c0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::graphics::TextureResource::~TextureResource</definition>
+        <argsstring>()</argsstring>
+        <name>~TextureResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="24" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a2d1e4d45eadc8105d4c33f828821ae6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::init</definition>
+        <argsstring>(const Size2 &amp;newSize, uint32_t newFlags=0, uint32_t newMipmaps=0, uint32_t newSampleCount=1, PixelFormat newPixelFormat=PixelFormat::RGBA8_UNORM)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newMipmaps</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newSampleCount</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>newPixelFormat</declname>
+          <defval>PixelFormat::RGBA8_UNORM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="26" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1af5d751c2c199338acc461cfa11cd9cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::init</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData, const Size2 &amp;newSize, uint32_t newFlags=0, uint32_t newMipmaps=0, PixelFormat newPixelFormat=PixelFormat::RGBA8_UNORM)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newMipmaps</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>newPixelFormat</declname>
+          <defval>PixelFormat::RGBA8_UNORM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="31" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="45" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a841b0c1b8ed4cadc62dcf2651135db91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::init</definition>
+        <argsstring>(const std::vector&lt; Texture::Level &gt; &amp;newLevels, const Size2 &amp;newSize, uint32_t newFlags=0, PixelFormat newPixelFormat=PixelFormat::RGBA8_UNORM)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d3/dcc/structouzel_1_1graphics_1_1_texture_1_1_level" kindref="compound">Texture::Level</ref> &gt; &amp;</type>
+          <declname>newLevels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>newPixelFormat</declname>
+          <defval>PixelFormat::RGBA8_UNORM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="36" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="69" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a44e4ba1885dcc0095f5bbe2885010750" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setSize</definition>
+        <argsstring>(const Size2 &amp;newSize)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="41" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="84" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a47b72f549a3beb82bdfe37b148d880dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>const Size2&amp; ouzel::graphics::TextureResource::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="42" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0faeebe9c5fc2f6fee4c6ca5bae7b002" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setData</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData, const Size2 &amp;newSize)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="44" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="107" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ac583bc7282f300862cf44078a348e1be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::getFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="46" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a1342b8af09ec74286945f3e1221e37bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::getMipmaps</definition>
+        <argsstring>() const</argsstring>
+        <name>getMipmaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="47" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aaecb01cd23b494fd5afe0eb846712332" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture::Filter</type>
+        <definition>Texture::Filter ouzel::graphics::TextureResource::getFilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="49" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1abc7f89d2f187afdb31f1ab9a2fe4ca59" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setFilter</definition>
+        <argsstring>(Texture::Filter newFilter)</argsstring>
+        <name>setFilter</name>
+        <param>
+          <type>Texture::Filter</type>
+          <declname>newFilter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="50" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="532" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a9890ed01a9aef60a6d19326835f1341a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture::Address</type>
+        <definition>Texture::Address ouzel::graphics::TextureResource::getAddressX</definition>
+        <argsstring>() const</argsstring>
+        <name>getAddressX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="52" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0154d0b11196b5d828d51576573cb433" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setAddressX</definition>
+        <argsstring>(Texture::Address newAddressX)</argsstring>
+        <name>setAddressX</name>
+        <param>
+          <type>Texture::Address</type>
+          <declname>newAddressX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="53" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="539" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a63c9ebaf5e689b3749335438a0beb7d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture::Address</type>
+        <definition>Texture::Address ouzel::graphics::TextureResource::getAddressY</definition>
+        <argsstring>() const</argsstring>
+        <name>getAddressY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="55" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a446299aec8c67aec639ecf210fba9002" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setAddressY</definition>
+        <argsstring>(Texture::Address newAddressY)</argsstring>
+        <name>setAddressY</name>
+        <param>
+          <type>Texture::Address</type>
+          <declname>newAddressY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="56" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="546" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a2ac5559573cea54ea4ecd1f10b2cb195" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::getMaxAnisotropy</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxAnisotropy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="58" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a914a289c7ffec7f1497c4fd61dd5cc3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setMaxAnisotropy</definition>
+        <argsstring>(uint32_t newMaxAnisotropy)</argsstring>
+        <name>setMaxAnisotropy</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>newMaxAnisotropy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="59" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="553" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a4741aac538df3240084c357a65700f5f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::getClearColorBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearColorBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="61" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aac1c9e2343921450bc2c6d560b088603" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setClearColorBuffer</definition>
+        <argsstring>(bool clear)</argsstring>
+        <name>setClearColorBuffer</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="62" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="560" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a6ca6aa89087f118e912b32c32b75d681" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::getClearDepthBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearDepthBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="64" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a8138bbfcb0be0ff49b04879ecb2e7cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setClearDepthBuffer</definition>
+        <argsstring>(bool clear)</argsstring>
+        <name>setClearDepthBuffer</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="65" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="567" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a26d616725679d015d0611499155303d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color ouzel::graphics::TextureResource::getClearColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="67" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aaed5551ce4f25f804ef33325c8f28a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setClearColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>setClearColor</name>
+        <param>
+          <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="68" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="574" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a3c21165714576ad8e9a7aac7acc6c2c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::graphics::TextureResource::getClearDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="70" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a535c13d871666bc8cabdb47c28e37ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::setClearDepth</definition>
+        <argsstring>(float clear)</argsstring>
+        <name>setClearDepth</name>
+        <param>
+          <type>float</type>
+          <declname>clear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="71" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="581" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a9c2567645510cd8441112759184c8195" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::getSampleCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getSampleCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="73" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ad7ec9617941d807fdc2f626e2c30ce62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>PixelFormat</type>
+        <definition>PixelFormat ouzel::graphics::TextureResource::getPixelFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>getPixelFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="75" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a890ddddf2a37f9c373910562c4948154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::TextureResource::getFrameBufferClearedFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getFrameBufferClearedFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="77" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a74dea5874154ee1e03c1e8f694a3d176" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::TextureResource::setFrameBufferClearedFrame</definition>
+        <argsstring>(uint32_t clearedFrame)</argsstring>
+        <name>setFrameBufferClearedFrame</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>clearedFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="78" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0e06d4f085c66c660aede56e3fbcf606" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::TextureResource::TextureResource</definition>
+        <argsstring>()</argsstring>
+        <name>TextureResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="81" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a8b18991084ce212050641b9e6b7fe8bf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::calculateSizes</definition>
+        <argsstring>(const Size2 &amp;newSize)</argsstring>
+        <name>calculateSizes</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="83" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="135" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a19d5cc350786881dae561dd02f080e88" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::TextureResource::calculateData</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData)</argsstring>
+        <name>calculateData</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/TextureResource.hpp" line="84" column="1" bodyfile="ouzel/graphics/TextureResource.cpp" bodystart="513" bodyend="530"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1845">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="1846" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1844">
+        <label>ouzel::graphics::TextureResource</label>
+        <link refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource"/>
+        <childnode refid="1845" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1847">
+        <label>ouzel::graphics::TextureResourceEmpty</label>
+        <link refid="db/db8/classouzel_1_1graphics_1_1_texture_resource_empty"/>
+        <childnode refid="1844" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1851">
+        <label>ouzel::Color</label>
+        <link refid="d4/d5a/classouzel_1_1_color"/>
+      </node>
+      <node id="1852">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="1849">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="1850" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1850">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1848">
+        <label>ouzel::graphics::TextureResource</label>
+        <link refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource"/>
+        <childnode refid="1849" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1851" relation="usage">
+          <edgelabel>clearColor</edgelabel>
+        </childnode>
+        <childnode refid="1852" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/TextureResource.hpp" line="21" column="1" bodyfile="ouzel/graphics/TextureResource.hpp" bodystart="20" bodyend="102"/>
+    <listofallmembers>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ac6954c3c121f61b172728f5589b30a6c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>addressX</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aec446ef779aae14658b151296ddd2dd3" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>addressY</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a19d5cc350786881dae561dd02f080e88" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>calculateData</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a8b18991084ce212050641b9e6b7fe8bf" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>calculateSizes</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a5d064bada85531888809d026ad8ff873" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>clearColor</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1abd1ed706d24c277c233fcc14a88878a4" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>clearColorBuffer</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ab3ec10a199c739e33980ab5250743614" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>clearDepth</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a84df7a03f58e2f2713a608af20a13384" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>clearDepthBuffer</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1acf3ce2121f90ded53e28ce342360c0ae" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>filter</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a7ae6e8fedc87bc8c18364ed63f889aef" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>flags</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a7f279db4ef02019e50b35b35ae40de48" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>frameBufferClearedFrame</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a9890ed01a9aef60a6d19326835f1341a" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getAddressX</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a63c9ebaf5e689b3749335438a0beb7d4" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getAddressY</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a26d616725679d015d0611499155303d3" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getClearColor</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a4741aac538df3240084c357a65700f5f" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getClearColorBuffer</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a3c21165714576ad8e9a7aac7acc6c2c2" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getClearDepth</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a6ca6aa89087f118e912b32c32b75d681" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getClearDepthBuffer</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aaecb01cd23b494fd5afe0eb846712332" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getFilter</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ac583bc7282f300862cf44078a348e1be" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getFlags</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a890ddddf2a37f9c373910562c4948154" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getFrameBufferClearedFrame</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a2ac5559573cea54ea4ecd1f10b2cb195" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getMaxAnisotropy</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a1342b8af09ec74286945f3e1221e37bf" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getMipmaps</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1ad7ec9617941d807fdc2f626e2c30ce62" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getPixelFormat</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a9c2567645510cd8441112759184c8195" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getSampleCount</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a47b72f549a3beb82bdfe37b148d880dc" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>getSize</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a2d1e4d45eadc8105d4c33f828821ae6a" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>init</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1af5d751c2c199338acc461cfa11cd9cef" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>init</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a841b0c1b8ed4cadc62dcf2651135db91" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>init</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a94a0aaf1f78287bcc74efb0ec7b5b8fe" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>levels</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0934814918a6cb75189ed6d5e4b1c59b" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>maxAnisotropy</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a7ce49520a74e990aaa4449cd7ba08cf7" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>mipmaps</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>operator=</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1acb345a7221f304b37cccdd1c2330fb97" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>pixelFormat</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1ac314cb53c79d9b6ae7cbb6e320e9409a" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>reload</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a12e93db0b014f06f0e7df6361e18dcfe" prot="private" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>Renderer</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a54cf34fd3bfcc1d08b780c4c7ccf6426" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>Resource</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a46f0927a17b2401f5fe009d2fafc75d7" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>sampleCount</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0154d0b11196b5d828d51576573cb433" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setAddressX</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a446299aec8c67aec639ecf210fba9002" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setAddressY</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aaed5551ce4f25f804ef33325c8f28a77" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setClearColor</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1aac1c9e2343921450bc2c6d560b088603" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setClearColorBuffer</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a535c13d871666bc8cabdb47c28e37ca5" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setClearDepth</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a8138bbfcb0be0ff49b04879ecb2e7cfe" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setClearDepthBuffer</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0faeebe9c5fc2f6fee4c6ca5bae7b002" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setData</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1abc7f89d2f187afdb31f1ab9a2fe4ca59" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setFilter</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a74dea5874154ee1e03c1e8f694a3d176" prot="public" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>setFrameBufferClearedFrame</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a914a289c7ffec7f1497c4fd61dd5cc3c" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setMaxAnisotropy</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a44e4ba1885dcc0095f5bbe2885010750" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>setSize</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a5d89d53827dfdca2729dbf1735e55bc8" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>size</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a0e06d4f085c66c660aede56e3fbcf606" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>TextureResource</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::TextureResource</scope><name>~Noncopyable</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a84e6be3fce44057b8dd471fac2626962" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>~Resource</name></member>
+      <member refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource_1a91919e4c1ba3a6c7bf7da619e705c0c5" prot="public" virt="virtual"><scope>ouzel::graphics::TextureResource</scope><name>~TextureResource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

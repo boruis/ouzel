@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d7c/classouzel_1_1graphics_1_1_resource" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::Resource</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <derivedcompoundref refid="dd/d49/classouzel_1_1graphics_1_1_blend_state_resource" prot="public" virt="non-virtual">ouzel::graphics::BlendStateResource</derivedcompoundref>
+    <derivedcompoundref refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" prot="public" virt="non-virtual">ouzel::graphics::BufferResource</derivedcompoundref>
+    <derivedcompoundref refid="d1/ddd/classouzel_1_1graphics_1_1_mesh_buffer_resource" prot="public" virt="non-virtual">ouzel::graphics::MeshBufferResource</derivedcompoundref>
+    <derivedcompoundref refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource" prot="public" virt="non-virtual">ouzel::graphics::ShaderResource</derivedcompoundref>
+    <derivedcompoundref refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource" prot="public" virt="non-virtual">ouzel::graphics::TextureResource</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d7c/classouzel_1_1graphics_1_1_resource_1a54cf34fd3bfcc1d08b780c4c7ccf6426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::Resource::Resource</definition>
+        <argsstring>()</argsstring>
+        <name>Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Resource.hpp" line="15" column="1" bodyfile="ouzel/graphics/Resource.hpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d7c/classouzel_1_1graphics_1_1_resource_1a84e6be3fce44057b8dd471fac2626962" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ouzel::graphics::Resource::~Resource</definition>
+        <argsstring>()</argsstring>
+        <name>~Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Resource.hpp" line="16" column="1" bodyfile="ouzel/graphics/Resource.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d7c/classouzel_1_1graphics_1_1_resource_1ac314cb53c79d9b6ae7cbb6e320e9409a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool ouzel::graphics::Resource::reload</definition>
+        <argsstring>()</argsstring>
+        <name>reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Resource.hpp" line="18" column="1" bodyfile="ouzel/graphics/Resource.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1431">
+        <label>ouzel::graphics::MeshBufferResource</label>
+        <link refid="d1/ddd/classouzel_1_1graphics_1_1_mesh_buffer_resource"/>
+        <childnode refid="1425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1433">
+        <label>ouzel::graphics::ShaderResource</label>
+        <link refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource"/>
+        <childnode refid="1425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1434">
+        <label>ouzel::graphics::ShaderResourceEmpty</label>
+        <link refid="d1/d4f/classouzel_1_1graphics_1_1_shader_resource_empty"/>
+        <childnode refid="1433" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1425">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="1426" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1432">
+        <label>ouzel::graphics::MeshBufferResourceEmpty</label>
+        <link refid="d7/d4a/classouzel_1_1graphics_1_1_mesh_buffer_resource_empty"/>
+        <childnode refid="1431" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1428">
+        <label>ouzel::graphics::BlendStateResourceEmpty</label>
+        <link refid="df/d2d/classouzel_1_1graphics_1_1_blend_state_resource_empty"/>
+        <childnode refid="1427" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1429">
+        <label>ouzel::graphics::BufferResource</label>
+        <link refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource"/>
+        <childnode refid="1425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1435">
+        <label>ouzel::graphics::TextureResource</label>
+        <link refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource"/>
+        <childnode refid="1425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1427">
+        <label>ouzel::graphics::BlendStateResource</label>
+        <link refid="dd/d49/classouzel_1_1graphics_1_1_blend_state_resource"/>
+        <childnode refid="1425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1430">
+        <label>ouzel::graphics::BufferResourceEmpty</label>
+        <link refid="d5/d79/classouzel_1_1graphics_1_1_buffer_resource_empty"/>
+        <childnode refid="1429" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>ouzel::graphics::TextureResourceEmpty</label>
+        <link refid="db/db8/classouzel_1_1graphics_1_1_texture_resource_empty"/>
+        <childnode refid="1435" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1437">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="1438" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1438">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/Resource.hpp" line="13" column="1" bodyfile="ouzel/graphics/Resource.hpp" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>operator=</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1ac314cb53c79d9b6ae7cbb6e320e9409a" prot="public" virt="virtual"><scope>ouzel::graphics::Resource</scope><name>reload</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a54cf34fd3bfcc1d08b780c4c7ccf6426" prot="public" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>Resource</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Resource</scope><name>~Noncopyable</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a84e6be3fce44057b8dd471fac2626962" prot="public" virt="virtual"><scope>ouzel::graphics::Resource</scope><name>~Resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

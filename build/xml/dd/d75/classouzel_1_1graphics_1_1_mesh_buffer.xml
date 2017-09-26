@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::MeshBuffer</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1af825aa6bcb8ccb055a4cd0f726cb70cd" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/ddd/classouzel_1_1graphics_1_1_mesh_buffer_resource" kindref="compound">MeshBufferResource</ref> *</type>
+        <definition>MeshBufferResource* ouzel::graphics::MeshBuffer::resource</definition>
+        <argsstring></argsstring>
+        <name>resource</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="42" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a364b55e9347dec316f0c43c7d616130a" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Buffer&gt; ouzel::graphics::MeshBuffer::indexBuffer</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="44" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a0291d4c3cccc98d61d43e90de7da3768" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Buffer&gt; ouzel::graphics::MeshBuffer::vertexBuffer</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="45" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1abb1df0ea7a8ba820a0fed654c123dbd8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::MeshBuffer::indexSize</definition>
+        <argsstring></argsstring>
+        <name>indexSize</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="46" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1ad3e252642152030e5032b2d061204e71" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt;</type>
+        <definition>std::vector&lt;VertexAttribute&gt; ouzel::graphics::MeshBuffer::vertexAttributes</definition>
+        <argsstring></argsstring>
+        <name>vertexAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="47" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a1be94c514cbad4dd902db3763a7b55d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::MeshBuffer::MeshBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>MeshBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="21" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1aa63586bf0829cbe38160061ffd52a66a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::graphics::MeshBuffer::~MeshBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~MeshBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="22" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a171f98ec61e02d66a27dc68591e58344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::MeshBuffer::init</definition>
+        <argsstring>(uint32_t newIndexSize, const std::shared_ptr&lt; Buffer &gt; &amp;newIndexBuffer, const std::vector&lt; VertexAttribute &gt; &amp;newVertexAttributes, const std::shared_ptr&lt; Buffer &gt; &amp;newVertexBuffer)</argsstring>
+        <name>init</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>newIndexSize</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt; &amp;</type>
+          <declname>newIndexBuffer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt; &amp;</type>
+          <declname>newVertexAttributes</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt; &amp;</type>
+          <declname>newVertexBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="24" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="25" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1abd7ac9fe3032bc771cd7989de9d35ff5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/ddd/classouzel_1_1graphics_1_1_mesh_buffer_resource" kindref="compound">MeshBufferResource</ref> *</type>
+        <definition>MeshBufferResource* ouzel::graphics::MeshBuffer::getResource</definition>
+        <argsstring>() const</argsstring>
+        <name>getResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="27" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a903f867486c8c6fe9965be481cac7e7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::MeshBuffer::getIndexSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndexSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="29" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a9294f8162104212590461ebe6a86b5af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::MeshBuffer::setIndexSize</definition>
+        <argsstring>(uint32_t newIndexSize)</argsstring>
+        <name>setIndexSize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>newIndexSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="30" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1af5425837a3164bc8dfb3724ac50f2592" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt;Buffer&gt;&amp; ouzel::graphics::MeshBuffer::getIndexBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="32" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1aa57050a5d695450bfe15822bf8b59e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::MeshBuffer::setIndexBuffer</definition>
+        <argsstring>(const std::shared_ptr&lt; Buffer &gt; &amp;newIndexBuffer)</argsstring>
+        <name>setIndexBuffer</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt; &amp;</type>
+          <declname>newIndexBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="33" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="62" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a0da4ce098741cf14e02e4f6518354fe1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; VertexAttribute &gt; &amp; ouzel::graphics::MeshBuffer::getVertexAttributes</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="35" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a84ee359fde12bcd7fcde1dfd4d2e7b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::MeshBuffer::setVertexAttributes</definition>
+        <argsstring>(const std::vector&lt; VertexAttribute &gt; &amp;newVertexAttributes)</argsstring>
+        <name>setVertexAttributes</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt; &amp;</type>
+          <declname>newVertexAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="36" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="80" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a66c764b828c8181811c85702d9a72742" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt;Buffer&gt;&amp; ouzel::graphics::MeshBuffer::getVertexBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="38" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a38dee27e1ff1430bdee00bf5003602ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::MeshBuffer::setVertexBuffer</definition>
+        <argsstring>(const std::shared_ptr&lt; Buffer &gt; &amp;newVertexBuffer)</argsstring>
+        <name>setVertexBuffer</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d0/d4b/classouzel_1_1graphics_1_1_buffer" kindref="compound">Buffer</ref> &gt; &amp;</type>
+          <declname>newVertexBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/MeshBuffer.hpp" line="39" column="1" bodyfile="ouzel/graphics/MeshBuffer.cpp" bodystart="91" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1044">
+        <label>ouzel::graphics::MeshBuffer</label>
+        <link refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer"/>
+        <childnode refid="1045" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1046">
+        <label>ouzel::graphics::MeshBuffer</label>
+        <link refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer"/>
+        <childnode refid="1047" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/MeshBuffer.hpp" line="19" column="1" bodyfile="ouzel/graphics/MeshBuffer.hpp" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1af5425837a3164bc8dfb3724ac50f2592" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>getIndexBuffer</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a903f867486c8c6fe9965be481cac7e7a" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>getIndexSize</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1abd7ac9fe3032bc771cd7989de9d35ff5" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>getResource</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a0da4ce098741cf14e02e4f6518354fe1" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>getVertexAttributes</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a66c764b828c8181811c85702d9a72742" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>getVertexBuffer</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a364b55e9347dec316f0c43c7d616130a" prot="private" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>indexBuffer</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1abb1df0ea7a8ba820a0fed654c123dbd8" prot="private" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>indexSize</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a171f98ec61e02d66a27dc68591e58344" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>init</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a1be94c514cbad4dd902db3763a7b55d8" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>MeshBuffer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>operator=</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1af825aa6bcb8ccb055a4cd0f726cb70cd" prot="private" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>resource</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1aa57050a5d695450bfe15822bf8b59e12" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>setIndexBuffer</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a9294f8162104212590461ebe6a86b5af" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>setIndexSize</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a84ee359fde12bcd7fcde1dfd4d2e7b54" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>setVertexAttributes</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a38dee27e1ff1430bdee00bf5003602ef" prot="public" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>setVertexBuffer</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1ad3e252642152030e5032b2d061204e71" prot="private" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>vertexAttributes</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1a0291d4c3cccc98d61d43e90de7da3768" prot="private" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>vertexBuffer</name></member>
+      <member refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer_1aa63586bf0829cbe38160061ffd52a66a" prot="public" virt="virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>~MeshBuffer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::MeshBuffer</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command" kind="struct" language="C++" prot="public">
+    <compoundname>ouzel::audio::AudioDevice::RenderCommand</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command_1ab3c49107d01f4ee51dd841ddc39db3d9" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(<ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;listenerPosition, <ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;listenerRotation, float &amp;pitch, float &amp;gain, float &amp;rolloffFactor)&gt;</type>
+        <definition>std::function&lt;void(Vector3&amp; listenerPosition, Quaternion&amp; listenerRotation, float&amp; pitch, float&amp; gain, float&amp; rolloffFactor)&gt; ouzel::audio::AudioDevice::RenderCommand::attributeCallback</definition>
+        <argsstring></argsstring>
+        <name>attributeCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/AudioDevice.hpp" line="38" column="1" bodyfile="ouzel/audio/AudioDevice.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command_1a60b1981022e7a92a0630f4711da6ef1e" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(uint32_t frames, uint16_t channels, uint32_t sampleRate, const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;listenerPosition, const <ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;listenerRotation, float pitch, float gain, float rolloffFactor, std::vector&lt; float &gt; &amp;result)&gt;</type>
+        <definition>std::function&lt;bool(uint32_t frames, uint16_t channels, uint32_t sampleRate, const Vector3&amp; listenerPosition, const Quaternion&amp; listenerRotation, float pitch, float gain, float rolloffFactor, std::vector&lt;float&gt;&amp; result)&gt; ouzel::audio::AudioDevice::RenderCommand::renderCallback</definition>
+        <argsstring></argsstring>
+        <name>renderCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/AudioDevice.hpp" line="48" column="1" bodyfile="ouzel/audio/AudioDevice.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command_1a037b5e9b8732e0015706b674d0d5c229" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command" kindref="compound">RenderCommand</ref> &gt;</type>
+        <definition>std::vector&lt;RenderCommand&gt; ouzel::audio::AudioDevice::RenderCommand::renderCommands</definition>
+        <argsstring></argsstring>
+        <name>renderCommands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/AudioDevice.hpp" line="49" column="1" bodyfile="ouzel/audio/AudioDevice.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ouzel/audio/AudioDevice.hpp" line="33" column="1" bodyfile="ouzel/audio/AudioDevice.hpp" bodystart="32" bodyend="50"/>
+    <listofallmembers>
+      <member refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command_1ab3c49107d01f4ee51dd841ddc39db3d9" prot="public" virt="non-virtual"><scope>ouzel::audio::AudioDevice::RenderCommand</scope><name>attributeCallback</name></member>
+      <member refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command_1a60b1981022e7a92a0630f4711da6ef1e" prot="public" virt="non-virtual"><scope>ouzel::audio::AudioDevice::RenderCommand</scope><name>renderCallback</name></member>
+      <member refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command_1a037b5e9b8732e0015706b674d0d5c229" prot="public" virt="non-virtual"><scope>ouzel::audio::AudioDevice::RenderCommand</scope><name>renderCommands</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

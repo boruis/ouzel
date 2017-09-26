@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/d60/interface_view_controller" kind="class" language="Objective-C" prot="public">
+    <compoundname>ViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d2/d60/interface_view_controller_1a816df276362e4058e1b19018d6d4d6fc" prot="protected" static="no" mutable="no">
+        <type><ref refid="d7/d94/classouzel_1_1_window_i_o_s" kindref="compound">ouzel::WindowIOS</ref> *</type>
+        <definition>ouzel::WindowIOS* ViewController::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/WindowIOS.mm" line="15" column="1" bodyfile="ouzel/core/ios/WindowIOS.mm" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d60/interface_view_controller_1a3c7550e63bea30edc5c7b676665c9d61" prot="protected" static="no" mutable="no">
+        <type><ref refid="dc/dd2/classouzel_1_1_window_t_v_o_s" kindref="compound">ouzel::WindowTVOS</ref> *</type>
+        <definition>ouzel::WindowTVOS* ViewController::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/tvos/WindowTVOS.mm" line="14" column="1" bodyfile="ouzel/core/tvos/WindowTVOS.mm" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1931">
+        <label>ViewController</label>
+        <link refid="d2/d60/interface_view_controller"/>
+        <childnode refid="1932" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1932" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1932">
+        <label>UIViewController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1933">
+        <label>ViewController</label>
+        <link refid="d2/d60/interface_view_controller"/>
+        <childnode refid="1934" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1934" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1935" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+        <childnode refid="1941" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+      </node>
+      <node id="1935">
+        <label>ouzel::WindowTVOS</label>
+        <link refid="dc/dd2/classouzel_1_1_window_t_v_o_s"/>
+        <childnode refid="1936" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1940">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="1938">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1939" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1939">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1937" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1934">
+        <label>UIViewController</label>
+      </node>
+      <node id="1941">
+        <label>ouzel::WindowIOS</label>
+        <link refid="d7/d94/classouzel_1_1_window_i_o_s"/>
+        <childnode refid="1936" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1937">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1936">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="1937" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1938" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1940" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/ios/WindowIOS.mm" line="14" column="1" bodyfile="ouzel/core/ios/WindowIOS.mm" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="d2/d60/interface_view_controller_1a816df276362e4058e1b19018d6d4d6fc" prot="protected" virt="non-virtual"><scope>ViewController</scope><name>window</name></member>
+      <member refid="d2/d60/interface_view_controller_1a3c7550e63bea30edc5c7b676665c9d61" prot="protected" virt="non-virtual"><scope>ViewController</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

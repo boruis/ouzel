@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d1/d87/classouzel_1_1audio_1_1_mixer" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::audio::Mixer</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+    <basecompoundref refid="d0/d32/classouzel_1_1audio_1_1_sound_input" prot="public" virt="non-virtual">ouzel::audio::SoundInput</basecompoundref>
+    <basecompoundref refid="db/da7/classouzel_1_1audio_1_1_sound_output" prot="public" virt="non-virtual">ouzel::audio::SoundOutput</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a929f489420d8f168ae7f7c49ec719a57" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Mixer::pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="41" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a4b0a8b228428ca8eba64ef55711d442c" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Mixer::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="42" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a3415cad6f87b586d2cb5e7cffe3e48e4" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::audio::Mixer::rolloffScale</definition>
+        <argsstring></argsstring>
+        <name>rolloffScale</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="43" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1aefd063b1d06b9ba17054eade8c46ccc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::Mixer::Mixer</definition>
+        <argsstring>()</argsstring>
+        <name>Mixer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="17" column="1" bodyfile="ouzel/audio/Mixer.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a5e10d42285db09c9f428f9b831b426f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::audio::Mixer::~Mixer</definition>
+        <argsstring>()</argsstring>
+        <name>~Mixer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="18" column="1" bodyfile="ouzel/audio/Mixer.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1ad17400fa4b66ee5fe2b4bc650bcbfd20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Mixer::getPitch</definition>
+        <argsstring>() const</argsstring>
+        <name>getPitch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="20" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a699100292bd43e62bc7246c1f55796b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Mixer::setPitch</definition>
+        <argsstring>(float newPitch)</argsstring>
+        <name>setPitch</name>
+        <param>
+          <type>float</type>
+          <declname>newPitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="21" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1ac2fe53781944d087bbf24a17ba680615" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Mixer::getGain</definition>
+        <argsstring>() const</argsstring>
+        <name>getGain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="23" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1ab0e9f28989f1ded6d40cfa0fa2d00407" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Mixer::setGain</definition>
+        <argsstring>(float newGain)</argsstring>
+        <name>setGain</name>
+        <param>
+          <type>float</type>
+          <declname>newGain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="24" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a58feef54d320bd644f4fe3d5145a2979" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::audio::Mixer::getRolloffScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getRolloffScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="26" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a2caae713a7306edb1c0946cdf4c71dff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Mixer::setRolloffScale</definition>
+        <argsstring>(float newRolloffScale)</argsstring>
+        <name>setRolloffScale</name>
+        <param>
+          <type>float</type>
+          <declname>newRolloffScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="27" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a0eb7e27904a4aa6db01af259d9aeab85" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Mixer::addRenderCommands</definition>
+        <argsstring>(std::vector&lt; AudioDevice::RenderCommand &gt; &amp;renderCommands) override</argsstring>
+        <name>addRenderCommands</name>
+        <reimplements refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a039673f6a4443e9c0255e1b36da61e2a">addRenderCommands</reimplements>
+        <param>
+          <type>std::vector&lt; <ref refid="d6/da2/structouzel_1_1audio_1_1_audio_device_1_1_render_command" kindref="compound">AudioDevice::RenderCommand</ref> &gt; &amp;</type>
+          <declname>renderCommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="29" column="1" bodyfile="ouzel/audio/Mixer.cpp" bodystart="21" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="d1/d87/classouzel_1_1audio_1_1_mixer_1a32d1793d545f45037f270eaadbd88ead" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::Mixer::setAttributes</definition>
+        <argsstring>(Vector3 &amp;listenerPosition, Quaternion &amp;listenerRotation, float &amp;pitch, float &amp;gain, float &amp;rolloffFactor, float pitchScale, float gainScale, float rolloffScale)</argsstring>
+        <name>setAttributes</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>listenerPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>listenerRotation</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>rolloffFactor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gainScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rolloffScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/Mixer.hpp" line="32" column="1" bodyfile="ouzel/audio/Mixer.cpp" bodystart="43" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1091">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+      </node>
+      <node id="1089">
+        <label>ouzel::audio::Mixer</label>
+        <link refid="d1/d87/classouzel_1_1audio_1_1_mixer"/>
+        <childnode refid="1090" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1091" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1092" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1092">
+        <label>ouzel::audio::SoundOutput</label>
+        <link refid="db/da7/classouzel_1_1audio_1_1_sound_output"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1095">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>ouzel::audio::Mixer</label>
+        <link refid="d1/d87/classouzel_1_1audio_1_1_mixer"/>
+        <childnode refid="1094" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1096" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1096">
+        <label>ouzel::audio::SoundOutput</label>
+        <link refid="db/da7/classouzel_1_1audio_1_1_sound_output"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/Mixer.hpp" line="15" column="1" bodyfile="ouzel/audio/Mixer.hpp" bodystart="14" bodyend="44"/>
+    <listofallmembers>
+      <member refid="db/da7/classouzel_1_1audio_1_1_sound_output_1adf91c2027e3c910d274fca8ce8f23bdb" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>addInput</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a0eb7e27904a4aa6db01af259d9aeab85" prot="public" virt="virtual"><scope>ouzel::audio::Mixer</scope><name>addRenderCommands</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a4b0a8b228428ca8eba64ef55711d442c" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>gain</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1ac2fe53781944d087bbf24a17ba680615" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>getGain</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a3acf07d9b675e0df4c9fb425a527e19b" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>getOutput</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1ad17400fa4b66ee5fe2b4bc650bcbfd20" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>getPitch</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a58feef54d320bd644f4fe3d5145a2979" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>getRolloffScale</name></member>
+      <member refid="db/da7/classouzel_1_1audio_1_1_sound_output_1a980c85c76fbd4bd72e2e428c09a6d385" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>inputs</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1aefd063b1d06b9ba17054eade8c46ccc4" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>Mixer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>operator=</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1ac2e8ddaf4108024c00e21d28dfe036d2" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>output</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a929f489420d8f168ae7f7c49ec719a57" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>pitch</name></member>
+      <member refid="db/da7/classouzel_1_1audio_1_1_sound_output_1acd9b6658475eeb6c79828736ef0d2118" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>removeInput</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a3415cad6f87b586d2cb5e7cffe3e48e4" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>rolloffScale</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a32d1793d545f45037f270eaadbd88ead" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>setAttributes</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1ab0e9f28989f1ded6d40cfa0fa2d00407" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>setGain</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a7945b8ebcc4c297f202e0a982b26967f" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>setOutput</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a699100292bd43e62bc7246c1f55796b9" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>setPitch</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a2caae713a7306edb1c0946cdf4c71dff" prot="public" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>setRolloffScale</name></member>
+      <member refid="d1/d87/classouzel_1_1audio_1_1_mixer_1a5e10d42285db09c9f428f9b831b426f4" prot="public" virt="virtual"><scope>ouzel::audio::Mixer</scope><name>~Mixer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::audio::Mixer</scope><name>~Noncopyable</name></member>
+      <member refid="d0/d32/classouzel_1_1audio_1_1_sound_input_1a81fd68deb95eea0719efc9f4795b9c8c" prot="public" virt="virtual"><scope>ouzel::audio::Mixer</scope><name>~SoundInput</name></member>
+      <member refid="db/da7/classouzel_1_1audio_1_1_sound_output_1a5b05e1fe0bc7231269f97231f5ba934d" prot="public" virt="virtual"><scope>ouzel::audio::Mixer</scope><name>~SoundOutput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

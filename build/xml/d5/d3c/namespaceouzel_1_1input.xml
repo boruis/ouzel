@@ -1,0 +1,1667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d3c/namespaceouzel_1_1input" kind="namespace" language="C++">
+    <compoundname>ouzel::input</compoundname>
+    <innerclass refid="dc/d6e/classouzel_1_1input_1_1_cursor" prot="public">ouzel::input::Cursor</innerclass>
+    <innerclass refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" prot="public">ouzel::input::CursorResource</innerclass>
+    <innerclass refid="d8/de5/classouzel_1_1input_1_1_cursor_resource_linux" prot="public">ouzel::input::CursorResourceLinux</innerclass>
+    <innerclass refid="d9/d21/classouzel_1_1input_1_1_cursor_resource_mac_o_s" prot="public">ouzel::input::CursorResourceMacOS</innerclass>
+    <innerclass refid="d3/dfe/classouzel_1_1input_1_1_cursor_resource_win" prot="public">ouzel::input::CursorResourceWin</innerclass>
+    <innerclass refid="d8/d28/classouzel_1_1input_1_1_gamepad" prot="public">ouzel::input::Gamepad</innerclass>
+    <innerclass refid="d0/d14/classouzel_1_1input_1_1_gamepad_android" prot="public">ouzel::input::GamepadAndroid</innerclass>
+    <innerclass refid="d4/df7/classouzel_1_1input_1_1_gamepad_d_i" prot="public">ouzel::input::GamepadDI</innerclass>
+    <innerclass refid="d2/dae/classouzel_1_1input_1_1_gamepad_em" prot="public">ouzel::input::GamepadEm</innerclass>
+    <innerclass refid="d7/d81/classouzel_1_1input_1_1_gamepad_g_c" prot="public">ouzel::input::GamepadGC</innerclass>
+    <innerclass refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" prot="public">ouzel::input::GamepadIOKit</innerclass>
+    <innerclass refid="da/d84/classouzel_1_1input_1_1_gamepad_i_o_s" prot="public">ouzel::input::GamepadIOS</innerclass>
+    <innerclass refid="d8/dbe/classouzel_1_1input_1_1_gamepad_linux" prot="public">ouzel::input::GamepadLinux</innerclass>
+    <innerclass refid="d3/d46/classouzel_1_1input_1_1_gamepad_rasp" prot="public">ouzel::input::GamepadRasp</innerclass>
+    <innerclass refid="d6/dda/classouzel_1_1input_1_1_gamepad_t_v_o_s" prot="public">ouzel::input::GamepadTVOS</innerclass>
+    <innerclass refid="de/dba/classouzel_1_1input_1_1_gamepad_x_i" prot="public">ouzel::input::GamepadXI</innerclass>
+    <innerclass refid="d3/d66/classouzel_1_1input_1_1_input" prot="public">ouzel::input::Input</innerclass>
+    <innerclass refid="db/d8b/classouzel_1_1input_1_1_input_android" prot="public">ouzel::input::InputAndroid</innerclass>
+    <innerclass refid="dc/dff/structouzel_1_1input_1_1_input_device_rasp" prot="public">ouzel::input::InputDeviceRasp</innerclass>
+    <innerclass refid="dd/d77/classouzel_1_1input_1_1_input_em" prot="public">ouzel::input::InputEm</innerclass>
+    <innerclass refid="df/d4c/classouzel_1_1input_1_1_input_i_o_s" prot="public">ouzel::input::InputIOS</innerclass>
+    <innerclass refid="de/dcc/classouzel_1_1input_1_1_input_linux" prot="public">ouzel::input::InputLinux</innerclass>
+    <innerclass refid="d5/d85/classouzel_1_1input_1_1_input_mac_o_s" prot="public">ouzel::input::InputMacOS</innerclass>
+    <innerclass refid="d9/dd0/classouzel_1_1input_1_1_input_rasp" prot="public">ouzel::input::InputRasp</innerclass>
+    <innerclass refid="da/d14/classouzel_1_1input_1_1_input_t_v_o_s" prot="public">ouzel::input::InputTVOS</innerclass>
+    <innerclass refid="dc/d58/classouzel_1_1input_1_1_input_win" prot="public">ouzel::input::InputWin</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d8/d35/_cursor_8hpp_1a2ebbe8686bf740b32c89f40a13af8470" prot="public" static="no">
+        <name>SystemCursor</name>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470a5b39c8b553c821e7cddc6da64b5bd2ee" prot="public">
+          <name>DEFAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470aca2dc0c55b6e8d70bafcb4d84f5a9544" prot="public">
+          <name>ARROW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470a41b00f79ae19301abe87bd8bc19120d9" prot="public">
+          <name>HAND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470ab6a22d44355080f1dc8fb462ee9f3c5e" prot="public">
+          <name>HORIZONTAL_RESIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470a53efe7ec1c2246189918d0a5bc5ea69d" prot="public">
+          <name>VERTICAL_RESIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470a04dd53a8e6c2306e9bbf944c1d6047f2" prot="public">
+          <name>CROSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2ebbe8686bf740b32c89f40a13af8470a7483b4a9decfc5be5f5a93f8b1268d6e" prot="public">
+          <name>I_BEAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/Cursor.hpp" line="21" column="1" bodyfile="ouzel/input/Cursor.hpp" bodystart="20" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="d0/d4b/_input_8hpp_1aa88bb3e10797b9db52e15f796e16a731" prot="public" static="no">
+        <name>KeyboardKey</name>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a2027c027133e22c8929e2874dc44dd36" prot="public">
+          <name>CANCEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a6f5d8e41084b4d3d47fa621c459eede1" prot="public">
+          <name>BACKSPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731af684bf05fa3e81528c84d1d281d839f1" prot="public">
+          <name>TAB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a813461e0c58e7ad59a2fd83ca2237fec" prot="public">
+          <name>CLEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aa2bec276a54439fe011eb523b845dac5" prot="public">
+          <name>RETURN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a291554596c183e837f0a6bec3767c891" prot="public">
+          <name>PAUSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a3311a07377a06fb6da7a7fe4dec24d05" prot="public">
+          <name>CAPITAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a50d24f7424037b4de632578f68aab219" prot="public">
+          <name>KANA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aa0b1745ea9f6912b0db50ec7074e9adb" prot="public">
+          <name>HANGUEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a52fcc9bd43896dfc4a18bfc55576d832" prot="public">
+          <name>HANGUL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a2e57527b9f8ed05287694a1e58627d8a" prot="public">
+          <name>JUNJA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a6c8361dc2036c0559376fe4957699f69" prot="public">
+          <name>FINAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0745d6afb79c7eb24dc18082c8d52683" prot="public">
+          <name>HANJA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731adc73166a5cda804c4629197a02af4109" prot="public">
+          <name>KANJI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731adaaedac409335b869929ea43fa44be5d" prot="public">
+          <name>ESCAPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a947a338c0e482e4afcffca292d5944f2" prot="public">
+          <name>CONVERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a18f1eefe90bfb7e983bfafa5e3e72286" prot="public">
+          <name>NONCONVERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a1fd72e016e8fbf2cf1f0c918dcd9bad3" prot="public">
+          <name>ACCEPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a35c3ec45f39f5e097392f4f77285e570" prot="public">
+          <name>MODECHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a6506ae39fdca9845e3a6de3865183e57" prot="public">
+          <name>SPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae4bf0e3d9afa4b59492d1f1a22fb6a37" prot="public">
+          <name>PRIOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a47559fb833ff58321570e5e877b467f6" prot="public">
+          <name>NEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab1a326c06d88bf042f73d70f50197905" prot="public">
+          <name>END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a710533dd879dd1202e5c73b27705bf02" prot="public">
+          <name>HOME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a684d325a7303f52e64011467ff5c5758" prot="public">
+          <name>LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731afbaedde498cdead4f2780217646e9ba1" prot="public">
+          <name>UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a21507b40c80068eda19865706fdc2403" prot="public">
+          <name>RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ac4e0e4e3118472beeb2ae75827450f1f" prot="public">
+          <name>DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a63225f19fccb18e7c709f1fa11bc738e" prot="public">
+          <name>SELECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731af96eee4e48ee90430f17fb3a8388507b" prot="public">
+          <name>PRINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a5d76688e2261e6805ee36ad961b3fa7a" prot="public">
+          <name>EXECUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a46b8744c6bc840d2cb241fa165f3e204" prot="public">
+          <name>SNAPSHOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a61ee777e7f71dc466c3b2c685d8d313b" prot="public">
+          <name>INSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a2bbe23c0e8b3f638f0f5aed4b6864513" prot="public">
+          <name>DEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a969f331a87d8c958473c32b4d0e61a44" prot="public">
+          <name>EQUAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a4fc963e213bba362778f5c175eb4d5ff" prot="public">
+          <name>HELP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0337623d4049d913b2cc509174a59ba1" prot="public">
+          <name>NUM_0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a1eeacfec5e7988f11671c829698fc8b4" prot="public">
+          <name>NUM_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aaa0af80237c5fd531521116e14de59c6" prot="public">
+          <name>NUM_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aa4e4e51ea57e692332c72d32428b3851" prot="public">
+          <name>NUM_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a990299ddc3e16ad13c9fe49337cdb53c" prot="public">
+          <name>NUM_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a02addb75153754910d8344f8bfa06501" prot="public">
+          <name>NUM_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a3b0a1f52347b7d7dc426c49536e3edba" prot="public">
+          <name>NUM_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731af45fde1eaac63c5a55cf87e584f5e6bb" prot="public">
+          <name>NUM_7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ade5947451686ebff12b3b3feb15043f4" prot="public">
+          <name>NUM_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aad6039189d8fe566b7dfe30ea70f8b4d" prot="public">
+          <name>NUM_9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a7fc56270e7a70fa81a5935b72eacbe29" prot="public">
+          <name>A</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a9d5ed678fe57bcca610140957afab571" prot="public">
+          <name>B</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0d61f8370cad1d412f80b84d143e1257" prot="public">
+          <name>C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731af623e75af30e62bbd73d6df5b50bb7b5" prot="public">
+          <name>D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a3a3ea00cfc35332cedf6e5e9a32e94da" prot="public">
+          <name>E</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a800618943025315f869e4e1f09471012" prot="public">
+          <name>F</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731adfcf28d0734569a6a693bc8194de62bf" prot="public">
+          <name>G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ac1d9f50f86825a1a2302ec2449c17196" prot="public">
+          <name>H</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731add7536794b63bf90eccfd37f9b147d7f" prot="public">
+          <name>I</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aff44570aca8241914870afbc310cdb85" prot="public">
+          <name>J</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aa5f3c6a11b03839d46af9fb43c97c188" prot="public">
+          <name>K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ad20caec3b48a1eef164cb4ca81ba2587" prot="public">
+          <name>L</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a69691c7bdcc3ce6d5d8a1361f22d04ac" prot="public">
+          <name>M</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a8d9c307cb7f3c4a32822a51922d1ceaa" prot="public">
+          <name>N</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731af186217753c37b9b9f958d906208506e" prot="public">
+          <name>O</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a44c29edb103a2872f519ad0c9a0fdaaa" prot="public">
+          <name>P</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731af09564c9ca56850d4cd6b3319e541aee" prot="public">
+          <name>Q</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae1e1d3d40573127e9ee0480caf1283d6" prot="public">
+          <name>R</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a5dbc98dcc983a70728bd082d1a47546e" prot="public">
+          <name>S</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab9ece18c950afbfa6b0fdbfa4ff731d3" prot="public">
+          <name>T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a4c614360da93c0a041b22e537de151eb" prot="public">
+          <name>U</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a5206560a306a2e085a437fd258eb57ce" prot="public">
+          <name>V</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a61e9c06ea9a85a5088a499df6458d276" prot="public">
+          <name>W</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a57cec4137b614c87cb4e24a3d003a3e0" prot="public">
+          <name>Y</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a21c2e59531c8710156d34a3c30ac81d5" prot="public">
+          <name>Z</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731afd816cf0346d4939b4cf3bed78dd7fde" prot="public">
+          <name>LEFT_SUPER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a8825bb5d58b44b72465799553acb964d" prot="public">
+          <name>RIGHT_SUPER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a3ed53fbeb1eab0443561b68ca0c0b5cf" prot="public">
+          <name>MENU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab32bd403b93dc6deffdab7af55e82596" prot="public">
+          <name>SLEEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a9bb4dd0ba40ffc2fa1ec50d08db691fe" prot="public">
+          <name>NUMPAD_0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a1c2930203f9db620f021a0057bce1083" prot="public">
+          <name>NUMPAD_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ad4e2ef4b35fc73b57c948a6ff185db03" prot="public">
+          <name>NUMPAD_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ac803fe2d547f6ebb4790f7b3d7db8416" prot="public">
+          <name>NUMPAD_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a58309d94a4fb2cf5ba149b424b15ee37" prot="public">
+          <name>NUMPAD_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae458fd1f37a6455c64cffef80002c7b9" prot="public">
+          <name>NUMPAD_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a8db887e1428df089de45bcadaf50120b" prot="public">
+          <name>NUMPAD_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a33a277bfd7cd8357e1c6fe453cd356a6" prot="public">
+          <name>NUMPAD_7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae8d32efc60c71e13cda5be345ebd62be" prot="public">
+          <name>NUMPAD_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a4d6126c6fb698368c66aacc9811623dc" prot="public">
+          <name>NUMPAD_9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a080aaf8d817ada96fca7096b7b55bd30" prot="public">
+          <name>MULTIPLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a9eeb52badb613229884838847294b90d" prot="public">
+          <name>ADD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a70bb8dc90aa233a66b91ae2e9dc1a850" prot="public">
+          <name>SEPARATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a23ebcc4776b613af25dfbe7c8ce4813e" prot="public">
+          <name>SUBTRACT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a13d992d671957e9a2b3e936ca0cf14a4" prot="public">
+          <name>DECIMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a210c66d794cec40488f3f8f634d6c33b" prot="public">
+          <name>DIVIDE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae1dffc8709f31a4987c8a88334107e89" prot="public">
+          <name>F1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731afe5c3684dce76cdd9f7f42430868aa74" prot="public">
+          <name>F2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a4b6bf4b531770872d4328ce69bef5627" prot="public">
+          <name>F3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae7e0e72401a9f2718ed0f39f2861d702" prot="public">
+          <name>F4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a37f438df6a6d5ba4c17ef8ca58562f00" prot="public">
+          <name>F5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a1faf42f2823f184eb2c9f0dffe5d73f2" prot="public">
+          <name>F6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a47489eb597b7db34caa24b1fc78fc839" prot="public">
+          <name>F7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a4787509ad9f9d747a81a30e9dde3d4a7" prot="public">
+          <name>F8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a892a245e287c163080b23db737d3c4c9" prot="public">
+          <name>F9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab213ce22ca6ad4eda8db82966b9b6e5a" prot="public">
+          <name>F10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a643b0662422d1d0dffa3fca2e2bf28a8" prot="public">
+          <name>F11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae902674982fc99aa343cdd94da7476c3" prot="public">
+          <name>F12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a95dfde4807d4d6a9eec499203b3c24a0" prot="public">
+          <name>F13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a2468649b6215c4cdd2aef5095b3f5932" prot="public">
+          <name>F14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae53b55851b9ff4979f2c3ff434a4a138" prot="public">
+          <name>F15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a56d8353718e6fdc78b8d69078a2cdb94" prot="public">
+          <name>F16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731affa5882d1ddcf903bf0d0dbc30bfc604" prot="public">
+          <name>F17</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a810b30cdfc07fd7fff553a94b828ff78" prot="public">
+          <name>F18</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731acd7c2a221ef5d0a34acc0bcd679b2054" prot="public">
+          <name>F19</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731afc335adb3d69d3d8270769e1923ea4dc" prot="public">
+          <name>F20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a77e9eee7c579eef5f3731ecf1053c02e" prot="public">
+          <name>F21</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a7fa06ead699fcbd63132370ffe13335a" prot="public">
+          <name>F22</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a889645d530078147e7dc69a9caadc31e" prot="public">
+          <name>F23</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aebd7820c520d05eca2d775c37d141273" prot="public">
+          <name>F24</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a85d3da2efdb4dd062f1a97b86ba66f98" prot="public">
+          <name>NUMLOCK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a71574275cadb387a5082e87e9dd60c25" prot="public">
+          <name>SCROLL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab6c7e6204e97690efd79d6f513ed5613" prot="public">
+          <name>LEFT_SHIFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a63a707029860972efa1c44ac6016e098" prot="public">
+          <name>RIGHT_SHIFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731addf133566f544b297f2f84874c283589" prot="public">
+          <name>LEFT_CONTROL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a80cdb34a10d276950f8b20b6814c9194" prot="public">
+          <name>RIGHT_CONTROL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a3a92f3bbf26e4ea5ea7ce7db2f432c56" prot="public">
+          <name>LEFT_ALT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0123827c03dce5d07ebd43bd649a1073" prot="public">
+          <name>RIGHT_ALT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731abaaceccc27b1d4e0968c999583f97de5" prot="public">
+          <name>SEMICOLON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a883acd43c77567e1c3baced84ccf6ed7" prot="public">
+          <name>PLUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a4d9b3e9fc12849d060371eb65154c751" prot="public">
+          <name>COMMA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731affc0d9b54a1fe677c4c9e6b050e67c81" prot="public">
+          <name>MINUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ade58a28573783fe95304a260ccd90362" prot="public">
+          <name>PERIOD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a646da671ca01bb5d84dbb5fb2238dc8e" prot="public">
+          <name>SLASH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0454988b6250b7e13d8e9222e118c127" prot="public">
+          <name>GRAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0c2629e56daed25c9df918961d0cc03f" prot="public">
+          <name>LEFT_BRACKET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aecb4a6f3440c2ed0dff59f17375a27c0" prot="public">
+          <name>BACKSLASH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a91d8d0b84f26c3e30fb064ea4fc1090f" prot="public">
+          <name>RIGHT_BRACKET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab6473d082e47c479ca94a81a5daeff14" prot="public">
+          <name>QUOTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a7b7198b53f3e75856751bb887bd0a4c7" prot="public">
+          <name>OEM_AX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a1798e8c3621ca53d9e3a80d257306000" prot="public">
+          <name>LESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a9ba19928f8580dddc1034f923f100c61" prot="public">
+          <name>ATTN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a0636e7043179b1f82dc5c3895601f25b" prot="public">
+          <name>CRSEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731adeef77e3f3bc57e49c7cf50c3099d09e" prot="public">
+          <name>EXSEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ae6331bffb378056de602baa3b4b0dc25" prot="public">
+          <name>EREOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a6a216efc529825c60a4a4c0bc99ad77f" prot="public">
+          <name>PLAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a66f276916d5a97cbb3b0008213bda1c3" prot="public">
+          <name>ZOOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731aa710c83fe312da3eb8c7181f531aa942" prot="public">
+          <name>PA1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731a3f29c1e75a8cf7ee4857bb142816c104" prot="public">
+          <name>OEM_CLEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa88bb3e10797b9db52e15f796e16a731ab1e6bc2f8d330abe1a6be2a1779f3e32" prot="public">
+          <name>KEY_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/Input.hpp" line="23" column="1" bodyfile="ouzel/input/Input.hpp" bodystart="22" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="enum" id="d0/d4b/_input_8hpp_1aa3a4bf2306060bdcbe849965c8ffc7a3" prot="public" static="no">
+        <name>MouseButton</name>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3ab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3a684d325a7303f52e64011467ff5c5758" prot="public">
+          <name>LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3a21507b40c80068eda19865706fdc2403" prot="public">
+          <name>RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3a43eedd8685eb86592022f8da962e3474" prot="public">
+          <name>MIDDLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3abb7f5ae6220c9828e5ec91faf054197c" prot="public">
+          <name>X1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3a54105bddbfe3f639d49cbe8f5182c958" prot="public">
+          <name>X2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1aa3a4bf2306060bdcbe849965c8ffc7a3ac82454047cffd25acc9fce388b9cb47f" prot="public">
+          <name>BUTTON_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/Input.hpp" line="175" column="1" bodyfile="ouzel/input/Input.hpp" bodystart="174" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="enum" id="d0/d4b/_input_8hpp_1a2d8ef0adf059d9a31f2d6999b1604457" prot="public" static="no">
+        <name>GamepadButton</name>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457ab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a2206bf25efcd102b0102f7ff4df45c99" prot="public">
+          <name>DPAD_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a5faad20a625bae1d890868782aae45ba" prot="public">
+          <name>DPAD_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a53f4f819b43470f230aea73335a5f091" prot="public">
+          <name>DPAD_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457aed0ea47a6800b933a16cd91169c338f7" prot="public">
+          <name>DPAD_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a61a1484b6865843eeb9cf4d92ca5a907" prot="public">
+          <name>FACE_BOTTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457af02c4c22d8d4a23f4f8f595faa049c56" prot="public">
+          <name>FACE_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a24f304f1ec302267ccbd025dc1c340c0" prot="public">
+          <name>FACE_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457ae475f7bb6ff89cd8f31598d10cb54e03" prot="public">
+          <name>FACE_TOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457af1f5fbc485f4b2ebbd82ae940959b693" prot="public">
+          <name>LEFT_SHOULDER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a87cefa1bf6e203cee834747ea138e766" prot="public">
+          <name>LEFT_TRIGGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a8442084df8c845d9ea3331660028e9e5" prot="public">
+          <name>RIGHT_SHOULDER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a1c6f9e180caaad13119136f0193b64e0" prot="public">
+          <name>RIGHT_TRIGGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457ac11c9390d891e0141f30f32eb6e9df73" prot="public">
+          <name>LEFT_THUMB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457afe06fde5e187b4db08f57817eed103f9" prot="public">
+          <name>RIGHT_THUMB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457ab078ffd28db767c502ac367053f6e0ac" prot="public">
+          <name>START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a1dd26f1f1790f0b56d5752fb0fbecef0" prot="public">
+          <name>BACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a291554596c183e837f0a6bec3767c891" prot="public">
+          <name>PAUSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a92d7068d061d0a93c259107a718a5ea2" prot="public">
+          <name>LEFT_THUMB_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a434a7831662a00b4d537163793a0ce6a" prot="public">
+          <name>LEFT_THUMB_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457ae4a9b5ab6bc4a4b242e4d0d6dd3111ce" prot="public">
+          <name>LEFT_THUMB_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a4cf8982fced5a08921b38c5e0ca6e93f" prot="public">
+          <name>LEFT_THUMB_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a8d06182c2b40eef1bb797d3fff4abfe1" prot="public">
+          <name>RIGHT_THUMB_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a5269c1d8769aa0dd29226b067c36ea38" prot="public">
+          <name>RIGHT_THUMB_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a7db7c11488be9b8ed670272ee4f70dc6" prot="public">
+          <name>RIGHT_THUMB_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457a498721c08541749d4de891f656450567" prot="public">
+          <name>RIGHT_THUMB_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a2d8ef0adf059d9a31f2d6999b1604457ac82454047cffd25acc9fce388b9cb47f" prot="public">
+          <name>BUTTON_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/Input.hpp" line="187" column="1" bodyfile="ouzel/input/Input.hpp" bodystart="186" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d0/ddd/_input_android_8cpp_1af4b2377d55fca8c413d040027cbaf0c1" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; jint, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;jint, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/android/InputAndroid.cpp" line="16" column="1" bodyfile="ouzel/input/android/InputAndroid.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d0e/_gamepad_em_8cpp_1ab39c1daf0d77d4016763952f97b7838e" prot="public" static="yes" mutable="no">
+        <type>GamepadButton</type>
+        <definition>GamepadButton ouzel::input::buttonMap[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>buttonMap</name>
+        <initializer>= {
+            GamepadButton::FACE_BOTTOM, 
+            GamepadButton::FACE_RIGHT, 
+            GamepadButton::FACE_LEFT, 
+            GamepadButton::FACE_TOP, 
+            GamepadButton::LEFT_SHOULDER, 
+            GamepadButton::RIGHT_SHOULDER, 
+            GamepadButton::LEFT_TRIGGER, 
+            GamepadButton::RIGHT_TRIGGER, 
+            GamepadButton::BACK, 
+            GamepadButton::START, 
+            GamepadButton::LEFT_THUMB, 
+            GamepadButton::RIGHT_THUMB, 
+            GamepadButton::DPAD_UP, 
+            GamepadButton::DPAD_DOWN, 
+            GamepadButton::DPAD_LEFT, 
+            GamepadButton::DPAD_RIGHT, 
+            GamepadButton::PAUSE 
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/GamepadEm.cpp" line="18" column="1" bodyfile="ouzel/input/emscripten/GamepadEm.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d89/_input_em_8cpp_1a2d1f999e10bf4c7938a160aadb89dc96" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; std::string, KeyboardKey &gt;</type>
+        <definition>std::map&lt;std::string, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/emscripten/InputEm.cpp" line="130" column="1" bodyfile="ouzel/input/emscripten/InputEm.cpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/de8/_input_i_o_s_8mm_1a2c24b1ff080610e6b1b03185cffdd491" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; NSInteger, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;NSInteger, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <initializer>= {
+            {UIPressTypeUpArrow, KeyboardKey::UP},
+            {UIPressTypeDownArrow, KeyboardKey::DOWN},
+            {UIPressTypeLeftArrow, KeyboardKey::LEFT},
+            {UIPressTypeRightArrow, KeyboardKey::RIGHT},
+            {UIPressTypeSelect, KeyboardKey::SELECT},
+            {UIPressTypeMenu, KeyboardKey::MENU},
+            {UIPressTypePlayPause, KeyboardKey::PAUSE}
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/ios/InputIOS.mm" line="51" column="1" bodyfile="ouzel/input/ios/InputIOS.mm" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/ddf/_input_linux_8cpp_1a9b182099abc0552f6d65c566e0ed4a21" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; KeySym, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;KeySym, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.cpp" line="17" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9c/_input_mac_o_s_8mm_1adffca360387623202cf90047b9f8a722" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; uint16_t, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;uint16_t, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.mm" line="77" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9c/_input_mac_o_s_8mm_1a1496fb86c5c7ba2224614a27e3c99437" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; uint16_t, NSUInteger &gt;</type>
+        <definition>const std::map&lt;uint16_t, NSUInteger&gt; ouzel::input::maskMap</definition>
+        <argsstring></argsstring>
+        <name>maskMap</name>
+        <initializer>= {
+            {kVK_Control, NX_DEVICELCTLKEYMASK},
+            {kVK_RightControl, NX_DEVICERCTLKEYMASK},
+            {kVK_Command, NX_DEVICELCMDKEYMASK},
+            {kVK_RightCommand, NX_DEVICERCMDKEYMASK},
+            {kVK_Shift, NX_DEVICELSHIFTKEYMASK},
+            {kVK_RightShift, NX_DEVICERSHIFTKEYMASK},
+            {kVK_Option, NX_DEVICELALTKEYMASK},
+            {kVK_RightOption, NX_DEVICERALTKEYMASK}
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/InputMacOS.mm" line="197" column="1" bodyfile="ouzel/input/macos/InputMacOS.mm" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d33/_input_rasp_8cpp_1adffca360387623202cf90047b9f8a722" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; uint16_t, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;uint16_t, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.cpp" line="30" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d61/_input_t_v_o_s_8mm_1a2c24b1ff080610e6b1b03185cffdd491" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; NSInteger, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;NSInteger, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <initializer>= {
+            {UIPressTypeUpArrow, KeyboardKey::UP},
+            {UIPressTypeDownArrow, KeyboardKey::DOWN},
+            {UIPressTypeLeftArrow, KeyboardKey::LEFT},
+            {UIPressTypeRightArrow, KeyboardKey::RIGHT},
+            {UIPressTypeSelect, KeyboardKey::SELECT},
+            {UIPressTypeMenu, KeyboardKey::MENU},
+            {UIPressTypePlayPause, KeyboardKey::PAUSE}
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/tvos/InputTVOS.mm" line="51" column="1" bodyfile="ouzel/input/tvos/InputTVOS.mm" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d62/_gamepad_x_i_8cpp_1af6084193c9e10f1c436019c7405928c3" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t ouzel::input::MAX_THUMB_VALUE</definition>
+        <argsstring></argsstring>
+        <name>MAX_THUMB_VALUE</name>
+        <initializer>= 32767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.cpp" line="13" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d62/_gamepad_x_i_8cpp_1acdb1e0eb6e428e77483b4467132c2f41" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t ouzel::input::MIN_THUMB_VALUE</definition>
+        <argsstring></argsstring>
+        <name>MIN_THUMB_VALUE</name>
+        <initializer>= -32768</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadXI.cpp" line="14" column="1" bodyfile="ouzel/input/windows/GamepadXI.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/db6/_input_win_8cpp_1aff004c48ce5902be70de3713dec82e3e" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; UINT, KeyboardKey &gt;</type>
+        <definition>const std::map&lt;UINT, KeyboardKey&gt; ouzel::input::keyMap</definition>
+        <argsstring></argsstring>
+        <name>keyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/InputWin.cpp" line="29" column="1" bodyfile="ouzel/input/windows/InputWin.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d8/d33/_input_rasp_8cpp_1a5a6987012d02c4fa85bc89db8c4bebbb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KeyboardKey</type>
+        <definition>static KeyboardKey ouzel::input::convertKeyCode</definition>
+        <argsstring>(uint16_t keyCode)</argsstring>
+        <name>convertKeyCode</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/raspbian/InputRasp.cpp" line="174" column="1" bodyfile="ouzel/input/raspbian/InputRasp.cpp" bodystart="174" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d3f/_gamepad_d_i_8cpp_1a664e65ce63b7b13c1dbc70aa19c3e216" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LONG</type>
+        <definition>static LONG ouzel::input::getAxisValue</definition>
+        <argsstring>(const DIJOYSTATE2 &amp;state, size_t offset)</argsstring>
+        <name>getAxisValue</name>
+        <param>
+          <type>const DIJOYSTATE2 &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadDI.cpp" line="398" column="1" bodyfile="ouzel/input/windows/GamepadDI.cpp" bodystart="398" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d3f/_gamepad_d_i_8cpp_1a8561ee5491bdbccf2b64ecb767eceb33" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ouzel::input::setAxisValue</definition>
+        <argsstring>(DIJOYSTATE2 &amp;state, size_t offset, LONG value)</argsstring>
+        <name>setAxisValue</name>
+        <param>
+          <type>DIJOYSTATE2 &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>LONG</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/windows/GamepadDI.cpp" line="403" column="1" bodyfile="ouzel/input/windows/GamepadDI.cpp" bodystart="403" bodyend="406"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ouzel/input/android/GamepadAndroid.cpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

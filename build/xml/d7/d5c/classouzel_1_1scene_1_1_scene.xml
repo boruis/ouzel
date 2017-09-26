@@ -1,0 +1,725 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d5c/classouzel_1_1scene_1_1_scene" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::scene::Scene</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1aedd44e015177f8fad07cc25a7371f863" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::scene::Scene::SceneManager</definition>
+        <argsstring></argsstring>
+        <name>SceneManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="22" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1aa00f06c28fe6148aec13fd9e121f60de" prot="protected" static="no" mutable="no">
+        <type><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">SceneManager</ref> *</type>
+        <definition>SceneManager* ouzel::scene::Scene::sceneManger</definition>
+        <argsstring></argsstring>
+        <name>sceneManger</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="79" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a94fe6d221cf5a8b7c5b22b49d9a90e9a" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> * &gt;</type>
+        <definition>std::vector&lt;Layer*&gt; ouzel::scene::Scene::layers</definition>
+        <argsstring></argsstring>
+        <name>layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="81" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a13bfb6b905e86a6c8de80f059554f4cb" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Layer&gt; &gt; ouzel::scene::Scene::ownedLayers</definition>
+        <argsstring></argsstring>
+        <name>ownedLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="82" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a646c2ae19da9758756d916253d957a23" prot="protected" static="no" mutable="no">
+        <type><ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">ouzel::EventHandler</ref></type>
+        <definition>ouzel::EventHandler ouzel::scene::Scene::eventHandler</definition>
+        <argsstring></argsstring>
+        <name>eventHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="83" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a9f6799a1bafd65af5d9a9e04c403c8e7" prot="protected" static="no" mutable="no">
+        <type>std::unordered_map&lt; uint64_t, std::pair&lt; <ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *, <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">ouzel::Vector3</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;uint64_t, std::pair&lt;Actor*, ouzel::Vector3&gt; &gt; ouzel::scene::Scene::pointerDownOnActors</definition>
+        <argsstring></argsstring>
+        <name>pointerDownOnActors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="85" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d5c/classouzel_1_1scene_1_1_scene_1aa22bccc2d6ba6aef7446fbde80e8380e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::entered</definition>
+        <argsstring></argsstring>
+        <name>entered</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="87" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a5fd3ac60de253db16379954582963b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Scene::Scene</definition>
+        <argsstring>()</argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="24" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a35f27c3e8a9ec3c1c9d865c734c86598" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::scene::Scene::~Scene</definition>
+        <argsstring>()</argsstring>
+        <name>~Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="25" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a962331ceb5565b2939bf5a0d760575c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="27" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a9e92659aa69a297ea6f545f59b08480f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::addLayer</definition>
+        <argsstring>(Layer *layer)</argsstring>
+        <name>addLayer</name>
+        <param>
+          <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="29" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a4761d1b11ffefadc102b6b6001ded0eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::addLayer</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;layer)</argsstring>
+        <name>addLayer</name>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="33" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a08e5fd9bce7888d42c9e07b62cbb40d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::addLayer</definition>
+        <argsstring>(std::unique_ptr&lt; T &gt; &amp;&amp;layer)</argsstring>
+        <name>addLayer</name>
+        <param>
+          <type>std::unique_ptr&lt; T &gt; &amp;&amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="37" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a193695342d7838d00902c619ea4f7cfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::removeLayer</definition>
+        <argsstring>(Layer *layer)</argsstring>
+        <name>removeLayer</name>
+        <param>
+          <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="43" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1ada6d22f5127d12199cc0526b732e814a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::removeLayer</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;layer)</argsstring>
+        <name>removeLayer</name>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="47" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1acd84bafa9864645f38d7783c415a3b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::removeAllLayers</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="51" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="91" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a06dc69e667757f63a51c0e3ee47aa97e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::hasLayer</definition>
+        <argsstring>(Layer *layer) const</argsstring>
+        <name>hasLayer</name>
+        <param>
+          <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="52" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="105" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1af5c51f3eb5fefee445de09a0d28cfcfb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> * &gt; &amp;</type>
+        <definition>const std::vector&lt;Layer*&gt;&amp; ouzel::scene::Scene::getLayers</definition>
+        <argsstring>() const</argsstring>
+        <name>getLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="53" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a09ef43aab30ea0340a4e98214ab9d1c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::recalculateProjection</definition>
+        <argsstring>()</argsstring>
+        <name>recalculateProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="55" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a7d47ae0d8a6fdede1a985916059a0d7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *, <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">ouzel::Vector3</ref> &gt;</type>
+        <definition>std::pair&lt; Actor *, ouzel::Vector3 &gt; ouzel::scene::Scene::pickActor</definition>
+        <argsstring>(const Vector2 &amp;position, bool renderTargets=false) const</argsstring>
+        <name>pickActor</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>renderTargets</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="57" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="120" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a3c25af718caeabc5dba16cac7060fdc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; <ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *, <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">ouzel::Vector3</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; Actor *, ouzel::Vector3 &gt; &gt; ouzel::scene::Scene::pickActors</definition>
+        <argsstring>(const Vector2 &amp;position, bool renderTargets=false) const</argsstring>
+        <name>pickActors</name>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>renderTargets</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="58" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="136" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a91ba122fc9069c83fc9cdbc124cb376a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> * &gt;</type>
+        <definition>std::vector&lt; Actor * &gt; ouzel::scene::Scene::pickActors</definition>
+        <argsstring>(const std::vector&lt; Vector2 &gt; &amp;edges, bool renderTargets=false) const</argsstring>
+        <name>pickActors</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &gt; &amp;</type>
+          <declname>edges</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>renderTargets</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="59" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="150" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1af51d6fe3fdfe82aa8d052183fe242103" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::addChildLayer</definition>
+        <argsstring>(Layer *layer)</argsstring>
+        <name>addChildLayer</name>
+        <param>
+          <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="62" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="47" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a78855dd23e4c9bee1387d6aa3ebbf347" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::removeChildLayer</definition>
+        <argsstring>(Layer *layer)</argsstring>
+        <name>removeChildLayer</name>
+        <param>
+          <type><ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="63" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="59" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a09a6406830dccd88318995f0720b27a6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::enter</definition>
+        <argsstring>()</argsstring>
+        <name>enter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="65" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="164" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a0a440214ff08afbc770f45436c44aaf1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::leave</definition>
+        <argsstring>()</argsstring>
+        <name>leave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="66" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="177" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1aa360d79cd84a61e3a1281d60b38c5e80" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::handleWindow</definition>
+        <argsstring>(Event::Type type, const WindowEvent &amp;event)</argsstring>
+        <name>handleWindow</name>
+        <param>
+          <type>Event::Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="68" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="189" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a4d6767fd3a1ab7177bbf8630ec474f9a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::handleMouse</definition>
+        <argsstring>(Event::Type type, const MouseEvent &amp;event)</argsstring>
+        <name>handleMouse</name>
+        <param>
+          <type>Event::Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/structouzel_1_1_mouse_event" kindref="compound">MouseEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="69" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="199" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1af3ce4b8c16d37097c86ab4fe1aa976bc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Scene::handleTouch</definition>
+        <argsstring>(Event::Type type, const TouchEvent &amp;event)</argsstring>
+        <name>handleTouch</name>
+        <param>
+          <type>Event::Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/df9/structouzel_1_1_touch_event" kindref="compound">TouchEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="70" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="238" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1ae6f91e8428be80221bc33e7a26eb9cec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::pointerEnterActor</definition>
+        <argsstring>(uint64_t pointerId, Actor *actor, const Vector2 &amp;position)</argsstring>
+        <name>pointerEnterActor</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>pointerId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="72" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="283" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1aea4ecb58edadeecffd95840897639fb5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::pointerLeaveActor</definition>
+        <argsstring>(uint64_t pointerId, Actor *actor, const Vector2 &amp;position)</argsstring>
+        <name>pointerLeaveActor</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>pointerId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="73" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="298" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a4f48452c521fbb662b073a4eb31f443d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::pointerDownOnActor</definition>
+        <argsstring>(uint64_t pointerId, Actor *actor, const Vector2 &amp;position, const Vector3 &amp;localPosition)</argsstring>
+        <name>pointerDownOnActor</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>pointerId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>localPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="74" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="313" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1a72cf72131290eb8f4eca07f5b6eaa9b4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::pointerUpOnActor</definition>
+        <argsstring>(uint64_t pointerId, Actor *actor, const Vector2 &amp;position)</argsstring>
+        <name>pointerUpOnActor</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>pointerId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="75" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="331" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5c/classouzel_1_1scene_1_1_scene_1af598b60bc6edb11ea10e7a37a2f8f537" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Scene::pointerDragActor</definition>
+        <argsstring>(uint64_t pointerId, Actor *actor, const Vector2 &amp;position, const Vector2 &amp;difference, const ouzel::Vector3 &amp;localPosition)</argsstring>
+        <name>pointerDragActor</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>pointerId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>difference</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">ouzel::Vector3</ref> &amp;</type>
+          <declname>localPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/Scene.hpp" line="76" column="1" bodyfile="ouzel/scene/Scene.cpp" bodystart="368" bodyend="384"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1492">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1491">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1492" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1495">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1496" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1496">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1494" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1497">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1494" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1494">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1493">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1494" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1497" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/scene/Scene.hpp" line="21" column="1" bodyfile="ouzel/scene/Scene.hpp" bodystart="20" bodyend="88"/>
+    <listofallmembers>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1af51d6fe3fdfe82aa8d052183fe242103" prot="protected" virt="virtual"><scope>ouzel::scene::Scene</scope><name>addChildLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a9e92659aa69a297ea6f545f59b08480f" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>addLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a4761d1b11ffefadc102b6b6001ded0eb" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>addLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a08e5fd9bce7888d42c9e07b62cbb40d7" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>addLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a962331ceb5565b2939bf5a0d760575c5" prot="public" virt="virtual"><scope>ouzel::scene::Scene</scope><name>draw</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a09a6406830dccd88318995f0720b27a6" prot="protected" virt="virtual"><scope>ouzel::scene::Scene</scope><name>enter</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1aa22bccc2d6ba6aef7446fbde80e8380e" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>entered</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a646c2ae19da9758756d916253d957a23" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>eventHandler</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1af5c51f3eb5fefee445de09a0d28cfcfb" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>getLayers</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a4d6767fd3a1ab7177bbf8630ec474f9a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>handleMouse</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1af3ce4b8c16d37097c86ab4fe1aa976bc" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>handleTouch</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1aa360d79cd84a61e3a1281d60b38c5e80" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>handleWindow</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a06dc69e667757f63a51c0e3ee47aa97e" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>hasLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a94fe6d221cf5a8b7c5b22b49d9a90e9a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>layers</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a0a440214ff08afbc770f45436c44aaf1" prot="protected" virt="virtual"><scope>ouzel::scene::Scene</scope><name>leave</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>operator=</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a13bfb6b905e86a6c8de80f059554f4cb" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>ownedLayers</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a7d47ae0d8a6fdede1a985916059a0d7a" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pickActor</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a3c25af718caeabc5dba16cac7060fdc5" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pickActors</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a91ba122fc9069c83fc9cdbc124cb376a" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pickActors</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a4f48452c521fbb662b073a4eb31f443d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pointerDownOnActor</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a9f6799a1bafd65af5d9a9e04c403c8e7" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pointerDownOnActors</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1af598b60bc6edb11ea10e7a37a2f8f537" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pointerDragActor</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1ae6f91e8428be80221bc33e7a26eb9cec" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pointerEnterActor</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1aea4ecb58edadeecffd95840897639fb5" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pointerLeaveActor</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a72cf72131290eb8f4eca07f5b6eaa9b4" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>pointerUpOnActor</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a09ef43aab30ea0340a4e98214ab9d1c1" prot="public" virt="virtual"><scope>ouzel::scene::Scene</scope><name>recalculateProjection</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1acd84bafa9864645f38d7783c415a3b4b" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>removeAllLayers</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a78855dd23e4c9bee1387d6aa3ebbf347" prot="protected" virt="virtual"><scope>ouzel::scene::Scene</scope><name>removeChildLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a193695342d7838d00902c619ea4f7cfb" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>removeLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1ada6d22f5127d12199cc0526b732e814a" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>removeLayer</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a5fd3ac60de253db16379954582963b56" prot="public" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>Scene</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1aedd44e015177f8fad07cc25a7371f863" prot="private" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>SceneManager</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1aa00f06c28fe6148aec13fd9e121f60de" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>sceneManger</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::scene::Scene</scope><name>~Noncopyable</name></member>
+      <member refid="d7/d5c/classouzel_1_1scene_1_1_scene_1a35f27c3e8a9ec3c1c9d865c734c86598" prot="public" virt="virtual"><scope>ouzel::scene::Scene</scope><name>~Scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

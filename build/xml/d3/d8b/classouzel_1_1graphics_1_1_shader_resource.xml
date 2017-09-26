@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::ShaderResource</compoundname>
+    <basecompoundref refid="d5/d7c/classouzel_1_1graphics_1_1_resource" prot="public" virt="non-virtual">ouzel::graphics::Resource</basecompoundref>
+    <derivedcompoundref refid="d1/d4f/classouzel_1_1graphics_1_1_shader_resource_empty" prot="public" virt="non-virtual">ouzel::graphics::ShaderResourceEmpty</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a219d077b7b48bcf8d83116a0f2c96591" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::graphics::ShaderResource::Renderer</definition>
+        <argsstring></argsstring>
+        <name>Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="23" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a4c7f8368477d9a9b9d83e286d149d3c6" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt;</type>
+        <definition>std::vector&lt;VertexAttribute&gt; ouzel::graphics::ShaderResource::vertexAttributes</definition>
+        <argsstring></argsstring>
+        <name>vertexAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="46" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a8a5f9b95d54bda6a59034eecdf740c08" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::ShaderResource::vertexSize</definition>
+        <argsstring></argsstring>
+        <name>vertexSize</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="47" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a837a61c0dabe67b9bb563ca3a35eee3d" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; ouzel::graphics::ShaderResource::pixelShaderData</definition>
+        <argsstring></argsstring>
+        <name>pixelShaderData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="49" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1adf55557c8f807d858cfdbaa70136cbfa" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; ouzel::graphics::ShaderResource::vertexShaderData</definition>
+        <argsstring></argsstring>
+        <name>vertexShaderData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="50" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a1c1ae9dd0fd7aeaeb6d194559e8a8a71" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::graphics::ShaderResource::pixelShaderFunction</definition>
+        <argsstring></argsstring>
+        <name>pixelShaderFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="51" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1ac780b920f14e4532410cba3419a6c667" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::graphics::ShaderResource::vertexShaderFunction</definition>
+        <argsstring></argsstring>
+        <name>vertexShaderFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="52" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a8e345e8223bdf3710d12929d4855e38b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d4/de8/structouzel_1_1graphics_1_1_shader_1_1_constant_info" kindref="compound">Shader::ConstantInfo</ref> &gt;</type>
+        <definition>std::vector&lt;Shader::ConstantInfo&gt; ouzel::graphics::ShaderResource::pixelShaderConstantInfo</definition>
+        <argsstring></argsstring>
+        <name>pixelShaderConstantInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="54" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a47f7f4104e438b1507ddbd183e065857" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::ShaderResource::pixelShaderAlignment</definition>
+        <argsstring></argsstring>
+        <name>pixelShaderAlignment</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="55" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a24bd7a4fc37d1680b5e5a3f4457cd3c7" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d4/de8/structouzel_1_1graphics_1_1_shader_1_1_constant_info" kindref="compound">Shader::ConstantInfo</ref> &gt;</type>
+        <definition>std::vector&lt;Shader::ConstantInfo&gt; ouzel::graphics::ShaderResource::vertexShaderConstantInfo</definition>
+        <argsstring></argsstring>
+        <name>vertexShaderConstantInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="56" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1aa525a20a221263a1659d2d782756e9ae" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::ShaderResource::vertexShaderAlignment</definition>
+        <argsstring></argsstring>
+        <name>vertexShaderAlignment</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="57" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a2ea3e496b6fe87ac2cf4d97dd34de510" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::graphics::ShaderResource::~ShaderResource</definition>
+        <argsstring>()</argsstring>
+        <name>~ShaderResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="25" column="1" bodyfile="ouzel/graphics/ShaderResource.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1aa863e4ed83df6ec4a0031b0e98d7338f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::ShaderResource::init</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newPixelShader, const std::vector&lt; uint8_t &gt; &amp;newVertexShader, const std::vector&lt; VertexAttribute &gt; &amp;newVertexAttributes, const std::vector&lt; Shader::ConstantInfo &gt; &amp;newPixelShaderConstantInfo, const std::vector&lt; Shader::ConstantInfo &gt; &amp;newVertexShaderConstantInfo, uint32_t newPixelShaderDataAlignment=0, uint32_t newVertexShaderDataAlignment=0, const std::string &amp;newPixelShaderFunction=&quot;&quot;, const std::string &amp;newVertexShaderFunction=&quot;&quot;)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newPixelShader</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newVertexShader</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt; &amp;</type>
+          <declname>newVertexAttributes</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d4/de8/structouzel_1_1graphics_1_1_shader_1_1_constant_info" kindref="compound">Shader::ConstantInfo</ref> &gt; &amp;</type>
+          <declname>newPixelShaderConstantInfo</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d4/de8/structouzel_1_1graphics_1_1_shader_1_1_constant_info" kindref="compound">Shader::ConstantInfo</ref> &gt; &amp;</type>
+          <declname>newVertexShaderConstantInfo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newPixelShaderDataAlignment</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newVertexShaderDataAlignment</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newPixelShaderFunction</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newVertexShaderFunction</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="27" column="1" bodyfile="ouzel/graphics/ShaderResource.cpp" bodystart="18" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1aff4ff698f3ae56753ac28f5f5b0b83eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;VertexAttribute&gt;&amp; ouzel::graphics::ShaderResource::getVertexAttributes</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="37" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a6f43d451819167fc0cd31c38ba24b4f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::ShaderResource::getVertexSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="38" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a41aee388276b9f88ca5de384074df0cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::ShaderResource::getPixelShaderAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>getPixelShaderAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="40" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a109d9348457514baf78bb2aaf132abcf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::graphics::ShaderResource::getVertexShaderAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexShaderAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="41" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a38cf2083ee0ea97af5e19a7fe279018c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::ShaderResource::ShaderResource</definition>
+        <argsstring>()</argsstring>
+        <name>ShaderResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ShaderResource.hpp" line="44" column="1" bodyfile="ouzel/graphics/ShaderResource.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1584">
+        <label>ouzel::graphics::ShaderResource</label>
+        <link refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource"/>
+        <childnode refid="1585" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1587">
+        <label>ouzel::graphics::ShaderResourceEmpty</label>
+        <link refid="d1/d4f/classouzel_1_1graphics_1_1_shader_resource_empty"/>
+        <childnode refid="1584" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1585">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="1586" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1588">
+        <label>ouzel::graphics::ShaderResource</label>
+        <link refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource"/>
+        <childnode refid="1589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>ouzel::graphics::Resource</label>
+        <link refid="d5/d7c/classouzel_1_1graphics_1_1_resource"/>
+        <childnode refid="1590" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1590">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/ShaderResource.hpp" line="22" column="1" bodyfile="ouzel/graphics/ShaderResource.hpp" bodystart="21" bodyend="58"/>
+    <listofallmembers>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a41aee388276b9f88ca5de384074df0cc" prot="public" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>getPixelShaderAlignment</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1aff4ff698f3ae56753ac28f5f5b0b83eb" prot="public" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>getVertexAttributes</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a109d9348457514baf78bb2aaf132abcf" prot="public" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>getVertexShaderAlignment</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a6f43d451819167fc0cd31c38ba24b4f9" prot="public" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>getVertexSize</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1aa863e4ed83df6ec4a0031b0e98d7338f" prot="public" virt="virtual"><scope>ouzel::graphics::ShaderResource</scope><name>init</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>operator=</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a47f7f4104e438b1507ddbd183e065857" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>pixelShaderAlignment</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a8e345e8223bdf3710d12929d4855e38b" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>pixelShaderConstantInfo</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a837a61c0dabe67b9bb563ca3a35eee3d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>pixelShaderData</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a1c1ae9dd0fd7aeaeb6d194559e8a8a71" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>pixelShaderFunction</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1ac314cb53c79d9b6ae7cbb6e320e9409a" prot="public" virt="virtual"><scope>ouzel::graphics::ShaderResource</scope><name>reload</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a219d077b7b48bcf8d83116a0f2c96591" prot="private" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>Renderer</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a54cf34fd3bfcc1d08b780c4c7ccf6426" prot="public" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>Resource</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a38cf2083ee0ea97af5e19a7fe279018c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>ShaderResource</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a4c7f8368477d9a9b9d83e286d149d3c6" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>vertexAttributes</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1aa525a20a221263a1659d2d782756e9ae" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>vertexShaderAlignment</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a24bd7a4fc37d1680b5e5a3f4457cd3c7" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>vertexShaderConstantInfo</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1adf55557c8f807d858cfdbaa70136cbfa" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>vertexShaderData</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1ac780b920f14e4532410cba3419a6c667" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>vertexShaderFunction</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a8a5f9b95d54bda6a59034eecdf740c08" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>vertexSize</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ShaderResource</scope><name>~Noncopyable</name></member>
+      <member refid="d5/d7c/classouzel_1_1graphics_1_1_resource_1a84e6be3fce44057b8dd471fac2626962" prot="public" virt="virtual"><scope>ouzel::graphics::ShaderResource</scope><name>~Resource</name></member>
+      <member refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource_1a2ea3e496b6fe87ac2cf4d97dd34de510" prot="public" virt="virtual"><scope>ouzel::graphics::ShaderResource</scope><name>~ShaderResource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

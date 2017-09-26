@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/ddc/structouzel_1_1_sound_event" kind="struct" language="C++" prot="public">
+    <compoundname>ouzel::SoundEvent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/ddc/structouzel_1_1_sound_event_1a6fe457ca7b2c18907bc67302414e7969" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d98/classouzel_1_1audio_1_1_sound" kindref="compound">audio::Sound</ref> *</type>
+        <definition>audio::Sound* ouzel::SoundEvent::sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="105" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1740">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="1741" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1744">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="1742">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1727">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+        <childnode refid="1728" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>ouzel::Box3</label>
+        <link refid="d7/d7b/classouzel_1_1_box3"/>
+        <childnode refid="1738" relation="usage">
+          <edgelabel>min</edgelabel>
+          <edgelabel>max</edgelabel>
+        </childnode>
+      </node>
+      <node id="1746">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="1732" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1734" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="1731">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="1732" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1738" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1732" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="1739" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="1740" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="1747" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1747">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="1747" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1735">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1736" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1745">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="1738">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="1738" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1736">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>ouzel::SoundEvent</label>
+        <link refid="d4/ddc/structouzel_1_1_sound_event"/>
+        <childnode refid="1726" relation="usage">
+          <edgelabel>sound</edgelabel>
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1731" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="1748" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1741">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1742" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="1743" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="1744" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="1745" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="1737" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="1736" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="1746" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>ouzel::audio::Sound</label>
+        <link refid="d5/d98/classouzel_1_1audio_1_1_sound"/>
+        <childnode refid="1727" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1729" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1737">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1739">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1739" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1743">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="1732">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1733" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1734">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1735" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1737" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>ouzel::audio::SoundOutput</label>
+        <link refid="db/da7/classouzel_1_1audio_1_1_sound_output"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/Event.hpp" line="104" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="103" bodyend="106"/>
+    <listofallmembers>
+      <member refid="d4/ddc/structouzel_1_1_sound_event_1a6fe457ca7b2c18907bc67302414e7969" prot="public" virt="non-virtual"><scope>ouzel::SoundEvent</scope><name>sound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

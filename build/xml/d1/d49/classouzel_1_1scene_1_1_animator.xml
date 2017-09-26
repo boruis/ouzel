@@ -1,0 +1,940 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d1/d49/classouzel_1_1scene_1_1_animator" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::scene::Animator</compoundname>
+    <basecompoundref refid="d7/d9e/classouzel_1_1scene_1_1_component" prot="public" virt="non-virtual">ouzel::scene::Component</basecompoundref>
+    <derivedcompoundref refid="df/dc1/classouzel_1_1scene_1_1_ease" prot="public" virt="non-virtual">ouzel::scene::Ease</derivedcompoundref>
+    <derivedcompoundref refid="d5/d60/classouzel_1_1scene_1_1_fade" prot="public" virt="non-virtual">ouzel::scene::Fade</derivedcompoundref>
+    <derivedcompoundref refid="dd/de2/classouzel_1_1scene_1_1_move" prot="public" virt="non-virtual">ouzel::scene::Move</derivedcompoundref>
+    <derivedcompoundref refid="d4/d47/classouzel_1_1scene_1_1_parallel" prot="public" virt="non-virtual">ouzel::scene::Parallel</derivedcompoundref>
+    <derivedcompoundref refid="de/d06/classouzel_1_1scene_1_1_repeat" prot="public" virt="non-virtual">ouzel::scene::Repeat</derivedcompoundref>
+    <derivedcompoundref refid="dd/d18/classouzel_1_1scene_1_1_rotate" prot="public" virt="non-virtual">ouzel::scene::Rotate</derivedcompoundref>
+    <derivedcompoundref refid="dd/d70/classouzel_1_1scene_1_1_scale" prot="public" virt="non-virtual">ouzel::scene::Scale</derivedcompoundref>
+    <derivedcompoundref refid="db/d72/classouzel_1_1scene_1_1_sequence" prot="public" virt="non-virtual">ouzel::scene::Sequence</derivedcompoundref>
+    <derivedcompoundref refid="d3/dfc/classouzel_1_1scene_1_1_shake" prot="public" virt="non-virtual">ouzel::scene::Shake</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a5be158af41d1aa71edb727b9eea6c38d" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::scene::Animator::Actor</definition>
+        <argsstring></argsstring>
+        <name>Actor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="19" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a051b1ba25ea2992bf08e5f05ae30e010" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Animator::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="77" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a8d04d076cd3b2641dc0c09c95f963675" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Animator::currentTime</definition>
+        <argsstring></argsstring>
+        <name>currentTime</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="78" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a3d8f3a770847b8e7d55ed43cc99854f0" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::scene::Animator::progress</definition>
+        <argsstring></argsstring>
+        <name>progress</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="79" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a2be6a375bb55d4e95ffb7b621565a21f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::done</definition>
+        <argsstring></argsstring>
+        <name>done</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="80" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a8ae4990e82e4025ae96c06046f91bb50" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="81" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a69431aea16404a7e84def9718e4c4f73" prot="protected" static="no" mutable="no">
+        <type><ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> *</type>
+        <definition>Animator* ouzel::scene::Animator::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="83" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1afb98fc719352afc7fedd740b380191cf" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+        <definition>Actor* ouzel::scene::Animator::targetActor</definition>
+        <argsstring></argsstring>
+        <name>targetActor</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="84" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a2c1ed9388ff102fa93b61ef672a8af5c" prot="protected" static="no" mutable="no">
+        <type><ref refid="d4/d67/classouzel_1_1_update_callback" kindref="compound">UpdateCallback</ref></type>
+        <definition>UpdateCallback ouzel::scene::Animator::updateCallback</definition>
+        <argsstring></argsstring>
+        <name>updateCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="86" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a08c862e24e322bb10d660af3a6e2cf67" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> * &gt;</type>
+        <definition>std::vector&lt;Animator*&gt; ouzel::scene::Animator::animators</definition>
+        <argsstring></argsstring>
+        <name>animators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="88" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d49/classouzel_1_1scene_1_1_animator_1a6f6b4359e95a964cdca6b8b68284e62f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Animator&gt; &gt; ouzel::scene::Animator::ownedAnimators</definition>
+        <argsstring></argsstring>
+        <name>ownedAnimators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="89" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a5b09fb0dbd0291e3f257357ead720d83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::Animator::Animator</definition>
+        <argsstring>(float aLength)</argsstring>
+        <name>Animator</name>
+        <param>
+          <type>float</type>
+          <declname>aLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="21" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a80aee6bb1b7158d8af5dd459f4f4ab7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::scene::Animator::~Animator</definition>
+        <argsstring>()</argsstring>
+        <name>~Animator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="22" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a6bbf875ba7d0dfcfdff77c6f1ec58fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::update</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>update</name>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="24" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="29" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a5a9924c708b736ae83f2ae9637c093e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="26" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="64" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a4201680cb0930bc429aff15cbf858aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::play</definition>
+        <argsstring>()</argsstring>
+        <name>play</name>
+        <reimplementedby refid="d5/d60/classouzel_1_1scene_1_1_fade_1a9f84c8090776975e0f05878ab439467b">play</reimplementedby>
+        <reimplementedby refid="dd/d70/classouzel_1_1scene_1_1_scale_1a97bba4e90a636cb4746e7ea9b2563f46">play</reimplementedby>
+        <reimplementedby refid="dd/d18/classouzel_1_1scene_1_1_rotate_1aecc00a76fbef0920c7c26efae48fd80c">play</reimplementedby>
+        <reimplementedby refid="dd/de2/classouzel_1_1scene_1_1_move_1a6a76e1c376aee09d88ce51d35dc49522">play</reimplementedby>
+        <reimplementedby refid="db/d72/classouzel_1_1scene_1_1_sequence_1aee8fb4cb5b2acee36e30c01d5a0eb460">play</reimplementedby>
+        <reimplementedby refid="d3/dfc/classouzel_1_1scene_1_1_shake_1abb1ae7c637872ecb029654f71a5356f5">play</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="27" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="75" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1ad5769ab8140883646e4aaf5e041f2385" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::resume</definition>
+        <argsstring>()</argsstring>
+        <name>resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="29" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1adaf94ba62726d489fab8d527775e7a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::stop</definition>
+        <argsstring>(bool resetAnimation=false)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>bool</type>
+          <declname>resetAnimation</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="30" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a7376124363aa571cbefcc4ae7390b19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="de/d06/classouzel_1_1scene_1_1_repeat_1a709be73aa0591eeb4cd1b1feab324c5d">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="31" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a7189b5da7025d8877ad71455fc9b9280" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::isRunning</definition>
+        <argsstring>() const</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="33" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1ace61df8efacae0659b8faf67c9179439" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::isDone</definition>
+        <argsstring>() const</argsstring>
+        <name>isDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="34" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a327922f5c916e0bcc1681d8a8a67359e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::scene::Animator::getLength</definition>
+        <argsstring>() const</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="36" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a4018df724cb46a7128a9a5f638f9dfa6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::scene::Animator::getCurrentTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="37" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a4573611328e14280f640750804ad7072" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::scene::Animator::getProgress</definition>
+        <argsstring>() const</argsstring>
+        <name>getProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="39" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a236e9cec5a05c39bed34e2529aae3054" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::setProgress</definition>
+        <argsstring>(float newProgress)</argsstring>
+        <name>setProgress</name>
+        <param>
+          <type>float</type>
+          <declname>newProgress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="40" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a989af0aff5417b0df8ba53505773f999" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref> *</type>
+        <definition>Actor* ouzel::scene::Animator::getTargetActor</definition>
+        <argsstring>() const</argsstring>
+        <name>getTargetActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="42" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a05cbbac57b82fd7d0b96bb3c34d3b350" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::addAnimator</definition>
+        <argsstring>(Animator *animator)</argsstring>
+        <name>addAnimator</name>
+        <param>
+          <type><ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> *</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="44" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a812b59adf7cc1a12ecddd899cd77c4c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::addAnimator</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;animator)</argsstring>
+        <name>addAnimator</name>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="48" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a618e521316eb028d6ca1e635186db598" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::addAnimator</definition>
+        <argsstring>(std::unique_ptr&lt; T &gt; &amp;&amp;animator)</argsstring>
+        <name>addAnimator</name>
+        <param>
+          <type>std::unique_ptr&lt; T &gt; &amp;&amp;</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="52" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a57f49baf4b0498b68c446165cf8f9a50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::removeAnimator</definition>
+        <argsstring>(Animator *animator)</argsstring>
+        <name>removeAnimator</name>
+        <param>
+          <type><ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> *</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="58" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1a8f045d0d776153e8ef275ff2809dabbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::removeAnimator</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;animator)</argsstring>
+        <name>removeAnimator</name>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="62" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1ab3cfd4bb2f275d848ae589989b7eff5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::removeAllAnimators</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllAnimators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="66" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1af4169e616a868c69f5b62f215da51e06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> *</type>
+        <definition>Animator* ouzel::scene::Animator::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="68" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1ab8d29e29d0e835c4fbd729010aa93124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::removeFromParent</definition>
+        <argsstring>()</argsstring>
+        <name>removeFromParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="69" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1ad986f715748a3dc845723d75fecb8f08" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::addChildAnimator</definition>
+        <argsstring>(Animator *animator)</argsstring>
+        <name>addChildAnimator</name>
+        <param>
+          <type><ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> *</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="72" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="137" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1af9277582fb728e3c0da7c7498367afaa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::Animator::removeChildAnimator</definition>
+        <argsstring>(Animator *animator)</argsstring>
+        <name>removeChildAnimator</name>
+        <param>
+          <type><ref refid="d1/d49/classouzel_1_1scene_1_1_animator" kindref="compound">Animator</ref> *</type>
+          <declname>animator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="73" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="152" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d49/classouzel_1_1scene_1_1_animator_1ac99dfe0459ede8f2b451416f038f29df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::Animator::updateProgress</definition>
+        <argsstring>()</argsstring>
+        <name>updateProgress</name>
+        <reimplementedby refid="d4/d47/classouzel_1_1scene_1_1_parallel_1afe56c76ae92357c1afe213514ee7adc5">updateProgress</reimplementedby>
+        <reimplementedby refid="d5/d60/classouzel_1_1scene_1_1_fade_1a53c8c6c5c1fabb964178a8c695c18fa5">updateProgress</reimplementedby>
+        <reimplementedby refid="dd/d70/classouzel_1_1scene_1_1_scale_1a159fa32c2ca90a187de69f636b9e6523">updateProgress</reimplementedby>
+        <reimplementedby refid="dd/d18/classouzel_1_1scene_1_1_rotate_1a452fcf8ba6caa8d1d9c2378e9aa1471c">updateProgress</reimplementedby>
+        <reimplementedby refid="dd/de2/classouzel_1_1scene_1_1_move_1a9d99ea045b080f13508ef0e806cb0984">updateProgress</reimplementedby>
+        <reimplementedby refid="db/d72/classouzel_1_1scene_1_1_sequence_1af257d94eada622e95fdc1a5004e2889e">updateProgress</reimplementedby>
+        <reimplementedby refid="de/d06/classouzel_1_1scene_1_1_repeat_1a1e553ee774c7de151ce2cd7e368740df">updateProgress</reimplementedby>
+        <reimplementedby refid="d3/dfc/classouzel_1_1scene_1_1_shake_1adf3af3a772039311336fa1ca649d4928">updateProgress</reimplementedby>
+        <reimplementedby refid="df/dc1/classouzel_1_1scene_1_1_ease_1a088d20daaf0e6638d6a802ed4c05401b">updateProgress</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/animators/Animator.hpp" line="75" column="1" bodyfile="ouzel/animators/Animator.cpp" bodystart="133" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="88">
+        <label>ouzel::scene::Rotate</label>
+        <link refid="dd/d18/classouzel_1_1scene_1_1_rotate"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>ouzel::scene::Fade</label>
+        <link refid="d5/d60/classouzel_1_1scene_1_1_fade"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>ouzel::scene::Shake</label>
+        <link refid="d3/dfc/classouzel_1_1scene_1_1_shake"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>ouzel::scene::Parallel</label>
+        <link refid="d4/d47/classouzel_1_1scene_1_1_parallel"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>ouzel::scene::Animator</label>
+        <link refid="d1/d49/classouzel_1_1scene_1_1_animator"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>ouzel::scene::Repeat</label>
+        <link refid="de/d06/classouzel_1_1scene_1_1_repeat"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>ouzel::scene::Sequence</label>
+        <link refid="db/d72/classouzel_1_1scene_1_1_sequence"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="83">
+        <label>ouzel::scene::Ease</label>
+        <link refid="df/dc1/classouzel_1_1scene_1_1_ease"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>ouzel::scene::Scale</label>
+        <link refid="dd/d70/classouzel_1_1scene_1_1_scale"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>ouzel::scene::Move</label>
+        <link refid="dd/de2/classouzel_1_1scene_1_1_move"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="105" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="108">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="106">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>ouzel::Box3</label>
+        <link refid="d7/d7b/classouzel_1_1_box3"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>min</edgelabel>
+          <edgelabel>max</edgelabel>
+        </childnode>
+      </node>
+      <node id="110">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="95">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="96" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="92">
+        <label>ouzel::scene::Animator</label>
+        <link refid="d1/d49/classouzel_1_1scene_1_1_animator"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+        <childnode refid="95" relation="usage">
+          <edgelabel>targetActor</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>updateCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="111" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="100" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="109">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="102">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+        <childnode refid="95" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="112" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="105">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+        <childnode refid="106" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="107" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="108" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="109" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="101" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="100" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="110" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="103" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="94">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="107">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="96">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+        <childnode refid="97" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="101" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/animators/Animator.hpp" line="18" column="1" bodyfile="ouzel/animators/Animator.hpp" bodystart="17" bodyend="90"/>
+    <listofallmembers>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a5be158af41d1aa71edb727b9eea6c38d" prot="private" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Actor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac0cde6d2c7c00f3df048851fe93cb1fd" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>actor</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a05cbbac57b82fd7d0b96bb3c34d3b350" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>addAnimator</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a812b59adf7cc1a12ecddd899cd77c4c4" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>addAnimator</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a618e521316eb028d6ca1e635186db598" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>addAnimator</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1ad986f715748a3dc845723d75fecb8f08" prot="protected" virt="virtual"><scope>ouzel::scene::Animator</scope><name>addChildAnimator</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a6b0d7f46cd61835d31076a57b8e7b195" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>ANIMATOR</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a5b09fb0dbd0291e3f257357ead720d83" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Animator</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a08c862e24e322bb10d660af3a6e2cf67" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>animators</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a912973fa60d4996192f6222ab977733d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>boundingBox</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a6840532302cd188e9c980bc636261eb3" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Component</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a8d04d076cd3b2641dc0c09c95f963675" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>currentTime</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a2be6a375bb55d4e95ffb7b621565a21f" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>done</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a2380cd102a1155a38c1a31811b95a974" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>draw</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a076ecb7817b2ba6b195a685e7a296e69" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getActor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ac2025f29d26e03fcfaa29923f783cd82" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>getBoundingBox</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a4018df724cb46a7128a9a5f638f9dfa6" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getCurrentTime</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a327922f5c916e0bcc1681d8a8a67359e" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getLength</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1af4169e616a868c69f5b62f215da51e06" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getParent</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a4573611328e14280f640750804ad7072" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getProgress</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a989af0aff5417b0df8ba53505773f999" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getTargetActor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a11154d2c3c80678e6e7517a95fc819c0" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>getType</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a0200fba59cd3226b0801445e4397aaf9" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>hidden</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1ace61df8efacae0659b8faf67c9179439" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>isDone</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a707797f719ad91d4dccd0cfdf05bc199" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>isHidden</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a7189b5da7025d8877ad71455fc9b9280" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>isRunning</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a051b1ba25ea2992bf08e5f05ae30e010" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>length</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aecc7ea1776bff88cb874f1c49d519d0b" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>LISTENER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5abfbc026b9c233855788356ba0aa0eeff" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>MESH_RENDERER</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Noncopyable</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a74cd3d5a28ffc56bab1e9e79f8479480" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>NONE</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>operator=</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a6f6b4359e95a964cdca6b8b68284e62f" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>ownedAnimators</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a69431aea16404a7e84def9718e4c4f73" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>parent</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aea49d48630df60f666cf4b29c770722e" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>PARTICLE_SYSTEM</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a4201680cb0930bc429aff15cbf858aa4" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>play</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a10c95c4b40716c2816a901758621cbc4" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>pointOn</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a3d8f3a770847b8e7d55ed43cc99854f0" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>progress</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1ab3cfd4bb2f275d848ae589989b7eff5f" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>removeAllAnimators</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a57f49baf4b0498b68c446165cf8f9a50" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>removeAnimator</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a8f045d0d776153e8ef275ff2809dabbe" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>removeAnimator</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1af9277582fb728e3c0da7c7498367afaa" prot="protected" virt="virtual"><scope>ouzel::scene::Animator</scope><name>removeChildAnimator</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a4491e50a0a93ee9f020cf4f2246623aa" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>removeFromActor</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1ab8d29e29d0e835c4fbd729010aa93124" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>removeFromParent</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a7376124363aa571cbefcc4ae7390b19f" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>reset</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1ad5769ab8140883646e4aaf5e041f2385" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>resume</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a8ae4990e82e4025ae96c06046f91bb50" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>running</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1ab708706aac78f64c0ae2cec7a86172bd" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>setBoundingBox</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a3a83d565fab07c00a721ea7a90102dbb" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>setHidden</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a236e9cec5a05c39bed34e2529aae3054" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>setProgress</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a95a94ec8d82cadcafd1c595aad148dcd" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>SHAPE_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a9a0ab52e2e392ff63ffb2b778b2edb83" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>shapeOverlaps</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5aeb101824131e2341d589041ef759959a" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>SOUND</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5af1d11c60acc9b6772ac995647a7d11dd" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>SPRITE</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a5a9924c708b736ae83f2ae9637c093e3" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>start</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1adaf94ba62726d489fab8d527775e7a05" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>stop</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1afb98fc719352afc7fedd740b380191cf" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>targetActor</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5a109180def1681f029d577f557e3f61f9" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>TEXT_RENDERER</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a8e62eb503a67a4709ab600ce45e29e7b" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>type</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1a81ac75fd25c5f616308229eb274a3cf5" prot="public" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>Type</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a6bbf875ba7d0dfcfdff77c6f1ec58fcd" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>update</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a2c1ed9388ff102fa93b61ef672a8af5c" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>updateCallback</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1ac99dfe0459ede8f2b451416f038f29df" prot="protected" virt="virtual"><scope>ouzel::scene::Animator</scope><name>updateProgress</name></member>
+      <member refid="d1/d49/classouzel_1_1scene_1_1_animator_1a80aee6bb1b7158d8af5dd459f4f4ab7e" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>~Animator</name></member>
+      <member refid="d7/d9e/classouzel_1_1scene_1_1_component_1adde89eb3f4c15c003320b44a19747ccb" prot="public" virt="virtual"><scope>ouzel::scene::Animator</scope><name>~Component</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::scene::Animator</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

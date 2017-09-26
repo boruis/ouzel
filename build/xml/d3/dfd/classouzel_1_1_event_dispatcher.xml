@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d3/dfd/classouzel_1_1_event_dispatcher" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::EventDispatcher</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/dfd/classouzel_1_1_event_dispatcher_1a6fcdef779544d38e7aa9733369840931" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::EventDispatcher::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="19" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/dfd/classouzel_1_1_event_dispatcher_1af2a5d399ec7ca3ae3352a462a200f5d9" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">EventHandler</ref> * &gt;</type>
+        <definition>std::vector&lt;EventHandler*&gt; ouzel::EventDispatcher::eventHandlers</definition>
+        <argsstring></argsstring>
+        <name>eventHandlers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="33" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dfd/classouzel_1_1_event_dispatcher_1ae94917b8aa71ebd32a468162de272ae9" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">EventHandler</ref> * &gt;</type>
+        <definition>std::set&lt;EventHandler*&gt; ouzel::EventDispatcher::eventHandlerAddSet</definition>
+        <argsstring></argsstring>
+        <name>eventHandlerAddSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="34" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dfd/classouzel_1_1_event_dispatcher_1a4fcb5199f44ea932b57dbce7d625f101" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">EventHandler</ref> * &gt;</type>
+        <definition>std::set&lt;EventHandler*&gt; ouzel::EventDispatcher::eventHandlerDeleteSet</definition>
+        <argsstring></argsstring>
+        <name>eventHandlerDeleteSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="35" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dfd/classouzel_1_1_event_dispatcher_1a4c054115c3bfd37d02e845b21148f54d" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex ouzel::EventDispatcher::eventQueueMutex</definition>
+        <argsstring></argsstring>
+        <name>eventQueueMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="37" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dfd/classouzel_1_1_event_dispatcher_1a57d17dfc86810f72deb1d39317285617" prot="protected" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="de/d66/structouzel_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>std::queue&lt;Event&gt; ouzel::EventDispatcher::eventQueue</definition>
+        <argsstring></argsstring>
+        <name>eventQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="38" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/dfd/classouzel_1_1_event_dispatcher_1a7d9ae8209465445911af01f328700d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::EventDispatcher::~EventDispatcher</definition>
+        <argsstring>()</argsstring>
+        <name>~EventDispatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="21" column="1" bodyfile="ouzel/events/EventDispatcher.cpp" bodystart="14" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dfd/classouzel_1_1_event_dispatcher_1ad841c21817eed5ac723539e73d89361f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::EventDispatcher::dispatchEvents</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="23" column="1" bodyfile="ouzel/events/EventDispatcher.cpp" bodystart="28" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dfd/classouzel_1_1_event_dispatcher_1ad97856ebf4a9f8be30c50ae9cdc12bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::EventDispatcher::addEventHandler</definition>
+        <argsstring>(EventHandler *eventHandler)</argsstring>
+        <name>addEventHandler</name>
+        <param>
+          <type><ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">EventHandler</ref> *</type>
+          <declname>eventHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="25" column="1" bodyfile="ouzel/events/EventDispatcher.cpp" bodystart="183" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dfd/classouzel_1_1_event_dispatcher_1af5c9b12f2bd3bab78fb8e80090be69fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::EventDispatcher::removeEventHandler</definition>
+        <argsstring>(EventHandler *eventHandler)</argsstring>
+        <name>removeEventHandler</name>
+        <param>
+          <type><ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">EventHandler</ref> *</type>
+          <declname>eventHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="26" column="1" bodyfile="ouzel/events/EventDispatcher.cpp" bodystart="202" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dfd/classouzel_1_1_event_dispatcher_1a6112ab7047c1107a1cc2d6fa1730aa98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::EventDispatcher::postEvent</definition>
+        <argsstring>(const Event &amp;event)</argsstring>
+        <name>postEvent</name>
+        <param>
+          <type>const <ref refid="de/d66/structouzel_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="28" column="1" bodyfile="ouzel/events/EventDispatcher.cpp" bodystart="219" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/dfd/classouzel_1_1_event_dispatcher_1a3078c543381660d594bd7865d1bb6bb6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::EventDispatcher::EventDispatcher</definition>
+        <argsstring>()</argsstring>
+        <name>EventDispatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/EventDispatcher.hpp" line="31" column="1" bodyfile="ouzel/events/EventDispatcher.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="641">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="642" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="642">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="643">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/EventDispatcher.hpp" line="18" column="1" bodyfile="ouzel/events/EventDispatcher.hpp" bodystart="17" bodyend="39"/>
+    <listofallmembers>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1ad97856ebf4a9f8be30c50ae9cdc12bf9" prot="public" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>addEventHandler</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1ad841c21817eed5ac723539e73d89361f" prot="public" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>dispatchEvents</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a6fcdef779544d38e7aa9733369840931" prot="private" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>Engine</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a3078c543381660d594bd7865d1bb6bb6" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>EventDispatcher</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1ae94917b8aa71ebd32a468162de272ae9" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>eventHandlerAddSet</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a4fcb5199f44ea932b57dbce7d625f101" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>eventHandlerDeleteSet</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1af2a5d399ec7ca3ae3352a462a200f5d9" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>eventHandlers</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a57d17dfc86810f72deb1d39317285617" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>eventQueue</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a4c054115c3bfd37d02e845b21148f54d" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>eventQueueMutex</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>operator=</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a6112ab7047c1107a1cc2d6fa1730aa98" prot="public" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>postEvent</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1af5c9b12f2bd3bab78fb8e80090be69fe" prot="public" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>removeEventHandler</name></member>
+      <member refid="d3/dfd/classouzel_1_1_event_dispatcher_1a7d9ae8209465445911af01f328700d60" prot="public" virt="virtual"><scope>ouzel::EventDispatcher</scope><name>~EventDispatcher</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::EventDispatcher</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

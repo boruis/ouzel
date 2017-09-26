@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d7c/classouzel_1_1gui_1_1_edit_box" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::gui::EditBox</compoundname>
+    <basecompoundref refid="d4/d40/classouzel_1_1gui_1_1_widget" prot="public" virt="non-virtual">ouzel::gui::Widget</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="db/d7c/classouzel_1_1gui_1_1_edit_box_1a634e53c51d6745fd4f5ba24b6bc244e6" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ouzel::gui::EditBox::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/EditBox.hpp" line="22" column="1" bodyfile="ouzel/gui/EditBox.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d7c/classouzel_1_1gui_1_1_edit_box_1a868e2b12ee7c8cf582d497302b36a2a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::gui::EditBox::EditBox</definition>
+        <argsstring>()</argsstring>
+        <name>EditBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/EditBox.hpp" line="16" column="1" bodyfile="ouzel/gui/EditBox.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d7c/classouzel_1_1gui_1_1_edit_box_1a61b90c8369b0a414f49dedf837cc7aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::gui::EditBox::setValue</definition>
+        <argsstring>(const std::string &amp;newValue)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/EditBox.hpp" line="18" column="1" bodyfile="ouzel/gui/EditBox.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d7c/classouzel_1_1gui_1_1_edit_box_1a2203f7b239f68847c08642579151719b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; ouzel::gui::EditBox::getValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/gui/EditBox.hpp" line="19" column="1" bodyfile="ouzel/gui/EditBox.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="452">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>ouzel::gui::EditBox</label>
+        <link refid="db/d7c/classouzel_1_1gui_1_1_edit_box"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="453">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="454" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>ouzel::gui::Widget</label>
+        <link refid="d4/d40/classouzel_1_1gui_1_1_widget"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="467">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="468" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="471">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="469">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+        <childnode refid="461" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="457">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="458" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="474" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="474">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="474" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="462">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="463" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="472">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="465">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="463">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="469" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="470" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="471" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="472" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="463" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="473" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="464">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="466" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="455">
+        <label>ouzel::gui::EditBox</label>
+        <link refid="db/d7c/classouzel_1_1gui_1_1_edit_box"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="470">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="458">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="460" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="475">
+        <label>ouzel::gui::Menu</label>
+        <link refid="dd/dec/classouzel_1_1gui_1_1_menu"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+        <childnode refid="456" relation="usage">
+          <edgelabel>selectedWidget</edgelabel>
+        </childnode>
+        <childnode refid="462" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="456">
+        <label>ouzel::gui::Widget</label>
+        <link refid="d4/d40/classouzel_1_1gui_1_1_widget"/>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>menu</edgelabel>
+        </childnode>
+      </node>
+      <node id="461">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="462" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/gui/EditBox.hpp" line="14" column="1" bodyfile="ouzel/gui/EditBox.hpp" bodystart="13" bodyend="23"/>
+    <listofallmembers>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9f2c6c883cb1599a778c36b5d43d1dde" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>Actor</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a05ad15259fb091bb9aee02873d189082" prot="public" virt="non-virtual" ambiguityscope="ouzel::scene::ActorContainer::"><scope>ouzel::gui::EditBox</scope><name>ActorContainer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ab9433bb253bd62d77e48bcee6e6fcaee" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a57933a0e5af1008500c451164e454907" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1abf017d04d4308b9a0468e5f400cd7246" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addChild</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a211bc34ce6816e88de79aa3c9bb668c2" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>addChildActor</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae3fa0226c9ed87ff9d59e6d0fc30390a" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addChildComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad30692ad3267e46249e9f02fbd814557" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae56d162c69fdd6b54de96728e06bc9b0" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1abbfc9fd21a7856e64b4fecaf35096a2e" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>addComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a110751d45e8f974963c66e0fd0b6729c" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>animationUpdateCallback</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af1a5e8129121011f919fb8001f4edc6e" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>calculateInverseTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a5826eb2658299be69afb92ec70d3ae73" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>calculateLocalTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aac76d6abf8592fde462536872ba2fac8" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>calculateTransform</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a36995a7a030e850d83d6487809710a1b" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>children</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1adeee8ffeecf075aa6a770b8ee50f1aea" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>components</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a61ed59a9d1efb3d7bf3ff8c6483374ed" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>convertLocalToWorld</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1adc9e7e43c4a56543f23a728180f001b0" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>convertWorldToLocal</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a2b7b6f45b27c08c567538e6f59092ebf" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>cullDisabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a79963f81fc5780e7ae42494ce80f469c" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>draw</name></member>
+      <member refid="db/d7c/classouzel_1_1gui_1_1_edit_box_1a868e2b12ee7c8cf582d497302b36a2a5" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>EditBox</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a70e57eddbe189a3e578de06549405e40" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>enabled</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1b688a853efefe85d7746d7f5b36fc98" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>enter</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a8865e7a34e16e9b879c9b3cd35594d0e" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>entered</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1adb3ec41f2678f406b3f5b03ea211c615" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>findActors</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1736af78afb63f6550eba47838dfcc9a" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>findActors</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae6f90bb1725ac38709bbe4514690e520" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>flipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af4240d445bd1755a6de47937100c1372" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>flipY</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a47558721e402b05d78a64e80c69daf1a" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getBoundingBox</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afd7edf2a02aa5f0494f7223ced78d491" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a31795a7c4237740b4e2b0980989e766b" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7498db4d76d4e065fe6926110c006e42" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aae9b12285dce44cec9c87440609f8c2a" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getFlipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aace7ddb5a278096190e48b7975657e68" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getFlipY</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a040a589adadfb6402d6e04d83133a622" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getInverseTransform</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afa4efec56793275f1d8a8fba83f69573" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getLayer</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afb2e7e67d08d7c421d929d84f537703c" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getLocalTransform</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a72d140bb2d4c73e4caeafcb67a44d353" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getMenu</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aaf1c5067a3d499d59ceb630a1f81a318" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getOpacity</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a51807fb9739249c18bdca4c1148f399c" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae5d2df7f9007fc0fbc3b8a51ebf83e52" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getParent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af9686de02b10e0f90f46bb6585603679" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad4342138bb81609b30e6c04d9d41d35b" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a8acaf22fb017f93a57359f7e302a5403" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getScale</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a4149f2c56061380c3b7b6a7239244728" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getTransform</name></member>
+      <member refid="db/d7c/classouzel_1_1gui_1_1_edit_box_1a2203f7b239f68847c08642579151719b" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getValue</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afe73cddf4d5df8824b6609c2db0c40b0" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>getWorldOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9bd429baaf71d396c8740e1b9c2bed32" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>getWorldPosition</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a531a4dd6e3432f1bd080fa1caaa0c6ac" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>hasChild</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a788a34df52d1db1649c529e5a707aa93" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>hidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a49998dda06130a797d30ab9f83b03178" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>inverseTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad114fb77dcb52fa2e3fc6fa712094f93" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>inverseTransformDirty</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad4061634d2dbd5f98398a70a3f7dbffc" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>isCullDisabled</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1aa553c04a1a1c6d96b1c3fc1c248d314a" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>isEnabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa84ce05c37a0bc52d774b8f00e748de2" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>isHidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9ecd33f5529240a290d3188e1459f9eb" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>isPickable</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a87d909074c9cea7d7b0acf3b81128a01" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>isSelected</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ab9cf93ccfc3672728f8eb096759bdcbf" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>isWorldHidden</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1afce35cd425c8199f01b63309fdd80152" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>layer</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a6c6eb0e7a8f8ff0d5be0e59f4a30d06a" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>leave</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7bb9c3ed65c54e82cb6173eee564b28e" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>localTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a7dd01352436d1e3b7861cd4d54a808cf" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>localTransformDirty</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a4ff2fd83efde35405f2dd2d9266131cb" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>menu</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a45b335920288abcfac1909bf8b2a4aff" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>moveChildToBack</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1abb8a3694b1696c5484d745cacc57fdc8" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>moveChildToFront</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>Noncopyable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6c247001fc775fb05503afa731eeef09" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>opacity</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>operator=</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a4678e519aeeffc948967941a64d88455" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>order</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a113e1bb599496b978281e75f963b2699" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>ownedChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9af7bb571693e8e01035d3d0ccc645e1" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>ownedComponents</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a893520890a96ea3b10491956562e142d" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>parent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad483f95857f31fdbf73ee64c0184e819" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>parentTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a805450247721e84e4ac95ac5d8e0e2ff" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>pickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a1fd6a788d3e5806aaa78a69d92a24d2f" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>pointOn</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a8379ecefa2ebecf6a4f1fb90b730182c" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>position</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a6cade9591281ed76236aeeb7efe338a5" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>removeAllChildren</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a074828d4cf97f920bb7ccf023f17f21d" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeAllComponents</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1aaa6309328e39cf0d264df5f1c207b894" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a1be8ae4fa5f8dc8ca5141dbea3c646bd" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeChild</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ae2e9ccafa9aa65c1e3e88b2100d71819" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>removeChildActor</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afee9c9cf12d3c769b53d9bd54ccc19e3" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeChildComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a64b0355d5f7934a9eff946e3d9380b01" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a044b818e6067a1ef17036d9d4503aa93" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeComponent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a597d8e413cd6649c5d1ce83df5c907bb" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>removeFromParent</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a878d1324d1637e4bde3274ef0dabf333" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>rotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac697c38fcec2a56f80e97bf51118fd80" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>scale</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1afef580cf00fdecb7044fa5355cd61ca2" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>selected</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aada4bcda8cc46252fdd043cc9757db4a" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setCullDisabled</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a19fab87cf50a27c2d56487a746984367" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setEnabled</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a9bf01fa1da685e3450194ebb20a7a4f1" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setFlipX</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a153232b1f56e00934b8da202d68b2ac6" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setFlipY</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a0f4e2b1f9a2e2d8391ba611707b7c145" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setHidden</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1a69b6f76ed6782ae5625ae74701ddcf3d" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setLayer</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa180d2537e5195164e381dbf0cca9932" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setOpacity</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ab95cdfa02fb2089ac36ce441444f227c" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>setOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1acdf53b88580120d60cc3d0c9e64c2d24" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setPickable</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6b98377cfe7c7427233a156bd1ce9c68" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a6076496ba8d6d212d4104945ffc1285d" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setPosition</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a060f947f8d15ddd980c47fd954460218" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac77e070ec05f5b5795714d85eed61659" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a820317bba19d5d3e06feb26d252b4382" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setRotation</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aba272266fac31c01597d2edc54fc1a55" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setScale</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1afba4fc56da81dfc2a86017367550aaf1" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setScale</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1a3e34bb508605fd1921347ad178aeb768" prot="protected" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>setSelected</name></member>
+      <member refid="db/d7c/classouzel_1_1gui_1_1_edit_box_1a61b90c8369b0a414f49dedf837cc7aaa" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>setValue</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ae095c151c7ffc909a576a707cbb3a849" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>shapeOverlaps</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aec5b345a5ba70e20171f198c4056e248" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>transform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a12a5569652634532ae7ac0bd3116e428" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>transformDirty</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a052141f4b0e50157d2ed3e71622959f7" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>updateChildrenTransform</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1af0e0e7e621b659068b6a953a86dfdffd" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>updateTransform</name></member>
+      <member refid="db/d7c/classouzel_1_1gui_1_1_edit_box_1a634e53c51d6745fd4f5ba24b6bc244e6" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>value</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1a94d91ccde56b2f1cd953eae1476b6a37" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>visit</name></member>
+      <member refid="d4/d40/classouzel_1_1gui_1_1_widget_1ad54d22f6fe398110facac67e189c27c7" prot="public" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>Widget</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ad85cee087ea525a12366bf2d3e349a48" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>worldHidden</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1aa259dad7f4dc6be45c852a6bdfcf2d69" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>worldOrder</name></member>
+      <member refid="df/d81/classouzel_1_1scene_1_1_actor_1ac2396ee34d3e3d475ec65d04f7a4cea1" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>~Actor</name></member>
+      <member refid="d6/d51/classouzel_1_1scene_1_1_actor_container_1ac64f00932d334aec320805984bed9b42" prot="public" virt="virtual"><scope>ouzel::gui::EditBox</scope><name>~ActorContainer</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::gui::EditBox</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

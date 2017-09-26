@@ -1,0 +1,693 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="da/d6d/classouzel_1_1graphics_1_1_renderer" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::Renderer</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48" prot="public" static="no">
+        <name>Driver</name>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48a5b39c8b553c821e7cddc6da64b5bd2ee" prot="public">
+          <name>DEFAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48aba2b45bdc11e2a4a6e86aab2ac693cbb" prot="public">
+          <name>EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48ac0ad831a34c4633bee584066cfcc5040" prot="public">
+          <name>OPENGL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48aac255387bdb2c5b299223426279e4aeb" prot="public">
+          <name>DIRECT3D11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48a74108a89672c573afee1fae6de8e4e0b" prot="public">
+          <name>METAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="51" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="50" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5e" prot="public" static="no">
+        <name>DrawMode</name>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5ead2632e54a7b9520714554554f4b9619d" prot="public">
+          <name>POINT_LIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5ea195d93c98c5e94cad21509e910f65fae" prot="public">
+          <name>LINE_LIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5eae64a4d2159ed46d077e21a505575c814" prot="public">
+          <name>LINE_STRIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5ea14d20da17f6d27fc43c5f311c17eb912" prot="public">
+          <name>TRIANGLE_LIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5ea708de017e3b83ccba21dfc9f6367d46f" prot="public">
+          <name>TRIANGLE_STRIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="60" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a21de9f43a3a01ebb355bbd0fe3ce69b2" prot="public" static="no">
+        <name>CullMode</name>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a21de9f43a3a01ebb355bbd0fe3ce69b2ab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a21de9f43a3a01ebb355bbd0fe3ce69b2abb2fe5c916efb43aab8cbb68f997d2ee" prot="public">
+          <name>FRONT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a21de9f43a3a01ebb355bbd0fe3ce69b2a1dd26f1f1790f0b56d5752fb0fbecef0" prot="public">
+          <name>BACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="69" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="68" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ab751e7816d10ee3d1464e8f71f7f74e7" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::graphics::Renderer::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="47" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a80b4dcd9eb220332499fe57953970863" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::graphics::Renderer::Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="48" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a97989350ec7d4f333d8395b1770960fd" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" kindref="compound">RenderDevice</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;RenderDevice&gt; ouzel::graphics::Renderer::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="130" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ac41e3ba95c4598a06f62b880033621ad" prot="protected" static="no" mutable="no">
+        <type><ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref></type>
+        <definition>Size2 ouzel::graphics::Renderer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="132" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a77a8cc18302bf8a2888124960b4bdd00" prot="protected" static="no" mutable="no">
+        <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color ouzel::graphics::Renderer::clearColor</definition>
+        <argsstring></argsstring>
+        <name>clearColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="133" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a591cec4aae3dffc47c7429174e01d793" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::graphics::Renderer::clearDepth</definition>
+        <argsstring></argsstring>
+        <name>clearDepth</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="134" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a0d4ce38b5b44d902bfed56cd4f743e19" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::clearColorBuffer</definition>
+        <argsstring></argsstring>
+        <name>clearColorBuffer</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="135" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a268add2bc2fca8a8793734a29d8598d5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::clearDepthBuffer</definition>
+        <argsstring></argsstring>
+        <name>clearDepthBuffer</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="136" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aa8ad8c89d86400e5a970b056bba4dd77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::Renderer::~Renderer</definition>
+        <argsstring>()</argsstring>
+        <name>~Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="75" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a2ca08cee0d7bf7005f97177550b62c0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" kindref="compound">RenderDevice</ref> *</type>
+        <definition>RenderDevice* ouzel::graphics::Renderer::getDevice</definition>
+        <argsstring>() const</argsstring>
+        <name>getDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="79" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3cab319ac36248d494e87f48dad39bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::Renderer::executeOnRenderThread</definition>
+        <argsstring>(const std::function&lt; void(void)&gt; &amp;func)</argsstring>
+        <name>executeOnRenderThread</name>
+        <param>
+          <type>const std::function&lt; void(void)&gt; &amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="81" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ac82f2730be7f2359d779399cb0b92f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::Renderer::setClearColorBuffer</definition>
+        <argsstring>(bool clear)</argsstring>
+        <name>setClearColorBuffer</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="83" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="169" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ad6de521e9c2486d4b19ea55e8074f29b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::getClearColorBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearColorBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="84" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ae3a80f03daed3fbb30140538ea0a2ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::Renderer::setClearDepthBuffer</definition>
+        <argsstring>(bool clear)</argsstring>
+        <name>setClearDepthBuffer</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="86" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="176" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ac5b4792a8daf80d370b109d014a0a815" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::getClearDepthBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearDepthBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="87" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a09c966c568ac212af3c4621900720c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::Renderer::setClearColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>setClearColor</name>
+        <param>
+          <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="89" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="183" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1abf03e585d1b23706e0a04cd5212f5106" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color ouzel::graphics::Renderer::getClearColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="90" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a185b36973949c2a4e1e83f5884a93584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::Renderer::setClearDepth</definition>
+        <argsstring>(float newClearDepth)</argsstring>
+        <name>setClearDepth</name>
+        <param>
+          <type>float</type>
+          <declname>newClearDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="92" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a1082bd6ea299b732854ee4b17c490e7b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::graphics::Renderer::getClearDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>getClearDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="93" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ab33283a2a87825c636b2dc72b6fbd720" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+        <definition>const Size2&amp; ouzel::graphics::Renderer::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="95" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1afebabd5efb09b8e6d29e812a3aae4b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::saveScreenshot</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>saveScreenshot</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="97" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="204" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1ad95db00803d815a32a130ebd32259085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::addDrawCommand</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; Texture &gt;&gt; &amp;textures, const std::shared_ptr&lt; Shader &gt; &amp;shader, const std::vector&lt; std::vector&lt; float &gt;&gt; &amp;pixelShaderConstants, const std::vector&lt; std::vector&lt; float &gt;&gt; &amp;vertexShaderConstants, const std::shared_ptr&lt; BlendState &gt; &amp;blendState, const std::shared_ptr&lt; MeshBuffer &gt; &amp;meshBuffer, uint32_t indexCount, DrawMode drawMode, uint32_t startIndex, const std::shared_ptr&lt; Texture &gt; &amp;renderTarget, const Rectangle &amp;viewport, bool depthWrite, bool depthTest, bool wireframe, bool scissorTest, const Rectangle &amp;scissorRectangle, CullMode cullMode)</argsstring>
+        <name>addDrawCommand</name>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">Texture</ref> &gt;&gt; &amp;</type>
+          <declname>textures</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">Shader</ref> &gt; &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; float &gt;&gt; &amp;</type>
+          <declname>pixelShaderConstants</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; float &gt;&gt; &amp;</type>
+          <declname>vertexShaderConstants</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">BlendState</ref> &gt; &amp;</type>
+          <declname>blendState</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="dd/d75/classouzel_1_1graphics_1_1_mesh_buffer" kindref="compound">MeshBuffer</ref> &gt; &amp;</type>
+          <declname>meshBuffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>indexCount</declname>
+        </param>
+        <param>
+          <type>DrawMode</type>
+          <declname>drawMode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">Texture</ref> &gt; &amp;</type>
+          <declname>renderTarget</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthWrite</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wireframe</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scissorTest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="db/dc0/classouzel_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>scissorRectangle</declname>
+        </param>
+        <param>
+          <type>CullMode</type>
+          <declname>cullMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="99" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="211" bodyend="275"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1afcdb3907c0fc560a99c60cc2e2827fa9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; Driver &gt;</type>
+        <definition>std::set&lt; Renderer::Driver &gt; ouzel::graphics::Renderer::getAvailableRenderDrivers</definition>
+        <argsstring>()</argsstring>
+        <name>getAvailableRenderDrivers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="77" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="52" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1aca0da308552e4a39f57e94f6e7e0d267" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::Renderer::Renderer</definition>
+        <argsstring>(Driver aDriver)</argsstring>
+        <name>Renderer</name>
+        <param>
+          <type>Driver</type>
+          <declname>aDriver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="118" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="79" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1af9afee52ee9ed96d3de0d91f612f6240" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::Renderer::init</definition>
+        <argsstring>(Window *newWindow, const Size2 &amp;newSize, uint32_t newSampleCount, Texture::Filter newTextureFilter, uint32_t newMaxAnisotropy, bool newVerticalSync, bool newDepth, bool newDebugRenderer)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>newWindow</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newSampleCount</declname>
+        </param>
+        <param>
+          <type>Texture::Filter</type>
+          <declname>newTextureFilter</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newMaxAnisotropy</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newVerticalSync</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newDepth</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newDebugRenderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="119" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="143" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d6d/classouzel_1_1graphics_1_1_renderer_1a9f083e583b100a53f1aaeab7b13333cc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::graphics::Renderer::setSize</definition>
+        <argsstring>(const Size2 &amp;newSize)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Renderer.hpp" line="128" column="1" bodyfile="ouzel/graphics/Renderer.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1393">
+        <label>ouzel::graphics::Renderer</label>
+        <link refid="da/d6d/classouzel_1_1graphics_1_1_renderer"/>
+        <childnode refid="1394" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1394">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1395">
+        <label>ouzel::graphics::Renderer</label>
+        <link refid="da/d6d/classouzel_1_1graphics_1_1_renderer"/>
+        <childnode refid="1396" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1397" relation="usage">
+          <edgelabel>clearColor</edgelabel>
+        </childnode>
+        <childnode refid="1398" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="1397">
+        <label>ouzel::Color</label>
+        <link refid="d4/d5a/classouzel_1_1_color"/>
+      </node>
+      <node id="1398">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="1396">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/Renderer.hpp" line="46" column="1" bodyfile="ouzel/graphics/Renderer.hpp" bodystart="45" bodyend="137"/>
+    <listofallmembers>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ad95db00803d815a32a130ebd32259085" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>addDrawCommand</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a77a8cc18302bf8a2888124960b4bdd00" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>clearColor</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a0d4ce38b5b44d902bfed56cd4f743e19" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>clearColorBuffer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a591cec4aae3dffc47c7429174e01d793" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>clearDepth</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a268add2bc2fca8a8793734a29d8598d5" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>clearDepthBuffer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a21de9f43a3a01ebb355bbd0fe3ce69b2" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>CullMode</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a97989350ec7d4f333d8395b1770960fd" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>device</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1aff859183467d050697bd4e047cbebd5e" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>DrawMode</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3863b13be64bea5ac78ca5e2c3102d48" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Driver</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ab751e7816d10ee3d1464e8f71f7f74e7" prot="private" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Engine</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a3cab319ac36248d494e87f48dad39bef" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>executeOnRenderThread</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1afcdb3907c0fc560a99c60cc2e2827fa9" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getAvailableRenderDrivers</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1abf03e585d1b23706e0a04cd5212f5106" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getClearColor</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ad6de521e9c2486d4b19ea55e8074f29b" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getClearColorBuffer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a1082bd6ea299b732854ee4b17c490e7b" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getClearDepth</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ac5b4792a8daf80d370b109d014a0a815" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getClearDepthBuffer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a2ca08cee0d7bf7005f97177550b62c0c" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getDevice</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ab33283a2a87825c636b2dc72b6fbd720" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>getSize</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1af9afee52ee9ed96d3de0d91f612f6240" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>init</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>operator=</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1aca0da308552e4a39f57e94f6e7e0d267" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Renderer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1afebabd5efb09b8e6d29e812a3aae4b9f" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>saveScreenshot</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a09c966c568ac212af3c4621900720c5f" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>setClearColor</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ac82f2730be7f2359d779399cb0b92f70" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>setClearColorBuffer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a185b36973949c2a4e1e83f5884a93584" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>setClearDepth</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ae3a80f03daed3fbb30140538ea0a2ad1" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>setClearDepthBuffer</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a9f083e583b100a53f1aaeab7b13333cc" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>setSize</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1ac41e3ba95c4598a06f62b880033621ad" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>size</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1a80b4dcd9eb220332499fe57953970863" prot="private" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>Window</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>~Noncopyable</name></member>
+      <member refid="da/d6d/classouzel_1_1graphics_1_1_renderer_1aa8ad8c89d86400e5a970b056bba4dd77" prot="public" virt="non-virtual"><scope>ouzel::graphics::Renderer</scope><name>~Renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

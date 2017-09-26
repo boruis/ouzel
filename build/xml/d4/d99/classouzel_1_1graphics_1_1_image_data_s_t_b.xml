@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::ImageDataSTB</compoundname>
+    <basecompoundref refid="da/d6f/classouzel_1_1graphics_1_1_image_data" prot="public" virt="non-virtual">ouzel::graphics::ImageData</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b_1aeb577e4eebbe0004264dcdf98fc9520c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::ImageDataSTB::init</definition>
+        <argsstring>(const std::string &amp;newFilename, PixelFormat newPixelFormat=PixelFormat::RGBA8_UNORM)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newFilename</declname>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>newPixelFormat</declname>
+          <defval>PixelFormat::RGBA8_UNORM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ImageDataSTB.hpp" line="16" column="1" bodyfile="ouzel/graphics/ImageDataSTB.cpp" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b_1a9811f02bea6e2b53452f8f40f817f0bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::ImageDataSTB::init</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;newData, PixelFormat newPixelFormat=PixelFormat::RGBA8_UNORM)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>newPixelFormat</declname>
+          <defval>PixelFormat::RGBA8_UNORM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ImageDataSTB.hpp" line="18" column="1" bodyfile="ouzel/graphics/ImageDataSTB.cpp" bodystart="31" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b_1a0055128185199cf55d0f6a42f4c62118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::ImageDataSTB::writeToFile</definition>
+        <argsstring>(const std::string &amp;newFilename)</argsstring>
+        <name>writeToFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/ImageDataSTB.hpp" line="20" column="1" bodyfile="ouzel/graphics/ImageDataSTB.cpp" bodystart="78" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="836">
+        <label>ouzel::graphics::ImageDataSTB</label>
+        <link refid="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b"/>
+        <childnode refid="837" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="837">
+        <label>ouzel::graphics::ImageData</label>
+        <link refid="da/d6f/classouzel_1_1graphics_1_1_image_data"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="840">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="838">
+        <label>ouzel::graphics::ImageDataSTB</label>
+        <link refid="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b"/>
+        <childnode refid="839" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="839">
+        <label>ouzel::graphics::ImageData</label>
+        <link refid="da/d6f/classouzel_1_1graphics_1_1_image_data"/>
+        <childnode refid="840" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/ImageDataSTB.hpp" line="14" column="1" bodyfile="ouzel/graphics/ImageDataSTB.hpp" bodystart="13" bodyend="21"/>
+    <listofallmembers>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1ae455af2015342ecea3e4386e28e541c3" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>data</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1a740731cb575544875f5c8e98b4cc9fa6" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>filename</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1a47903663150f8afbd51a3ee0eec1498c" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>getData</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1a97a3e41cd924cca98ff09822c0c6d96c" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>getPixelFormat</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1a31aa1a4ba12878e3c15a17cd957f863e" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>getSize</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1adb753c549d12a305df80c44b0aac0437" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>ImageData</name></member>
+      <member refid="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b_1aeb577e4eebbe0004264dcdf98fc9520c" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>init</name></member>
+      <member refid="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b_1a9811f02bea6e2b53452f8f40f817f0bf" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>init</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1a0532a48be685cb366678744b5bac168a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>pixelFormat</name></member>
+      <member refid="da/d6f/classouzel_1_1graphics_1_1_image_data_1a2f375b858415abb40fdac495dabad86a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>size</name></member>
+      <member refid="d4/d99/classouzel_1_1graphics_1_1_image_data_s_t_b_1a0055128185199cf55d0f6a42f4c62118" prot="public" virt="non-virtual"><scope>ouzel::graphics::ImageDataSTB</scope><name>writeToFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

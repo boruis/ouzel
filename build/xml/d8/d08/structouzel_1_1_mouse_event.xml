@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d8/d08/structouzel_1_1_mouse_event" kind="struct" language="C++" prot="public">
+    <compoundname>ouzel::MouseEvent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d08/structouzel_1_1_mouse_event_1a718c94437deeea5816189f4c4368023a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::MouseEvent::modifiers</definition>
+        <argsstring></argsstring>
+        <name>modifiers</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="37" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d08/structouzel_1_1_mouse_event_1af322080d423686fcf14f16fae96b98b2" prot="public" static="no" mutable="no">
+        <type>input::MouseButton</type>
+        <definition>input::MouseButton ouzel::MouseEvent::button</definition>
+        <argsstring></argsstring>
+        <name>button</name>
+        <initializer>= input::MouseButton::NONE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="38" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d08/structouzel_1_1_mouse_event_1a92189f1fae4744321a0676a34d57f73a" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::MouseEvent::difference</definition>
+        <argsstring></argsstring>
+        <name>difference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="39" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d08/structouzel_1_1_mouse_event_1a697f9eea7abdd17f0d42eb2ca2b68ede" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::MouseEvent::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="40" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d08/structouzel_1_1_mouse_event_1a75a27d42c2b293c901155ce529427622" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 ouzel::MouseEvent::scroll</definition>
+        <argsstring></argsstring>
+        <name>scroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="41" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1099">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="1099" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>ouzel::MouseEvent</label>
+        <link refid="d8/d08/structouzel_1_1_mouse_event"/>
+        <childnode refid="1099" relation="usage">
+          <edgelabel>difference</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/Event.hpp" line="36" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="35" bodyend="42"/>
+    <listofallmembers>
+      <member refid="d8/d08/structouzel_1_1_mouse_event_1af322080d423686fcf14f16fae96b98b2" prot="public" virt="non-virtual"><scope>ouzel::MouseEvent</scope><name>button</name></member>
+      <member refid="d8/d08/structouzel_1_1_mouse_event_1a92189f1fae4744321a0676a34d57f73a" prot="public" virt="non-virtual"><scope>ouzel::MouseEvent</scope><name>difference</name></member>
+      <member refid="d8/d08/structouzel_1_1_mouse_event_1a718c94437deeea5816189f4c4368023a" prot="public" virt="non-virtual"><scope>ouzel::MouseEvent</scope><name>modifiers</name></member>
+      <member refid="d8/d08/structouzel_1_1_mouse_event_1a697f9eea7abdd17f0d42eb2ca2b68ede" prot="public" virt="non-virtual"><scope>ouzel::MouseEvent</scope><name>position</name></member>
+      <member refid="d8/d08/structouzel_1_1_mouse_event_1a75a27d42c2b293c901155ce529427622" prot="public" virt="non-virtual"><scope>ouzel::MouseEvent</scope><name>scroll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

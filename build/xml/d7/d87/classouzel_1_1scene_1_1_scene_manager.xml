@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d87/classouzel_1_1scene_1_1_scene_manager" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::scene::SceneManager</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a9b7bec0176c90f15b6ec2bea2a206e80" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::scene::SceneManager::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="20" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1af3de0dd6a7b1f216ba2cdd0b6b3562b1" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> * &gt;</type>
+        <definition>std::vector&lt;Scene*&gt; ouzel::scene::SceneManager::scenes</definition>
+        <argsstring></argsstring>
+        <name>scenes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="55" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a499ef68bcef4b8b3c2e600f7a9d203d6" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Scene&gt; &gt; ouzel::scene::SceneManager::ownedScenes</definition>
+        <argsstring></argsstring>
+        <name>ownedScenes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="56" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a98cd1147ba67d225409ad9f98fee729e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::scene::SceneManager::~SceneManager</definition>
+        <argsstring>()</argsstring>
+        <name>~SceneManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="22" column="1" bodyfile="ouzel/scene/SceneManager.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a89300c2369a32703f0d960f28b2655cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::SceneManager::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="24" column="1" bodyfile="ouzel/scene/SceneManager.cpp" bodystart="66" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1af662b497148d1aad2455fc69828c7e57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::SceneManager::setScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="26" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a541fa7d4865be369bde1df8b43b8a3c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ouzel::scene::SceneManager::setScene</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="30" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1ac2b64552d1ae558e40bdd624f21c26cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ouzel::scene::SceneManager::setScene</definition>
+        <argsstring>(std::unique_ptr&lt; T &gt; &amp;&amp;scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type>std::unique_ptr&lt; T &gt; &amp;&amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="34" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a7e361ca07f0108e2be723cfede13a70a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::SceneManager::removeScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>removeScene</name>
+        <param>
+          <type><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="40" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1aa19cfdb719d648115717964a00832b28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool ouzel::scene::SceneManager::setScene</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="44" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1ab53e671ec17638113eeda6c79d924e03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* ouzel::scene::SceneManager::getScene</definition>
+        <argsstring>() const</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="48" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a97e6d6bb6c50f2bdbdb4c64e25fd5e54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::scene::SceneManager::addChildScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>addChildScene</name>
+        <param>
+          <type><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="51" column="1" bodyfile="ouzel/scene/SceneManager.cpp" bodystart="27" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a99a4600da94b1d4e109444ad20a1ed03" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::scene::SceneManager::removeChildScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>removeChildScene</name>
+        <param>
+          <type><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="52" column="1" bodyfile="ouzel/scene/SceneManager.cpp" bodystart="39" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d87/classouzel_1_1scene_1_1_scene_manager_1af5809c27a1d12634b2691158f0dd43b9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::scene::SceneManager::SceneManager</definition>
+        <argsstring>()</argsstring>
+        <name>SceneManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/scene/SceneManager.hpp" line="53" column="1" bodyfile="ouzel/scene/SceneManager.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1498">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1499">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1500">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1501">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/scene/SceneManager.hpp" line="19" column="1" bodyfile="ouzel/scene/SceneManager.hpp" bodystart="18" bodyend="57"/>
+    <listofallmembers>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a97e6d6bb6c50f2bdbdb4c64e25fd5e54" prot="protected" virt="virtual"><scope>ouzel::scene::SceneManager</scope><name>addChildScene</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a89300c2369a32703f0d960f28b2655cf" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>draw</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a9b7bec0176c90f15b6ec2bea2a206e80" prot="private" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>Engine</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1ab53e671ec17638113eeda6c79d924e03" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>getScene</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>operator=</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a499ef68bcef4b8b3c2e600f7a9d203d6" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>ownedScenes</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a99a4600da94b1d4e109444ad20a1ed03" prot="protected" virt="virtual"><scope>ouzel::scene::SceneManager</scope><name>removeChildScene</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a7e361ca07f0108e2be723cfede13a70a" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>removeScene</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1af5809c27a1d12634b2691158f0dd43b9" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>SceneManager</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1af3de0dd6a7b1f216ba2cdd0b6b3562b1" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>scenes</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1af662b497148d1aad2455fc69828c7e57" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>setScene</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a541fa7d4865be369bde1df8b43b8a3c7" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>setScene</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1ac2b64552d1ae558e40bdd624f21c26cd" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>setScene</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1aa19cfdb719d648115717964a00832b28" prot="public" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>setScene</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::scene::SceneManager</scope><name>~Noncopyable</name></member>
+      <member refid="d7/d87/classouzel_1_1scene_1_1_scene_manager_1a98cd1147ba67d225409ad9f98fee729e" prot="public" virt="virtual"><scope>ouzel::scene::SceneManager</scope><name>~SceneManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

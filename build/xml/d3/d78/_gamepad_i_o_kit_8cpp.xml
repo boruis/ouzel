@@ -1,0 +1,1242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d3/d78/_gamepad_i_o_kit_8cpp" kind="file" language="C++">
+    <compoundname>GamepadIOKit.cpp</compoundname>
+    <includes refid="d1/d88/_gamepad_i_o_kit_8hpp" local="yes">GamepadIOKit.hpp</includes>
+    <includes refid="db/db9/_engine_8hpp" local="yes">core/Engine.hpp</includes>
+    <includes refid="de/d93/_setup_8h" local="yes">core/Setup.h</includes>
+    <includes refid="d1/d90/_event_dispatcher_8hpp" local="yes">events/EventDispatcher.hpp</includes>
+    <includes refid="d8/dce/_log_8hpp" local="yes">utils/Log.hpp</includes>
+    <incdepgraph>
+      <node id="11122">
+        <label>atomic</label>
+      </node>
+      <node id="11094">
+        <label>functional</label>
+      </node>
+      <node id="11092">
+        <label>queue</label>
+      </node>
+      <node id="11102">
+        <label>limits</label>
+      </node>
+      <node id="11128">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11091" relation="include">
+        </childnode>
+        <childnode refid="11092" relation="include">
+        </childnode>
+        <childnode refid="11095" relation="include">
+        </childnode>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11083" relation="include">
+        </childnode>
+        <childnode refid="11129" relation="include">
+        </childnode>
+      </node>
+      <node id="11137">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+      </node>
+      <node id="11141">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+      </node>
+      <node id="11081">
+        <label>cstdint</label>
+      </node>
+      <node id="11096">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="11097" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+      </node>
+      <node id="11076">
+        <label>ouzel/input/macos/GamepadIOKit.cpp</label>
+        <link refid="d3/d78/_gamepad_i_o_kit_8cpp"/>
+        <childnode refid="11077" relation="include">
+        </childnode>
+        <childnode refid="11120" relation="include">
+        </childnode>
+        <childnode refid="11098" relation="include">
+        </childnode>
+        <childnode refid="11128" relation="include">
+        </childnode>
+        <childnode refid="11149" relation="include">
+        </childnode>
+      </node>
+      <node id="11108">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11101" relation="include">
+        </childnode>
+        <childnode refid="11097" relation="include">
+        </childnode>
+        <childnode refid="11109" relation="include">
+        </childnode>
+        <childnode refid="11110" relation="include">
+        </childnode>
+        <childnode refid="11114" relation="include">
+        </childnode>
+      </node>
+      <node id="11127">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+      </node>
+      <node id="11124">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="11082" relation="include">
+        </childnode>
+      </node>
+      <node id="11134">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11135" relation="include">
+        </childnode>
+        <childnode refid="11110" relation="include">
+        </childnode>
+        <childnode refid="11136" relation="include">
+        </childnode>
+        <childnode refid="11138" relation="include">
+        </childnode>
+        <childnode refid="11139" relation="include">
+        </childnode>
+        <childnode refid="11140" relation="include">
+        </childnode>
+        <childnode refid="11114" relation="include">
+        </childnode>
+      </node>
+      <node id="11090">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="11091" relation="include">
+        </childnode>
+        <childnode refid="11092" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11093" relation="include">
+        </childnode>
+      </node>
+      <node id="11080">
+        <label>input/Gamepad.hpp</label>
+        <link refid="d9/d5b/_gamepad_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11083" relation="include">
+        </childnode>
+      </node>
+      <node id="11112">
+        <label>cmath</label>
+      </node>
+      <node id="11147">
+        <label>errno.h</label>
+      </node>
+      <node id="11120">
+        <label>core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11095" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11094" relation="include">
+        </childnode>
+        <childnode refid="11121" relation="include">
+        </childnode>
+        <childnode refid="11122" relation="include">
+        </childnode>
+        <childnode refid="11123" relation="include">
+        </childnode>
+        <childnode refid="11098" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11116" relation="include">
+        </childnode>
+        <childnode refid="11124" relation="include">
+        </childnode>
+        <childnode refid="11125" relation="include">
+        </childnode>
+        <childnode refid="11093" relation="include">
+        </childnode>
+        <childnode refid="11127" relation="include">
+        </childnode>
+        <childnode refid="11128" relation="include">
+        </childnode>
+        <childnode refid="11130" relation="include">
+        </childnode>
+        <childnode refid="11131" relation="include">
+        </childnode>
+        <childnode refid="11145" relation="include">
+        </childnode>
+        <childnode refid="11146" relation="include">
+        </childnode>
+        <childnode refid="11148" relation="include">
+        </childnode>
+      </node>
+      <node id="11150">
+        <label>math/Matrix3.hpp</label>
+        <link refid="d8/d52/_matrix3_8hpp_source"/>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+      </node>
+      <node id="11145">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11132" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+      </node>
+      <node id="11133">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11134" relation="include">
+        </childnode>
+      </node>
+      <node id="11085">
+        <label>string</label>
+      </node>
+      <node id="11083">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11086" relation="include">
+        </childnode>
+        <childnode refid="11117" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11113" relation="include">
+        </childnode>
+        <childnode refid="11119" relation="include">
+        </childnode>
+      </node>
+      <node id="11132">
+        <label>map</label>
+      </node>
+      <node id="11087">
+        <label>cfloat</label>
+      </node>
+      <node id="11101">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11102" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+        <childnode refid="11105" relation="include">
+        </childnode>
+      </node>
+      <node id="11130">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+      </node>
+      <node id="11099">
+        <label>Config.h</label>
+      </node>
+      <node id="11097">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="11098" relation="include">
+        </childnode>
+        <childnode refid="11100" relation="include">
+        </childnode>
+        <childnode refid="11106" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+        <childnode refid="11107" relation="include">
+        </childnode>
+      </node>
+      <node id="11135">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11102" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11113" relation="include">
+        </childnode>
+      </node>
+      <node id="11089">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="11090" relation="include">
+        </childnode>
+      </node>
+      <node id="11086">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="11087" relation="include">
+        </childnode>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11089" relation="include">
+        </childnode>
+        <childnode refid="11108" relation="include">
+        </childnode>
+        <childnode refid="11116" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+      </node>
+      <node id="11115">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="11149">
+        <label>utils/Log.hpp</label>
+        <link refid="d8/dce/_log_8hpp_source"/>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11150" relation="include">
+        </childnode>
+        <childnode refid="11097" relation="include">
+        </childnode>
+        <childnode refid="11096" relation="include">
+        </childnode>
+        <childnode refid="11113" relation="include">
+        </childnode>
+        <childnode refid="11105" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+        <childnode refid="11107" relation="include">
+        </childnode>
+      </node>
+      <node id="11117">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11118" relation="include">
+        </childnode>
+        <childnode refid="11116" relation="include">
+        </childnode>
+        <childnode refid="11101" relation="include">
+        </childnode>
+        <childnode refid="11109" relation="include">
+        </childnode>
+        <childnode refid="11097" relation="include">
+        </childnode>
+        <childnode refid="11096" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+      </node>
+      <node id="11126">
+        <label>condition_variable</label>
+      </node>
+      <node id="11106">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="11118">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+      </node>
+      <node id="11129">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="11094" relation="include">
+        </childnode>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11083" relation="include">
+        </childnode>
+      </node>
+      <node id="11139">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+      </node>
+      <node id="11114">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11115" relation="include">
+        </childnode>
+        <childnode refid="11109" relation="include">
+        </childnode>
+        <childnode refid="11113" relation="include">
+        </childnode>
+      </node>
+      <node id="11098">
+        <label>core/Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="11099" relation="include">
+        </childnode>
+      </node>
+      <node id="11138">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+      </node>
+      <node id="11084">
+        <label>vector</label>
+      </node>
+      <node id="11113">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="11111" relation="include">
+        </childnode>
+      </node>
+      <node id="11100">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11101" relation="include">
+        </childnode>
+        <childnode refid="11106" relation="include">
+        </childnode>
+        <childnode refid="11107" relation="include">
+        </childnode>
+      </node>
+      <node id="11148">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11132" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+      </node>
+      <node id="11105">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="11103" relation="include">
+        </childnode>
+      </node>
+      <node id="11119">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11091" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11078" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+      </node>
+      <node id="11136">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11137" relation="include">
+        </childnode>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+        <childnode refid="11109" relation="include">
+        </childnode>
+      </node>
+      <node id="11093">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11094" relation="include">
+        </childnode>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11095" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11096" relation="include">
+        </childnode>
+        <childnode refid="11103" relation="include">
+        </childnode>
+      </node>
+      <node id="11109">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="11104" relation="include">
+        </childnode>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+      </node>
+      <node id="11144">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+      </node>
+      <node id="11125">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11092" relation="include">
+        </childnode>
+        <childnode refid="11095" relation="include">
+        </childnode>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11091" relation="include">
+        </childnode>
+        <childnode refid="11122" relation="include">
+        </childnode>
+        <childnode refid="11126" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11110" relation="include">
+        </childnode>
+        <childnode refid="11097" relation="include">
+        </childnode>
+        <childnode refid="11113" relation="include">
+        </childnode>
+        <childnode refid="11109" relation="include">
+        </childnode>
+        <childnode refid="11114" relation="include">
+        </childnode>
+      </node>
+      <node id="11104">
+        <label>cstddef</label>
+      </node>
+      <node id="11078">
+        <label>unordered_map</label>
+      </node>
+      <node id="11140">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11136" relation="include">
+        </childnode>
+      </node>
+      <node id="11107">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="11104" relation="include">
+        </childnode>
+        <childnode refid="11098" relation="include">
+        </childnode>
+      </node>
+      <node id="11091">
+        <label>mutex</label>
+      </node>
+      <node id="11123">
+        <label>chrono</label>
+      </node>
+      <node id="11121">
+        <label>thread</label>
+      </node>
+      <node id="11079">
+        <label>IOKit/hid/IOHIDManager.h</label>
+      </node>
+      <node id="11095">
+        <label>set</label>
+      </node>
+      <node id="11142">
+        <label>gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11132" relation="include">
+        </childnode>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11078" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11109" relation="include">
+        </childnode>
+        <childnode refid="11114" relation="include">
+        </childnode>
+        <childnode refid="11136" relation="include">
+        </childnode>
+      </node>
+      <node id="11111">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="11104" relation="include">
+        </childnode>
+        <childnode refid="11112" relation="include">
+        </childnode>
+      </node>
+      <node id="11077">
+        <label>GamepadIOKit.hpp</label>
+        <link refid="d1/d88/_gamepad_i_o_kit_8hpp_source"/>
+        <childnode refid="11078" relation="include">
+        </childnode>
+        <childnode refid="11079" relation="include">
+        </childnode>
+        <childnode refid="11080" relation="include">
+        </childnode>
+      </node>
+      <node id="11116">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="11094" relation="include">
+        </childnode>
+        <childnode refid="11081" relation="include">
+        </childnode>
+      </node>
+      <node id="11143">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11084" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11137" relation="include">
+        </childnode>
+        <childnode refid="11136" relation="include">
+        </childnode>
+      </node>
+      <node id="11082">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="11110">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="11111" relation="include">
+        </childnode>
+        <childnode refid="11113" relation="include">
+        </childnode>
+      </node>
+      <node id="11103">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="11104" relation="include">
+        </childnode>
+      </node>
+      <node id="11088">
+        <label>memory</label>
+      </node>
+      <node id="11131">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="11088" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+        <childnode refid="11132" relation="include">
+        </childnode>
+        <childnode refid="11082" relation="include">
+        </childnode>
+        <childnode refid="11133" relation="include">
+        </childnode>
+        <childnode refid="11141" relation="include">
+        </childnode>
+        <childnode refid="11142" relation="include">
+        </childnode>
+        <childnode refid="11138" relation="include">
+        </childnode>
+        <childnode refid="11143" relation="include">
+        </childnode>
+        <childnode refid="11114" relation="include">
+        </childnode>
+        <childnode refid="11144" relation="include">
+        </childnode>
+      </node>
+      <node id="11146">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="11147" relation="include">
+        </childnode>
+        <childnode refid="11081" relation="include">
+        </childnode>
+        <childnode refid="11085" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d5/d3c/namespaceouzel_1_1input">ouzel::input</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d3/d78/_gamepad_i_o_kit_8cpp_1af8dc4b552972db48c08b1358957810ba" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float THUMB_DEADZONE</definition>
+        <argsstring></argsstring>
+        <name>THUMB_DEADZONE</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadIOKit.cpp" line="10" column="1" bodyfile="ouzel/input/macos/GamepadIOKit.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/d78/_gamepad_i_o_kit_8cpp_1a12f576a6e9758d1cd2db67613c39b4d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void deviceInput</definition>
+        <argsstring>(void *ctx, IOReturn, void *, IOHIDValueRef value)</argsstring>
+        <name>deviceInput</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>IOReturn</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>IOHIDValueRef</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/macos/GamepadIOKit.cpp" line="12" column="1" bodyfile="ouzel/input/macos/GamepadIOKit.cpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GamepadIOKit.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Engine.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Setup.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;events/EventDispatcher.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Log.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>THUMB_DEADZONE<sp/>=<sp/>0.2f;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deviceInput(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ctx,<sp/>IOReturn,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/>IOHIDValueRef<sp/>value)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" kindref="compound">ouzel::input::GamepadIOKit</ref>*<sp/>gamepad<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="d6/d65/classouzel_1_1input_1_1_gamepad_i_o_kit" kindref="compound">ouzel::input::GamepadIOKit</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ctx);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>gamepad-&gt;handleInput(value);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">input</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadIOKit::GamepadIOKit(IOHIDDeviceRef<sp/>aDevice):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device(aDevice)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOReturn<sp/>ret<sp/>=<sp/>IOHIDDeviceOpen(device,<sp/>kIOHIDOptionsTypeNone);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>!=<sp/>kIOReturnSuccess)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log(Log::Level::ERR)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>HID<sp/>device,<sp/>error:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ret;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFStringRef<sp/>productName<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">CFStringRef</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(IOHIDDeviceGetProperty(device,<sp/>CFSTR(kIOHIDProductKey)));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(productName)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>temp[256];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFStringGetCString(productName,<sp/>temp,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(temp),<sp/>kCFStringEncodingUTF8);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFNumberRef<sp/>vendor<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">CFNumberRef</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(IOHIDDeviceGetProperty(device,<sp/>CFSTR(kIOHIDVendorIDKey)));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vendor)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFNumberGetValue(vendor,<sp/>kCFNumberSInt32Type,<sp/>&amp;vendorId);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFNumberRef<sp/>product<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">CFNumberRef</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(IOHIDDeviceGetProperty(device,<sp/>CFSTR(kIOHIDProductIDKey)));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(product)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFNumberGetValue(product,<sp/>kCFNumberSInt32Type,<sp/>&amp;productId);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>leftThumbXMap<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>leftThumbYMap<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>leftTriggerMap<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>rightThumbXMap<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>rightThumbYMap<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>rightTriggerMap<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton<sp/>usageMap[24];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::fill(std::begin(usageMap),<sp/>std::end(usageMap),<sp/>GamepadButton::NONE);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vendorId<sp/>==<sp/>0x054C<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0268)<sp/></highlight><highlight class="comment">//<sp/>Playstation<sp/>3<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[0]<sp/>=<sp/>GamepadButton::BACK;<sp/></highlight><highlight class="comment">//<sp/>Select</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[1]<sp/>=<sp/>GamepadButton::LEFT_THUMB;<sp/></highlight><highlight class="comment">//<sp/>L3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[2]<sp/>=<sp/>GamepadButton::RIGHT_THUMB;<sp/></highlight><highlight class="comment">//<sp/>R3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[3]<sp/>=<sp/>GamepadButton::START;<sp/></highlight><highlight class="comment">//<sp/>Start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[4]<sp/>=<sp/>GamepadButton::DPAD_UP;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[5]<sp/>=<sp/>GamepadButton::DPAD_RIGHT;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[6]<sp/>=<sp/>GamepadButton::DPAD_DOWN;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[7]<sp/>=<sp/>GamepadButton::DPAD_LEFT;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[8]<sp/>=<sp/>GamepadButton::LEFT_TRIGGER;<sp/></highlight><highlight class="comment">//<sp/>L2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[9]<sp/>=<sp/>GamepadButton::RIGHT_TRIGGER;<sp/></highlight><highlight class="comment">//<sp/>R2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[10]<sp/>=<sp/>GamepadButton::LEFT_SHOULDER;<sp/></highlight><highlight class="comment">//<sp/>L1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[11]<sp/>=<sp/>GamepadButton::RIGHT_SHOULDER;<sp/></highlight><highlight class="comment">//<sp/>R1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[12]<sp/>=<sp/>GamepadButton::FACE_TOP;<sp/></highlight><highlight class="comment">//<sp/>Triangle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[13]<sp/>=<sp/>GamepadButton::FACE_RIGHT;<sp/></highlight><highlight class="comment">//<sp/>Circle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[14]<sp/>=<sp/>GamepadButton::FACE_BOTTOM;<sp/></highlight><highlight class="comment">//<sp/>Cross</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[15]<sp/>=<sp/>GamepadButton::FACE_LEFT;<sp/></highlight><highlight class="comment">//<sp/>Square</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbXMap<sp/>=<sp/>kHIDUsage_GD_X;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbYMap<sp/>=<sp/>kHIDUsage_GD_Y;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftTriggerMap<sp/>=<sp/>kHIDUsage_GD_Rx;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbXMap<sp/>=<sp/>kHIDUsage_GD_Z;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbYMap<sp/>=<sp/>kHIDUsage_GD_Rz;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightTriggerMap<sp/>=<sp/>kHIDUsage_GD_Ry;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vendorId<sp/>==<sp/>0x054C<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x05C4)<sp/></highlight><highlight class="comment">//<sp/>Playstation<sp/>4<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[0]<sp/>=<sp/>GamepadButton::FACE_LEFT;<sp/></highlight><highlight class="comment">//<sp/>Square</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[1]<sp/>=<sp/>GamepadButton::FACE_BOTTOM;<sp/></highlight><highlight class="comment">//<sp/>Cross</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[2]<sp/>=<sp/>GamepadButton::FACE_RIGHT;<sp/></highlight><highlight class="comment">//<sp/>Circle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[3]<sp/>=<sp/>GamepadButton::FACE_TOP;<sp/></highlight><highlight class="comment">//<sp/>Triangle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[4]<sp/>=<sp/>GamepadButton::LEFT_SHOULDER;<sp/></highlight><highlight class="comment">//<sp/>L1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[5]<sp/>=<sp/>GamepadButton::RIGHT_SHOULDER;<sp/></highlight><highlight class="comment">//<sp/>R1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[6]<sp/>=<sp/>GamepadButton::LEFT_TRIGGER;<sp/></highlight><highlight class="comment">//<sp/>L2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[7]<sp/>=<sp/>GamepadButton::RIGHT_TRIGGER;<sp/></highlight><highlight class="comment">//<sp/>R2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[8]<sp/>=<sp/>GamepadButton::BACK;<sp/></highlight><highlight class="comment">//<sp/>Share</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[9]<sp/>=<sp/>GamepadButton::START;<sp/></highlight><highlight class="comment">//<sp/>Options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[10]<sp/>=<sp/>GamepadButton::LEFT_THUMB;<sp/></highlight><highlight class="comment">//<sp/>L3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[11]<sp/>=<sp/>GamepadButton::RIGHT_THUMB;<sp/></highlight><highlight class="comment">//<sp/>R3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbXMap<sp/>=<sp/>kHIDUsage_GD_X;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbYMap<sp/>=<sp/>kHIDUsage_GD_Y;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftTriggerMap<sp/>=<sp/>kHIDUsage_GD_Rx;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbXMap<sp/>=<sp/>kHIDUsage_GD_Z;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbYMap<sp/>=<sp/>kHIDUsage_GD_Rz;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightTriggerMap<sp/>=<sp/>kHIDUsage_GD_Ry;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vendorId<sp/>==<sp/>0x045E<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x02d1)<sp/></highlight><highlight class="comment">//<sp/>Xbox<sp/>One<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[0]<sp/>=<sp/>GamepadButton::FACE_BOTTOM;<sp/></highlight><highlight class="comment">//<sp/>A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[1]<sp/>=<sp/>GamepadButton::FACE_RIGHT;<sp/></highlight><highlight class="comment">//<sp/>B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[2]<sp/>=<sp/>GamepadButton::FACE_LEFT;<sp/></highlight><highlight class="comment">//<sp/>X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[3]<sp/>=<sp/>GamepadButton::FACE_TOP;<sp/></highlight><highlight class="comment">//<sp/>Y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[4]<sp/>=<sp/>GamepadButton::LEFT_SHOULDER;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[5]<sp/>=<sp/>GamepadButton::RIGHT_SHOULDER;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[6]<sp/>=<sp/>GamepadButton::LEFT_THUMB;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[7]<sp/>=<sp/>GamepadButton::RIGHT_THUMB;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[8]<sp/>=<sp/>GamepadButton::BACK;<sp/></highlight><highlight class="comment">//<sp/>Menu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[9]<sp/>=<sp/>GamepadButton::START;<sp/></highlight><highlight class="comment">//<sp/>View</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[11]<sp/>=<sp/>GamepadButton::DPAD_UP;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[12]<sp/>=<sp/>GamepadButton::DPAD_DOWN;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[13]<sp/>=<sp/>GamepadButton::DPAD_LEFT;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[14]<sp/>=<sp/>GamepadButton::DPAD_RIGHT;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbXMap<sp/>=<sp/>kHIDUsage_GD_X;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbYMap<sp/>=<sp/>kHIDUsage_GD_Y;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftTriggerMap<sp/>=<sp/>kHIDUsage_GD_Ry;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbXMap<sp/>=<sp/>kHIDUsage_GD_Z;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbYMap<sp/>=<sp/>kHIDUsage_GD_Rx;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightTriggerMap<sp/>=<sp/>kHIDUsage_GD_Rz;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0113)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>AfterglowGamepadforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0213)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>AfterglowGamepadforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF900)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>AfterglowGamepadforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xCB29)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>AviatorforXbox360PC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x15E4<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x3F10)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>BatarangwiredcontrollerXBOX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x146B<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0601)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>BigbenControllerBB7201</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF401)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF501)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1430<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF801)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x028E)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xFA01)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x12AB<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0004)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>DDRUniverse2Mat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x24C6<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x5B00)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>Ferrari458Racingwheel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1430<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4734)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GH4Guitar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x046D<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xC21D)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GamepadF310</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0301)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GamepadforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0401)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GamepadforXbox360Z</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x12AB<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0302)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GamepadforXbox360ZZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF902)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GamepadforXbox360ZZZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF901)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GamestopXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1430<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x474C)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>GuitarHeroforPCMAC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF501)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HORIPADEX2TURBO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0003)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HarmonixDrumKitforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0002)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HarmonixGuitarforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0F0D<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x000A)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HoriCoDOA4FightStick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0F0D<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x000D)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HoriFightingStickEx2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0F0D<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0016)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HoriRealArcadeProEx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x24C6<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x5501)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HoriRealArcadeProVXSA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x24C6<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x5506)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>HoriSOULCALIBURVStick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF02D)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>JoytechNeoSe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x162E<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xBEEF)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>JoytechNeoSeTake2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x046D<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xC242)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>LogitechChillStream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x046D<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xC21E)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>LogitechF510</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xFD01)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatz360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4740)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzBeatPad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF025)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzCallofDutyGamePad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF027)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzFPSProGamePad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF021)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzGhostReconFSGamePad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4736)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzMicroConGamePadPro</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF036)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzMicroConGamePadProZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x9871)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzPortableDrumKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4728)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzStreetFighterIVFightPad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4718)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzStreetFighterIVFightStickSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4716)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4726)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xBEEF)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF016)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xB726)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MadCatzXboxcontrollerMW2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x045E<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x028E)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MicrosoftXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x045E<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0719)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>MicrosoftXbox360Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x12AB<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0301)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>PDPAFTERGLOWAX1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0105)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>PDPDancePad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0201)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>PelicanTSZ360Pad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x15E4<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x3F00)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>PowerAMiniProElite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x24C6<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x5300)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>PowerAMiniProEliteGlow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF504)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>REALARCADEPROEX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF502)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>REALARCADEProVX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1689<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xFD00)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>RazerOnza</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1689<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xFD01)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>RazerOnzaTournamentEdition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1430<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4748)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>RedOctaneGuitarHeroXplorer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x011F)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>RockCandyGamepadforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x12AB<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0006)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>RockRevolutionforXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xCB02)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>SaitekCyborgRumblePadPCXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xCB03)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>SaitekP3200RumblePadPCXbox360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF028)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>StreetFighterIVFightPad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x4738)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>StreetFighterIVFightStickTE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0738<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF738)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>SuperSFIVFightStickTES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF903)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>TronXbox360controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x5500)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>USBGamepad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x1BAD<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0xF906)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>XB360MortalKombatFightStick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x15E4<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x3F0A)<sp/>||<sp/></highlight><highlight class="comment">//<sp/>XboxAirflowiredcontroller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(vendorId<sp/>==<sp/>0x0E6F<sp/>&amp;&amp;<sp/>productId<sp/>==<sp/>0x0401))<sp/></highlight><highlight class="comment">//<sp/>GameStop<sp/>XBox<sp/>360<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[0]<sp/>=<sp/>GamepadButton::FACE_BOTTOM;<sp/></highlight><highlight class="comment">//<sp/>A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[1]<sp/>=<sp/>GamepadButton::FACE_RIGHT;<sp/></highlight><highlight class="comment">//<sp/>B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[2]<sp/>=<sp/>GamepadButton::FACE_LEFT;<sp/></highlight><highlight class="comment">//<sp/>X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[3]<sp/>=<sp/>GamepadButton::FACE_TOP;<sp/></highlight><highlight class="comment">//<sp/>Y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[4]<sp/>=<sp/>GamepadButton::LEFT_SHOULDER;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[5]<sp/>=<sp/>GamepadButton::RIGHT_SHOULDER;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[6]<sp/>=<sp/>GamepadButton::LEFT_THUMB;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[7]<sp/>=<sp/>GamepadButton::RIGHT_THUMB;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[8]<sp/>=<sp/>GamepadButton::START;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[9]<sp/>=<sp/>GamepadButton::BACK;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[11]<sp/>=<sp/>GamepadButton::DPAD_UP;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[12]<sp/>=<sp/>GamepadButton::DPAD_DOWN;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[13]<sp/>=<sp/>GamepadButton::DPAD_LEFT;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[14]<sp/>=<sp/>GamepadButton::DPAD_RIGHT;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbXMap<sp/>=<sp/>kHIDUsage_GD_X;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbYMap<sp/>=<sp/>kHIDUsage_GD_Y;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftTriggerMap<sp/>=<sp/>kHIDUsage_GD_Z;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbXMap<sp/>=<sp/>kHIDUsage_GD_Rx;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbYMap<sp/>=<sp/>kHIDUsage_GD_Ry;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightTriggerMap<sp/>=<sp/>kHIDUsage_GD_Rz;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Generic<sp/>(based<sp/>on<sp/>Logitech<sp/>RumblePad<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[0]<sp/>=<sp/>GamepadButton::FACE_LEFT;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[1]<sp/>=<sp/>GamepadButton::FACE_BOTTOM;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[2]<sp/>=<sp/>GamepadButton::FACE_RIGHT;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[3]<sp/>=<sp/>GamepadButton::FACE_TOP;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[4]<sp/>=<sp/>GamepadButton::LEFT_SHOULDER;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[5]<sp/>=<sp/>GamepadButton::RIGHT_SHOULDER;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[6]<sp/>=<sp/>GamepadButton::LEFT_TRIGGER;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[7]<sp/>=<sp/>GamepadButton::RIGHT_TRIGGER;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[8]<sp/>=<sp/>GamepadButton::BACK;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[9]<sp/>=<sp/>GamepadButton::START;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[10]<sp/>=<sp/>GamepadButton::LEFT_THUMB;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usageMap[11]<sp/>=<sp/>GamepadButton::RIGHT_THUMB;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbXMap<sp/>=<sp/>kHIDUsage_GD_X;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftThumbYMap<sp/>=<sp/>kHIDUsage_GD_Y;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftTriggerMap<sp/>=<sp/>kHIDUsage_GD_Rx;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbXMap<sp/>=<sp/>kHIDUsage_GD_Z;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightThumbYMap<sp/>=<sp/>kHIDUsage_GD_Rz;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightTriggerMap<sp/>=<sp/>kHIDUsage_GD_Ry;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFArrayRef<sp/>elementArray<sp/>=<sp/>IOHIDDeviceCopyMatchingElements(device,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>kIOHIDOptionsTypeNone);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(CFIndex<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>CFArrayGetCount(elementArray);<sp/>++i)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element<sp/>element;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.element<sp/>=<sp/>(IOHIDElementRef)CFArrayGetValueAtIndex(elementArray,<sp/>i);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.type<sp/>=<sp/>IOHIDElementGetType(element.element);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.usagePage<sp/>=<sp/>IOHIDElementGetUsagePage(element.element);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.usage<sp/>=<sp/>IOHIDElementGetUsage(element.element);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>&gt;<sp/>1<sp/>&amp;&amp;<sp/>element.usage<sp/>&lt;<sp/>25)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.button<sp/>=<sp/>usageMap[element.usage<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((element.type<sp/>==<sp/>kIOHIDElementTypeInput_Misc<sp/>||<sp/>element.type<sp/>==<sp/>kIOHIDElementTypeInput_Axis)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.usagePage<sp/>==<sp/>kHIDPage_GenericDesktop)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>leftThumbXMap)<sp/>leftThumbX<sp/>=<sp/>element.element;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>leftThumbYMap)<sp/>leftThumbY<sp/>=<sp/>element.element;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>leftTriggerMap)<sp/>leftTrigger<sp/>=<sp/>element.element;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>rightThumbXMap)<sp/>rightThumbX<sp/>=<sp/>element.element;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>rightThumbYMap)<sp/>rightThumbY<sp/>=<sp/>element.element;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>rightTriggerMap)<sp/>rightTrigger<sp/>=<sp/>element.element;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((element.type<sp/>==<sp/>kIOHIDElementTypeInput_Button<sp/>&amp;&amp;<sp/>element.usagePage<sp/>==<sp/>kHIDPage_Button<sp/>&amp;&amp;<sp/>element.usage<sp/>&gt;<sp/>1<sp/>&amp;&amp;element.usage<sp/>&lt;<sp/>25)<sp/>||</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((element.type<sp/>==<sp/>kIOHIDElementTypeInput_Misc<sp/>||<sp/>element.type<sp/>==<sp/>kIOHIDElementTypeInput_Axis)<sp/>&amp;&amp;<sp/>element.usagePage<sp/>==<sp/>kHIDPage_GenericDesktop))</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.min<sp/>=<sp/>IOHIDElementGetLogicalMin(element.element);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.max<sp/>=<sp/>IOHIDElementGetLogicalMax(element.element);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elements.insert(std::make_pair(element.element,<sp/>element));</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFRelease(elementArray);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDDeviceRegisterInputValueCallback(device,<sp/>deviceInput,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GamepadIOKit::handleInput(IOHIDValueRef<sp/>value)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOHIDElementRef<sp/>elementRef<sp/>=<sp/>IOHIDValueGetElement(value);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;IOHIDElementRef,<sp/>Element&gt;::iterator<sp/>i<sp/>=<sp/>elements.find(elementRef);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>!=<sp/>elements.end())</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element&amp;<sp/>element<sp/>=<sp/>i-&gt;second;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFIndex<sp/>newValue<sp/>=<sp/>IOHIDValueGetIntegerValue(value);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usagePage<sp/>==<sp/>kHIDPage_Button)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.button<sp/>!=<sp/>GamepadButton::NONE<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(element.button<sp/>!=<sp/>GamepadButton::LEFT_TRIGGER<sp/>||<sp/>!leftThumbX)<sp/>&amp;&amp;<sp/></highlight><highlight class="comment">//<sp/>don&apos;t<sp/>send<sp/>digital<sp/>trigger<sp/>if<sp/>analog<sp/>trigger<sp/>exists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(element.button<sp/>!=<sp/>GamepadButton::RIGHT_TRIGGER<sp/>||<sp/>!rightThumbY))</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(element.button,<sp/>newValue<sp/>&gt;<sp/>0,<sp/>(newValue<sp/>&gt;<sp/>0)<sp/>?<sp/>1.0f<sp/>:<sp/>0.0f);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elementRef<sp/>==<sp/>leftThumbX)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleThumbAxisChange(element.value,<sp/>newValue,</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.min,<sp/>element.max,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton::LEFT_THUMB_LEFT,<sp/>GamepadButton::LEFT_THUMB_RIGHT);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elementRef<sp/>==<sp/>leftThumbY)</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleThumbAxisChange(element.value,<sp/>newValue,</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.min,<sp/>element.max,</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton::LEFT_THUMB_UP,<sp/>GamepadButton::LEFT_THUMB_DOWN);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elementRef<sp/>==<sp/>leftTrigger)</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>floatValue<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(newValue<sp/>-<sp/>element.min)<sp/>/<sp/>(element.max<sp/>-<sp/>element.min);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(GamepadButton::LEFT_TRIGGER,<sp/>newValue<sp/>&gt;<sp/>0,<sp/>floatValue);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elementRef<sp/>==<sp/>rightThumbX)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleThumbAxisChange(element.value,<sp/>newValue,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.min,<sp/>element.max,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton::RIGHT_THUMB_LEFT,<sp/>GamepadButton::RIGHT_THUMB_RIGHT);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elementRef<sp/>==<sp/>rightThumbY)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleThumbAxisChange(element.value,<sp/>newValue,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.min,<sp/>element.max,</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton::RIGHT_THUMB_UP,<sp/>GamepadButton::RIGHT_THUMB_DOWN);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elementRef<sp/>==<sp/>rightTrigger)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>floatValue<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(newValue<sp/>-<sp/>element.min)<sp/>/<sp/>(element.max<sp/>-<sp/>element.min);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(GamepadButton::RIGHT_TRIGGER,<sp/>newValue<sp/>&gt;<sp/>0,<sp/>floatValue);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(element.usage<sp/>==<sp/>kHIDUsage_GD_Hatswitch)</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>bitmask<sp/>=<sp/>(element.value<sp/>&gt;=<sp/>8)<sp/>?<sp/>0<sp/>:<sp/>(1<sp/>&lt;&lt;<sp/>(element.value<sp/>/<sp/>2))<sp/>|<sp/></highlight><highlight class="comment">//<sp/>first<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>(element.value<sp/>/<sp/>2<sp/>+<sp/>element.value<sp/>%<sp/>2))<sp/>%<sp/>4;<sp/></highlight><highlight class="comment">//<sp/>second<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>newBitmask<sp/>=<sp/>(newValue<sp/>&gt;=<sp/>8)<sp/>?<sp/>0<sp/>:<sp/>(1<sp/>&lt;&lt;<sp/>(newValue<sp/>/<sp/>2))<sp/>|<sp/></highlight><highlight class="comment">//<sp/>first<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>(newValue<sp/>/<sp/>2<sp/>+<sp/>newValue<sp/>%<sp/>2))<sp/>%<sp/>4;<sp/></highlight><highlight class="comment">//<sp/>second<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bitmask<sp/>&amp;<sp/>0x01)<sp/>!=<sp/>(newBitmask<sp/>&amp;<sp/>0x01))<sp/>handleButtonValueChange(GamepadButton::DPAD_UP,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x01)<sp/>&gt;<sp/>0,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x01)<sp/>&gt;<sp/>0<sp/>?<sp/>1.0f<sp/>:<sp/>0.0f);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bitmask<sp/>&amp;<sp/>0x02)<sp/>!=<sp/>(newBitmask<sp/>&amp;<sp/>0x02))<sp/>handleButtonValueChange(GamepadButton::DPAD_RIGHT,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x02)<sp/>&gt;<sp/>0,</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x02)<sp/>&gt;<sp/>0<sp/>?<sp/>1.0f<sp/>:<sp/>0.0f);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bitmask<sp/>&amp;<sp/>0x04)<sp/>!=<sp/>(newBitmask<sp/>&amp;<sp/>0x04))<sp/>handleButtonValueChange(GamepadButton::DPAD_DOWN,</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x04)<sp/>&gt;<sp/>0,</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x04)<sp/>&gt;<sp/>0<sp/>?<sp/>1.0f<sp/>:<sp/>0.0f);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bitmask<sp/>&amp;<sp/>0x08)<sp/>!=<sp/>(newBitmask<sp/>&amp;<sp/>0x08))<sp/>handleButtonValueChange(GamepadButton::DPAD_LEFT,</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x08)<sp/>&gt;<sp/>0,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(newBitmask<sp/>&amp;<sp/>0x08)<sp/>&gt;<sp/>0<sp/>?<sp/>1.0f<sp/>:<sp/>0.0f);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element.value<sp/>=<sp/>newValue;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GamepadIOKit::handleThumbAxisChange(int64_t<sp/>oldValue,<sp/>int64_t<sp/>newValue,</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>min,<sp/>int64_t<sp/>max,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamepadButton<sp/>negativeButton,<sp/>GamepadButton<sp/>positiveButton)</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>floatValue<sp/>=<sp/>2.0f<sp/>*<sp/>(newValue<sp/>-<sp/>min)<sp/>/<sp/>(max<sp/>-<sp/>min)<sp/>-<sp/>1.0f;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(floatValue<sp/>&gt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(positiveButton,</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>floatValue<sp/>&gt;<sp/>THUMB_DEADZONE,</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>floatValue);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(floatValue<sp/>&lt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(negativeButton,</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-floatValue<sp/>&gt;<sp/>THUMB_DEADZONE,</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-floatValue);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>thumbstick<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(oldValue<sp/>&gt;<sp/>newValue)</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(positiveButton,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handleButtonValueChange(negativeButton,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/input/macos/GamepadIOKit.cpp"/>
+  </compounddef>
+</doxygen>

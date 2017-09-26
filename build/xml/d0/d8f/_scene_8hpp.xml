@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/d8f/_scene_8hpp" kind="file" language="C++">
+    <compoundname>Scene.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="db/df1/_noncopyable_8hpp" local="yes">utils/Noncopyable.hpp</includes>
+    <includes refid="d3/d12/_vector2_8hpp" local="yes">math/Vector2.hpp</includes>
+    <includes refid="d4/d86/_event_handler_8hpp" local="yes">events/EventHandler.hpp</includes>
+    <includedby refid="dd/d93/ouzel_8hpp" local="yes">ouzel/ouzel.hpp</includedby>
+    <includedby refid="df/d7f/_layer_8cpp" local="yes">ouzel/scene/Layer.cpp</includedby>
+    <includedby refid="d9/d44/_scene_8cpp" local="yes">ouzel/scene/Scene.cpp</includedby>
+    <includedby refid="d0/d5f/_scene_manager_8cpp" local="yes">ouzel/scene/SceneManager.cpp</includedby>
+    <incdepgraph>
+      <node id="14586">
+        <label>functional</label>
+      </node>
+      <node id="14595">
+        <label>queue</label>
+      </node>
+      <node id="14604">
+        <label>limits</label>
+      </node>
+      <node id="14580">
+        <label>cstdint</label>
+      </node>
+      <node id="14598">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="14599" relation="include">
+        </childnode>
+        <childnode refid="14605" relation="include">
+        </childnode>
+      </node>
+      <node id="14609">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14603" relation="include">
+        </childnode>
+        <childnode refid="14599" relation="include">
+        </childnode>
+        <childnode refid="14610" relation="include">
+        </childnode>
+        <childnode refid="14611" relation="include">
+        </childnode>
+        <childnode refid="14613" relation="include">
+        </childnode>
+      </node>
+      <node id="14593">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="14594" relation="include">
+        </childnode>
+        <childnode refid="14595" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14596" relation="include">
+        </childnode>
+      </node>
+      <node id="14584">
+        <label>cmath</label>
+      </node>
+      <node id="14588">
+        <label>string</label>
+      </node>
+      <node id="14587">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14588" relation="include">
+        </childnode>
+        <childnode refid="14589" relation="include">
+        </childnode>
+        <childnode refid="14616" relation="include">
+        </childnode>
+        <childnode refid="14582" relation="include">
+        </childnode>
+        <childnode refid="14612" relation="include">
+        </childnode>
+        <childnode refid="14618" relation="include">
+        </childnode>
+      </node>
+      <node id="14590">
+        <label>cfloat</label>
+      </node>
+      <node id="14603">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14604" relation="include">
+        </childnode>
+        <childnode refid="14605" relation="include">
+        </childnode>
+        <childnode refid="14606" relation="include">
+        </childnode>
+      </node>
+      <node id="14601">
+        <label>Config.h</label>
+      </node>
+      <node id="14599">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="14600" relation="include">
+        </childnode>
+        <childnode refid="14602" relation="include">
+        </childnode>
+        <childnode refid="14607" relation="include">
+        </childnode>
+        <childnode refid="14605" relation="include">
+        </childnode>
+        <childnode refid="14608" relation="include">
+        </childnode>
+      </node>
+      <node id="14592">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="14593" relation="include">
+        </childnode>
+      </node>
+      <node id="14589">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="14590" relation="include">
+        </childnode>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14592" relation="include">
+        </childnode>
+        <childnode refid="14609" relation="include">
+        </childnode>
+        <childnode refid="14615" relation="include">
+        </childnode>
+        <childnode refid="14605" relation="include">
+        </childnode>
+      </node>
+      <node id="14614">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="14616">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14617" relation="include">
+        </childnode>
+        <childnode refid="14615" relation="include">
+        </childnode>
+        <childnode refid="14603" relation="include">
+        </childnode>
+        <childnode refid="14610" relation="include">
+        </childnode>
+        <childnode refid="14599" relation="include">
+        </childnode>
+        <childnode refid="14598" relation="include">
+        </childnode>
+        <childnode refid="14582" relation="include">
+        </childnode>
+        <childnode refid="14605" relation="include">
+        </childnode>
+      </node>
+      <node id="14607">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="14617">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14582" relation="include">
+        </childnode>
+      </node>
+      <node id="14585">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="14586" relation="include">
+        </childnode>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14587" relation="include">
+        </childnode>
+      </node>
+      <node id="14613">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14588" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14614" relation="include">
+        </childnode>
+        <childnode refid="14610" relation="include">
+        </childnode>
+        <childnode refid="14612" relation="include">
+        </childnode>
+      </node>
+      <node id="14600">
+        <label>core/Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="14601" relation="include">
+        </childnode>
+      </node>
+      <node id="14578">
+        <label>vector</label>
+      </node>
+      <node id="14612">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="14582" relation="include">
+        </childnode>
+      </node>
+      <node id="14602">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14603" relation="include">
+        </childnode>
+        <childnode refid="14607" relation="include">
+        </childnode>
+        <childnode refid="14608" relation="include">
+        </childnode>
+      </node>
+      <node id="14606">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="14605" relation="include">
+        </childnode>
+      </node>
+      <node id="14618">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14594" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14579" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14582" relation="include">
+        </childnode>
+      </node>
+      <node id="14596">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14586" relation="include">
+        </childnode>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14597" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14598" relation="include">
+        </childnode>
+        <childnode refid="14605" relation="include">
+        </childnode>
+      </node>
+      <node id="14610">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="14583" relation="include">
+        </childnode>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14588" relation="include">
+        </childnode>
+      </node>
+      <node id="14583">
+        <label>cstddef</label>
+      </node>
+      <node id="14579">
+        <label>unordered_map</label>
+      </node>
+      <node id="14608">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="14583" relation="include">
+        </childnode>
+        <childnode refid="14600" relation="include">
+        </childnode>
+      </node>
+      <node id="14594">
+        <label>mutex</label>
+      </node>
+      <node id="14597">
+        <label>set</label>
+      </node>
+      <node id="14582">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="14583" relation="include">
+        </childnode>
+        <childnode refid="14584" relation="include">
+        </childnode>
+      </node>
+      <node id="14615">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="14586" relation="include">
+        </childnode>
+        <childnode refid="14580" relation="include">
+        </childnode>
+      </node>
+      <node id="14581">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="14611">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="14582" relation="include">
+        </childnode>
+        <childnode refid="14612" relation="include">
+        </childnode>
+      </node>
+      <node id="14605">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="14583" relation="include">
+        </childnode>
+      </node>
+      <node id="14577">
+        <label>ouzel/scene/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp"/>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14579" relation="include">
+        </childnode>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
+        <childnode refid="14582" relation="include">
+        </childnode>
+        <childnode refid="14585" relation="include">
+        </childnode>
+      </node>
+      <node id="14591">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="14620">
+        <label>ouzel/ouzel.hpp</label>
+        <link refid="dd/d93/ouzel_8hpp_source"/>
+      </node>
+      <node id="14619">
+        <label>ouzel/scene/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp"/>
+        <childnode refid="14620" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d5c/classouzel_1_1scene_1_1_scene" prot="public">ouzel::scene::Scene</innerclass>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d7/dfe/namespaceouzel_1_1scene">ouzel::scene</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Noncopyable.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math/Vector2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;events/EventHandler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">scene</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SceneManager;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Layer;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d7/d5c/classouzel_1_1scene_1_1_scene" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d2/d21/classouzel_1_1_noncopyable" kindref="compound">Noncopyable</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">SceneManager</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d7/d5c/classouzel_1_1scene_1_1_scene" kindref="compound">Scene</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addLayer(<ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref>*<sp/>layer)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addChildLayer(layer);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addLayer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;T&gt;&amp;<sp/>layer)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addChildLayer(layer.get());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addLayer(std::unique_ptr&lt;T&gt;&amp;&amp;<sp/>layer)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addChildLayer(layer.get());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ownedLayers.push_back(std::move(layer));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>removeLayer(<ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref>*<sp/>layer)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>removeChildLayer(layer);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>removeLayer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;T&gt;&amp;<sp/>layer)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>removeChildLayer(layer.get());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeAllLayers();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasLayer(<ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref>*<sp/>layer)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Layer*&gt;&amp;<sp/>getLayers()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>layers;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>recalculateProjection();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;Actor*,<sp/>ouzel::Vector3&gt;<sp/>pickActor(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>renderTargets<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Actor*,<sp/>ouzel::Vector3&gt;&gt;<sp/>pickActors(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>renderTargets<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Actor*&gt;<sp/>pickActors(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2&gt;&amp;<sp/>edges,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>renderTargets<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChildLayer(<ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref>*<sp/>layer);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>removeChildLayer(<ref refid="dd/dd5/classouzel_1_1scene_1_1_layer" kindref="compound">Layer</ref>*<sp/>layer);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>enter();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>leave();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>handleWindow(Event::Type<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref>&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>handleMouse(Event::Type<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d08/structouzel_1_1_mouse_event" kindref="compound">MouseEvent</ref>&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>handleTouch(Event::Type<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df9/structouzel_1_1_touch_event" kindref="compound">TouchEvent</ref>&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pointerEnterActor(uint64_t<sp/>pointerId,<sp/><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pointerLeaveActor(uint64_t<sp/>pointerId,<sp/><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pointerDownOnActor(uint64_t<sp/>pointerId,<sp/><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>localPosition);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pointerUpOnActor(uint64_t<sp/>pointerId,<sp/><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pointerDragActor(uint64_t<sp/>pointerId,<sp/><ref refid="df/d81/classouzel_1_1scene_1_1_actor" kindref="compound">Actor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>position,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>difference,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">ouzel::Vector3</ref>&amp;<sp/>localPosition);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d87/classouzel_1_1scene_1_1_scene_manager" kindref="compound">SceneManager</ref>*<sp/>sceneManger<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Layer*&gt;<sp/>layers;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::unique_ptr&lt;Layer&gt;&gt;<sp/>ownedLayers;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/de4/classouzel_1_1_event_handler" kindref="compound">ouzel::EventHandler</ref><sp/>eventHandler;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;uint64_t,<sp/>std::pair&lt;Actor*,<sp/>ouzel::Vector3&gt;&gt;<sp/>pointerDownOnActors;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>entered<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>scene</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/scene/Scene.hpp"/>
+  </compounddef>
+</doxygen>

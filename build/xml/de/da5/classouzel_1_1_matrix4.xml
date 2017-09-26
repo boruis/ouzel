@@ -1,0 +1,2201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/da5/classouzel_1_1_matrix4" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::Matrix4</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="de/da5/classouzel_1_1_matrix4_1af770d9483e08a8fdd8a7cca44bc4ddaf" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>const Matrix4 ouzel::Matrix4::IDENTITY</definition>
+        <argsstring></argsstring>
+        <name>IDENTITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="22" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/da5/classouzel_1_1_matrix4_1a70ccb3b421df2aabf6a944ae283f9e45" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>const Matrix4 ouzel::Matrix4::ZERO</definition>
+        <argsstring></argsstring>
+        <name>ZERO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="23" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/da5/classouzel_1_1_matrix4_1adbe11373b9aeb6dcd364dab4ff14b7ac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::Matrix4::m[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="32" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a951b8769302ef316adc1692f9d9e3549" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Matrix4::Matrix4</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="35" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1aa7f3246bd13df926b72067773703cd2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Matrix4::Matrix4</definition>
+        <argsstring>(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)</argsstring>
+        <name>Matrix4</name>
+        <param>
+          <type>float</type>
+          <declname>m11</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m12</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m13</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m14</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m21</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m22</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m23</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m24</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m31</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m32</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m33</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m34</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m41</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m42</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m43</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m44</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="40" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a6608f7bc3d5f4e6917a4969a8f1ef257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Matrix4::Matrix4</definition>
+        <argsstring>(const float *array)</argsstring>
+        <name>Matrix4</name>
+        <param>
+          <type>const float *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="45" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a81d43a61f9865cb7c7b9c31e59785732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Matrix4::Matrix4</definition>
+        <argsstring>(const Matrix4 &amp;copy)</argsstring>
+        <name>Matrix4</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="46" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a64c9465d98cde86dfccc99743c37f26b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float &amp;</type>
+        <definition>float&amp; ouzel::Matrix4::operator[]</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="48" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a954af616064a7132b75e182b2a4290c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::Matrix4::operator[]</definition>
+        <argsstring>(size_t index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="49" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a72f5a51afbcf844033421beb552d2521" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustumLeftPlane</definition>
+        <argsstring>(Plane &amp;plane) const</argsstring>
+        <name>getFrustumLeftPlane</name>
+        <param>
+          <type><ref refid="d8/d66/classouzel_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="74" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a07f4e627c39f59e5b6b218d36f9aaff6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustumRightPlane</definition>
+        <argsstring>(Plane &amp;plane) const</argsstring>
+        <name>getFrustumRightPlane</name>
+        <param>
+          <type><ref refid="d8/d66/classouzel_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="75" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a429c40e9a795c8e3d8c8d8dd1789f3a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustumBottomPlane</definition>
+        <argsstring>(Plane &amp;plane) const</argsstring>
+        <name>getFrustumBottomPlane</name>
+        <param>
+          <type><ref refid="d8/d66/classouzel_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="76" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a8593ea2eaf6df6b71c7ffb9e67902d6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustumTopPlane</definition>
+        <argsstring>(Plane &amp;plane) const</argsstring>
+        <name>getFrustumTopPlane</name>
+        <param>
+          <type><ref refid="d8/d66/classouzel_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="77" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a280361dbefa69fd2729a2f4419982e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustumNearPlane</definition>
+        <argsstring>(Plane &amp;plane) const</argsstring>
+        <name>getFrustumNearPlane</name>
+        <param>
+          <type><ref refid="d8/d66/classouzel_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="78" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="370" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a8046273ba362959bdc107806da6c0cc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustumFarPlane</definition>
+        <argsstring>(Plane &amp;plane) const</argsstring>
+        <name>getFrustumFarPlane</name>
+        <param>
+          <type><ref refid="d8/d66/classouzel_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="79" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a319f559a323396691c2102769efd8cef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::getFrustum</definition>
+        <argsstring>(ConvexVolume &amp;frustum) const</argsstring>
+        <name>getFrustum</name>
+        <param>
+          <type><ref refid="d4/d56/classouzel_1_1_convex_volume" kindref="compound">ConvexVolume</ref> &amp;</type>
+          <declname>frustum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="80" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="80" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a85291b9cb652a0c0cf6cb9f547a579b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::add</definition>
+        <argsstring>(float scalar)</argsstring>
+        <name>add</name>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="106" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a3e628686d0d6a9dd050f1ce2834642b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::add</definition>
+        <argsstring>(float scalar, Matrix4 &amp;dst)</argsstring>
+        <name>add</name>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="107" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="385" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a2cf2548a6d4bf8d1f920fb0858856a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::add</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="108" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="466" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1aabc4c3d141b437ed4249285cc66112d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ouzel::Matrix4::determinant</definition>
+        <argsstring>() const</argsstring>
+        <name>determinant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="111" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="549" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1abaad10a780a79a927fe8ae3bbc451117" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::getUpVector</definition>
+        <argsstring>(Vector3 &amp;dst) const</argsstring>
+        <name>getUpVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="113" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="568" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a93a2f2ed19b0e709c2b724a76afc1c7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::getDownVector</definition>
+        <argsstring>(Vector3 &amp;dst) const</argsstring>
+        <name>getDownVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="114" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="575" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1af22f07cba8cc683c050f84c00cb5562c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::getLeftVector</definition>
+        <argsstring>(Vector3 &amp;dst) const</argsstring>
+        <name>getLeftVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="115" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="582" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a27952203e2d76846f915800d991d3ea8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::getRightVector</definition>
+        <argsstring>(Vector3 &amp;dst) const</argsstring>
+        <name>getRightVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="116" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="589" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a08ac83fc5fc57d76c610d2d956027fe2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::getForwardVector</definition>
+        <argsstring>(Vector3 &amp;dst) const</argsstring>
+        <name>getForwardVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="117" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="596" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a5c517aa1cea724bcbca3156e94dc8f8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::getBackVector</definition>
+        <argsstring>(Vector3 &amp;dst) const</argsstring>
+        <name>getBackVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="118" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="603" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a8daefeb3efb2044339cca9f634c6c33b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::invert</definition>
+        <argsstring>()</argsstring>
+        <name>invert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="120" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="610" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a993c6f021f02f917438d57ceb1f86a71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::invert</definition>
+        <argsstring>(Matrix4 &amp;dst) const</argsstring>
+        <name>invert</name>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="121" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="615" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ae23a1052151455bcce4a6a25d186335e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::isIdentity</definition>
+        <argsstring>() const</argsstring>
+        <name>isIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="123" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="664" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1abca409471d1e82d16770153d88fed34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::multiply</definition>
+        <argsstring>(float scalar)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="125" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="669" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1af5e9030e9849e23a9f9250c69e627d8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::multiply</definition>
+        <argsstring>(float scalar, Matrix4 &amp;dst) const</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="126" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="674" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a66b118f4c62f3ac7836947cf8792fe7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::multiply</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="128" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="757" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1adf5691b7c596f8aa1688a5ca3fdcf700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::negate</definition>
+        <argsstring>()</argsstring>
+        <name>negate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="131" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="952" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1abf23f49a4d2f68ed9ebe4184cf294ea3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::negate</definition>
+        <argsstring>(Matrix4 &amp;dst) const</argsstring>
+        <name>negate</name>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="132" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="957" bodyend="1031"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1abbc2c8323fa881815019630f1cc0261c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotate</definition>
+        <argsstring>(const Vector3 &amp;axis, float angle)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="134" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1033" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a7c206b378e2af103dd31129b08f68b66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotate</definition>
+        <argsstring>(const Vector3 &amp;axis, float angle, Matrix4 &amp;dst) const</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="135" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1038" bodyend="1043"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a923ce91d22b7135de44441d7ad568b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotateX</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>rotateX</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="136" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1045" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a505aa5b4046d497189841c27551c41ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotateX</definition>
+        <argsstring>(float angle, Matrix4 &amp;dst) const</argsstring>
+        <name>rotateX</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="137" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1050" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1aa0e4101f353cefc3b429a51614414fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotateY</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>rotateY</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="138" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1057" bodyend="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ac5a3054fdd3ea9ef94468aa8a274b210" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotateY</definition>
+        <argsstring>(float angle, Matrix4 &amp;dst) const</argsstring>
+        <name>rotateY</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="139" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1062" bodyend="1067"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a685aa47e99b17e79eb0c2efddd8c86a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotateZ</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>rotateZ</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="140" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1069" bodyend="1072"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ac4f6623698bd7d7511ee4e30a776ce6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::rotateZ</definition>
+        <argsstring>(float angle, Matrix4 &amp;dst) const</argsstring>
+        <name>rotateZ</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="141" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1074" bodyend="1079"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a93309cc36185dda959c1776792813b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::scale</definition>
+        <argsstring>(float value)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="143" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1081" bodyend="1084"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1aaaa66e4fde93a3c34da5384b125332dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::scale</definition>
+        <argsstring>(float value, Matrix4 &amp;dst) const</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="144" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1086" bodyend="1089"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ae80ef445e67e4d0ac8ea47d1a71871ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::scale</definition>
+        <argsstring>(float xScale, float yScale, float zScale)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>xScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>yScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="145" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1091" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a6999ad94c11319334306b506b46b6aaa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::scale</definition>
+        <argsstring>(float xScale, float yScale, float zScale, Matrix4 &amp;dst) const</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>xScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>yScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zScale</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="146" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1096" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a1af356ba03cc63e4f7e598e8b1946498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::scale</definition>
+        <argsstring>(const Vector3 &amp;s)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="147" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1103" bodyend="1106"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ade9efe81aa2d5e8c116f0e56e0daaf87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::scale</definition>
+        <argsstring>(const Vector3 &amp;s, Matrix4 &amp;dst) const</argsstring>
+        <name>scale</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="148" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1108" bodyend="1111"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a4f531fb48b9ebad3e2915b04fc6620d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::set</definition>
+        <argsstring>(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)</argsstring>
+        <name>set</name>
+        <param>
+          <type>float</type>
+          <declname>m11</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m12</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m13</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m14</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m21</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m22</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m23</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m24</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m31</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m32</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m33</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m34</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m41</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m42</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m43</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m44</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="150" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1113" bodyend="1134"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a29c4c77123d1e7ce68ab819524090ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::set</definition>
+        <argsstring>(const float *array)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const float *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="154" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1136" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a60266db8e6b710eef3cac0eb388bef6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::setIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="155" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1142" bodyend="1145"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a8d41cbed210e2b4c0a14aff6164661d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::setZero</definition>
+        <argsstring>()</argsstring>
+        <name>setZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="156" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1147" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a181a6c74e99cffdc273bb83456f74cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::subtract</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>subtract</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="158" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1152" bodyend="1155"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a68ddb2b3ecb183fe168885365f538ee3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformPoint</definition>
+        <argsstring>(Vector3 &amp;point) const</argsstring>
+        <name>transformPoint</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="161" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a61a9cdf5e011c77003a4ec4ee2fd460e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformPoint</definition>
+        <argsstring>(const Vector3 &amp;point, Vector3 &amp;dst) const</argsstring>
+        <name>transformPoint</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="166" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ab77be494e7a30d2e0f4b7629f9b608f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformVector</definition>
+        <argsstring>(Vector3 &amp;vector) const</argsstring>
+        <name>transformVector</name>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="171" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ae131fe87d8b0a0037c954019a2967ba4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformVector</definition>
+        <argsstring>(const Vector3 &amp;vector, Vector3 &amp;dst) const</argsstring>
+        <name>transformVector</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="178" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ad358bc25e258af81c3fa46a28d31fec3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformVector</definition>
+        <argsstring>(float x, float y, float z, float w, Vector3 &amp;dst) const</argsstring>
+        <name>transformVector</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="183" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="183" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a1fb2806d3d568e6c605175358fac4f0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformVector</definition>
+        <argsstring>(Vector4 &amp;vector) const</argsstring>
+        <name>transformVector</name>
+        <param>
+          <type><ref refid="de/dc8/classouzel_1_1_vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="190" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a7c6c6ce58c8b802cb003dbe6c81db348" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transformVector</definition>
+        <argsstring>(const Vector4 &amp;vector, Vector4 &amp;dst) const</argsstring>
+        <name>transformVector</name>
+        <param>
+          <type>const <ref refid="de/dc8/classouzel_1_1_vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dc8/classouzel_1_1_vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="195" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1235" bodyend="1301"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a494cef7cad2a93b101e20f5f20d821f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::translate</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>translate</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="197" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1303" bodyend="1306"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a54e7ed92408d692dc0c77d0effb5c0a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::translate</definition>
+        <argsstring>(float x, float y, float z, Matrix4 &amp;dst) const</argsstring>
+        <name>translate</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="198" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1308" bodyend="1313"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ad1603eed6a712b6d7ba254420815ef07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::translate</definition>
+        <argsstring>(const Vector3 &amp;t)</argsstring>
+        <name>translate</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="199" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1315" bodyend="1318"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1af4a3e1f3d05d100e20c5c1dce2ba193d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::translate</definition>
+        <argsstring>(const Vector3 &amp;t, Matrix4 &amp;dst) const</argsstring>
+        <name>translate</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="200" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1320" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a4ce2d3a7fcb313e08b4d4a90900f1d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transpose</definition>
+        <argsstring>()</argsstring>
+        <name>transpose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="202" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1325" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a24eba49e2df205c344a1c19dedf2bc67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::transpose</definition>
+        <argsstring>(Matrix4 &amp;dst) const</argsstring>
+        <name>transpose</name>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="203" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1330" bodyend="1390"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1abe3e9f4ea471fb2a8fd6481dbba4fabe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 ouzel::Matrix4::getTranslation</definition>
+        <argsstring>() const</argsstring>
+        <name>getTranslation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="205" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1392" bodyend="1395"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1aa5913eb9b1170b83969c04b6f607a8fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 ouzel::Matrix4::getScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="206" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1397" bodyend="1405"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a2167ee49eb4f51b91a6eefb6a753ca30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d8c/classouzel_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion ouzel::Matrix4::getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="207" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1407" bodyend="1436"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1af34b134683ddfd903e2dcc8f89bca521" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::Matrix4::operator+</definition>
+        <argsstring>(const Matrix4 &amp;matrix) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="209" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="209" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a773e2b2ab936851d5c31b5d80e5ca49b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>Matrix4&amp; ouzel::Matrix4::operator+=</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="216" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1add2e8a59af3ac93c2575118be85baabb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::Matrix4::operator-</definition>
+        <argsstring>(const Matrix4 &amp;matrix) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="222" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a2ba006b018312e72a9733a43a2bad3fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>Matrix4&amp; ouzel::Matrix4::operator-=</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="229" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="229" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a2a750412c68b45cb5a36c6600716ddef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::Matrix4::operator-</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="235" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="235" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1af4d921a9d5135ccb4366e92a450a82ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 ouzel::Matrix4::operator*</definition>
+        <argsstring>(const Matrix4 &amp;matrix) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="242" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="242" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a6aa67b7f127fb6a8d2b59c2ff53d158c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>Matrix4&amp; ouzel::Matrix4::operator*=</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="249" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="249" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ada1a602000ccba9f3e9e5247a7e67933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::operator==</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="255" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="255" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a178d51ed1737dee8991153aff7a5a5e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ouzel::Matrix4::operator!=</definition>
+        <argsstring>(const Matrix4 &amp;matrix)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="275" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="275" bodyend="293"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a894fdacd755d3a780b41528aab5233ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createLookAt</definition>
+        <argsstring>(const Vector3 &amp;eyePosition, const Vector3 &amp;targetPosition, const Vector3 &amp;up, Matrix4 &amp;dst)</argsstring>
+        <name>createLookAt</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>eyePosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>targetPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>up</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="51" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ac2985c62b69a9f5c32ab3259777fb1de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createLookAt</definition>
+        <argsstring>(float eyePositionX, float eyePositionY, float eyePositionZ, float targetCenterX, float targetCenterY, float targetCenterZ, float upX, float upY, float upZ, Matrix4 &amp;dst)</argsstring>
+        <name>createLookAt</name>
+        <param>
+          <type>float</type>
+          <declname>eyePositionX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>eyePositionY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>eyePositionZ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetCenterX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetCenterY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetCenterZ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upZ</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="52" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="54" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a858e72cf0f4eab4a25e027d8c2b672ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createPerspective</definition>
+        <argsstring>(float fieldOfView, float aspectRatio, float zNearPlane, float zFarPlane, Matrix4 &amp;dst)</argsstring>
+        <name>createPerspective</name>
+        <param>
+          <type>float</type>
+          <declname>fieldOfView</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zNearPlane</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zFarPlane</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="55" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="97" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a1d03d00414107e69912ae52179fbe1c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createOrthographicFromSize</definition>
+        <argsstring>(float width, float height, float zNearPlane, float zFarPlane, Matrix4 &amp;dst)</argsstring>
+        <name>createOrthographicFromSize</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zNearPlane</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zFarPlane</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="57" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="123" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a10859ef1bb0589e649480287af2c1f15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createOrthographicOffCenter</definition>
+        <argsstring>(float left, float right, float bottom, float top, float zNearPlane, float zFarPlane, Matrix4 &amp;dst)</argsstring>
+        <name>createOrthographicOffCenter</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zNearPlane</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zFarPlane</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="58" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="134" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a6498a752855bb51367bb30ad081be693" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createBillboard</definition>
+        <argsstring>(const Vector3 &amp;objectPosition, const Vector3 &amp;cameraPosition, const Vector3 &amp;cameraUpVector, Matrix4 &amp;dst)</argsstring>
+        <name>createBillboard</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>objectPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraUpVector</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="60" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1ad925b1ddc7f9ea90be90aaa87321a42d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createBillboard</definition>
+        <argsstring>(const Vector3 &amp;objectPosition, const Vector3 &amp;cameraPosition, const Vector3 &amp;cameraUpVector, const Vector3 &amp;cameraForwardVector, Matrix4 &amp;dst)</argsstring>
+        <name>createBillboard</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>objectPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraUpVector</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraForwardVector</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="62" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="160" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a74632c123367668be03d4066d4996f92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createScale</definition>
+        <argsstring>(const Vector3 &amp;scale, Matrix4 &amp;dst)</argsstring>
+        <name>createScale</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="65" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="204" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1af6ee16c1796c5de3521fa615a44eceea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createScale</definition>
+        <argsstring>(float xScale, float yScale, float zScale, Matrix4 &amp;dst)</argsstring>
+        <name>createScale</name>
+        <param>
+          <type>float</type>
+          <declname>xScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>yScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zScale</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="66" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="213" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a71e31dde9c4cd707b4d6ae0d00c7a41a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createRotation</definition>
+        <argsstring>(const Vector3 &amp;axis, float angle, Matrix4 &amp;dst)</argsstring>
+        <name>createRotation</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="67" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="222" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a08a33af4a47a8b30bd21728d199a2b02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createRotationX</definition>
+        <argsstring>(float angle, Matrix4 &amp;dst)</argsstring>
+        <name>createRotationX</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="68" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="279" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a8763523bb797cca620fb746997c788c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createRotationY</definition>
+        <argsstring>(float angle, Matrix4 &amp;dst)</argsstring>
+        <name>createRotationY</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="69" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="292" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a57ae30125219787de5496feb264e0b8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createRotationZ</definition>
+        <argsstring>(float angle, Matrix4 &amp;dst)</argsstring>
+        <name>createRotationZ</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="70" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="305" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a340ded0bcaf4cade973713d17b2c622e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createTranslation</definition>
+        <argsstring>(const Vector3 &amp;translation, Matrix4 &amp;dst)</argsstring>
+        <name>createTranslation</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>translation</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="71" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="318" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1aea5a065360770c94a992a8a1b0dc9fad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createTranslation</definition>
+        <argsstring>(float xTranslation, float yTranslation, float zTranslation, Matrix4 &amp;dst)</argsstring>
+        <name>createTranslation</name>
+        <param>
+          <type>float</type>
+          <declname>xTranslation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>yTranslation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zTranslation</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="72" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="327" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a7737abf5bc6080d9035dc8c96a4df48f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::add</definition>
+        <argsstring>(const Matrix4 &amp;m1, const Matrix4 &amp;m2, Matrix4 &amp;dst)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="109" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="471" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a8ea9746dbfcba8bf18e91042d3de4dd4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::multiply</definition>
+        <argsstring>(const Matrix4 &amp;m, float scalar, Matrix4 &amp;dst)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="127" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="679" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a2e9d182019ed979304ef28f5b1ef2f25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::multiply</definition>
+        <argsstring>(const Matrix4 &amp;m1, const Matrix4 &amp;m2, Matrix4 &amp;dst)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="129" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="762" bodyend="950"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a3b4b8cb72345c03d69d2d60707209f87" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::subtract</definition>
+        <argsstring>(const Matrix4 &amp;m1, const Matrix4 &amp;m2, Matrix4 &amp;dst)</argsstring>
+        <name>subtract</name>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="159" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="1157" bodyend="1233"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="de/da5/classouzel_1_1_matrix4_1a16af503aac1b0de675f1824cb506acab" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Matrix4::createBillboardHelper</definition>
+        <argsstring>(const Vector3 &amp;objectPosition, const Vector3 &amp;cameraPosition, const Vector3 &amp;cameraUpVector, const Vector3 &amp;cameraForwardVector, Matrix4 &amp;dst)</argsstring>
+        <name>createBillboardHelper</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>objectPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraPosition</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraUpVector</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>cameraForwardVector</declname>
+        </param>
+        <param>
+          <type><ref refid="de/da5/classouzel_1_1_matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/math/Matrix4.hpp" line="296" column="1" bodyfile="ouzel/math/Matrix4.cpp" bodystart="169" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1018">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1018" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/math/Matrix4.hpp" line="20" column="1" bodyfile="ouzel/math/Matrix4.hpp" bodystart="19" bodyend="299"/>
+    <listofallmembers>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a85291b9cb652a0c0cf6cb9f547a579b8" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>add</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a3e628686d0d6a9dd050f1ce2834642b8" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>add</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a2cf2548a6d4bf8d1f920fb0858856a1e" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>add</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a7737abf5bc6080d9035dc8c96a4df48f" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>add</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a6498a752855bb51367bb30ad081be693" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createBillboard</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ad925b1ddc7f9ea90be90aaa87321a42d" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createBillboard</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a16af503aac1b0de675f1824cb506acab" prot="private" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createBillboardHelper</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a894fdacd755d3a780b41528aab5233ba" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createLookAt</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ac2985c62b69a9f5c32ab3259777fb1de" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createLookAt</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a1d03d00414107e69912ae52179fbe1c2" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createOrthographicFromSize</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a10859ef1bb0589e649480287af2c1f15" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createOrthographicOffCenter</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a858e72cf0f4eab4a25e027d8c2b672ee" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createPerspective</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a71e31dde9c4cd707b4d6ae0d00c7a41a" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createRotation</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a08a33af4a47a8b30bd21728d199a2b02" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createRotationX</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a8763523bb797cca620fb746997c788c4" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createRotationY</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a57ae30125219787de5496feb264e0b8e" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createRotationZ</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a74632c123367668be03d4066d4996f92" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createScale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af6ee16c1796c5de3521fa615a44eceea" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createScale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a340ded0bcaf4cade973713d17b2c622e" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createTranslation</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1aea5a065360770c94a992a8a1b0dc9fad" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>createTranslation</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1aabc4c3d141b437ed4249285cc66112d5" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>determinant</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a5c517aa1cea724bcbca3156e94dc8f8b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getBackVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a93a2f2ed19b0e709c2b724a76afc1c7d" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getDownVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a08ac83fc5fc57d76c610d2d956027fe2" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getForwardVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a319f559a323396691c2102769efd8cef" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustum</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a429c40e9a795c8e3d8c8d8dd1789f3a5" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustumBottomPlane</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a8046273ba362959bdc107806da6c0cc6" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustumFarPlane</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a72f5a51afbcf844033421beb552d2521" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustumLeftPlane</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a280361dbefa69fd2729a2f4419982e55" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustumNearPlane</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a07f4e627c39f59e5b6b218d36f9aaff6" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustumRightPlane</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a8593ea2eaf6df6b71c7ffb9e67902d6b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getFrustumTopPlane</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af22f07cba8cc683c050f84c00cb5562c" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getLeftVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a27952203e2d76846f915800d991d3ea8" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getRightVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a2167ee49eb4f51b91a6eefb6a753ca30" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getRotation</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1aa5913eb9b1170b83969c04b6f607a8fb" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getScale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1abe3e9f4ea471fb2a8fd6481dbba4fabe" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getTranslation</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1abaad10a780a79a927fe8ae3bbc451117" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>getUpVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af770d9483e08a8fdd8a7cca44bc4ddaf" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>IDENTITY</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a8daefeb3efb2044339cca9f634c6c33b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>invert</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a993c6f021f02f917438d57ceb1f86a71" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>invert</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ae23a1052151455bcce4a6a25d186335e" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>isIdentity</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1adbe11373b9aeb6dcd364dab4ff14b7ac" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>m</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a951b8769302ef316adc1692f9d9e3549" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>Matrix4</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1aa7f3246bd13df926b72067773703cd2d" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>Matrix4</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a6608f7bc3d5f4e6917a4969a8f1ef257" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>Matrix4</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a81d43a61f9865cb7c7b9c31e59785732" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>Matrix4</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1abca409471d1e82d16770153d88fed34f" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>multiply</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af5e9030e9849e23a9f9250c69e627d8a" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>multiply</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a8ea9746dbfcba8bf18e91042d3de4dd4" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>multiply</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a66b118f4c62f3ac7836947cf8792fe7c" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>multiply</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a2e9d182019ed979304ef28f5b1ef2f25" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>multiply</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1adf5691b7c596f8aa1688a5ca3fdcf700" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>negate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1abf23f49a4d2f68ed9ebe4184cf294ea3" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>negate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a178d51ed1737dee8991153aff7a5a5e3" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator!=</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af4d921a9d5135ccb4366e92a450a82ec" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator*</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a6aa67b7f127fb6a8d2b59c2ff53d158c" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator*=</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af34b134683ddfd903e2dcc8f89bca521" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator+</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a773e2b2ab936851d5c31b5d80e5ca49b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator+=</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1add2e8a59af3ac93c2575118be85baabb" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator-</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a2a750412c68b45cb5a36c6600716ddef" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator-</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a2ba006b018312e72a9733a43a2bad3fb" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator-=</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ada1a602000ccba9f3e9e5247a7e67933" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator==</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a64c9465d98cde86dfccc99743c37f26b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator[]</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a954af616064a7132b75e182b2a4290c8" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>operator[]</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1abbc2c8323fa881815019630f1cc0261c" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a7c206b378e2af103dd31129b08f68b66" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a923ce91d22b7135de44441d7ad568b5b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotateX</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a505aa5b4046d497189841c27551c41ca" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotateX</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1aa0e4101f353cefc3b429a51614414fcf" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotateY</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ac5a3054fdd3ea9ef94468aa8a274b210" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotateY</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a685aa47e99b17e79eb0c2efddd8c86a9" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotateZ</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ac4f6623698bd7d7511ee4e30a776ce6b" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>rotateZ</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a93309cc36185dda959c1776792813b8a" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>scale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1aaaa66e4fde93a3c34da5384b125332dd" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>scale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ae80ef445e67e4d0ac8ea47d1a71871ab" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>scale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a6999ad94c11319334306b506b46b6aaa" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>scale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a1af356ba03cc63e4f7e598e8b1946498" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>scale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ade9efe81aa2d5e8c116f0e56e0daaf87" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>scale</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a4f531fb48b9ebad3e2915b04fc6620d3" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>set</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a29c4c77123d1e7ce68ab819524090ce8" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>set</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a60266db8e6b710eef3cac0eb388bef6f" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>setIdentity</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a8d41cbed210e2b4c0a14aff6164661d8" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>setZero</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a181a6c74e99cffdc273bb83456f74cbd" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>subtract</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a3b4b8cb72345c03d69d2d60707209f87" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>subtract</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a68ddb2b3ecb183fe168885365f538ee3" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformPoint</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a61a9cdf5e011c77003a4ec4ee2fd460e" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformPoint</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ab77be494e7a30d2e0f4b7629f9b608f2" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ae131fe87d8b0a0037c954019a2967ba4" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ad358bc25e258af81c3fa46a28d31fec3" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a1fb2806d3d568e6c605175358fac4f0a" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a7c6c6ce58c8b802cb003dbe6c81db348" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transformVector</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a494cef7cad2a93b101e20f5f20d821f4" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>translate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a54e7ed92408d692dc0c77d0effb5c0a2" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>translate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1ad1603eed6a712b6d7ba254420815ef07" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>translate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1af4a3e1f3d05d100e20c5c1dce2ba193d" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>translate</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a4ce2d3a7fcb313e08b4d4a90900f1d81" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transpose</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a24eba49e2df205c344a1c19dedf2bc67" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>transpose</name></member>
+      <member refid="de/da5/classouzel_1_1_matrix4_1a70ccb3b421df2aabf6a944ae283f9e45" prot="public" virt="non-virtual"><scope>ouzel::Matrix4</scope><name>ZERO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

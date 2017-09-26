@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/d67/classouzel_1_1_update_callback" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::UpdateCallback</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1ad7f202b1a73b1f1c83fdba6e717a6a49" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::UpdateCallback::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="15" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1ac84c73a87347ca572b1651b43648840a" prot="public" static="yes" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t ouzel::UpdateCallback::PRIORITY_MAX</definition>
+        <argsstring></argsstring>
+        <name>PRIORITY_MAX</name>
+        <initializer>= 0x1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="17" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1a276b6e2db0088f08827b76a4fa65dd45" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(float)&gt;</type>
+        <definition>std::function&lt;void(float)&gt; ouzel::UpdateCallback::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="24" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1ad4b1925e618b7d13f38758fe77ae0916" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::UpdateCallback::interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="25" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1a6e2e7807755328ad2a51085a4562ee1d" prot="protected" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t ouzel::UpdateCallback::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="28" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1acf68011f3c8e966e4b3217585da9a46e" prot="protected" static="no" mutable="no">
+        <type><ref refid="d7/d05/classouzel_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* ouzel::UpdateCallback::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="29" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d67/classouzel_1_1_update_callback_1a782394dcf8b2a59ea050e567dce5ba8e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ouzel::UpdateCallback::timeSinceLastUpdate</definition>
+        <argsstring></argsstring>
+        <name>timeSinceLastUpdate</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="30" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d67/classouzel_1_1_update_callback_1ab69f7b3da989b7f4fb337d254d6b056c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::UpdateCallback::UpdateCallback</definition>
+        <argsstring>(int32_t aPriority=0)</argsstring>
+        <name>UpdateCallback</name>
+        <param>
+          <type>int32_t</type>
+          <declname>aPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="19" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d67/classouzel_1_1_update_callback_1a5d1371591d9f4dc52a3dd51d93dcde29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::UpdateCallback::~UpdateCallback</definition>
+        <argsstring>()</argsstring>
+        <name>~UpdateCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="20" column="1" bodyfile="ouzel/core/UpdateCallback.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d67/classouzel_1_1_update_callback_1ad3f7893394c452afc100b95d33075926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::UpdateCallback::remove</definition>
+        <argsstring>()</argsstring>
+        <name>remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/UpdateCallback.hpp" line="22" column="1" bodyfile="ouzel/core/UpdateCallback.cpp" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1900">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="1901" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1905">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="1903">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="1902" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1909">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="1902" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1906">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="1908">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1902" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="1902" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1903" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="1904" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="1905" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="1906" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="1907" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="1908" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="1909" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1907">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="1902" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1902">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1904">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/UpdateCallback.hpp" line="14" column="1" bodyfile="ouzel/core/UpdateCallback.hpp" bodystart="13" bodyend="31"/>
+    <listofallmembers>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1a276b6e2db0088f08827b76a4fa65dd45" prot="public" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>callback</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1ad7f202b1a73b1f1c83fdba6e717a6a49" prot="private" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>Engine</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1acf68011f3c8e966e4b3217585da9a46e" prot="protected" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>engine</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1ad4b1925e618b7d13f38758fe77ae0916" prot="public" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>interval</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1a6e2e7807755328ad2a51085a4562ee1d" prot="protected" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>priority</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1ac84c73a87347ca572b1651b43648840a" prot="public" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>PRIORITY_MAX</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1ad3f7893394c452afc100b95d33075926" prot="public" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>remove</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1a782394dcf8b2a59ea050e567dce5ba8e" prot="protected" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>timeSinceLastUpdate</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1ab69f7b3da989b7f4fb337d254d6b056c" prot="public" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>UpdateCallback</name></member>
+      <member refid="d4/d67/classouzel_1_1_update_callback_1a5d1371591d9f4dc52a3dd51d93dcde29" prot="public" virt="non-virtual"><scope>ouzel::UpdateCallback</scope><name>~UpdateCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

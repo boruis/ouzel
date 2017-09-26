@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/dcc/classouzel_1_1input_1_1_input_linux" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::input::InputLinux</compoundname>
+    <basecompoundref refid="d3/d66/classouzel_1_1input_1_1_input" prot="public" virt="non-virtual">ouzel::input::Input</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dcc/classouzel_1_1input_1_1_input_linux_1abd0c11672367133b5b81aabf09a2e972" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::input::InputLinux::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="18" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a491c341bd81aa165a8539b75926bb10d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputLinux::cursorVisible</definition>
+        <argsstring></argsstring>
+        <name>cursorVisible</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="42" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a37c309705a5b8e58e119ba5202f6d575" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputLinux::cursorLocked</definition>
+        <argsstring></argsstring>
+        <name>cursorLocked</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="43" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a59f85e3af7b2e299fd80a91a76c9be54" prot="protected" static="no" mutable="no">
+        <type>::<ref refid="dc/d6e/classouzel_1_1input_1_1_cursor" kindref="compound">Cursor</ref></type>
+        <definition>::Cursor ouzel::input::InputLinux::emptyCursor</definition>
+        <argsstring></argsstring>
+        <name>emptyCursor</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="44" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dcc/classouzel_1_1input_1_1_input_linux_1ad6c76dd2b223fc8fe0caad0bfbebc7e3" prot="protected" static="no" mutable="no">
+        <type>::<ref refid="dc/d6e/classouzel_1_1input_1_1_cursor" kindref="compound">Cursor</ref></type>
+        <definition>::Cursor ouzel::input::InputLinux::currentCursor</definition>
+        <argsstring></argsstring>
+        <name>currentCursor</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="45" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dcc/classouzel_1_1input_1_1_input_linux_1ae13082d1478c8cc8a515787e274399c1" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ouzel::input::InputLinux::xInputOpCode</definition>
+        <argsstring></argsstring>
+        <name>xInputOpCode</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="46" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a7556035331257d8b8d0368d292989ed4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KeyboardKey</type>
+        <definition>KeyboardKey ouzel::input::InputLinux::convertKeyCode</definition>
+        <argsstring>(KeySym keyCode)</argsstring>
+        <name>convertKeyCode</name>
+        <param>
+          <type>KeySym</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="20" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="207" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1aa5ad334793ce6dd95888178062409c17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ouzel::input::InputLinux::getModifiers</definition>
+        <argsstring>(unsigned int state)</argsstring>
+        <name>getModifiers</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="21" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="221" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a565ded1894ad9449050f98d4afa9fe04" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::input::InputLinux::~InputLinux</definition>
+        <argsstring>()</argsstring>
+        <name>~InputLinux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="23" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="291" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a43fbfe4fdc88b913eeefb3ae8645fc86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputLinux::setCursorVisible</definition>
+        <argsstring>(bool visible) override</argsstring>
+        <name>setCursorVisible</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a098acb21355272cbb50441e012d7f817">setCursorVisible</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="25" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="353" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a13bcc30f19a1b393c0b7493e93861fdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputLinux::isCursorVisible</definition>
+        <argsstring>() const override</argsstring>
+        <name>isCursorVisible</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ae34e27bbafbadec87dcdcd8092cd4dff">isCursorVisible</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="26" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="385" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a0137fec04579d61427dba9b5f0b9e7be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputLinux::setCursorLocked</definition>
+        <argsstring>(bool locked) override</argsstring>
+        <name>setCursorLocked</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a5768de88f5145ee43985a69124941d94">setCursorLocked</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>locked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="28" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="390" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a6ca5d85c29f7a4a3b6e238118b4c411b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputLinux::isCursorLocked</definition>
+        <argsstring>() const override</argsstring>
+        <name>isCursorLocked</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a2975def826f9d962c3ab9717b183b4b2">isCursorLocked</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="29" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="417" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1ae019b4560acea788abeb84c60fe2c1ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputLinux::setCursorPosition</definition>
+        <argsstring>(const Vector2 &amp;position) override</argsstring>
+        <name>setCursorPosition</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ad68b93107284cbc416aef183ca321808">setCursorPosition</reimplements>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="31" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="422" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a3543b4fc324a0ae42b1365780bfeca61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputLinux::handleXInput2Event</definition>
+        <argsstring>(XGenericEventCookie *cookie)</argsstring>
+        <name>handleXInput2Event</name>
+        <param>
+          <type>XGenericEventCookie *</type>
+          <declname>cookie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="33" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="443" bodyend="475"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a7559daa0c9f4631cd367e81d73e1b412" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::input::InputLinux::InputLinux</definition>
+        <argsstring>()</argsstring>
+        <name>InputLinux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="36" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="234" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1ab48ab381a29e1157b05dda08a7abaa45" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::input::InputLinux::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a3a59fd85fc4f6db83c04257d28939076">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="37" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="238" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1acfda019b21893d06ff31ec11d6d15178" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::input::InputLinux::activateCursorResource</definition>
+        <argsstring>(CursorResource *resource) override</argsstring>
+        <name>activateCursorResource</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1a4debefd4bfa57d8cc140990d05ae578d">activateCursorResource</reimplements>
+        <param>
+          <type><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="39" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="301" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcc/classouzel_1_1input_1_1_input_linux_1a9314912843cd93b0f2c6d529f331553f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d8/d06/classouzel_1_1input_1_1_cursor_resource" kindref="compound">CursorResource</ref> *</type>
+        <definition>CursorResource * ouzel::input::InputLinux::createCursorResource</definition>
+        <argsstring>() override</argsstring>
+        <name>createCursorResource</name>
+        <reimplements refid="d3/d66/classouzel_1_1input_1_1_input_1ac1a1e4231947f089462cee12641ecd6a">createCursorResource</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/input/linux/InputLinux.hpp" line="40" column="1" bodyfile="ouzel/input/linux/InputLinux.cpp" bodystart="341" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="888">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="889" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>ouzel::input::InputLinux</label>
+        <link refid="de/dcc/classouzel_1_1input_1_1_input_linux"/>
+        <childnode refid="888" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="896">
+        <label>ouzel::input::Cursor</label>
+        <link refid="dc/d6e/classouzel_1_1input_1_1_cursor"/>
+        <childnode refid="892" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>ouzel::input::Input</label>
+        <link refid="d3/d66/classouzel_1_1input_1_1_input"/>
+        <childnode refid="892" relation="public-inheritance">
+        </childnode>
+        <childnode refid="893" relation="usage">
+          <edgelabel>currentCursorResource</edgelabel>
+        </childnode>
+        <childnode refid="894" relation="usage">
+          <edgelabel>cursorPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="895">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="893">
+        <label>ouzel::input::CursorResource</label>
+        <link refid="d8/d06/classouzel_1_1input_1_1_cursor_resource"/>
+        <childnode refid="894" relation="usage">
+          <edgelabel>hotSpot</edgelabel>
+        </childnode>
+        <childnode refid="895" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="894">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="894" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="890">
+        <label>ouzel::input::InputLinux</label>
+        <link refid="de/dcc/classouzel_1_1input_1_1_input_linux"/>
+        <childnode refid="891" relation="public-inheritance">
+        </childnode>
+        <childnode refid="896" relation="usage">
+          <edgelabel>currentCursor</edgelabel>
+          <edgelabel>emptyCursor</edgelabel>
+        </childnode>
+      </node>
+      <node id="892">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/input/linux/InputLinux.hpp" line="17" column="1" bodyfile="ouzel/input/linux/InputLinux.hpp" bodystart="16" bodyend="47"/>
+    <listofallmembers>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1acfda019b21893d06ff31ec11d6d15178" prot="protected" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>activateCursorResource</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a7556035331257d8b8d0368d292989ed4" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>convertKeyCode</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a9314912843cd93b0f2c6d529f331553f" prot="protected" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>createCursorResource</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1ad6c76dd2b223fc8fe0caad0bfbebc7e3" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>currentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a607158b917fc599aeb9c79e3626adaf7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>currentCursorResource</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a37c309705a5b8e58e119ba5202f6d575" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>cursorLocked</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a48fba2698df7318dc1ae672e0c1e02e7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>cursorPosition</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a491c341bd81aa165a8539b75926bb10d" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>cursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab8d1ae63c7bcd08c6a54354307774709" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>deleteCursorResource</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a59f85e3af7b2e299fd80a91a76c9be54" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>emptyCursor</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1abd0c11672367133b5b81aabf09a2e972" prot="private" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>Engine</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2d7430df853bf87282d7c77d0ee99da5" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>gamepads</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a72a0dae29fd96ee53bae8f06b9edac4a" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>getCursorPosition</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1aa5ad334793ce6dd95888178062409c17" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>getModifiers</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a3543b4fc324a0ae42b1365780bfeca61" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>handleXInput2Event</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af6fdb721c613db6cab287c9ba75e20f5" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>hideVirtualKeyboard</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1ab48ab381a29e1157b05dda08a7abaa45" prot="protected" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>init</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aae3563da3f8488e52aacff66bb21cbcf" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>Input</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a7559daa0c9f4631cd367e81d73e1b412" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>InputLinux</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a6ca5d85c29f7a4a3b6e238118b4c411b" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>isCursorLocked</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a13bcc30f19a1b393c0b7493e93861fdf" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>isCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6c1fc37d0901c3c39a4bf50da2b41ec4" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>isKeyboardKeyDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6277961a47ca24f8ca6cbf97468effe4" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>isMouseButtonDown</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4d804774aedfc2d3eea8aa896bb49b50" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>keyboardKeyStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9c9d2651b00522429b7f6361d6a6cf6a" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>keyPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a659af3edae3d0121b4d5c61bc70b9222" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>keyRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a2ac50cf093b3af7874c3780baa33fc34" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>mouseButtonPress</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a84070635b548488b1f570212683b6d8f" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>mouseButtonRelease</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a6b7563da094b76b3c57a78e5d6ef5fef" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>mouseButtonStates</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa0550ad728bcc5f62c848da185771d9f" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>mouseMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a4369885e8b5507e94aef70a7decb98e9" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>mouseRelativeMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1acacff77132eba6a6d0cfd1780b3c955a" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>mouseScroll</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>operator=</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ab520315479b2755d09cb58e3769a980b" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>resourceDeleteSet</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a247c7b90402d76646ec60043f879e3b8" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>resourceMutex</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a9dd034f23e6932c078c095ec6f564f26" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>resources</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a5fff6e75202db5c6c7597ea938e548c7" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>setCurrentCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a53a133792107491ff05351011b8d1998" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>setCursor</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a96925f6dfd2bcfe1f91bc7e7213a6ca7" prot="public" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>setCursor</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a0137fec04579d61427dba9b5f0b9e7be" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>setCursorLocked</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1ae019b4560acea788abeb84c60fe2c1ac" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>setCursorPosition</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a43fbfe4fdc88b913eeefb3ae8645fc86" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>setCursorVisible</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1af0d9d9775d1bba6854015942bf294dce" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>showVirtualKeyboard</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a20debe60e92004a68884f2c97a930e9e" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>startGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a703ef8e423a76f67caf0128224556957" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>stopGamepadDiscovery</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ae03f56e62003d0603677b8cfb05cd93b" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>touchBegin</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a42487405af78834a2ebd1435a3e6b8e7" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>touchCancel</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a83f964be55c19ad8280e90fcb7c6b64d" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>touchEnd</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1aa843065cded9e1c8f7fe15f441bca917" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>touchMove</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1ad585764340c5ab208ccc5e1f7fe99739" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>touchPositions</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1ae13082d1478c8cc8a515787e274399c1" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>xInputOpCode</name></member>
+      <member refid="d3/d66/classouzel_1_1input_1_1_input_1a487ff528949e0a0c06e7b9d540d7c1cd" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>~Input</name></member>
+      <member refid="de/dcc/classouzel_1_1input_1_1_input_linux_1a565ded1894ad9449050f98d4afa9fe04" prot="public" virt="virtual"><scope>ouzel::input::InputLinux</scope><name>~InputLinux</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::input::InputLinux</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

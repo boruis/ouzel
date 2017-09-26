@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/d66/structouzel_1_1_event" kind="struct" language="C++" prot="public">
+    <compoundname>ouzel::Event</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbc" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaffa443ed64dc5ee08ddd51ec6b0cf09e" prot="public">
+          <name>KEY_PRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcada0bda5f3ec88092f0b39c17981538c3" prot="public">
+          <name>KEY_RELEASE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaeb869515fc67e7763299a8686257e47e" prot="public">
+          <name>KEY_REPEAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca51fa97fec72ce14e0c7617b946a9cca5" prot="public">
+          <name>MOUSE_PRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcacd3891ed9ea1c01459365db3bfe7fb73" prot="public">
+          <name>MOUSE_RELEASE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca8d39183657ef1c142f973da7bf626a76" prot="public">
+          <name>MOUSE_SCROLL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca39b3291e13730aa8cdb221af2bdab3f3" prot="public">
+          <name>MOUSE_MOVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaeeab9b6bf8a005872d294bfa0a20025a" prot="public">
+          <name>TOUCH_BEGIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca3acdb1139120cba8d8dcadc7c9de07c3" prot="public">
+          <name>TOUCH_MOVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca2eb2c753d4070138e8823f538643dbf6" prot="public">
+          <name>TOUCH_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca0763d5920f131a203e1e14b5c207cb95" prot="public">
+          <name>TOUCH_CANCEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca63fbbc1068799e251dde095b03483d22" prot="public">
+          <name>GAMEPAD_CONNECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca13a2b8f3c2e40cef4caf1a77c0c864b8" prot="public">
+          <name>GAMEPAD_DISCONNECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca336f8f3d0a5a4b8574e468495211ec3d" prot="public">
+          <name>GAMEPAD_BUTTON_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcab0712250952937128bf9a75548ea1e0f" prot="public">
+          <name>WINDOW_SIZE_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca307c510133f34067463fb6f9b4807be7" prot="public">
+          <name>WINDOW_TITLE_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca6f495fd65a9eee35f03e06394673be9c" prot="public">
+          <name>FULLSCREEN_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca44d2bac8b9925dfe3b1163d0615b8ee2" prot="public">
+          <name>SCREEN_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca6ee4cf58272ef39569318349cce3b07b" prot="public">
+          <name>RESOLUTION_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca5b423dfa7b0ddb9844eeab16737117aa" prot="public">
+          <name>ENGINE_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcad3f7ce6cc0a18bcfcbdd9097203ff0e9" prot="public">
+          <name>ENGINE_STOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca11c139aefa452b46205432230fa81147" prot="public">
+          <name>ENGINE_RESUME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaa9db0449003b2bca9e460f82acb7844d" prot="public">
+          <name>ENGINE_PAUSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca4997821e56ecf80175ea05e17230368e" prot="public">
+          <name>ORIENTATION_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca1ac936c6099d748126623800307c83a3" prot="public">
+          <name>LOW_MEMORY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca64fe8150a69fbdeea7a53ef7762f4713" prot="public">
+          <name>OPEN_FILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca2cd5d098cf31851a8c9cbc79d69a1953" prot="public">
+          <name>ACTOR_ENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca309c54867455cdaf590af0055c93888e" prot="public">
+          <name>ACTOR_LEAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca6c5cc46e0f77f02bfe19a83e7d476c28" prot="public">
+          <name>ACTOR_PRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaaea5bb410c6dc7b5c184aba929cfa914" prot="public">
+          <name>ACTOR_RELEASE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaa386408772467e24c041f202e4955169" prot="public">
+          <name>ACTOR_CLICK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca8d4d1f4813e1520613cde385923f99c8" prot="public">
+          <name>ACTOR_DRAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca091a3790736ec3157892049d411667af" prot="public">
+          <name>WIDGET_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcae0e5a2cc5741951936974aeab008d847" prot="public">
+          <name>ANIMATION_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcae3c0bba6e5d007afca3931e5f44d3670" prot="public">
+          <name>ANIMATION_RESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcac1aaf1036043b8933113ae16d4626b57" prot="public">
+          <name>ANIMATION_FINISH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca4b8eb6e6a18c5dfb10e5779fc315f4eb" prot="public">
+          <name>SOUND_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbcaa8274c16a3a8428cc41a37092d33b5c4" prot="public">
+          <name>SOUND_RESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca608f6cb7f888de6d0df5dd50ca613fbd" prot="public">
+          <name>SOUND_FINISH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbca2e40ad879e955201df4dedbf8d479a12" prot="public">
+          <name>USER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="116" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="115" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a573862e1c0e5dab611dae57377979339" prot="public" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type ouzel::Event::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="177" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a37edc9f3cf9b1e67c99b90a30bbdd313" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/dcd/structouzel_1_1_keyboard_event" kindref="compound">KeyboardEvent</ref></type>
+        <definition>KeyboardEvent ouzel::Event::keyboardEvent</definition>
+        <argsstring></argsstring>
+        <name>keyboardEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="179" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1accfe54fe030e759f0d51eb3f62cf677c" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d08/structouzel_1_1_mouse_event" kindref="compound">MouseEvent</ref></type>
+        <definition>MouseEvent ouzel::Event::mouseEvent</definition>
+        <argsstring></argsstring>
+        <name>mouseEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="180" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a901e07bc6dc961cdd0dda637ec5d1a1b" prot="public" static="no" mutable="no">
+        <type><ref refid="db/df9/structouzel_1_1_touch_event" kindref="compound">TouchEvent</ref></type>
+        <definition>TouchEvent ouzel::Event::touchEvent</definition>
+        <argsstring></argsstring>
+        <name>touchEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="181" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a80a88fc5578408a9d14561019bcf4c9b" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/d9b/structouzel_1_1_gamepad_event" kindref="compound">GamepadEvent</ref></type>
+        <definition>GamepadEvent ouzel::Event::gamepadEvent</definition>
+        <argsstring></argsstring>
+        <name>gamepadEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="182" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a9f4ff0fb78ab7a34fbb4c9ca406ee23b" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d7c/structouzel_1_1_window_event" kindref="compound">WindowEvent</ref></type>
+        <definition>WindowEvent ouzel::Event::windowEvent</definition>
+        <argsstring></argsstring>
+        <name>windowEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="183" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a0d9a9f8367542e3c927360fcdb67fca4" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/d10/structouzel_1_1_system_event" kindref="compound">SystemEvent</ref></type>
+        <definition>SystemEvent ouzel::Event::systemEvent</definition>
+        <argsstring></argsstring>
+        <name>systemEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="184" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a58437d3b6f4b14ba4e8b8c342c5d9e83" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/daa/structouzel_1_1_u_i_event" kindref="compound">UIEvent</ref></type>
+        <definition>UIEvent ouzel::Event::uiEvent</definition>
+        <argsstring></argsstring>
+        <name>uiEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="185" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1a8cecd611f7cf21d6f9d1738824b69905" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/dae/structouzel_1_1_animation_event" kindref="compound">AnimationEvent</ref></type>
+        <definition>AnimationEvent ouzel::Event::animationEvent</definition>
+        <argsstring></argsstring>
+        <name>animationEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="186" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1ada51850791955165a12f3d541049ba35" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/ddc/structouzel_1_1_sound_event" kindref="compound">SoundEvent</ref></type>
+        <definition>SoundEvent ouzel::Event::soundEvent</definition>
+        <argsstring></argsstring>
+        <name>soundEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="187" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d66/structouzel_1_1_event_1ac8e6dc428d8a8c7297843154347ca9b9" prot="public" static="no" mutable="no">
+        <type><ref refid="db/de0/structouzel_1_1_user_event" kindref="compound">UserEvent</ref></type>
+        <definition>UserEvent ouzel::Event::userEvent</definition>
+        <argsstring></argsstring>
+        <name>userEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/events/Event.hpp" line="188" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="623">
+        <label>ouzel::UpdateCallback</label>
+        <link refid="d4/d67/classouzel_1_1_update_callback"/>
+        <childnode refid="624" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="639">
+        <label>ouzel::AnimationEvent</label>
+        <link refid="dd/dae/structouzel_1_1_animation_event"/>
+        <childnode refid="615" relation="usage">
+          <edgelabel>component</edgelabel>
+        </childnode>
+      </node>
+      <node id="627">
+        <label>ouzel::Localization</label>
+        <link refid="d9/d1e/classouzel_1_1_localization"/>
+      </node>
+      <node id="625">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>ouzel::audio::SoundInput</label>
+        <link refid="d0/d32/classouzel_1_1audio_1_1_sound_input"/>
+        <childnode refid="614" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+      <node id="609">
+        <label>ouzel::SystemEvent</label>
+        <link refid="dd/d10/structouzel_1_1_system_event"/>
+      </node>
+      <node id="631">
+        <label>ouzel::Box3</label>
+        <link refid="d7/d7b/classouzel_1_1_box3"/>
+        <childnode refid="621" relation="usage">
+          <edgelabel>min</edgelabel>
+          <edgelabel>max</edgelabel>
+        </childnode>
+      </node>
+      <node id="635">
+        <label>ouzel::KeyboardEvent</label>
+        <link refid="d5/dcd/structouzel_1_1_keyboard_event"/>
+      </node>
+      <node id="640">
+        <label>ouzel::TouchEvent</label>
+        <link refid="db/df9/structouzel_1_1_touch_event"/>
+        <childnode refid="633" relation="usage">
+          <edgelabel>difference</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="629">
+        <label>ouzel::Timer</label>
+        <link refid="db/dce/classouzel_1_1_timer"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>ouzel::scene::Layer</label>
+        <link refid="dd/dd5/classouzel_1_1scene_1_1_layer"/>
+        <childnode refid="617" relation="public-inheritance">
+        </childnode>
+        <childnode refid="619" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="604">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="616">
+        <label>ouzel::scene::Actor</label>
+        <link refid="df/d81/classouzel_1_1scene_1_1_actor"/>
+        <childnode refid="617" relation="public-inheritance">
+        </childnode>
+        <childnode refid="621" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="617" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="622" relation="usage">
+          <edgelabel>inverseTransform</edgelabel>
+          <edgelabel>transform</edgelabel>
+          <edgelabel>localTransform</edgelabel>
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+        <childnode refid="623" relation="usage">
+          <edgelabel>animationUpdateCallback</edgelabel>
+        </childnode>
+        <childnode refid="630" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="630">
+        <label>ouzel::Quaternion</label>
+        <link refid="d9/d8c/classouzel_1_1_quaternion"/>
+        <childnode refid="630" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="602">
+        <label>ouzel::Event</label>
+        <link refid="de/d66/structouzel_1_1_event"/>
+        <childnode refid="603" relation="usage">
+          <edgelabel>windowEvent</edgelabel>
+        </childnode>
+        <childnode refid="609" relation="usage">
+          <edgelabel>systemEvent</edgelabel>
+        </childnode>
+        <childnode refid="610" relation="usage">
+          <edgelabel>userEvent</edgelabel>
+        </childnode>
+        <childnode refid="611" relation="usage">
+          <edgelabel>soundEvent</edgelabel>
+        </childnode>
+        <childnode refid="632" relation="usage">
+          <edgelabel>mouseEvent</edgelabel>
+        </childnode>
+        <childnode refid="634" relation="usage">
+          <edgelabel>uiEvent</edgelabel>
+        </childnode>
+        <childnode refid="635" relation="usage">
+          <edgelabel>keyboardEvent</edgelabel>
+        </childnode>
+        <childnode refid="636" relation="usage">
+          <edgelabel>gamepadEvent</edgelabel>
+        </childnode>
+        <childnode refid="639" relation="usage">
+          <edgelabel>animationEvent</edgelabel>
+        </childnode>
+        <childnode refid="640" relation="usage">
+          <edgelabel>touchEvent</edgelabel>
+        </childnode>
+      </node>
+      <node id="607">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="608" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="628">
+        <label>ouzel::network::Network</label>
+        <link refid="d9/daa/classouzel_1_1network_1_1_network"/>
+      </node>
+      <node id="633">
+        <label>ouzel::Vector2</label>
+        <link refid="d1/d9b/classouzel_1_1_vector2"/>
+        <childnode refid="633" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+        </childnode>
+      </node>
+      <node id="621">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="621" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="608">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>ouzel::MouseEvent</label>
+        <link refid="d8/d08/structouzel_1_1_mouse_event"/>
+        <childnode refid="633" relation="usage">
+          <edgelabel>difference</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>scroll</edgelabel>
+        </childnode>
+      </node>
+      <node id="611">
+        <label>ouzel::SoundEvent</label>
+        <link refid="d4/ddc/structouzel_1_1_sound_event"/>
+        <childnode refid="612" relation="usage">
+          <edgelabel>sound</edgelabel>
+        </childnode>
+      </node>
+      <node id="603">
+        <label>ouzel::WindowEvent</label>
+        <link refid="d4/d7c/structouzel_1_1_window_event"/>
+        <childnode refid="604" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="605" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+      </node>
+      <node id="637">
+        <label>ouzel::input::Gamepad</label>
+        <link refid="d8/d28/classouzel_1_1input_1_1_gamepad"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="638" relation="usage">
+          <edgelabel>buttonStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="615">
+        <label>ouzel::scene::Component</label>
+        <link refid="d7/d9e/classouzel_1_1scene_1_1_component"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="616" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="631" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="634">
+        <label>ouzel::UIEvent</label>
+        <link refid="d7/daa/structouzel_1_1_u_i_event"/>
+        <childnode refid="616" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+        <childnode refid="633" relation="usage">
+          <edgelabel>difference</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="621" relation="usage">
+          <edgelabel>localPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="638">
+        <label>ouzel::input::Gamepad::ButtonState</label>
+        <link refid="d3/d17/structouzel_1_1input_1_1_gamepad_1_1_button_state"/>
+      </node>
+      <node id="624">
+        <label>ouzel::Engine</label>
+        <link refid="d7/d05/classouzel_1_1_engine"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="625" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+        <childnode refid="626" relation="usage">
+          <edgelabel>userSettings</edgelabel>
+          <edgelabel>defaultSettings</edgelabel>
+        </childnode>
+        <childnode refid="627" relation="usage">
+          <edgelabel>localization</edgelabel>
+        </childnode>
+        <childnode refid="628" relation="usage">
+          <edgelabel>network</edgelabel>
+        </childnode>
+        <childnode refid="620" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="608" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+        <childnode refid="629" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="612">
+        <label>ouzel::audio::Sound</label>
+        <link refid="d5/d98/classouzel_1_1audio_1_1_sound"/>
+        <childnode refid="613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="620">
+        <label>ouzel::scene::SceneManager</label>
+        <link refid="d7/d87/classouzel_1_1scene_1_1_scene_manager"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>ouzel::GamepadEvent</label>
+        <link refid="dc/d9b/structouzel_1_1_gamepad_event"/>
+        <childnode refid="637" relation="usage">
+          <edgelabel>gamepad</edgelabel>
+        </childnode>
+      </node>
+      <node id="622">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="622" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="606">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="626">
+        <label>ouzel::INI</label>
+        <link refid="db/dfe/classouzel_1_1_i_n_i"/>
+      </node>
+      <node id="617">
+        <label>ouzel::scene::ActorContainer</label>
+        <link refid="d6/d51/classouzel_1_1scene_1_1_actor_container"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="618" relation="usage">
+          <edgelabel>layer</edgelabel>
+        </childnode>
+      </node>
+      <node id="605">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="607" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="604" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+      <node id="610">
+        <label>ouzel::UserEvent</label>
+        <link refid="db/de0/structouzel_1_1_user_event"/>
+      </node>
+      <node id="619">
+        <label>ouzel::scene::Scene</label>
+        <link refid="d7/d5c/classouzel_1_1scene_1_1_scene"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="607" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="620" relation="usage">
+          <edgelabel>sceneManger</edgelabel>
+        </childnode>
+      </node>
+      <node id="614">
+        <label>ouzel::audio::SoundOutput</label>
+        <link refid="db/da7/classouzel_1_1audio_1_1_sound_output"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/events/Event.hpp" line="114" column="1" bodyfile="ouzel/events/Event.hpp" bodystart="113" bodyend="189"/>
+    <listofallmembers>
+      <member refid="de/d66/structouzel_1_1_event_1a8cecd611f7cf21d6f9d1738824b69905" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>animationEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a80a88fc5578408a9d14561019bcf4c9b" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>gamepadEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a37edc9f3cf9b1e67c99b90a30bbdd313" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>keyboardEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1accfe54fe030e759f0d51eb3f62cf677c" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>mouseEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1ada51850791955165a12f3d541049ba35" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>soundEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a0d9a9f8367542e3c927360fcdb67fca4" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>systemEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a901e07bc6dc961cdd0dda637ec5d1a1b" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>touchEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a573862e1c0e5dab611dae57377979339" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>type</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1ad504dd09fc72d69bb240991662137fbc" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>Type</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a58437d3b6f4b14ba4e8b8c342c5d9e83" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>uiEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1ac8e6dc428d8a8c7297843154347ca9b9" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>userEvent</name></member>
+      <member refid="de/d66/structouzel_1_1_event_1a9f4ff0fb78ab7a34fbb4c9ca406ee23b" prot="public" virt="non-virtual"><scope>ouzel::Event</scope><name>windowEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

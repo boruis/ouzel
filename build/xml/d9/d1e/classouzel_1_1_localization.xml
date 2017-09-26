@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d1e/classouzel_1_1_localization" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::Localization</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/d1e/classouzel_1_1_localization_1a0378259b73995e85fedade9362fcded8" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="db/d01/classouzel_1_1_language" kindref="compound">Language</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;Language&gt; &gt; ouzel::Localization::languages</definition>
+        <argsstring></argsstring>
+        <name>languages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/localization/Localization.hpp" line="22" column="1" bodyfile="ouzel/localization/Localization.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d1e/classouzel_1_1_localization_1aebb7574e71e2c1ceee21a0876734ddb4" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="db/d01/classouzel_1_1_language" kindref="compound">Language</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Language&gt; ouzel::Localization::currentLanguage</definition>
+        <argsstring></argsstring>
+        <name>currentLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/localization/Localization.hpp" line="23" column="1" bodyfile="ouzel/localization/Localization.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d1e/classouzel_1_1_localization_1a8d77382fae93065333d9d015bd2cd5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Localization::addLanguage</definition>
+        <argsstring>(const std::string &amp;name, const std::string &amp;filename)</argsstring>
+        <name>addLanguage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/localization/Localization.hpp" line="17" column="1" bodyfile="ouzel/localization/Localization.cpp" bodystart="9" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d1e/classouzel_1_1_localization_1ab2ca3aeac1411186dcaf762b46a8deea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Localization::setLanguage</definition>
+        <argsstring>(const std::string &amp;language)</argsstring>
+        <name>setLanguage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/localization/Localization.hpp" line="18" column="1" bodyfile="ouzel/localization/Localization.cpp" bodystart="19" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d1e/classouzel_1_1_localization_1adfe498e5f6c053b5cd088f00d63f275d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ouzel::Localization::getString</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>getString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/localization/Localization.hpp" line="19" column="1" bodyfile="ouzel/localization/Localization.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ouzel/localization/Localization.hpp" line="15" column="1" bodyfile="ouzel/localization/Localization.hpp" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d9/d1e/classouzel_1_1_localization_1a8d77382fae93065333d9d015bd2cd5a4" prot="public" virt="non-virtual"><scope>ouzel::Localization</scope><name>addLanguage</name></member>
+      <member refid="d9/d1e/classouzel_1_1_localization_1aebb7574e71e2c1ceee21a0876734ddb4" prot="protected" virt="non-virtual"><scope>ouzel::Localization</scope><name>currentLanguage</name></member>
+      <member refid="d9/d1e/classouzel_1_1_localization_1adfe498e5f6c053b5cd088f00d63f275d" prot="public" virt="non-virtual"><scope>ouzel::Localization</scope><name>getString</name></member>
+      <member refid="d9/d1e/classouzel_1_1_localization_1a0378259b73995e85fedade9362fcded8" prot="protected" virt="non-virtual"><scope>ouzel::Localization</scope><name>languages</name></member>
+      <member refid="d9/d1e/classouzel_1_1_localization_1ab2ca3aeac1411186dcaf762b46a8deea" prot="public" virt="non-virtual"><scope>ouzel::Localization</scope><name>setLanguage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

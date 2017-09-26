@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::VertexPC</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1ac3888cdd7406fead461aeb7442676c30" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref> &gt;</type>
+        <definition>const std::vector&lt; VertexAttribute &gt; ouzel::graphics::VertexPC::ATTRIBUTES</definition>
+        <argsstring></argsstring>
+        <name>ATTRIBUTES</name>
+        <initializer>= {
+            <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref>(VertexAttribute::Usage::POSITION, 0, DataType::FLOAT_VECTOR3, false),
+            <ref refid="df/d3a/structouzel_1_1graphics_1_1_vertex_attribute" kindref="compound">VertexAttribute</ref>(VertexAttribute::Usage::COLOR, 0, DataType::UNSIGNED_BYTE_VECTOR4, true)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Vertex.hpp" line="47" column="1" bodyfile="ouzel/graphics/Vertex.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1af3b0d45f7f41487a360228560c430361" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 ouzel::graphics::VertexPC::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Vertex.hpp" line="49" column="1" bodyfile="ouzel/graphics/Vertex.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1a76e25e0430740fc4ebbd886fa94b3a9a" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color ouzel::graphics::VertexPC::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Vertex.hpp" line="50" column="1" bodyfile="ouzel/graphics/Vertex.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1ab26fc3555ab87e51f4d6c0bd11279c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::VertexPC::VertexPC</definition>
+        <argsstring>()</argsstring>
+        <name>VertexPC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Vertex.hpp" line="52" column="1" bodyfile="ouzel/graphics/Vertex.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1a0b6b236aa25f119df919085e4fca8f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::VertexPC::VertexPC</definition>
+        <argsstring>(const Vector3 &amp;aPosition, Color aColor)</argsstring>
+        <name>VertexPC</name>
+        <param>
+          <type>const <ref refid="dc/d28/classouzel_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>aPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d5a/classouzel_1_1_color" kindref="compound">Color</ref></type>
+          <declname>aColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/Vertex.hpp" line="53" column="1" bodyfile="ouzel/graphics/Vertex.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1924">
+        <label>ouzel::Color</label>
+        <link refid="d4/d5a/classouzel_1_1_color"/>
+      </node>
+      <node id="1925">
+        <label>ouzel::Vector3</label>
+        <link refid="dc/d28/classouzel_1_1_vector3"/>
+        <childnode refid="1925" relation="usage">
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_X</edgelabel>
+          <edgelabel>UNIT_X</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Y</edgelabel>
+          <edgelabel>UNIT_Y</edgelabel>
+          <edgelabel>NEGATIVE_UNIT_Z</edgelabel>
+          <edgelabel>UNIT_Z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1923">
+        <label>ouzel::graphics::VertexPC</label>
+        <link refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c"/>
+        <childnode refid="1924" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+        <childnode refid="1925" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/Vertex.hpp" line="45" column="1" bodyfile="ouzel/graphics/Vertex.hpp" bodystart="44" bodyend="54"/>
+    <listofallmembers>
+      <member refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1ac3888cdd7406fead461aeb7442676c30" prot="public" virt="non-virtual"><scope>ouzel::graphics::VertexPC</scope><name>ATTRIBUTES</name></member>
+      <member refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1a76e25e0430740fc4ebbd886fa94b3a9a" prot="public" virt="non-virtual"><scope>ouzel::graphics::VertexPC</scope><name>color</name></member>
+      <member refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1af3b0d45f7f41487a360228560c430361" prot="public" virt="non-virtual"><scope>ouzel::graphics::VertexPC</scope><name>position</name></member>
+      <member refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1ab26fc3555ab87e51f4d6c0bd11279c93" prot="public" virt="non-virtual"><scope>ouzel::graphics::VertexPC</scope><name>VertexPC</name></member>
+      <member refid="d8/d92/classouzel_1_1graphics_1_1_vertex_p_c_1a0b6b236aa25f119df919085e4fca8f94" prot="public" virt="non-virtual"><scope>ouzel::graphics::VertexPC</scope><name>VertexPC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d58/interface_display_link_handler" kind="class" language="Objective-C" prot="public">
+    <compoundname>DisplayLinkHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1a5ba0f2071364d5f392b9c5c5a6b0e670" prot="protected" static="no" mutable="no">
+        <type><ref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" kindref="compound">ouzel::graphics::RenderDevice</ref> *</type>
+        <definition>ouzel::graphics::RenderDevice* DisplayLinkHandler::rendererDevice</definition>
+        <argsstring></argsstring>
+        <name>rendererDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="11" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1a360c8e7b6cfec6e42fd82b04c8e5c6e9" prot="protected" static="no" mutable="no">
+        <type>NSConditionLock *</type>
+        <definition>NSConditionLock * DisplayLinkHandler::runLock</definition>
+        <argsstring></argsstring>
+        <name>runLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="12" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1acaca5c04664b67e31020e597b48cde1b" prot="protected" static="no" mutable="no">
+        <type>NSRunLoop *</type>
+        <definition>NSRunLoop * DisplayLinkHandler::runLoop</definition>
+        <argsstring></argsstring>
+        <name>runLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="13" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1a137119aff2e52a427ee49c0fcbc53836" prot="protected" static="no" mutable="no">
+        <type>CADisplayLink *</type>
+        <definition>CADisplayLink * DisplayLinkHandler::displayLink</definition>
+        <argsstring></argsstring>
+        <name>displayLink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="14" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1ae36bc7c8e95f583443e662b32768c64d" prot="protected" static="no" mutable="no">
+        <type>NSThread *</type>
+        <definition>NSThread * DisplayLinkHandler::renderThread</definition>
+        <argsstring></argsstring>
+        <name>renderThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="15" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1a5ae43127b4342f1093a0b6cabe2a3a9a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayLinkHandler::verticalSync</definition>
+        <argsstring></argsstring>
+        <name>verticalSync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="16" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1a2433f58ff81502c80aa87cc9a25b5b8a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayLinkHandler::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="17" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d58/interface_display_link_handler_1a0d3dac5675df320febcfb64edec1bf8d" prot="protected" static="no" mutable="no">
+        <type><ref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" kindref="compound">ouzel::graphics::RenderDevice</ref> *</type>
+        <definition>ouzel::graphics::RenderDevice* DisplayLinkHandler::renderDevice</definition>
+        <argsstring></argsstring>
+        <name>renderDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/tvos/DisplayLinkHandler.h" line="11" column="1" bodyfile="ouzel/core/tvos/DisplayLinkHandler.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d58/interface_display_link_handler_1af98bf7b25dcfd5e3669e12ab317322a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id DisplayLinkHandler::initWithRenderDevice:andVerticalSync:</definition>
+        <argsstring>(ouzel::graphics::RenderDevice *newRendererDevice, [andVerticalSync] bool newVerticalSync)</argsstring>
+        <name>initWithRenderDevice:andVerticalSync:</name>
+        <param>
+          <type><ref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" kindref="compound">ouzel::graphics::RenderDevice</ref> *</type>
+          <declname>newRendererDevice</declname>
+        </param>
+        <param>
+          <attributes>[andVerticalSync]</attributes>
+          <type>bool</type>
+          <declname>newVerticalSync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="17" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.mm" bodystart="9" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d58/interface_display_link_handler_1acd5f8f39dfecdd9f9a5bc27f00ba4a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DisplayLinkHandler::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/ios/DisplayLinkHandler.h" line="17" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.mm" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d58/interface_display_link_handler_1ae0cc6b8d74a81a752d0462fd107242dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id DisplayLinkHandler::initWithRenderDevice:andVerticalSync:</definition>
+        <argsstring>(ouzel::graphics::RenderDevice *newRenderDevice, [andVerticalSync] bool newVerticalSync)</argsstring>
+        <name>initWithRenderDevice:andVerticalSync:</name>
+        <param>
+          <type><ref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" kindref="compound">ouzel::graphics::RenderDevice</ref> *</type>
+          <declname>newRenderDevice</declname>
+        </param>
+        <param>
+          <attributes>[andVerticalSync]</attributes>
+          <type>bool</type>
+          <declname>newVerticalSync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/tvos/DisplayLinkHandler.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d58/interface_display_link_handler_1acd5f8f39dfecdd9f9a5bc27f00ba4a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DisplayLinkHandler::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/tvos/DisplayLinkHandler.h" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="397">
+        <label>DisplayLinkHandler</label>
+        <link refid="d7/d58/interface_display_link_handler"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="399">
+        <label>DisplayLinkHandler</label>
+        <link refid="d7/d58/interface_display_link_handler"/>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+        <childnode refid="401" relation="usage">
+          <edgelabel>rendererDevice</edgelabel>
+          <edgelabel>renderDevice</edgelabel>
+        </childnode>
+      </node>
+      <node id="403">
+        <label>ouzel::Color</label>
+        <link refid="d4/d5a/classouzel_1_1_color"/>
+      </node>
+      <node id="405">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="407">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="408" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="408">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="404" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="401">
+        <label>ouzel::graphics::RenderDevice</label>
+        <link refid="d8/d2c/classouzel_1_1graphics_1_1_render_device"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+        <childnode refid="403" relation="usage">
+          <edgelabel>clearColor</edgelabel>
+        </childnode>
+        <childnode refid="404" relation="usage">
+          <edgelabel>renderTargetProjectionTransform</edgelabel>
+          <edgelabel>projectionTransform</edgelabel>
+        </childnode>
+        <childnode refid="405" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="406" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+      </node>
+      <node id="402">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="400">
+        <label>NSObject</label>
+      </node>
+      <node id="406">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+        <childnode refid="407" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="405" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/ios/DisplayLinkHandler.h" line="10" column="1" bodyfile="ouzel/core/ios/DisplayLinkHandler.h" bodystart="9" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="d7/d58/interface_display_link_handler_1a137119aff2e52a427ee49c0fcbc53836" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>displayLink</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1af98bf7b25dcfd5e3669e12ab317322a0" prot="public" virt="virtual"><scope>DisplayLinkHandler</scope><name>initWithRenderDevice:andVerticalSync:</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1ae0cc6b8d74a81a752d0462fd107242dd" prot="public" virt="virtual"><scope>DisplayLinkHandler</scope><name>initWithRenderDevice:andVerticalSync:</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1a0d3dac5675df320febcfb64edec1bf8d" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>renderDevice</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1a5ba0f2071364d5f392b9c5c5a6b0e670" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>rendererDevice</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1ae36bc7c8e95f583443e662b32768c64d" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>renderThread</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1a360c8e7b6cfec6e42fd82b04c8e5c6e9" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>runLock</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1acaca5c04664b67e31020e597b48cde1b" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>runLoop</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1a2433f58ff81502c80aa87cc9a25b5b8a" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>running</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1acd5f8f39dfecdd9f9a5bc27f00ba4a70" prot="public" virt="virtual"><scope>DisplayLinkHandler</scope><name>stop</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1acd5f8f39dfecdd9f9a5bc27f00ba4a70" prot="public" virt="virtual"><scope>DisplayLinkHandler</scope><name>stop</name></member>
+      <member refid="d7/d58/interface_display_link_handler_1a5ae43127b4342f1093a0b6cabe2a3a9a" prot="protected" virt="non-virtual"><scope>DisplayLinkHandler</scope><name>verticalSync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/d02/classouzel_1_1_cache" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::Cache</compoundname>
+    <basecompoundref refid="d2/d21/classouzel_1_1_noncopyable" prot="public" virt="non-virtual">ouzel::Noncopyable</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1a8fe2b651c0ecf28dbf660e33aecfbdde" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;graphics::Texture&gt; &gt; ouzel::Cache::textures</definition>
+        <argsstring></argsstring>
+        <name>textures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="65" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1a6d3a0b8c4d933c962c670dcb9a8b5746" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">graphics::Shader</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;graphics::Shader&gt; &gt; ouzel::Cache::shaders</definition>
+        <argsstring></argsstring>
+        <name>shaders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="66" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1af653337afab0ba7f3c654e601d9b2113" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, <ref refid="d1/d79/structouzel_1_1scene_1_1_particle_definition" kindref="compound">scene::ParticleDefinition</ref> &gt;</type>
+        <definition>std::map&lt;std::string, scene::ParticleDefinition&gt; ouzel::Cache::particleDefinitions</definition>
+        <argsstring></argsstring>
+        <name>particleDefinitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="67" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1a0f3a472067956b128de1ce2e8a32b6e3" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">graphics::BlendState</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;graphics::BlendState&gt; &gt; ouzel::Cache::blendStates</definition>
+        <argsstring></argsstring>
+        <name>blendStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="68" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1ab832c6cd12d8e8cec7b0903aaf4c1b4a" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, <ref refid="de/da8/structouzel_1_1scene_1_1_sprite_definition" kindref="compound">scene::SpriteDefinition</ref> &gt;</type>
+        <definition>std::map&lt;std::string, scene::SpriteDefinition&gt; ouzel::Cache::spriteDefinitions</definition>
+        <argsstring></argsstring>
+        <name>spriteDefinitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="69" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1a94acabe62c7de835b222e8e75a0b58e1" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="d2/d87/classouzel_1_1_font" kindref="compound">Font</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;Font&gt; &gt; ouzel::Cache::fonts</definition>
+        <argsstring></argsstring>
+        <name>fonts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="70" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/classouzel_1_1_cache_1a0d537d9e9e05167ddf110dc492a87aa9" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">audio::SoundData</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;audio::SoundData&gt; &gt; ouzel::Cache::soundData</definition>
+        <argsstring></argsstring>
+        <name>soundData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="71" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a63bdf1d36b9576f4505bbee8c624e824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::Cache::Cache</definition>
+        <argsstring>()</argsstring>
+        <name>Cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="23" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a85b4dd02617ff950fb0e472c1bde339c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="25" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1ae1de9324392415ec558ad77f7cd0032c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::preloadTexture</definition>
+        <argsstring>(const std::string &amp;filename, bool dynamic=false, bool mipmaps=true)</argsstring>
+        <name>preloadTexture</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="27" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a62f1d8271b23a9a29c9d610ca4779e47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; graphics::Texture &gt; &amp; ouzel::Cache::getTexture</definition>
+        <argsstring>(const std::string &amp;filename, bool dynamic=false, bool mipmaps=true) const</argsstring>
+        <name>getTexture</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="28" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1aff4df5bfaf9d10f2e43764846f3538c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setTexture</definition>
+        <argsstring>(const std::string &amp;filename, const std::shared_ptr&lt; graphics::Texture &gt; &amp;texture)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d2b/classouzel_1_1graphics_1_1_texture" kindref="compound">graphics::Texture</ref> &gt; &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="29" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1af829e24da81c7d9e66436739474f365d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseTextures</definition>
+        <argsstring>()</argsstring>
+        <name>releaseTextures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="30" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1abf4cd7479d80ade0786f8ef2d8caaf36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">graphics::Shader</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; graphics::Shader &gt; &amp; ouzel::Cache::getShader</definition>
+        <argsstring>(const std::string &amp;shaderName) const</argsstring>
+        <name>getShader</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>shaderName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="32" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="81" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1abe248ca6215e506402e021f1d4689771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setShader</definition>
+        <argsstring>(const std::string &amp;shaderName, const std::shared_ptr&lt; graphics::Shader &gt; &amp;shader)</argsstring>
+        <name>setShader</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>shaderName</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d4/d6b/classouzel_1_1graphics_1_1_shader" kindref="compound">graphics::Shader</ref> &gt; &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="33" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1aaba7e3c1c72c9ebd8dc8170af6e93b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseShaders</definition>
+        <argsstring>()</argsstring>
+        <name>releaseShaders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="34" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="102" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1affa053ce40692ac4380320279d906d74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">graphics::BlendState</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; graphics::BlendState &gt; &amp; ouzel::Cache::getBlendState</definition>
+        <argsstring>(const std::string &amp;blendStateName) const</argsstring>
+        <name>getBlendState</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>blendStateName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="36" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="119" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a8252e96d8c9c590079d20e0649333d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setBlendState</definition>
+        <argsstring>(const std::string &amp;blendStateName, const std::shared_ptr&lt; graphics::BlendState &gt; &amp;blendState)</argsstring>
+        <name>setBlendState</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>blendStateName</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d73/classouzel_1_1graphics_1_1_blend_state" kindref="compound">graphics::BlendState</ref> &gt; &amp;</type>
+          <declname>blendState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="37" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1ad801d15181501653f2ccc78a352741f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseBlendStates</definition>
+        <argsstring>()</argsstring>
+        <name>releaseBlendStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="38" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="140" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a1836cef500e13ad88338a804af682613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::preloadSpriteDefinition</definition>
+        <argsstring>(const std::string &amp;filename, bool mipmaps=true, uint32_t spritesX=1, uint32_t spritesY=1, const Vector2 &amp;pivot=Vector2(0.5f, 0.5f))</argsstring>
+        <name>preloadSpriteDefinition</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesX</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesY</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>pivot</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="40" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="159" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1ad80dc6fa970eb918ca549967176d8b4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="de/da8/structouzel_1_1scene_1_1_sprite_definition" kindref="compound">scene::SpriteDefinition</ref> &amp;</type>
+        <definition>const scene::SpriteDefinition &amp; ouzel::Cache::getSpriteDefinition</definition>
+        <argsstring>(const std::string &amp;filename, bool mipmaps=true, uint32_t spritesX=1, uint32_t spritesY=1, const Vector2 &amp;pivot=Vector2(0.5f, 0.5f)) const</argsstring>
+        <name>getSpriteDefinition</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesX</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>spritesY</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>pivot</declname>
+          <defval><ref refid="d1/d9b/classouzel_1_1_vector2" kindref="compound">Vector2</ref>(0.5f, 0.5f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="43" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="199" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1ab6a5c3ae44b6418145cadc9bf23e396a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setSpriteDefinition</definition>
+        <argsstring>(const std::string &amp;filename, const scene::SpriteDefinition &amp;spriteDefinition)</argsstring>
+        <name>setSpriteDefinition</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/da8/structouzel_1_1scene_1_1_sprite_definition" kindref="compound">scene::SpriteDefinition</ref> &amp;</type>
+          <declname>spriteDefinition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="46" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a512b2cc3431f0bc5fccdddc50e35b76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseSpriteDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>releaseSpriteDefinitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="47" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1affa1ace342bbcafc77a7a6f49c84798a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::preloadParticleDefinition</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>preloadParticleDefinition</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="49" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1ae26b1035c57a9ffae722468c5189e841" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d1/d79/structouzel_1_1scene_1_1_particle_definition" kindref="compound">scene::ParticleDefinition</ref> &amp;</type>
+        <definition>const scene::ParticleDefinition &amp; ouzel::Cache::getParticleDefinition</definition>
+        <argsstring>(const std::string &amp;filename) const</argsstring>
+        <name>getParticleDefinition</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="50" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="265" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a1b03498a915627a3a4254b2381d69b90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setParticleDefinition</definition>
+        <argsstring>(const std::string &amp;filename, const scene::ParticleDefinition &amp;particleDefinition)</argsstring>
+        <name>setParticleDefinition</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d79/structouzel_1_1scene_1_1_particle_definition" kindref="compound">scene::ParticleDefinition</ref> &amp;</type>
+          <declname>particleDefinition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="51" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1ae22fd2bcdba4fae72eb8c66c4b34a6fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseParticleDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>releaseParticleDefinitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="52" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="286" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a02605ff11d8a216da623abb3a06cb36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::preloadFont</definition>
+        <argsstring>(const std::string &amp;filename, float fontSize=1.0f, bool mipmaps=true)</argsstring>
+        <name>preloadFont</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fontSize</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="54" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="291" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a2137b39180509288bbf8f689796e1bce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/d87/classouzel_1_1_font" kindref="compound">Font</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; Font &gt; &amp; ouzel::Cache::getFont</definition>
+        <argsstring>(const std::string &amp;filename, float fontSize=1.0f, bool mipmaps=true) const</argsstring>
+        <name>getFont</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fontSize</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmaps</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="55" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="310" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a26c395ee9ee524e5ce30530a769a8116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setFont</definition>
+        <argsstring>(const std::string &amp;filename, const std::shared_ptr&lt; Font &gt; &amp;font)</argsstring>
+        <name>setFont</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d87/classouzel_1_1_font" kindref="compound">Font</ref> &gt; &amp;</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="56" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1aba6953a6314696ed9cbbd97cec8332f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseFonts</definition>
+        <argsstring>()</argsstring>
+        <name>releaseFonts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="57" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a341e11d5a8241ef1455908c0abc894b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::preloadSoundData</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>preloadSoundData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="59" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="349" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a442d943b9274c4d31003150c214e1a64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">audio::SoundData</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; audio::SoundData &gt; &amp; ouzel::Cache::getSoundData</definition>
+        <argsstring>(const std::string &amp;filename) const</argsstring>
+        <name>getSoundData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="60" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="367" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a708f95454a1533c48e8e21761e2735e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::setSoundData</definition>
+        <argsstring>(const std::string &amp;filename, const std::shared_ptr&lt; audio::SoundData &gt; &amp;newSoundData)</argsstring>
+        <name>setSoundData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/dbd/classouzel_1_1audio_1_1_sound_data" kindref="compound">audio::SoundData</ref> &gt; &amp;</type>
+          <declname>newSoundData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="61" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/classouzel_1_1_cache_1a2bc7fdc80f0a1b57d0fdf74603a761dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ouzel::Cache::releaseSoundData</definition>
+        <argsstring>()</argsstring>
+        <name>releaseSoundData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/core/Cache.hpp" line="62" column="1" bodyfile="ouzel/core/Cache.cpp" bodystart="405" bodyend="408"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>ouzel::Cache</label>
+        <link refid="d4/d02/classouzel_1_1_cache"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/core/Cache.hpp" line="21" column="1" bodyfile="ouzel/core/Cache.hpp" bodystart="20" bodyend="72"/>
+    <listofallmembers>
+      <member refid="d4/d02/classouzel_1_1_cache_1a0f3a472067956b128de1ce2e8a32b6e3" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>blendStates</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a63bdf1d36b9576f4505bbee8c624e824" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>Cache</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a85b4dd02617ff950fb0e472c1bde339c" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>clear</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a94acabe62c7de835b222e8e75a0b58e1" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>fonts</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1affa053ce40692ac4380320279d906d74" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getBlendState</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a2137b39180509288bbf8f689796e1bce" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getFont</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ae26b1035c57a9ffae722468c5189e841" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getParticleDefinition</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1abf4cd7479d80ade0786f8ef2d8caaf36" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getShader</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a442d943b9274c4d31003150c214e1a64" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getSoundData</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ad80dc6fa970eb918ca549967176d8b4f" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getSpriteDefinition</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a62f1d8271b23a9a29c9d610ca4779e47" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>getTexture</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>operator=</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1af653337afab0ba7f3c654e601d9b2113" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>particleDefinitions</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a02605ff11d8a216da623abb3a06cb36e" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>preloadFont</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1affa1ace342bbcafc77a7a6f49c84798a" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>preloadParticleDefinition</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a341e11d5a8241ef1455908c0abc894b3" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>preloadSoundData</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a1836cef500e13ad88338a804af682613" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>preloadSpriteDefinition</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ae1de9324392415ec558ad77f7cd0032c" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>preloadTexture</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ad801d15181501653f2ccc78a352741f4" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseBlendStates</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1aba6953a6314696ed9cbbd97cec8332f0" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseFonts</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ae22fd2bcdba4fae72eb8c66c4b34a6fd" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseParticleDefinitions</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1aaba7e3c1c72c9ebd8dc8170af6e93b67" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseShaders</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a2bc7fdc80f0a1b57d0fdf74603a761dc" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseSoundData</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a512b2cc3431f0bc5fccdddc50e35b76c" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseSpriteDefinitions</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1af829e24da81c7d9e66436739474f365d" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>releaseTextures</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a8252e96d8c9c590079d20e0649333d0c" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setBlendState</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a26c395ee9ee524e5ce30530a769a8116" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setFont</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a1b03498a915627a3a4254b2381d69b90" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setParticleDefinition</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1abe248ca6215e506402e021f1d4689771" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setShader</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a708f95454a1533c48e8e21761e2735e9" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setSoundData</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ab6a5c3ae44b6418145cadc9bf23e396a" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setSpriteDefinition</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1aff4df5bfaf9d10f2e43764846f3538c2" prot="public" virt="non-virtual"><scope>ouzel::Cache</scope><name>setTexture</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a6d3a0b8c4d933c962c670dcb9a8b5746" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>shaders</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a0d537d9e9e05167ddf110dc492a87aa9" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>soundData</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1ab832c6cd12d8e8cec7b0903aaf4c1b4a" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>spriteDefinitions</name></member>
+      <member refid="d4/d02/classouzel_1_1_cache_1a8fe2b651c0ecf28dbf660e33aecfbdde" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>textures</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::Cache</scope><name>~Noncopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

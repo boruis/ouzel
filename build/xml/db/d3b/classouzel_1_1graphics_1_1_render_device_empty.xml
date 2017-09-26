@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::graphics::RenderDeviceEmpty</compoundname>
+    <basecompoundref refid="d8/d2c/classouzel_1_1graphics_1_1_render_device" prot="public" virt="non-virtual">ouzel::graphics::RenderDevice</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a7a826244f43522950a406b6b33997ff6" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend ouzel::graphics::RenderDeviceEmpty::Renderer</definition>
+        <argsstring></argsstring>
+        <name>Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="14" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a82b2cac8b372bb9126ed14f4649d1f17" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::graphics::RenderDeviceEmpty::RenderDeviceEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>RenderDeviceEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="16" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a749b0e52312e8bfb7fea426ee2f58fc3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::RenderDeviceEmpty::init</definition>
+        <argsstring>(Window *newWindow, const Size2 &amp;newSize, uint32_t newSampleCount, Texture::Filter newTextureFilter, uint32_t newMaxAnisotropy, bool newVerticalSync, bool newDepth, bool newDebugRenderer) override</argsstring>
+        <name>init</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a1b92b8124d9299118c5587254e4fcb17">init</reimplements>
+        <param>
+          <type><ref refid="d8/d1b/classouzel_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>newWindow</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d8b/classouzel_1_1_size2" kindref="compound">Size2</ref> &amp;</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newSampleCount</declname>
+        </param>
+        <param>
+          <type>Texture::Filter</type>
+          <declname>newTextureFilter</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>newMaxAnisotropy</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newVerticalSync</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newDepth</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>newDebugRenderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="18" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="22" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a01cfd3e993f0abc9c7810222cab61609" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ouzel::graphics::RenderDeviceEmpty::draw</definition>
+        <argsstring>(const std::vector&lt; DrawCommand &gt; &amp;drawCommands) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aa38e8ebf18f1c763eb37e8587ed01f3b">draw</reimplements>
+        <param>
+          <type>const std::vector&lt; <ref refid="d4/d80/structouzel_1_1graphics_1_1_render_device_1_1_draw_command" kindref="compound">DrawCommand</ref> &gt; &amp;</type>
+          <declname>drawCommands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="27" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a6cd24ccf30292812bdf0cd195c0c84c4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="dd/d49/classouzel_1_1graphics_1_1_blend_state_resource" kindref="compound">BlendStateResource</ref> *</type>
+        <definition>BlendStateResource * ouzel::graphics::RenderDeviceEmpty::createBlendState</definition>
+        <argsstring>() override</argsstring>
+        <name>createBlendState</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a2e6de66bbd6d3d07e7e14ce7aba8886d">createBlendState</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="29" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="125" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a91165713e06759fbbc49c664b5ab4171" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/d2c/classouzel_1_1graphics_1_1_texture_resource" kindref="compound">TextureResource</ref> *</type>
+        <definition>TextureResource * ouzel::graphics::RenderDeviceEmpty::createTexture</definition>
+        <argsstring>() override</argsstring>
+        <name>createTexture</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ae28553686df7e67ba4e4ee0f44ba7fd7">createTexture</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="30" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="134" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a0314d4c99e8533fd7b18e2ce7b1f5aa4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d3/d8b/classouzel_1_1graphics_1_1_shader_resource" kindref="compound">ShaderResource</ref> *</type>
+        <definition>ShaderResource * ouzel::graphics::RenderDeviceEmpty::createShader</definition>
+        <argsstring>() override</argsstring>
+        <name>createShader</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a5f12238e24f14a124916dbee5e5d13bd">createShader</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="31" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="143" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a883988525c5f397acbc06673f534d293" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/ddd/classouzel_1_1graphics_1_1_mesh_buffer_resource" kindref="compound">MeshBufferResource</ref> *</type>
+        <definition>MeshBufferResource * ouzel::graphics::RenderDeviceEmpty::createMeshBuffer</definition>
+        <argsstring>() override</argsstring>
+        <name>createMeshBuffer</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a8f992cbc1dba212cdf0357d2f35b56c1">createMeshBuffer</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="32" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="152" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a10e40c3de8a4fbe4d02221b1404d7f09" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d9/df0/classouzel_1_1graphics_1_1_buffer_resource" kindref="compound">BufferResource</ref> *</type>
+        <definition>BufferResource * ouzel::graphics::RenderDeviceEmpty::createBuffer</definition>
+        <argsstring>() override</argsstring>
+        <name>createBuffer</name>
+        <reimplements refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a478c9081aa00395a40697a01ea05b0e8">createBuffer</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="33" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.cpp" bodystart="161" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1381">
+        <label>ouzel::graphics::RenderDeviceEmpty</label>
+        <link refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty"/>
+        <childnode refid="1382" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1382">
+        <label>ouzel::graphics::RenderDevice</label>
+        <link refid="d8/d2c/classouzel_1_1graphics_1_1_render_device"/>
+        <childnode refid="1383" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1383">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1387">
+        <label>ouzel::Color</label>
+        <link refid="d4/d5a/classouzel_1_1_color"/>
+      </node>
+      <node id="1389">
+        <label>ouzel::Size2</label>
+        <link refid="df/d8b/classouzel_1_1_size2"/>
+      </node>
+      <node id="1391">
+        <label>ouzel::EventHandler</label>
+        <link refid="d6/de4/classouzel_1_1_event_handler"/>
+        <childnode refid="1392" relation="usage">
+          <edgelabel>eventDispatcher</edgelabel>
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>ouzel::EventDispatcher</label>
+        <link refid="d3/dfd/classouzel_1_1_event_dispatcher"/>
+        <childnode refid="1386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1388">
+        <label>ouzel::Matrix4</label>
+        <link refid="de/da5/classouzel_1_1_matrix4"/>
+        <childnode refid="1388" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="1384">
+        <label>ouzel::graphics::RenderDeviceEmpty</label>
+        <link refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty"/>
+        <childnode refid="1385" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1385">
+        <label>ouzel::graphics::RenderDevice</label>
+        <link refid="d8/d2c/classouzel_1_1graphics_1_1_render_device"/>
+        <childnode refid="1386" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1387" relation="usage">
+          <edgelabel>clearColor</edgelabel>
+        </childnode>
+        <childnode refid="1388" relation="usage">
+          <edgelabel>renderTargetProjectionTransform</edgelabel>
+          <edgelabel>projectionTransform</edgelabel>
+        </childnode>
+        <childnode refid="1389" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="1390" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+      </node>
+      <node id="1386">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+      <node id="1390">
+        <label>ouzel::Window</label>
+        <link refid="d8/d1b/classouzel_1_1_window"/>
+        <childnode refid="1386" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1391" relation="usage">
+          <edgelabel>eventHandler</edgelabel>
+        </childnode>
+        <childnode refid="1389" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>resolution</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/graphics/empty/RenderDeviceEmpty.hpp" line="13" column="1" bodyfile="ouzel/graphics/empty/RenderDeviceEmpty.hpp" bodystart="12" bodyend="34"/>
+    <listofallmembers>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a3adce3f6ddf93d2e6f9579fce64bce7b" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>accumulatedFPS</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a7cbfec156bfa388c1a1b2797e61fc706" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>accumulatedTime</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a334737c58569a94a71ad697e0dc44141" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>addDrawCommand</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a9b8d65d45f13cd874de6ab2acf3d46d3" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>anisotropicFilteringSupported</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1abeb32fb6b4c4458a418c67735e5197d7" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>apiMajorVersion</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a2262f5d9e290581fee9d1d0320aa032e" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>apiMinorVersion</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1accfd754dbf2e0f65119ecc10502ed9fd" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>clearColor</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a6aeafe059ec148f7fca20db3054b87cf" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>clearColorBuffer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ab821f27fd57008e9a11fc5c5cbeceb48" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>clearDepth</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a24751a65a338741c9a1c0464a32c125d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>clearDepthBuffer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a2d7932f74e2bc044907f5f1ce8f44104" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>convertNormalizedToScreenLocation</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a5741acc2a4a2518bfb53de722ef21999" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>convertScreenToNormalizedLocation</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a6cd24ccf30292812bdf0cd195c0c84c4" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>createBlendState</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a10e40c3de8a4fbe4d02221b1404d7f09" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>createBuffer</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a883988525c5f397acbc06673f534d293" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>createMeshBuffer</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a0314d4c99e8533fd7b18e2ce7b1f5aa4" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>createShader</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a91165713e06759fbbc49c664b5ab4171" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>createTexture</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a9af6228e93b7abbbeb55b14c7e037aeb" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>currentAccumulatedFPS</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1affcd4156aefe294d55440b464f2aac89" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>currentFPS</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a97f11a48447f6342145a2473098805ca" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>currentFrame</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a8503c77acbd5a2219af7c8c9185c74fb" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>debugRenderer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a33723eff16f69280423ecd5dc3b190b5" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>deleteResource</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1abc4e741b3646347bb7c70a78418d07a2" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>depth</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a01cfd3e993f0abc9c7810222cab61609" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>draw</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a0b8d621972bfbd7a9f713f88d73596f3" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>drawCallCount</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a665f2fba96a0a8b662c0d6ba25454215" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>drawQueue</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aec01ca70c6495add36381c3298b6b43d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>drawQueueMutex</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a976d055af0c2f5643b199df375c86e7b" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>driver</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a025b9ad0e84ffb5d4ddcd7c66347cc47" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>executeAll</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a5ca6ce34269c477e40588e62fe60d0a6" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>executeMutex</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a03a63427a8fda1a3ebac90a467783df7" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>executeOnRenderThread</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a352d0fa389e8f24688dd575bdbe61a59" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>executeQueue</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a3fd5454eff07b52c4d1c59a256fe6092" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>flushCommands</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a2e921df802e39e1940bc250979e1b74e" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>frameBufferClearedFrame</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ac7fb83e69c6783f8ac5b999d86cdb22f" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>generateScreenshot</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a646bf11df046ea695b06d278d2f4c18a" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getAccumulatedFPS</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aab6ef2fee05d022d95360c42d4ab06e4" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getAPIMajorVersion</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1af3cfb315d0b01c7affd7861328e3705f" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getAPIMinorVersion</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a59a89a0c6983d25cc9937a3d6b9bed9d" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getClearColor</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aa56ca0135319250fa79e5b24e4794f20" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getClearColorBuffer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a99baac97c033b420502678cafe8489a4" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getClearDepth</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aa998c1a80d81876f96ebcd811fb98c97" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getClearDepthBuffer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a928d61aa6f007bd029ce0c82e5bf6b5d" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getDrawCallCount</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1afc46dae39b38fb07341581cbb34d589a" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getDriver</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a393c54ed8ffdfdda7ac31cd0a3888cb6" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getFPS</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aa1e680dd26af9ed37e791474a4426812" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getMaxAnisotropy</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a3a1ae94dda6bba7641b8cf39c8ff652c" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getProjectionTransform</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a401b4c446cc1c62ccd67f6180415530a" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getRefillQueue</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ac032c77327002fa2071ba8dfa6b45195" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getSampleCount</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a8ab9079d9fa59304bedde5b43536e066" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getSize</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a26187b440130864871f1567a25837feb" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getSupportedResolutions</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aed21fc68fef8956d33630abc89b9f196" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>getTextureFilter</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a749b0e52312e8bfb7fea426ee2f58fc3" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>init</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a963089fc16a109e7f9395e6070ab7164" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>isAnisotropicFilteringSupported</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ab8dd67f1b6bfb0ce93151730d59f8c25" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>isMultisamplingSupported</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a24bf9ca0f29118b4ee14d53d06719547" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>isNPOTTexturesSupported</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a3e551ce82faa1b7665b067466515035b" prot="public" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>isRenderTargetsSupported</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a3879a1b274dae183407bebdf68d1f51e" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>maxAnisotropy</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a0f1989678a7372f4508dbca119958731" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>multisamplingSupported</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>Noncopyable</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a6e4371af6278cc6e5a6baf6b5a3c1750" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>npotTexturesSupported</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>operator=</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a2ce1f6a0dc4686158fbc91b3fa9ef611" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>previousFrameTime</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ad75f8123f727d7a1136ad3718ab8cc16" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>process</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a45080dc5d01f8aafaeda93d1af7826d3" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>projectionTransform</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a70d1b989dc4e4f9ab2eaf14b3d309264" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>queueCondition</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a19fb5264a4bad992643d4bba519fc4c5" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>queueFinished</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a5a8e7612be30db723dbf8fcd7217efde" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>refillQueue</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a7ba2951a581729d87f76e7131c463f23" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>RenderDevice</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a82b2cac8b372bb9126ed14f4649d1f17" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>RenderDeviceEmpty</name></member>
+      <member refid="db/d3b/classouzel_1_1graphics_1_1_render_device_empty_1a7a826244f43522950a406b6b33997ff6" prot="private" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>Renderer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a72fdbdebe58428d0325f62d014b0d248" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>renderTargetProjectionTransform</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a9916131486d8a0b287e458ef617ee9b9" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>renderTargetsSupported</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aedcd4ca75c891fb05ecb58f4a4e7b200" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>resourceDeleteSet</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1afa01f744d870360365cdfb23ad0a456d" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>resourceMutex</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a5a0c9e98af799531c7320bbb5b8acaf8" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>resources</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ac1f47d12c3ab06f1df4d439c20ffa95c" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>sampleCount</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a3692f25505030f61e202e198d23068b0" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>setClearColor</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ac57149f91cebce67403cd664f70ef091" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>setClearColorBuffer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aac1e211bfe2aacdd2ba5a48f67a24a2e" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>setClearDepth</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a06b01d1a94d2d8477fdc184b622ebbd4" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>setClearDepthBuffer</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a246907214b41d3bb9076e963b2695e3a" prot="protected" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>setSize</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a5f5bf280c7447bfbca0c060f6d3938ec" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>size</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1afb6ce382b461032e26ae7adcf2ccd611" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>textureFilter</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1ae567e53a26e0a45690803a549f90b983" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>verticalSync</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1aa3a74567814c0798552bbfc30ff4a1a5" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>window</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>~Noncopyable</name></member>
+      <member refid="d8/d2c/classouzel_1_1graphics_1_1_render_device_1a400831376ba7feb8e9a7a4cf5e63e361" prot="public" virt="virtual"><scope>ouzel::graphics::RenderDeviceEmpty</scope><name>~RenderDevice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

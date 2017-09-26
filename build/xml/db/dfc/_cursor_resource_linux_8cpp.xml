@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/dfc/_cursor_resource_linux_8cpp" kind="file" language="C++">
+    <compoundname>CursorResourceLinux.cpp</compoundname>
+    <includes local="no">X11/cursorfont.h</includes>
+    <includes local="no">X11/Xcursor/Xcursor.h</includes>
+    <includes refid="dd/da9/_cursor_resource_linux_8hpp" local="yes">CursorResourceLinux.hpp</includes>
+    <includes refid="db/db9/_engine_8hpp" local="yes">core/Engine.hpp</includes>
+    <includes refid="d9/d92/_window_linux_8hpp" local="yes">core/linux/WindowLinux.hpp</includes>
+    <includes refid="d8/dce/_log_8hpp" local="yes">utils/Log.hpp</includes>
+    <incdepgraph>
+      <node id="10666">
+        <label>atomic</label>
+      </node>
+      <node id="10664">
+        <label>functional</label>
+      </node>
+      <node id="10673">
+        <label>queue</label>
+      </node>
+      <node id="10679">
+        <label>limits</label>
+      </node>
+      <node id="10689">
+        <label>events/EventDispatcher.hpp</label>
+        <link refid="d1/d90/_event_dispatcher_8hpp_source"/>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10651" relation="include">
+        </childnode>
+        <childnode refid="10673" relation="include">
+        </childnode>
+        <childnode refid="10663" relation="include">
+        </childnode>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10690" relation="include">
+        </childnode>
+        <childnode refid="10700" relation="include">
+        </childnode>
+      </node>
+      <node id="10708">
+        <label>graphics/DataType.hpp</label>
+        <link refid="de/ddb/_data_type_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+      </node>
+      <node id="10645">
+        <label>X11/cursorfont.h</label>
+      </node>
+      <node id="10712">
+        <label>scene/ParticleDefinition.hpp</label>
+        <link refid="df/d2e/_particle_definition_8hpp_source"/>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+      </node>
+      <node id="10650">
+        <label>cstdint</label>
+      </node>
+      <node id="10649">
+        <label>input/CursorResource.hpp</label>
+        <link refid="d9/d1c/_cursor_resource_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10651" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10653" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+      </node>
+      <node id="10687">
+        <label>math/Quaternion.hpp</label>
+        <link refid="d6/d42/_quaternion_8hpp_source"/>
+        <childnode refid="10676" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+      </node>
+      <node id="10695">
+        <label>scene/Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10678" relation="include">
+        </childnode>
+        <childnode refid="10676" relation="include">
+        </childnode>
+        <childnode refid="10684" relation="include">
+        </childnode>
+        <childnode refid="10675" relation="include">
+        </childnode>
+        <childnode refid="10685" relation="include">
+        </childnode>
+      </node>
+      <node id="10688">
+        <label>files/FileSystem.hpp</label>
+        <link refid="d7/da4/_file_system_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+      </node>
+      <node id="10671">
+        <label>core/Timer.hpp</label>
+        <link refid="dd/d91/_timer_8hpp_source"/>
+        <childnode refid="10655" relation="include">
+        </childnode>
+      </node>
+      <node id="10705">
+        <label>SpriteFrame.hpp</label>
+        <link refid="dd/df2/_sprite_frame_8hpp_source"/>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10706" relation="include">
+        </childnode>
+        <childnode refid="10675" relation="include">
+        </childnode>
+        <childnode refid="10707" relation="include">
+        </childnode>
+        <childnode refid="10709" relation="include">
+        </childnode>
+        <childnode refid="10710" relation="include">
+        </childnode>
+        <childnode refid="10711" relation="include">
+        </childnode>
+        <childnode refid="10685" relation="include">
+        </childnode>
+      </node>
+      <node id="10694">
+        <label>audio/AudioDevice.hpp</label>
+        <link refid="de/d74/_audio_device_8hpp_source"/>
+        <childnode refid="10651" relation="include">
+        </childnode>
+        <childnode refid="10673" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10686" relation="include">
+        </childnode>
+      </node>
+      <node id="10660">
+        <label>cmath</label>
+      </node>
+      <node id="10718">
+        <label>errno.h</label>
+      </node>
+      <node id="10661">
+        <label>core/Engine.hpp</label>
+        <link refid="db/db9/_engine_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10663" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10664" relation="include">
+        </childnode>
+        <childnode refid="10665" relation="include">
+        </childnode>
+        <childnode refid="10666" relation="include">
+        </childnode>
+        <childnode refid="10667" relation="include">
+        </childnode>
+        <childnode refid="10668" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10670" relation="include">
+        </childnode>
+        <childnode refid="10671" relation="include">
+        </childnode>
+        <childnode refid="10672" relation="include">
+        </childnode>
+        <childnode refid="10686" relation="include">
+        </childnode>
+        <childnode refid="10688" relation="include">
+        </childnode>
+        <childnode refid="10689" relation="include">
+        </childnode>
+        <childnode refid="10701" relation="include">
+        </childnode>
+        <childnode refid="10702" relation="include">
+        </childnode>
+        <childnode refid="10716" relation="include">
+        </childnode>
+        <childnode refid="10717" relation="include">
+        </childnode>
+        <childnode refid="10719" relation="include">
+        </childnode>
+      </node>
+      <node id="10725">
+        <label>math/Matrix3.hpp</label>
+        <link refid="d8/d52/_matrix3_8hpp_source"/>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+      </node>
+      <node id="10716">
+        <label>localization/Localization.hpp</label>
+        <link refid="d0/dff/_localization_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10703" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+      </node>
+      <node id="10704">
+        <label>scene/SpriteDefinition.hpp</label>
+        <link refid="dd/dbf/_sprite_definition_8hpp_source"/>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10705" relation="include">
+        </childnode>
+      </node>
+      <node id="10653">
+        <label>input/Cursor.hpp</label>
+        <link refid="d8/d35/_cursor_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10656" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+      </node>
+      <node id="10654">
+        <label>string</label>
+      </node>
+      <node id="10690">
+        <label>events/Event.hpp</label>
+        <link refid="d6/dc3/_event_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10691" relation="include">
+        </childnode>
+        <childnode refid="10696" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+        <childnode refid="10698" relation="include">
+        </childnode>
+      </node>
+      <node id="10703">
+        <label>map</label>
+      </node>
+      <node id="10692">
+        <label>cfloat</label>
+      </node>
+      <node id="10678">
+        <label>math/Box3.hpp</label>
+        <link refid="de/d0f/_box3_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10679" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+        <childnode refid="10681" relation="include">
+        </childnode>
+      </node>
+      <node id="10701">
+        <label>scene/SceneManager.hpp</label>
+        <link refid="db/d89/_scene_manager_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+      </node>
+      <node id="10669">
+        <label>Config.h</label>
+      </node>
+      <node id="10676">
+        <label>math/Matrix4.hpp</label>
+        <link refid="d4/d5c/_matrix4_8hpp_source"/>
+        <childnode refid="10668" relation="include">
+        </childnode>
+        <childnode refid="10677" relation="include">
+        </childnode>
+        <childnode refid="10682" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+        <childnode refid="10683" relation="include">
+        </childnode>
+      </node>
+      <node id="10706">
+        <label>math/Box2.hpp</label>
+        <link refid="d8/d32/_box2_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10679" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+      </node>
+      <node id="10693">
+        <label>audio/SoundInput.hpp</label>
+        <link refid="dd/d1a/_sound_input_8hpp_source"/>
+        <childnode refid="10694" relation="include">
+        </childnode>
+      </node>
+      <node id="10691">
+        <label>audio/Sound.hpp</label>
+        <link refid="d8/da4/_sound_8hpp_source"/>
+        <childnode refid="10692" relation="include">
+        </childnode>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10693" relation="include">
+        </childnode>
+        <childnode refid="10695" relation="include">
+        </childnode>
+        <childnode refid="10670" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+      </node>
+      <node id="10656">
+        <label>graphics/PixelFormat.hpp</label>
+        <link refid="d9/d2a/_pixel_format_8hpp_source"/>
+      </node>
+      <node id="10724">
+        <label>utils/Log.hpp</label>
+        <link refid="d8/dce/_log_8hpp_source"/>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10725" relation="include">
+        </childnode>
+        <childnode refid="10676" relation="include">
+        </childnode>
+        <childnode refid="10687" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+        <childnode refid="10681" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+        <childnode refid="10683" relation="include">
+        </childnode>
+      </node>
+      <node id="10696">
+        <label>scene/Actor.hpp</label>
+        <link refid="d2/d39/_actor_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10697" relation="include">
+        </childnode>
+        <childnode refid="10670" relation="include">
+        </childnode>
+        <childnode refid="10678" relation="include">
+        </childnode>
+        <childnode refid="10684" relation="include">
+        </childnode>
+        <childnode refid="10676" relation="include">
+        </childnode>
+        <childnode refid="10687" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+      </node>
+      <node id="10682">
+        <label>math/Plane.hpp</label>
+        <link refid="d1/df4/_plane_8hpp_source"/>
+      </node>
+      <node id="10674">
+        <label>condition_variable</label>
+      </node>
+      <node id="10697">
+        <label>scene/ActorContainer.hpp</label>
+        <link refid="d6/dbe/_actor_container_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+      </node>
+      <node id="10700">
+        <label>events/EventHandler.hpp</label>
+        <link refid="d4/d86/_event_handler_8hpp_source"/>
+        <childnode refid="10664" relation="include">
+        </childnode>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10690" relation="include">
+        </childnode>
+      </node>
+      <node id="10710">
+        <label>graphics/Buffer.hpp</label>
+        <link refid="dd/df1/_buffer_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+      </node>
+      <node id="10685">
+        <label>graphics/Texture.hpp</label>
+        <link refid="d2/d4b/_texture_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10656" relation="include">
+        </childnode>
+        <childnode refid="10684" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+      </node>
+      <node id="10720">
+        <label>core/linux/WindowLinux.hpp</label>
+        <link refid="d9/d92/_window_linux_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10721" relation="include">
+        </childnode>
+        <childnode refid="10722" relation="include">
+        </childnode>
+        <childnode refid="10723" relation="include">
+        </childnode>
+      </node>
+      <node id="10647">
+        <label>CursorResourceLinux.hpp</label>
+        <link refid="dd/da9/_cursor_resource_linux_8hpp_source"/>
+        <childnode refid="10648" relation="include">
+        </childnode>
+        <childnode refid="10649" relation="include">
+        </childnode>
+      </node>
+      <node id="10668">
+        <label>Setup.h</label>
+        <link refid="de/d93/_setup_8h_source"/>
+        <childnode refid="10669" relation="include">
+        </childnode>
+      </node>
+      <node id="10709">
+        <label>graphics/BlendState.hpp</label>
+        <link refid="d2/d0f/_blend_state_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+      </node>
+      <node id="10652">
+        <label>vector</label>
+      </node>
+      <node id="10657">
+        <label>math/Size2.hpp</label>
+        <link refid="db/d59/_size2_8hpp_source"/>
+        <childnode refid="10658" relation="include">
+        </childnode>
+      </node>
+      <node id="10677">
+        <label>math/ConvexVolume.hpp</label>
+        <link refid="d8/d7f/_convex_volume_8hpp_source"/>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10678" relation="include">
+        </childnode>
+        <childnode refid="10682" relation="include">
+        </childnode>
+        <childnode refid="10683" relation="include">
+        </childnode>
+      </node>
+      <node id="10719">
+        <label>utils/INI.hpp</label>
+        <link refid="dc/d52/_i_n_i_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10703" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+      </node>
+      <node id="10681">
+        <label>math/Size3.hpp</label>
+        <link refid="de/da6/_size3_8hpp_source"/>
+        <childnode refid="10680" relation="include">
+        </childnode>
+      </node>
+      <node id="10698">
+        <label>input/Input.hpp</label>
+        <link refid="d0/d4b/_input_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10651" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10699" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+      </node>
+      <node id="10707">
+        <label>graphics/Vertex.hpp</label>
+        <link refid="df/da9/_vertex_8hpp_source"/>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10708" relation="include">
+        </childnode>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+        <childnode refid="10684" relation="include">
+        </childnode>
+      </node>
+      <node id="10686">
+        <label>audio/Audio.hpp</label>
+        <link refid="d4/d43/_audio_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10664" relation="include">
+        </childnode>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10663" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10687" relation="include">
+        </childnode>
+        <childnode refid="10680" relation="include">
+        </childnode>
+      </node>
+      <node id="10684">
+        <label>math/Color.hpp</label>
+        <link refid="d3/d06/_color_8hpp_source"/>
+        <childnode refid="10659" relation="include">
+        </childnode>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+      </node>
+      <node id="10715">
+        <label>audio/SoundData.hpp</label>
+        <link refid="df/d3b/_sound_data_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+      </node>
+      <node id="10672">
+        <label>graphics/Renderer.hpp</label>
+        <link refid="dc/d94/_renderer_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10673" relation="include">
+        </childnode>
+        <childnode refid="10663" relation="include">
+        </childnode>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10651" relation="include">
+        </childnode>
+        <childnode refid="10666" relation="include">
+        </childnode>
+        <childnode refid="10674" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10675" relation="include">
+        </childnode>
+        <childnode refid="10676" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+        <childnode refid="10684" relation="include">
+        </childnode>
+        <childnode refid="10685" relation="include">
+        </childnode>
+      </node>
+      <node id="10659">
+        <label>cstddef</label>
+      </node>
+      <node id="10721">
+        <label>X11/Xlib.h</label>
+      </node>
+      <node id="10699">
+        <label>unordered_map</label>
+      </node>
+      <node id="10711">
+        <label>graphics/MeshBuffer.hpp</label>
+        <link refid="d6/d47/_mesh_buffer_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10707" relation="include">
+        </childnode>
+      </node>
+      <node id="10683">
+        <label>math/Vector4.hpp</label>
+        <link refid="dd/d49/_vector4_8hpp_source"/>
+        <childnode refid="10659" relation="include">
+        </childnode>
+        <childnode refid="10668" relation="include">
+        </childnode>
+      </node>
+      <node id="10651">
+        <label>mutex</label>
+      </node>
+      <node id="10667">
+        <label>chrono</label>
+      </node>
+      <node id="10646">
+        <label>X11/Xcursor/Xcursor.h</label>
+      </node>
+      <node id="10644">
+        <label>ouzel/input/linux/CursorResourceLinux.cpp</label>
+        <link refid="db/dfc/_cursor_resource_linux_8cpp"/>
+        <childnode refid="10645" relation="include">
+        </childnode>
+        <childnode refid="10646" relation="include">
+        </childnode>
+        <childnode refid="10647" relation="include">
+        </childnode>
+        <childnode refid="10661" relation="include">
+        </childnode>
+        <childnode refid="10720" relation="include">
+        </childnode>
+        <childnode refid="10724" relation="include">
+        </childnode>
+      </node>
+      <node id="10665">
+        <label>thread</label>
+      </node>
+      <node id="10663">
+        <label>set</label>
+      </node>
+      <node id="10713">
+        <label>gui/Font.hpp</label>
+        <link refid="d9/da6/_font_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10703" relation="include">
+        </childnode>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10699" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10684" relation="include">
+        </childnode>
+        <childnode refid="10685" relation="include">
+        </childnode>
+        <childnode refid="10707" relation="include">
+        </childnode>
+      </node>
+      <node id="10658">
+        <label>math/Vector2.hpp</label>
+        <link refid="d3/d12/_vector2_8hpp_source"/>
+        <childnode refid="10659" relation="include">
+        </childnode>
+        <childnode refid="10660" relation="include">
+        </childnode>
+      </node>
+      <node id="10723">
+        <label>core/Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp_source"/>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+        <childnode refid="10700" relation="include">
+        </childnode>
+      </node>
+      <node id="10670">
+        <label>core/UpdateCallback.hpp</label>
+        <link refid="d0/d75/_update_callback_8hpp_source"/>
+        <childnode refid="10664" relation="include">
+        </childnode>
+        <childnode refid="10650" relation="include">
+        </childnode>
+      </node>
+      <node id="10714">
+        <label>graphics/Shader.hpp</label>
+        <link refid="d2/d73/_shader_8hpp_source"/>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10652" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10708" relation="include">
+        </childnode>
+        <childnode refid="10707" relation="include">
+        </childnode>
+      </node>
+      <node id="10722">
+        <label>X11/Xutil.h</label>
+      </node>
+      <node id="10655">
+        <label>utils/Noncopyable.hpp</label>
+        <link refid="db/df1/_noncopyable_8hpp_source"/>
+      </node>
+      <node id="10675">
+        <label>math/Rectangle.hpp</label>
+        <link refid="d4/d32/_rectangle_8hpp_source"/>
+        <childnode refid="10658" relation="include">
+        </childnode>
+        <childnode refid="10657" relation="include">
+        </childnode>
+      </node>
+      <node id="10680">
+        <label>math/Vector3.hpp</label>
+        <link refid="d2/d6a/_vector3_8hpp_source"/>
+        <childnode refid="10659" relation="include">
+        </childnode>
+      </node>
+      <node id="10662">
+        <label>memory</label>
+      </node>
+      <node id="10702">
+        <label>core/Cache.hpp</label>
+        <link refid="d6/d4c/_cache_8hpp_source"/>
+        <childnode refid="10662" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+        <childnode refid="10703" relation="include">
+        </childnode>
+        <childnode refid="10655" relation="include">
+        </childnode>
+        <childnode refid="10704" relation="include">
+        </childnode>
+        <childnode refid="10712" relation="include">
+        </childnode>
+        <childnode refid="10713" relation="include">
+        </childnode>
+        <childnode refid="10709" relation="include">
+        </childnode>
+        <childnode refid="10714" relation="include">
+        </childnode>
+        <childnode refid="10685" relation="include">
+        </childnode>
+        <childnode refid="10715" relation="include">
+        </childnode>
+      </node>
+      <node id="10648">
+        <label>X11/X.h</label>
+      </node>
+      <node id="10717">
+        <label>network/Network.hpp</label>
+        <link refid="dc/dd6/_network_8hpp_source"/>
+        <childnode refid="10718" relation="include">
+        </childnode>
+        <childnode refid="10650" relation="include">
+        </childnode>
+        <childnode refid="10654" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d6/d09/namespaceouzel">ouzel</innernamespace>
+    <innernamespace refid="d5/d3c/namespaceouzel_1_1input">ouzel::input</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Elviss<sp/>Strazdins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Ouzel<sp/>engine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;X11/cursorfont.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;X11/Xcursor/Xcursor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CursorResourceLinux.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Engine.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/linux/WindowLinux.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/Log.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d09/namespaceouzel" kindref="compound">ouzel</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">input</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CursorResourceLinux::~CursorResourceLinux()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sharedEngine)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WindowLinux*<sp/>windowLinux<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">WindowLinux*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sharedEngine-&gt;getWindow());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Display*<sp/>display<sp/>=<sp/>windowLinux-&gt;getDisplay();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cursor<sp/>!=<sp/>None)<sp/>XFreeCursor(display,<sp/>cursor);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CursorResourceLinux::init(SystemCursor<sp/>newSystemCursor)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!CursorResource::init(newSystemCursor))</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WindowLinux*<sp/>windowLinux<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">WindowLinux*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sharedEngine-&gt;getWindow());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Display*<sp/>display<sp/>=<sp/>windowLinux-&gt;getDisplay();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cursor<sp/>!=<sp/>None)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XFreeCursor(display,<sp/>cursor);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>None;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(systemCursor)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::DEFAULT:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;arrow&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::ARROW:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;arrow&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::HAND:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;hand1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::HORIZONTAL_RESIZE:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;sb_h_double_arrow&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::VERTICAL_RESIZE:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;sb_v_double_arrow&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::CROSS:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;crosshair&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SystemCursor::I_BEAM:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorLibraryLoadCursor(display,<sp/></highlight><highlight class="stringliteral">&quot;xterm&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reactivate();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CursorResourceLinux::init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint8_t&gt;&amp;<sp/>newData,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Size2&amp;<sp/>newSize,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>graphics::PixelFormat<sp/>newPixelFormat,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2&amp;<sp/>newHotSpot)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!CursorResource::init(newData,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newSize,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPixelFormat,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newHotSpot))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WindowLinux*<sp/>windowLinux<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">WindowLinux*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sharedEngine-&gt;getWindow());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Display*<sp/>display<sp/>=<sp/>windowLinux-&gt;getDisplay();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cursor<sp/>!=<sp/>None)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XFreeCursor(display,<sp/>cursor);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>None;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!data.empty())</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(size.width);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(size.height);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XcursorImage*<sp/>cursorImage<sp/>=<sp/>XcursorImageCreate(width,<sp/>height);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!cursorImage)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log(Log::Level::ERR)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>create<sp/>cursor<sp/>image&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursorImage-&gt;xhot<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(hotSpot.x);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursorImage-&gt;yhot<sp/>=<sp/>height<sp/>-<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(hotSpot.y)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursorImage-&gt;delay<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>target<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cursorImage-&gt;pixels);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>width<sp/>*<sp/>height;<sp/>++i)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>premultiply<sp/>alpha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>opacity<sp/>=<sp/>data[i<sp/>*<sp/>4<sp/>+<sp/>3]<sp/>/<sp/>255.0f;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target[i<sp/>*<sp/>4<sp/>+<sp/>0]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data[i<sp/>*<sp/>4<sp/>+<sp/>2]<sp/>*<sp/>opacity);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target[i<sp/>*<sp/>4<sp/>+<sp/>1]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data[i<sp/>*<sp/>4<sp/>+<sp/>1]<sp/>*<sp/>opacity);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target[i<sp/>*<sp/>4<sp/>+<sp/>2]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data[i<sp/>*<sp/>4<sp/>+<sp/>0]<sp/>*<sp/>opacity);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target[i<sp/>*<sp/>4<sp/>+<sp/>3]<sp/>=<sp/>data[i<sp/>*<sp/>4<sp/>+<sp/>3];</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/>XcursorImageLoadCursor(display,<sp/>cursorImage);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XcursorImageDestroy(cursorImage);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reactivate();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ouzel</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ouzel/input/linux/CursorResourceLinux.cpp"/>
+  </compounddef>
+</doxygen>

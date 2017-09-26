@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis" kind="class" language="C++" prot="public">
+    <compoundname>ouzel::audio::StreamVorbis</compoundname>
+    <basecompoundref refid="dc/def/classouzel_1_1audio_1_1_stream" prot="public" virt="non-virtual">ouzel::audio::Stream</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1ad75664550748c0123979646117cd2717" prot="private" static="no" mutable="no">
+        <type>stb_vorbis *</type>
+        <definition>stb_vorbis* ouzel::audio::StreamVorbis::vorbisStream</definition>
+        <argsstring></argsstring>
+        <name>vorbisStream</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/StreamVorbis.hpp" line="26" column="1" bodyfile="ouzel/audio/StreamVorbis.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1adc5e6d75a02d852d45e7601e39e0cc65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ouzel::audio::StreamVorbis::StreamVorbis</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;data)</argsstring>
+        <name>StreamVorbis</name>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/StreamVorbis.hpp" line="19" column="1" bodyfile="ouzel/audio/StreamVorbis.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a2b7ef9cbad3ebcec16dd25adeea58d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ouzel::audio::StreamVorbis::~StreamVorbis</definition>
+        <argsstring>()</argsstring>
+        <name>~StreamVorbis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/StreamVorbis.hpp" line="20" column="1" bodyfile="ouzel/audio/StreamVorbis.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a3d9cc56f6471ebedaa22d4f7b8cca70f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ouzel::audio::StreamVorbis::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplements refid="dc/def/classouzel_1_1audio_1_1_stream_1a6f8a572fb1534374a68695555f5b2b1e">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/StreamVorbis.hpp" line="21" column="1" bodyfile="ouzel/audio/StreamVorbis.cpp" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a03abb4a2a80dbb5ce7c89badddf4b9c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>stb_vorbis *</type>
+        <definition>stb_vorbis* ouzel::audio::StreamVorbis::getVorbisStream</definition>
+        <argsstring>() const</argsstring>
+        <name>getVorbisStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ouzel/audio/StreamVorbis.hpp" line="23" column="1" bodyfile="ouzel/audio/StreamVorbis.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1798">
+        <label>ouzel::audio::StreamVorbis</label>
+        <link refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis"/>
+        <childnode refid="1799" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1799">
+        <label>ouzel::audio::Stream</label>
+        <link refid="dc/def/classouzel_1_1audio_1_1_stream"/>
+        <childnode refid="1800" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1800">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1801">
+        <label>ouzel::audio::StreamVorbis</label>
+        <link refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis"/>
+        <childnode refid="1802" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1802">
+        <label>ouzel::audio::Stream</label>
+        <link refid="dc/def/classouzel_1_1audio_1_1_stream"/>
+        <childnode refid="1803" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1803">
+        <label>ouzel::Noncopyable</label>
+        <link refid="d2/d21/classouzel_1_1_noncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="ouzel/audio/StreamVorbis.hpp" line="17" column="1" bodyfile="ouzel/audio/StreamVorbis.hpp" bodystart="16" bodyend="27"/>
+    <listofallmembers>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a596a24237a4d1ae78741a49fe7f7568b" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>getResetCount</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1ab28b58f424b874fd4a6bbdb23217647a" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>getShouldReset</name></member>
+      <member refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a03abb4a2a80dbb5ce7c89badddf4b9c9" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>getVorbisStream</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1ad3fde05a0c8412d9a36ac19123b497ce" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>isPlaying</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a9fd5a21ec8819b932192807c88d969d5" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>isRepeating</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a7a2f85c0ab3f895335b786cc15c9380c" prot="protected" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ad9d3cfa9a715f3f504fa29c752aba9c0" prot="protected" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a3e3ff963a1d9b15ddd3d88709781053a" prot="protected" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>Noncopyable</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1a68a1b19771512dc1470956f1e46f293d" prot="protected" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>operator=</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1ac659ce30508af407abcbce377390f719" prot="protected" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>operator=</name></member>
+      <member refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a3d9cc56f6471ebedaa22d4f7b8cca70f" prot="public" virt="virtual"><scope>ouzel::audio::StreamVorbis</scope><name>reset</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1ab7752932e0a631a8afecceb637fed942" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>setPlaying</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1adc15cbf377cfa4e563147428c93338c4" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>setRepeating</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a439b7f2e86320ab2a1d6911a079cbb51" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>setShouldReset</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1a795a42803c14b1b22f653bb373e9c6fa" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>Stream</name></member>
+      <member refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1adc5e6d75a02d852d45e7601e39e0cc65" prot="public" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>StreamVorbis</name></member>
+      <member refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1ad75664550748c0123979646117cd2717" prot="private" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>vorbisStream</name></member>
+      <member refid="d2/d21/classouzel_1_1_noncopyable_1adc28530ad760541edbd75fd2f7054557" prot="protected" virt="non-virtual"><scope>ouzel::audio::StreamVorbis</scope><name>~Noncopyable</name></member>
+      <member refid="dc/def/classouzel_1_1audio_1_1_stream_1aabcd648c1bbbaeee7753b4f12613896e" prot="public" virt="virtual"><scope>ouzel::audio::StreamVorbis</scope><name>~Stream</name></member>
+      <member refid="d2/d1a/classouzel_1_1audio_1_1_stream_vorbis_1a2b7ef9cbad3ebcec16dd25adeea58d2e" prot="public" virt="virtual"><scope>ouzel::audio::StreamVorbis</scope><name>~StreamVorbis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
