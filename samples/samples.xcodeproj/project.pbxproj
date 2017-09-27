@@ -168,6 +168,17 @@
 		30C56C8A1CAB4E4E007AEF8F /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C56C861CAB4E4E007AEF8F /* tick.png */; };
 		30C56C8B1CAB4E4E007AEF8F /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C56C861CAB4E4E007AEF8F /* tick.png */; };
 		30C56C8C1CAB4E4E007AEF8F /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C56C861CAB4E4E007AEF8F /* tick.png */; };
+		525889411F7A60F000D81C23 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5258893F1F7A60F000D81C23 /* Utils.cpp */; };
+		525889421F7A60F000D81C23 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5258893F1F7A60F000D81C23 /* Utils.cpp */; };
+		525889431F7A60F000D81C23 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5258893F1F7A60F000D81C23 /* Utils.cpp */; };
+		52B743621F7A3DB6002DC95E /* Live2dDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B743601F7A3DB6002DC95E /* Live2dDrawable.cpp */; };
+		52B743631F7A3DB6002DC95E /* Live2dDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B743601F7A3DB6002DC95E /* Live2dDrawable.cpp */; };
+		52B743681F7A55E2002DC95E /* Koharu in Resources */ = {isa = PBXBuildFile; fileRef = 52B743671F7A55E2002DC95E /* Koharu */; };
+		52B743691F7A55E2002DC95E /* Koharu in Resources */ = {isa = PBXBuildFile; fileRef = 52B743671F7A55E2002DC95E /* Koharu */; };
+		52B7436A1F7A55E2002DC95E /* Koharu in Resources */ = {isa = PBXBuildFile; fileRef = 52B743671F7A55E2002DC95E /* Koharu */; };
+		52B7436E1F7A5E23002DC95E /* CubismFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B7436C1F7A5E23002DC95E /* CubismFramework.cpp */; };
+		52B7436F1F7A5E23002DC95E /* CubismFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B7436C1F7A5E23002DC95E /* CubismFramework.cpp */; };
+		52B743701F7A5E23002DC95E /* CubismFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B7436C1F7A5E23002DC95E /* CubismFramework.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +297,13 @@
 		30C56C731CAB48A4007AEF8F /* radio_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_button.png; sourceTree = "<group>"; };
 		30C56C851CAB4E4E007AEF8F /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
 		30C56C861CAB4E4E007AEF8F /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		5258893F1F7A60F000D81C23 /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		525889401F7A60F000D81C23 /* Utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
+		52B743601F7A3DB6002DC95E /* Live2dDrawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Live2dDrawable.cpp; sourceTree = "<group>"; };
+		52B743611F7A3DB6002DC95E /* Live2dDrawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Live2dDrawable.hpp; sourceTree = "<group>"; };
+		52B743671F7A55E2002DC95E /* Koharu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Koharu; sourceTree = "<group>"; };
+		52B7436C1F7A5E23002DC95E /* CubismFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubismFramework.cpp; sourceTree = "<group>"; };
+		52B7436D1F7A5E23002DC95E /* CubismFramework.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CubismFramework.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +446,7 @@
 		304A8EB21C2765C4008B1151 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52B743671F7A55E2002DC95E /* Koharu */,
 				30A883561E70E004004A033F /* 8-bit.wav */,
 				30A8835D1E70E5B1004A033F /* 24-bit.wav */,
 				30419E641D1F6A7600A63759 /* ambient.wav */,
@@ -486,6 +505,7 @@
 		30E75F421D7B78DB000300D4 /* samples */ = {
 			isa = PBXGroup;
 			children = (
+				52B7436B1F7A5E23002DC95E /* live2d */,
 				3045F0C81D0F24B800125436 /* AnimationsSample.cpp */,
 				3045F0C91D0F24B800125436 /* AnimationsSample.hpp */,
 				3013FAAD1DDD20AC0069E2BD /* GameSample.cpp */,
@@ -505,8 +525,21 @@
 				30419E5A1D1D530D00A63759 /* SoundSample.hpp */,
 				3045F0C01D0E103100125436 /* SpritesSample.cpp */,
 				3045F0C11D0E103100125436 /* SpritesSample.hpp */,
+				52B743601F7A3DB6002DC95E /* Live2dDrawable.cpp */,
+				52B743611F7A3DB6002DC95E /* Live2dDrawable.hpp */,
 			);
 			name = samples;
+			sourceTree = "<group>";
+		};
+		52B7436B1F7A5E23002DC95E /* live2d */ = {
+			isa = PBXGroup;
+			children = (
+				52B7436C1F7A5E23002DC95E /* CubismFramework.cpp */,
+				52B7436D1F7A5E23002DC95E /* CubismFramework.hpp */,
+				5258893F1F7A60F000D81C23 /* Utils.cpp */,
+				525889401F7A60F000D81C23 /* Utils.hpp */,
+			);
+			path = live2d;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,6 +671,7 @@
 				305B99B71C433061008589E1 /* button.png in Resources */,
 				303B76161C34CFE300FEDE92 /* flame.png in Resources */,
 				30324D9E1CAFB20900601A64 /* lv.mo in Resources */,
+				52B743681F7A55E2002DC95E /* Koharu in Resources */,
 				303B76171C34CFE300FEDE92 /* witch.png in Resources */,
 				303B76181C34CFE300FEDE92 /* flame.json in Resources */,
 				303B76191C34CFE300FEDE92 /* fire.json in Resources */,
@@ -678,6 +712,7 @@
 				305B99B81C433061008589E1 /* button.png in Resources */,
 				303B76961C355AA400FEDE92 /* flame.png in Resources */,
 				30324D9F1CAFB20900601A64 /* lv.mo in Resources */,
+				52B7436A1F7A55E2002DC95E /* Koharu in Resources */,
 				303B76971C355AA400FEDE92 /* witch.png in Resources */,
 				303B76981C355AA400FEDE92 /* flame.json in Resources */,
 				303B76991C355AA400FEDE92 /* fire.json in Resources */,
@@ -718,6 +753,7 @@
 				305B99B61C433061008589E1 /* button.png in Resources */,
 				303B76041C349CA800FEDE92 /* flame.png in Resources */,
 				30324D9D1CAFB20900601A64 /* lv.mo in Resources */,
+				52B743691F7A55E2002DC95E /* Koharu in Resources */,
 				303B75091C286F8D00FEDE92 /* witch.png in Resources */,
 				303B76031C349CA800FEDE92 /* flame.json in Resources */,
 				303B75F71C33756100FEDE92 /* fire.json in Resources */,
@@ -759,10 +795,13 @@
 				3045F0CB1D0F24B800125436 /* AnimationsSample.cpp in Sources */,
 				3045F0C31D0E103100125436 /* SpritesSample.cpp in Sources */,
 				3045F0B11D0D95BC00125436 /* RTSample.cpp in Sources */,
+				52B743621F7A3DB6002DC95E /* Live2dDrawable.cpp in Sources */,
 				3045F0A91D0C2E4500125436 /* MainMenu.cpp in Sources */,
 				304736CD1E0AD89E009BC562 /* PerspectiveSample.cpp in Sources */,
 				3045F0D01D0F24F600125436 /* InputSample.cpp in Sources */,
 				3013FAAF1DDD20AC0069E2BD /* GameSample.cpp in Sources */,
+				525889411F7A60F000D81C23 /* Utils.cpp in Sources */,
+				52B7436E1F7A5E23002DC95E /* CubismFramework.cpp in Sources */,
 				303B760F1C34CFE300FEDE92 /* main.cpp in Sources */,
 				30419E5C1D1D530D00A63759 /* SoundSample.cpp in Sources */,
 			);
@@ -779,6 +818,8 @@
 				3045F0AA1D0C2E4500125436 /* MainMenu.cpp in Sources */,
 				304736CF1E0AD89E009BC562 /* PerspectiveSample.cpp in Sources */,
 				3045F0D11D0F24F600125436 /* InputSample.cpp in Sources */,
+				525889431F7A60F000D81C23 /* Utils.cpp in Sources */,
+				52B743701F7A5E23002DC95E /* CubismFramework.cpp in Sources */,
 				3013FAB11DDD20AC0069E2BD /* GameSample.cpp in Sources */,
 				303B768E1C355AA400FEDE92 /* main.cpp in Sources */,
 				30419E5D1D1D530D00A63759 /* SoundSample.cpp in Sources */,
@@ -793,10 +834,13 @@
 				3045F0CA1D0F24B800125436 /* AnimationsSample.cpp in Sources */,
 				3045F0C21D0E103100125436 /* SpritesSample.cpp in Sources */,
 				3045F0B01D0D95BC00125436 /* RTSample.cpp in Sources */,
+				52B743631F7A3DB6002DC95E /* Live2dDrawable.cpp in Sources */,
 				3045F0A81D0C2E4500125436 /* MainMenu.cpp in Sources */,
 				304736CE1E0AD89E009BC562 /* PerspectiveSample.cpp in Sources */,
 				3045F0CF1D0F24F600125436 /* InputSample.cpp in Sources */,
 				3013FAB01DDD20AC0069E2BD /* GameSample.cpp in Sources */,
+				525889421F7A60F000D81C23 /* Utils.cpp in Sources */,
+				52B7436F1F7A5E23002DC95E /* CubismFramework.cpp in Sources */,
 				303B751A1C29ED4200FEDE92 /* main.cpp in Sources */,
 				30419E5B1D1D530D00A63759 /* SoundSample.cpp in Sources */,
 			);
@@ -1003,6 +1047,8 @@
 				GCC_PREFIX_HEADER = Prefix.hpp;
 				INFOPLIST_FILE = macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = ../external/live2d/lib/macos/;
+				OTHER_LDFLAGS = "-lLive2DCubismCore";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ouzelengine.samples;
 				PRODUCT_NAME = samples_macos;
 			};
@@ -1017,6 +1063,8 @@
 				GCC_PREFIX_HEADER = Prefix.hpp;
 				INFOPLIST_FILE = macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = ../external/live2d/lib/macos/;
+				OTHER_LDFLAGS = "-lLive2DCubismCore";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ouzelengine.samples;
 				PRODUCT_NAME = samples_macos;
 			};

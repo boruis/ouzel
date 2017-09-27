@@ -27,4 +27,6 @@ private:
     ouzel::scene::Camera guiCamera;
     ouzel::gui::Menu menu;
     ouzel::gui::Button backButton;
+    
+    ouzel::scene::Actor live2dActor;
 };

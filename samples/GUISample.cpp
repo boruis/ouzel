@@ -3,6 +3,7 @@
 
 #include "GUISample.hpp"
 #include "MainMenu.hpp"
+#include "Live2dDrawable.hpp"
 
 using namespace std;
 using namespace ouzel;
@@ -55,6 +56,11 @@ GUISample::GUISample():
 
     backButton.setPosition(Vector2(-200.0f, -200.0f));
     menu.addWidget(&backButton);
+
+    std::unique_ptr<live2d::Live2dDrawable> spineBoy;
+    spineBoy.reset(new live2d::Live2dDrawable());
+    live2dActor.addComponent(spineBoy);
+    guiLayer.addChild(&live2dActor);
 }
 
 bool GUISample::handleGamepad(Event::Type type, const GamepadEvent& event)
