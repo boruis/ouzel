@@ -23,17 +23,14 @@ void ouzel_luabinding_actorcontainer(kaguya::State &state)
 
 	//Overloaded funcs
 	auto addChildPtr1 = static_cast<void(ouzel::scene::ActorContainer::*)(Actor *actor)>(&ouzel::scene::ActorContainer::addChild);
-	auto addChildPtr2 = static_cast<void(ouzel::scene::ActorContainer::*)(const std::unique_ptr< T > &actor)>(&ouzel::scene::ActorContainer::addChild);
-	auto addChildPtr3 = static_cast<void(ouzel::scene::ActorContainer::*)(std::unique_ptr< T > &&actor)>(&ouzel::scene::ActorContainer::addChild);
-	metaTable.addOverloadedFunctions("addChild", addChildPtr1, addChildPtr2, addChildPtr3);
+	metaTable.addOverloadedFunctions("addChild", addChildPtr1);
 
 	auto findActorsPtr1 = static_cast<void(ouzel::scene::ActorContainer::*)(const Vector2 &position, std::vector< std::pair< Actor *, Vector3 >> &actors) const>(&ouzel::scene::ActorContainer::findActors);
 	auto findActorsPtr2 = static_cast<void(ouzel::scene::ActorContainer::*)(const std::vector< Vector2 > &edges, std::vector< Actor *> &actors) const>(&ouzel::scene::ActorContainer::findActors);
 	metaTable.addOverloadedFunctions("findActors", findActorsPtr1, findActorsPtr2);
 
-	auto removeChildPtr1 = static_cast<bool(ouzel::scene::ActorContainer::*)(const std::unique_ptr< T > &actor)>(&ouzel::scene::ActorContainer::removeChild);
-	auto removeChildPtr2 = static_cast<bool(ouzel::scene::ActorContainer::*)(Actor *actor)>(&ouzel::scene::ActorContainer::removeChild);
-	metaTable.addOverloadedFunctions("removeChild", removeChildPtr1, removeChildPtr2);
+	auto removeChildPtr1 = static_cast<bool(ouzel::scene::ActorContainer::*)(Actor *actor)>(&ouzel::scene::ActorContainer::removeChild);
+	metaTable.addOverloadedFunctions("removeChild", removeChildPtr1);
 
 
 	state["oz"]["ActorContainer"].setClass(metaTable);

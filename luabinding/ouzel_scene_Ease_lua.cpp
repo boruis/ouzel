@@ -10,8 +10,7 @@ void ouzel_luabinding_ease(kaguya::State &state)
 
 	//Constructor
 	metaTable.setConstructors<
-		ouzel::scene::Ease(Animator *animator, Type aType, Func aFunc),
-		ouzel::scene::Ease(const std::unique_ptr< Animator > &animator, Type aType, Func aFunc)
+		ouzel::scene::Ease(Animator *animator, ouzel::scene::Ease::Type aType, ouzel::scene::Ease::Func aFunc)
 	>();
 
 	state["oz"]["Ease"].setClass(metaTable);

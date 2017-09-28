@@ -10,8 +10,7 @@ void ouzel_luabinding_sequence(kaguya::State &state)
 
 	//Constructor
 	metaTable.setConstructors<
-		ouzel::scene::Sequence(const std::vector< Animator *> &aAnimators),
-		ouzel::scene::Sequence(const std::vector< std::unique_ptr< Animator >> &aAnimators)
+		ouzel::scene::Sequence(const std::vector< Animator *> &aAnimators)
 	>();
 
 	//PublicFunc

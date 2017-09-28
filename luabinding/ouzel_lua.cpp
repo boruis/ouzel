@@ -14,9 +14,7 @@
 #include "ouzel_gui_Button_lua.hpp"
 #include "ouzel_Cache_lua.hpp"
 #include "ouzel_scene_Camera_lua.hpp"
-#include "ouzel_BMFont_CharDescriptor_lua.hpp"
 #include "ouzel_gui_CheckBox_lua.hpp"
-#include "ouzel_network_Client_lua.hpp"
 #include "ouzel_Color_lua.hpp"
 #include "ouzel_gui_ComboBox_lua.hpp"
 #include "ouzel_scene_Component_lua.hpp"
@@ -36,7 +34,6 @@
 #include "ouzel_INI_lua.hpp"
 #include "ouzel_input_Input_lua.hpp"
 #include "ouzel_gui_Label_lua.hpp"
-#include "ouzel_Language_lua.hpp"
 #include "ouzel_scene_Layer_lua.hpp"
 #include "ouzel_audio_Listener_lua.hpp"
 #include "ouzel_Localization_lua.hpp"
@@ -59,15 +56,12 @@
 #include "ouzel_gui_RadioButton_lua.hpp"
 #include "ouzel_gui_RadioButtonGroup_lua.hpp"
 #include "ouzel_Rectangle_lua.hpp"
-#include "ouzel_graphics_RenderDevice_lua.hpp"
-#include "ouzel_graphics_Renderer_lua.hpp"
 #include "ouzel_scene_Repeat_lua.hpp"
 #include "ouzel_graphics_Resource_lua.hpp"
 #include "ouzel_scene_Rotate_lua.hpp"
 #include "ouzel_scene_Scale_lua.hpp"
 #include "ouzel_scene_Scene_lua.hpp"
 #include "ouzel_scene_SceneManager_lua.hpp"
-#include "ouzel_gui_ScrollArea_lua.hpp"
 #include "ouzel_gui_ScrollBar_lua.hpp"
 #include "ouzel_scene_Sequence_lua.hpp"
 #include "ouzel_graphics_Shader_lua.hpp"
@@ -78,8 +72,6 @@
 #include "ouzel_Size3_lua.hpp"
 #include "ouzel_gui_SlideBar_lua.hpp"
 #include "ouzel_audio_Sound_lua.hpp"
-#include "ouzel_audio_SoundData_lua.hpp"
-#include "ouzel_audio_SoundDataWave_lua.hpp"
 #include "ouzel_audio_SoundInput_lua.hpp"
 #include "ouzel_audio_SoundOutput_lua.hpp"
 #include "ouzel_scene_Sprite_lua.hpp"
@@ -116,9 +108,7 @@ void ouzel_luabinding_all(kaguya::State &state)
 	ouzel_luabinding_button(state);
 	ouzel_luabinding_cache(state);
 	ouzel_luabinding_camera(state);
-	ouzel_luabinding_chardescriptor(state);
 	ouzel_luabinding_checkbox(state);
-	ouzel_luabinding_client(state);
 	ouzel_luabinding_color(state);
 	ouzel_luabinding_combobox(state);
 	ouzel_luabinding_component(state);
@@ -138,7 +128,6 @@ void ouzel_luabinding_all(kaguya::State &state)
 	ouzel_luabinding_ini(state);
 	ouzel_luabinding_input(state);
 	ouzel_luabinding_label(state);
-	ouzel_luabinding_language(state);
 	ouzel_luabinding_layer(state);
 	ouzel_luabinding_listener(state);
 	ouzel_luabinding_localization(state);
@@ -161,15 +150,12 @@ void ouzel_luabinding_all(kaguya::State &state)
 	ouzel_luabinding_radiobutton(state);
 	ouzel_luabinding_radiobuttongroup(state);
 	ouzel_luabinding_rectangle(state);
-	ouzel_luabinding_renderdevice(state);
-	ouzel_luabinding_renderer(state);
 	ouzel_luabinding_repeat(state);
 	ouzel_luabinding_resource(state);
 	ouzel_luabinding_rotate(state);
 	ouzel_luabinding_scale(state);
 	ouzel_luabinding_scene(state);
 	ouzel_luabinding_scenemanager(state);
-	ouzel_luabinding_scrollarea(state);
 	ouzel_luabinding_scrollbar(state);
 	ouzel_luabinding_sequence(state);
 	ouzel_luabinding_shader(state);
@@ -180,8 +166,6 @@ void ouzel_luabinding_all(kaguya::State &state)
 	ouzel_luabinding_size3(state);
 	ouzel_luabinding_slidebar(state);
 	ouzel_luabinding_sound(state);
-	ouzel_luabinding_sounddata(state);
-	ouzel_luabinding_sounddatawave(state);
 	ouzel_luabinding_soundinput(state);
 	ouzel_luabinding_soundoutput(state);
 	ouzel_luabinding_sprite(state);

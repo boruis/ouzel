@@ -21,9 +21,7 @@ void ouzel_luabinding_menu(kaguya::State &state)
 
 	//Overloaded funcs
 	auto addWidgetPtr1 = static_cast<void(ouzel::gui::Menu::*)(Widget *widget)>(&ouzel::gui::Menu::addWidget);
-	auto addWidgetPtr2 = static_cast<void(ouzel::gui::Menu::*)(const std::unique_ptr< T > &widget)>(&ouzel::gui::Menu::addWidget);
-	auto addWidgetPtr3 = static_cast<void(ouzel::gui::Menu::*)(std::unique_ptr< T > &&widget)>(&ouzel::gui::Menu::addWidget);
-	metaTable.addOverloadedFunctions("addWidget", addWidgetPtr1, addWidgetPtr2, addWidgetPtr3);
+	metaTable.addOverloadedFunctions("addWidget", addWidgetPtr1);
 
 
 	state["oz"]["Menu"].setClass(metaTable);

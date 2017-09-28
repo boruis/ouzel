@@ -630,4 +630,9 @@ namespace ouzel
     {
         return false;
     }
+    
+    void Engine::executeOnMainThread(const std::function<void(void)>&)
+    {
+        
+    }
 }

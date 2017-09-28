@@ -44,7 +44,7 @@ void ouzel_luabinding_texture(kaguya::State &state)
 	auto initPtr1 = static_cast<bool(ouzel::graphics::Texture::*)(const Size2 &newSize, uint32_t newFlags, uint32_t newMipmaps, uint32_t newSampleCount, PixelFormat newPixelFormat)>(&ouzel::graphics::Texture::init);
 	auto initPtr2 = static_cast<bool(ouzel::graphics::Texture::*)(const std::string &newFilename, uint32_t newFlags, uint32_t newMipmaps, PixelFormat newPixelFormat)>(&ouzel::graphics::Texture::init);
 	auto initPtr3 = static_cast<bool(ouzel::graphics::Texture::*)(const std::vector< uint8_t > &newData, const Size2 &newSize, uint32_t newFlags, uint32_t newMipmaps, PixelFormat newPixelFormat)>(&ouzel::graphics::Texture::init);
-	auto initPtr4 = static_cast<bool(ouzel::graphics::Texture::*)(const std::vector< Level > &newLevels, const Size2 &newSize, uint32_t newFlags, PixelFormat newPixelFormat)>(&ouzel::graphics::Texture::init);
+	auto initPtr4 = static_cast<bool(ouzel::graphics::Texture::*)(const std::vector< ouzel::graphics::Texture::Level > &newLevels, const Size2 &newSize, uint32_t newFlags, PixelFormat newPixelFormat)>(&ouzel::graphics::Texture::init);
 	metaTable.addOverloadedFunctions("init", initPtr1, initPtr2, initPtr3, initPtr4);
 
 

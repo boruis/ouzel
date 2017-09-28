@@ -10,8 +10,7 @@ void ouzel_luabinding_repeat(kaguya::State &state)
 
 	//Constructor
 	metaTable.setConstructors<
-		ouzel::scene::Repeat(Animator *animator, uint32_t aCount),
-		ouzel::scene::Repeat(const std::unique_ptr< Animator > &animator, uint32_t aCount)
+		ouzel::scene::Repeat(Animator *animator, uint32_t aCount)
 	>();
 
 	//PublicFunc

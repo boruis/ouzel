@@ -10,8 +10,7 @@ void ouzel_luabinding_parallel(kaguya::State &state)
 
 	//Constructor
 	metaTable.setConstructors<
-		ouzel::scene::Parallel(const std::vector< Animator *> &aAnimators),
-		ouzel::scene::Parallel(const std::vector< std::unique_ptr< Animator >> &aAnimators)
+		ouzel::scene::Parallel(const std::vector< Animator *> &aAnimators)
 	>();
 
 	state["oz"]["Parallel"].setClass(metaTable);

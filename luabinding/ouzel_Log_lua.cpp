@@ -9,9 +9,8 @@ void ouzel_luabinding_log(kaguya::State &state)
 
 	//Constructor
 	metaTable.setConstructors<
-		ouzel::Log(Level aLevel),
-		ouzel::Log(const Log &other),
-		ouzel::Log(Log &&other)
+		ouzel::Log(ouzel::Log::Level aLevel),
+		ouzel::Log(const Log &other)
 	>();
 
 	state["oz"]["Log"].setClass(metaTable);

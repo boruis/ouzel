@@ -11,7 +11,7 @@ void ouzel_luabinding_value(kaguya::State &state)
 	//Constructor
 	metaTable.setConstructors<
 		ouzel::obf::Value(),
-		ouzel::obf::Value(Type aType),
+		ouzel::obf::Value(ouzel::obf::Value::Type aType),
 		ouzel::obf::Value(uint8_t value),
 		ouzel::obf::Value(uint16_t value),
 		ouzel::obf::Value(uint32_t value),

@@ -4,7 +4,6 @@
 using namespace ouzel;
 using namespace ouzel::input;
 
-template <typename T>
 void ouzel_luabinding_input(kaguya::State &state)
 {
 	auto metaTable = kaguya::UserdataMetatable<ouzel::input::Input>();
@@ -35,9 +34,8 @@ void ouzel_luabinding_input(kaguya::State &state)
 	metaTable.addFunction("hideVirtualKeyboard", &ouzel::input::Input::hideVirtualKeyboard);
 
 	//Overloaded funcs
-	auto setCursorPtr1 = static_cast<void(ouzel::input::Input::*)(const std::unique_ptr< T > &cursor)>(&ouzel::input::Input::setCursor);
-	auto setCursorPtr2 = static_cast<void(ouzel::input::Input::*)(Cursor *cursor)>(&ouzel::input::Input::setCursor);
-	metaTable.addOverloadedFunctions("setCursor", setCursorPtr1, setCursorPtr2);
+	auto setCursorPtr1 = static_cast<void(ouzel::input::Input::*)(Cursor *cursor)>(&ouzel::input::Input::setCursor);
+	metaTable.addOverloadedFunctions("setCursor", setCursorPtr1);
 
 
 	state["oz"]["Input"].setClass(metaTable);

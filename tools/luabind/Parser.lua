@@ -15,6 +15,8 @@ local ClassList = {
 -- filter
 local filterList = {
 	-- empty class
+	"ouzel::graphics::Renderer",
+	"ouzel::graphics::RenderDevice",
 	"ouzel::graphics::RenderDeviceEmpty",
 	"ouzel::graphics::BufferResourceEmpty",
 	"ouzel::graphics::AudioDeviceEmpty",
@@ -81,10 +83,17 @@ local filterList = {
 	"ouzel::audio::Stream",
 	"ouzel::audio::StreamVorbis",
 	"ouzel::audio::StreamWave",
+	"ouzel::audio::SoundData",
 	"ouzel::audio::SoundDataVorbis",
+	"ouzel::audio::SoundDataWave",
 	"ouzel::Archive",
 	"ouzel::TTFont",
 	"ouzel::TTFont::CharDescriptor",
+	"ouzel::BMFont::CharDescriptor",
+	"ouzel::network::Client",
+
+	"ouzel::gui::ScrollArea",
+	"ouzel::Language",
 }
 
 for i,v in ipairs(filterList) do

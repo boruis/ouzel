@@ -4,7 +4,6 @@
 using namespace ouzel;
 using namespace ouzel::scene;
 
-template <typename T>
 void ouzel_luabinding_actor(kaguya::State &state)
 {
 	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Actor>();
@@ -52,17 +51,14 @@ void ouzel_luabinding_actor(kaguya::State &state)
 
 	//Overloaded funcs
 	auto addComponentPtr1 = static_cast<void(ouzel::scene::Actor::*)(Component *component)>(&ouzel::scene::Actor::addComponent);
-	auto addComponentPtr2 = static_cast<void(ouzel::scene::Actor::*)(const std::unique_ptr< T > &component)>(&ouzel::scene::Actor::addComponent);
-	auto addComponentPtr3 = static_cast<void(ouzel::scene::Actor::*)(std::unique_ptr< T > &&component)>(&ouzel::scene::Actor::addComponent);
-	metaTable.addOverloadedFunctions("addComponent", addComponentPtr1, addComponentPtr2, addComponentPtr3);
+	metaTable.addOverloadedFunctions("addComponent", addComponentPtr1);
 
 	auto getComponentsPtr1 = static_cast<const std::vector< Component * > &(ouzel::scene::Actor::*)() const>(&ouzel::scene::Actor::getComponents);
 	auto getComponentsPtr2 = static_cast<std::vector< Component * >(ouzel::scene::Actor::*)(uint32_t type) const>(&ouzel::scene::Actor::getComponents);
 	metaTable.addOverloadedFunctions("getComponents", getComponentsPtr1, getComponentsPtr2);
 
 	auto removeComponentPtr1 = static_cast<bool(ouzel::scene::Actor::*)(Component *component)>(&ouzel::scene::Actor::removeComponent);
-	auto removeComponentPtr2 = static_cast<void(ouzel::scene::Actor::*)(const std::unique_ptr< T > &component)>(&ouzel::scene::Actor::removeComponent);
-	metaTable.addOverloadedFunctions("removeComponent", removeComponentPtr1, removeComponentPtr2);
+	metaTable.addOverloadedFunctions("removeComponent", removeComponentPtr1);
 
 	auto setPositionPtr1 = static_cast<void(ouzel::scene::Actor::*)(const Vector2 &newPosition)>(&ouzel::scene::Actor::setPosition);
 	auto setPositionPtr2 = static_cast<void(ouzel::scene::Actor::*)(const Vector3 &newPosition)>(&ouzel::scene::Actor::setPosition);

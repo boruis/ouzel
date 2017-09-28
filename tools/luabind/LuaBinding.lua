@@ -10,6 +10,7 @@ local needTemplateClass = {
 	SceneManager = 1,
 	Animator = 1,
 	Input = 1,
+	Menu = 1,
 }
 
 local function tableMax(t)
@@ -23,6 +24,19 @@ local function tableMax(t)
 	end
 
 	return count
+end
+
+--split string
+function string.split(str, delimiter)
+	if str==nil or str=='' or delimiter==nil then
+		return nil
+	end
+	
+    local result = {}
+    for match in (str..delimiter):gmatch("(.-)"..delimiter) do
+        table.insert(result, match)
+    end
+    return result
 end
 
 function getHeaderFileName(className)
@@ -72,11 +86,23 @@ function haveSameFuncName(item, data)
 	return count > 1
 end
 
+function hasUniquePtrArgs(str)
+	local s, e = string.find(str, "std::unique_ptr")
+	if s == nil and e == nil then
+		s, e = string.find(str, "&&")
+		if s == nil and e == nil then
+			return false
+		end
+	end
+
+	return true
+end
+
 function haveConstructorNum(item)
 	local count = 0
 
 	for i, v in ipairs(item.funList) do
-		if v.IsConstructor == true then
+		if v.IsConstructor == true and hasUniquePtrArgs(v.Args) == false then
 			count = count + 1
 		end
 	end
@@ -89,9 +115,16 @@ local function fixArgs(argStr)
 	argStr = string.gsub(argStr, "ScaleMode", "Camera::ScaleMode", 1)
 	argStr = string.gsub(argStr, "%(Usage", "(ouzel::graphics::Buffer::Usage", 1)
 	argStr = string.gsub(argStr, "%(Buffer::Usage", "(ouzel::graphics::Buffer::Usage", 1)
+	argStr = string.gsub(argStr, " override", "", 1)
+	argStr = string.gsub(argStr, ", Type aType", ", ouzel::scene::Ease::Type aType", 1)
+	argStr = string.gsub(argStr, ", Func aFunc", ", ouzel::scene::Ease::Func aFunc", 1)
+	argStr = string.gsub(argStr, "Level aLevel", "ouzel::Log::Level aLevel", 1)
 
+	argStr = string.gsub(argStr, "const std::vector< Level > &newLevels", "const std::vector< ouzel::graphics::Texture::Level > &newLevels", 1)
 
+	argStr = string.gsub(argStr, "%(Type aType", "(ouzel::obf::Value::Type aType", 1)
 
+	argStr = string.gsub(argStr, "std::vector< ConstantInfo >", "std::vector< ouzel::graphics::Shader::ConstantInfo >")
 
 	return argStr
 end
@@ -112,6 +145,7 @@ function LuaBinding:genOneBinding(item)
 	-- call all bind funcs
 	self:genCallFiles(item)
 end
+
 
 function LuaBinding:genHeader(item)
 	local headerFileName = getHeaderFileName(item.className)
@@ -150,7 +184,7 @@ function LuaBinding:genCppFile(item)
 		tmpStr = tmpStr .. "\tmetaTable.setConstructors<\n"
 		local index = 0
 		for i, v in ipairs(item.funList) do
-			if v.IsConstructor == true then
+			if v.IsConstructor == true and hasUniquePtrArgs(v.Args) == false then
 				tmpStr = tmpStr .. "\t\t"
 				tmpStr = tmpStr .. item.className .. fixArgs(v.Args)
 				index = index + 1
@@ -185,9 +219,13 @@ function LuaBinding:genCppFile(item)
 		if pointerFuncs[v.FuncName] == nil then
 			pointerFuncs[v.FuncName] = {}
 		end
-		table.insert(pointerFuncs[v.FuncName], {
-			fptrStr = fptrStr,
-		})
+
+		-- filter unique_ptr args
+		if hasUniquePtrArgs(fptrStr) == false then
+			table.insert(pointerFuncs[v.FuncName], {
+				fptrStr = fptrStr,
+			})
+		end
 	end
 
 	local function genFunctionPointorStr()
@@ -315,8 +353,8 @@ function LuaBinding:genCppFile(item)
 	end
 
 	if needTemplateClass[item.baseClassName] == 1 then
-		outStr = outStr .. "\n"
-		outStr = outStr .. "template <typename T>"
+		-- outStr = outStr .. "\n"
+		-- outStr = outStr .. "template <typename T>"
 	end
 
 	outStr = outStr .. getFuncStr()

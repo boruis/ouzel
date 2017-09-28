@@ -4,7 +4,6 @@
 using namespace ouzel;
 using namespace ouzel::scene;
 
-template <typename T>
 void ouzel_luabinding_animator(kaguya::State &state)
 {
 	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Animator>();
@@ -34,13 +33,10 @@ void ouzel_luabinding_animator(kaguya::State &state)
 
 	//Overloaded funcs
 	auto addAnimatorPtr1 = static_cast<void(ouzel::scene::Animator::*)(Animator *animator)>(&ouzel::scene::Animator::addAnimator);
-	auto addAnimatorPtr2 = static_cast<void(ouzel::scene::Animator::*)(const std::unique_ptr< T > &animator)>(&ouzel::scene::Animator::addAnimator);
-	auto addAnimatorPtr3 = static_cast<void(ouzel::scene::Animator::*)(std::unique_ptr< T > &&animator)>(&ouzel::scene::Animator::addAnimator);
-	metaTable.addOverloadedFunctions("addAnimator", addAnimatorPtr1, addAnimatorPtr2, addAnimatorPtr3);
+	metaTable.addOverloadedFunctions("addAnimator", addAnimatorPtr1);
 
 	auto removeAnimatorPtr1 = static_cast<bool(ouzel::scene::Animator::*)(Animator *animator)>(&ouzel::scene::Animator::removeAnimator);
-	auto removeAnimatorPtr2 = static_cast<bool(ouzel::scene::Animator::*)(const std::unique_ptr< T > &animator)>(&ouzel::scene::Animator::removeAnimator);
-	metaTable.addOverloadedFunctions("removeAnimator", removeAnimatorPtr1, removeAnimatorPtr2);
+	metaTable.addOverloadedFunctions("removeAnimator", removeAnimatorPtr1);
 
 
 	state["oz"]["Animator"].setClass(metaTable);

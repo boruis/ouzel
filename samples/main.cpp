@@ -10,6 +10,8 @@
 #include "SoundSample.hpp"
 #include "PerspectiveSample.hpp"
 
+#include "ouzel_lua.hpp"
+
 std::string DEVELOPER_NAME = "org.ouzelengine";
 std::string APPLICATION_NAME = "samples";
 
@@ -89,6 +91,20 @@ void ouzelMain(const std::vector<std::string>& args)
     {
         currentScene.reset(new MainMenu());
     }
+    
+    // lua binding
+    kaguya::State state;
+    state["oz"] = kaguya::NewTable();
+    state["oz"]["sharedEngine"] = static_cast<ouzel::Engine *>(ouzel::sharedEngine);
+    
+    ouzel_luabinding_all(state);
+    
+    // load dump
+    auto dumpPath = ouzel::sharedEngine->getFileSystem()->getPath("dump.lua");
+    state.dofile(dumpPath);
+
+    auto fullPath = ouzel::sharedEngine->getFileSystem()->getPath("test.lua");
+    state.dofile(fullPath);
 
     ouzel::sharedEngine->getSceneManager()->setScene(std::move(currentScene));
 }
