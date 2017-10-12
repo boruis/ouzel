@@ -1,6 +1,15 @@
+local newScene = oz.Scene.new()
+local sceneManager = oz.sharedEngine:getSceneManager()
 
-local a = oz.Vector2.new(0, 100)
-local b = oz.Vector2.new(100, 100)
 
-local c = oz.Vector2.angle(a, b)
-dump(c)
+local layer = oz.Layer.new()
+newScene:addLayer(layer)
+
+
+sceneManager:setScene(newScene)
+
+
+
+local camera = oz.Camera.new(oz.Size2.new(400, 600), 3)
+layer:addChild(camera)
+dump(camera)

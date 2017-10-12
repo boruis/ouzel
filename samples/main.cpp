@@ -91,20 +91,22 @@ void ouzelMain(const std::vector<std::string>& args)
     {
         currentScene.reset(new MainMenu());
     }
+
+//    ouzel::sharedEngine->getSceneManager()->setScene(std::move(currentScene));
+
     
     // lua binding
-    kaguya::State state;
-    state["oz"] = kaguya::NewTable();
-    state["oz"]["sharedEngine"] = static_cast<ouzel::Engine *>(ouzel::sharedEngine);
+    kaguya::State* state = new kaguya::State();
+    (*state)["oz"] = kaguya::NewTable();
     
-    ouzel_luabinding_all(state);
-    
+    ouzel_luabinding_all(*state);
+
+    (*state)["oz"]["sharedEngine"] = ouzel::sharedEngine;
+
     // load dump
     auto dumpPath = ouzel::sharedEngine->getFileSystem()->getPath("dump.lua");
-    state.dofile(dumpPath);
+    state->dofile(dumpPath);
 
     auto fullPath = ouzel::sharedEngine->getFileSystem()->getPath("test.lua");
-    state.dofile(fullPath);
-
-    ouzel::sharedEngine->getSceneManager()->setScene(std::move(currentScene));
+    state->dofile(fullPath);
 }
