@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_imagedatastb(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::ImageDataSTB>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::ImageDataSTB, ouzel::graphics::ImageData>();
 
 	//PublicFunc
 	metaTable.addFunction("writeToFile", &ouzel::graphics::ImageDataSTB::writeToFile);

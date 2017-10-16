@@ -6,7 +6,7 @@ using namespace ouzel::input;
 
 void ouzel_luabinding_input(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::input::Input>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::input::Input, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("setCursorVisible", &ouzel::input::Input::setCursorVisible);

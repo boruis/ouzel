@@ -6,7 +6,7 @@ using namespace ouzel::gui;
 
 void ouzel_luabinding_label(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::gui::Label>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::gui::Label, kaguya::MultipleBase<ouzel::gui::Widget, ouzel::scene::Actor, ouzel::scene::ActorContainer, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_camera(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Camera>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Camera, kaguya::MultipleBase<ouzel::scene::Actor, ouzel::scene::ActorContainer, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

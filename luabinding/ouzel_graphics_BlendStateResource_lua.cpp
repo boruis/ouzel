@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_blendstateresource(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::BlendStateResource>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::BlendStateResource, kaguya::MultipleBase<ouzel::graphics::Resource, ouzel::Noncopyable> >();
 
 	//PublicFunc
 	metaTable.addFunction("init", &ouzel::graphics::BlendStateResource::init);

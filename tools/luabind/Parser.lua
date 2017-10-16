@@ -112,6 +112,7 @@ function ClassList:load(basePath, xmlFile)
 		if v.kind == "class" then
 			local tmpItem = {
 				Name = v[1][1],
+				BasePath = basePath,
 				Refid = basePath .. v.refid .. ".xml"
 			}
 
@@ -144,7 +145,7 @@ function ClassList:parse()
 
 		-- only handle class in namespace ouzel
 		if self:isOuzelClass(item.Name) == true and filterList[item.Name] == nil then
-		-- if item.Name == "ouzel::Vector2" then
+		-- if item.Name == "ouzel::scene::Camera" then
 			local tmpParser = clone(ClassParser)
 
 			tmpParser:parse(item)

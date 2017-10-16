@@ -6,7 +6,7 @@ using namespace ouzel::audio;
 
 void ouzel_luabinding_audiodevice(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::audio::AudioDevice>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::audio::AudioDevice, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("process", &ouzel::audio::AudioDevice::process);

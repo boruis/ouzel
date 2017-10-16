@@ -6,7 +6,7 @@ using namespace ouzel::audio;
 
 void ouzel_luabinding_listener(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::audio::Listener>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::audio::Listener, ouzel::audio::SoundOutput>();
 
 	//Constructor
 	metaTable.setConstructors<

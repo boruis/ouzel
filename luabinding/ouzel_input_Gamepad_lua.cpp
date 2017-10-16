@@ -6,7 +6,7 @@ using namespace ouzel::input;
 
 void ouzel_luabinding_gamepad(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::input::Gamepad>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::input::Gamepad, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("getName", &ouzel::input::Gamepad::getName);

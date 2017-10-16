@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_rotate(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Rotate>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Rotate, kaguya::MultipleBase<ouzel::scene::Animator, ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

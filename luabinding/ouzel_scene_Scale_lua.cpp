@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_scale(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Scale>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Scale, kaguya::MultipleBase<ouzel::scene::Animator, ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

@@ -5,7 +5,7 @@ using namespace ouzel;
 
 void ouzel_luabinding_eventdispatcher(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::EventDispatcher>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::EventDispatcher, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("dispatchEvents", &ouzel::EventDispatcher::dispatchEvents);

@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_ease(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Ease>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Ease, kaguya::MultipleBase<ouzel::scene::Animator, ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

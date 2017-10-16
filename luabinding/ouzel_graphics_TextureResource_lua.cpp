@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_textureresource(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::TextureResource>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::TextureResource, kaguya::MultipleBase<ouzel::graphics::Resource, ouzel::Noncopyable> >();
 
 	//PublicFunc
 	metaTable.addFunction("setSize", &ouzel::graphics::TextureResource::setSize);

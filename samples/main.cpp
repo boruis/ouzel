@@ -15,6 +15,8 @@
 std::string DEVELOPER_NAME = "org.ouzelengine";
 std::string APPLICATION_NAME = "samples";
 
+kaguya::State state;
+
 void ouzelMain(const std::vector<std::string>& args)
 {
     // disable screen saver
@@ -22,91 +24,24 @@ void ouzelMain(const std::vector<std::string>& args)
 
     std::string sample;
 
-    for (auto arg = args.begin(); arg != args.end(); ++arg)
-    {
-        if (arg == args.begin())
-        {
-            // skip the first parameter
-            continue;
-        }
-
-        if (*arg == "-sample")
-        {
-            auto nextArg = ++arg;
-
-            if (nextArg != args.end())
-            {
-                sample = *nextArg;
-            }
-            else
-            {
-                ouzel::Log(ouzel::Log::Level::WARN) << "No sample specified";
-            }
-        }
-        else
-        {
-            ouzel::Log(ouzel::Log::Level::WARN) << "Invalid argument \"" << *arg << "\"";
-        }
-    }
-
     ouzel::sharedEngine->getFileSystem()->addResourcePath("Resources");
 
     ouzel::sharedEngine->getRenderer()->setClearColor(ouzel::Color(64, 0, 0));
-
-    std::unique_ptr<ouzel::scene::Scene> currentScene;
-
-    if (!sample.empty())
-    {
-        if (sample == "sprites")
-        {
-            currentScene.reset(new SpritesSample());
-        }
-        else if (sample == "gui")
-        {
-            currentScene.reset(new GUISample());
-        }
-        else if (sample == "render_target")
-        {
-            currentScene.reset(new RTSample());
-        }
-        else if (sample == "animations")
-        {
-            currentScene.reset(new AnimationsSample());
-        }
-        else if (sample == "input")
-        {
-            currentScene.reset(new InputSample());
-        }
-        else if (sample == "sound")
-        {
-            currentScene.reset(new SoundSample());
-        }
-        else if (sample == "perspective")
-        {
-            currentScene.reset(new PerspectiveSample());
-        }
-    }
-    
-    if (!currentScene)
-    {
-        currentScene.reset(new MainMenu());
-    }
-
-//    ouzel::sharedEngine->getSceneManager()->setScene(std::move(currentScene));
-
+//    ouzel::sharedEngine->getSceneManager()->setScene(new GUISample());
     
     // lua binding
-    kaguya::State* state = new kaguya::State();
-    (*state)["oz"] = kaguya::NewTable();
+    state["oz"] = kaguya::NewTable();
     
-    ouzel_luabinding_all(*state);
+    ouzel_luabinding_all(state);
 
-    (*state)["oz"]["sharedEngine"] = ouzel::sharedEngine;
+    state["oz"]["sharedEngine"] = ouzel::sharedEngine;
 
+    state["tmpcamera"] = new ouzel::scene::Camera();
+    
     // load dump
     auto dumpPath = ouzel::sharedEngine->getFileSystem()->getPath("dump.lua");
-    state->dofile(dumpPath);
+    state.dofile(dumpPath);
 
     auto fullPath = ouzel::sharedEngine->getFileSystem()->getPath("test.lua");
-    state->dofile(fullPath);
+    state.dofile(fullPath);
 }

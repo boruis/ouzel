@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_particlesystem(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::ParticleSystem>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::ParticleSystem, kaguya::MultipleBase<ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

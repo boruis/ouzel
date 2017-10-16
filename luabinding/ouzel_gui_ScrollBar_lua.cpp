@@ -6,7 +6,7 @@ using namespace ouzel::gui;
 
 void ouzel_luabinding_scrollbar(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::gui::ScrollBar>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::gui::ScrollBar, kaguya::MultipleBase<ouzel::gui::Widget, ouzel::scene::Actor, ouzel::scene::ActorContainer, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

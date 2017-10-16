@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_textrenderer(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::TextRenderer>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::TextRenderer, kaguya::MultipleBase<ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

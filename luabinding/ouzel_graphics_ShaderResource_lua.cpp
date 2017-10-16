@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_shaderresource(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::ShaderResource>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::ShaderResource, kaguya::MultipleBase<ouzel::graphics::Resource, ouzel::Noncopyable> >();
 
 	//PublicFunc
 	metaTable.addFunction("init", &ouzel::graphics::ShaderResource::init);

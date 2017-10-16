@@ -5,7 +5,7 @@ using namespace ouzel;
 
 void ouzel_luabinding_font(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::Font>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::Font, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("getVertices", &ouzel::Font::getVertices);

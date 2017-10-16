@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_buffer(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::Buffer>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::Buffer, ouzel::Noncopyable>();
 
 	//Constructor
 	metaTable.setConstructors<

@@ -6,7 +6,7 @@ using namespace ouzel::audio;
 
 void ouzel_luabinding_mixer(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::audio::Mixer>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::audio::Mixer, ouzel::Noncopyable>();
 
 	//Constructor
 	metaTable.setConstructors<

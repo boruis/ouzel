@@ -321,10 +321,36 @@ function LuaBinding:genCppFile(item)
 		return bodyStr
 	end
 
+	local function getBaseClassStr()
+		if #item.baseClass == 0 then
+			return ""
+		end
+
+		if #item.baseClass == 1 then
+			return ", " .. item.baseClass[1]
+		end
+		
+		local str = ", kaguya::MultipleBase<"
+		for i, v in ipairs(item.baseClass) do
+			str = str .. v
+
+			if i ~= #item.baseClass then
+				str = str .. ", "
+			end
+		end
+		str = str .. "> "
+
+		return str
+	end
+
 	local function getFuncStr()
 		local headerStr = "\nvoid ouzel_luabinding_vector2(kaguya::State &state)"
-		local funcBegin = "\tauto metaTable = kaguya::UserdataMetatable<ouzel::Vector2>();"
+		local funcBegin = "\tauto metaTable = kaguya::UserdataMetatable<ouzel::Vector2, _baseClass_>();"
 		funcBegin = string.gsub(funcBegin, "ouzel::Vector2", item.className)
+
+		-- 继承信息
+		local baseClassStr = getBaseClassStr()
+		funcBegin = string.gsub(funcBegin, ", _baseClass_", baseClassStr)
 
 		local funcEnd = "\tstate[\"oz\"][\"Vector2\"].setClass(metaTable);"
 		funcEnd = string.gsub(funcEnd, "Vector2", item.baseClassName)

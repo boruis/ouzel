@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_texture(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::Texture>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::Texture, ouzel::Noncopyable>();
 
 	//Constructor
 	metaTable.setConstructors<

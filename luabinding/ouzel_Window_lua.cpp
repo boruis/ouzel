@@ -5,7 +5,7 @@ using namespace ouzel;
 
 void ouzel_luabinding_window(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::Window>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::Window, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("close", &ouzel::Window::close);

@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_scenemanager(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::SceneManager>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::SceneManager, ouzel::Noncopyable>();
 
 	//PublicFunc
 	metaTable.addFunction("draw", &ouzel::scene::SceneManager::draw);

@@ -5,7 +5,7 @@ using namespace ouzel;
 
 void ouzel_luabinding_cache(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::Cache>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::Cache, ouzel::Noncopyable>();
 
 	//Constructor
 	metaTable.setConstructors<

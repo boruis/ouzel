@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_shake(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Shake>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Shake, kaguya::MultipleBase<ouzel::scene::Animator, ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

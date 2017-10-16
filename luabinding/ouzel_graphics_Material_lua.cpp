@@ -6,7 +6,7 @@ using namespace ouzel::graphics;
 
 void ouzel_luabinding_material(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::Material>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::graphics::Material, ouzel::Noncopyable>();
 
 	state["oz"]["Material"].setClass(metaTable);
 }

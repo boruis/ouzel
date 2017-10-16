@@ -6,7 +6,7 @@ using namespace ouzel::scene;
 
 void ouzel_luabinding_fade(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Fade>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::scene::Fade, kaguya::MultipleBase<ouzel::scene::Animator, ouzel::scene::Component, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

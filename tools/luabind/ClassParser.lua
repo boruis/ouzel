@@ -31,10 +31,14 @@ end
 
 function ClassParser:parse(classItem)
 	self.className = classItem.Name
+	self.basePath = classItem.BasePath
 	self.baseClassName = self:getClassName()
 	self.nameSpace = string.gsub(self.className, "::" .. self.baseClassName, "")
 
 	local data = xml.loadpath(classItem.Refid)
+
+	-- baseClass
+	self.baseClass = self:getBaseClassRecurssive(data)
 
 	for i, v in ipairs(data[1]) do
 		if v.xml == "sectiondef" then
@@ -74,6 +78,40 @@ function ClassParser:getClassName()
 
 	return baseClsName
 end
+
+
+function ClassParser:getBaseClassRecurssive(data)
+	local result = {}
+
+	local function getBaseClass(xmldata)
+		for i, v in pairs(xmldata) do
+			if v.xml == "basecompoundref" then
+				return v[1], v.refid
+			end
+		end
+
+		return "", ""
+	end
+
+	local baseXmlData = data
+	while true do
+		local baseClassName, baseRefId = getBaseClass(baseXmlData[1])
+
+		if baseClassName == "" then
+			break
+		end
+
+		table.insert(result, baseClassName)
+
+		-- 
+		local nextPath = self.basePath .. baseRefId .. ".xml"
+		local nextData = xml.loadpath(nextPath)
+		baseXmlData = nextData
+	end
+
+	return result
+end
+
 
 -- determin the func is constructor or not
 function ClassParser:isDeConstructorFunc(funcName)
@@ -221,6 +259,7 @@ function ClassParser:parsePublicFuncSection(section, isStatic)
 		local tmpItem = {
 			FuncName = funcName,
 			Args = argString,
+			BaseClass = self.baseClass,
 			IsStatic = isStatic,
 			RetType = retType,
 			IsConstructor = isConstructor,

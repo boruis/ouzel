@@ -5,7 +5,7 @@ using namespace ouzel;
 
 void ouzel_luabinding_bmfont(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::BMFont>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::BMFont, kaguya::MultipleBase<ouzel::Font, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<

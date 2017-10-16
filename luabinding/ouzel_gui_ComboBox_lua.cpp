@@ -6,7 +6,7 @@ using namespace ouzel::gui;
 
 void ouzel_luabinding_combobox(kaguya::State &state)
 {
-	auto metaTable = kaguya::UserdataMetatable<ouzel::gui::ComboBox>();
+	auto metaTable = kaguya::UserdataMetatable<ouzel::gui::ComboBox, kaguya::MultipleBase<ouzel::gui::Widget, ouzel::scene::Actor, ouzel::scene::ActorContainer, ouzel::Noncopyable> >();
 
 	//Constructor
 	metaTable.setConstructors<
